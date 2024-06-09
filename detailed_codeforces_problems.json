@@ -1,0 +1,34 @@
+[
+    {
+        "title": "E. Number With The Given Amount Of Divisors",
+        "timeLimit": {
+            "value": 2,
+            "unit": "seconds"
+        },
+        "memoryLimit": {
+            "value": 256,
+            "unit": "megabytes"
+        },
+        "statement": "<p>Given the number <span class=\"tex-span\"><i>n</i></span>, find the smallest positive integer which has exactly <span class=\"tex-span\"><i>n</i></span> divisors. It is guaranteed that for the given <span class=\"tex-span\"><i>n</i></span> the answer will not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">18</sup></span>.</p>",
+        "inputSpecification": "<p>The first line of the input contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>).</p>",
+        "outputSpecification": "<p>Output the smallest positive integer with exactly <span class=\"tex-span\"><i>n</i></span> divisors.</p>",
+        "samples": [
+            {
+                "input": "4<br/>",
+                "output": "6<br/>"
+            },
+            {
+                "input": "6<br/>",
+                "output": "12<br/>"
+            }
+        ],
+        "note": null,
+        "contestId": 27,
+        "index": "E",
+        "name": "Number With The Given Amount Of Divisors",
+        "type": "PROGRAMMING",
+        "points": 2500.0,
+        "rating": 2000,
+        "solvedCount": 4021
+    }
+]
