@@ -1,0 +1,32 @@
+{
+    "title": "H2. Maximize the Largest Component (Hard Version)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">Easy and hard versions are actually different problems, so read statements of both problems completely and carefully. The only difference between the two versions is the operation.</span></p><p>Alex has a grid with $$$n$$$ rows and $$$m$$$ columns consisting of '<span class=\"tex-font-style-tt\">.</span>' and '<span class=\"tex-font-style-tt\">#</span>' characters. A set of '<span class=\"tex-font-style-tt\">#</span>' cells forms a connected component if from any cell in this set, it is possible to reach any other cell in this set by only moving to another cell in the set that shares a <span class=\"tex-font-style-bf\">common side</span>. The size of a connected component is the number of cells in the set.</p><p>In one operation, Alex selects any row $$$r$$$ ($$$1 \\le r \\le n$$$) <span class=\"tex-font-style-bf\">and</span> any column $$$c$$$ ($$$1 \\le c \\le m$$$), then sets every cell in row $$$r$$$ <span class=\"tex-font-style-bf\">and</span> column $$$c$$$ to be '<span class=\"tex-font-style-tt\">#</span>'. Help Alex find the maximum possible size of the largest connected component of '<span class=\"tex-font-style-tt\">#</span>' cells that he can achieve after performing the operation <span class=\"tex-font-style-bf\">at most once</span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 10^4$$$) \u2014 the number of test cases.</p><p>The first line of each test case contains two integers $$$n$$$ and $$$m$$$ ($$$1 \\le n \\cdot m \\le 10^6$$$) \u2014 the number of rows and columns of the grid.</p><p>The next $$$n$$$ lines each contain $$$m$$$ characters. Each character is either '<span class=\"tex-font-style-tt\">.</span>' or '<span class=\"tex-font-style-tt\">#</span>'.</p><p>It is guaranteed that the sum of $$$n \\cdot m$$$ over all test cases does not exceed $$$10^6$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer \u2014 the maximum possible size of a connected component of '<span class=\"tex-font-style-tt\">#</span>' cells that Alex can achieve.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">.</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">..</div><div class=\"test-example-line test-example-line-even test-example-line-2\">#.</div><div class=\"test-example-line test-example-line-even test-example-line-2\">#.</div><div class=\"test-example-line test-example-line-even test-example-line-2\">.#</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">.#.#.</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">..#..</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">.#.#.</div><div class=\"test-example-line test-example-line-even test-example-line-4\">5 5</div><div class=\"test-example-line test-example-line-even test-example-line-4\">#...#</div><div class=\"test-example-line test-example-line-even test-example-line-4\">....#</div><div class=\"test-example-line test-example-line-even test-example-line-4\">#...#</div><div class=\"test-example-line test-example-line-even test-example-line-4\">.....</div><div class=\"test-example-line test-example-line-even test-example-line-4\">...##</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">6 6</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">.#..#.</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">#..#..</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">.#...#</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">#.#.#.</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">.#.##.</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">###..#</div><div class=\"test-example-line test-example-line-even test-example-line-6\">6 8</div><div class=\"test-example-line test-example-line-even test-example-line-6\">..#....#</div><div class=\"test-example-line test-example-line-even test-example-line-6\">.####.#.</div><div class=\"test-example-line test-example-line-even test-example-line-6\">###.#..#</div><div class=\"test-example-line test-example-line-even test-example-line-6\">.##.#.##</div><div class=\"test-example-line test-example-line-even test-example-line-6\">.#.##.##</div><div class=\"test-example-line test-example-line-even test-example-line-6\">#..##.#.</div>",
+            "output": "\n1\n7\n11\n16\n22\n36\n"
+        }
+    ],
+    "note": "<p>In the fourth test case, it is optimal for Alex to set all cells in row $$$4$$$ and column $$$2$$$ to be '<span class=\"tex-font-style-tt\">#</span>'. Doing so will lead to the largest connected component of '<span class=\"tex-font-style-tt\">#</span>' having a size of $$$16$$$.</p><p>In the fifth test case, it is optimal for Alex to set all cells in row $$$2$$$ and column $$$4$$$ to be '<span class=\"tex-font-style-tt\">#</span>'. Doing so will lead to the largest connected component of '<span class=\"tex-font-style-tt\">#</span>' having a size of $$$22$$$.</p>",
+    "contestId": 1985,
+    "index": "H2",
+    "name": "Maximize the Largest Component (Hard Version)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "implementation"
+    ],
+    "solvedCount": 518
+}

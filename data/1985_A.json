@@ -1,0 +1,30 @@
+{
+    "title": "A. Creating Words",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Matthew is given two strings $$$a$$$ and $$$b$$$, both of length $$$3$$$. He thinks it's particularly funny to create two new words by swapping the first character of $$$a$$$ with the first character of $$$b$$$. He wants you to output $$$a$$$ and $$$b$$$ after the swap.</p><p>Note that the new words may not necessarily be different.</p>",
+    "inputSpecification": "<p>The first line contains $$$t$$$ ($$$1 \\leq t \\leq 100$$$) \u00a0\u2014 the number of test cases.</p><p>The first and only line of each test case contains two space-separated strings, $$$a$$$ and $$$b$$$, both of length $$$3$$$. The strings only contain lowercase Latin letters.</p>",
+    "outputSpecification": "<p>For each test case, after the swap, output $$$a$$$ and $$$b$$$, separated by a space.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">bit set</div><div class=\"test-example-line test-example-line-even test-example-line-2\">cat dog</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">hot dog</div><div class=\"test-example-line test-example-line-even test-example-line-4\">uwu owo</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">cat cat</div><div class=\"test-example-line test-example-line-even test-example-line-6\">zzz zzz</div>",
+            "output": "\nsit bet\ndat cog\ndot hog\nowu uwo\ncat cat\nzzz zzz\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1985,
+    "index": "A",
+    "name": "Creating Words",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 33670
+}

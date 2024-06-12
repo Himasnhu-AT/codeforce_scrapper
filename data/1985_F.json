@@ -1,0 +1,31 @@
+{
+    "title": "F. Final Boss",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are facing the final boss in your favorite video game. The boss enemy has $$$h$$$ health. Your character has $$$n$$$ attacks. The $$$i$$$'th attack deals $$$a_i$$$ damage to the boss but has a cooldown of $$$c_i$$$ turns, meaning the next time you can use this attack is turn $$$x + c_i$$$ if your current turn is $$$x$$$. Each turn, you can use all attacks that are not currently on cooldown, <span class=\"tex-font-style-bf\">all at once</span>. If all attacks are on cooldown, you do nothing for the turn and skip to the next turn.</p><p>Initially, all attacks are not on cooldown. How many turns will you take to beat the boss? The boss is beaten when its health is $$$0$$$ or less.</p>",
+    "inputSpecification": "<p>The first line contains $$$t$$$ ($$$1 \\leq t \\leq 10^4$$$) \u00a0\u2013 the number of test cases.</p><p>The first line of each test case contains two integers $$$h$$$ and $$$n$$$ ($$$1 \\leq h, n \\leq 2 \\cdot 10^5$$$)\u00a0\u2013 the health of the boss and the number of attacks you have.</p><p>The following line of each test case contains $$$n$$$ integers $$$a_1, a_2, ..., a_n$$$ ($$$1 \\leq a_i \\leq 2 \\cdot 10^5$$$)\u00a0\u2013 the damage of your attacks.</p><p>The following line of each test case contains $$$n$$$ integers $$$c_1, c_2, ..., c_n$$$ ($$$1 \\leq c_i \\leq 2 \\cdot 10^5$$$)\u00a0\u2013 the cooldown of your attacks.</p><p>It is guaranteed that the sum of $$$h$$$ and $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output an integer, the minimum number of turns required to beat the boss.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">8</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3 2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">50 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5 6 7</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5 6 7</div><div class=\"test-example-line test-example-line-even test-example-line-4\">50 3</div><div class=\"test-example-line test-example-line-even test-example-line-4\">2 2 2</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3 3 3</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">90000 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">200000 200000</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1 1</div><div class=\"test-example-line test-example-line-even test-example-line-6\">100000 1</div><div class=\"test-example-line test-example-line-even test-example-line-6\">1</div><div class=\"test-example-line test-example-line-even test-example-line-6\">200000</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">6 7</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">3 2 3 2 3 1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">6 5 9 5 10 7 7</div><div class=\"test-example-line test-example-line-even test-example-line-8\">21 6</div><div class=\"test-example-line test-example-line-even test-example-line-8\">1 1 1 1 1 1</div><div class=\"test-example-line test-example-line-even test-example-line-8\">5 5 8 10 7 6</div>",
+            "output": "\n1\n3\n15\n25\n1\n19999800001\n1\n21\n"
+        }
+    ],
+    "note": "<p>For the first test case, you can use attacks $$$1$$$ and $$$2$$$ on the first turn, dealing $$$3$$$ damage in total, and slaying the boss.</p><p>For the second case, you can beat the boss in $$$3$$$ turns by using the following attacks:</p><p>Turn $$$1$$$: Use attacks $$$1$$$ and $$$2$$$, dealing $$$3$$$ damage to the boss. The boss now has $$$2$$$ health left.</p><p>Turn $$$2$$$: Use attack $$$2$$$, dealing $$$1$$$ damage to the boss. The boss now has $$$1$$$ health left.</p><p>Turn $$$3$$$: Use attack $$$1$$$, dealing $$$2$$$ damage to the boss. The boss now has $$$-1$$$ health left. Since its health is less than or equal to $$$0$$$, you beat the boss.</p><p>For the sixth test case: remember to use 64-bit integers as the answer can get large.</p>",
+    "contestId": 1985,
+    "index": "F",
+    "name": "Final Boss",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures"
+    ],
+    "solvedCount": 7214
+}

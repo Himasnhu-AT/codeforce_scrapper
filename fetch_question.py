@@ -9,6 +9,9 @@ all_problems_details = []
 count = 0
 
 for problem in problems_json:
+    if os.path.exists(f'data/{problem["contestId"]}_{problem["index"]}.json'):
+        print(f'Skipping problem {problem["contestId"]}_{problem["index"]} as it already exists.')
+        continue
     count += 1
 
     problem_link = f'https://codeforces.com/problemset/problem/{problem["contestId"]}/{problem["index"]}'
