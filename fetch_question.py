@@ -33,9 +33,6 @@ for problem in problems_json:
 
     all_problems_details.append(problem_details)
 
-    if count % 10 == 0:
-        os.system('git add . && git commit -m "Update data {count}"')
-
 with open('all_problems.json', 'w') as f:
     json.dump(all_problems_details, f, indent=4)
 

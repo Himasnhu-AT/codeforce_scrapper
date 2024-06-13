@@ -1,0 +1,32 @@
+{
+    "title": "F. Kostyanych's Theorem",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">This is an interactive problem.</span></p><p>Kostyanych has chosen a complete undirected graph$$$^{\\dagger}$$$ with $$$n$$$ vertices, and then removed exactly $$$(n - 2)$$$ edges from it. You can ask queries of the following type:</p><ul> <li> \"<span class=\"tex-font-style-tt\">?</span> $$$d$$$\" \u2014 Kostyanych tells you the number of vertex $$$v$$$ with a degree <span class=\"tex-font-style-bf\">at least</span> $$$d$$$. Among all possible such vertices, he selects the vertex <span class=\"tex-font-style-bf\">with the minimum degree</span>, and if there are several such vertices, he selects the one with the minimum number. He also tells you the number of another vertex in the graph, with which $$$v$$$ is not connected by an edge (if none is found, then $$$0$$$ is reported). Among all possible such vertices, he selects the one with the minimum number. Then he removes the vertex $$$v$$$ and all edges coming out of it. If the required vertex $$$v$$$ is not found, then \"$$$0\\ 0$$$\" is reported. </li></ul><p>Find a Hamiltonian path$$$^{\\ddagger}$$$ in the <span class=\"tex-font-style-bf\">original</span> graph in at most $$$n$$$ queries. It can be proven that under these constraints, a Hamiltonian path always exists.</p><p>$$$^{\\dagger}$$$A complete undirected graph is a graph in which there is exactly one undirected edge between any pair of distinct vertices. Thus, a complete undirected graph with $$$n$$$ vertices contains $$$\\frac{n(n-1)}{2}$$$ edges.</p><p>$$$^{\\ddagger}$$$A Hamiltonian path in a graph is a path that passes through each vertex exactly once.</p>",
+    "inputSpecification": "<p>Each test consists of multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$)\u00a0\u2014 the number of test cases. The description of the test cases follows.</p><p>The only line of each test case contains a single integer $$$n$$$ ($$$2 \\le n \\le 10^5$$$) \u2014 the number of vertices in the graph.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$10^5$$$.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n3\n4\n\n0 0\n\n1 4\n\n2 3\n\n4\n\n1 0\n\n4 2\n\n2\n\n1 0\n\n",
+            "output": "\n\n\n? 3\n\n? 2\n\n? 1\n\n! 4 3 1 2\n\n? 3\n\n? 0\n\n! 4 1 2 3\n\n? 0\n\n! 2 1"
+        }
+    ],
+    "note": "<p>In the first test case, the original graph looks as follows:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/61bc36d9be500a0f5675efd9bde636c42b829276.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Consider the queries:</p><ul><li> There are no vertices with a degree of at least $$$3$$$ in the graph, so \"$$$0\\ 0$$$\" is reported.</li><li> There are four vertices with a degree of at least $$$2$$$, and all of them have a degree of exactly $$$2$$$: $$$1$$$, $$$2$$$, $$$3$$$, $$$4$$$. Vertex $$$1$$$ is reported, because it has the minimum number, and vertex $$$4$$$ is reported, because it is the only one not connected to vertex $$$1$$$. After this, vertex $$$1$$$ is removed from the graph.</li><li> There are three vertices with a degree of at least $$$1$$$, among them vertices $$$2$$$ and $$$3$$$ have a minimum degree of $$$1$$$ (vertex $$$4$$$ has a degree of $$$2$$$). Vertex $$$2$$$ is reported, because it has the minimum number, and vertex $$$3$$$ is reported, because it is the only one not connected to vertex $$$2$$$. After this, vertex $$$2$$$ is removed from the graph.</li></ul><p>The path $$$4 - 3 - 1 - 2$$$ is a Hamiltonian path.</p><p>In the second test case, the original graph looks as follows:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/d35b5733c2e86a2a0f6c3cdd5d8667b2bf8c9780.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Consider the queries:</p><ul><li> Vertex $$$1$$$ has a degree of at least $$$3$$$, but it is connected to all vertices, so \"$$$1\\ 0$$$\" is reported. After this, vertex $$$1$$$ is removed from the graph.</li><li> The remaining vertices $$$2$$$, $$$3$$$, and $$$4$$$ have a degree of at least $$$0$$$, but among them vertex $$$4$$$ has the minimum degree of $$$0$$$ (vertices $$$2$$$ and $$$3$$$ have a degree of $$$1$$$). Vertex $$$4$$$ is not connected to both vertices $$$2$$$ and $$$3$$$, so vertex $$$2$$$ is reported (as it has the minimum number). After this, vertex $$$4$$$ is removed from the graph.</li></ul><p>The path $$$4 - 1 - 2 - 3$$$ is a Hamiltonian path.</p><p>In the third test case, the graph consists of $$$2$$$ vertices connected by an edge.</p>",
+    "contestId": 1979,
+    "index": "F",
+    "name": "Kostyanych's Theorem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "graphs",
+        "interactive"
+    ],
+    "solvedCount": 155
+}
