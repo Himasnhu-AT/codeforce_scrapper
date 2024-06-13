@@ -1,0 +1,40 @@
+{
+    "title": "I. The Riddle of the Sphinx",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"epigraph\"><div class=\"epigraph-text\"><span class=\"tex-font-style-it\">What walks on four feet in the morning, two in the afternoon, and three at night?</span></div></div><p><span class=\"tex-font-style-it\">This is an interactive problem. This problem doesn't support hacks.</span></p><p>Sphinx's duty is to guard the city of Thebes by making sure that no unworthy traveler crosses its gates. Only the ones who answer her riddle timely and correctly (or get an acc for short) are allowed to pass. As of those who fail, no one heard of them ever again...</p><p>So you don't have a choice but to solve the riddle. Sphinx has an array $$$a_1, a_2, \\ldots, a_n$$$ of <span class=\"tex-font-style-bf\">nonnegative</span> integers <span class=\"tex-font-style-bf\">strictly smaller</span> than $$$2^b$$$ and asked you to find the maximum value among its elements. Of course, she will not show you the array, but she will give you $$$n$$$ and $$$b$$$. As it is impossible to answer this riddle blindly, you can ask her some questions. For given $$$i, y$$$, she'll answer you whether $$$a_i$$$ is <span class=\"tex-font-style-bf\">bigger</span> than $$$y$$$. As sphinxes are not very patient, you can ask at most $$$3 \\cdot (n + b) $$$ such questions.</p><p>Although cunning, sphinxes are honest. Even though the array <span class=\"tex-font-style-bf\">can change</span> between your queries, answers to the previously asked questions will remain valid.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$b$$$ ($$$1 \\leq n, b \\leq 200$$$). The remaining parts of the input will be given throughout the interaction process.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n5 3\n\nyes\n\nno\n\nno\n\nno\n\nno\n\nyes\n",
+            "output": "\n5 101\n\n5 110\n\n4 100\n\n3 101\n\n2 001\n\n1 000\n\n0 110\n"
+        },
+        {
+            "input": "\n4 3\n\nno\n\nno\n\nno\n\nno\n",
+            "output": "\n1 000\n\n2 000\n\n3 000\n\n4 000\n\n0 000\n"
+        },
+        {
+            "input": "\n1 1\n",
+            "output": "\n0 0\n"
+        }
+    ],
+    "note": "<p>In all examples, the sequence is <span class=\"tex-font-style-bf\">fixed</span> beforehand.</p><p>In the first example, the sequence is $$$2, 1, 4, 0, 6$$$.</p><p>In the second example, the sequence is $$$0, 0, 0, 0$$$.</p><p>In the third example, the sequence is $$$0$$$.</p><p>Note that if the interactor was adaptive, then the interaction in the first and the third example would not be sufficient to return the correct value of maximum.</p>",
+    "contestId": 1466,
+    "index": "I",
+    "name": "The Riddle of the Sphinx",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "data structures",
+        "interactive"
+    ],
+    "solvedCount": 184
+}

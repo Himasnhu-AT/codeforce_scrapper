@@ -1,0 +1,24 @@
+{
+    "title": "A. Are You a Robot, Again?",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c42ae58b4a5c7ca30d6b4a53ac3f908d4212f4de.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1952,
+    "index": "A",
+    "name": "Are You a Robot, Again?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "strings"
+    ],
+    "solvedCount": 11577
+}

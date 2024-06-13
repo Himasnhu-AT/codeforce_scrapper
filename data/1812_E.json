@@ -1,0 +1,45 @@
+{
+    "title": "E. Not a Geometry Problem",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"input-specification\"><div class=\"section-title\">Input</div><p>The only line of input contains three integers $$$x$$$, $$$y$$$, $$$z$$$ ($$$-1000 \\le x, y, z \\le 1000$$$).</p></div><div class=\"output-specification\"><div class=\"section-title\">Output</div><p>Output one real number\u00a0\u2014 the answer.</p><p>Your answer is considered correct if its absolute or relative error does not exceed $$$10^6$$$. Formally, let your answer be $$$a$$$, and the jury's answer be $$$b$$$. Your answer is accepted if and only if $$$\\frac{|a-b|}{\\max(1,|b|)} \\le 10^6$$$.</p></div><div class=\"sample-tests\"><div class=\"section-title\">Examples</div><div class=\"sample-test\"><div class=\"input\"><div class=\"title\">Input</div><pre>\n1 1 1\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n1.7320508075688772\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\n1 -2 -2\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n21.727922061357855\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\n998 244 353\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n-0.0006269592476489029\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\n0 0 0\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n1792283455048516.3\n</pre></div></div></div>",
+    "inputSpecification": "<p>The only line of input contains three integers $$$x$$$, $$$y$$$, $$$z$$$ ($$$-1000 \\le x, y, z \\le 1000$$$).</p>",
+    "outputSpecification": "<p>Output one real number\u00a0\u2014 the answer.</p><p>Your answer is considered correct if its absolute or relative error does not exceed $$$10^6$$$. Formally, let your answer be $$$a$$$, and the jury's answer be $$$b$$$. Your answer is accepted if and only if $$$\\frac{|a-b|}{\\max(1,|b|)} \\le 10^6$$$.</p>",
+    "samples": [
+        {
+            "input": "\n1 1 1\n",
+            "output": "\n1.7320508075688772\n"
+        },
+        {
+            "input": "\n1 -2 -2\n",
+            "output": "\n21.727922061357855\n"
+        },
+        {
+            "input": "\n998 244 353\n",
+            "output": "\n-0.0006269592476489029\n"
+        },
+        {
+            "input": "\n0 0 0\n",
+            "output": "\n1792283455048516.3\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1812,
+    "index": "E",
+    "name": "Not a Geometry Problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "*special",
+        "constructive algorithms",
+        "geometry",
+        "math"
+    ],
+    "solvedCount": 3956
+}

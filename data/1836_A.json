@@ -1,0 +1,30 @@
+{
+    "title": "A. Destroyer",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>John is a lead programmer on a destroyer belonging to the space navy of the Confederacy of Independent Operating Systems. One of his tasks is checking if the electronic brains of robots were damaged during battles.</p><p>A standard test is to order the robots to form one or several lines, in each line the robots should stand one after another. After that, each robot reports the number of robots standing in front of it <span class=\"tex-font-style-bf\">in its line</span>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1e75235cfc37a2a23f4880cb770ce2a4c546c27a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"151px\"/> <span class=\"tex-font-size-small\">An example of robots' arrangement (the front of the lines is on the left). The robots report the numbers above.</span> </center><p>The $$$i$$$-th robot reported number $$$l_i$$$. Unfortunately, John does not know which line each robot stands in, and can't check the reported numbers. Please determine if it is possible to form the lines in such a way that all reported numbers are correct, or not.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 100$$$), denoting the number of test cases.</p><p>The first line in each test case contains a single integer $$$n$$$ ($$$1 \\le n \\le 100$$$)\u00a0\u2014 the number of robots.</p><p>The second line in each test case contains $$$n$$$ integers $$$l_1, l_2, \\ldots, l_n$$$ ($$$0 \\leq l_i &lt; 100$$$), $$$l_i$$$ is equal to the number of robots in front of the $$$i$$$-th robot in its line.</p><p>The sum of $$$n$$$ over all test cases won't exceed $$$200$$$.</p>",
+    "outputSpecification": "<p>For each test case, output \"<span class=\"tex-font-style-tt\">YES</span>\", if there exists a robot arrangement consistent with robots' reports. Otherwise, output \"<span class=\"tex-font-style-tt\">NO</span>\".</p><p>You can output the answer in any case (upper or lower). For example, the strings \"<span class=\"tex-font-style-tt\">yEs</span>\", \"<span class=\"tex-font-style-tt\">yes</span>\", \"<span class=\"tex-font-style-tt\">Yes</span>\", and \"<span class=\"tex-font-style-tt\">YES</span>\" will be recognized as positive responses.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">0 1 2 0 1 0</div><div class=\"test-example-line test-example-line-even test-example-line-2\">9</div><div class=\"test-example-line test-example-line-even test-example-line-2\">0 0 0 0 1 1 1 2 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">0 0 2</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">99</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0 1 2 3 4</div>",
+            "output": "\nYES\nYES\nNO\nNO\nYES\n"
+        }
+    ],
+    "note": "<p>Example arrangement consistent with robot statements from the first example test case: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/afa8d3fad438def99df86d4b0b2c396e4b14cd68.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"151px\"/> </center><p>Example arrangement consistent with robot statements from the second example is shown in the statement.</p><p>In the third test case, the third robot claims that there are two machines in front of it. In such a case, the robot directly in front of it would have one machine in front. No robot claims that, so there is no valid arrangement.</p>",
+    "contestId": 1836,
+    "index": "A",
+    "name": "Destroyer",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 19949
+}

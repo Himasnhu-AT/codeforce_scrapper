@@ -1,0 +1,35 @@
+{
+    "title": "E. Collapsing Strings",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given $$$n$$$ strings $$$s_1, s_2, \\dots, s_n$$$, consisting of lowercase Latin letters. Let $$$|x|$$$ be the length of string $$$x$$$.</p><p>Let a <span class=\"tex-font-style-it\">collapse</span> $$$C(a, b)$$$ of two strings $$$a$$$ and $$$b$$$ be the following operation: </p><ul> <li> if $$$a$$$ is empty, $$$C(a, b) = b$$$; </li><li> if $$$b$$$ is empty, $$$C(a, b) = a$$$; </li><li> if the last letter of $$$a$$$ is equal to the first letter of $$$b$$$, then $$$C(a, b) = C(a_{1,|a|-1}, b_{2,|b|})$$$, where $$$s_{l,r}$$$ is the substring of $$$s$$$ from the $$$l$$$-th letter to the $$$r$$$-th one; </li><li> otherwise, $$$C(a, b) = a + b$$$, i.\u2009e. the concatenation of two strings. </li></ul><p>Calculate $$$\\sum\\limits_{i=1}^n \\sum\\limits_{j=1}^n |C(s_i, s_j)|$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 10^6$$$).</p><p>Each of the next $$$n$$$ lines contains a string $$$s_i$$$ ($$$1 \\le |s_i| \\le 10^6$$$), consisting of lowercase Latin letters.</p><p>The total length of the strings doesn't exceed $$$10^6$$$.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 $$$\\sum\\limits_{i=1}^n \\sum\\limits_{j=1}^n |C(s_i, s_j)|$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">aba</div><div class=\"test-example-line test-example-line-even test-example-line-0\">ab</div><div class=\"test-example-line test-example-line-even test-example-line-0\">ba</div>",
+            "output": "\n20\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-even test-example-line-0\">abab</div><div class=\"test-example-line test-example-line-even test-example-line-0\">babx</div><div class=\"test-example-line test-example-line-even test-example-line-0\">xab</div><div class=\"test-example-line test-example-line-even test-example-line-0\">xba</div><div class=\"test-example-line test-example-line-even test-example-line-0\">bab</div>",
+            "output": "\n126\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1902,
+    "index": "E",
+    "name": "Collapsing Strings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "strings",
+        "trees"
+    ],
+    "solvedCount": 3960
+}

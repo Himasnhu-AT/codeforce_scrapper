@@ -1,0 +1,33 @@
+{
+    "title": "C. Strange Test",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Igor is in 11th grade. Tomorrow he will have to write an informatics test by the strictest teacher in the school, Pavel Denisovich. </p><p>Igor knows how the test will be conducted: first of all, the teacher will give each student two positive integers $$$a$$$ and $$$b$$$ ($$$a &lt; b$$$). After that, the student can apply any of the following operations any number of times: </p><ul> <li> $$$a := a + 1$$$ (increase $$$a$$$ by $$$1$$$), </li><li> $$$b := b + 1$$$ (increase $$$b$$$ by $$$1$$$), </li><li> $$$a := a \\ | \\ b$$$ (replace $$$a$$$ with the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#OR\">bitwise OR</a> of $$$a$$$ and $$$b$$$). </li></ul><p>To get full marks on the test, the student has to tell the teacher the minimum required number of operations to make $$$a$$$ and $$$b$$$ equal.</p><p>Igor already knows which numbers the teacher will give him. Help him figure out what is the minimum number of operations needed to make $$$a$$$ equal to $$$b$$$.</p>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \\le t \\le 10^4$$$). Description of the test cases follows.</p><p>The only line for each test case contains two integers $$$a$$$ and $$$b$$$ ($$$1 \\le a &lt; b \\le 10^6$$$).</p><p><span class=\"tex-font-style-bf\">It is guaranteed that the sum of $$$b$$$ over all test cases does not exceed $$$10^6$$$.</span></p>",
+    "outputSpecification": "<p>For each test case print one integer \u2014 the minimum required number of operations to make $$$a$$$ and $$$b$$$ equal.</p>",
+    "samples": [
+        {
+            "input": "\n5\n1 3\n5 8\n2 5\n3 19\n56678 164422\n",
+            "output": "\n1\n3\n2\n1\n23329\n"
+        }
+    ],
+    "note": "<p>In the first test case, it is optimal to apply the third operation.</p><p>In the second test case, it is optimal to apply the first operation three times.</p><p>In the third test case, it is optimal to apply the second operation and then the third operation.</p>",
+    "contestId": 1632,
+    "index": "C",
+    "name": "Strange Test",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 12362
+}

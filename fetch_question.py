@@ -5,19 +5,25 @@ import codeforces_wrapper
 with open("codeforces_problems.json", 'r') as f:
     problems_json = json.load(f)
 
-all_problems_details = []
+total_question = len(problems_json)
 count = 0
 
 for problem in problems_json:
+    count += 1
+
     if os.path.exists(f'data/{problem["contestId"]}_{problem["index"]}.json'):
         print(f'Skipping problem {problem["contestId"]}_{problem["index"]} as it already exists.')
         continue
-    count += 1
 
     problem_link = f'https://codeforces.com/problemset/problem/{problem["contestId"]}/{problem["index"]}'
-    print(f'Fetching details for problem {count}: {problem_link}')
+    print(f'Fetching details for problem {count}/{total_question}: {problem_link}')
 
     problem_details = codeforces_wrapper.parse_problem(problem_link)
+
+    if problem_details == None:
+        with open(f'data/{problem["contestId"]}_{problem["index"]}.json', 'w') as f:
+            json.dump({}, f, indent=4) 
+            continue
 
     problem_details.update({
         "contestId": problem['contestId'],
@@ -30,10 +36,3 @@ for problem in problems_json:
 
     with open(f'data/{problem["contestId"]}_{problem["index"]}.json', 'w') as f:
         json.dump(problem_details, f, indent=4)
-
-    all_problems_details.append(problem_details)
-
-with open('all_problems.json', 'w') as f:
-    json.dump(all_problems_details, f, indent=4)
-
-print(f'Successfully fetched and saved {len(all_problems_details)} problems.')

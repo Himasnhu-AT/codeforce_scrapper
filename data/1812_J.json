@@ -1,0 +1,31 @@
+{
+    "title": "J. Unmysterious Language",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There is an unmysterious language. You should make a submission in this language, and the judge will read your submission to determine whether it is accepted.</p><p>You can only submit in the Mysterious Language we have provided. You can view the judge's response by clicking the submission ID on the \"My Submissions\" page.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n ",
+            "output": "\n "
+        }
+    ],
+    "note": null,
+    "contestId": 1812,
+    "index": "J",
+    "name": "Unmysterious Language",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "constructive algorithms",
+        "strings"
+    ],
+    "solvedCount": 5814
+}

@@ -1,0 +1,31 @@
+{
+    "title": "F. Forever Winter",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A <span class=\"tex-font-style-it\">snowflake</span> graph is generated from two integers $$$x$$$ and $$$y$$$, both greater than $$$1$$$, as follows: </p><ul> <li> Start with one central vertex. </li><li> Connect $$$x$$$ new vertices to this central vertex. </li><li> Connect $$$y$$$ new vertices to <span class=\"tex-font-style-bf\">each</span> of these $$$x$$$ vertices. </li></ul> For example, below is a snowflake graph for $$$x=5$$$ and $$$y=3$$$. <center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/9f2183c62c4c713927bb18746d1f5455da90f612.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/><p><span class=\"tex-font-size-small\">The snowflake graph above has a central vertex $$$15$$$, then $$$x=5$$$ vertices attached to it ($$$3$$$, $$$6$$$, $$$7$$$, $$$8$$$, and $$$20$$$), and then $$$y=3$$$ vertices attached to each of those.</span> </p></center> Given a snowflake graph, determine the values of $$$x$$$ and $$$y$$$.",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 1000$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains two integers $$$n$$$ and $$$m$$$ ($$$2 \\leq n \\leq 200$$$; $$$1 \\leq m \\leq \\min\\left(1000, \\frac{n(n-1)}{2}\\right)$$$)\u00a0\u2014 the number of vertices and edges in the graph, respectively.</p><p>The next $$$m$$$ lines each contain two integers each $$$u$$$ and $$$v$$$ ($$$1 \\leq u, v \\leq n$$$, $$$u \\neq v$$$)\u00a0\u2014 the numbers of vertices connected by an edge. The graph does not contain multiple edges and self-loops.</p><p><span class=\"tex-font-style-bf\">It is guaranteed that this graph is a snowflake graph for some integers $$$x$$$ and $$$y$$$ both greater than $$$1$$$.</span></p>",
+    "outputSpecification": "<p>For each test case, on a separate line output the values of $$$x$$$ and $$$y$$$, in that order, separated by a space.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">21 20</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">21 20</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">5 20</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">13 20</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">11 3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">10 3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4 8</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">19 8</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">14 8</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">9 7</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">12 7</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">17 7</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">18 6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">16 6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">6 15</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">7 15</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">8 15</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">20 15</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3 15</div><div class=\"test-example-line test-example-line-even test-example-line-2\">7 6</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 6</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 7</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">9 8</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">9 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 6</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">6 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 7</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">4 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 8</div>",
+            "output": "\n5 3\n2 2\n2 3\n"
+        }
+    ],
+    "note": "<p>The first test case is pictured in the statement. Note that the output <span class=\"tex-font-style-tt\">3 5</span> is <span class=\"tex-font-style-bf\">incorrect</span>, since $$$x$$$ should be output before $$$y$$$.</p>",
+    "contestId": 1829,
+    "index": "F",
+    "name": "Forever Winter",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "math"
+    ],
+    "solvedCount": 16435
+}

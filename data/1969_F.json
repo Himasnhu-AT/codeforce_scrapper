@@ -1,0 +1,60 @@
+{
+    "title": "F. Card Pairing",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There is a deck of $$$n$$$ cards, each card has one of $$$k$$$ types. You are given the sequence $$$a_1, a_2, \\dots, a_n$$$ denoting the types of cards in the deck from top to bottom. Both $$$n$$$ and $$$k$$$ are even numbers.</p><p>You play a game with these cards. First, you draw $$$k$$$ topmost cards from the deck. Then, the following happens each turn of the game:</p><ul> <li> you choose <span class=\"tex-font-style-bf\">exactly</span> two cards from your hand and play them. If these cards have the same type, you earn a coin; </li><li> then, if the deck is not empty, you draw <span class=\"tex-font-style-bf\">exactly</span> two top cards from it; </li><li> then, if both your hand and your deck are empty, the game ends. Otherwise, the new turn begins. </li></ul><p>You have to calculate the maximum number of coins you can earn during the game.</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers $$$n$$$ and $$$k$$$ ($$$2 \\le k \\le n \\le 1000$$$, both $$$n$$$ and $$$k$$$ are even).</p><p>The second line of the input contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i \\le k$$$).</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the maximum number of coins you can earn.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 2 1 2</div>",
+            "output": "\n0\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">8 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2 1 2 2 1 2 1 2</div>",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4 4</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 2 1 2</div>",
+            "output": "\n2\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6 4</div><div class=\"test-example-line test-example-line-even test-example-line-0\">3 2 3 1 2 1</div>",
+            "output": "\n3\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6 4</div><div class=\"test-example-line test-example-line-even test-example-line-0\">3 2 3 3 2 1</div>",
+            "output": "\n2\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">18 6</div><div class=\"test-example-line test-example-line-even test-example-line-0\">5 6 1 1 6 5 4 1 5 1 1 6 2 6 2 2 6 3</div>",
+            "output": "\n6\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">8 4</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 2 3 4 4 3 1 2</div>",
+            "output": "\n2\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">8 4</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 2 3 4 4 3 3 2</div>",
+            "output": "\n3\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1969,
+    "index": "F",
+    "name": "Card Pairing",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "hashing",
+        "implementation"
+    ],
+    "solvedCount": 163
+}

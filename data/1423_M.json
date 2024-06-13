@@ -1,0 +1,29 @@
+{
+    "title": "M. Milutin's Plums",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 1024.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>As you all know, the plum harvesting season is on! Little Milutin had his plums planted in an orchard that can be represented as an $$$n$$$ by $$$m$$$ matrix. While he was harvesting, he wrote the heights of all trees in a matrix of dimensions $$$n$$$ by $$$m$$$.</p><p>At night, when he has spare time, he likes to perform various statistics on his trees. This time, he is curious to find out the height of his lowest tree. So far, he has discovered some interesting properties of his orchard. There is one particular property that he thinks is useful for finding the tree with the smallest heigh.</p><p>Formally, let $$$L(i)$$$ be the leftmost tree with the smallest height in the $$$i$$$-th row of his orchard. He knows that $$$L(i) \\le L(i+1)$$$ for all $$$1 \\le i \\le n - 1$$$. Moreover, if he takes a submatrix induced by any subset of rows and any subset of columns, $$$L(i) \\le L(i+1)$$$ will hold for all $$$1 \\le i \\le n'-1$$$, where $$$n'$$$ is the number of rows in that submatrix.</p><p>Since the season is at its peak and he is short on time, he asks you to help him find the plum tree with minimal height.</p>",
+    "inputSpecification": "<p><span class=\"tex-font-style-bf\">This problem is interactive.</span></p><p>The first line of input will contain two integers $$$n$$$ and $$$m$$$, representing the number of rows and the number of columns in Milutin's orchard. It is guaranteed that $$$1 \\le n, m \\le 10^6$$$.</p><p>The following lines will contain the answers to your queries.</p>",
+    "outputSpecification": "<p>Once you know have found the minimum value $$$r$$$, you should print <span class=\"tex-font-style-tt\">! $$$r$$$</span> to the standard output.</p>",
+    "samples": [
+        {
+            "input": "\n5 5\n13 15 10 9 15\n15 17 12 11 17\n10 12 7 6 12\n17 19 14 13 19\n16 18 13 12 18\n",
+            "output": "\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1423,
+    "index": "M",
+    "name": "Milutin's Plums",
+    "type": "PROGRAMMING",
+    "tags": [
+        "interactive"
+    ],
+    "solvedCount": 148
+}

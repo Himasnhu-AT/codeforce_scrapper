@@ -1,0 +1,32 @@
+{
+    "title": "B. Madoka and the Elegant Gift",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Madoka's father just reached $$$1$$$ million subscribers on Mathub! So the website decided to send him a personalized award\u00a0\u2014 The Mathhub's Bit Button! </p><p>The Bit Button is a rectangular table with $$$n$$$ rows and $$$m$$$ columns with $$$0$$$ or $$$1$$$ in each cell. After exploring the table Madoka found out that:</p><ul><li> A subrectangle $$$A$$$ is contained in a subrectangle $$$B$$$ if there's no cell contained in $$$A$$$ but not contained in $$$B$$$.</li><li> Two subrectangles intersect if there is a cell contained in both of them.</li><li> A subrectangle is called <span class=\"tex-font-style-bf\">black</span> if there's no cell with value $$$0$$$ inside it.</li><li> A subrectangle is called <span class=\"tex-font-style-bf\">nice</span> if it's <span class=\"tex-font-style-bf\">black</span> and it's not contained in another <span class=\"tex-font-style-bf\">black</span> subrectangle.</li><li> The table is called <span class=\"tex-font-style-bf\">elegant</span> if there are no two <span class=\"tex-font-style-bf\">nice</span> intersecting subrectangles.</li></ul><p>For example, in the first illustration the red subrectangle is nice, but in the second one it's not, because it's contained in the purple subrectangle.</p><center> <img class=\"tex-graphics\" height=\"215px\" src=\"https://espresso.codeforces.com/2f929e91f6170f9a4f394ef28fd36640c776b05f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"567px\"/> </center><p>Help Madoka to determine whether the table is elegant.</p>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 200$$$)\u00a0\u2014 the number of test cases. Description of the test cases follows.</p><p>The first line of each test case contains two positive integers $$$n, m$$$ ($$$1 \\le n, m \\le 100$$$).</p><p>The next $$$n$$$ lines contain strings of length $$$m$$$ consisting of zeros and ones\u00a0\u2014 the description of the table.</p><p>It is guaranteed that the sum of the values of $$$n$$$ and the sum of the values of $$$m$$$ for all test cases do not exceed $$$777$$$.</p>",
+    "outputSpecification": "<p>For each test case print \"<span class=\"tex-font-style-tt\">YES</span>\" if its table is elegant or print \"<span class=\"tex-font-style-tt\">NO</span>\" otherwise.</p><p>You may print each letter in any case (for example, \"<span class=\"tex-font-style-tt\">YES</span>\", \"<span class=\"tex-font-style-tt\">Yes</span>\", \"<span class=\"tex-font-style-tt\">yes</span>\", \"<span class=\"tex-font-style-tt\">yEs</span>\" will all be recognized as positive answer).</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3 3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">100</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">011</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">011</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">110</div><div class=\"test-example-line test-example-line-even test-example-line-2\">111</div><div class=\"test-example-line test-example-line-even test-example-line-2\">110</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">01111</div><div class=\"test-example-line test-example-line-even test-example-line-4\">4 5</div><div class=\"test-example-line test-example-line-even test-example-line-4\">11111</div><div class=\"test-example-line test-example-line-even test-example-line-4\">01010</div><div class=\"test-example-line test-example-line-even test-example-line-4\">01000</div><div class=\"test-example-line test-example-line-even test-example-line-4\">01000</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">3 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">11</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">00</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">11</div>",
+            "output": "\nYES\nNO\nYES\nNO\nYES\n"
+        }
+    ],
+    "note": "<p>In the second test case the table is not elegant, because the red and the purple subrectangles are nice and intersect. </p><center> <img class=\"tex-graphics\" height=\"215px\" src=\"https://espresso.codeforces.com/7b27ead4a4b66fb277544ae2fc2c3ce1f0a0aa09.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"215px\"/> </center><p>In the fourth test case the table is not elegant, because the red and the purple subrectangles are nice and intersect. </p><center> <img class=\"tex-graphics\" height=\"215px\" src=\"https://espresso.codeforces.com/27fe27a1e96e910b1dd3743a664c14ac92897c1d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"265px\"/> </center>",
+    "contestId": 1647,
+    "index": "B",
+    "name": "Madoka and the Elegant Gift",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "graphs",
+        "implementation"
+    ],
+    "solvedCount": 15142
+}

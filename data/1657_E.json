@@ -1,0 +1,44 @@
+{
+    "title": "E. Star MST",
+    "timeLimit": {
+        "value": 6.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In this problem, we will consider <span class=\"tex-font-style-bf\">complete</span> undirected graphs consisting of $$$n$$$ vertices with weighted edges. The weight of each edge is an integer from $$$1$$$ to $$$k$$$.</p><p>An undirected graph is considered <span class=\"tex-font-style-bf\">beautiful</span> if the sum of weights of all edges incident to vertex $$$1$$$ is equal to the weight of MST in the graph. MST is the minimum spanning tree\u00a0\u2014 a tree consisting of $$$n-1$$$ edges of the graph, which connects all $$$n$$$ vertices and has the minimum sum of weights among all such trees; the weight of MST is the sum of weights of all edges in it.</p><p>Calculate the number of <span class=\"tex-font-style-bf\">complete</span> <span class=\"tex-font-style-bf\">beautiful</span> graphs having exactly $$$n$$$ vertices and the weights of edges from $$$1$$$ to $$$k$$$. Since the answer might be large, print it modulo $$$998244353$$$.</p>",
+    "inputSpecification": "<p>The only line contains two integers $$$n$$$ and $$$k$$$ ($$$2 \\le n \\le 250$$$; $$$1 \\le k \\le 250$$$).</p>",
+    "outputSpecification": "<p>Print one integer\u00a0\u2014 the number of <span class=\"tex-font-style-bf\">complete</span> <span class=\"tex-font-style-bf\">beautiful</span> graphs having exactly $$$n$$$ vertices and the weights of edges from $$$1$$$ to $$$k$$$. Since the answer might be large, print it modulo $$$998244353$$$.</p>",
+    "samples": [
+        {
+            "input": "\n3 2\n",
+            "output": "\n5\n"
+        },
+        {
+            "input": "\n4 4\n",
+            "output": "\n571\n"
+        },
+        {
+            "input": "\n6 9\n",
+            "output": "\n310640163\n"
+        },
+        {
+            "input": "\n42 13\n",
+            "output": "\n136246935\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1657,
+    "index": "E",
+    "name": "Star MST",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "graph matchings",
+        "math"
+    ],
+    "solvedCount": 2001
+}

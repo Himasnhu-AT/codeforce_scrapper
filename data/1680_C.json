@@ -1,0 +1,32 @@
+{
+    "title": "C. Binary String",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a string $$$s$$$ consisting of characters <span class=\"tex-font-style-tt\">0</span> and/or <span class=\"tex-font-style-tt\">1</span>.</p><p>You have to remove several (possibly zero) characters from the beginning of the string, and then several (possibly zero) characters from the end of the string. <span class=\"tex-font-style-bf\">The string may become empty after the removals</span>. The cost of the removal is the <span class=\"tex-font-style-bf\">maximum</span> of the following two values:</p><ul> <li> the number of characters <span class=\"tex-font-style-tt\">0</span> left in the string; </li><li> the number of characters <span class=\"tex-font-style-tt\">1</span> removed from the string. </li></ul><p>What is the <span class=\"tex-font-style-bf\">minimum</span> cost of removal you can achieve?</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$) \u2014 the number of test cases.</p><p>Each test case consists of one line containing the string $$$s$$$ ($$$1 \\le |s| \\le 2 \\cdot 10^5$$$), consisting of characters <span class=\"tex-font-style-tt\">0</span> and/or <span class=\"tex-font-style-tt\">1</span>.</p><p>The total length of strings $$$s$$$ in all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, print one integer \u2014 the minimum cost of removal you can achieve.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">101110110</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1001001001001</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">0000111111</div><div class=\"test-example-line test-example-line-even test-example-line-4\">00000</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1111</div>",
+            "output": "\n1\n3\n0\n0\n0\n"
+        }
+    ],
+    "note": "<p>Consider the test cases of the example:</p><ol> <li> in the first test case, it's possible to remove two characters from the beginning and one character from the end. Only one <span class=\"tex-font-style-tt\">1</span> is deleted, only one <span class=\"tex-font-style-tt\">0</span> remains, so the cost is $$$1$$$; </li><li> in the second test case, it's possible to remove three characters from the beginning and six characters from the end. Two characters <span class=\"tex-font-style-tt\">0</span> remain, three characters <span class=\"tex-font-style-tt\">1</span> are deleted, so the cost is $$$3$$$; </li><li> in the third test case, it's optimal to remove four characters from the beginning; </li><li> in the fourth test case, it's optimal to remove the whole string; </li><li> in the fifth test case, it's optimal to leave the string as it is. </li></ol>",
+    "contestId": 1680,
+    "index": "C",
+    "name": "Binary String",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "greedy",
+        "strings",
+        "two pointers"
+    ],
+    "solvedCount": 9607
+}

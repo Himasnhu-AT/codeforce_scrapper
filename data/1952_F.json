@@ -1,0 +1,29 @@
+{
+    "title": "F. Grid",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"input-specification\"><div class=\"section-title\">Input</div><p>The input contains $$$21$$$ lines, each containing $$$21$$$ characters $$$\\texttt{0}$$$ or $$$\\texttt{1}$$$.</p></div><div class=\"sample-tests\"><div class=\"section-title\">Example</div><div class=\"sample-test\"><div class=\"input\"><div class=\"title\">Input</div><pre>\n<div class=\"test-example-line test-example-line-even test-example-line-0\">111111101011101111111</div><div class=\"test-example-line test-example-line-even test-example-line-0\">100000100011001000001</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110101101001011101</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110101100101011101</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110101001001011101</div><div class=\"test-example-line test-example-line-even test-example-line-0\">100000100111101000001</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111111101010101111111</div><div class=\"test-example-line test-example-line-even test-example-line-0\">000000000001100000000</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111100101111110011101</div><div class=\"test-example-line test-example-line-even test-example-line-0\">000111010101100110101</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111101101101001000011</div><div class=\"test-example-line test-example-line-even test-example-line-0\">001001000001000011000</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111101110000111001011</div><div class=\"test-example-line test-example-line-even test-example-line-0\">000000001001001111100</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111111100001101010000</div><div class=\"test-example-line test-example-line-even test-example-line-0\">100000100010010100111</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110100110110011100</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110101100000100010</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110101010110000100</div><div class=\"test-example-line test-example-line-even test-example-line-0\">100000101000011001001</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111111101011111111100</div></pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n12\n</pre></div></div></div>",
+    "inputSpecification": "<p>The input contains $$$21$$$ lines, each containing $$$21$$$ characters $$$\\texttt{0}$$$ or $$$\\texttt{1}$$$.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">111111101011101111111</div><div class=\"test-example-line test-example-line-even test-example-line-0\">100000100011001000001</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110101101001011101</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110101100101011101</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110101001001011101</div><div class=\"test-example-line test-example-line-even test-example-line-0\">100000100111101000001</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111111101010101111111</div><div class=\"test-example-line test-example-line-even test-example-line-0\">000000000001100000000</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111100101111110011101</div><div class=\"test-example-line test-example-line-even test-example-line-0\">000111010101100110101</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111101101101001000011</div><div class=\"test-example-line test-example-line-even test-example-line-0\">001001000001000011000</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111101110000111001011</div><div class=\"test-example-line test-example-line-even test-example-line-0\">000000001001001111100</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111111100001101010000</div><div class=\"test-example-line test-example-line-even test-example-line-0\">100000100010010100111</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110100110110011100</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110101100000100010</div><div class=\"test-example-line test-example-line-even test-example-line-0\">101110101010110000100</div><div class=\"test-example-line test-example-line-even test-example-line-0\">100000101000011001001</div><div class=\"test-example-line test-example-line-even test-example-line-0\">111111101011111111100</div>",
+            "output": "\n12\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1952,
+    "index": "F",
+    "name": "Grid",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force"
+    ],
+    "solvedCount": 1675
+}

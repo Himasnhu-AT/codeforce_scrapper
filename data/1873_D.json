@@ -1,0 +1,31 @@
+{
+    "title": "D. 1D Eraser",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a strip of paper $$$s$$$ that is $$$n$$$ cells long. Each cell is either black or white. In an operation you can take any $$$k$$$ consecutive cells and make them all white.</p><p>Find the minimum number of operations needed to remove all black cells.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 1000$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\leq k \\leq n \\leq 2 \\cdot 10^5$$$)\u00a0\u2014 the length of the paper and the integer used in the operation.</p><p>The second line of each test case contains a string $$$s$$$ of length $$$n$$$ consisting of characters $$$\\texttt{B}$$$ (representing a black cell) or $$$\\texttt{W}$$$ (representing a white cell).</p><p>The sum of $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer\u00a0\u2014 the minimum number of operations needed to remove all black cells.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">8</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">6 3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">WBWWWB</div><div class=\"test-example-line test-example-line-even test-example-line-2\">7 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">WWBWBWW</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5 4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">BWBWB</div><div class=\"test-example-line test-example-line-even test-example-line-4\">5 5</div><div class=\"test-example-line test-example-line-even test-example-line-4\">BBBBB</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">8 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">BWBWBBBB</div><div class=\"test-example-line test-example-line-even test-example-line-6\">10 2</div><div class=\"test-example-line test-example-line-even test-example-line-6\">WBBWBBWBBW</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">4 1</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">BBBB</div><div class=\"test-example-line test-example-line-even test-example-line-8\">3 2</div><div class=\"test-example-line test-example-line-even test-example-line-8\">WWW</div>",
+            "output": "\n2\n1\n2\n1\n4\n3\n4\n0\n"
+        }
+    ],
+    "note": "<p>In the first test case you can perform the following operations: $$$$$$\\color{red}{\\texttt{WBW}}\\texttt{WWB} \\to \\texttt{WWW}\\color{red}{\\texttt{WWB}} \\to \\texttt{WWWWWW}$$$$$$</p><p>In the second test case you can perform the following operations: $$$$$$\\texttt{WW}\\color{red}{\\texttt{BWB}}\\texttt{WW} \\to \\texttt{WWWWWWW}$$$$$$</p><p>In the third test case you can perform the following operations: $$$$$$\\texttt{B}\\color{red}{\\texttt{WBWB}} \\to \\color{red}{\\texttt{BWWW}}\\texttt{W} \\to \\texttt{WWWWW}$$$$$$</p>",
+    "contestId": 1873,
+    "index": "D",
+    "name": "1D Eraser",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation",
+        "two pointers"
+    ],
+    "solvedCount": 33342
+}

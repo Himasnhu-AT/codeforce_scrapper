@@ -1,0 +1,30 @@
+{
+    "title": "A. My First Sorting Problem",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two integers $$$x$$$ and $$$y$$$. </p><p>Output two integers: the minimum of $$$x$$$ and $$$y$$$, followed by the maximum of $$$x$$$ and $$$y$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 100$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains two space-separated integers $$$x$$$ and $$$y$$$ ($$$0 \\leq x, y \\leq 9$$$).</p>",
+    "outputSpecification": "<p>For each test case, output two integers: the minimum of $$$x$$$ and $$$y$$$, followed by the maximum of $$$x$$$ and $$$y$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 9</div><div class=\"test-example-line test-example-line-even test-example-line-2\">8 4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 4</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3 4</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">2 0</div><div class=\"test-example-line test-example-line-even test-example-line-6\">2 4</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">6 9</div><div class=\"test-example-line test-example-line-even test-example-line-8\">3 3</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">0 0</div><div class=\"test-example-line test-example-line-even test-example-line-10\">9 9</div>",
+            "output": "\n1 9\n4 8\n1 4\n3 4\n0 2\n2 4\n6 9\n3 3\n0 0\n9 9\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1971,
+    "index": "A",
+    "name": "My First Sorting Problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 37879
+}

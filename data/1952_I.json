@@ -1,0 +1,30 @@
+{
+    "title": "I. Dark Matter",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><a href=\"https://codeforces.com/contest/1952/attachments/download/24855/dark-matter-en.pdf\">View the statement as a PDF.</a></p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">1 + 1</div>",
+            "output": "\n3\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1952,
+    "index": "I",
+    "name": "Dark Matter",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "geometry"
+    ],
+    "solvedCount": 390
+}

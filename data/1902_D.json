@@ -1,0 +1,40 @@
+{
+    "title": "D. Robot Queries",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There is an infinite $$$2$$$-dimensional grid. Initially, a robot stands in the point $$$(0, 0)$$$. The robot can execute four commands:</p><ul> <li> <span class=\"tex-font-style-tt\">U</span>\u00a0\u2014 move from point $$$(x, y)$$$ to $$$(x, y + 1)$$$; </li><li> <span class=\"tex-font-style-tt\">D</span>\u00a0\u2014 move from point $$$(x, y)$$$ to $$$(x, y - 1)$$$; </li><li> <span class=\"tex-font-style-tt\">L</span>\u00a0\u2014 move from point $$$(x, y)$$$ to $$$(x - 1, y)$$$; </li><li> <span class=\"tex-font-style-tt\">R</span>\u00a0\u2014 move from point $$$(x, y)$$$ to $$$(x + 1, y)$$$. </li></ul><p>You are given a sequence of commands $$$s$$$ of length $$$n$$$. Your task is to answer $$$q$$$ <span class=\"tex-font-style-bf\">independent</span> queries: given four integers $$$x$$$, $$$y$$$, $$$l$$$ and $$$r$$$; determine whether the robot visits the point $$$(x, y)$$$, while executing a sequence $$$s$$$, but the substring from $$$l$$$ to $$$r$$$ is reversed (i.\u2009e. the robot performs commands in order $$$s_1 s_2 s_3 \\dots s_{l-1} s_r s_{r-1} s_{r-2} \\dots s_l s_{r+1} s_{r+2} \\dots s_n$$$).</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$q$$$ ($$$1 \\le n, q \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the length of the command sequence and the number of queries, respectively.</p><p>The second line contains a string $$$s$$$ of length $$$n$$$, consisting of characters <span class=\"tex-font-style-tt\">U</span>, <span class=\"tex-font-style-tt\">D</span>, <span class=\"tex-font-style-tt\">L</span> and/or <span class=\"tex-font-style-tt\">R</span>.</p><p>Then $$$q$$$ lines follow, the $$$i$$$-th of them contains four integers $$$x_i$$$, $$$y_i$$$, $$$l_i$$$ and $$$r_i$$$ ($$$-n \\le x_i, y_i \\le n$$$; $$$1 \\le l \\le r \\le n$$$) describing the $$$i$$$-th query.</p>",
+    "outputSpecification": "<p>For each query, print <span class=\"tex-font-style-tt\">YES</span> if the robot visits the point $$$(x, y)$$$, while executing a sequence $$$s$$$, but the substring from $$$l$$$ to $$$r$$$ is reversed; otherwise print <span class=\"tex-font-style-tt\">NO</span>.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">8 3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">RDLLUURU</div><div class=\"test-example-line test-example-line-even test-example-line-0\">-1 2 1 7</div><div class=\"test-example-line test-example-line-even test-example-line-0\">0 0 3 4</div><div class=\"test-example-line test-example-line-even test-example-line-0\">0 1 7 8</div>",
+            "output": "\nYES\nYES\nNO\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">RLDU</div><div class=\"test-example-line test-example-line-even test-example-line-0\">0 0 2 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">-1 -1 2 3</div>",
+            "output": "\nYES\nNO\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">10 6</div><div class=\"test-example-line test-example-line-even test-example-line-0\">DLUDLRULLD</div><div class=\"test-example-line test-example-line-even test-example-line-0\">-1 0 1 10</div><div class=\"test-example-line test-example-line-even test-example-line-0\">-1 -2 2 5</div><div class=\"test-example-line test-example-line-even test-example-line-0\">-4 -2 6 10</div><div class=\"test-example-line test-example-line-even test-example-line-0\">-1 0 3 9</div><div class=\"test-example-line test-example-line-even test-example-line-0\">0 1 4 7</div><div class=\"test-example-line test-example-line-even test-example-line-0\">-3 -1 5 8</div>",
+            "output": "\nYES\nYES\nYES\nNO\nYES\nYES\n"
+        }
+    ],
+    "note": "<p>In the first query of the first sample, the path of the robot looks as follows: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/97a9aa5b9f062afe4eda35fb2b9aa03cd5dea859.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second query of the first sample, the path of the robot looks as follows: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/238b1203489b978f6bbd0d8c47cb4479ec4dbe03.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the third query of the first sample, the path of the robot looks as follows: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c1a3a03fc4d1bb5d6fef595f7694924b316aa5da.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1902,
+    "index": "D",
+    "name": "Robot Queries",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "implementation"
+    ],
+    "solvedCount": 3758
+}

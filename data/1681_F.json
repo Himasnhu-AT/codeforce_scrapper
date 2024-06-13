@@ -1,0 +1,50 @@
+{
+    "title": "F. Unique Occurrences",
+    "timeLimit": {
+        "value": 6.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 1024.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a tree, consisting of $$$n$$$ vertices. Each edge has an integer value written on it.</p><p>Let $$$f(v, u)$$$ be the number of values that appear <span class=\"tex-font-style-bf\">exactly once</span> on the edges of a simple path between vertices $$$v$$$ and $$$u$$$.</p><p>Calculate the sum of $$$f(v, u)$$$ over all pairs of vertices $$$v$$$ and $$$u$$$ such that $$$1 \\le v &lt; u \\le n$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$2 \\le n \\le 5 \\cdot 10^5$$$)\u00a0\u2014 the number of vertices in the tree.</p><p>Each of the next $$$n-1$$$ lines contains three integers $$$v, u$$$ and $$$x$$$ ($$$1 \\le v, u, x \\le n$$$)\u00a0\u2014 the description of an edge: the vertices it connects and the value written on it.</p><p>The given edges form a tree.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the sum of $$$f(v, u)$$$ over all pairs of vertices $$$v$$$ and $$$u$$$ such that $$$v &lt; u$$$.</p>",
+    "samples": [
+        {
+            "input": "\n3\n1 2 1\n1 3 2\n",
+            "output": "\n4\n"
+        },
+        {
+            "input": "\n3\n1 2 2\n1 3 2\n",
+            "output": "\n2\n"
+        },
+        {
+            "input": "\n5\n1 4 4\n1 2 3\n3 4 4\n4 5 5\n",
+            "output": "\n14\n"
+        },
+        {
+            "input": "\n2\n2 1 1\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n10\n10 2 3\n3 8 8\n4 8 9\n5 8 5\n3 10 7\n7 8 2\n5 6 6\n9 3 4\n1 6 3\n",
+            "output": "\n120\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1681,
+    "index": "F",
+    "name": "Unique Occurrences",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "divide and conquer",
+        "dp",
+        "dsu",
+        "trees"
+    ],
+    "solvedCount": 1584
+}

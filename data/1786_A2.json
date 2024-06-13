@@ -1,0 +1,29 @@
+{
+    "title": "A2. Alternating Deck (hard version)",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">This is a hard version of the problem. In this version, there are two colors of the cards.</span></p><p>Alice has $$$n$$$ cards, each card is either black or white. The cards are stacked in a deck in such a way that the card colors alternate, starting from a white card. Alice deals the cards to herself and to Bob, dealing at once several cards from the top of the deck in the following order: one card to herself, two cards to Bob, three cards to Bob, four cards to herself, five cards to herself, six cards to Bob, seven cards to Bob, eight cards to herself, and so on. In other words, on the $$$i$$$-th step, Alice deals $$$i$$$ top cards from the deck to one of the players; on the first step, she deals the cards to herself and then alternates the players every two steps. When there aren't enough cards at some step, Alice deals all the remaining cards to the current player, and the process stops.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/b94a6ad9054dcdbf7e9bd35d9a84e555c8c8cb36.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"378px\"/> <span class=\"tex-font-size-small\">First Alice's steps in a deck of many cards.</span> </center><p>How many cards of each color will Alice and Bob have at the end?</p>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \\le t \\le 200$$$). The description of the test cases follows</p><p>The only line of each test case contains a single integer $$$n$$$ ($$$1 \\le n \\le 10^6$$$)\u00a0\u2014 the number of cards.</p>",
+    "outputSpecification": "<p>For each test case print four integers\u00a0\u2014 the number of cards in the end for each player\u00a0\u2014 in this order: white cards Alice has, black cards Alice has, white cards Bob has, black cards Bob has.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">10</div><div class=\"test-example-line test-example-line-even test-example-line-2\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">17</div><div class=\"test-example-line test-example-line-even test-example-line-4\">8</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1000000</div>",
+            "output": "\n3 2 2 3\n1 0 2 3\n6 4 3 4\n2 1 2 3\n250278 249924 249722 250076\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1786,
+    "index": "A2",
+    "name": "Alternating Deck (hard version)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 11262
+}

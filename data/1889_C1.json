@@ -1,0 +1,33 @@
+{
+    "title": "C1. Doremy's Drying Plan (Easy Version)",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">The only differences between the two versions of this problem are the constraint on $$$k$$$, the time limit and the memory limit. You can make hacks only if all versions of the problem are solved.</span></p><p>Doremy lives in a rainy country consisting of $$$n$$$ cities numbered from $$$1$$$ to $$$n$$$.</p><p>The weather broadcast predicted the distribution of rain in the next $$$m$$$ days. In the $$$i$$$-th day, it will rain in the cities in the interval $$$[l_i, r_i]$$$. A city is called dry if it will never rain in that city in the next $$$m$$$ days.</p><p>It turns out that Doremy has a special power. She can choose $$$k$$$ days (in the easy version, $$$k = 2$$$), and during these days it will not rain. Doremy wants to calculate the maximum number of dry cities after using the special power.</p>",
+    "inputSpecification": "<p>The input consists of multiple test cases. The first line contains a single integer $$$t$$$ ($$$1\\le t\\le 10^4$$$)\u00a0\u2014 the number of test cases. The description of the test cases follows.</p><p>The first line contains three integers $$$n$$$, $$$m$$$ and $$$k$$$ ($$$1\\le n\\le 2\\cdot 10^5$$$, $$$2 \\le m \\le 2\\cdot 10^5$$$, $$$k = 2$$$)\u00a0\u2014 the number of cities, the number of days, and the number of days of rain that Doremy can prevent.</p><p>Then, $$$m$$$ lines follow. The $$$i$$$-th line contains two integers $$$l_i$$$, $$$r_i$$$ ($$$1\\le l_i\\le r_i\\le n$$$)\u00a0\u2014 the rain coverage on day $$$i$$$.</p><p>It is guaranteed that the sum of $$$n$$$ and the sum of $$$m$$$ over all test cases do not exceed $$$2\\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output one integer\u00a0\u2014 the maximum number of dry cities.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 3 2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5 3 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">10 6 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">6 10</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 7</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5 8</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 4</div><div class=\"test-example-line test-example-line-even test-example-line-4\">100 6 2</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 100</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 100</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 100</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 100</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 100</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 100</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1000 2 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1 1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1 1</div><div class=\"test-example-line test-example-line-even test-example-line-6\">20 5 2</div><div class=\"test-example-line test-example-line-even test-example-line-6\">9 20</div><div class=\"test-example-line test-example-line-even test-example-line-6\">3 3</div><div class=\"test-example-line test-example-line-even test-example-line-6\">10 11</div><div class=\"test-example-line test-example-line-even test-example-line-6\">11 13</div><div class=\"test-example-line test-example-line-even test-example-line-6\">6 18</div>",
+            "output": "\n1\n2\n3\n0\n1000\n15\n"
+        }
+    ],
+    "note": "<p>In the first test case, if Doremy prevents</p><ul> <li> rain $$$1,2$$$, then city $$$2$$$ will be dry; </li><li> rain $$$2,3$$$, then no city will be dry; </li><li> rain $$$1,3$$$, then no city will be dry; </li></ul><p>So there is at most $$$1$$$ dry city.</p><p>In the second test case, if Doremy prevents</p><ul> <li> rain $$$1,2$$$, then city $$$1,2$$$ will be dry; </li><li> rain $$$2,3$$$, then city $$$4,5$$$ will be dry; </li><li> rain $$$1,3$$$, then city $$$1,5$$$ will be dry. </li></ul><p>So there are at most $$$2$$$ dry cities.</p><p>In the third test case, it is optimal to prevent rain $$$2,5$$$.</p><p>In the forth test case, there is always $$$4$$$ days of rain that wets all the cities and cannot be prevented.</p>",
+    "contestId": 1889,
+    "index": "C1",
+    "name": "Doremy's Drying Plan (Easy Version)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 3070
+}

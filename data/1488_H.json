@@ -1,0 +1,39 @@
+{
+    "title": "H. Build From Suffixes",
+    "timeLimit": {
+        "value": 10.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an integer $$$n$$$ and a sequence $$$a$$$ of $$$n-1$$$ integers, each element is either $$$0$$$ or $$$1$$$.</p><p>You are asked to build a string of length $$$n$$$ such that: </p><ul> <li> each letter is one of \"<span class=\"tex-font-style-tt\">abcd</span>\"; </li><li> if $$$a_i=1$$$, then the $$$i$$$-th suffix of the string is lexicographically smaller than the $$$(i+1)$$$-th suffix; </li><li> if $$$a_i=0$$$, then the $$$i$$$-th suffix of the string is lexicographically greater than the $$$(i+1)$$$-th suffix. </li></ul><p>You will be asked $$$q$$$ queries of form: </p><ul> <li> $$$i$$$ ($$$1 \\le i \\le n - 1$$$)\u00a0\u2014 flip the value of $$$a_i$$$ (if $$$a_i=0$$$, then set $$$a_i$$$ to $$$1$$$, and vice versa). </li></ul><p>After each query print the number of different strings that satisfy the given constraints modulo $$$998\\,244\\,353$$$.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$q$$$ ($$$2 \\le n \\le 10^5$$$; $$$1 \\le q \\le 10^5$$$)\u00a0\u2014 the length of the string and the number of queries.</p><p>The second line contains $$$n-1$$$ integers $$$a_1, a_2, \\dots, a_{n-1}$$$ ($$$a_i \\in \\{0, 1\\}$$$)\u00a0\u2014 the constraints on suffixes of the string.</p><p>Each of the next $$$q$$$ lines contains a query: an integer $$$i$$$ ($$$1 \\le i \\le n - 1$$$)\u00a0\u2014 flip the value of $$$a_i$$$ (if $$$a_i=0$$$, then set $$$a_i$$$ to $$$1$$$, and vice versa).</p>",
+    "outputSpecification": "<p>After each query print the number of different strings that satisfy the given constraints modulo $$$998\\,244\\,353$$$.</p>",
+    "samples": [
+        {
+            "input": "\n2 2\n0\n1\n1\n",
+            "output": "\n6\n10\n"
+        },
+        {
+            "input": "\n3 4\n0 0\n1\n2\n1\n2\n",
+            "output": "\n20\n10\n14\n20\n"
+        },
+        {
+            "input": "\n10 10\n0 0 0 1 1 1 0 1 0\n4\n1\n8\n4\n2\n9\n5\n6\n6\n8\n",
+            "output": "\n1815\n3201\n2710\n2776\n2290\n1644\n2668\n1271\n2668\n2436\n"
+        }
+    ],
+    "note": "<p>The $$$i$$$-th suffix of a string is a continuous substring that starts from the $$$i$$$-th position and ends in the last position.</p><p>A string $$$a$$$ is lexicographically smaller than a string $$$b$$$ if and only if one of the following holds: </p><ul> <li> $$$a$$$ is a prefix of $$$b$$$, but $$$a \\ne b$$$; </li><li> in the first position where $$$a$$$ and $$$b$$$ differ, the string $$$a$$$ has a letter that appears earlier in the alphabet than the corresponding letter in $$$b$$$. </li></ul><p>Two strings $$$a$$$ and $$$b$$$ of length $$$n$$$ differ if there exists a position $$$i$$$ such that $$$a_i \\neq b_i$$$.</p>",
+    "contestId": 1488,
+    "index": "H",
+    "name": "Build From Suffixes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "combinatorics",
+        "data structures"
+    ],
+    "solvedCount": 55
+}

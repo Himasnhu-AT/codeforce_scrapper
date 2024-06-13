@@ -1,0 +1,29 @@
+{
+    "title": "C. Stripes",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>On an $$$8 \\times 8$$$ grid, some horizontal rows have been painted red, and some vertical columns have been painted blue, in some order. The stripes are drawn sequentially, one after the other. When the stripe is drawn, it repaints all the cells through which it passes.</p><p>Determine which color was used last.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/e44018546a770848b159d608b884d02eee49e4d4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">The red stripe was painted after the blue one, so the answer is <span class=\"tex-font-style-tt\">R</span>.</span> </center>",
+    "inputSpecification": "<p>The first line of the input contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 4000$$$)\u00a0\u2014 the number of test cases. The description of test cases follows. There is an empty line before each test case.</p><p>Each test case consists of $$$8$$$ lines, each containing $$$8$$$ characters. Each of these characters is either '<span class=\"tex-font-style-tt\">R</span>', '<span class=\"tex-font-style-tt\">B</span>', or '<span class=\"tex-font-style-tt\">.</span>', denoting a red square, a blue square, and an unpainted square, respectively.</p><p>It is guaranteed that the given field is obtained from a colorless one by drawing horizontal red rows and vertical blue columns.</p><p>At least one stripe is painted.</p>",
+    "outputSpecification": "<p>For each test case, output '<span class=\"tex-font-style-tt\">R</span>' if a red stripe was painted last, and '<span class=\"tex-font-style-tt\">B</span>' if a blue stripe was painted last (without quotes).</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\"><br/></div><div class=\"test-example-line test-example-line-odd test-example-line-1\">....B...</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">....B...</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">....B...</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">RRRRRRRR</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">....B...</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">....B...</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">....B...</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">....B...</div><div class=\"test-example-line test-example-line-even test-example-line-2\"><br/></div><div class=\"test-example-line test-example-line-even test-example-line-2\">RRRRRRRB</div><div class=\"test-example-line test-example-line-even test-example-line-2\">B......B</div><div class=\"test-example-line test-example-line-even test-example-line-2\">B......B</div><div class=\"test-example-line test-example-line-even test-example-line-2\">B......B</div><div class=\"test-example-line test-example-line-even test-example-line-2\">B......B</div><div class=\"test-example-line test-example-line-even test-example-line-2\">B......B</div><div class=\"test-example-line test-example-line-even test-example-line-2\">B......B</div><div class=\"test-example-line test-example-line-even test-example-line-2\">RRRRRRRB</div><div class=\"test-example-line test-example-line-odd test-example-line-3\"><br/></div><div class=\"test-example-line test-example-line-odd test-example-line-3\">RRRRRRBB</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">.B.B..BB</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">RRRRRRBB</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">.B.B..BB</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">.B.B..BB</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">RRRRRRBB</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">.B.B..BB</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">.B.B..BB</div><div class=\"test-example-line test-example-line-even test-example-line-4\"><br/></div><div class=\"test-example-line test-example-line-even test-example-line-4\">........</div><div class=\"test-example-line test-example-line-even test-example-line-4\">........</div><div class=\"test-example-line test-example-line-even test-example-line-4\">........</div><div class=\"test-example-line test-example-line-even test-example-line-4\">RRRRRRRR</div><div class=\"test-example-line test-example-line-even test-example-line-4\">........</div><div class=\"test-example-line test-example-line-even test-example-line-4\">........</div><div class=\"test-example-line test-example-line-even test-example-line-4\">........</div><div class=\"test-example-line test-example-line-even test-example-line-4\">........</div>",
+            "output": "\nR\nB\nB\nR\n"
+        }
+    ],
+    "note": "<p>The first test case is pictured in the statement.</p><p>In the second test case, the first blue column is painted first, then the first and last red rows, and finally the last blue column. Since a blue stripe is painted last, the answer is <span class=\"tex-font-style-tt\">B</span>.</p>",
+    "contestId": 1742,
+    "index": "C",
+    "name": "Stripes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 31512
+}

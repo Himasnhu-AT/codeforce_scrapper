@@ -1,0 +1,29 @@
+{
+    "title": "A. Immobile Knight",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There is a chess board of size $$$n \\times m$$$. The rows are numbered from $$$1$$$ to $$$n$$$, the columns are numbered from $$$1$$$ to $$$m$$$.</p><p>Let's call a cell <span class=\"tex-font-style-it\">isolated</span> if a knight placed in that cell can't move to any other cell on the board. Recall that a chess knight moves two cells in one direction and one cell in a perpendicular direction: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/432687805e7211565c63b0d971b3155ae3cbf480.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Find any <span class=\"tex-font-style-it\">isolated</span> cell on the board. If there are no such cells, print any cell on the board.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 64$$$)\u00a0\u2014 the number of testcases.</p><p>The only line of each testcase contains two integers $$$n$$$ and $$$m$$$ ($$$1 \\le n, m \\le 8$$$)\u00a0\u2014 the number of rows and columns of the board.</p>",
+    "outputSpecification": "<p>For each testcase, print two integers\u00a0\u2014 the row and the column of any <span class=\"tex-font-style-it\">isolated</span> cell on the board. If there are no such cells, print any cell on the board.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 7</div><div class=\"test-example-line test-example-line-even test-example-line-2\">8 8</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 3</div>",
+            "output": "\n1 7\n7 2\n2 2\n"
+        }
+    ],
+    "note": "<p>In the first testcase, all cells are <span class=\"tex-font-style-it\">isolated</span>. A knight can't move from any cell of the board to any other one. Thus, any cell on board is a correct answer.</p><p>In the second testcase, there are no <span class=\"tex-font-style-it\">isolated</span> cells. On a normal chess board, a knight has at least two moves from any cell. Thus, again, any cell is a correct answer.</p><p>In the third testcase, only the middle cell of the board is <span class=\"tex-font-style-it\">isolated</span>. The knight can move freely around the border of the board, but can't escape the middle.</p>",
+    "contestId": 1739,
+    "index": "A",
+    "name": "Immobile Knight",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 22387
+}

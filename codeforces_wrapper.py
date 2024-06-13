@@ -5,17 +5,21 @@ import requests
 def parse_problem(problem_link):
     markup = requests.get(problem_link).text
     soup = bs4.BeautifulSoup(markup, "html.parser")
-    problem = {
-        "title": soup.find('div', 'title').string,
-        "timeLimit": split_limit(soup.find('div', 'time-limit').contents[1].string),
-        "memoryLimit": split_limit(soup.find('div', 'memory-limit').contents[1].string),
-        "statement": get_statement(soup),
-        "inputSpecification": get_content(soup, 'input-specification'),
-        "outputSpecification": get_content(soup, 'output-specification'),
-        "samples": get_sample_tests(soup),
-        "note": get_content(soup, 'note'),
-    }
-    return problem
+    try:
+        problem = {
+            "title": soup.find('div', 'title').string,
+            "timeLimit": split_limit(soup.find('div', 'time-limit').contents[1].string),
+            "memoryLimit": split_limit(soup.find('div', 'memory-limit').contents[1].string),
+            "statement": get_statement(soup),
+            "inputSpecification": get_content(soup, 'input-specification'),
+            "outputSpecification": get_content(soup, 'output-specification'),
+            "samples": get_sample_tests(soup),
+            "note": get_content(soup, 'note'),
+        }
+        return problem
+    except:
+        print("Error parsing")
+        return None
 
 
 def split_limit(soup):

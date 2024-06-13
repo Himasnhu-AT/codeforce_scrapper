@@ -1,0 +1,30 @@
+{
+    "title": "A. Love Story",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Timur loves codeforces. That's why he has a string $$$s$$$ having length $$$10$$$ made containing only lowercase Latin letters. Timur wants to know how many indices string $$$s$$$ <span class=\"tex-font-style-bf\">differs</span> from the string \"<span class=\"tex-font-style-tt\">codeforces</span>\".</p><p>For example string $$$s =$$$ \"<span class=\"tex-font-style-tt\">co<span class=\"tex-font-style-bf\">ol</span>for<span class=\"tex-font-style-bf\">s</span>e<span class=\"tex-font-style-bf\">z</span></span>\" differs from \"<span class=\"tex-font-style-tt\">codeforces</span>\" in $$$4$$$ indices, shown in bold.</p><p>Help Timur by finding the number of indices where string $$$s$$$ differs from \"<span class=\"tex-font-style-tt\">codeforces</span>\".</p><p>Note that you can't reorder the characters in the string $$$s$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 1000$$$)\u00a0\u2014 the number of test cases.</p><p>Each test case is one line and contains the string $$$s$$$, consisting of exactly $$$10$$$ lowercase Latin characters.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer\u00a0\u2014 the number of indices where string $$$s$$$ differs.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">coolforsez</div><div class=\"test-example-line test-example-line-even test-example-line-2\">cadafurcie</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">codeforces</div><div class=\"test-example-line test-example-line-even test-example-line-4\">paiuforces</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">forcescode</div>",
+            "output": "\n4\n5\n0\n4\n9\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1829,
+    "index": "A",
+    "name": "Love Story",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 47157
+}

@@ -1,0 +1,44 @@
+{
+    "title": "E. Cakewalk",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A mouse encountered a nice big cake and decided to take a walk across it, eating the berries on top of the cake on its way. The cake is rectangular, neatly divided into squares; some of the squares have a berry in them, and some don't.</p><p>The mouse is in a bit of a hurry, though, so once she enters the cake from its northwest corner (the top left cell in the input data), she will only go east (right) or south (down), until she reaches the southeast corner (the bottom right cell). She will eat every berry in the squares she passes through, but not in the other squares.</p><p>The mouse tries to choose her path so as to maximize the number of berries consumed. However, her haste and hunger might be clouding her judgement, leading her to suboptimal decisions...</p>",
+    "inputSpecification": "<p>The first line of input contains two integers $$$H$$$ and $$$W$$$ ($$$1 \\le H, W \\le 5$$$), separated by a space, \u2014 the height and the width of the cake.</p><p>The next $$$H$$$ lines contain a string of $$$W$$$ characters each, representing the squares of the cake in that row: '<span class=\"tex-font-style-tt\">.</span>' represents an empty square, and '<span class=\"tex-font-style-tt\">*</span>' represents a square with a berry.</p>",
+    "outputSpecification": "<p>Output the number of berries the mouse will eat following her strategy.</p>",
+    "samples": [
+        {
+            "input": "\n4 3\n*..\n.*.\n..*\n...\n",
+            "output": "\n3\n"
+        },
+        {
+            "input": "\n4 4\n.*..\n*...\n...*\n..*.\n",
+            "output": "\n2\n"
+        },
+        {
+            "input": "\n3 4\n..**\n*...\n....\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n5 5\n..*..\n.....\n**...\n**...\n**...\n",
+            "output": "\n1\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1505,
+    "index": "E",
+    "name": "Cakewalk",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "greedy",
+        "implementation",
+        "shortest paths"
+    ],
+    "solvedCount": 1730
+}

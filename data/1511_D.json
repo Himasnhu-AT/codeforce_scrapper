@@ -1,0 +1,41 @@
+{
+    "title": "D. Min Cost String",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's define the <span class=\"tex-font-style-it\">cost</span> of a string $$$s$$$ as the number of index pairs $$$i$$$ and $$$j$$$ ($$$1 \\le i &lt; j &lt; |s|$$$) such that $$$s_i = s_j$$$ and $$$s_{i+1} = s_{j+1}$$$.</p><p>You are given two positive integers $$$n$$$ and $$$k$$$. Among all strings with length $$$n$$$ that contain only the first $$$k$$$ characters of the Latin alphabet, find a string with minimum possible <span class=\"tex-font-style-it\">cost</span>. If there are multiple such strings with minimum <span class=\"tex-font-style-it\">cost</span> \u2014 find any of them.</p>",
+    "inputSpecification": "<p>The only line contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\le n \\le 2 \\cdot 10^5; 1 \\le k \\le 26$$$).</p>",
+    "outputSpecification": "<p>Print the string $$$s$$$ such that it consists of $$$n$$$ characters, each its character is one of the $$$k$$$ first Latin letters, and it has the minimum possible <span class=\"tex-font-style-it\">cost</span> among all these strings. If there are multiple such strings \u2014 print any of them.</p>",
+    "samples": [
+        {
+            "input": "\n9 4\n",
+            "output": "\naabacadbb\n"
+        },
+        {
+            "input": "\n5 1\n",
+            "output": "\naaaaa"
+        },
+        {
+            "input": "\n10 26\n",
+            "output": "\ncodeforces\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1511,
+    "index": "D",
+    "name": "Min Cost String",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "strings"
+    ],
+    "solvedCount": 11124
+}

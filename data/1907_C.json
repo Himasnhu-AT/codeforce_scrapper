@@ -1,0 +1,32 @@
+{
+    "title": "C. Removal of Unattractive Pairs",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vlad found a string $$$s$$$ consisting of $$$n$$$ lowercase Latin letters, and he wants to make it as short as possible.</p><p>To do this, he can remove <span class=\"tex-font-style-bf\">any</span> pair of adjacent characters from $$$s$$$ any number of times, provided they are <span class=\"tex-font-style-bf\">different</span>. For example, if $$$s$$$=<span class=\"tex-font-style-tt\">racoon</span>, then by removing one pair of characters he can obtain the strings <span class=\"tex-font-style-tt\">coon</span>, <span class=\"tex-font-style-tt\">roon</span>, <span class=\"tex-font-style-tt\">raon</span>, and <span class=\"tex-font-style-tt\">raco</span>, but he cannot obtain <span class=\"tex-font-style-tt\">racn</span> (because the removed letters were the same) or <span class=\"tex-font-style-tt\">rcon</span> (because the removed letters were not adjacent).</p><p>What is the minimum length Vlad can achieve by applying any number of deletions?</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of test cases. Descriptions of the test cases follow.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$1 \\le n \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the length of the string $$$s$$$.</p><p>The second line of each test case contains the string $$$s$$$ consisting of $$$n$$$ lowercase Latin letters.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single number\u2014the minimum length of the string $$$s$$$, after removing pairs of adjacent characters with different values.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">aabc</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">abaca</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">avbvvcvvvd</div><div class=\"test-example-line test-example-line-even test-example-line-4\">7</div><div class=\"test-example-line test-example-line-even test-example-line-4\">abcdefg</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">dabbb</div><div class=\"test-example-line test-example-line-even test-example-line-6\">8</div><div class=\"test-example-line test-example-line-even test-example-line-6\">aacebeaa</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">7</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">bbbbacc</div><div class=\"test-example-line test-example-line-even test-example-line-8\">6</div><div class=\"test-example-line test-example-line-even test-example-line-8\">dacfcc</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">fdfcdc</div><div class=\"test-example-line test-example-line-even test-example-line-10\">9</div><div class=\"test-example-line test-example-line-even test-example-line-10\">dbdcfbbdc</div>",
+            "output": "\n0\n1\n2\n1\n1\n0\n1\n0\n0\n1\n"
+        }
+    ],
+    "note": "<p>In the first test case of the example, you need to act as follows: \"<span class=\"tex-font-style-tt\">aabc</span>\" $$$\\rightarrow$$$ \"<span class=\"tex-font-style-tt\">ac</span>\" $$$\\rightarrow$$$ \"\". Note that with a different order of deletions, the string will not become empty.</p>",
+    "contestId": 1907,
+    "index": "C",
+    "name": "Removal of Unattractive Pairs",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "strings"
+    ],
+    "solvedCount": 18830
+}

@@ -1,0 +1,30 @@
+{
+    "title": "A. Cirno's Perfect Bitmasks Classroom",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"epigraph\"><div class=\"epigraph-text\">Even if it's a really easy question, she won't be able to answer it</div><div class=\"epigraph-source\">\u2014 <span class=\"tex-font-style-it\">Perfect Memento in Strict Sense</span></div></div><p>Cirno's perfect bitmasks classroom has just started!</p><p>Cirno gave her students a positive integer $$$x$$$. As an assignment, her students need to find the <span class=\"tex-font-style-bf\">minimum positive</span> integer $$$y$$$, which satisfies the following two conditions:</p><p>$$$$$$x\\ \\texttt{and}\\ y &gt; 0$$$$$$ $$$$$$x\\ \\texttt{xor}\\ y &gt; 0$$$$$$</p><p>Where $$$\\texttt{and}$$$ is the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#AND\">bitwise AND operation</a>, and $$$\\texttt{xor}$$$ is the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#XOR\">bitwise XOR operation</a>.</p><p>Among the students was Mystia, who was truly baffled by all these new operators. Please help her!</p>",
+    "inputSpecification": "<p>The first line of input contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 10^3$$$) \u2014 the number of input test cases.</p><p>For each test case, the only line of input contains one integer $$$x$$$ ($$$1 \\leq x \\leq 2^{30}$$$).</p>",
+    "outputSpecification": "<p>For each test case, print a single integer \u2014 the minimum number of $$$y$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">7</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-even test-example-line-0\">9</div><div class=\"test-example-line test-example-line-even test-example-line-0\">16</div><div class=\"test-example-line test-example-line-even test-example-line-0\">114514</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1000000</div>",
+            "output": "\n3\n3\n1\n1\n17\n2\n64\n"
+        }
+    ],
+    "note": "<p>Test case 1: </p><p>$$$1\\; \\texttt{and}\\; 3=1&gt;0$$$, $$$1\\; \\texttt{xor}\\; 3=2&gt;0$$$.</p><p>Test case 2: </p><p>$$$2\\; \\texttt{and}\\; 3=2&gt;0$$$, $$$2\\; \\texttt{xor}\\; 3=1&gt;0$$$.</p>",
+    "contestId": 1688,
+    "index": "A",
+    "name": "Cirno's Perfect Bitmasks Classroom",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force"
+    ],
+    "solvedCount": 21030
+}

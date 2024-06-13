@@ -1,0 +1,31 @@
+{
+    "title": "D. Suspicious logarithms",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let $$$f$$$($$$x$$$) be the floor of the binary logarithm of $$$x$$$. In other words, $$$f$$$($$$x$$$) is largest non-negative integer $$$y$$$, such that $$$2^y$$$ does not exceed $$$x$$$.</p><p>Let $$$g$$$($$$x$$$) be the floor of the logarithm of $$$x$$$ with base $$$f$$$($$$x$$$). In other words, $$$g$$$($$$x$$$) is the largest non-negative integer $$$z$$$, such that $$${f(x)}^{z}$$$ does not exceed $$$x$$$.</p><p>You are given $$$q$$$ queries. The $$$i$$$-th query consists of two integers $$$l_i$$$ and $$$r_i$$$. The answer to the query is the sum of $$$g$$$($$$k$$$) across all integers $$$k$$$, such that $$$l_i \\leq k \\leq r_i$$$. Since the answers might be large, print them modulo $$${10^9 + 7}$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$q$$$ \u2014 the number of queries ($$$1 \\leq q \\leq 10^5$$$).</p><p>The next $$$q$$$ lines each contain two integers $$$l_i$$$ and $$$r_i$$$ \u2014 the bounds of the $$$i$$$-th query ($$$4 \\leq l_i \\leq r_i \\leq 10^{18}$$$). </p>",
+    "outputSpecification": "<p>For each query, output the answer to the query modulo $$$10^9 + 7$$$.</p>",
+    "samples": [
+        {
+            "input": "\n12\n4 6\n4 7\n4 8\n4 100000\n179 1000000000000000000\n57 179\n4 201018959\n7 201018960\n729 50624\n728 50624\n728 50625\n729 50625\n",
+            "output": "\n6\n8\n9\n348641\n41949982\n246\n1\n0\n149688\n149690\n149694\n149692\n"
+        }
+    ],
+    "note": "<p>The table below contains the values of the functions $$$f$$$($$$x$$$) and $$$g$$$($$$x$$$) for all $$$x$$$ such that $$$1 \\leq x \\leq 8$$$. </p><center> <table class=\"tex-tabular\"><tbody><tr><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$x$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$1$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$2$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$3$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$4$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$5$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$6$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$7$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$8$$$</td></tr><tr><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$f$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$0$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$1$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$1$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$2$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$2$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$2$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$2$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$3$$$</td></tr><tr><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$g$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$-$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$-$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$-$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$2$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$2$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$2$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$2$$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$1$$$</td></tr></tbody></table> </center>",
+    "contestId": 1891,
+    "index": "D",
+    "name": "Suspicious logarithms",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "math"
+    ],
+    "solvedCount": 3758
+}

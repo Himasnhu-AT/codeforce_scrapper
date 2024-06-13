@@ -1,0 +1,42 @@
+{
+    "title": "C. They Have Fooled",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/85df68641dfd17d2c1de902cd32033eb2d009015.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The first line contains one integer $$$n$$$ ($$$0 \\leq n \\leq 12$$$).</p>",
+    "outputSpecification": "<p>One integer \u2014 the answer.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">0</div>",
+            "output": "\n10"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">1</div>",
+            "output": "\n10"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div>",
+            "output": "\n7"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">9</div>",
+            "output": "\n0"
+        }
+    ],
+    "note": null,
+    "contestId": 1952,
+    "index": "C",
+    "name": "They Have Fooled",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "schedules"
+    ],
+    "solvedCount": 2765
+}

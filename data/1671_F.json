@@ -1,0 +1,33 @@
+{
+    "title": "F. Permutation Counting",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Calculate the number of permutations $$$p$$$ of size $$$n$$$ with exactly $$$k$$$ inversions (pairs of indices $$$(i, j)$$$ such that $$$i &lt; j$$$ and $$$p_i &gt; p_j$$$) and exactly $$$x$$$ indices $$$i$$$ such that $$$p_i &gt; p_{i+1}$$$.</p><p>Yep, that's the whole problem. Good luck!</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$t$$$ ($$$1 \\le t \\le 3 \\cdot 10^4$$$) \u2014 the number of test cases.</p><p>Each test case consists of one line which contains three integers $$$n$$$, $$$k$$$ and $$$x$$$ ($$$1 \\le n \\le 998244352$$$; $$$1 \\le k \\le 11$$$; $$$1 \\le x \\le 11$$$).</p>",
+    "outputSpecification": "<p>For each test case, print one integer \u2014 the answer to the problem, taken modulo $$$998244353$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">10 6 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">7 3 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">163316 11 7</div><div class=\"test-example-line test-example-line-even test-example-line-4\">136373 11 1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">325902 11 11</div>",
+            "output": "\n465\n12\n986128624\n7636394\n57118194\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1671,
+    "index": "F",
+    "name": "Permutation Counting",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "fft",
+        "math"
+    ],
+    "solvedCount": 318
+}

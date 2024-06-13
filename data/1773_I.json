@@ -1,0 +1,32 @@
+{
+    "title": "I. Interactive Factorial Guessing",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 1024.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Oh no, this wicked jury hides something from you again, and you need to guess it interactively. </p><p>This time, you need to find an integer $$$n$$$. To do that, you can make at most 10 queries of the form \"What\u00a0is the $$$k$$$-th decimal digit of the product of all integers from 1 to $$$n$$$ (also known as factorial and denoted as\u00a0$$$n!$$$)?\". </p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n2\n\n1\n\nYES\n\n0\n\n2\n\nYES\n",
+            "output": "\n\n? 0\n\n! 1\n\n? 0\n\n? 19997\n\n! 5982"
+        }
+    ],
+    "note": null,
+    "contestId": 1773,
+    "index": "I",
+    "name": "Interactive Factorial Guessing",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "games",
+        "implementation",
+        "interactive"
+    ],
+    "solvedCount": 460
+}

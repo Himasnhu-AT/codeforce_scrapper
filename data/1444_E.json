@@ -1,0 +1,37 @@
+{
+    "title": "E. Finding the Vertex",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is an interactive problem.</span></p><p>You are given a tree\u00a0\u2014 connected undirected graph without cycles. One vertex of the tree is special, and you have to find which one. You can ask questions in the following form: given an edge of the tree, which endpoint is closer to the special vertex, meaning which endpoint's shortest path to the special vertex contains fewer edges. You have to find the special vertex by asking the minimum number of questions in the worst case for a given tree.</p><p>Please note that the special vertex might not be fixed by the interactor in advance: it might change the vertex to any other one, with the requirement of being consistent with the previously given answers.</p>",
+    "inputSpecification": "<p>You are given an integer $$$n$$$ ($$$2 \\le n \\le 100$$$)\u00a0\u2014 the number of vertices in a tree.</p><p>The folloiwing $$$n-1$$$ lines contain two integers each, $$$u$$$ and $$$v$$$ ($$$1 \\le u, v \\le n$$$), that denote an edge in the tree connecting $$$u$$$ and $$$v$$$. It is guaranteed that the given edges form a tree.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n5\n1 2\n2 3\n3 4\n4 5\n3\n2\n1\n",
+            "output": "\n? 3 4\n? 2 3\n? 1 2\n! 1\n"
+        },
+        {
+            "input": "\n5\n2 1\n3 1\n4 1\n5 1\n1\n1\n4\n",
+            "output": "\n? 1 2\n? 1 3\n? 1 4\n! 4\n"
+        }
+    ],
+    "note": "<p><span class=\"tex-font-style-it\">Hacks are forbidden in this task.</span></p>",
+    "contestId": 1444,
+    "index": "E",
+    "name": "Finding the Vertex",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "interactive",
+        "trees"
+    ],
+    "solvedCount": 133
+}

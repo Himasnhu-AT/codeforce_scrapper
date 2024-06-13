@@ -1,0 +1,29 @@
+{
+    "title": "A. And Then There Were K",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Given an integer $$$n$$$, find the maximum value of integer $$$k$$$ such that the following condition holds: </p><center> $$$n$$$ &amp; ($$$n-1$$$) &amp; ($$$n-2$$$) &amp; ($$$n-3$$$) &amp; ... ($$$k$$$) = $$$0$$$ </center> where & denotes the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#AND\">bitwise AND operation.</a>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 3 \\cdot 10^4$$$). Then $$$t$$$ test cases follow.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$1 \\le n \\le 10^9$$$).</p>",
+    "outputSpecification": "<p>For each test case, output a single integer \u2014 the required integer $$$k$$$.</p>",
+    "samples": [
+        {
+            "input": "\n3\n2\n5\n17\n",
+            "output": "\n1\n3\n15\n"
+        }
+    ],
+    "note": "<p>In the first testcase, the maximum value for which the continuous &amp; operation gives 0 value, is 1.</p><p>In the second testcase, the maximum value for which the continuous &amp; operation gives 0 value, is 3. No value greater then 3, say for example 4, will give the &amp; sum 0. </p><ul> <li> $$$5 \\, \\&amp; \\, 4 \\neq 0$$$, </li><li> $$$5 \\, \\&amp; \\, 4 \\, \\&amp; \\, 3 = 0$$$. </li></ul><p>Hence, 3 is the answer.</p>",
+    "contestId": 1527,
+    "index": "A",
+    "name": "And Then There Were K",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks"
+    ],
+    "solvedCount": 34325
+}

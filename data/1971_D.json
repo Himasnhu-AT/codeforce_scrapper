@@ -1,0 +1,33 @@
+{
+    "title": "D. Binary Cut",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a binary string$$$^{\\dagger}$$$. Please find the minimum number of pieces you need to cut it into, so that the resulting pieces can be rearranged into a sorted binary string.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/017a3c6905b518ac44137d28698d74b2aa8782ea.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Note that: </p><ul> <li> each character must lie in exactly one of the pieces; </li><li> the pieces must be contiguous substrings of the original string; </li><li> you must use all the pieces in the rearrangement. </li></ul><p>$$$^{\\dagger}$$$ A <span class=\"tex-font-style-it\">binary string</span> is a string consisting of characters $$$\\texttt{0}$$$ and $$$\\texttt{1}$$$. A <span class=\"tex-font-style-it\">sorted binary string</span> is a binary string such that all characters $$$\\texttt{0}$$$ come before all characters $$$\\texttt{1}$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 500$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains a single string $$$s$$$ ($$$1 \\leq |s| \\leq 500$$$) consisting of characters $$$\\texttt{0}$$$ and $$$\\texttt{1}$$$, where $$$|s|$$$ denotes the length of the string $$$s$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer\u00a0\u2014 the minimum number of pieces needed to be able to rearrange the string into a sorted binary string.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">11010</div><div class=\"test-example-line test-example-line-even test-example-line-2\">00000000</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0001111</div><div class=\"test-example-line test-example-line-even test-example-line-6\">0110</div>",
+            "output": "\n3\n1\n1\n2\n1\n2\n"
+        }
+    ],
+    "note": "<p>The first test case is pictured in the statement. It can be proven that you can't use fewer than $$$3$$$ pieces.</p><p>In the second and third test cases, the binary string is already sorted, so only $$$1$$$ piece is needed.</p><p>In the fourth test case, you need to make a single cut between the two characters and rearrange them to make the string $$$\\texttt{01}$$$.</p>",
+    "contestId": 1971,
+    "index": "D",
+    "name": "Binary Cut",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation",
+        "sortings",
+        "strings"
+    ],
+    "solvedCount": 22085
+}

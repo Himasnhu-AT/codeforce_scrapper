@@ -1,0 +1,31 @@
+{
+    "title": "B. Sasha and the Drawing",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Even in kindergarten, Sasha liked a girl. Therefore, he wanted to give her a drawing and attract her attention.</p><p>As a drawing, he decided to draw a square grid of size $$$n \\times n$$$, in which some cells are colored. But coloring the cells is difficult, so he wants to color as few cells as possible. But at the same time, he wants <span class=\"tex-font-style-bf\">at least</span> $$$k$$$ diagonals to have at least one colored cell. Note that the square grid of size $$$n \\times n$$$ has a total of $$$4n - 2$$$ diagonals.</p><p>Help little Sasha to make the girl fall in love with him and tell him the minimum number of cells he needs to color.</p>",
+    "inputSpecification": "<p>Each test consists of multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$) \u2014 the number of test cases. The description of the test cases follows.</p><p>The only line of each test case contains two integers $$$n$$$ and $$$k$$$ ($$$2 \\leq n \\leq 10^8$$$, $$$1 \\leq k \\leq 4n - 2$$$) \u2014 the size of the square grid and the minimum number of diagonals in which there should be at least one colored cell.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer \u2014 the minimum number of cells that need to be colored.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">7</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 10</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3 9</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">4 7</div><div class=\"test-example-line test-example-line-even test-example-line-6\">7 11</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">2 3</div>",
+            "output": "\n2\n2\n6\n5\n4\n6\n2\n"
+        }
+    ],
+    "note": "<p>In the pictures below, the colored cells are marked in black, and all diagonals are marked in purple.</p><p>In the first test case, you can color $$$2$$$ cells so that $$$4$$$ diagonals contain at least one colored cell:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c88e80de5be4f91764dbe5bdc534c50fec115db3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the third test case, you can color $$$6$$$ cells so that all $$$10$$$ diagonals contain at least one colored cell:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/624a36083689f6fb20bf243e5d1707fdcd71ef60.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1929,
+    "index": "B",
+    "name": "Sasha and the Drawing",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 24168
+}

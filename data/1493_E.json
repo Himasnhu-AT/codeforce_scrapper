@@ -1,0 +1,38 @@
+{
+    "title": "E. Enormous XOR",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two integers $$$l$$$ and $$$r$$$ in binary representation. Let $$$g(x, y)$$$ be equal to the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#XOR\">bitwise XOR</a> of all integers from $$$x$$$ to $$$y$$$ inclusive (that is $$$x \\oplus (x+1) \\oplus \\dots \\oplus (y-1) \\oplus y$$$). Let's define $$$f(l, r)$$$ as the maximum of all values of $$$g(x, y)$$$ satisfying $$$l \\le x \\le y \\le r$$$.</p><p>Output $$$f(l, r)$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 10^6$$$) \u2014 the length of the binary representation of $$$r$$$.</p><p>The second line contains the binary representation of $$$l$$$ \u2014 a string of length $$$n$$$ consisting of digits $$$0$$$ and $$$1$$$ ($$$0 \\le l &lt; 2^n$$$).</p><p>The third line contains the binary representation of $$$r$$$ \u2014 a string of length $$$n$$$ consisting of digits $$$0$$$ and $$$1$$$ ($$$0 \\le r &lt; 2^n$$$).</p><p>It is guaranteed that $$$l \\le r$$$. The binary representation of $$$r$$$ does not contain any extra leading zeros (if $$$r=0$$$, the binary representation of it consists of a single zero). The binary representation of $$$l$$$ is preceded with leading zeros so that its length is equal to $$$n$$$.</p>",
+    "outputSpecification": "<p>In a single line output the value of $$$f(l, r)$$$ for the given pair of $$$l$$$ and $$$r$$$ in binary representation without extra leading zeros.</p>",
+    "samples": [
+        {
+            "input": "\n7\n0010011\n1111010\n",
+            "output": "\n1111111"
+        },
+        {
+            "input": "\n4\n1010\n1101\n",
+            "output": "\n1101\n"
+        }
+    ],
+    "note": "<p>In sample test case $$$l=19$$$, $$$r=122$$$. $$$f(x,y)$$$ is maximal and is equal to $$$127$$$, with $$$x=27$$$, $$$y=100$$$, for example.</p>",
+    "contestId": 1493,
+    "index": "E",
+    "name": "Enormous XOR",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "strings",
+        "two pointers"
+    ],
+    "solvedCount": 869
+}

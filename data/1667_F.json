@@ -1,0 +1,29 @@
+{
+    "title": "F. Yin Yang",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a rectangular grid with $$$n$$$ rows and $$$m$$$ columns. $$$n$$$ and $$$m$$$ are divisible by $$$4$$$. Some of the cells are already colored black or white. It is guaranteed that no two colored cells share a corner or an edge.</p><p>Color the remaining cells in a way that both the black and the white cells becomes orthogonally connected or determine that it is impossible.</p><p>Consider a graph, where the black cells are the nodes. Two nodes are adjacent if the corresponding cells share an edge. If the described graph is connected, the black cells are orthogonally connected. Same for white cells.</p>",
+    "inputSpecification": "<p>The input consists of multiple test cases. The first line of the input contains a single integer $$$t$$$ ($$$1 \\le t \\le 4000$$$) \u2014 the number of test cases. The description of the test cases follows.</p><p>The first line of each test case contains two integers $$$n$$$, $$$m$$$ ($$$8 \\le n, m \\le 500$$$, $$$n$$$ and $$$m$$$ are divisible by $$$4$$$) \u2014 the number of rows and columns.</p><p>Each of the next $$$n$$$ lines contains $$$m$$$ characters. Each character is either '<span class=\"tex-font-style-tt\">B</span>', '<span class=\"tex-font-style-tt\">W</span>' or '<span class=\"tex-font-style-tt\">.</span>', representing black, white or empty cell respectively. Two colored (black or white) cell does not share a corner or an edge.</p><p>It is guaranteed that the sum of $$$n \\cdot m$$$ over all test cases does not exceed $$$250\\,000$$$.</p>",
+    "outputSpecification": "<p>For each testcase print \"<span class=\"tex-font-style-tt\">NO</span>\" if there is no solution, otherwise print \"<span class=\"tex-font-style-tt\">YES</span>\" and a grid with the same format. If there are multiple solutions, you can print any.</p>",
+    "samples": [
+        {
+            "input": "\n4\n8 8\n.W.W....\n.....B.W\n.W.W....\n.....W.W\nB.B.....\n....B.B.\nB.W.....\n....B.B.\n8 8\nB.W..B.W\n........\nW.B..W.B\n........\n........\nB.W..B.W\n........\nW.B..W.B\n8 12\nW.B.........\n....B...B.W.\nB.B.........\n....B...B.B.\n.B..........\n........B...\n.W..B.B...W.\n............\n16 16\n.W............W.\n...W..W..W.W....\n.B...........B.W\n....W....W......\nW......B....W.W.\n..W.......B.....\n....W...W....B.W\n.W....W....W....\n...B...........W\nW.....W...W..B..\n..W.W...W......B\n............W...\n.W.B...B.B....B.\n.....W.....W....\n..W......W...W..\nW...W..W...W...W\n",
+            "output": "\nYES\nBWWWWWWW\nBWBBBBBW\nBWBWWWBW\nBWBWBWBW\nBWBWBWBW\nBWBBBWBW\nBWWWWWBW\nBBBBBBBW\nNO\nYES\nWWBBBBBBBBBB\nBWWWBBBBBBWB\nBBBWBBBWWWWB\nBBBWBBBWBBBB\nBBBWBBBWBBBB\nBBBWWWWWBBBB\nBWWWBBBWWWWB\nBBBBBBBBBBBB\nYES\nWWWWWWWWWWWWWWWW\nWWWWWWWWWWWWWWWW\nWBBBBBBBBBBBBBWW\nWBBBWBWWWWBWWBWW\nWBBWWBBBWWBWWBWW\nWBWWWBWWWWBWWBWW\nWBBWWBBBWWBWWBWW\nWWBWWWWWWWWWWWWW\nWWBBBBBBBBBBBBWW\nWBBBWWWBWWWBWBWW\nWWWBWBBBWBBBWBBB\nWWWBWBWWWWWBWWBW\nWWWBWBBBWBBBWWBW\nWWWWWWWWWWWWWWWW\nWWWWWWWWWWWWWWWW\nWWWWWWWWWWWWWWWW\n"
+        }
+    ],
+    "note": "<p>Solution for test case 1: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/832f369f6fdfcf2be9467a0001f2a7668593b2bd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Test case 2: one can see that the black and the white part can't be connected in the same time. So the answer is \"<span class=\"tex-font-style-tt\">NO</span>\". </p>",
+    "contestId": 1667,
+    "index": "F",
+    "name": "Yin Yang",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 93
+}

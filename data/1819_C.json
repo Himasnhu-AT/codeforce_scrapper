@@ -1,0 +1,41 @@
+{
+    "title": "C. The Fox and the Complete Tree Traversal",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The fox Yae climbed the <span class=\"tex-font-style-it\">tree</span> of the Sacred Sakura. A tree is a connected undirected graph that does not contain cycles.</p><p>The fox uses her magical powers to move around the tree. Yae can jump from vertex $$$v$$$ to another vertex $$$u$$$ if and only if the distance between these vertices does not exceed $$$2$$$. In other words, in one jump Yae can jump from vertex $$$v$$$ to vertex $$$u$$$ if vertices $$$v$$$ and $$$u$$$ are connected by an edge, or if there exists such vertex $$$w$$$ that vertices $$$v$$$ and $$$w$$$ are connected by an edge, and also vertices $$$u$$$ and $$$w$$$ are connected by an edge.</p><p>After Yae was able to get the sakura petal, she wondered if there was a <span class=\"tex-font-style-bf\">cyclic</span> route in the tree $$$v_1, v_2, \\ldots, v_n$$$ such that:</p><ul> <li> the fox can jump from vertex $$$v_i$$$ to vertex $$$v_{i + 1}$$$, </li><li> the fox can jump from vertex $$$v_n$$$ to vertex $$$v_1$$$, </li><li> all $$$v_i$$$ are pairwise distinct. </li></ul><p>Help the fox determine if the required traversal exists.</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$n$$$ ($$$2 \\le n \\le 2 \\cdot 10^5$$$)\u00a0\u2014the number of vertices of the tree.</p><p>Each of the following $$$n - 1$$$ lines contains two integers $$$u$$$ and $$$v$$$ ($$$1 \\le u, v \\le n$$$, $$$u \\ne v$$$)\u00a0\u2014 vertices connected by an edge. It is guaranteed that these edges form a tree.</p>",
+    "outputSpecification": "<p>On the first line, print \"<span class=\"tex-font-style-tt\">Yes</span>\" (without quotes) if the required route of the tree exists, or \"<span class=\"tex-font-style-tt\">No</span>\" (without quotes) otherwise.</p><p>If the required tree traversal exists, on the second line print $$$n$$$ integers of different integers $$$v_1, v_2, \\ldots, v_n$$$ ($$$1 \\le v_i \\le n$$$)\u00a0\u2014 the vertices of the tree in traversal order.</p><p>If there are several correct traversals, output any of them.</p>",
+    "samples": [
+        {
+            "input": "\n5\n1 2\n1 3\n3 4\n3 5\n",
+            "output": "\nYes\n4 5 1 2 3 \n"
+        },
+        {
+            "input": "\n3\n1 2\n1 3\n",
+            "output": "\nYes\n1 2 3\n"
+        },
+        {
+            "input": "\n15\n1 2\n1 3\n2 4\n2 5\n3 6\n3 7\n4 8\n4 9\n5 10\n5 11\n6 12\n6 13\n7 14\n7 15\n",
+            "output": "\nNo\n"
+        }
+    ],
+    "note": "<p>The tree from the first example is shown below. The bold arrows indicate the fox's route.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/9375c1eacbde4db26c385d89fb655f38957bf6e4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second example, any sequence of three different vertices is a correct route, because the fox can jump from any vertex to any vertex.</p><p>The tree from the third example is shown below. It can be shown that there is no required route for it.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/05ccd3133d2c7c44d78ba5b3a62d5eda3acbdfe3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1819,
+    "index": "C",
+    "name": "The Fox and the Complete Tree Traversal",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "implementation",
+        "math",
+        "trees"
+    ],
+    "solvedCount": 1407
+}

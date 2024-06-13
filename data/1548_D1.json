@@ -1,0 +1,36 @@
+{
+    "title": "D1. Gregor and the Odd Cows (Easy)",
+    "timeLimit": {
+        "value": 6.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">This is the easy version of the problem. The only difference from the hard version is that in this version all coordinates are <span class=\"tex-font-style-bf\">even</span>.</span></p><p>There are $$$n$$$ fence-posts at distinct coordinates on a plane. It is guaranteed that no three fence posts lie on the same line.</p><p>There are an infinite number of cows on the plane, one at every point with integer coordinates.</p><p>Gregor is a member of the Illuminati, and wants to build a triangular fence, connecting $$$3$$$ distinct existing fence posts. A cow <span class=\"tex-font-style-bf\">strictly</span> inside the fence is said to be <span class=\"tex-font-style-it\">enclosed</span>. If there are an <span class=\"tex-font-style-bf\">odd</span> number of enclosed cows and the area of the fence is an <span class=\"tex-font-style-bf\">integer</span>, the fence is said to be <span class=\"tex-font-style-it\">interesting</span>.</p><p>Find the number of interesting fences.</p>",
+    "inputSpecification": "<p>The first line contains the integer $$$n$$$ ($$$3 \\le n \\le 6000$$$), the number of fence posts which Gregor can choose to form the vertices of a fence.</p><p>Each of the next $$$n$$$ line contains two integers $$$x$$$ and $$$y$$$ ($$$0 \\le x,y \\le 10^7$$$, $$$x$$$ and $$$y$$$ are <span class=\"tex-font-style-bf\">even</span>), where $$$(x,y)$$$ is the coordinate of a fence post. All fence posts lie at distinct coordinates. No three fence posts are on the same line.</p>",
+    "outputSpecification": "<p>Print a single integer, the number of interesting fences. Two fences are considered different if they are constructed with a different set of three fence posts.</p>",
+    "samples": [
+        {
+            "input": "\n3\n0 0\n2 0\n0 4\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n5\n0 0\n2 16\n30 14\n4 6\n2 10\n",
+            "output": "\n3\n"
+        }
+    ],
+    "note": "<p>In the first example, there is only $$$1$$$ fence. That fence is interesting since its area is $$$4$$$ and there is $$$1$$$ enclosed cow, marked in red.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/9e3ef13118f82e89c5ddcd89348c8703ec6ea5bf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second example, there are $$$3$$$ interesting fences. </p><ul> <li> $$$(0,0)$$$ \u2014 $$$(30,14)$$$ \u2014 $$$(2,10)$$$ </li><li> $$$(2,16)$$$ \u2014 $$$(30,14)$$$ \u2014 $$$(2,10)$$$ </li><li> $$$(30,14)$$$ \u2014 $$$(4,6)$$$ \u2014 $$$(2,10)$$$ </li></ul>",
+    "contestId": 1548,
+    "index": "D1",
+    "name": "Gregor and the Odd Cows (Easy)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "geometry",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 1435
+}

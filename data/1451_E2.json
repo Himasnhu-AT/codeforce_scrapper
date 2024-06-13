@@ -1,0 +1,32 @@
+{
+    "title": "E2. Bitwise Queries (Hard Version)",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">The only difference between the easy and hard versions is the constraints on the number of queries.</span></p><p><span class=\"tex-font-style-bf\">This is an interactive problem.</span></p><p>Ridbit has a hidden array $$$a$$$ of $$$n$$$ integers which he wants Ashish to guess. Note that $$$n$$$ is a <span class=\"tex-font-style-bf\">power of two</span>. Ashish is allowed to ask three different types of queries. They are of the form </p><ul> <li> <span class=\"tex-font-style-tt\">AND</span> $$$i$$$ $$$j$$$: ask for the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#AND\">bitwise AND</a> of elements $$$a_i$$$ and $$$a_j$$$ $$$(1 \\leq i, j \\le n$$$, $$$i \\neq j)$$$ </li><li> <span class=\"tex-font-style-tt\">OR</span> $$$i$$$ $$$j$$$: ask for the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#OR\">bitwise OR</a> of elements $$$a_i$$$ and $$$a_j$$$ $$$(1 \\leq i, j \\le n$$$, $$$i \\neq j)$$$ </li><li> <span class=\"tex-font-style-tt\">XOR</span> $$$i$$$ $$$j$$$: ask for the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#XOR\">bitwise XOR</a> of elements $$$a_i$$$ and $$$a_j$$$ $$$(1 \\leq i, j \\le n$$$, $$$i \\neq j)$$$ </li></ul><p>Can you help Ashish guess the elements of the array?</p><p><span class=\"tex-font-style-bf\">In this version, each element takes a value in the range $$$[0, n-1]$$$ (inclusive) and Ashish can ask no more than $$$n+1$$$ queries.</span></p>",
+    "inputSpecification": "<p>The first line of input contains one integer $$$n$$$ $$$(4 \\le n \\le 2^{16})$$$\u00a0\u2014 the length of the array. It is guaranteed that $$$n$$$ is a <span class=\"tex-font-style-bf\">power of two</span>.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n4\n\n0\n\n2\n\n3\n\n",
+            "output": "\nOR 1 2\n\nOR 2 3\n\nXOR 2 4\n\n! 0 0 2 3\n"
+        }
+    ],
+    "note": "<p>The array $$$a$$$ in the example is $$$[0, 0, 2, 3]$$$.</p>",
+    "contestId": 1451,
+    "index": "E2",
+    "name": "Bitwise Queries (Hard Version)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "interactive",
+        "math"
+    ],
+    "solvedCount": 2880
+}

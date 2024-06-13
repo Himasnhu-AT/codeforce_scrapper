@@ -1,0 +1,29 @@
+{
+    "title": "A. A+B (Trial Problem)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "s"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "MB"
+    },
+    "statement": "<p>You are given two integers $$$a$$$ and $$$b$$$. Print $$$a+b$$$.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$) \u2014 the number of test cases in the input. Then $$$t$$$ test cases follow.</p><p>Each test case is given as a line of two integers $$$a$$$ and $$$b$$$ ($$$-1000 \\le a, b \\le 1000$$$).</p>",
+    "outputSpecification": "<p>Print $$$t$$$ integers \u2014 the required numbers $$$a+b$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">314 15</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">-99 99</div><div class=\"test-example-line test-example-line-even test-example-line-4\">123 987</div>",
+            "output": "\n6\n329\n0\n1110\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1532,
+    "index": "A",
+    "name": "A+B (Trial Problem)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 1133
+}

@@ -1,0 +1,30 @@
+{
+    "title": "C. Clock Conversion",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Given the time in 24-hour format, output the equivalent time in 12-hour format. </p><ul> <li> <a href=\"https://en.wikipedia.org/wiki/24-hour_clock#Description\">24-hour format</a> divides the day into 24 hours from $$$00$$$ to $$$23$$$, each of which has 60 minutes from $$$00$$$ to $$$59$$$. </li><li> <a href=\"https://en.wikipedia.org/wiki/12-hour_clock#Description\">12-hour format</a> divides the day into two halves: the first half is $$$\\mathrm{AM}$$$, and the second half is $$$\\mathrm{PM}$$$. In each half, the hours are numbered in the order $$$12, 01, 02, 03, \\dots, 11$$$. Each hour has 60 minutes numbered from $$$00$$$ to $$$59$$$. </li></ul>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 1440$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains a string $$$s$$$ of length $$$5$$$ with format <span class=\"tex-font-style-tt\">hh:mm</span> representing a valid time in the 24-hour format. <span class=\"tex-font-style-tt\">hh</span> represents the hour from $$$00$$$ to $$$23$$$, and <span class=\"tex-font-style-tt\">mm</span> represents the minute from $$$00$$$ to $$$59$$$.</p><p>The input will always be a valid time in 24-hour format.</p>",
+    "outputSpecification": "<p>For each test case, output two strings separated by a space (\"<span class=\"tex-font-style-tt\">hh:mm AM</span>\" or \"<span class=\"tex-font-style-tt\">hh:mm PM</span>\"), which are the 12-hour equivalent to the time provided in the test case (without quotes).</p><p>You should output the time exactly as indicated; in particular, you should not remove leading zeroes.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">11</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">09:41</div><div class=\"test-example-line test-example-line-even test-example-line-2\">18:06</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">12:14</div><div class=\"test-example-line test-example-line-even test-example-line-4\">00:59</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">00:00</div><div class=\"test-example-line test-example-line-even test-example-line-6\">14:34</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">01:01</div><div class=\"test-example-line test-example-line-even test-example-line-8\">19:07</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">11:59</div><div class=\"test-example-line test-example-line-even test-example-line-10\">12:00</div><div class=\"test-example-line test-example-line-odd test-example-line-11\">21:37</div>",
+            "output": "\n09:41 AM\n06:06 PM\n12:14 PM\n12:59 AM\n12:00 AM\n02:34 PM\n01:01 AM\n07:07 PM\n11:59 AM\n12:00 PM\n09:37 PM\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1950,
+    "index": "C",
+    "name": "Clock Conversion",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 36404
+}

@@ -1,0 +1,29 @@
+{
+    "title": "A. Plus or Minus",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given three integers $$$a$$$, $$$b$$$, and $$$c$$$ such that <span class=\"tex-font-style-bf\">exactly one</span> of these two equations is true: </p><ul> <li> $$$a+b=c$$$ </li><li> $$$a-b=c$$$ </li></ul> Output <span class=\"tex-font-style-tt\">+</span> if the first equation is true, and <span class=\"tex-font-style-tt\">-</span> otherwise.",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 162$$$)\u00a0\u2014 the number of test cases.</p><p>The description of each test case consists of three integers $$$a$$$, $$$b$$$, $$$c$$$ ($$$1 \\leq a, b \\leq 9$$$, $$$-8 \\leq c \\leq 18$$$). The additional constraint on the input: it will be generated so that <span class=\"tex-font-style-bf\">exactly</span> one of the two equations will be true.</p>",
+    "outputSpecification": "<p>For each test case, output either <span class=\"tex-font-style-tt\">+</span> or <span class=\"tex-font-style-tt\">-</span> on a new line, representing the correct equation.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">11</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 9 -7</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3 4 7</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1 1 2</div><div class=\"test-example-line test-example-line-even test-example-line-6\">1 1 0</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">3 3 6</div><div class=\"test-example-line test-example-line-even test-example-line-8\">9 9 18</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">9 9 0</div><div class=\"test-example-line test-example-line-even test-example-line-10\">1 9 -8</div><div class=\"test-example-line test-example-line-odd test-example-line-11\">1 9 10</div>",
+            "output": "\n+\n-\n-\n+\n+\n-\n+\n+\n-\n-\n+\n"
+        }
+    ],
+    "note": "<p>In the first test case, $$$1+2=3$$$.</p><p>In the second test case, $$$3-2=1$$$.</p><p>In the third test case, $$$2-9=-7$$$. Note that $$$c$$$ can be negative.</p>",
+    "contestId": 1807,
+    "index": "A",
+    "name": "Plus or Minus",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 57162
+}

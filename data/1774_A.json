@@ -1,0 +1,30 @@
+{
+    "title": "A. Add Plus Minus Sign",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>AquaMoon has a string $$$a$$$ consisting of only $$$0$$$ and $$$1$$$. She wants to add $$$+$$$ and $$$-$$$ between all pairs of consecutive positions to make the absolute value of the resulting expression as small as possible. Can you help her?</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 2\\,000$$$) \u00a0\u2013 the number of test cases. The description of test cases follows.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$2 \\leq n \\leq 100$$$) \u2014 the length of $$$a$$$.</p><p>The second line of each test case contains a string $$$a$$$ of length $$$n$$$, consisting of only $$$0$$$ and $$$1$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a string of length $$$n - 1$$$ consisting of $$$-$$$ and $$$+$$$ on a separate line. If there is more than one assignment of signs that produces the smallest possible absolute value, any of them is accepted.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">11</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">01101</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">10001</div>",
+            "output": "\n-\n+-++\n+++-\n"
+        }
+    ],
+    "note": "<p>In the first test case, we can get the expression $$$1 - 1 = 0$$$, with absolute value $$$0$$$.</p><p>In the second test case, we can get the expression $$$0 + 1 - 1 + 0 + 1 = 1$$$, with absolute value $$$1$$$.</p><p>In the third test case, we can get the expression $$$1 + 0 + 0 + 0 - 1 = 0$$$, with absolute value $$$0$$$.</p>",
+    "contestId": 1774,
+    "index": "A",
+    "name": "Add Plus Minus Sign",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 22089
+}

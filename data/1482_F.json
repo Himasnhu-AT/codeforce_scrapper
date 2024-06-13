@@ -1,0 +1,38 @@
+{
+    "title": "F. Useful Edges",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a weighted undirected graph on $$$n$$$ vertices along with $$$q$$$ triples $$$(u, v, l)$$$, where in each triple $$$u$$$ and $$$v$$$ are vertices and $$$l$$$ is a positive integer. An edge $$$e$$$ is called <span class=\"tex-font-style-it\">useful</span> if there is at least one triple $$$(u, v, l)$$$ and a path (not necessarily simple) with the following properties:</p><ul> <li> $$$u$$$ and $$$v$$$ are the endpoints of this path, </li><li> $$$e$$$ is one of the edges of this path, </li><li> the sum of weights of all edges on this path doesn't exceed $$$l$$$. </li></ul><p>Please print the number of useful edges in this graph.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$m$$$ ($$$2\\leq n\\leq 600$$$, $$$0\\leq m\\leq \\frac{n(n-1)}2$$$). </p><p>Each of the following $$$m$$$ lines contains three integers $$$u$$$, $$$v$$$ and $$$w$$$ ($$$1\\leq u, v\\leq n$$$, $$$u\\neq v$$$, $$$1\\leq w\\leq 10^9$$$), denoting an edge connecting vertices $$$u$$$ and $$$v$$$ and having a weight $$$w$$$.</p><p>The following line contains the only integer $$$q$$$ ($$$1\\leq q\\leq \\frac{n(n-1)}2$$$) denoting the number of triples.</p><p>Each of the following $$$q$$$ lines contains three integers $$$u$$$, $$$v$$$ and $$$l$$$ ($$$1\\leq u, v\\leq n$$$, $$$u\\neq v$$$, $$$1\\leq l\\leq 10^9$$$) denoting a triple $$$(u, v, l)$$$.</p><p>It's guaranteed that: </p><ul> <li> the graph doesn't contain loops or multiple edges; </li><li> all pairs $$$(u, v)$$$ in the triples are also different. </li></ul>",
+    "outputSpecification": "<p>Print a single integer denoting the number of useful edges in the graph.</p>",
+    "samples": [
+        {
+            "input": "\n4 6\n1 2 1\n2 3 1\n3 4 1\n1 3 3\n2 4 3\n1 4 5\n1\n1 4 4\n",
+            "output": "\n5\n"
+        },
+        {
+            "input": "\n4 2\n1 2 10\n3 4 10\n6\n1 2 11\n1 3 11\n1 4 11\n2 3 11\n2 4 11\n3 4 9\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n3 2\n1 2 1\n2 3 2\n1\n1 2 5\n",
+            "output": "\n2\n"
+        }
+    ],
+    "note": "<p>In the first example each edge is useful, except the one of weight $$$5$$$.</p><p>In the second example only edge between $$$1$$$ and $$$2$$$ is useful, because it belongs to the path $$$1-2$$$, and $$$10 \\leq 11$$$. The edge between $$$3$$$ and $$$4$$$, on the other hand, is not useful.</p><p>In the third example both edges are useful, for there is a path $$$1-2-3-2$$$ of length exactly $$$5$$$. Please note that the path may pass through a vertex more than once.</p>",
+    "contestId": 1482,
+    "index": "F",
+    "name": "Useful Edges",
+    "type": "PROGRAMMING",
+    "tags": [
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 1477
+}

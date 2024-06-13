@@ -1,0 +1,31 @@
+{
+    "title": "C. Unique Number",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a positive number $$$x$$$. Find the smallest positive integer number that has the sum of digits equal to $$$x$$$ and all digits are <span class=\"tex-font-style-bf\">distinct</span> (unique).</p>",
+    "inputSpecification": "<p>The first line contains a single positive integer $$$t$$$ ($$$1 \\le t \\le 50$$$)\u00a0\u2014 the number of test cases in the test. Then $$$t$$$ test cases follow.</p><p>Each test case consists of a single integer number $$$x$$$ ($$$1 \\le x \\le 50$$$).</p>",
+    "outputSpecification": "<p>Output $$$t$$$ answers to the test cases:</p><ul> <li> if a positive integer number with the sum of digits equal to $$$x$$$ and all digits are different exists, print the smallest such number; </li><li> otherwise print <span class=\"tex-font-style-tt\">-1</span>. </li></ul>",
+    "samples": [
+        {
+            "input": "\n4\n1\n5\n15\n50\n",
+            "output": "\n1\n5\n69\n-1\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1462,
+    "index": "C",
+    "name": "Unique Number",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 31585
+}

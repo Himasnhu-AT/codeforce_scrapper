@@ -1,0 +1,35 @@
+{
+    "title": "F. Rare Coins",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are $$$n$$$ bags numbered from $$$1$$$ to $$$n$$$, the $$$i$$$-th bag contains $$$a_i$$$ golden coins and $$$b_i$$$ silver coins.</p><p>The value of a gold coin is $$$1$$$. The value of a silver coin is either $$$0$$$ or $$$1$$$, determined for each silver coin independently ($$$0$$$ with probability $$$\\frac{1}{2}$$$, $$$1$$$ with probability $$$\\frac{1}{2}$$$).</p><p>You have to answer $$$q$$$ independent queries. Each query is the following: </p><ul> <li> $$$l$$$ $$$r$$$\u00a0\u2014 calculate the probability that the total value of coins in bags from $$$l$$$ to $$$r$$$ is strictly greater than the total value in all other bags. </li></ul>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$q$$$ ($$$1 \\le n, q \\le 3 \\cdot 10^5$$$)\u00a0\u2014 the number of bags and the number of queries, respectively.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$0 \\le a_i \\le 10^6$$$)\u00a0\u2014 the number of gold coins in the $$$i$$$-th bag.</p><p>The third line contains $$$n$$$ integers $$$b_1, b_2, \\dots, b_n$$$ ($$$0 \\le b_i \\le 10^6$$$)\u00a0\u2014 the number of silver coins in the $$$i$$$-th bag.</p><p>Next $$$q$$$ lines contain queries. The $$$j$$$-th of the next $$$q$$$ lines contains two integers $$$l_j$$$ and $$$r_j$$$ ($$$1 \\le l_j \\le r_j \\le n$$$)\u00a0\u2014 the description of the $$$j$$$-th query.</p><p>Additional constraints on the input: </p><ul> <li> the sum of the array $$$a$$$ doesn't exceed $$$10^6$$$; </li><li> the sum of the array $$$b$$$ doesn't exceed $$$10^6$$$. </li></ul>",
+    "outputSpecification": "<p>For each query, print one integer\u00a0\u2014 the probability that the total value of coins in bags from $$$l$$$ to $$$r$$$ is strictly greater than the total value in all other bags, taken modulo $$$998244353$$$.</p><p>Formally, the probability can be expressed as an irreducible fraction $$$\\frac{x}{y}$$$. You have to print the value of $$$x \\cdot y^{-1} \\bmod 998244353$$$, where $$$y^{-1}$$$ is an integer such that $$$y \\cdot y^{-1} \\bmod 998244353 = 1$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">2 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 0</div><div class=\"test-example-line test-example-line-even test-example-line-0\">0 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 1</div>",
+            "output": "\n748683265 748683265 "
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4 3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2 3 4 5</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 0 7 3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">3 3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2 3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 4</div>",
+            "output": "\n997756929 273932289 1 "
+        }
+    ],
+    "note": "<p>In both queries from the first example, the answer is $$$\\frac{1}{4}$$$.</p>",
+    "contestId": 1948,
+    "index": "F",
+    "name": "Rare Coins",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "math",
+        "probabilities"
+    ],
+    "solvedCount": 1181
+}

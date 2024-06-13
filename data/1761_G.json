@@ -1,0 +1,31 @@
+{
+    "title": "G. Centroid Guess",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This in an interactive problem</span>.</p><p>There is an unknown tree consisting of $$$n$$$ nodes, which has <span class=\"tex-font-style-bf\">exactly one</span> centroid. You only know $$$n$$$ at first, and your task is to find the centroid of the tree.</p><p>You can ask the distance between any two vertices for at most $$$2\\cdot10^5$$$ times. </p><p>Note that the interactor is <span class=\"tex-font-style-bf\">not</span> adaptive. That is, the tree is fixed in each test beforehand and does not depend on your queries.</p><p>A vertex is called a centroid if its removal splits the tree into subtrees with at most $$$\\lfloor\\frac{n}{2}\\rfloor$$$ vertices each.</p>",
+    "inputSpecification": "<p>The only line of the input contains an integer $$$n$$$ ($$$3\\le n\\le 7.5\\cdot10^4$$$)\u00a0\u2014 the number of nodes in the tree.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n5\n\n2\n\n1\n\n2\n\n3\n\n1\n\n1\n\n1\n",
+            "output": "\n\n? 1 2\n\n? 1 3\n\n? 1 4\n\n? 1 5\n\n? 2 3\n\n? 3 4\n\n? 4 5\n\n! 3\n"
+        }
+    ],
+    "note": "<p>Here is an image of the tree from the sample.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/73f29ca0ee9d8f75a97a6e256a509213de33a41e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1761,
+    "index": "G",
+    "name": "Centroid Guess",
+    "type": "PROGRAMMING",
+    "tags": [
+        "interactive",
+        "probabilities",
+        "trees"
+    ],
+    "solvedCount": 100
+}

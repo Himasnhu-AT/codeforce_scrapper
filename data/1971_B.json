@@ -1,0 +1,30 @@
+{
+    "title": "B. Different String",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a string $$$s$$$ consisting of lowercase English letters.</p><p>Rearrange the characters of $$$s$$$ to form a new string $$$r$$$ that is <span class=\"tex-font-style-bf\">not equal</span> to $$$s$$$, or report that it's impossible.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 1000$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains a string $$$s$$$ of length at most $$$10$$$ consisting of lowercase English letters.</p>",
+    "outputSpecification": "<p>For each test case, if no such string $$$r$$$ exists as described in the statement, output \"<span class=\"tex-font-style-tt\">NO</span>\" (without quotes).</p><p>Otherwise, output \"<span class=\"tex-font-style-tt\">YES</span>\" (without quotes). Then, output one line\u00a0\u2014 the string $$$r$$$, consisting of letters of string $$$s$$$.</p><p>You can output \"<span class=\"tex-font-style-tt\">YES</span>\" and \"<span class=\"tex-font-style-tt\">NO</span>\" in any case (for example, strings \"<span class=\"tex-font-style-tt\">yEs</span>\", \"<span class=\"tex-font-style-tt\">yes</span>\", and \"<span class=\"tex-font-style-tt\">Yes</span>\" will be recognized as a positive response).</p><p>If multiple answers are possible, you can output any of them.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">8</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">codeforces</div><div class=\"test-example-line test-example-line-even test-example-line-2\">aaaaa</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">xxxxy</div><div class=\"test-example-line test-example-line-even test-example-line-4\">co</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">d</div><div class=\"test-example-line test-example-line-even test-example-line-6\">nutdealer</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">mwistht</div><div class=\"test-example-line test-example-line-even test-example-line-8\">hhhhhhhhhh</div>",
+            "output": "\nYES\nforcodesec\nNO\nYES\nxxyxx\nYES\noc\nNO\nYES\nundertale\nYES\nthtsiwm\nNO\n"
+        }
+    ],
+    "note": "<p>In the first test case, another possible answer is $$$\\texttt{forcescode}$$$.</p><p>In the second test case, all rearrangements of $$$\\texttt{aaaaa}$$$ are equal to $$$\\texttt{aaaaa}$$$.</p>",
+    "contestId": 1971,
+    "index": "B",
+    "name": "Different String",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 31384
+}

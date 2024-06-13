@@ -1,0 +1,29 @@
+{
+    "title": "C. Vasilije in Cacak",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Aca and Milovan, two fellow competitive programmers, decided to give Vasilije a problem to test his skills.</p><p>Vasilije is given three positive integers: $$$n$$$, $$$k$$$, and $$$x$$$, and he has to determine if he can choose $$$k$$$ distinct integers between $$$1$$$ and $$$n$$$, such that their sum is equal to $$$x$$$.</p><p>Since Vasilije is now in the weirdest city in Serbia where Aca and Milovan live, Cacak, the problem seems weird to him. So he needs your help with this problem.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains three integers $$$n$$$, $$$k$$$ and $$$x$$$ ($$$1 \\le n \\le 2 \\cdot 10^5$$$, $$$1 \\le k \\le n$$$, $$$1 \\le x \\le 4 \\cdot 10^{10}$$$)\u00a0\u2014 the maximum element he can choose, the number of elements he can choose and the sum he has to reach.</p><p>Note that the sum of $$$n$$$ over all test cases <span class=\"tex-font-style-bf\">may exceed</span> $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case output one line: \"<span class=\"tex-font-style-tt\">YES</span>\", if it is possible to choose $$$k$$$ distinct integers between $$$1$$$ and $$$n$$$, such that their sum is equal to $$$x$$$, and \"<span class=\"tex-font-style-tt\">NO</span>\", if it isn't. </p><p>You can output the answer in any case (for example, the strings \"<span class=\"tex-font-style-tt\">yEs</span>\", \"<span class=\"tex-font-style-tt\">yes</span>\", \"<span class=\"tex-font-style-tt\">Yes</span>\", and \"<span class=\"tex-font-style-tt\">YES</span>\" will be recognized as a positive answer).</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">12</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">5 3 10</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5 3 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">10 10 55</div><div class=\"test-example-line test-example-line-even test-example-line-4\">6 5 20</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">2 1 26</div><div class=\"test-example-line test-example-line-even test-example-line-6\">187856 87856 2609202300</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">200000 190000 19000000000</div><div class=\"test-example-line test-example-line-even test-example-line-8\">28 5 2004</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">2 2 2006</div><div class=\"test-example-line test-example-line-even test-example-line-10\">9 6 40</div><div class=\"test-example-line test-example-line-odd test-example-line-11\">47202 32455 613407217</div><div class=\"test-example-line test-example-line-even test-example-line-12\">185977 145541 15770805980</div>",
+            "output": "\nYES\nNO\nYES\nYES\nNO\nNO\nYES\nNO\nNO\nNO\nYES\nYES\n"
+        }
+    ],
+    "note": "<p>In the first test case $$$n = 5,\\ k=3,\\ x=10$$$, so we can choose the numbers: $$$2$$$, $$$3$$$, $$$5$$$, whose sum is $$$10$$$, so the answer is \"<span class=\"tex-font-style-tt\">YES</span>\".</p><p>In the second test case $$$n = 5, \\ k=3, \\ x=3$$$, there is no three numbers which satisfies the condition, so the answer is \"<span class=\"tex-font-style-tt\">NO</span>\". It can be shown that there are no three numbers whose sum is $$$3$$$.</p>",
+    "contestId": 1878,
+    "index": "C",
+    "name": "Vasilije in Cacak",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 29406
+}

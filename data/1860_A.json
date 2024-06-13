@@ -1,0 +1,30 @@
+{
+    "title": "A. Not a Substring",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A bracket sequence is a string consisting of characters '<span class=\"tex-font-style-tt\">(</span>' and/or '<span class=\"tex-font-style-tt\">)</span>'. A regular bracket sequence is a bracket sequence that can be transformed into a correct arithmetic expression by inserting characters '<span class=\"tex-font-style-tt\">1</span>' and '<span class=\"tex-font-style-tt\">+</span>' between the original characters of the sequence. For example:</p><ul> <li> bracket sequences \"<span class=\"tex-font-style-tt\">()()</span>\" and \"<span class=\"tex-font-style-tt\">(())</span>\" are regular (they can be transformed into \"<span class=\"tex-font-style-tt\">(1)+(1)</span>\" and \"<span class=\"tex-font-style-tt\">((1+1)+1)</span>\", respectively); </li><li> bracket sequences \"<span class=\"tex-font-style-tt\">)(</span>\", \"<span class=\"tex-font-style-tt\">(</span>\" and \"<span class=\"tex-font-style-tt\">)</span>\" are not regular. </li></ul><p>You are given a bracket sequence $$$s$$$; let's define its length as $$$n$$$. Your task is to find a regular bracket sequence $$$t$$$ of length $$$2n$$$ such that $$$s$$$ <span class=\"tex-font-style-bf\">does not</span> occur in $$$t$$$ as a <span class=\"tex-font-style-bf\">contiguous substring</span>, or report that there is no such sequence.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains a string $$$s$$$ ($$$2 \\le |s| \\le 50$$$), consisting of characters \"<span class=\"tex-font-style-tt\">(</span>\" and/or \"<span class=\"tex-font-style-tt\">)</span>\".</p>",
+    "outputSpecification": "<p>For each test case, print the answer to it. If there is no required regular bracket sequence, print <span class=\"tex-font-style-tt\">NO</span> in a separate line. Otherwise, print <span class=\"tex-font-style-tt\">YES</span> in the first line, and the required regular bracket sequence $$$t$$$ itself in the second line. If there are multiple answers \u2014 you may print any of them.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">)(</div><div class=\"test-example-line test-example-line-even test-example-line-2\">(()</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">()</div><div class=\"test-example-line test-example-line-even test-example-line-4\">))()</div>",
+            "output": "\nYES\n(())\nYES\n()()()\nNO\nYES\n()(()())\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1860,
+    "index": "A",
+    "name": "Not a Substring",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "strings"
+    ],
+    "solvedCount": 21044
+}

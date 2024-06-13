@@ -1,0 +1,34 @@
+{
+    "title": "E. Narrow Components",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a matrix $$$a$$$, consisting of $$$3$$$ rows and $$$n$$$ columns. Each cell of the matrix is either free or taken.</p><p>A free cell $$$y$$$ is reachable from a free cell $$$x$$$ if at least one of these conditions hold: </p><ul> <li> $$$x$$$ and $$$y$$$ share a side; </li><li> there exists a free cell $$$z$$$ such that $$$z$$$ is reachable from $$$x$$$ and $$$y$$$ is reachable from $$$z$$$. </li></ul><p>A connected component is a set of free cells of the matrix such that all cells in it are reachable from one another, but adding any other free cell to the set violates this rule.</p><p>You are asked $$$q$$$ queries about the matrix. Each query is the following: </p><ul> <li> $$$l$$$ $$$r$$$\u00a0\u2014 count the number of connected components of the matrix, consisting of columns from $$$l$$$ to $$$r$$$ of the matrix $$$a$$$, inclusive. </li></ul><p>Print the answers to all queries.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$n$$$ ($$$1 \\le n \\le 5 \\cdot 10^5$$$)\u00a0\u2014 the number of columns of matrix $$$a$$$.</p><p>The $$$i$$$-th of the next three lines contains a description of the $$$i$$$-th row of the matrix $$$a$$$\u00a0\u2014 a string, consisting of $$$n$$$ characters. Each character is either $$$1$$$ (denoting a free cell) or $$$0$$$ (denoting a taken cell).</p><p>The next line contains an integer $$$q$$$ ($$$1 \\le q \\le 3 \\cdot 10^5$$$)\u00a0\u2014 the number of queries.</p><p>The $$$j$$$-th of the next $$$q$$$ lines contains two integers $$$l_j$$$ and $$$r_j$$$ ($$$1 \\le l_j \\le r_j \\le n$$$)\u00a0\u2014 the description of the $$$j$$$-th query.</p>",
+    "outputSpecification": "<p>Print $$$q$$$ integers\u00a0\u2014 the $$$j$$$-th value should be equal to the number of the connected components of the matrix, consisting of columns from $$$l_j$$$ to $$$r_j$$$ of the matrix $$$a$$$, inclusive.</p>",
+    "samples": [
+        {
+            "input": "\n12\n100101011101\n110110010110\n010001011101\n8\n1 12\n1 1\n1 2\n9 9\n8 11\n9 12\n11 12\n4 6\n",
+            "output": "\n7\n1\n1\n2\n1\n3\n3\n3\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1661,
+    "index": "E",
+    "name": "Narrow Components",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "dsu",
+        "math",
+        "trees"
+    ],
+    "solvedCount": 919
+}

@@ -1,0 +1,28 @@
+{
+    "title": "A. Are You a Robot?",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/36a211d1aed2547a441602fc43dea525b02a6885.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1812,
+    "index": "A",
+    "name": "Are You a Robot?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "*special",
+        "*special",
+        "expression parsing",
+        "strings"
+    ],
+    "solvedCount": 13110
+}

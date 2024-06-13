@@ -1,0 +1,34 @@
+{
+    "title": "D. Triangle Coloring",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an undirected graph consisting of $$$n$$$ vertices and $$$n$$$ edges, where $$$n$$$ is divisible by $$$6$$$. Each edge has a weight, which is a positive (greater than zero) integer.</p><p>The graph has the following structure: it is split into $$$\\frac{n}{3}$$$ triples of vertices, the first triple consisting of vertices $$$1, 2, 3$$$, the second triple consisting of vertices $$$4, 5, 6$$$, and so on. Every pair of vertices from the same triple is connected by an edge. There are no edges between vertices from different triples.</p><p>You have to paint the vertices of this graph into two colors, red and blue. Each vertex should have exactly one color, there should be exactly $$$\\frac{n}{2}$$$ red vertices and $$$\\frac{n}{2}$$$ blue vertices. The coloring is called valid if it meets these constraints.</p><p>The weight of the coloring is the sum of weights of edges connecting two vertices with different colors.</p><p>Let $$$W$$$ be the maximum possible weight of a valid coloring. Calculate the number of valid colorings with weight $$$W$$$, and print it modulo $$$998244353$$$.</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$n$$$ ($$$6 \\le n \\le 3 \\cdot 10^5$$$, $$$n$$$ is divisible by $$$6$$$).</p><p>The second line contains $$$n$$$ integers $$$w_1, w_2, \\dots, w_n$$$ ($$$1 \\le w_i \\le 1000$$$) \u2014 the weights of the edges. Edge $$$1$$$ connects vertices $$$1$$$ and $$$2$$$, edge $$$2$$$ connects vertices $$$1$$$ and $$$3$$$, edge $$$3$$$ connects vertices $$$2$$$ and $$$3$$$, edge $$$4$$$ connects vertices $$$4$$$ and $$$5$$$, edge $$$5$$$ connects vertices $$$4$$$ and $$$6$$$, edge $$$6$$$ connects vertices $$$5$$$ and $$$6$$$, and so on.</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the number of valid colorings with maximum possible weight, taken modulo $$$998244353$$$.</p>",
+    "samples": [
+        {
+            "input": "\n12\n1 3 3 7 8 5 2 2 2 2 4 2\n",
+            "output": "\n36\n"
+        },
+        {
+            "input": "\n6\n4 2 6 6 6 4\n",
+            "output": "\n2\n"
+        }
+    ],
+    "note": "<p>The following picture describes the graph from the first example test.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/56fc24895819318d9cb93e0b212b2a1bf75a558d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The maximum possible weight of a valid coloring of this graph is $$$31$$$.</p>",
+    "contestId": 1795,
+    "index": "D",
+    "name": "Triangle Coloring",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "math"
+    ],
+    "solvedCount": 8621
+}

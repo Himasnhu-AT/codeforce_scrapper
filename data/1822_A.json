@@ -1,0 +1,30 @@
+{
+    "title": "A. TubeTube Feed",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mushroom Filippov cooked himself a meal and while having his lunch, he decided to watch a video on <span class=\"tex-font-style-tt\">TubeTube</span>. He can not spend more than $$$t$$$ seconds for lunch, so he asks you for help with the selection of video.</p><p>The <span class=\"tex-font-style-tt\">TubeTube</span> feed is a list of $$$n$$$ videos, indexed from $$$1$$$ to $$$n$$$. The $$$i$$$-th video lasts $$$a_i$$$ seconds and has an entertainment value $$$b_i$$$. Initially, the feed is opened on the first video, and Mushroom can skip to the next video in $$$1$$$ second (if the next video exists). Mushroom can skip videos any number of times (including zero).</p><p>Help Mushroom choose <span class=\"tex-font-style-bf\">one</span> video that he can open and watch in $$$t$$$ seconds. If there are several of them, he wants to choose the most entertaining one. Print the index of any appropriate video, or $$$-1$$$ if there is no such.</p>",
+    "inputSpecification": "<p>The first line of the input data contains a single integer $$$q$$$ ($$$1 \\le q \\le 1000$$$)\u00a0\u2014 the number of test cases in the test.</p><p>The description of the test cases follows.</p><p>The first line of a test case contains two integers $$$n$$$ and $$$t$$$ ($$$1 \\le n \\le 50$$$, $$$1 \\le t \\le 200$$$)\u00a0\u2014 the number of videos in the feed and seconds for lunch, respectively.</p><p>The second line of a test case contains $$$n$$$ integers $$$a_1, a_2, a_3, \\dots, a_n$$$ ($$$1 \\le a_i \\le 100$$$)\u00a0\u2014 durations of videos. </p><p>The third line of a test case contains $$$n$$$ integers $$$b_1, b_2, b_3, \\dots, b_n$$$ ($$$1 \\le b_i \\le 100$$$)\u00a0\u2014 entertainment values of videos.</p>",
+    "outputSpecification": "<p>Output $$$q$$$ integers, each of which is the answer to the corresponding test case. As an answer, output the <span class=\"tex-font-style-bf\">index</span> of the most entertaining video that Mushroom will have time to watch. If there are several answers, you are allowed to output any of them. Output $$$-1$$$, if there is no video he can watch during his lunch break.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">5 9</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 5 7 6 6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3 4 7 1 9</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 3 3 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 2 3 4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5 7</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5 5 5 5 5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 1 3 9 7</div><div class=\"test-example-line test-example-line-even test-example-line-4\">4 33</div><div class=\"test-example-line test-example-line-even test-example-line-4\">54 71 69 96</div><div class=\"test-example-line test-example-line-even test-example-line-4\">42 24 99 1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">2 179</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">55 66</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">77 88</div>",
+            "output": "\n3\n2\n3\n-1\n2\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1822,
+    "index": "A",
+    "name": "TubeTube Feed",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 23761
+}

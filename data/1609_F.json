@@ -1,0 +1,36 @@
+{
+    "title": "F. Interesting Sections",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" height=\"302px\" src=\"https://espresso.codeforces.com/a3929a7b640488cd5e0319a7c43d10f2210a1170.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"454px\"/> </center><p>William has an array of non-negative numbers $$$a_1, a_2, \\dots, a_n$$$. He wants you to find out how many segments $$$l \\le r$$$ pass the check. The check is performed in the following manner: </p><ol> <li> The minimum and maximum numbers are found on the segment of the array starting at $$$l$$$ and ending at $$$r$$$. </li><li> The check is considered to be passed if the binary representation of the minimum and maximum numbers have the same number of bits equal to 1. </li></ol>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 10^6$$$), the size of array $$$a$$$.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$0 \\le a_i \\le 10^{18}$$$), the contents of array $$$a$$$.</p>",
+    "outputSpecification": "<p>Output a single number \u00a0\u2014 the total number of segments that passed the check.</p>",
+    "samples": [
+        {
+            "input": "\n5\n1 2 3 4 5\n",
+            "output": "\n9\n"
+        },
+        {
+            "input": "\n10\n0 5 7 3 9 10 1 6 13 7\n",
+            "output": "\n18\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1609,
+    "index": "F",
+    "name": "Interesting Sections",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "meet-in-the-middle",
+        "two pointers"
+    ],
+    "solvedCount": 737
+}

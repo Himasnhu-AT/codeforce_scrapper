@@ -1,0 +1,34 @@
+{
+    "title": "F. Circle Perimeter",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Given an integer $$$r$$$, find the number of lattice points that have a Euclidean distance from $$$(0, 0)$$$ <span class=\"tex-font-style-bf\">greater than or equal to</span> $$$r$$$ but <span class=\"tex-font-style-bf\">strictly less</span> than $$$r+1$$$.</p><p>A <span class=\"tex-font-style-it\">lattice point</span> is a point with integer coordinates. The <span class=\"tex-font-style-it\">Euclidean distance</span> from $$$(0, 0)$$$ to the point $$$(x,y)$$$ is $$$\\sqrt{x^2 + y^2}$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 1000$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains a single integer $$$r$$$ ($$$1 \\leq r \\leq 10^5$$$).</p><p>The sum of $$$r$$$ over all test cases does not exceed $$$10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer\u00a0\u2014 the number of lattice points that have an Euclidean distance $$$d$$$ from $$$(0, 0)$$$ such that $$$r \\leq d &lt; r+1$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3</div><div class=\"test-example-line test-example-line-even test-example-line-4\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">5</div><div class=\"test-example-line test-example-line-even test-example-line-6\">1984</div>",
+            "output": "\n8\n16\n20\n24\n40\n12504\n"
+        }
+    ],
+    "note": "<p>The points for the first three test cases are shown below. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2ca1d529bd97765037c5efb822311069dd936eb9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1971,
+    "index": "F",
+    "name": "Circle Perimeter",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dfs and similar",
+        "geometry",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 8114
+}

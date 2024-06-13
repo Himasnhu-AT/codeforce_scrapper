@@ -1,0 +1,50 @@
+{
+    "title": "F. Reverse",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two positive integers $$$x$$$ and $$$y$$$. You can perform the following operation with $$$x$$$: write it in its binary form without leading zeros, add $$$0$$$ or $$$1$$$ to the right of it, reverse the binary form and turn it into a decimal number which is assigned as the new value of $$$x$$$.</p><p>For example: </p><ul> <li> $$$34$$$ can be turned into $$$81$$$ via one operation: the binary form of $$$34$$$ is $$$100010$$$, if you add $$$1$$$, reverse it and remove leading zeros, you will get $$$1010001$$$, which is the binary form of $$$81$$$. </li><li> $$$34$$$ can be turned into $$$17$$$ via one operation: the binary form of $$$34$$$ is $$$100010$$$, if you add $$$0$$$, reverse it and remove leading zeros, you will get $$$10001$$$, which is the binary form of $$$17$$$. </li><li> $$$81$$$ can be turned into $$$69$$$ via one operation: the binary form of $$$81$$$ is $$$1010001$$$, if you add $$$0$$$, reverse it and remove leading zeros, you will get $$$1000101$$$, which is the binary form of $$$69$$$. </li><li> $$$34$$$ can be turned into $$$69$$$ via two operations: first you turn $$$34$$$ into $$$81$$$ and then $$$81$$$ into $$$69$$$. </li></ul><p>Your task is to find out whether $$$x$$$ can be turned into $$$y$$$ after a certain number of operations (possibly zero).</p>",
+    "inputSpecification": "<p>The only line of the input contains two integers $$$x$$$ and $$$y$$$ ($$$1 \\le x, y \\le 10^{18}$$$).</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-font-style-tt\">YES</span> if you can make $$$x$$$ equal to $$$y$$$ and <span class=\"tex-font-style-tt\">NO</span> if you can't.</p>",
+    "samples": [
+        {
+            "input": "\n3 3\n",
+            "output": "\nYES\n"
+        },
+        {
+            "input": "\n7 4\n",
+            "output": "\nNO\n"
+        },
+        {
+            "input": "\n2 8\n",
+            "output": "\nNO\n"
+        },
+        {
+            "input": "\n34 69\n",
+            "output": "\nYES\n"
+        },
+        {
+            "input": "\n8935891487501725 71487131900013807\n",
+            "output": "\nYES\n"
+        }
+    ],
+    "note": "<p>In the first example, you don't even need to do anything.</p><p>The fourth example is described in the statement.</p>",
+    "contestId": 1618,
+    "index": "F",
+    "name": "Reverse",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "dfs and similar",
+        "implementation",
+        "math",
+        "strings"
+    ],
+    "solvedCount": 4074
+}

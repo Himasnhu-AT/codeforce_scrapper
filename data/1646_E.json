@@ -1,0 +1,40 @@
+{
+    "title": "E. Power Board",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have a rectangular board of size $$$n\\times m$$$ ($$$n$$$ rows, $$$m$$$ columns). The $$$n$$$ rows are numbered from $$$1$$$ to $$$n$$$ from top to bottom, and the $$$m$$$ columns are numbered from $$$1$$$ to $$$m$$$ from left to right. </p><p>The cell at the intersection of row $$$i$$$ and column $$$j$$$ contains the number $$$i^j$$$ ($$$i$$$ raised to the power of $$$j$$$). For example, if $$$n=3$$$ and $$$m=3$$$ the board is as follows:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/afa8db65b99d759cfbbcd49261d8394bd961875e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"189px\"/> </center><p>Find the number of distinct integers written on the board.</p>",
+    "inputSpecification": "<p>The only line contains two integers $$$n$$$ and $$$m$$$ ($$$1\\le n,m\\le 10^6$$$)\u00a0\u2014 the number of rows and columns of the board.</p>",
+    "outputSpecification": "<p>Print one integer, the number of distinct integers on the board.</p>",
+    "samples": [
+        {
+            "input": "\n3 3\n",
+            "output": "\n7\n"
+        },
+        {
+            "input": "\n2 4\n",
+            "output": "\n5\n"
+        },
+        {
+            "input": "\n4 2\n",
+            "output": "\n6\n"
+        }
+    ],
+    "note": "<p>The statement shows the board for the first test case. In this case there are $$$7$$$ distinct integers: $$$1$$$, $$$2$$$, $$$3$$$, $$$4$$$, $$$8$$$, $$$9$$$, and $$$27$$$.</p><p>In the second test case, the board is as follows:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/34d10dbc65f224705db23fe58e1325724b18e64e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"252px\"/> </center><p>There are $$$5$$$ distinct numbers: $$$1$$$, $$$2$$$, $$$4$$$, $$$8$$$ and $$$16$$$.</p><p>In the third test case, the board is as follows:</p><center> <img class=\"tex-graphics\" height=\"252px\" src=\"https://espresso.codeforces.com/624027d7bf49ecb62c4a73b92f886fe2f742770f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>There are $$$6$$$ distinct numbers: $$$1$$$, $$$2$$$, $$$3$$$, $$$4$$$, $$$9$$$ and $$$16$$$.</p>",
+    "contestId": 1646,
+    "index": "E",
+    "name": "Power Board",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 2316
+}

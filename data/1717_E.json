@@ -1,0 +1,38 @@
+{
+    "title": "E. Madoka and The Best University",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Madoka wants to enter to \"<span class=\"tex-font-style-it\">Novosibirsk State University</span>\", but in the entrance exam she came across a very difficult task:</p><p>Given an integer $$$n$$$, it is required to calculate $$$\\sum{\\operatorname{lcm}(c, \\gcd(a, b))}$$$, for all triples of positive integers $$$(a, b, c)$$$, where $$$a + b + c = n$$$.</p><p>In this problem $$$\\gcd(x, y)$$$ denotes the <a href=\"https://en.wikipedia.org/wiki/Greatest_common_divisor\">greatest common divisor</a> of $$$x$$$ and $$$y$$$, and $$$\\operatorname{lcm}(x, y)$$$ denotes the <a href=\"https://en.wikipedia.org/wiki/Least_common_multiple\">least common multiple</a> of $$$x$$$ and $$$y$$$.</p><p>Solve this problem for Madoka and help her to enter to the best university!</p>",
+    "inputSpecification": "<p>The first and the only line contains a single integer $$$n$$$ ($$$3 \\le n \\le 10^5$$$).</p>",
+    "outputSpecification": "<p>Print exactly one interger\u00a0\u2014 $$$\\sum{\\operatorname{lcm}(c, \\gcd(a, b))}$$$. Since the answer can be very large, then output it modulo $$$10^9 + 7$$$.</p>",
+    "samples": [
+        {
+            "input": "\n3\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n5\n",
+            "output": "\n11\n"
+        },
+        {
+            "input": "\n69228\n",
+            "output": "\n778304278\n"
+        }
+    ],
+    "note": "<p>In the first example, there is only one suitable triple $$$(1, 1, 1)$$$. So the answer is $$$\\operatorname{lcm}(1, \\gcd(1, 1)) = \\operatorname{lcm}(1, 1) = 1$$$.</p><p>In the second example, $$$\\operatorname{lcm}(1, \\gcd(3, 1)) + \\operatorname{lcm}(1, \\gcd(2, 2)) + \\operatorname{lcm}(1, \\gcd(1, 3)) + \\operatorname{lcm}(2, \\gcd(2, 1)) + \\operatorname{lcm}(2, \\gcd(1, 2)) + \\operatorname{lcm}(3, \\gcd(1, 1)) = \\operatorname{lcm}(1, 1) + \\operatorname{lcm}(1, 2) + \\operatorname{lcm}(1, 1) + \\operatorname{lcm}(2, 1) + \\operatorname{lcm}(2, 1) + \\operatorname{lcm}(3, 1) = 1 + 2 + 1 + 2 + 2 + 3 = 11$$$</p>",
+    "contestId": 1717,
+    "index": "E",
+    "name": "Madoka and The Best University",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 2516
+}

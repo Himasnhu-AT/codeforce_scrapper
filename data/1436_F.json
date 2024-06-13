@@ -1,0 +1,39 @@
+{
+    "title": "F. Sum Over Subsets",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a multiset $$$S$$$. Over all pairs of subsets $$$A$$$ and $$$B$$$, such that:</p><ul> <li> $$$B \\subset A$$$; </li><li> $$$|B| = |A| - 1$$$; </li><li> greatest common divisor of all elements in $$$A$$$ is equal to one; </li></ul><p>find the sum of $$$\\sum_{x \\in A}{x} \\cdot \\sum_{x \\in B}{x}$$$, modulo $$$998\\,244\\,353$$$.</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$m$$$ ($$$1 \\le m \\le 10^5$$$): the number of different values in the multiset $$$S$$$.</p><p>Each of the next $$$m$$$ lines contains two integers $$$a_i$$$, $$$freq_i$$$ ($$$1 \\le a_i \\le 10^5, 1 \\le freq_i \\le 10^9$$$). Element $$$a_i$$$ appears in the multiset $$$S$$$ $$$freq_i$$$ times. All $$$a_i$$$ are different.</p>",
+    "outputSpecification": "<p>Print the required sum, modulo $$$998\\,244\\,353$$$.</p>",
+    "samples": [
+        {
+            "input": "\n2\n1 1\n2 1\n",
+            "output": "\n9\n"
+        },
+        {
+            "input": "\n4\n1 1\n2 1\n3 1\n6 1\n",
+            "output": "\n1207\n"
+        },
+        {
+            "input": "\n1\n1 5\n",
+            "output": "\n560\n"
+        }
+    ],
+    "note": "<p>A multiset is a set where elements are allowed to coincide. $$$|X|$$$ is the cardinality of a set $$$X$$$, the number of elements in it.</p><p>$$$A \\subset B$$$: Set $$$A$$$ is a subset of a set $$$B$$$.</p><p>In the first example $$$B=\\{1\\}, A=\\{1,2\\}$$$ and $$$B=\\{2\\}, A=\\{1, 2\\}$$$ have a product equal to $$$1\\cdot3 + 2\\cdot3=9$$$. Other pairs of $$$A$$$ and $$$B$$$ don't satisfy the given constraints.</p>",
+    "contestId": 1436,
+    "index": "F",
+    "name": "Sum Over Subsets",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 504
+}

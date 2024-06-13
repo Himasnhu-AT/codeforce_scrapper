@@ -1,0 +1,36 @@
+{
+    "title": "D. GCD of an Array",
+    "timeLimit": {
+        "value": 2.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array $$$a$$$ of length $$$n$$$. You are asked to process $$$q$$$ queries of the following format: given integers $$$i$$$ and $$$x$$$, multiply $$$a_i$$$ by $$$x$$$.</p><p>After processing each query you need to output the <a href=\"https://en.wikipedia.org/wiki/Greatest_common_divisor\">greatest common divisor (GCD)</a> of all elements of the array $$$a$$$.</p><p>Since the answer can be too large, you are asked to output it modulo $$$10^9+7$$$.</p>",
+    "inputSpecification": "<p>The first line contains two integers \u2014 $$$n$$$ and $$$q$$$ ($$$1 \\le n, q \\le 2 \\cdot 10^5$$$).</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\ldots, a_n$$$ ($$$1 \\le a_i \\le 2 \\cdot 10^5$$$) \u2014 the elements of the array $$$a$$$ before the changes.</p><p>The next $$$q$$$ lines contain queries in the following format: each line contains two integers $$$i$$$ and $$$x$$$ ($$$1 \\le i \\le n$$$, $$$1 \\le x \\le 2 \\cdot 10^5$$$).</p>",
+    "outputSpecification": "<p>Print $$$q$$$ lines: after processing each query output the GCD of all elements modulo $$$10^9+7$$$ on a separate line.</p>",
+    "samples": [
+        {
+            "input": "\n4 3\n1 6 8 12\n1 12\n2 3\n3 3\n",
+            "output": "\n2\n2\n6\n"
+        }
+    ],
+    "note": "<p>After the first query the array is $$$[12, 6, 8, 12]$$$, $$$\\operatorname{gcd}(12, 6, 8, 12) = 2$$$.</p><p>After the second query \u2014 $$$[12, 18, 8, 12]$$$, $$$\\operatorname{gcd}(12, 18, 8, 12) = 2$$$.</p><p>After the third query \u2014 $$$[12, 18, 24, 12]$$$, $$$\\operatorname{gcd}(12, 18, 24, 12) = 6$$$.</p><p>Here the $$$\\operatorname{gcd}$$$ function denotes the greatest common divisor.</p>",
+    "contestId": 1493,
+    "index": "D",
+    "name": "GCD of an Array",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "data structures",
+        "hashing",
+        "implementation",
+        "math",
+        "number theory",
+        "sortings",
+        "two pointers"
+    ],
+    "solvedCount": 4778
+}

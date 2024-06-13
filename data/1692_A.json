@@ -1,0 +1,29 @@
+{
+    "title": "A. Marathon",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given four <span class=\"tex-font-style-bf\">distinct</span> integers $$$a$$$, $$$b$$$, $$$c$$$, $$$d$$$. </p><p>Timur and three other people are running a marathon. The value $$$a$$$ is the distance that Timur has run and $$$b$$$, $$$c$$$, $$$d$$$ correspond to the distances the other three participants ran. </p><p>Output the number of participants in front of Timur.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 10^4$$$)\u00a0\u2014 the number of test cases.</p><p>The description of each test case consists of four <span class=\"tex-font-style-bf\">distinct</span> integers $$$a$$$, $$$b$$$, $$$c$$$, $$$d$$$ ($$$0 \\leq a, b, c, d \\leq 10^4$$$).</p>",
+    "outputSpecification": "<p>For each test case, output a single integer\u00a0\u2014 the number of participants in front of Timur.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 3 4 1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">10000 0 1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">500 600 400 300</div><div class=\"test-example-line test-example-line-even test-example-line-4\">0 9999 10000 9998</div>",
+            "output": "\n2\n0\n1\n3\n"
+        }
+    ],
+    "note": "<p>For the first test case, there are $$$2$$$ people in front of Timur, specifically the participants who ran distances of $$$3$$$ and $$$4$$$. The other participant is not in front of Timur because he ran a shorter distance than Timur.</p><p>For the second test case, no one is in front of Timur, since he ran a distance of $$$10000$$$ while all others ran a distance of $$$0$$$, $$$1$$$, and $$$2$$$ respectively.</p><p>For the third test case, only the second person is in front of Timur, who ran a total distance of $$$600$$$ while Timur ran a distance of $$$500$$$.</p>",
+    "contestId": 1692,
+    "index": "A",
+    "name": "Marathon",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 61051
+}

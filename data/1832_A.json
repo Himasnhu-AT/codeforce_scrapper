@@ -1,0 +1,29 @@
+{
+    "title": "A. New Palindrome",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A palindrome is a string that reads the same from left to right as from right to left. For example, <span class=\"tex-font-style-tt\">abacaba</span>, <span class=\"tex-font-style-tt\">aaaa</span>, <span class=\"tex-font-style-tt\">abba</span>, <span class=\"tex-font-style-tt\">racecar</span> are palindromes.</p><p>You are given a string $$$s$$$ consisting of lowercase Latin letters. The string $$$s$$$ is a palindrome.</p><p>You have to check whether it is possible to rearrange the letters in it to get <span class=\"tex-font-style-bf\">another</span> palindrome (not equal to the given string $$$s$$$).</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains a string $$$s$$$ ($$$2 \\le |s| \\le 50$$$) consisting of lowercase Latin letters. This string is a palindrome.</p>",
+    "outputSpecification": "<p>For each test case, print <span class=\"tex-font-style-tt\">YES</span> if it is possible to rearrange the letters in the given string to get <span class=\"tex-font-style-bf\">another</span> palindrome. Otherwise, print <span class=\"tex-font-style-tt\">NO</span>. </p><p>You may print each letter in any case (<span class=\"tex-font-style-tt\">YES</span>, <span class=\"tex-font-style-tt\">yes</span>, <span class=\"tex-font-style-tt\">Yes</span> will all be recognized as positive answer, <span class=\"tex-font-style-tt\">NO</span>, <span class=\"tex-font-style-tt\">no</span> and <span class=\"tex-font-style-tt\">nO</span> will all be recognized as negative answer).</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">codedoc</div><div class=\"test-example-line test-example-line-even test-example-line-2\">gg</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">aabaa</div>",
+            "output": "\nYES\nNO\nNO\n"
+        }
+    ],
+    "note": "<p>In the first test case, it is possible to rearrange the letters in the palindrome <span class=\"tex-font-style-tt\">codedoc</span> to obtain the string <span class=\"tex-font-style-tt\">ocdedco</span>, which is different from the given string, but also a palindrome.</p>",
+    "contestId": 1832,
+    "index": "A",
+    "name": "New Palindrome",
+    "type": "PROGRAMMING",
+    "tags": [
+        "strings"
+    ],
+    "solvedCount": 25039
+}

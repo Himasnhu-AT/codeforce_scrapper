@@ -1,0 +1,37 @@
+{
+    "title": "E. Xum",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have a blackboard and initially only an <span class=\"tex-font-style-bf\">odd</span> number $$$x$$$ is written on it. Your goal is to write the number $$$1$$$ on the blackboard.</p><p>You may write new numbers on the blackboard with the following two operations. </p><ul> <li> You may take two numbers (not necessarily distinct) already on the blackboard and write their sum on the blackboard. The two numbers you have chosen remain on the blackboard. </li><li> You may take two numbers (not necessarily distinct) already on the blackboard and write their <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#XOR\">bitwise XOR</a> on the blackboard. The two numbers you have chosen remain on the blackboard. </li></ul> Perform a sequence of operations such that at the end the number $$$1$$$ is on the blackboard.",
+    "inputSpecification": "<p>The single line of the input contains the odd integer $$$x$$$ ($$$3 \\le x \\le 999,999$$$).</p>",
+    "outputSpecification": "<p>Print on the first line the number $$$q$$$ of operations you perform. Then $$$q$$$ lines should follow, each describing one operation. </p><ul> <li> The \"sum\" operation is described by the line \"$$$a$$$ + $$$b$$$\", where $$$a, b$$$ must be integers already present on the blackboard. </li><li> The \"xor\" operation is described by the line \"$$$a$$$ ^ $$$b$$$\", where $$$a, b$$$ must be integers already present on the blackboard. </li></ul> <span class=\"tex-font-style-bf\">The operation symbol (+ or ^) must be separated from $$$a, b$$$ by a whitespace.</span><p>You can perform at most $$$100,000$$$ operations (that is, $$$q\\le 100,000$$$) and all numbers written on the blackboard must be in the range $$$[0, 5\\cdot10^{18}]$$$. It can be proven that under such restrictions the required sequence of operations exists. You can output any suitable sequence of operations.</p>",
+    "samples": [
+        {
+            "input": "\n3\n",
+            "output": "\n5\n3 + 3\n3 ^ 6\n3 + 5\n3 + 6\n8 ^ 9\n"
+        },
+        {
+            "input": "\n123\n",
+            "output": "\n10\n123 + 123\n123 ^ 246\n141 + 123\n246 + 123\n264 ^ 369\n121 + 246\n367 ^ 369\n30 + 30\n60 + 60\n120 ^ 121\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1427,
+    "index": "E",
+    "name": "Xum",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "math",
+        "matrices",
+        "number theory"
+    ],
+    "solvedCount": 1273
+}

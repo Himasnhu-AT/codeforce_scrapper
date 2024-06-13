@@ -1,0 +1,37 @@
+{
+    "title": "F. Beautiful Tree",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Lunchbox has a tree of size $$$n$$$ rooted at node $$$1$$$. Each node is then assigned a value. Lunchbox considers the tree to be beautiful if each value is distinct and ranges from $$$1$$$ to $$$n$$$. In addition, a beautiful tree must also satisfy $$$m$$$ requirements of $$$2$$$ types:</p><ul> <li> \"<span class=\"tex-font-style-tt\">1 a b c</span>\"\u00a0\u2014 The node with the smallest value on the path between nodes $$$a$$$ and $$$b$$$ must be located at $$$c$$$. </li><li> \"<span class=\"tex-font-style-tt\">2 a b c</span>\"\u00a0\u2014 The node with the largest value on the path between nodes $$$a$$$ and $$$b$$$ must be located at $$$c$$$. </li></ul><p>Now, you must assign values to each node such that the resulting tree is beautiful. If it is impossible to do so, output $$$-1$$$.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$m$$$ ($$$2 \\le n, m \\le 2 \\cdot 10^5$$$).</p><p>The next $$$n - 1$$$ lines contain two integers $$$u$$$ and $$$v$$$ ($$$1 \\le u, v \\le n, u \\ne v$$$)\u00a0\u2014 denoting an edge between nodes $$$u$$$ and $$$v$$$. It is guaranteed that the given edges form a tree.</p><p>The next $$$m$$$ lines each contain four integers $$$t$$$, $$$a$$$, $$$b$$$, and $$$c$$$ ($$$t \\in \\{1,2\\}$$$, $$$1 \\le a, b, c \\le n$$$). It is guaranteed that node $$$c$$$ is on the path between nodes $$$a$$$ and $$$b$$$.</p>",
+    "outputSpecification": "<p>If it is impossible to assign values such that the tree is beautiful, output $$$-1$$$. Otherwise, output $$$n$$$ integers, the $$$i$$$-th of which denotes the value of node $$$i$$$.</p>",
+    "samples": [
+        {
+            "input": "\n7 5\n1 2\n1 3\n1 4\n3 5\n4 6\n3 7\n1 6 5 1\n2 6 7 3\n1 2 7 1\n1 7 5 7\n2 4 2 2\n",
+            "output": "\n1 6 7 5 3 4 2 \n"
+        },
+        {
+            "input": "\n2 2\n1 2\n1 1 2 1\n1 1 2 2\n",
+            "output": "\n-1\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1904,
+    "index": "F",
+    "name": "Beautiful Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "implementation",
+        "trees"
+    ],
+    "solvedCount": 312
+}

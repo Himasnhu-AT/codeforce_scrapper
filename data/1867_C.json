@@ -1,0 +1,33 @@
+{
+    "title": "C. Salyg1n and the MEX Game",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is an interactive problem!</span></p><p>salyg1n gave Alice a set $$$S$$$ of $$$n$$$ distinct integers $$$s_1, s_2, \\ldots, s_n$$$ ($$$0 \\leq s_i \\leq 10^9$$$). Alice decided to play a game with this set against Bob. The rules of the game are as follows:</p><ul> <li> Players take turns, with Alice going first.<p> </p></li><li> In one move, Alice adds one number $$$x$$$ ($$$0 \\leq x \\leq 10^9$$$) to the set $$$S$$$. The set $$$S$$$ must not contain the number $$$x$$$ at the time of the move.</li><li> In one move, Bob removes one number $$$y$$$ from the set $$$S$$$. The set $$$S$$$ must contain the number $$$y$$$ at the time of the move. Additionally, the number $$$y$$$ must be <span class=\"tex-font-style-bf\">strictly smaller</span> than the last number added by Alice.</li><li> The game ends when Bob cannot make a move or after $$$2 \\cdot n + 1$$$ moves (in which case Alice's move will be the last one).</li><li> The result of the game is $$$\\operatorname{MEX}\\dagger(S)$$$ ($$$S$$$ at the end of the game).</li><li> Alice aims to maximize the result, while Bob aims to minimize it. </li></ul><p>Let $$$R$$$ be the result when both players play optimally. <span class=\"tex-font-style-bf\">In this problem, you play as Alice against the jury program playing as Bob.</span> Your task is to implement a strategy for Alice such that the result of the game is always at least $$$R$$$.</p><p>$$$\\dagger$$$ $$$\\operatorname{MEX}$$$ of a set of integers $$$c_1, c_2, \\ldots, c_k$$$ is defined as the smallest non-negative integer $$$x$$$ which does not occur in the set $$$c$$$. For example, $$$\\operatorname{MEX}(\\{0, 1, 2, 4\\})$$$ $$$=$$$ $$$3$$$.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1 \\leq t \\leq 10^5$$$) - the number of test cases.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n3\n5\n1 2 3 5 7\n\n7\n\n5\n\n-1\n\n3\n0 1 2\n\n0\n\n-1\n\n3\n5 7 57\n\n-1",
+            "output": "\n8\n\n57\n\n0\n\n3\n\n0\n\n0"
+        }
+    ],
+    "note": "<p>In the first test case, the set $$$S$$$ changed as follows:</p><p>{$$$1, 2, 3, 5, 7$$$} $$$\\to$$$ {$$$1, 2, 3, 5, 7, 8$$$} $$$\\to$$$ {$$$1, 2, 3, 5, 8$$$} $$$\\to$$$ {$$$1, 2, 3, 5, 8, 57$$$} $$$\\to$$$ {$$$1, 2, 3, 8, 57$$$} $$$\\to$$$ {$$$0, 1, 2, 3, 8, 57$$$}. In the end of the game, $$$\\operatorname{MEX}(S) = 4$$$, $$$R = 4$$$.</p><p>In the second test case, the set $$$S$$$ changed as follows:</p><p>{$$$0, 1, 2$$$} $$$\\to$$$ {$$$0, 1, 2, 3$$$} $$$\\to$$$ {$$$1, 2, 3$$$} $$$\\to$$$ {$$$0, 1, 2, 3$$$}. In the end of the game, $$$\\operatorname{MEX}(S) = 4$$$, $$$R = 4$$$.</p><p>In the third test case, the set $$$S$$$ changed as follows:</p><p>{$$$5, 7, 57$$$} $$$\\to$$$ {$$$0, 5, 7, 57$$$}. In the end of the game, $$$\\operatorname{MEX}(S) = 1$$$, $$$R = 1$$$.</p>",
+    "contestId": 1867,
+    "index": "C",
+    "name": "Salyg1n and the MEX Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "games",
+        "greedy",
+        "interactive"
+    ],
+    "solvedCount": 10751
+}

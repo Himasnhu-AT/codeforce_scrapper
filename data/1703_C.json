@@ -1,0 +1,31 @@
+{
+    "title": "C. Cypher",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Luca has a cypher made up of a sequence of $$$n$$$ wheels, each with a digit $$$a_i$$$ written on it. On the $$$i$$$-th wheel, he made $$$b_i$$$ moves. Each move is one of two types: </p><ul> <li> <span class=\"tex-font-style-it\">up</span> move (denoted by $$$\\texttt{U}$$$): it increases the $$$i$$$-th digit by $$$1$$$. After applying the up move on $$$9$$$, it becomes $$$0$$$. </li><li> <span class=\"tex-font-style-it\">down</span> move (denoted by $$$\\texttt{D}$$$): it decreases the $$$i$$$-th digit by $$$1$$$. After applying the down move on $$$0$$$, it becomes $$$9$$$. </li></ul><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/9b0ef328d5e7fc3b82d7b2a05ae3e757d05c7c76.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">Example for $$$n=4$$$. The current sequence is <span class=\"tex-font-style-tt\">0 0 0 0</span>.</span> </center><p>Luca knows the final sequence of wheels and the moves for each wheel. Help him find the original sequence and crack the cypher.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 100$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$1 \\leq n \\leq 100$$$)\u00a0\u2014 the number of wheels.</p><p>The second line contains $$$n$$$ integers $$$a_i$$$ ($$$0 \\leq a_i \\leq 9$$$)\u00a0\u2014 the digit shown on the $$$i$$$-th wheel after all moves have been performed.</p><p>Then $$$n$$$ lines follow, the $$$i$$$-th of which contains the integer $$$b_i$$$ ($$$1 \\leq b_i \\leq 10$$$) and $$$b_i$$$ characters that are either $$$\\texttt{U}$$$ or $$$\\texttt{D}$$$\u00a0\u2014 the number of moves performed on the $$$i$$$-th wheel, and the moves performed. $$$\\texttt{U}$$$ and $$$\\texttt{D}$$$ represent an <span class=\"tex-font-style-it\">up</span> move and a <span class=\"tex-font-style-it\">down</span> move respectively.</p>",
+    "outputSpecification": "<p>For each test case, output $$$n$$$ space-separated digits \u00a0\u2014 the initial sequence of the cypher.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">9 3 1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3 DDD</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4 UDUU</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 DU</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">0 9</div><div class=\"test-example-line test-example-line-even test-example-line-2\">9 DDDDDDDDD</div><div class=\"test-example-line test-example-line-even test-example-line-2\">9 UUUUUUUUU</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">0 5 9 8 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">10 UUUUUUUUUU</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 UUD</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">8 UUDUUDDD</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">10 UUDUUDUDDU</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">4 UUUU</div>",
+            "output": "\n2 1 1 \n9 0 \n0 4 9 6 9 \n"
+        }
+    ],
+    "note": "<p>In the first test case, we can prove that initial sequence was $$$[2,1,1]$$$. In that case, the following moves were performed: </p><ul> <li> On the first wheel: $$$2 \\xrightarrow[\\texttt{D}]{} 1 \\xrightarrow[\\texttt{D}]{} 0 \\xrightarrow[\\texttt{D}]{} 9$$$. </li><li> On the second wheel: $$$1 \\xrightarrow[\\texttt{U}]{} 2 \\xrightarrow[\\texttt{D}]{} 1 \\xrightarrow[\\texttt{U}]{} 2 \\xrightarrow[\\texttt{U}]{} 3$$$. </li><li> On the third wheel: $$$1 \\xrightarrow[\\texttt{D}]{} 0 \\xrightarrow[\\texttt{U}]{} 1$$$. </li></ul> The final sequence was $$$[9,3,1]$$$, which matches the input.",
+    "contestId": 1703,
+    "index": "C",
+    "name": "Cypher",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 34477
+}

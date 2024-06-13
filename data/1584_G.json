@@ -1,0 +1,33 @@
+{
+    "title": "G. Eligible Segments",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given $$$n$$$ <span class=\"tex-font-style-bf\">distinct</span> points $$$p_1, p_2, \\ldots, p_n$$$ on the plane and a positive integer $$$R$$$. </p><p>Find the number of pairs of indices $$$(i, j)$$$ such that $$$1 \\le i &lt; j \\le n$$$, and for every possible $$$k$$$ ($$$1 \\le k \\le n$$$) the distance from the point $$$p_k$$$ to the <span class=\"tex-font-style-bf\">segment</span> between points $$$p_i$$$ and $$$p_j$$$ is at most $$$R$$$.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$, $$$R$$$ ($$$1 \\le n \\le 3000$$$, $$$1 \\le R \\le 10^5$$$)\u00a0\u2014 the number of points and the maximum distance between a point and a segment.</p><p>Each of the next $$$n$$$ lines contains two integers $$$x_i$$$, $$$y_i$$$ ($$$-10^5 \\le x_i, y_i \\le 10^5$$$) that define the $$$i$$$-th point $$$p_i=(x_i, y_i)$$$. All points are distinct.</p><p>It is guaranteed that the answer does not change if the parameter $$$R$$$ is changed by at most $$$10^{-2}$$$.</p>",
+    "outputSpecification": "<p>Print the number of suitable pairs $$$(i, j)$$$.</p>",
+    "samples": [
+        {
+            "input": "\n4 2\n0 1\n0 -1\n3 0\n-3 0\n",
+            "output": "\n1"
+        },
+        {
+            "input": "\n3 3\n1 -1\n-1 -1\n0 1\n",
+            "output": "\n3"
+        }
+    ],
+    "note": "<p>In the first example, the only pair of points $$$(-3, 0)$$$, $$$(3, 0)$$$ is suitable. The distance to the segment between these points from the points $$$(0, 1)$$$ and $$$(0, -1)$$$ is equal to $$$1$$$, which is less than $$$R=2$$$.</p><p>In the second example, all possible pairs of points are eligible.</p>",
+    "contestId": 1584,
+    "index": "G",
+    "name": "Eligible Segments",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 203
+}

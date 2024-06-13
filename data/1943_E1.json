@@ -1,0 +1,31 @@
+{
+    "title": "E1. MEX Game 2 (Easy Version)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is the easy version of the problem. The only difference between the two versions is the constraint on $$$t$$$, $$$m$$$ and the sum of $$$m$$$. You can make hacks only if both versions of the problem are solved.</span></p><p>Alice and Bob play yet another game on an array $$$a$$$ of size $$$n$$$. Alice starts with an empty array $$$c$$$. Both players take turns playing, with Alice starting first.</p><p>On Alice's turn, she picks one element from $$$a$$$, appends that element to $$$c$$$, and then deletes it from $$$a$$$.</p><p>On Bob's turn, he picks at most $$$k$$$ elements from $$$a$$$, and then deletes it from $$$a$$$. </p><p>The game ends when the array $$$a$$$ is empty. Alice's score is defined to be the MEX$$$^\\dagger$$$ of $$$c$$$. Alice wants to maximize her score while Bob wants to minimize it. Find Alice's final score if both players play optimally.</p><p>The array will be given in compressed format. Instead of giving the elements present in the array, we will be giving their frequencies. Formally, you will be given $$$m$$$, the maximum element in the array, and then $$$m + 1$$$ integers $$$f_0, f_1, \\ldots, f_m$$$, where $$$f_i$$$ represents the number of times $$$i$$$ occurs in the array $$$a$$$.</p><p>$$$^\\dagger$$$ The $$$\\operatorname{MEX}$$$ (minimum excludant) of an array of integers is defined as the smallest non-negative integer which does not occur in the array. For example: </p><ul> <li> The MEX of $$$[2,2,1]$$$ is $$$0$$$, because $$$0$$$ does not belong to the array. </li><li> The MEX of $$$[3,1,0,1]$$$ is $$$2$$$, because $$$0$$$ and $$$1$$$ belong to the array, but $$$2$$$ does not. </li><li> The MEX of $$$[0,3,1,2]$$$ is $$$4$$$, because $$$0$$$, $$$1$$$, $$$2$$$ and $$$3$$$ belong to the array, but $$$4$$$ does not. </li></ul>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 500$$$)\u00a0\u2014 the number of test cases. The description of the test cases follows.</p><p>The first line of each test case contains two integers $$$m$$$ and $$$k$$$ ($$$1 \\le m \\le 50, 1 \\le k \\le 10^9$$$).</p><p>The second line contains $$$m + 1$$$ integers $$$f_0, f_1, \\ldots, f_m$$$ ($$$1 \\le f_i \\le 10^9$$$).</p><p>It is guaranteed the sum of $$$m$$$ over all test cases does not exceed $$$1000$$$.</p>",
+    "outputSpecification": "<p>For each test case, find Alice's score if both players play optimally.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4 5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 1000000000</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1000000000 1000000000 1000000000</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 3 100 1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">2 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">3 1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1 1 1 1</div>",
+            "output": "\n2\n1\n3\n2\n1\n"
+        }
+    ],
+    "note": "<p>In the first test case, the array $$$a$$$ is $$$[0, 0, 0, 0, 1, 1, 1, 1, 1]$$$. A possible game with a score of $$$2$$$ is as follows: </p><ol> <li> Alice chooses the element $$$0$$$. After this move, $$$a = [0, 0, 0, 1, 1, 1, 1, 1]$$$ and $$$c=[0]$$$. </li><li> Bob chooses to remove the $$$3$$$ elements $$$0$$$, $$$0$$$ and $$$1$$$. After this move, $$$a = [0, 1, 1, 1, 1]$$$ and $$$c=[0]$$$. </li><li> Alice chooses the element $$$1$$$. After this move, $$$a = [0,1,1,1]$$$ and $$$c=[0,1]$$$. </li><li> Bob removes the $$$4$$$ remaining elements $$$0$$$, $$$1$$$, $$$1$$$ and $$$1$$$. After this move, $$$a=[\\,]$$$ and $$$c=[0,1]$$$. </li></ol><p>At the end, $$$c=[0,1]$$$ which has a MEX of $$$2$$$. Note that this is an example game and does not necessarily represent the optimal strategy for both players.</p><p>In the second test case, Alice can choose a $$$0$$$ in her first turn, guaranteeing that her score is at least $$$1$$$. While Bob can remove all copies of element $$$1$$$ in his first turn, thus guaranteeing that Alice's score cannot exceed $$$1$$$. So Alice's score is $$$1$$$ if both players play optimally.</p>",
+    "contestId": 1943,
+    "index": "E1",
+    "name": "MEX Game 2 (Easy Version)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "greedy"
+    ],
+    "solvedCount": 386
+}

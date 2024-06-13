@@ -1,0 +1,32 @@
+{
+    "title": "G. Hits Different",
+    "timeLimit": {
+        "value": 2.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In a carnival game, there is a huge pyramid of cans with $$$2023$$$ rows, numbered in a regular pattern as shown.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/3f72320a7f225babc9b2b244a719e59e9e8f028d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/><p><span class=\"tex-font-size-small\">If can $$$9^2$$$ is hit initially, then all cans colored red in the picture above would fall.</span> </p></center><p>You throw a ball at the pyramid, and it hits a single can with number $$$n^2$$$. This causes all cans that are stacked on top of this can to fall (that is, can $$$n^2$$$ falls, then the cans directly above $$$n^2$$$ fall, then the cans directly above those cans, and so on). For example, the picture above shows the cans that would fall if can $$$9^2$$$ is hit.</p><p>What is the <span class=\"tex-font-style-bf\">sum</span> of the numbers on all cans that fall? Recall that $$$n^2 = n \\times n$$$.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1 \\leq t \\leq 1000$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains a single integer $$$n$$$ ($$$1 \\leq n \\leq 10^6$$$)\u00a0\u2014 it means that the can you hit has label $$$n^2$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer\u00a0\u2014 the sum of the numbers on all cans that fall.</p><p>Please note, that the answer for some test cases won't fit into 32-bit integer type, so you should use at least 64-bit integer type in your programming language (like <span class=\"tex-font-style-tt\">long long</span> for C++). For all valid inputs, the answer will always fit into 64-bit integer type.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">9</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">4</div><div class=\"test-example-line test-example-line-even test-example-line-6\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">6</div><div class=\"test-example-line test-example-line-even test-example-line-8\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">1434</div><div class=\"test-example-line test-example-line-even test-example-line-10\">1000000</div>",
+            "output": "\n156\n1\n5\n10\n21\n39\n46\n146\n63145186\n58116199242129511\n"
+        }
+    ],
+    "note": "<p>The first test case is pictured in the statement. The sum of the numbers that fall is $$$$$$1^2 + 2^2 + 3^2 + 5^2 + 6^2 + 9^2 = 1 + 4 + 9 + 25 + 36 + 81 = 156.$$$$$$</p><p>In the second test case, only the can labeled $$$1^2$$$ falls, so the answer is $$$1^2=1$$$.</p><p>In the third test case, the cans labeled $$$1^2$$$ and $$$2^2$$$ fall, so the answer is $$$1^2+2^2=1+4=5$$$.</p><p>In the fourth test case, the cans labeled $$$1^2$$$ and $$$3^2$$$ fall, so the answer is $$$1^2+3^2=1+9=10$$$.</p><p>In the fifth test case, the cans labeled $$$1^2$$$, $$$2^2$$$, and $$$4^2$$$ fall, so the answer is $$$1^2+2^2+4^2=1+4+16=21$$$.</p>",
+    "contestId": 1829,
+    "index": "G",
+    "name": "Hits Different",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 9635
+}

@@ -1,0 +1,30 @@
+{
+    "title": "A. Square",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A square of positive (strictly greater than $$$0$$$) area is located on the coordinate plane, with sides parallel to the coordinate axes. You are given the coordinates of its corners, in random order. Your task is to find the area of the square.</p>",
+    "inputSpecification": "<p>Each test consists of several testcases. The first line contains one integer $$$t$$$ ($$$1 \\le t \\le 100$$$) \u2014 the number of testcases. The following is a description of the testcases.</p><p>Each testcase contains four lines, each line contains two integers $$$x_i, y_i$$$ ($$$-1000\\le x_i, y_i\\le 1000$$$), coordinates of the corners of the square. </p><p>It is guaranteed that there is a square with sides parallel to the coordinate axes, with positive (strictly greater than $$$0$$$) area, with corners in given points.</p>",
+    "outputSpecification": "<p>For each test case, print a single integer, the area of the square.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4 5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">-1 1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 -1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">-1 -1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">45 11</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">45 39</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">17 11</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">17 39</div>",
+            "output": "\n9\n4\n784\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1921,
+    "index": "A",
+    "name": "Square",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 40668
+}

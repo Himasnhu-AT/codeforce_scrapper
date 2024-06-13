@@ -1,0 +1,30 @@
+{
+    "title": "B. Aleksa and Stack",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">After the Serbian Informatics Olympiad, Aleksa was very sad, because he didn't win a medal (he didn't know stack), so Vasilije came to give him an easy problem, just to make his day better.</span></p><p>Vasilije gave Aleksa a positive integer $$$n$$$ ($$$n \\ge 3$$$) and asked him to construct a strictly increasing array of size $$$n$$$ of positive integers, such that </p><ul> <li> $$$3\\cdot a_{i+2}$$$ is not divisible by $$$a_i+a_{i+1}$$$ for each $$$i$$$ ($$$1\\le i \\le n-2$$$). </li></ul> Note that a strictly increasing array $$$a$$$ of size $$$n$$$ is an array where $$$a_i < a_{i+1}$$$ for each $$$i$$$ ($$$1 \\le i \\le n-1$$$).<p>Since Aleksa thinks he is a bad programmer now, he asked you to help him find such an array.</p>",
+    "inputSpecification": "<p>Each test consists of multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of test cases. The description of test cases follows.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$3 \\le n \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the number of elements in array.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output $$$n$$$ integers $$$a_1, a_2, a_3, \\dots, a_n$$$ ($$$1 \\le a_i \\le 10^9$$$).</p><p>It can be proved that the solution exists for any $$$n$$$. If there are multiple solutions, output any of them.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">7</div>",
+            "output": "\n6 8 12\n7 11 14 20 22 100\n9 15 18 27 36 90 120"
+        }
+    ],
+    "note": "<p>In the first test case, $$$a_1=6$$$, $$$a_2=8$$$, $$$a_3=12$$$, so $$$a_1+a_2=14$$$ and $$$3 \\cdot a_3=36$$$, so $$$3 \\cdot a_3$$$ is not divisible by $$$a_1+a_2$$$.</p>",
+    "contestId": 1878,
+    "index": "B",
+    "name": "Aleksa and Stack",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 30269
+}

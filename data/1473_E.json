@@ -1,0 +1,38 @@
+{
+    "title": "E. Minimum Path",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a weighted undirected connected graph consisting of $$$n$$$ vertices and $$$m$$$ edges. It is guaranteed that there are no self-loops or multiple edges in the given graph.</p><p>Let's define the weight of the path consisting of $$$k$$$ edges with indices $$$e_1, e_2, \\dots, e_k$$$ as $$$\\sum\\limits_{i=1}^{k}{w_{e_i}} - \\max\\limits_{i=1}^{k}{w_{e_i}} + \\min\\limits_{i=1}^{k}{w_{e_i}}$$$, where $$$w_i$$$ \u2014 weight of the $$$i$$$-th edge in the graph.</p><p>Your task is to find the minimum weight of the path from the $$$1$$$-st vertex to the $$$i$$$-th vertex for each $$$i$$$ ($$$2 \\le i \\le n$$$).</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$m$$$ ($$$2 \\le n \\le 2 \\cdot 10^5$$$; $$$1 \\le m \\le 2 \\cdot 10^5$$$) \u2014 the number of vertices and the number of edges in the graph.</p><p>Following $$$m$$$ lines contains three integers $$$v_i, u_i, w_i$$$ ($$$1 \\le v_i, u_i \\le n$$$; $$$1 \\le w_i \\le 10^9$$$; $$$v_i \\neq u_i$$$) \u2014 endpoints of the $$$i$$$-th edge and its weight respectively.</p>",
+    "outputSpecification": "<p>Print $$$n-1$$$ integers \u2014 the minimum weight of the path from $$$1$$$-st vertex to the $$$i$$$-th vertex for each $$$i$$$ ($$$2 \\le i \\le n$$$).</p>",
+    "samples": [
+        {
+            "input": "\n5 4\n5 3 4\n2 1 1\n3 2 2\n2 4 2\n",
+            "output": "\n1 2 2 4 \n"
+        },
+        {
+            "input": "\n6 8\n3 1 1\n3 6 2\n5 4 2\n4 2 2\n6 1 1\n5 2 1\n3 2 3\n1 5 4\n",
+            "output": "\n2 1 4 3 1 \n"
+        },
+        {
+            "input": "\n7 10\n7 5 5\n2 3 3\n4 7 1\n5 3 6\n2 7 6\n6 2 6\n3 7 6\n4 2 1\n3 1 4\n1 7 4\n",
+            "output": "\n3 4 2 7 7 3 \n"
+        }
+    ],
+    "note": null,
+    "contestId": 1473,
+    "index": "E",
+    "name": "Minimum Path",
+    "type": "PROGRAMMING",
+    "tags": [
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 3349
+}

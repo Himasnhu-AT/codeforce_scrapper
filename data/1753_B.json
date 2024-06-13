@@ -1,0 +1,46 @@
+{
+    "title": "B. Factorial Divisibility",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an integer $$$x$$$ and an array of integers $$$a_1, a_2, \\ldots, a_n$$$. You have to determine if the number $$$a_1! + a_2! + \\ldots + a_n!$$$ is divisible by $$$x!$$$.</p><p>Here $$$k!$$$ is a factorial of $$$k$$$\u00a0\u2014 the product of all positive integers less than or equal to $$$k$$$. For example, $$$3! = 1 \\cdot 2 \\cdot 3 = 6$$$, and $$$5! = 1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 = 120$$$.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$x$$$ ($$$1 \\le n \\le 500\\,000$$$, $$$1 \\le x \\le 500\\,000$$$).</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\ldots, a_n$$$ ($$$1 \\le a_i \\le x$$$)\u00a0\u2014 elements of given array.</p>",
+    "outputSpecification": "<p>In the only line print \"<span class=\"tex-font-style-tt\">Yes</span>\" (without quotes) if $$$a_1! + a_2! + \\ldots + a_n!$$$ is divisible by $$$x!$$$, and \"<span class=\"tex-font-style-tt\">No</span>\" (without quotes) otherwise.</p>",
+    "samples": [
+        {
+            "input": "\n6 4\n3 2 2 2 3 3\n",
+            "output": "\nYes\n"
+        },
+        {
+            "input": "\n8 3\n3 2 2 2 2 2 1 1\n",
+            "output": "\nYes\n"
+        },
+        {
+            "input": "\n7 8\n7 7 7 7 7 7 7\n",
+            "output": "\nNo\n"
+        },
+        {
+            "input": "\n10 5\n4 3 2 1 4 3 2 4 3 4\n",
+            "output": "\nNo\n"
+        },
+        {
+            "input": "\n2 500000\n499999 499999\n",
+            "output": "\nNo\n"
+        }
+    ],
+    "note": "<p>In the first example $$$3! + 2! + 2! + 2! + 3! + 3! = 6 + 2 + 2 + 2 + 6 + 6 = 24$$$. Number $$$24$$$ is divisible by $$$4! = 24$$$.</p><p>In the second example $$$3! + 2! + 2! + 2! + 2! + 2! + 1! + 1! = 18$$$, is divisible by $$$3! = 6$$$.</p><p>In the third example $$$7! + 7! + 7! + 7! + 7! + 7! + 7! = 7 \\cdot 7!$$$. It is easy to prove that this number is not divisible by $$$8!$$$.</p>",
+    "contestId": 1753,
+    "index": "B",
+    "name": "Factorial Divisibility",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 12243
+}

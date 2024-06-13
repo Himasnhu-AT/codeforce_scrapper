@@ -1,0 +1,36 @@
+{
+    "title": "C. Game with Multiset",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In this problem, you are initially given an empty multiset. You have to process two types of queries:</p><ol> <li> <span class=\"tex-font-style-tt\">ADD</span> $$$x$$$ \u2014 add an element equal to $$$2^{x}$$$ to the multiset; </li><li> <span class=\"tex-font-style-tt\">GET</span> $$$w$$$ \u2014 say whether it is possible to take the sum of some subset of the current multiset and get a value equal to $$$w$$$. </li></ol>",
+    "inputSpecification": "<p>The first line contains one integer $$$m$$$ ($$$1 \\le m \\le 10^5$$$) \u2014 the number of queries.</p><p>Then $$$m$$$ lines follow, each of which contains two integers $$$t_i$$$, $$$v_i$$$, denoting the $$$i$$$-th query. If $$$t_i = 1$$$, then the $$$i$$$-th query is <span class=\"tex-font-style-tt\">ADD</span> $$$v_i$$$ ($$$0 \\le v_i \\le 29$$$). If $$$t_i = 2$$$, then the $$$i$$$-th query is <span class=\"tex-font-style-tt\">GET</span> $$$v_i$$$ ($$$0 \\le v_i \\le 10^9$$$).</p>",
+    "outputSpecification": "<p>For each <span class=\"tex-font-style-tt\">GET</span> query, print <span class=\"tex-font-style-tt\">YES</span> if it is possible to choose a subset with sum equal to $$$w$$$, or <span class=\"tex-font-style-tt\">NO</span> if it is impossible.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 0</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 0</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 0</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2 3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2 4</div>",
+            "output": "\nYES\nNO\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">7</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 0</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 1</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 10</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2 4</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2 6</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2 7</div>",
+            "output": "\nYES\nYES\nYES\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1913,
+    "index": "C",
+    "name": "Game with Multiset",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "greedy"
+    ],
+    "solvedCount": 14007
+}

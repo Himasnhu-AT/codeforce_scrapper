@@ -1,0 +1,35 @@
+{
+    "title": "G. Shuffling Songs",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vladislav has a playlist consisting of $$$n$$$ songs, numbered from $$$1$$$ to $$$n$$$. Song $$$i$$$ has genre $$$g_i$$$ and writer $$$w_i$$$. He wants to make a playlist in such a way that every pair of adjacent songs either have the same writer or are from the same genre (or both). He calls such a playlist <span class=\"tex-font-style-it\">exciting</span>. Both $$$g_i$$$ and $$$w_i$$$ are strings of length no more than $$$10^4$$$.</p><p>It might not always be possible to make an exciting playlist using all the songs, so the shuffling process occurs in two steps. First, some amount (possibly zero) of the songs are removed, and then the remaining songs in the playlist are rearranged to make it exciting.</p><p>Since Vladislav doesn't like when songs get removed from his playlist, he wants the making playlist to perform as few removals as possible. Help him find the minimum number of removals that need to be performed in order to be able to rearrange the rest of the songs to make the playlist exciting.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$)\u00a0\u2014 the number of test cases. The description of test cases follows.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$1 \\le n \\le 16$$$)\u00a0\u2014 the number of songs in the original playlist.</p><p>Then $$$n$$$ lines follow, the $$$i$$$-th of which contains two strings of lowercase letters $$$g_i$$$ and $$$w_i$$$ ($$$1 \\leq |g_i|, |w_i| \\leq 10^4$$$)\u00a0\u2014 the genre and the writer of the $$$i$$$-th song. Where $$$|g_i|$$$ and $$$|w_i|$$$ are lengths of the strings.</p><p>The sum of $$$2^n$$$ over all test cases does not exceed $$$2^{16}$$$.</p><p>The sum of $$$|g_i| + |w_i|$$$ over all test cases does not exceed $$$4 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer\u00a0\u2014 the minimum number of removals necessary so that the resulting playlist can be made exciting.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">pop taylorswift</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">electronic themotans</div><div class=\"test-example-line test-example-line-even test-example-line-2\">electronic carlasdreams</div><div class=\"test-example-line test-example-line-even test-example-line-2\">pop themotans</div><div class=\"test-example-line test-example-line-even test-example-line-2\">pop irinarimes</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">7</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">rap eminem</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">rap drdre</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">rap kanyewest</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">pop taylorswift</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">indierock arcticmonkeys</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">indierock arcticmonkeys</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">punkrock theoffspring</div><div class=\"test-example-line test-example-line-even test-example-line-4\">4</div><div class=\"test-example-line test-example-line-even test-example-line-4\">a b</div><div class=\"test-example-line test-example-line-even test-example-line-4\">c d</div><div class=\"test-example-line test-example-line-even test-example-line-4\">e f</div><div class=\"test-example-line test-example-line-even test-example-line-4\">g h</div>",
+            "output": "\n0\n0\n4\n3\n"
+        }
+    ],
+    "note": "<p>In the first test case, the playlist is already exciting.</p><p>In the second test case, if you have the songs in the order $$$4, 3, 1, 2$$$, it is exciting, so you don't need to remove any songs.</p><p>In the third test case, you can remove songs $$$4, 5, 6, 7$$$. Then the playlist with songs in the order $$$1, 2, 3$$$ is exciting.</p>",
+    "contestId": 1950,
+    "index": "G",
+    "name": "Shuffling Songs",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "hashing",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 3742
+}

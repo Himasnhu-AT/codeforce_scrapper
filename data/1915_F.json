@@ -1,0 +1,31 @@
+{
+    "title": "F. Greetings",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are $$$n$$$ people on the number line; the $$$i$$$-th person is at point $$$a_i$$$ and wants to go to point $$$b_i$$$. For each person, $$$a_i &lt; b_i$$$, and the starting and ending points of all people are distinct. (That is, all of the $$$2n$$$ numbers $$$a_1, a_2, \\dots, a_n, b_1, b_2, \\dots, b_n$$$ are distinct.) </p><p>All the people will start moving simultaneously at a speed of $$$1$$$ unit per second until they reach their final point $$$b_i$$$. When two people meet at the same point, they will greet each other once. How many greetings will there be?</p><p>Note that a person can still greet other people even if they have reached their final point.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of test cases. The description of test cases follows.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$1 \\le n \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the number of people.</p><p>Then $$$n$$$ lines follow, the $$$i$$$-th of which contains two integers $$$a_i$$$ and $$$b_i$$$ ($$$-10^9 \\leq a_i &lt; b_i \\leq 10^9$$$)\u00a0\u2014 the starting and ending positions of each person.</p><p>For each test case, all of the $$$2n$$$ numbers $$$a_1, a_2, \\dots, a_n, b_1, b_2, \\dots, b_n$$$ are distinct.</p><p>The sum of $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer denoting the number of greetings that will happen.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">6</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 6</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 9</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 8</div><div class=\"test-example-line test-example-line-even test-example-line-2\">7 10</div><div class=\"test-example-line test-example-line-even test-example-line-2\">-2 100</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">-10 10</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">-5 5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">-12 12</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">-13 13</div><div class=\"test-example-line test-example-line-even test-example-line-4\">5</div><div class=\"test-example-line test-example-line-even test-example-line-4\">-4 9</div><div class=\"test-example-line test-example-line-even test-example-line-4\">-2 5</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3 4</div><div class=\"test-example-line test-example-line-even test-example-line-4\">6 7</div><div class=\"test-example-line test-example-line-even test-example-line-4\">8 10</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">3 4</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">5 6</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">7 8</div>",
+            "output": "\n1\n9\n6\n4\n0\n"
+        }
+    ],
+    "note": "<p>In the first test case, the two people will meet at point $$$3$$$ and greet each other.</p>",
+    "contestId": 1915,
+    "index": "F",
+    "name": "Greetings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "sortings"
+    ],
+    "solvedCount": 12053
+}

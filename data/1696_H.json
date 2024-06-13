@@ -1,0 +1,47 @@
+{
+    "title": "H. Maximum Product?",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a positive integer $$$k$$$. For a multiset of integers $$$S$$$, define $$$f(S)$$$ as the following.</p><ul> <li> If the number of elements in $$$S$$$ is less than $$$k$$$, $$$f(S)=0$$$. </li><li> Otherwise, define $$$f(S)$$$ as the maximum product you can get by choosing exactly $$$k$$$ integers from $$$S$$$. </li></ul><p>More formally, let $$$|S|$$$ denote the number of elements in $$$S$$$. Then,</p><ul> <li> If $$$|S|&lt;k$$$, $$$f(S)=0$$$. </li><li> Otherwise, $$$f(S)=\\max\\limits_{T\\subseteq S,|T|=k}\\left(\\prod\\limits_{i\\in T}i\\right)$$$. </li></ul><p>You are given a multiset of integers, $$$A$$$. Compute $$$\\sum\\limits_{B\\subseteq A} f(B)$$$ modulo $$$10^9+7$$$.</p><p>Note that in this problem, <span class=\"tex-font-style-bf\">we distinguish the elements by indices instead of values</span>. That is, a multiset consisting of $$$n$$$ elements always has $$$2^n$$$ distinct subsets regardless of whether some of its elements are equal.</p>",
+    "inputSpecification": "<p>The first line of input contains two integers $$$n$$$ and $$$k$$$, where $$$n$$$ is the number of elements in $$$A$$$ ($$$1\\le k\\le n\\le 600$$$).</p><p>The second line of input contains $$$n$$$ integers $$$a_1,a_2,\\dots,a_n$$$, describing the elements in $$$A$$$ ($$$-10^9\\le a_i\\le 10^9$$$).</p>",
+    "outputSpecification": "<p>Output $$$\\sum\\limits_{B\\subseteq A} f(B)$$$ modulo $$$10^9+7$$$.</p>",
+    "samples": [
+        {
+            "input": "\n3 2\n-1 2 4\n",
+            "output": "\n10"
+        },
+        {
+            "input": "\n3 1\n1 1 1\n",
+            "output": "\n7"
+        },
+        {
+            "input": "\n10 4\n-24 -41 9 -154 -56 14 18 53 -7 120\n",
+            "output": "\n225905161"
+        },
+        {
+            "input": "\n15 5\n0 0 2 -2 2 -2 3 -3 -3 4 5 -4 -4 4 5\n",
+            "output": "\n18119684"
+        }
+    ],
+    "note": "<p>Consider the first sample. From the definitions we know that</p><ul> <li> $$$f(\\varnothing)=0$$$ </li><li> $$$f(\\{-1\\})=0$$$ </li><li> $$$f(\\{2\\})=0$$$ </li><li> $$$f(\\{4\\})=0$$$ </li><li> $$$f(\\{-1,2\\})=-2$$$ </li><li> $$$f(\\{-1,4\\})=-4$$$ </li><li> $$$f(\\{2,4\\})=8$$$ </li><li> $$$f(\\{-1,2,4\\})=8$$$ </li></ul><p>So we should print $$$(0+0+0+0-2-4+8+8)\\bmod (10^9+7)=10$$$.</p><p>In the second example, note that although the multiset consists of three same values, it still has $$$8$$$ distinct subsets: $$$\\varnothing,\\{1\\},\\{1\\},\\{1\\},\\{1,1\\},\\{1,1\\},\\{1,1\\},\\{1,1,1\\}$$$.</p>",
+    "contestId": 1696,
+    "index": "H",
+    "name": "Maximum Product?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "greedy",
+        "implementation",
+        "math",
+        "two pointers"
+    ],
+    "solvedCount": 155
+}

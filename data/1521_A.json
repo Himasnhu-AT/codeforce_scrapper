@@ -1,0 +1,31 @@
+{
+    "title": "A. Nastia and Nearly Good Numbers",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Nastia has $$$2$$$ positive integers $$$A$$$ and $$$B$$$. She defines that:</p><ul> <li> The integer is good if it is divisible by $$$A \\cdot B$$$; </li><li> Otherwise, the integer is nearly good, if it is divisible by $$$A$$$. </li></ul><p>For example, if $$$A = 6$$$ and $$$B = 4$$$, the integers $$$24$$$ and $$$72$$$ are good, the integers $$$6$$$, $$$660$$$ and $$$12$$$ are nearly good, the integers $$$16$$$, $$$7$$$ are neither good nor nearly good.</p><p>Find $$$3$$$ <span class=\"tex-font-style-bf\">different</span> positive integers $$$x$$$, $$$y$$$, and $$$z$$$ such that <span class=\"tex-font-style-bf\">exactly one</span> of them is good and the <span class=\"tex-font-style-bf\">other</span> $$$2$$$ are nearly good, and $$$x + y = z$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10\\,000$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains two integers $$$A$$$ and $$$B$$$ ($$$1 \\le A \\le 10^6$$$, $$$1 \\le B \\le 10^6$$$)\u00a0\u2014 numbers that Nastia has.</p>",
+    "outputSpecification": "<p>For each test case print: </p><ul> <li> \"<span class=\"tex-font-style-tt\">YES</span>\" and $$$3$$$ <span class=\"tex-font-style-bf\">different</span> positive integers $$$x$$$, $$$y$$$, and $$$z$$$ ($$$1 \\le x, y, z \\le 10^{18}$$$) such that <span class=\"tex-font-style-bf\">exactly one</span> of them is good and the <span class=\"tex-font-style-bf\">other</span> $$$2$$$ are nearly good, and $$$x + y = z$$$. </li><li> \"<span class=\"tex-font-style-tt\">NO</span>\" if no answer exists. </li></ul> You can print each character of \"<span class=\"tex-font-style-tt\">YES</span>\" or \"<span class=\"tex-font-style-tt\">NO</span>\" in any case.<p>If there are multiple answers, print any.</p>",
+    "samples": [
+        {
+            "input": "\n3\n5 3\n13 2\n7 11\n",
+            "output": "\nYES\n10 50 60\nYES\n169 39 208\nYES\n28 154 182"
+        }
+    ],
+    "note": "<p>In the first test case: $$$60$$$\u00a0\u2014 good number; $$$10$$$ and $$$50$$$\u00a0\u2014 nearly good numbers.</p><p>In the second test case: $$$208$$$\u00a0\u2014 good number; $$$169$$$ and $$$39$$$\u00a0\u2014 nearly good numbers.</p><p>In the third test case: $$$154$$$\u00a0\u2014 good number; $$$28$$$ and $$$182$$$\u00a0\u2014 nearly good numbers.</p>",
+    "contestId": 1521,
+    "index": "A",
+    "name": "Nastia and Nearly Good Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 35766
+}
