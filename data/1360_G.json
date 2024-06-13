@@ -1,0 +1,31 @@
+{
+    "title": "G. A/B Matrix",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given four positive integers $$$n$$$, $$$m$$$, $$$a$$$, $$$b$$$ ($$$1 \\le b \\le n \\le 50$$$; $$$1 \\le a \\le m \\le 50$$$). Find any such rectangular matrix of size $$$n \\times m$$$ that satisfies all of the following conditions:</p><ul> <li> each row of the matrix contains exactly $$$a$$$ ones; </li><li> each column of the matrix contains exactly $$$b$$$ ones; </li><li> all other elements are zeros. </li></ul><p>If the desired matrix does not exist, indicate this.</p><p>For example, for $$$n=3$$$, $$$m=6$$$, $$$a=2$$$, $$$b=1$$$, there exists a matrix satisfying the conditions above:</p><p>$$$$$$ \\begin{vmatrix} 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\\\ 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\\\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\end{vmatrix} $$$$$$</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1 \\le t \\le 1000$$$)\u00a0\u2014 the number of test cases. Then $$$t$$$ test cases follow.</p><p>Each test case is described by four positive integers $$$n$$$, $$$m$$$, $$$a$$$, $$$b$$$ ($$$1 \\le b \\le n \\le 50$$$; $$$1 \\le a \\le m \\le 50$$$), where $$$n$$$ and $$$m$$$ are the sizes of the matrix, and $$$a$$$ and $$$b$$$ are the number of ones for rows and columns, respectively.</p>",
+    "outputSpecification": "<p>For each test case print:</p><ul> <li> \"YES\" (without quotes) and the required matrix (if there are several answers, print any) if it exists, or </li><li> \"NO\" (without quotes) if it does not exist. </li></ul><p>To print the matrix $$$n \\times m$$$, print $$$n$$$ rows, each of which consists of $$$m$$$ numbers $$$0$$$ or $$$1$$$ describing a row of the matrix. Numbers must be printed <span class=\"tex-font-style-bf\">without spaces</span>.</p>",
+    "samples": [
+        {
+            "input": "\n5\n3 6 2 1\n2 2 2 1\n2 2 2 2\n4 4 2 2\n2 1 1 2\n",
+            "output": "\nYES\n010001\n100100\n001010\nNO\nYES\n11\n11\nYES\n1100\n1100\n0011\n0011\nYES\n1\n1\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1360,
+    "index": "G",
+    "name": "A/B Matrix",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 7472
+}

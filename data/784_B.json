@@ -1,0 +1,45 @@
+{
+    "title": "B. Kids' Riddle",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Programmers' kids solve this riddle in 5-10 minutes. How fast can you do it?</p>",
+    "inputSpecification": "<p>The input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092000000000</span>).</p>",
+    "outputSpecification": "<p>Output a single integer.</p>",
+    "samples": [
+        {
+            "input": "11<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "14<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "61441<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "571576<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "2128506<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 784,
+    "index": "B",
+    "name": "Kids' Riddle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 836
+}

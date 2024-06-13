@@ -1,0 +1,36 @@
+{
+    "title": "B. Puzzles",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Barney lives in country USC (United States of Charzeh). USC has <span class=\"tex-span\"><i>n</i></span> cities numbered from <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> roads between them. Cities and roads of USC form a rooted tree (Barney's not sure why it is rooted). Root of the tree is the city number <span class=\"tex-span\">1</span>. Thus if one will start his journey from city <span class=\"tex-span\">1</span>, he can visit any city he wants by following roads.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2a7a298c1084a44c2079345f73903fefeaf3924b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Some girl has stolen Barney's heart, and Barney wants to find her. He starts looking for in the root of the tree and (since he is Barney Stinson not a random guy), he uses a <span class=\"tex-font-style-it\">random DFS</span> to search in the cities. A pseudo code of this algorithm is as follows:</p><pre class=\"verbatim\"><br/>let starting_time be an array of length n<br/>current_time = 0<br/>dfs(v):<br/>\tcurrent_time = current_time + 1<br/>\tstarting_time[v] = current_time<br/>\tshuffle children[v] randomly (each permutation with equal possibility)<br/>\t// children[v] is vector of children cities of city v<br/>\tfor u in children[v]:<br/>\t\tdfs(u)<br/></pre><p>As told before, Barney will start his journey in the root of the tree (equivalent to call <span class=\"tex-font-style-tt\">dfs(1)</span>).</p><p>Now Barney needs to pack a backpack and so he wants to know more about his upcoming journey: for every city <span class=\"tex-span\"><i>i</i></span>, Barney wants to know the expected value of <span class=\"tex-font-style-tt\">starting_time[i]</span>. He's a friend of Jon Snow and knows nothing, that's why he asked for your help.</p>",
+    "inputSpecification": "<p>The first line of input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the number of cities in USC.</p><p>The second line contains <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">2</sub>,\u2009<i>p</i><sub class=\"lower-index\">3</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>i</i></span>), where <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> is the number of the parent city of city number <span class=\"tex-span\"><i>i</i></span> in the tree, meaning there is a road between cities numbered <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>i</i></span> in USC.</p>",
+    "outputSpecification": "<p>In the first and only line of output print <span class=\"tex-span\"><i>n</i></span> numbers, where <span class=\"tex-span\"><i>i</i></span>-th number is the expected value of <span class=\"tex-font-style-tt\">starting_time[i]</span>.</p><p>Your answer for each city will be considered correct if its absolute or relative error does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "<br/>let starting_time be an array of length n<br/>current_time = 0<br/>dfs(v):<br/>\tcurrent_time = current_time + 1<br/>\tstarting_time[v] = current_time<br/>\tshuffle children[v] randomly (each permutation with equal possibility)<br/>\t// children[v] is vector of children cities of city v<br/>\tfor u in children[v]:<br/>\t\tdfs(u)<br/>",
+            "output": "7<br/>1 2 1 1 4 4<br/>"
+        },
+        {
+            "input": "1.0 4.0 5.0 3.5 4.5 5.0 5.0 <br/>",
+            "output": "12<br/>1 1 2 2 4 4 3 3 1 10 8<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 696,
+    "index": "B",
+    "name": "Puzzles",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "math",
+        "probabilities",
+        "trees"
+    ],
+    "solvedCount": 3399
+}

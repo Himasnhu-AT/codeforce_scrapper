@@ -1,0 +1,32 @@
+{
+    "title": "D. Imbalanced Array",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array <span class=\"tex-span\"><i>a</i></span> consisting of <span class=\"tex-span\"><i>n</i></span> elements. The <span class=\"tex-font-style-it\">imbalance value</span> of some subsegment of this array is the difference between the maximum and minimum element from this segment. The <span class=\"tex-font-style-it\">imbalance value</span> of the array is the sum of <span class=\"tex-font-style-it\">imbalance values</span> of all subsegments of this array.</p><p>For example, the <span class=\"tex-font-style-it\">imbalance value</span> of array <span class=\"tex-span\">[1,\u20094,\u20091]</span> is <span class=\"tex-span\">9</span>, because there are <span class=\"tex-span\">6</span> different subsegments of this array: </p><ul> <li> <span class=\"tex-span\">[1]</span> (from index <span class=\"tex-span\">1</span> to index <span class=\"tex-span\">1</span>), <span class=\"tex-font-style-it\">imbalance value</span> is <span class=\"tex-span\">0</span>; </li><li> <span class=\"tex-span\">[1,\u20094]</span> (from index <span class=\"tex-span\">1</span> to index <span class=\"tex-span\">2</span>), <span class=\"tex-font-style-it\">imbalance value</span> is <span class=\"tex-span\">3</span>; </li><li> <span class=\"tex-span\">[1,\u20094,\u20091]</span> (from index <span class=\"tex-span\">1</span> to index <span class=\"tex-span\">3</span>), <span class=\"tex-font-style-it\">imbalance value</span> is <span class=\"tex-span\">3</span>; </li><li> <span class=\"tex-span\">[4]</span> (from index <span class=\"tex-span\">2</span> to index <span class=\"tex-span\">2</span>), <span class=\"tex-font-style-it\">imbalance value</span> is <span class=\"tex-span\">0</span>; </li><li> <span class=\"tex-span\">[4,\u20091]</span> (from index <span class=\"tex-span\">2</span> to index <span class=\"tex-span\">3</span>), <span class=\"tex-font-style-it\">imbalance value</span> is <span class=\"tex-span\">3</span>; </li><li> <span class=\"tex-span\">[1]</span> (from index <span class=\"tex-span\">3</span> to index <span class=\"tex-span\">3</span>), <span class=\"tex-font-style-it\">imbalance value</span> is <span class=\"tex-span\">0</span>; </li></ul><p>You have to determine the <span class=\"tex-font-style-it\">imbalance value</span> of the array <span class=\"tex-span\"><i>a</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 size of the array <span class=\"tex-span\"><i>a</i></span>.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>... <i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 elements of the array.</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the <span class=\"tex-font-style-it\">imbalance value</span> of <span class=\"tex-span\"><i>a</i></span>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 4 1<br/>",
+            "output": "9<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 817,
+    "index": "D",
+    "name": "Imbalanced Array",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dsu",
+        "sortings"
+    ],
+    "solvedCount": 4440
+}

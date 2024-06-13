@@ -1,0 +1,35 @@
+{
+    "title": "G. Xor-MST",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a complete undirected graph with <span class=\"tex-span\"><i>n</i></span> vertices. A number <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is assigned to each vertex, and the weight of an edge between vertices <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span> is equal to <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009<i>xor</i>\u2009<i>a</i><sub class=\"lower-index\"><i>j</i></sub></span>.</p><p>Calculate the weight of the minimum spanning tree in this graph.</p>",
+    "inputSpecification": "<p>The first line contains <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200000</span>) \u2014 the number of vertices in the graph.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>, ..., <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u20092<sup class=\"upper-index\">30</sup></span>) \u2014 the numbers assigned to the vertices.</p>",
+    "outputSpecification": "<p>Print one number \u2014 the weight of the minimum spanning tree in the graph.</p>",
+    "samples": [
+        {
+            "input": "5<br/>1 2 3 4 5<br/>",
+            "output": "8<br/>"
+        },
+        {
+            "input": "4<br/>1 2 3 4<br/>",
+            "output": "8<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 888,
+    "index": "G",
+    "name": "Xor-MST",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "data structures"
+    ],
+    "solvedCount": 3939
+}

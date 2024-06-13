@@ -1,0 +1,32 @@
+{
+    "title": "D. Mars rover",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Natasha travels around Mars in the Mars rover. But suddenly it broke down, namely\u00a0\u2014 the logical scheme inside it. The scheme is an undirected tree (connected acyclic graph) with a root in the vertex $$$1$$$, in which every leaf (excluding root) is an input, and all other vertices are logical elements, including the root, which is output. One bit is fed to each input. One bit is returned at the output.</p><p>There are four types of logical elements: <a href=\"https://en.wikipedia.org/wiki/Logical_conjunction\">AND</a> ($$$2$$$ inputs), <a href=\"https://en.wikipedia.org/wiki/Logical_disjunction\">OR</a> ($$$2$$$ inputs), <a href=\"https://en.wikipedia.org/wiki/Exclusive_or\">XOR</a> ($$$2$$$ inputs), <a href=\"https://en.wikipedia.org/wiki/Negation\">NOT</a> ($$$1$$$ input). Logical elements take values from their direct descendants (inputs) and return the result of the function they perform. Natasha knows the logical scheme of the Mars rover, as well as the fact that only one input is broken. In order to fix the Mars rover, she needs to change the value on this input.</p><p>For each input, determine what the output will be if Natasha changes this input.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$2 \\le n \\le 10^6$$$)\u00a0\u2014 the number of vertices in the graph (both inputs and elements).</p><p>The $$$i$$$-th of the next $$$n$$$ lines contains a description of $$$i$$$-th vertex: the first word \"AND\", \"OR\", \"XOR\", \"NOT\" or \"IN\" (means the input of the scheme) is the vertex type. If this vertex is \"IN\", then the value of this input follows ($$$0$$$ or $$$1$$$), otherwise follow the indices of input vertices of this element: \"AND\", \"OR\", \"XOR\" have $$$2$$$ inputs, whereas \"NOT\" has $$$1$$$ input. The vertices are numbered from one.</p><p>It is guaranteed that input data contains a correct logical scheme with an output produced by the vertex $$$1$$$.</p>",
+    "outputSpecification": "<p>Print a string of characters <span class=\"tex-font-style-tt\">'0'</span> and <span class=\"tex-font-style-tt\">'1'</span> (without quotes)\u00a0\u2014 answers to the problem for each input in the ascending order of their vertex indices.</p>",
+    "samples": [
+        {
+            "input": "10<br/>AND 9 4<br/>IN 1<br/>IN 1<br/>XOR 6 5<br/>AND 3 7<br/>IN 0<br/>NOT 10<br/>IN 1<br/>IN 1<br/>AND 2 8<br/>",
+            "output": "10110"
+        }
+    ],
+    "note": "<p>The original scheme from the example (before the input is changed):</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/4507113582d40356e140857daa04318b91197f46.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>Green indicates bits <span class=\"tex-font-style-tt\">'1'</span>, yellow indicates bits <span class=\"tex-font-style-tt\">'0'</span>.</p><p>If Natasha changes the input bit $$$2$$$ to $$$0$$$, then the output will be $$$1$$$.</p><p>If Natasha changes the input bit $$$3$$$ to $$$0$$$, then the output will be $$$0$$$.</p><p>If Natasha changes the input bit $$$6$$$ to $$$1$$$, then the output will be $$$1$$$.</p><p>If Natasha changes the input bit $$$8$$$ to $$$0$$$, then the output will be $$$1$$$.</p><p>If Natasha changes the input bit $$$9$$$ to $$$0$$$, then the output will be $$$0$$$.</p>",
+    "contestId": 1010,
+    "index": "D",
+    "name": "Mars rover",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "implementation",
+        "trees"
+    ],
+    "solvedCount": 2357
+}

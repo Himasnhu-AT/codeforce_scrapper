@@ -1,0 +1,31 @@
+{
+    "title": "O. April Fools' Problem (hard)",
+    "timeLimit": {
+        "value": 10.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The plans for HC<span class=\"tex-span\"><sup class=\"upper-index\">2</sup></span> are rather far-fetched: we are just over 500 000 days away from HC<span class=\"tex-span\"><sup class=\"upper-index\">2</sup></span> 3387, for example, and accordingly we are planning to have a couple hundred thousand problems in that edition (we hope that programming contests will become wildly more popular). The marmots need to get to work, and they could use a good plan...</p>",
+    "inputSpecification": "<p>Same as the medium version, but the limits have changed: <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009500\u2009000</span>.</p>",
+    "outputSpecification": "<p>Same as the medium version.</p>",
+    "samples": [
+        {
+            "input": "8 4<br/>3 8 7 9 9 4 6 8<br/>2 5 9 4 3 8 9 1<br/>",
+            "output": "32"
+        }
+    ],
+    "note": null,
+    "contestId": 802,
+    "index": "O",
+    "name": "April Fools' Problem (hard)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "flows"
+    ],
+    "solvedCount": 854
+}

@@ -1,0 +1,38 @@
+{
+    "title": "A. 2-3-numbers",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A positive integer is called a <span class=\"tex-font-style-it\">2-3-integer</span>, if it is equal to <span class=\"tex-span\">2<sup class=\"upper-index\"><i>x</i></sup>\u00b73<sup class=\"upper-index\"><i>y</i></sup></span> for some non-negative integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>. In other words, these integers are such integers that only have <span class=\"tex-span\">2</span> and <span class=\"tex-span\">3</span> among their prime divisors. For example, integers <span class=\"tex-span\">1</span>, <span class=\"tex-span\">6</span>, <span class=\"tex-span\">9</span>, <span class=\"tex-span\">16</span> and <span class=\"tex-span\">108</span> \u2014 are 2-3 integers, while <span class=\"tex-span\">5</span>, <span class=\"tex-span\">10</span>, <span class=\"tex-span\">21</span> and <span class=\"tex-span\">120</span> are not.</p><p>Print the number of <span class=\"tex-font-style-it\">2-3-integers</span> on the given segment <span class=\"tex-span\">[<i>l</i>,\u2009<i>r</i>]</span>, i.\u00a0e. the number of sich <span class=\"tex-font-style-it\">2-3-integers</span> <span class=\"tex-span\"><i>t</i></span> that <span class=\"tex-span\"><i>l</i>\u2009\u2264\u2009<i>t</i>\u2009\u2264\u2009<i>r</i></span>.</p>",
+    "inputSpecification": "<p>The only line contains two integers <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print a single integer the number of <span class=\"tex-font-style-it\">2-3-integers</span> on the segment <span class=\"tex-span\">[<i>l</i>,\u2009<i>r</i>]</span>.</p>",
+    "samples": [
+        {
+            "input": "1 10<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "100 200<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "1 2000000000<br/>",
+            "output": "326<br/>"
+        }
+    ],
+    "note": "<p>In the first example the <span class=\"tex-font-style-it\">2-3-integers</span> are <span class=\"tex-span\">1</span>, <span class=\"tex-span\">2</span>, <span class=\"tex-span\">3</span>, <span class=\"tex-span\">4</span>, <span class=\"tex-span\">6</span>, <span class=\"tex-span\">8</span> and <span class=\"tex-span\">9</span>.</p><p>In the second example the <span class=\"tex-font-style-it\">2-3-integers</span> are <span class=\"tex-span\">108</span>, <span class=\"tex-span\">128</span>, <span class=\"tex-span\">144</span>, <span class=\"tex-span\">162</span> and <span class=\"tex-span\">192</span>.</p>",
+    "contestId": 926,
+    "index": "A",
+    "name": "2-3-numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 3691
+}

@@ -1,0 +1,32 @@
+{
+    "title": "A. Colors",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Linda likes to change her hair color from time to time, and would be pleased if her boyfriend Archie would notice the difference between the previous and the new color. Archie always comments on Linda's hair color if and only if he notices a difference \u2014 so Linda always knows whether Archie has spotted the difference or not.</p><p>There is a new hair dye series in the market where all available colors are numbered by integers from $$$1$$$ to $$$N$$$ such that a smaller difference of the numerical values also means less visual difference.</p><p>Linda assumes that for these series there should be some <span class=\"tex-font-style-it\">critical color difference</span> $$$C$$$ ($$$1 \\le C \\le N$$$) for which Archie will notice color difference between the current color $$$\\mathrm{color}_{\\mathrm{new}}$$$ and the previous color $$$\\mathrm{color}_{\\mathrm{prev}}$$$ if $$$\\left|\\mathrm{color}_{\\mathrm{new}} - \\mathrm{color}_{\\mathrm{prev}}\\right| \\ge C$$$ and will not if $$$\\left|\\mathrm{color}_{\\mathrm{new}} - \\mathrm{color}_{\\mathrm{prev}}\\right| &lt; C$$$.</p><p>Now she has bought $$$N$$$ sets of hair dye from the new series \u2014 one for each of the colors from $$$1$$$ to $$$N$$$, and is ready to set up an experiment. Linda will change her hair color on a regular basis and will observe Archie's reaction \u2014 whether he will notice the color change or not. Since for the proper dye each set should be used completely, each hair color can be obtained no more than once.</p><p>Before the experiment, Linda was using a dye from a different series which is not compatible with the new one, so for the clearness of the experiment Archie's reaction to the first used color is meaningless.</p><p>Her aim is to find the precise value of $$$C$$$ in a limited number of dyes. Write a program which finds the value of $$$C$$$ by experimenting with the given $$$N$$$ colors and observing Archie's reactions to color changes.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n1\n\n7\n\n1\n\n1\n\n0\n\n0\n\n1\n",
+            "output": "\n\n? 2\n\n? 7\n\n? 4\n\n? 1\n\n? 5\n\n= 4"
+        }
+    ],
+    "note": "<p>Comments to the example input line by line: </p><ol> <li> $$$N = 7$$$. </li><li> Answer to the first query is meaningless (can also be $$$0$$$). </li><li> $$$C \\leq 5$$$. </li><li> $$$3 &lt; C \\leq 5$$$. It would be wise to check difference $$$4$$$. However, this can not be done in the next query since $$$4 + 4 = 8$$$ and $$$4 - 4 = 0$$$ both are outside the allowed interval $$$1 \\le P \\le 7$$$. </li><li> $$$3 &lt; C \\leq 5$$$. </li><li> $$$3 &lt; C \\leq 4$$$. Therefore, $$$C = 4$$$. </li></ol>",
+    "contestId": 1386,
+    "index": "A",
+    "name": "Colors",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "binary search",
+        "constructive algorithms",
+        "interactive"
+    ],
+    "solvedCount": 254
+}

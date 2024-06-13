@@ -1,0 +1,35 @@
+{
+    "title": "D. Nastya and a Game",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Nastya received one more array on her birthday, this array can be used to play a traditional Byteland game on it. However, to play the game the players should first select such a subsegment of the array that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70233378c7a99d05113a43e5a2289ff347e1084f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <span class=\"tex-span\"><i>p</i></span> is the product of all integers on the given array, <span class=\"tex-span\"><i>s</i></span> is their sum, and <span class=\"tex-span\"><i>k</i></span> is a given constant for all subsegments. </p><p>Nastya wonders how many subsegments of the array fit the described conditions. A subsegment of an array is several consecutive integers of the array.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>), where <span class=\"tex-span\"><i>n</i></span> is the length of the array and <span class=\"tex-span\"><i>k</i></span> is the constant described above.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">8</sup></span>)\u00a0\u2014 the elements of the array.</p>",
+    "outputSpecification": "<p>In the only line print the number of subsegments such that the ratio between the product and the sum on them is equal to <span class=\"tex-span\"><i>k</i></span>.</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "4 2<br/>6 3 8 1<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In the first example the only subsegment is <span class=\"tex-span\">[1]</span>. The sum equals <span class=\"tex-span\">1</span>, the product equals <span class=\"tex-span\">1</span>, so it suits us because <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/627b2899a459d42fe3b2ca04fc812d4132b5f2ca.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>There are two suitable subsegments in the second example \u2014 <span class=\"tex-span\">[6,\u20093]</span> and <span class=\"tex-span\">[3,\u20098,\u20091]</span>. Subsegment <span class=\"tex-span\">[6,\u20093]</span> has sum <span class=\"tex-span\">9</span> and product <span class=\"tex-span\">18</span>, so it suits us because <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/107ecd38fde9817d6565e2059ccd064562470543.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Subsegment <span class=\"tex-span\">[3,\u20098,\u20091]</span> has sum <span class=\"tex-span\">12</span> and product <span class=\"tex-span\">24</span>, so it suits us because <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8abc1793efa3061313ddd52d670a94b430133564.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 992,
+    "index": "D",
+    "name": "Nastya and a Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 1600
+}

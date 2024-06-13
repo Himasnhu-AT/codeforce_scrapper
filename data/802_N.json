@@ -1,0 +1,31 @@
+{
+    "title": "N. April Fools' Problem (medium)",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The marmots need to prepare <span class=\"tex-span\"><i>k</i></span> problems for HC<span class=\"tex-span\"><sup class=\"upper-index\">2</sup></span> over <span class=\"tex-span\"><i>n</i></span> days. Each problem, once prepared, also has to be printed.</p><p>The preparation of a problem on day <span class=\"tex-span\"><i>i</i></span> (at most one per day) costs <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> CHF, and the printing of a problem on day <span class=\"tex-span\"><i>i</i></span> (also at most one per day) costs <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> CHF. Of course, a problem cannot be printed before it has been prepared (but doing both on the same day is fine).</p><p>What is the minimum cost of preparation and printing?</p>",
+    "inputSpecification": "<p>The first line of input contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092200</span>). The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5bbc0132dffe069c35885e7e95b4656b61a98138.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>) \u2014 the preparation costs. The third line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>b</i><sub class=\"lower-index\"><i>n</i></sub></span> (<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c014bbf64e9165f1232d9154fad412ab5acc75d0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>) \u2014 the printing costs.</p>",
+    "outputSpecification": "<p>Output the minimum cost of preparation and printing <span class=\"tex-span\"><i>k</i></span> problems \u2014 that is, the minimum possible sum <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i><sub class=\"lower-index\">1</sub></sub>\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>i</i><sub class=\"lower-index\">2</sub></sub>\u2009+\u2009...\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>i</i><sub class=\"lower-index\"><i>k</i></sub></sub>\u2009+\u2009<i>b</i><sub class=\"lower-index\"><i>j</i><sub class=\"lower-index\">1</sub></sub>\u2009+\u2009<i>b</i><sub class=\"lower-index\"><i>j</i><sub class=\"lower-index\">2</sub></sub>\u2009+\u2009...\u2009+\u2009<i>b</i><sub class=\"lower-index\"><i>j</i><sub class=\"lower-index\"><i>k</i></sub></sub></span>, where <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>i</i><sub class=\"lower-index\">2</sub>\u2009&lt;\u2009...\u2009&lt;\u2009<i>i</i><sub class=\"lower-index\"><i>k</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>j</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>j</i><sub class=\"lower-index\">2</sub>\u2009&lt;\u2009...\u2009&lt;\u2009<i>j</i><sub class=\"lower-index\"><i>k</i></sub>\u2009\u2264\u2009<i>n</i></span> and <span class=\"tex-span\"><i>i</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>j</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>i</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u2009<i>j</i><sub class=\"lower-index\">2</sub></span>, ..., <span class=\"tex-span\"><i>i</i><sub class=\"lower-index\"><i>k</i></sub>\u2009\u2264\u2009<i>j</i><sub class=\"lower-index\"><i>k</i></sub></span>.</p>",
+    "samples": [
+        {
+            "input": "8 4<br/>3 8 7 9 9 4 6 8<br/>2 5 9 4 3 8 9 1<br/>",
+            "output": "32"
+        }
+    ],
+    "note": "<p>In the sample testcase, one optimum solution is to prepare the first problem on day <span class=\"tex-span\">1</span> and print it on day <span class=\"tex-span\">1</span>, prepare the second problem on day <span class=\"tex-span\">2</span> and print it on day <span class=\"tex-span\">4</span>, prepare the third problem on day <span class=\"tex-span\">3</span> and print it on day <span class=\"tex-span\">5</span>, and prepare the fourth problem on day <span class=\"tex-span\">6</span> and print it on day <span class=\"tex-span\">8</span>.</p>",
+    "contestId": 802,
+    "index": "N",
+    "name": "April Fools' Problem (medium)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "flows",
+        "graphs"
+    ],
+    "solvedCount": 1123
+}

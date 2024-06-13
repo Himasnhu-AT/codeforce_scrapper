@@ -1,0 +1,30 @@
+{
+    "title": "C. K-th Not Divisible by n",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two positive integers $$$n$$$ and $$$k$$$. Print the $$$k$$$-th positive integer that is not divisible by $$$n$$$.</p><p>For example, if $$$n=3$$$, and $$$k=7$$$, then all numbers that are not divisible by $$$3$$$ are: $$$1, 2, 4, 5, 7, 8, 10, 11, 13 \\dots$$$. The $$$7$$$-th number among them is $$$10$$$.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1 \\le t \\le 1000$$$) \u2014 the number of test cases in the input. Next, $$$t$$$ test cases are given, one per line.</p><p>Each test case is two positive integers $$$n$$$ ($$$2 \\le n \\le 10^9$$$) and $$$k$$$ ($$$1 \\le k \\le 10^9$$$).</p>",
+    "outputSpecification": "<p>For each test case print the $$$k$$$-th positive integer that is not divisible by $$$n$$$.</p>",
+    "samples": [
+        {
+            "input": "\n6\n3 7\n4 12\n2 1000000000\n7 97\n1000000000 1000000000\n2 1\n",
+            "output": "\n10\n15\n1999999999\n113\n1000000001\n1\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1352,
+    "index": "C",
+    "name": "K-th Not Divisible by n",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "math"
+    ],
+    "solvedCount": 51018
+}

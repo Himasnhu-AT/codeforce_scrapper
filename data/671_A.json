@@ -1,0 +1,36 @@
+{
+    "title": "A. Recycling Bottles",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>It was recycling day in Kekoland. To celebrate it Adil and Bera went to Central Perk where they can take bottles from the ground and put them into a recycling bin.</p><p>We can think Central Perk as coordinate plane. There are <span class=\"tex-span\"><i>n</i></span> bottles on the ground, the <span class=\"tex-span\"><i>i</i></span>-th bottle is located at position <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>)</span>. Both Adil and Bera can carry only one bottle at once each. </p><p>For both Adil and Bera the process looks as follows: </p><ol> <li> Choose to stop or to continue to collect bottles. </li><li> If the choice was to continue then choose some bottle and walk towards it. </li><li> Pick this bottle and walk to the recycling bin. </li><li> Go to step <span class=\"tex-span\">1</span>. </li></ol><p>Adil and Bera may move independently. They are allowed to pick bottles simultaneously, all bottles may be picked by any of the two, it's allowed that one of them stays still while the other one continues to pick bottles.</p><p>They want to organize the process such that the total distance they walk (the sum of distance walked by Adil and distance walked by Bera) is minimum possible. Of course, at the end all bottles should lie in the recycling bin.</p>",
+    "inputSpecification": "<p>First line of the input contains six integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>x</i></sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>y</i></sub></span>, <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>x</i></sub></span>, <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>y</i></sub></span>, <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>x</i></sub></span> and <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>y</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>x</i></sub>,\u2009<i>a</i><sub class=\"lower-index\"><i>y</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>x</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>y</i></sub>,\u2009<i>t</i><sub class=\"lower-index\"><i>x</i></sub>,\u2009<i>t</i><sub class=\"lower-index\"><i>y</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 initial positions of Adil, Bera and recycling bin respectively.</p><p>The second line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>)\u00a0\u2014 the number of bottles on the ground.</p><p>Then follow <span class=\"tex-span\"><i>n</i></span> lines, each of them contains two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 position of the <span class=\"tex-span\"><i>i</i></span>-th bottle.</p><p>It's guaranteed that positions of Adil, Bera, recycling bin and all bottles are distinct.</p>",
+    "outputSpecification": "<p>Print one real number\u00a0\u2014 the minimum possible total distance Adil and Bera need to walk in order to put all bottles into recycling bin. Your answer will be considered correct if its absolute or relative error does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p><p>Namely: let's assume that your answer is <span class=\"tex-span\"><i>a</i></span>, and the answer of the jury is <span class=\"tex-span\"><i>b</i></span>. The checker program will consider your answer correct if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fb10c3e3b874552413ba93d1cdf2971c83f2ebe0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "3 1 1 2 0 0<br/>3<br/>1 1<br/>2 1<br/>2 3<br/>",
+            "output": "11.084259940083<br/>"
+        },
+        {
+            "input": "5 0 4 2 2 0<br/>5<br/>5 2<br/>3 0<br/>5 5<br/>3 5<br/>3 3<br/>",
+            "output": "33.121375178000<br/>"
+        }
+    ],
+    "note": "<p>Consider the first sample.</p><p>Adil will use the following path: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/37eea809c04afe04f2670475cc5b21df4a90afd1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Bera will use the following path: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/08e917ff238fec015f897516a95529b6d9aed5c7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Adil's path will be <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f58aa00f71a0b723b5de3c8e56ce41dc8afec7f8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> units long, while Bera's path will be <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3615db76a2cdd77d711b73d2894f03bdd52af736.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> units long.</p>",
+    "contestId": 671,
+    "index": "A",
+    "name": "Recycling Bottles",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "geometry",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 4117
+}

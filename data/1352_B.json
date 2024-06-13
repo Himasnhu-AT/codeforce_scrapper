@@ -1,0 +1,30 @@
+{
+    "title": "B. Same Parity Summands",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two positive integers $$$n$$$ ($$$1 \\le n \\le 10^9$$$) and $$$k$$$ ($$$1 \\le k \\le 100$$$). Represent the number $$$n$$$ as the sum of $$$k$$$ positive integers of the same parity (have the same remainder when divided by $$$2$$$).</p><p>In other words, find $$$a_1, a_2, \\ldots, a_k$$$ such that all $$$a_i&gt;0$$$, $$$n = a_1 + a_2 + \\ldots + a_k$$$ and either all $$$a_i$$$ are even or all $$$a_i$$$ are odd at the same time.</p><p>If such a representation does not exist, then report it.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1 \\le t \\le 1000$$$) \u2014 the number of test cases in the input. Next, $$$t$$$ test cases are given, one per line.</p><p>Each test case is two positive integers $$$n$$$ ($$$1 \\le n \\le 10^9$$$) and $$$k$$$ ($$$1 \\le k \\le 100$$$).</p>",
+    "outputSpecification": "<p>For each test case print:</p><ul> <li> <span class=\"tex-font-style-tt\">YES</span> and the required values $$$a_i$$$, if the answer exists (if there are several answers, print any of them); </li><li> <span class=\"tex-font-style-tt\">NO</span> if the answer does not exist. </li></ul><p>The letters in the words <span class=\"tex-font-style-tt\">YES</span> and <span class=\"tex-font-style-tt\">NO</span> can be printed in any case.</p>",
+    "samples": [
+        {
+            "input": "\n8\n10 3\n100 4\n8 7\n97 2\n8 8\n3 10\n5 3\n1000000000 9\n",
+            "output": "\nYES\n4 2 4\nYES\n55 5 5 35\nNO\nNO\nYES\n1 1 1 1 1 1 1 1\nNO\nYES\n3 1 1\nYES\n111111110 111111110 111111110 111111110 111111110 111111110 111111110 111111110 111111120\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1352,
+    "index": "B",
+    "name": "Same Parity Summands",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 35887
+}

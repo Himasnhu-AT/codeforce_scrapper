@@ -1,0 +1,34 @@
+{
+    "title": "B. Summer sell-off",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Summer holidays! Someone is going on trips, someone is visiting grandparents, but someone is trying to get a part-time job. This summer Noora decided that she wants to earn some money, and took a job in a shop as an assistant.</p><p>Shop, where Noora is working, has a plan on the following <span class=\"tex-span\"><i>n</i></span> days. For each day sales manager knows exactly, that in <span class=\"tex-span\"><i>i</i></span>-th day <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>i</i></sub></span> products will be put up for sale and exactly <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> clients will come to the shop that day. Also, the manager is sure, that everyone, who comes to the shop, buys exactly one product or, if there aren't any left, leaves the shop without buying anything. Moreover, due to the short shelf-life of the products, manager established the following rule: if some part of the products left on the shelves at the end of the day, that products aren't kept on the next day and are sent to the dump.</p><p>For advertising purposes manager offered to start a sell-out in the shop. He asked Noora to choose any <span class=\"tex-span\"><i>f</i></span> days from <span class=\"tex-span\"><i>n</i></span> next for sell-outs. On each of <span class=\"tex-span\"><i>f</i></span> chosen days the number of products were put up for sale would be doubled. Thus, if on <span class=\"tex-span\"><i>i</i></span>-th day shop planned to put up for sale <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>i</i></sub></span> products and Noora has chosen this day for sell-out, shelves of the shop would keep <span class=\"tex-span\">2\u00b7<i>k</i><sub class=\"lower-index\"><i>i</i></sub></span> products. Consequently, there is an opportunity to sell two times more products on days of sell-out.</p><p>Noora's task is to choose <span class=\"tex-span\"><i>f</i></span> days to maximize total number of sold products. She asks you to help her with such a difficult problem.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>f</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20090\u2009\u2264\u2009<i>f</i>\u2009\u2264\u2009<i>n</i>)</span> denoting the number of days in shop's plan and the number of days that Noora has to choose for sell-out.</p><p>Each line of the following <span class=\"tex-span\"><i>n</i></span> subsequent lines contains two integers <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>k</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span> denoting the number of products on the shelves of the shop on the <span class=\"tex-span\"><i>i</i></span>-th day and the number of clients that will come to the shop on <span class=\"tex-span\"><i>i</i></span>-th day.</p>",
+    "outputSpecification": "<p>Print a single integer denoting the maximal number of products that shop can sell.</p>",
+    "samples": [
+        {
+            "input": "4 2<br/>2 1<br/>3 5<br/>2 3<br/>1 5<br/>",
+            "output": "10"
+        },
+        {
+            "input": "4 1<br/>0 2<br/>0 3<br/>3 5<br/>0 6<br/>",
+            "output": "5"
+        }
+    ],
+    "note": "<p>In the first example we can choose days with numbers <span class=\"tex-span\">2</span> and <span class=\"tex-span\">4</span> for sell-out. In this case new numbers of products for sale would be equal to <span class=\"tex-span\">[2,\u20096,\u20092,\u20092]</span> respectively. So on the first day shop will sell <span class=\"tex-span\">1</span> product, on the second\u00a0\u2014 <span class=\"tex-span\">5</span>, on the third\u00a0\u2014 <span class=\"tex-span\">2</span>, on the fourth\u00a0\u2014 <span class=\"tex-span\">2</span>. In total <span class=\"tex-span\">1\u2009+\u20095\u2009+\u20092\u2009+\u20092\u2009=\u200910</span> product units.</p><p>In the second example it is possible to sell <span class=\"tex-span\">5</span> products, if you choose third day for sell-out.</p>",
+    "contestId": 810,
+    "index": "B",
+    "name": "Summer sell-off",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 11019
+}

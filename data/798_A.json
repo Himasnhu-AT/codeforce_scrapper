@@ -1,0 +1,39 @@
+{
+    "title": "A. Mike and palindrome",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mike has a string <span class=\"tex-span\"><i>s</i></span> consisting of only lowercase English letters. He wants to <span class=\"tex-font-style-bf\">change exactly one</span> character from the string so that the resulting one is a palindrome. </p><p>A palindrome is a string that reads the same backward as forward, for example strings \"<span class=\"tex-font-style-tt\">z</span>\", \"<span class=\"tex-font-style-tt\">aaa</span>\", \"<span class=\"tex-font-style-tt\">aba</span>\", \"<span class=\"tex-font-style-tt\">abccba</span>\" are palindromes, but strings \"<span class=\"tex-font-style-tt\">codeforces</span>\", \"<span class=\"tex-font-style-tt\">reality</span>\", \"<span class=\"tex-font-style-tt\">ab</span>\" are not.</p>",
+    "inputSpecification": "<p>The first and single line contains string <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u200915</span>).</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" (without quotes) if Mike can change <span class=\"tex-font-style-bf\">exactly</span> one character so that the resulting string is palindrome or \"<span class=\"tex-font-style-tt\">NO</span>\" (without quotes) otherwise. </p>",
+    "samples": [
+        {
+            "input": "abccaa<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "abbcca<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "abcda<br/>",
+            "output": "YES<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 798,
+    "index": "A",
+    "name": "Mike and palindrome",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "strings"
+    ],
+    "solvedCount": 21144
+}

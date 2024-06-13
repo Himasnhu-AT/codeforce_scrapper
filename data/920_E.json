@@ -1,0 +1,32 @@
+{
+    "title": "E. Connected Components?",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an undirected graph consisting of <span class=\"tex-span\"><i>n</i></span> vertices and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/674d9858011b0046ef87a26aa39f2b9cac65bfac.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> edges. Instead of giving you the edges that exist in the graph, we give you <span class=\"tex-span\"><i>m</i></span> unordered pairs (<span class=\"tex-span\"><i>x</i>,\u2009<i>y</i></span>) such that there is no edge between <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>, and if some pair of vertices is not listed in the input, then there is an edge between these vertices.</p><p>You have to find the number of connected components in the graph and the size of each component. A connected component is a set of vertices <span class=\"tex-span\"><i>X</i></span> such that for every two vertices from this set there exists at least one path in the graph connecting these vertices, but adding any other vertex to <span class=\"tex-span\"><i>X</i></span> violates this rule.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200000</span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/281a6739c6f74c0372a4f47d5c23a7f33b6f01d3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>).</p><p>Then <span class=\"tex-span\"><i>m</i></span> lines follow, each containing a pair of integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>x</i>\u2009\u2260\u2009<i>y</i></span>) denoting that <span class=\"tex-font-style-bf\">there is no edge</span> between <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>. Each pair is listed at most once; (<span class=\"tex-span\"><i>x</i>,\u2009<i>y</i></span>) and (<span class=\"tex-span\"><i>y</i>,\u2009<i>x</i></span>) are considered the same (so they are never listed in the same test). If some pair of vertices is not listed in the input, then there <span class=\"tex-font-style-bf\">exists</span> an edge between those vertices. </p>",
+    "outputSpecification": "<p>Firstly print <span class=\"tex-span\"><i>k</i></span> \u2014 the number of connected components in this graph.</p><p>Then print <span class=\"tex-span\"><i>k</i></span> integers \u2014 the sizes of components. You should output these integers in non-descending order.</p>",
+    "samples": [
+        {
+            "input": "5 5<br/>1 2<br/>3 4<br/>3 2<br/>4 2<br/>2 5<br/>",
+            "output": "2<br/>1 4 "
+        }
+    ],
+    "note": null,
+    "contestId": 920,
+    "index": "E",
+    "name": "Connected Components?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "graphs"
+    ],
+    "solvedCount": 5999
+}

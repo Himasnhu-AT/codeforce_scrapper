@@ -1,0 +1,31 @@
+{
+    "title": "E. Reverses",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Hurricane came to Berland and to suburbs Stringsvill. You are going to it to check if it's all right with you favorite string. Hurrinace broke it a bit by reversing some of its non-intersecting substrings. You have a photo of this string before hurricane and you want to restore it to original state using reversing minimum possible number of its substrings and find out which substrings you should reverse.</p><p>You are given a string <span class=\"tex-span\"><i>s</i></span>\u00a0\u2014 original state of your string and string <span class=\"tex-span\"><i>t</i></span>\u00a0\u2014 state of the string after hurricane. You should select <span class=\"tex-span\"><i>k</i></span> non-intersecting substrings of <span class=\"tex-span\"><i>t</i></span> in such a way that after reverse of these substrings string will be equal <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>k</i></span> is minimum possible.</p>",
+    "inputSpecification": "<p>First line of input contains string <span class=\"tex-span\"><i>s</i></span> and second line contains string <span class=\"tex-span\"><i>t</i></span>. Both strings have same length and consist of lowercase English letters. <span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009=\u2009|<i>t</i>|\u2009\u2264\u20095\u00b710<sup class=\"upper-index\">5</sup></span></p>",
+    "outputSpecification": "<p>In first line print <span class=\"tex-span\"><i>k</i></span>\u00a0\u2014 minimum number of substrings you should reverse. Next output <span class=\"tex-span\"><i>k</i></span> lines. Each line should contain two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> meaning that you should reverse substring from symbol number <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> to symbol <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (strings are 1-indexed). These substrings shouldn't intersect. If there are multiple answers print any. If it's impossible to restore string output <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "samples": [
+        {
+            "input": "abcxxxdef<br/>cbaxxxfed<br/>",
+            "output": "2<br/>7 9<br/>1 3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 906,
+    "index": "E",
+    "name": "Reverses",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "string suffix structures",
+        "strings"
+    ],
+    "solvedCount": 431
+}

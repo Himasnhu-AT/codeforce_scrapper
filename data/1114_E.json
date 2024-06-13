@@ -1,0 +1,32 @@
+{
+    "title": "E. Arithmetic Progression",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">This is an interactive problem!</span></p><p>An arithmetic progression or arithmetic sequence is a sequence of integers such that the subtraction of element with its previous element ($$$x_i - x_{i - 1}$$$, where $$$i \\ge 2$$$) is constant\u00a0\u2014 such difference is called a <span class=\"tex-font-style-it\">common difference</span> of the sequence.</p><p>That is, an arithmetic progression is a sequence of form $$$x_i = x_1 + (i - 1) d$$$, where $$$d$$$ is a common difference of the sequence.</p><p>There is a secret list of $$$n$$$ integers $$$a_1, a_2, \\ldots, a_n$$$.</p><p>It is guaranteed that all elements $$$a_1, a_2, \\ldots, a_n$$$ are between $$$0$$$ and $$$10^9$$$, inclusive.</p><p>This list is special: if sorted in increasing order, it will form an arithmetic progression with positive common difference ($$$d &gt; 0$$$). For example, the list $$$[14, 24, 9, 19]$$$ satisfies this requirement, after sorting it makes a list $$$[9, 14, 19, 24]$$$, which can be produced as $$$x_n = 9 + 5 \\cdot (n - 1)$$$.</p><p>Also you are also given a device, which has a quite discharged battery, thus you can only use it to perform at most $$$60$$$ queries of following two types:</p><ul><li> Given a value $$$i$$$ ($$$1 \\le i \\le n$$$), the device will show the value of the $$$a_i$$$.</li><li> Given a value $$$x$$$ ($$$0 \\le x \\le 10^9$$$), the device will return $$$1$$$ if an element with a value strictly greater than $$$x$$$ exists, and it will return $$$0$$$ otherwise.</li></ul><p>Your can use this special device for at most $$$60$$$ queries. Could you please find out the smallest element and the common difference of the sequence? That is, values $$$x_1$$$ and $$$d$$$ in the definition of the arithmetic progression. Note that the array $$$a$$$ is not sorted.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n4\n\n0\n\n1\n\n14\n\n24\n\n9\n\n19\n\n",
+            "output": "\n\n> 25\n\n> 15\n\n? 1\n\n? 2\n\n? 3\n\n? 4\n\n! 9 5"
+        }
+    ],
+    "note": "<p>Note that the example interaction contains extra empty lines so that it's easier to read. The real interaction doesn't contain any empty lines and you shouldn't print any extra empty lines as well.</p><p>The list in the example test is $$$[14, 24, 9, 19]$$$.</p>",
+    "contestId": 1114,
+    "index": "E",
+    "name": "Arithmetic Progression",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "interactive",
+        "number theory",
+        "probabilities"
+    ],
+    "solvedCount": 2781
+}

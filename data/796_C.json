@@ -1,0 +1,40 @@
+{
+    "title": "C. Bank Hacking",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Although Inzane successfully found his beloved bone, Zane, his owner, has yet to return. To search for Zane, he would need a lot of money, of which he sadly has none. To deal with the problem, he has decided to hack the banks.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/07ba5ce6ba8105796e44d810bbf4aef42c0ff1b6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>There are <span class=\"tex-span\"><i>n</i></span> banks, numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. There are also <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> wires connecting the banks. All banks are initially <span class=\"tex-font-style-it\">online</span>. Each bank also has its initial strength: bank <span class=\"tex-span\"><i>i</i></span> has initial strength <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>Let us define some keywords before we proceed. Bank <span class=\"tex-span\"><i>i</i></span> and bank <span class=\"tex-span\"><i>j</i></span> are <span class=\"tex-font-style-it\">neighboring</span> if and only if there exists a wire directly connecting them. Bank <span class=\"tex-span\"><i>i</i></span> and bank <span class=\"tex-span\"><i>j</i></span> are <span class=\"tex-font-style-it\">semi-neighboring</span> if and only if there exists an <span class=\"tex-font-style-bf\"><span class=\"tex-font-style-it\">online</span></span> bank <span class=\"tex-span\"><i>k</i></span> such that bank <span class=\"tex-span\"><i>i</i></span> and bank <span class=\"tex-span\"><i>k</i></span> are <span class=\"tex-font-style-it\">neighboring</span> and bank <span class=\"tex-span\"><i>k</i></span> and bank <span class=\"tex-span\"><i>j</i></span> are <span class=\"tex-font-style-it\">neighboring</span>.</p><p>When a bank is hacked, it becomes <span class=\"tex-font-style-it\">offline</span> (and no longer <span class=\"tex-font-style-it\">online</span>), and other banks that are <span class=\"tex-font-style-it\">neighboring</span> or <span class=\"tex-font-style-it\">semi-neighboring</span> to it have their strengths increased by <span class=\"tex-span\">1</span>.</p><p>To start his plan, Inzane will choose a bank to hack first. Indeed, the strength of such bank must not exceed the strength of his computer. After this, he will repeatedly choose some bank to hack next until all the banks are hacked, but he can continue to hack bank <span class=\"tex-span\"><i>x</i></span> if and only if all these conditions are met:</p><ol> <li> Bank <span class=\"tex-span\"><i>x</i></span> is <span class=\"tex-font-style-it\">online</span>. That is, bank <span class=\"tex-span\"><i>x</i></span> is not hacked yet. </li><li> Bank <span class=\"tex-span\"><i>x</i></span> is <span class=\"tex-font-style-it\">neighboring</span> to some <span class=\"tex-font-style-it\">offline</span> bank. </li><li> The strength of bank <span class=\"tex-span\"><i>x</i></span> is less than or equal to the strength of Inzane's computer. </li></ol><p>Determine the minimum strength of the computer Inzane needs to hack all the banks.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the total number of banks.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the strengths of the banks.</p><p>Each of the next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contains two integers <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>)\u00a0\u2014 meaning that there is a wire directly connecting banks <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>It is guaranteed that the wires connect the banks in such a way that Inzane can somehow hack all the banks using a computer with appropriate strength.</p>",
+    "outputSpecification": "<p>Print one integer\u00a0\u2014 the minimum strength of the computer Inzane needs to accomplish the goal.</p>",
+    "samples": [
+        {
+            "input": "5<br/>1 2 3 4 5<br/>1 2<br/>2 3<br/>3 4<br/>4 5<br/>",
+            "output": "5"
+        },
+        {
+            "input": "7<br/>38 -29 87 93 39 28 -55<br/>1 2<br/>2 5<br/>3 2<br/>2 4<br/>1 7<br/>7 6<br/>",
+            "output": "93"
+        },
+        {
+            "input": "5<br/>1 2 7 6 7<br/>1 5<br/>5 3<br/>3 4<br/>2 4<br/>",
+            "output": "8"
+        }
+    ],
+    "note": "<p>In the first sample, Inzane can hack all banks using a computer with strength <span class=\"tex-span\">5</span>. Here is how:</p><ul> <li> Initially, strengths of the banks are <span class=\"tex-span\">[1,\u20092,\u20093,\u20094,\u20095]</span>. </li><li> He hacks bank <span class=\"tex-span\">5</span>, then strengths of the banks become <span class=\"tex-span\">[1,\u20092,\u20094,\u20095,\u2009\u2009-\u2009]</span>. </li><li> He hacks bank <span class=\"tex-span\">4</span>, then strengths of the banks become <span class=\"tex-span\">[1,\u20093,\u20095,\u2009\u2009-\u2009,\u2009\u2009-\u2009]</span>. </li><li> He hacks bank <span class=\"tex-span\">3</span>, then strengths of the banks become <span class=\"tex-span\">[2,\u20094,\u2009\u2009-\u2009,\u2009\u2009-\u2009,\u2009\u2009-\u2009]</span>. </li><li> He hacks bank <span class=\"tex-span\">2</span>, then strengths of the banks become <span class=\"tex-span\">[3,\u2009\u2009-\u2009,\u2009\u2009-\u2009,\u2009\u2009-\u2009,\u2009\u2009-\u2009]</span>. </li><li> He completes his goal by hacking bank <span class=\"tex-span\">1</span>. </li></ul><p>In the second sample, Inzane can hack banks <span class=\"tex-span\">4</span>, <span class=\"tex-span\">2</span>, <span class=\"tex-span\">3</span>, <span class=\"tex-span\">1</span>, <span class=\"tex-span\">5</span>, <span class=\"tex-span\">7</span>, and <span class=\"tex-span\">6</span>, in this order. This way, he can hack all banks using a computer with strength <span class=\"tex-span\">93</span>.</p>",
+    "contestId": 796,
+    "index": "C",
+    "name": "Bank Hacking",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "dp",
+        "trees"
+    ],
+    "solvedCount": 2985
+}

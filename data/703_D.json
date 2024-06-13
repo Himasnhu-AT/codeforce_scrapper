@@ -1,0 +1,33 @@
+{
+    "title": "D. Mishka and Interesting sum",
+    "timeLimit": {
+        "value": 3.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Mishka enjoys programming. Since her birthday has just passed, her friends decided to present her with array of non-negative integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> of <span class=\"tex-span\"><i>n</i></span> elements!</p><p>Mishka loved the array and she instantly decided to determine its beauty value, but she is too little and can't process large arrays. Right because of that she invited you to visit her and asked you to process <span class=\"tex-span\"><i>m</i></span> queries.</p><p>Each query is processed in the following way:</p><ol> <li> Two integers <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u2009<i>n</i></span>) are specified\u00a0\u2014 bounds of query segment. </li><li> Integers, presented in array segment <span class=\"tex-span\">[<i>l</i>,\u2009\u2009<i>r</i>]</span> (in sequence of integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>l</i></sub>,\u2009<i>a</i><sub class=\"lower-index\"><i>l</i>\u2009+\u20091</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>r</i></sub></span>) <span class=\"tex-font-style-bf\">even number of times</span>, are written down. </li><li> XOR-sum of written down integers is calculated, and this value is the answer for a query. Formally, if integers written down in point 2 are <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>k</i></sub></span>, then Mishka wants to know the value <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0cc8f248d0d8ba12cd7ce3df549c99209199764b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c4b7092c0f7ce6535f2574569c98f7b3c2fe2c5f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>\u00a0\u2014 operator of exclusive bitwise OR. </li></ol><p>Since only the little bears know the definition of array beauty, all you are to do is to answer each of queries presented.</p>",
+    "inputSpecification": "<p>The first line of the input contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091\u2009000\u2009000</span>)\u00a0\u2014 the number of elements in the array.</p><p>The second line of the input contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 array elements.</p><p>The third line of the input contains single integer <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20091\u2009000\u2009000</span>)\u00a0\u2014 the number of queries.</p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines describes corresponding query by a pair of integers <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the bounds of query segment.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>m</i></span> non-negative integers\u00a0\u2014 the answers for the queries in the order they appear in the input.</p>",
+    "samples": [
+        {
+            "input": "3<br/>3 7 8<br/>1<br/>1 3<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "7<br/>1 2 1 3 3 2 3<br/>5<br/>4 7<br/>4 5<br/>1 3<br/>1 7<br/>1 5<br/>",
+            "output": "0<br/>3<br/>1<br/>3<br/>2<br/>"
+        }
+    ],
+    "note": "<p>In the second sample:</p><p>There is no integers in the segment of the first query, presented even number of times in the segment\u00a0\u2014 the answer is <span class=\"tex-span\">0</span>.</p><p>In the second query there is only integer <span class=\"tex-span\">3</span> is presented even number of times\u00a0\u2014 the answer is <span class=\"tex-span\">3</span>.</p><p>In the third query only integer <span class=\"tex-span\">1</span> is written down\u00a0\u2014 the answer is <span class=\"tex-span\">1</span>.</p><p>In the fourth query all array elements are considered. Only <span class=\"tex-span\">1</span> and <span class=\"tex-span\">2</span> are presented there even number of times. The answer is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8f3bf9fdacb25bb19b17c017c532cd102cb4993c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the fifth query <span class=\"tex-span\">1</span> and <span class=\"tex-span\">3</span> are written down. The answer is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bfacb216edbf76a77a805a5347ff40d88d70f384.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 703,
+    "index": "D",
+    "name": "Mishka and Interesting sum",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures"
+    ],
+    "solvedCount": 3428
+}

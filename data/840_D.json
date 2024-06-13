@@ -1,0 +1,34 @@
+{
+    "title": "D. Destiny",
+    "timeLimit": {
+        "value": 2.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Once, Leha found in the left pocket an array consisting of <span class=\"tex-span\"><i>n</i></span> integers, and in the right pocket <span class=\"tex-span\"><i>q</i></span> queries of the form <span class=\"tex-span\"><i>l</i></span> <span class=\"tex-span\"><i>r</i></span> <span class=\"tex-span\"><i>k</i></span>. If there are queries, then they must be answered. Answer for the query is minimal <span class=\"tex-span\"><i>x</i></span> such that <span class=\"tex-span\"><i>x</i></span> occurs in the interval <span class=\"tex-span\"><i>l</i></span> <span class=\"tex-span\"><i>r</i></span> strictly more than <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1813bf6490bb8f36c4f992c566679ba42af3f072.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> times or <span class=\"tex-span\">\u2009-\u20091</span> if there is no such number. Help Leha with such a difficult task.</p>",
+    "inputSpecification": "<p>First line of input data contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>q</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 number of elements in the array and number of queries respectively.</p><p>Next line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) \u2014 Leha's array.</p><p>Each of next <span class=\"tex-span\"><i>q</i></span> lines contains three integers <span class=\"tex-span\"><i>l</i></span>, <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u2009<i>n</i>,\u20092\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20095</span>) \u2014 description of the queries.</p>",
+    "outputSpecification": "<p>Output answer for each query in new line.</p>",
+    "samples": [
+        {
+            "input": "4 2<br/>1 1 2 2<br/>1 3 2<br/>1 4 2<br/>",
+            "output": "1<br/>-1<br/>"
+        },
+        {
+            "input": "5 3<br/>1 2 1 3 2<br/>2 5 3<br/>1 2 3<br/>5 5 2<br/>",
+            "output": "2<br/>1<br/>2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 840,
+    "index": "D",
+    "name": "Destiny",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "probabilities"
+    ],
+    "solvedCount": 2816
+}

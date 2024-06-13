@@ -1,0 +1,33 @@
+{
+    "title": "F. Symmetric Projections",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a set of <span class=\"tex-span\"><i>n</i></span> points on the plane. A line containing the origin is called good, if projection of the given set to this line forms a symmetric multiset of points. Find the total number of good lines.</p><p>Multiset is a set where equal elements are allowed.</p><p>Multiset is called symmetric, if there is a point <span class=\"tex-span\"><i>P</i></span> on the plane such that the multiset is <a href=\"https://en.wikipedia.org/wiki/Point_reflection\">centrally symmetric</a> in respect of point <span class=\"tex-span\"><i>P</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092000</span>) \u2014 the number of points in the set.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">6</sup>\u2009\u2009\u2264\u2009\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2009\u2264\u2009\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 the coordinates of the points. It is guaranteed that no two points coincide.</p>",
+    "outputSpecification": "<p>If there are infinitely many good lines, print <span class=\"tex-font-style-tt\">-1</span>.</p><p>Otherwise, print single integer\u00a0\u2014 the number of good lines.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2<br/>2 1<br/>3 3<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "2<br/>4 3<br/>1 2<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>Picture to the first sample test:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/eedc60313be8684bd6169b8b23f0f0afd92479a8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </p><p>In the second sample, any line containing the origin is good.</p>",
+    "contestId": 886,
+    "index": "F",
+    "name": "Symmetric Projections",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 264
+}

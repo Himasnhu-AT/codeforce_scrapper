@@ -1,0 +1,33 @@
+{
+    "title": "C. Array Sum",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array of integers. Calculate the sum of its elements.</p>",
+    "inputSpecification": "<p>The <span class=\"tex-span\"><i>i</i></span>-th line of the input contains an integer <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the <span class=\"tex-span\"><i>i</i></span>-th element of the array. The size of the array is between 1 and 10, inclusive. Note that the size of the array is not given explicitly!</p>",
+    "outputSpecification": "<p>Output a single integer\u00a0\u2014 the sum of the elements of the array.</p>",
+    "samples": [
+        {
+            "input": "2<br/>15<br/>110<br/>3<br/>",
+            "output": "130<br/>"
+        },
+        {
+            "input": "90<br/>0<br/>21<br/>331<br/>45<br/>",
+            "output": "487<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 661,
+    "index": "C",
+    "name": "Array Sum",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 129
+}

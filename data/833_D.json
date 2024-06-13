@@ -1,0 +1,36 @@
+{
+    "title": "D. Red-Black Cobweb",
+    "timeLimit": {
+        "value": 6.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8450f44ad5689842cf81e31160c3bb90f1f31883.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Slastyona likes to watch life of nearby grove's dwellers. This time she watches a strange red-black spider sitting at the center of a huge cobweb.</p><p>The cobweb is a set of <span class=\"tex-span\"><i>n</i></span> nodes connected by threads, each of the treads is either red of black. Using these threads, the spider can move between nodes. No thread connects a node to itself, and between any two nodes there is a unique sequence of threads connecting them.</p><p>Slastyona decided to study some special qualities of the cobweb. She noticed that each of the threads has a value of <span class=\"tex-font-style-it\">clamminess</span> <span class=\"tex-span\"><i>x</i></span>.</p><p>However, Slastyona is mostly interested in <span class=\"tex-font-style-it\">jelliness</span> of the cobweb. Consider those of the shortest paths between each pair of nodes on which the numbers of red and black threads differ at most twice. For each such path compute the product of the clamminess of threads on the path.The jelliness of the cobweb is the product of all obtained values among all paths. Those paths that differ by direction only are counted only once.</p><p>Of course, this number can be huge, so Slastyona asks you to compute the jelliness of the given cobweb and print the answer modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The first line contains the number of nodes <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>.</p><p>The next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contain four integers each, denoting the <span class=\"tex-span\"><i>i</i></span>-th thread of the cobweb: the nodes it connects <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>,\u20091\u2009\u2264\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>)</span>, the <span class=\"tex-font-style-it\">clamminess</span> of the thread <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>\u2009+\u20096)</span>, and the color of the thread <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> (<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7baaedab194bb30c2ce7c7a450e7577fb7bb7de8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>). The red color is denoted by <span class=\"tex-span\">0</span>, and the black color is denoted by <span class=\"tex-span\">1</span>. </p>",
+    "outputSpecification": "<p>Print single integer the <span class=\"tex-font-style-it\">jelliness</span> of the cobweb modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>. If there are no paths such that the numbers of red and black threads differ at most twice, print <span class=\"tex-span\">1</span>.</p>",
+    "samples": [
+        {
+            "input": "5<br/>1 2 9 0<br/>2 3 5 1<br/>2 4 5 0<br/>2 5 5 1<br/>",
+            "output": "1265625<br/>"
+        },
+        {
+            "input": "8<br/>1 2 7 1<br/>2 3 4 1<br/>3 4 19 1<br/>5 1 2 0<br/>6 2 3 0<br/>7 3 3 0<br/>8 4 4 0<br/>",
+            "output": "452841614<br/>"
+        }
+    ],
+    "note": "<p>In the first example there are <span class=\"tex-span\">4</span> pairs of nodes such that the numbers of threads of both colors on them differ at most twice. There pairs are <span class=\"tex-span\">(1,\u20093)</span> with product of clamminess equal to <span class=\"tex-span\">45</span>, <span class=\"tex-span\">(1,\u20095)</span> with product of clamminess equal to <span class=\"tex-span\">45</span>, <span class=\"tex-span\">(3,\u20094)</span> with product of clamminess equal to <span class=\"tex-span\">25</span> and <span class=\"tex-span\">(4,\u20095)</span> with product of clamminess equal to <span class=\"tex-span\">25</span>. The <span class=\"tex-font-style-it\">jelliness</span> of the cobweb is equal to 1265625.</p>",
+    "contestId": 833,
+    "index": "D",
+    "name": "Red-Black Cobweb",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "implementation",
+        "trees"
+    ],
+    "solvedCount": 387
+}

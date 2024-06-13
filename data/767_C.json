@@ -1,0 +1,36 @@
+{
+    "title": "C. Garland",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Once at New Year Dima had a dream in which he was presented a fairy garland. A garland is a set of lamps, some pairs of which are connected by wires. Dima remembered that each two lamps in the garland were connected directly or indirectly via some wires. Furthermore, the number of wires was exactly one less than the number of lamps.</p><p>There was something unusual about the garland. Each lamp had its own brightness which depended on the temperature of the lamp. Temperatures could be positive, negative or zero. Dima has two friends, so he decided to share the garland with them. He wants to cut two different wires so that the garland breaks up into three parts. Each part of the garland should shine equally, i.\u00a0e. the sums of lamps' temperatures should be equal in each of the parts. Of course, each of the parts should be non-empty, i.\u00a0e. each part should contain at least one lamp.</p><center> <img class=\"tex-graphics\" height=\"265px\" src=\"https://espresso.codeforces.com/f493cf2b55e80fad8ede8b6d3c069ed4359d33a6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"378px\"/> </center><p>Help Dima to find a suitable way to cut the garland, or determine that this is impossible.</p><p>While examining the garland, Dima lifted it up holding by one of the lamps. Thus, each of the lamps, except the one he is holding by, is now hanging on some wire. So, you should print two lamp ids as the answer which denote that Dima should cut the wires these lamps are hanging on. Of course, the lamp Dima is holding the garland by can't be included in the answer.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>)\u00a0\u2014 the number of lamps in the garland.</p><p>Then <span class=\"tex-span\"><i>n</i></span> lines follow. The <span class=\"tex-span\"><i>i</i></span>-th of them contain the information about the <span class=\"tex-span\"><i>i</i></span>-th lamp: the number lamp <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, it is hanging on (and <span class=\"tex-span\">0</span>, if is there is no such lamp), and its temperature <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u2009100\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>). The lamps are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "outputSpecification": "<p>If there is no solution, print <span class=\"tex-font-style-tt\">-1</span>.</p><p>Otherwise print two integers\u00a0\u2014 the indexes of the lamps which mean Dima should cut the wires they are hanging on. If there are multiple answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "6<br/>2 4<br/>0 5<br/>4 2<br/>2 1<br/>1 1<br/>4 2<br/>",
+            "output": "1 4<br/>"
+        },
+        {
+            "input": "6<br/>2 4<br/>0 6<br/>4 2<br/>2 1<br/>1 1<br/>4 2<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>The garland and cuts scheme for the first example:</p><center> <img class=\"tex-graphics\" height=\"212px\" src=\"https://espresso.codeforces.com/ce5c3f0154fb758fed249d8806671edc45f9ae68.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"291px\"/> </center>",
+    "contestId": 767,
+    "index": "C",
+    "name": "Garland",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "trees"
+    ],
+    "solvedCount": 4009
+}

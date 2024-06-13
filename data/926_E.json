@@ -1,0 +1,38 @@
+{
+    "title": "E. Merge Equal Elements",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a sequence of positive integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. </p><p>While possible, you perform the following operation: find a pair of equal consecutive elements. If there are more than one such pair, find the leftmost (with the smallest indices of elements). If the two integers are equal to <span class=\"tex-span\"><i>x</i></span>, delete both and insert a single integer <span class=\"tex-span\"><i>x</i>\u2009+\u20091</span> on their place. This way the number of elements in the sequence is decreased by <span class=\"tex-span\">1</span> on each step. </p><p>You stop performing the operation when there is no pair of equal consecutive elements.</p><p>For example, if the initial sequence is <span class=\"tex-span\">[5,\u20092,\u20091,\u20091,\u20092,\u20092]</span>, then after the first operation you get <span class=\"tex-span\">[5,\u20092,\u20092,\u20092,\u20092]</span>, after the second \u2014 <span class=\"tex-span\">[5,\u20093,\u20092,\u20092]</span>, after the third \u2014 <span class=\"tex-span\">[5,\u20093,\u20093]</span>, and finally after the fourth you get <span class=\"tex-span\">[5,\u20094]</span>. After that there are no equal consecutive elements left in the sequence, so you stop the process.</p><p>Determine the final sequence after you stop performing the operation.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 the number of elements in the sequence.</p><p>The second line contains the sequence of integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>In the first line print a single integer <span class=\"tex-span\"><i>k</i></span> \u2014 the number of elements in the sequence after you stop performing the operation. </p><p>In the second line print <span class=\"tex-span\"><i>k</i></span> integers\u00a0\u2014 the sequence after you stop performing the operation.</p>",
+    "samples": [
+        {
+            "input": "6<br/>5 2 1 1 2 2<br/>",
+            "output": "2<br/>5 4 "
+        },
+        {
+            "input": "4<br/>1000000000 1000000000 1000000000 1000000000<br/>",
+            "output": "1<br/>1000000002 "
+        },
+        {
+            "input": "7<br/>4 10 22 11 12 5 6<br/>",
+            "output": "7<br/>4 10 22 11 12 5 6 "
+        }
+    ],
+    "note": "<p>The first example is described in the statements.</p><p>In the second example the initial sequence is <span class=\"tex-span\">[1000000000,\u20091000000000,\u20091000000000,\u20091000000000]</span>. After the first operation the sequence is equal to <span class=\"tex-span\">[1000000001,\u20091000000000,\u20091000000000]</span>. After the second operation the sequence is <span class=\"tex-span\">[1000000001,\u20091000000001]</span>. After the third operation the sequence is <span class=\"tex-span\">[1000000002]</span>.</p><p>In the third example there are no two equal consecutive elements initially, so the sequence does not change.</p>",
+    "contestId": 926,
+    "index": "E",
+    "name": "Merge Equal Elements",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "data structures"
+    ],
+    "solvedCount": 915
+}

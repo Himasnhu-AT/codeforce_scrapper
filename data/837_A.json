@@ -1,0 +1,37 @@
+{
+    "title": "A. Text Volume",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a text of single-space separated words, consisting of small and capital Latin letters.</p><p><span class=\"tex-font-style-it\">Volume</span> of the word is number of capital letters in the word. <span class=\"tex-font-style-it\">Volume</span> of the text is maximum <span class=\"tex-font-style-it\">volume</span> of all words in the text.</p><p>Calculate the <span class=\"tex-font-style-it\">volume</span> of the given text.</p>",
+    "inputSpecification": "<p>The first line contains one integer number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200</span>) \u2014 length of the text.</p><p>The second line contains text of single-space separated words <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub></span>, consisting only of small and capital Latin letters.</p>",
+    "outputSpecification": "<p>Print one integer number \u2014 <span class=\"tex-font-style-it\">volume</span> of text.</p>",
+    "samples": [
+        {
+            "input": "7<br/>NonZERO<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "24<br/>this is zero answer text<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "24<br/>Harbour Space University<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the first example there is only one word, there are <span class=\"tex-font-style-tt\">5</span> capital letters in it.</p><p>In the second example all of the words contain <span class=\"tex-font-style-tt\">0</span> capital letters.</p>",
+    "contestId": 837,
+    "index": "A",
+    "name": "Text Volume",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 9259
+}

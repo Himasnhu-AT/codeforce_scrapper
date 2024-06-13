@@ -1,0 +1,37 @@
+{
+    "title": "B. And",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There is an array with <span class=\"tex-span\"><i>n</i></span> elements <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> and the number <span class=\"tex-span\"><i>x</i></span>.</p><p>In one operation you can select some <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>) and replace element <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> with <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&amp;\u2009<i>x</i></span>, where <span class=\"tex-span\">&amp;</span> denotes the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#AND\">bitwise and</a> operation.</p><p>You want the array to have at least two equal elements after applying some operations (possibly, none). In other words, there should be at least two distinct indices <span class=\"tex-span\"><i>i</i>\u2009\u2260\u2009<i>j</i></span> such that <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>a</i><sub class=\"lower-index\"><i>j</i></sub></span>. Determine whether it is possible to achieve and, if possible, the minimal number of operations to apply.</p>",
+    "inputSpecification": "<p>The first line contains integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009100\u2009000</span>), number of elements in the array and the number to and with.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100\u2009000</span>), the elements of the array.</p>",
+    "outputSpecification": "<p>Print a single integer denoting the minimal number of operations to do, or <span class=\"tex-font-style-tt\">-1</span>, if it is impossible.</p>",
+    "samples": [
+        {
+            "input": "4 3<br/>1 2 3 7<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 228<br/>1 1<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "3 7<br/>1 2 3<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first example one can apply the operation to the last element of the array. That replaces 7 with 3, so we achieve the goal in one move.</p><p>In the second example the array already has two equal elements.</p><p>In the third example applying the operation won't change the array at all, so it is impossible to make some pair of elements equal.</p>",
+    "contestId": 1013,
+    "index": "B",
+    "name": "And",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy"
+    ],
+    "solvedCount": 7503
+}

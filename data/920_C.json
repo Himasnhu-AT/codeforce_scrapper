@@ -1,0 +1,37 @@
+{
+    "title": "C. Swap Adjacent Elements",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have an array <span class=\"tex-span\"><i>a</i></span> consisting of <span class=\"tex-span\"><i>n</i></span> integers. Each integer from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> appears exactly once in this array.</p><p>For some indices <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i>\u2009-\u20091</span>) it is possible to swap <span class=\"tex-span\"><i>i</i></span>-th element with <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span>-th, for other indices it is not possible. You may perform any number of swapping operations any order. There is no limit on the number of times you swap <span class=\"tex-span\"><i>i</i></span>-th element with <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span>-th (if the position is not forbidden).</p><p>Can you make this array sorted in ascending order performing some sequence of swapping operations?</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200000</span>) \u2014 the number of elements in the array.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>, ..., <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009200000</span>) \u2014 the elements of the array. Each integer from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> appears exactly once.</p><p>The third line contains a string of <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> characters, each character is either <span class=\"tex-font-style-tt\">0</span> or <span class=\"tex-font-style-tt\">1</span>. If <span class=\"tex-span\"><i>i</i></span>-th character is <span class=\"tex-font-style-tt\">1</span>, then you can swap <span class=\"tex-span\"><i>i</i></span>-th element with <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span>-th any number of times, otherwise it is forbidden to swap <span class=\"tex-span\"><i>i</i></span>-th element with <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span>-th.</p>",
+    "outputSpecification": "<p>If it is possible to sort the array in ascending order using any sequence of swaps you are allowed to make, print <span class=\"tex-font-style-tt\">YES</span>. Otherwise, print <span class=\"tex-font-style-tt\">NO</span>.</p>",
+    "samples": [
+        {
+            "input": "6<br/>1 2 5 3 4 6<br/>01110<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "6<br/>1 2 5 3 4 6<br/>01010<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>In the first example you may swap <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">3</sub></span> and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">4</sub></span>, and then swap <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">4</sub></span> and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">5</sub></span>.</p>",
+    "contestId": 920,
+    "index": "C",
+    "name": "Swap Adjacent Elements",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "greedy",
+        "math",
+        "sortings",
+        "two pointers"
+    ],
+    "solvedCount": 9031
+}

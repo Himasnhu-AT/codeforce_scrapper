@@ -1,0 +1,37 @@
+{
+    "title": "E. Divisibility Check",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array of integers. Check whether there exists a number in this array which is divisible by all other numbers in this array. Output <span class=\"tex-span\">1</span>, if such a number exists, and <span class=\"tex-span\">0</span> otherwise.</p>",
+    "inputSpecification": "<p>The only line of the input contains a list of space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>)\u00a0\u2014 elements of the array. The size of the array is between <span class=\"tex-span\">2</span> and <span class=\"tex-span\">10</span>, inclusive. Note that the size of the array is not given explicitly!</p>",
+    "outputSpecification": "<p>Output <span class=\"tex-font-style-tt\">1</span> if there exists element of this array which is divisible by all other elements of the array, and <span class=\"tex-font-style-tt\">0</span> otherwise.</p>",
+    "samples": [
+        {
+            "input": "6 12 4<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3 13<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "26 13 12<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 661,
+    "index": "E",
+    "name": "Divisibility Check",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 81
+}

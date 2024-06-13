@@ -1,0 +1,33 @@
+{
+    "title": "C. Mahmoud and Ehab and the xor",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mahmoud and Ehab are on the third stage of their adventures now. As you know, Dr. Evil likes sets. This time he won't show them any set from his large collection, but will ask them to create a new set to replenish his beautiful collection of sets.</p><p>Dr. Evil has his favorite evil integer <span class=\"tex-span\"><i>x</i></span>. He asks Mahmoud and Ehab to find a set of <span class=\"tex-span\"><i>n</i></span> distinct non-negative integers such the bitwise-xor sum of the integers in it is exactly <span class=\"tex-span\"><i>x</i></span>. Dr. Evil doesn't like big numbers, so any number in the set shouldn't be greater than <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span>.</p>",
+    "inputSpecification": "<p>The only line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the number of elements in the set and the desired bitwise-xor, respectively.</p>",
+    "outputSpecification": "<p>If there is no such set, print \"NO\" (without quotes).</p><p>Otherwise, on the first line print \"YES\" (without quotes) and on the second line print <span class=\"tex-span\"><i>n</i></span> distinct integers, denoting the elements in the set is any order. If there are multiple solutions you can print any of them.</p>",
+    "samples": [
+        {
+            "input": "5 5<br/>",
+            "output": "YES<br/>1 2 4 5 7"
+        },
+        {
+            "input": "3 6<br/>",
+            "output": "YES<br/>1 2 5"
+        }
+    ],
+    "note": "<p>You can read more about the bitwise-xor operation here: <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#XOR\">https://en.wikipedia.org/wiki/Bitwise_operation#XOR</a></p><p>For the first sample <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/eb8ccd05d3a7a41eff93c98f79d158cf85e702f9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>For the second sample <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d05d19f05b03f8ac89b7f86ef830eeccc0050c42.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 862,
+    "index": "C",
+    "name": "Mahmoud and Ehab and the xor",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms"
+    ],
+    "solvedCount": 3998
+}

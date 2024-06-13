@@ -1,0 +1,34 @@
+{
+    "title": "E. Jamie and Tree",
+    "timeLimit": {
+        "value": 2.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">To your surprise, Jamie is the final boss! Ehehehe.</span></p><p>Jamie has given you a tree with <span class=\"tex-span\"><i>n</i></span> vertices, numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. Initially, the root of the tree is the vertex with number <span class=\"tex-span\">1</span>. Also, each vertex has a value on it.</p><p>Jamie also gives you three types of queries on the tree:</p><p><span class=\"tex-span\">1 <i>v</i></span>\u00a0\u2014 Change the tree's root to vertex with number <span class=\"tex-span\"><i>v</i></span>.</p><p><span class=\"tex-span\">2 <i>u</i> <i>v</i> <i>x</i></span>\u00a0\u2014 For each vertex in the subtree of smallest size that contains <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span>, add <span class=\"tex-span\"><i>x</i></span> to its value.</p><p><span class=\"tex-span\">3 <i>v</i></span>\u00a0\u2014 Find sum of values of vertices in the subtree of vertex with number <span class=\"tex-span\"><i>v</i></span>.</p><p>A subtree of vertex <span class=\"tex-span\"><i>v</i></span> is a set of vertices such that <span class=\"tex-span\"><i>v</i></span> lies on shortest path from this vertex to root of the tree. Pay attention that subtree of a vertex can change after changing the tree's root.</p><p>Show your strength in programming to Jamie by performing the queries accurately!</p>",
+    "inputSpecification": "<p>The first line of input contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20091\u2009\u2264\u2009<i>q</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the number of vertices in the tree and the number of queries to process respectively.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">8</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">8</sup></span>)\u00a0\u2014 initial values of the vertices.</p><p>Next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contains two space-separated integers <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) describing edge between vertices <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> in the tree.</p><p>The following <span class=\"tex-span\"><i>q</i></span> lines describe the queries.</p><p>Each query has one of following formats depending on its type:</p><p><span class=\"tex-span\">1 <i>v</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>v</i>\u2009\u2264\u2009<i>n</i></span>) for queries of the first type.</p><p><span class=\"tex-span\">2 <i>u</i> <i>v</i> <i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i>,\u2009<i>v</i>\u2009\u2264\u2009<i>n</i>,\u2009\u2009-\u200910<sup class=\"upper-index\">8</sup>\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">8</sup></span>) for queries of the second type.</p><p><span class=\"tex-span\">3 <i>v</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>v</i>\u2009\u2264\u2009<i>n</i></span>) for queries of the third type.</p><p>All numbers in queries' descriptions are integers.</p><p>The queries must be carried out in the given order. It is guaranteed that the tree is valid.</p>",
+    "outputSpecification": "<p>For each query of the third type, output the required answer. It is guaranteed that at least one query of the third type is given by Jamie.</p>",
+    "samples": [
+        {
+            "input": "6 7<br/>1 4 2 8 5 7<br/>1 2<br/>3 1<br/>4 3<br/>4 5<br/>3 6<br/>3 1<br/>2 4 6 3<br/>3 4<br/>1 6<br/>2 2 4 -5<br/>1 4<br/>3 3<br/>",
+            "output": "27<br/>19<br/>5<br/>"
+        },
+        {
+            "input": "4 6<br/>4 3 5 6<br/>1 2<br/>2 3<br/>3 4<br/>3 1<br/>1 3<br/>2 2 4 3<br/>1 1<br/>2 2 4 -3<br/>3 1<br/>",
+            "output": "18<br/>21<br/>"
+        }
+    ],
+    "note": "<p>The following picture shows how the tree varies after the queries in the first sample. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/e2751e66b47ed16f1ce7fdb0c353eb94280e89f5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 916,
+    "index": "E",
+    "name": "Jamie and Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "trees"
+    ],
+    "solvedCount": 1596
+}

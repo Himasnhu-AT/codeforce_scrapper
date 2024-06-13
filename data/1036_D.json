@@ -1,0 +1,38 @@
+{
+    "title": "D. Vasya and Arrays",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya has two arrays $$$A$$$ and $$$B$$$ of lengths $$$n$$$ and $$$m$$$, respectively.</p><p>He can perform the following operation arbitrary number of times (possibly zero): he takes some consecutive subsegment of the array and replaces it with a single element, equal to the sum of all elements on this subsegment. For example, from the array $$$[1, 10, 100, 1000, 10000]$$$ Vasya can obtain array $$$[1, 1110, 10000]$$$, and from array $$$[1, 2, 3]$$$ Vasya can obtain array $$$[6]$$$.</p><p>Two arrays $$$A$$$ and $$$B$$$ are considered equal if and only if they have the same length and for each valid $$$i$$$ $$$A_i = B_i$$$.</p><p>Vasya wants to perform some of these operations on array $$$A$$$, some on array $$$B$$$, in such a way that arrays $$$A$$$ and $$$B$$$ become equal. Moreover, the lengths of the resulting arrays should be maximal possible.</p><p>Help Vasya to determine the maximum length of the arrays that he can achieve or output that it is impossible to make arrays $$$A$$$ and $$$B$$$ equal.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n~(1 \\le n \\le 3 \\cdot 10^5)$$$ \u2014 the length of the first array.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\cdots, a_n~(1 \\le a_i \\le 10^9)$$$ \u2014 elements of the array $$$A$$$.</p><p>The third line contains a single integer $$$m~(1 \\le m \\le 3 \\cdot 10^5)$$$ \u2014 the length of the second array.</p><p>The fourth line contains $$$m$$$ integers $$$b_1, b_2, \\cdots, b_m~(1 \\le b_i \\le 10^9)$$$ - elements of the array $$$B$$$.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the maximum length of the resulting arrays after some operations were performed on arrays $$$A$$$ and $$$B$$$ in such a way that they became equal.</p><p>If there is no way to make array equal, print \"<span class=\"tex-font-style-tt\">-1</span>\".</p>",
+    "samples": [
+        {
+            "input": "5<br/>11 2 3 5 7<br/>4<br/>11 7 3 7<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "2<br/>1 2<br/>1<br/>100<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "3<br/>1 2 3<br/>3<br/>1 2 3<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 1036,
+    "index": "D",
+    "name": "Vasya and Arrays",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "two pointers"
+    ],
+    "solvedCount": 9021
+}

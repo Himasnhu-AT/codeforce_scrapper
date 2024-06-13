@@ -1,0 +1,41 @@
+{
+    "title": "E. Short Code",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Arkady's code contains $$$n$$$ variables. Each variable has a unique name consisting of lowercase English letters only. One day Arkady decided to shorten his code.</p><p>He wants to replace each variable name with its non-empty prefix so that these new names are still unique (however, a new name of some variable can coincide with some old name of another or same variable). Among such possibilities he wants to find the way with the smallest possible total length of the new names.</p><p>A string $$$a$$$ is a prefix of a string $$$b$$$ if you can delete some (possibly none) characters from the end of $$$b$$$ and obtain $$$a$$$.</p><p>Please find this minimum possible total length of new names.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 10^5$$$)\u00a0\u2014 the number of variables.</p><p>The next $$$n$$$ lines contain variable names, one per line. Each name is non-empty and contains only lowercase English letters. The total length of these strings is not greater than $$$10^5$$$. The variable names are distinct.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the minimum possible total length of new variable names.</p>",
+    "samples": [
+        {
+            "input": "3<br/>codeforces<br/>codehorses<br/>code<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "5<br/>abba<br/>abb<br/>ab<br/>aa<br/>aacada<br/>",
+            "output": "11<br/>"
+        },
+        {
+            "input": "3<br/>telegram<br/>digital<br/>resistance<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>In the first example one of the best options is to shorten the names in the given order as \"<span class=\"tex-font-style-tt\">cod</span>\", \"<span class=\"tex-font-style-tt\">co</span>\", \"<span class=\"tex-font-style-tt\">c</span>\".</p><p>In the second example we can shorten the last name to \"<span class=\"tex-font-style-tt\">aac</span>\" and the first name to \"<span class=\"tex-font-style-tt\">a</span>\" without changing the other names.</p>",
+    "contestId": 965,
+    "index": "E",
+    "name": "Short Code",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy",
+        "strings",
+        "trees"
+    ],
+    "solvedCount": 1338
+}

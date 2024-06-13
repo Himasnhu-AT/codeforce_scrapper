@@ -1,0 +1,38 @@
+{
+    "title": "D. Touchy-Feely Palindromes",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"input-specification\"><div class=\"section-title\">Input</div><p>The only line of the input contains a string of digits. The length of the string is between <span class=\"tex-span\">1</span> and <span class=\"tex-span\">10</span>, inclusive.</p></div><div class=\"output-specification\"><div class=\"section-title\">Output</div><p>Output \"<span class=\"tex-font-style-tt\">Yes</span>\" or \"<span class=\"tex-font-style-tt\">No</span>\".</p></div><div class=\"sample-tests\"><div class=\"section-title\">Examples</div><div class=\"sample-test\"><div class=\"input\"><div class=\"title\">Input</div><pre>373<br/></pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>Yes<br/></pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>121<br/></pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>No<br/></pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>436<br/></pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>Yes<br/></pre></div></div></div>",
+    "inputSpecification": "<p>The only line of the input contains a string of digits. The length of the string is between <span class=\"tex-span\">1</span> and <span class=\"tex-span\">10</span>, inclusive.</p>",
+    "outputSpecification": "<p>Output \"<span class=\"tex-font-style-tt\">Yes</span>\" or \"<span class=\"tex-font-style-tt\">No</span>\".</p>",
+    "samples": [
+        {
+            "input": "373<br/>",
+            "output": "Yes<br/>"
+        },
+        {
+            "input": "121<br/>",
+            "output": "No<br/>"
+        },
+        {
+            "input": "436<br/>",
+            "output": "Yes<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 784,
+    "index": "D",
+    "name": "Touchy-Feely Palindromes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "solvedCount": 428
+}

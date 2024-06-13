@@ -1,0 +1,39 @@
+{
+    "title": "D. Game with Tokens",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Consider the following game for two players. There is one white token and some number of black tokens. Each token is placed on a plane in a point with integer coordinates <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>.</p><p>The players take turn making moves, white starts. On each turn, a player moves <span class=\"tex-font-style-bf\">all</span> tokens of their color by <span class=\"tex-span\">1</span> to up, down, left or right. Black player can choose directions for each token independently.</p><p>After a turn of the white player the white token can not be in a point where a black token is located. There are no other constraints on locations of the tokens: positions of black tokens can coincide, after a turn of the black player and initially the white token can be in the same point with some black point. If at some moment the white player can't make a move, he loses. If the white player makes <span class=\"tex-span\">10<sup class=\"upper-index\">100500</sup></span> moves, he wins.</p><p>You are to solve the following problem. You are given initial positions of all black tokens. It is guaranteed that initially all these positions are distinct. In how many places can the white token be located initially so that if both players play optimally, the black player wins?</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of black points.</p><p>The (<span class=\"tex-span\"><i>i</i>\u2009+\u20091</span>)-th line contains two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">5</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the coordinates of the point where the <span class=\"tex-span\"><i>i</i></span>-th black token is initially located.</p><p>It is guaranteed that initial positions of black tokens are distinct.</p>",
+    "outputSpecification": "<p>Print the number of points where the white token can be located initially, such that if both players play optimally, the black player wins.</p>",
+    "samples": [
+        {
+            "input": "4<br/>-2 -1<br/>0 1<br/>0 -3<br/>2 -1<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "4<br/>-2 0<br/>-1 1<br/>0 -2<br/>1 -1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "16<br/>2 1<br/>1 2<br/>-1 1<br/>0 1<br/>0 0<br/>1 1<br/>2 -1<br/>2 0<br/>1 0<br/>-1 -1<br/>1 -1<br/>2 2<br/>0 -1<br/>-1 0<br/>0 2<br/>-1 2<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>In the first and second examples initial positions of black tokens are shown with black points, possible positions of the white token (such that the black player wins) are shown with white points.</p><p>The first example: <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/5054b8d2df2fac92c92f96fae82d21c365d12983.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>The second example: <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/eb795dd6abb95cfafb1d1cb7d8c8798825dcc180.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>In the third example the white tokens should be located in the inner square <span class=\"tex-span\">2\u2009\u00d7\u20092</span>, to make the black player win. <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6dfd863f649b92860dfd6b446ea004abc01b71a6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 930,
+    "index": "D",
+    "name": "Game with Tokens",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "games",
+        "implementation"
+    ],
+    "solvedCount": 397
+}

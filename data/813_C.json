@@ -1,0 +1,34 @@
+{
+    "title": "C. The Tag Game",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Alice got tired of playing the tag game by the usual rules so she offered Bob a little modification to it. Now the game should be played on an undirected rooted tree of <span class=\"tex-span\"><i>n</i></span> vertices. Vertex <span class=\"tex-font-style-tt\">1</span> is the root of the tree.</p><p>Alice starts at vertex <span class=\"tex-font-style-tt\">1</span> and Bob starts at vertex <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\"><i>x</i>\u2009\u2260\u20091</span>). The moves are made in turns, Bob goes first. In one move one can either stay at the current vertex or travel to the neighbouring one.</p><p>The game ends when Alice goes to the same vertex where Bob is standing. Alice wants to minimize the total number of moves and Bob wants to maximize it.</p><p>You should write a program which will determine how many moves will the game last.</p>",
+    "inputSpecification": "<p>The first line contains two integer numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">2\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>n</i></span>).</p><p>Each of the next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contains two integer numbers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u2009<i>n</i></span>) \u2014 edges of the tree. It is guaranteed that the edges form a valid tree.</p>",
+    "outputSpecification": "<p>Print the total number of moves Alice and Bob will make.</p>",
+    "samples": [
+        {
+            "input": "4 3<br/>1 2<br/>2 3<br/>2 4<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "5 2<br/>1 2<br/>2 3<br/>3 4<br/>2 5<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": "<p>In the first example the tree looks like this:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/eea44df3202ab8bed66be66908b08240870f70e3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The red vertex is Alice's starting position, the blue one is Bob's. Bob will make the game run the longest by standing at the vertex <span class=\"tex-font-style-tt\">3</span> during all the game. So here are the moves:</p><p><span class=\"tex-font-style-bf\">B</span>: stay at vertex <span class=\"tex-font-style-tt\">3</span></p><p><span class=\"tex-font-style-bf\">A</span>: go to vertex <span class=\"tex-font-style-tt\">2</span></p><p><span class=\"tex-font-style-bf\">B</span>: stay at vertex <span class=\"tex-font-style-tt\">3</span></p><p><span class=\"tex-font-style-bf\">A</span>: go to vertex <span class=\"tex-font-style-tt\">3</span></p><p>In the second example the tree looks like this:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/a75c162001b6a7a7bc2ee6bc41a8f3bbf5f88b1a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The moves in the optimal strategy are:</p><p><span class=\"tex-font-style-bf\">B</span>: go to vertex <span class=\"tex-font-style-tt\">3</span></p><p><span class=\"tex-font-style-bf\">A</span>: go to vertex <span class=\"tex-font-style-tt\">2</span></p><p><span class=\"tex-font-style-bf\">B</span>: go to vertex <span class=\"tex-font-style-tt\">4</span></p><p><span class=\"tex-font-style-bf\">A</span>: go to vertex <span class=\"tex-font-style-tt\">3</span></p><p><span class=\"tex-font-style-bf\">B</span>: stay at vertex <span class=\"tex-font-style-tt\">4</span></p><p><span class=\"tex-font-style-bf\">A</span>: go to vertex <span class=\"tex-font-style-tt\">4</span></p>",
+    "contestId": 813,
+    "index": "C",
+    "name": "The Tag Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs"
+    ],
+    "solvedCount": 5731
+}

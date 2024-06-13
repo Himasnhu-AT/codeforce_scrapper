@@ -1,0 +1,43 @@
+{
+    "title": "E. Fafa and Ancient Mathematics",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Ancient Egyptians are known to have understood difficult concepts in mathematics. The ancient Egyptian mathematician Ahmes liked to write a kind of arithmetic expressions on papyrus paper which he called as <span class=\"tex-font-style-it\">Ahmes arithmetic expression</span>.</p><p>An <span class=\"tex-font-style-it\">Ahmes arithmetic expression</span> can be defined as: </p><ul> <li> \"<span class=\"tex-span\"><i>d</i></span>\" is an Ahmes arithmetic expression, where <span class=\"tex-span\"><i>d</i></span> is a one-digit positive integer; </li><li> \"<span class=\"tex-span\">(<i>E</i><sub class=\"lower-index\">1</sub>\u2009<i>op</i>\u2009<i>E</i><sub class=\"lower-index\">2</sub>)</span>\" is an Ahmes arithmetic expression, where <span class=\"tex-span\"><i>E</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>E</i><sub class=\"lower-index\">2</sub></span> are valid Ahmes arithmetic expressions (without spaces) and <span class=\"tex-span\"><i>op</i></span> is either plus <span class=\"tex-span\">(\u2009+\u2009)</span> or minus <span class=\"tex-span\">(\u2009-\u2009)</span>. </li></ul> For example <span class=\"tex-font-style-tt\">5</span>, <span class=\"tex-font-style-tt\">(1-1)</span> and <span class=\"tex-font-style-tt\">((1+(2-3))-5)</span> are valid Ahmes arithmetic expressions.<p>On his trip to Egypt, Fafa found a piece of papyrus paper having one of these Ahmes arithmetic expressions written on it. Being very ancient, the papyrus piece was very worn out. As a result, all the operators were erased, keeping only the numbers and the brackets. Since Fafa loves mathematics, he decided to challenge himself with the following task:</p><p>Given the number of plus and minus operators in the original expression, find out the maximum possible value for the expression on the papyrus paper after putting the plus and minus operators in the place of the original erased operators.</p>",
+    "inputSpecification": "<p>The first line contains a string <span class=\"tex-span\"><i>E</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009|<i>E</i>|\u2009\u2264\u200910<sup class=\"upper-index\">4</sup>)</span> \u2014 a valid Ahmes arithmetic expression. All operators are erased and replaced with '<span class=\"tex-font-style-tt\">?</span>'.</p><p>The second line contains two space-separated integers <span class=\"tex-span\"><i>P</i></span> and <span class=\"tex-span\"><i>M</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>min</i>(<i>P</i>,\u2009<i>M</i>)\u2009\u2264\u2009100</span>) \u2014 the number of plus and minus operators, respectively. </p><p>It is guaranteed that <span class=\"tex-span\"><i>P</i>\u2009+\u2009<i>M</i>\u2009=\u2009</span> the number of erased operators.</p>",
+    "outputSpecification": "<p>Print one line containing the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "(1?1)<br/>1 0<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "(2?(1?2))<br/>1 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "((1?(5?7))?((6?2)?7))<br/>3 2<br/>",
+            "output": "18<br/>"
+        },
+        {
+            "input": "((1?(5?7))?((6?2)?7))<br/>2 3<br/>",
+            "output": "16<br/>"
+        }
+    ],
+    "note": "<ul> <li> The first sample will be <span class=\"tex-span\">(1\u2009+\u20091)\u2009\u2009=\u2009\u20092</span>. </li><li> The second sample will be <span class=\"tex-span\">(2\u2009+\u2009(1\u2009-\u20092))\u2009\u2009=\u2009\u20091</span>. </li><li> The third sample will be <span class=\"tex-span\">((1\u2009-\u2009(5\u2009-\u20097))\u2009+\u2009((6\u2009+\u20092)\u2009+\u20097))\u2009\u2009=\u2009\u200918</span>. </li><li> The fourth sample will be <span class=\"tex-span\">((1\u2009+\u2009(5\u2009+\u20097))\u2009-\u2009((6\u2009-\u20092)\u2009-\u20097))\u2009\u2009=\u2009\u200916</span>. </li></ul>",
+    "contestId": 935,
+    "index": "E",
+    "name": "Fafa and Ancient Mathematics",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "trees"
+    ],
+    "solvedCount": 869
+}

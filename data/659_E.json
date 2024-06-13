@@ -1,0 +1,41 @@
+{
+    "title": "E. New Reform",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Berland has <span class=\"tex-span\"><i>n</i></span> cities connected by <span class=\"tex-span\"><i>m</i></span> bidirectional roads. No road connects a city to itself, and each pair of cities is connected by no more than one road. It is <span class=\"tex-font-style-bf\">not guaranteed</span> that you can get from any city to any other one, using only the existing roads.</p><p>The President of Berland decided to make changes to the road system and instructed the Ministry of Transport to make this reform. Now, each road should be unidirectional (only lead from one city to another).</p><p>In order not to cause great resentment among residents, the reform needs to be conducted so that there can be as few separate cities as possible. A city is considered <span class=\"tex-font-style-it\">separate</span>, if no road leads into it, while it is allowed to have roads leading from this city.</p><p>Help the Ministry of Transport to find the minimum possible number of separate cities after the reform.</p>",
+    "inputSpecification": "<p>The first line of the input contains two positive integers, <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> \u2014 the number of the cities and the number of roads in Berland (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009100\u2009000</span>). </p><p>Next <span class=\"tex-span\"><i>m</i></span> lines contain the descriptions of the roads: the <span class=\"tex-span\"><i>i</i></span>-th road is determined by two distinct integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>), where <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> are the numbers of the cities connected by the <span class=\"tex-span\"><i>i</i></span>-th road.</p><p>It is guaranteed that there is no more than one road between each pair of cities, but it is not guaranteed that from any city you can get to any other one, using only roads.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the minimum number of separated cities after the reform.</p>",
+    "samples": [
+        {
+            "input": "4 3<br/>2 1<br/>1 3<br/>4 3<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "5 5<br/>2 1<br/>1 3<br/>2 3<br/>2 5<br/>4 3<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "6 5<br/>1 2<br/>2 3<br/>4 5<br/>4 6<br/>5 6<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the following road orientation is allowed: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e5b18c46402af724bd3841d549d5d6f52fc16253.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/04481aced8a9d501ae5d785ab654c542ff5497a1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0d220a75a508edc0d540dbaec5e198345049b66f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>The second sample: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e5b18c46402af724bd3841d549d5d6f52fc16253.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/030fc9181b578c2d906254d38dc56da5554323eb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/29f71c065c3536e88b54429c734103ad3604f68b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a6011a68d6de05246ad6ba8aa24a5c5c71cd450a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0d220a75a508edc0d540dbaec5e198345049b66f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>The third sample: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e5b18c46402af724bd3841d549d5d6f52fc16253.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/29f71c065c3536e88b54429c734103ad3604f68b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7113d83514735a488d7b85262585381d26986195.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/98300067e46d036076e429b208db829296ebca9d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/146f3f3d208399fbab4d1d8c2800f07bf7b463e5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 659,
+    "index": "E",
+    "name": "New Reform",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy"
+    ],
+    "solvedCount": 7352
+}

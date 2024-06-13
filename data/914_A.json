@@ -1,0 +1,35 @@
+{
+    "title": "A. Perfect Squares",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Given an array <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> of <span class=\"tex-span\"><i>n</i></span> integers, find the largest number in the array that is not a perfect square.</p><p>A number <span class=\"tex-span\"><i>x</i></span> is said to be a perfect square if there exists an integer <span class=\"tex-span\"><i>y</i></span> such that <span class=\"tex-span\"><i>x</i>\u2009=\u2009<i>y</i><sup class=\"upper-index\">2</sup></span>.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of elements in the array.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">6</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>)\u00a0\u2014 the elements of the array.</p><p>It is guaranteed that at least one element of the array is not a perfect square.</p>",
+    "outputSpecification": "<p>Print the largest number in the array which is not a perfect square. It is guaranteed that an answer always exists.</p>",
+    "samples": [
+        {
+            "input": "2<br/>4 2<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "8<br/>1 2 4 8 16 32 64 576<br/>",
+            "output": "32<br/>"
+        }
+    ],
+    "note": "<p>In the first sample case, <span class=\"tex-span\">4</span> is a perfect square, so the largest number in the array that is not a perfect square is <span class=\"tex-span\">2</span>.</p>",
+    "contestId": 914,
+    "index": "A",
+    "name": "Perfect Squares",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 13847
+}

@@ -1,0 +1,35 @@
+{
+    "title": "F. Cactus to Tree",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a special connected undirected graph where each vertex belongs to at most one simple cycle.</p><p>Your task is to remove as many edges as needed to convert this graph into a tree (connected graph with no cycles). </p><p>For each node, independently, output the maximum distance between it and a leaf in the resulting tree, assuming you were to remove the edges in a way that minimizes this distance.</p>",
+    "inputSpecification": "<p>The first line of input contains two integers $$$n$$$ and $$$m$$$ ($$$1 \\leq n \\leq 5\\cdot 10^5$$$), the number of nodes and the number of edges, respectively.</p><p>Each of the following $$$m$$$ lines contains two integers $$$u$$$ and $$$v$$$ ($$$1 \\leq u,v \\leq n$$$, $$$u \\ne v$$$), and represents an edge connecting the two nodes $$$u$$$ and $$$v$$$. Each pair of nodes is connected by at most one edge.</p><p>It is guaranteed that the given graph is connected and each vertex belongs to at most one simple cycle.</p>",
+    "outputSpecification": "<p>Print $$$n$$$ space-separated integers, the $$$i$$$-th integer represents the maximum distance between node $$$i$$$ and a leaf if the removed edges were chosen in a way that minimizes this distance.</p>",
+    "samples": [
+        {
+            "input": "9 10<br/>7 2<br/>9 2<br/>1 6<br/>3 1<br/>4 3<br/>4 7<br/>7 6<br/>9 8<br/>5 8<br/>5 9<br/>",
+            "output": "5 3 5 4 5 4 3 5 4<br/>"
+        },
+        {
+            "input": "4 4<br/>1 2<br/>2 3<br/>3 4<br/>4 1<br/>",
+            "output": "2 2 2 2<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, a possible way to minimize the maximum distance from vertex $$$1$$$ is by removing the marked edges in the following image:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/347c4bf5d92b492ce7285c21c233b37891a71c40.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Note that to minimize the answer for different nodes, you can remove different edges.</p>",
+    "contestId": 980,
+    "index": "F",
+    "name": "Cactus to Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 193
+}

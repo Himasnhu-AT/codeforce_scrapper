@@ -1,0 +1,35 @@
+{
+    "title": "B. Coloring a Tree",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a rooted tree with <span class=\"tex-span\"><i>n</i></span> vertices. The vertices are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, the root is the vertex number <span class=\"tex-span\">1</span>.</p><p>Each vertex has a color, let's denote the color of vertex <span class=\"tex-span\"><i>v</i></span> by <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>v</i></sub></span>. Initially <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>v</i></sub>\u2009=\u20090</span>.</p><p>You have to color the tree into the given colors using the smallest possible number of steps. On each step you can choose a vertex <span class=\"tex-span\"><i>v</i></span> and a color <span class=\"tex-span\"><i>x</i></span>, and then color all vectices in the subtree of <span class=\"tex-span\"><i>v</i></span> (including <span class=\"tex-span\"><i>v</i></span> itself) in color <span class=\"tex-span\"><i>x</i></span>. In other words, for every vertex <span class=\"tex-span\"><i>u</i></span>, such that the path from root to <span class=\"tex-span\"><i>u</i></span> passes through <span class=\"tex-span\"><i>v</i></span>, set <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>u</i></sub>\u2009=\u2009<i>x</i></span>.</p><p>It is guaranteed that you have to color each vertex in a color different from <span class=\"tex-span\">0</span>.</p><p>You can learn what a rooted tree is using the link: <a href=\"https://en.wikipedia.org/wiki/Tree_(graph_theory)\">https://en.wikipedia.org/wiki/Tree_(graph_theory)</a>.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>)\u00a0\u2014 the number of vertices in the tree.</p><p>The second line contains <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">2</sub>,\u2009<i>p</i><sub class=\"lower-index\">3</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>i</i></span>), where <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> means that there is an edge between vertices <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>The third line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub>,\u2009<i>c</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>c</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>), where <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> is the color you should color the <span class=\"tex-span\"><i>i</i></span>-th vertex into.</p><p>It is guaranteed that the given graph is a tree. </p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the minimum number of steps you have to perform to color the tree into given colors.</p>",
+    "samples": [
+        {
+            "input": "6<br/>1 2 2 1 5<br/>2 1 1 1 1 1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "7<br/>1 1 2 3 1 4<br/>3 3 1 1 1 2 3<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": "<p>The tree from the first sample is shown on the picture (numbers are vetices' indices):</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/10324ccdc37f95343acc4f3c6050d8c334334ffa.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>On first step we color all vertices in the subtree of vertex <span class=\"tex-span\">1</span> into color <span class=\"tex-span\">2</span> (numbers are colors):</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1c7bb267e2c1a006132248a43121400189309e2f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>On seond step we color all vertices in the subtree of vertex <span class=\"tex-span\">5</span> into color <span class=\"tex-span\">1</span>:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2201a6d49b89ba850ff0d0bdcbb3f8e9dd3871a8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>On third step we color all vertices in the subtree of vertex <span class=\"tex-span\">2</span> into color <span class=\"tex-span\">1</span>:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6fa977fcdebdde94c47695151e0427b33d0102c5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>The tree from the second sample is shown on the picture (numbers are vetices' indices):</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/d70f9ae72a2ed429dd6531cac757e375dd3c953d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>On first step we color all vertices in the subtree of vertex <span class=\"tex-span\">1</span> into color <span class=\"tex-span\">3</span> (numbers are colors):</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/7289e8895d0dd56c47b6b17969b9cf77b36786b5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>On second step we color all vertices in the subtree of vertex <span class=\"tex-span\">3</span> into color <span class=\"tex-span\">1</span>:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/819001df7229138db3a407713744d1e3be88b64e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>On third step we color all vertices in the subtree of vertex <span class=\"tex-span\">6</span> into color <span class=\"tex-span\">2</span>:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/80ebbd870a0a339636a21b9acdaf9de046458b43.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>On fourth step we color all vertices in the subtree of vertex <span class=\"tex-span\">4</span> into color <span class=\"tex-span\">1</span>:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/ed836aa723ac0176abde4e32988e3ac205014e93.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>On fith step we color all vertices in the subtree of vertex <span class=\"tex-span\">7</span> into color <span class=\"tex-span\">3</span>:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8132909e11b41c27b8df2f0b0c10bc841f35e58a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 902,
+    "index": "B",
+    "name": "Coloring a Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "greedy"
+    ],
+    "solvedCount": 10516
+}

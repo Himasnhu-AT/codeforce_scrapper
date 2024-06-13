@@ -1,0 +1,35 @@
+{
+    "title": "E2. Knightmare (hard)",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">This is an interactive problem.</span></p><p>Alice and Bob are playing a game on the chessboard of size $$$n \\times m$$$ where $$$n$$$ and $$$m$$$ are <span class=\"tex-font-style-bf\">even</span>. The rows are numbered from $$$1$$$ to $$$n$$$ and the columns are numbered from $$$1$$$ to $$$m$$$. There are two knights on the chessboard. A white one initially is on the position $$$(x_1, y_1)$$$, while the black one is on the position $$$(x_2, y_2)$$$. Alice will choose one of the knights to play with, and Bob will use the other one.</p><p>The Alice and Bob will play in turns and whoever controls <span class=\"tex-font-style-bf\">the white</span> knight starts the game. During a turn, the player must move their knight adhering the chess rules. That is, if the knight is currently on the position $$$(x, y)$$$, it can be moved to any of those positions (as long as they are inside the chessboard):</p><center> $$$(x+1, y+2)$$$, $$$(x+1, y-2)$$$, $$$(x-1, y+2)$$$, $$$(x-1, y-2)$$$,<p>$$$(x+2, y+1)$$$, $$$(x+2, y-1)$$$, $$$(x-2, y+1)$$$, $$$(x-2, y-1)$$$. </p></center><p>We all know that knights are strongest in the middle of the board. Both knight have a single position they want to reach: </p><ul> <li> the owner of the white knight wins if it captures the black knight or if the white knight is at $$$(n/2, m/2)$$$ and this position is not under attack of the black knight at this moment; </li><li> The owner of the black knight wins if it captures the white knight or if the black knight is at $$$(n/2+1, m/2)$$$ and this position is not under attack of the white knight at this moment. </li></ul><p>Formally, the player who captures the other knight wins. The player who is at its target square ($$$(n/2, m/2)$$$ for white, $$$(n/2+1, m/2)$$$ for black) and this position is not under opponent's attack, also wins.</p><p>A position is under attack of a knight if it can move into this position. Capturing a knight means that a player moves their knight to the cell where the opponent's knight is.</p><p>If Alice made $$$350$$$ moves and nobody won, the game is a draw.</p><p>Alice is unsure in her chess skills, so she asks you for a help. Choose a knight and win the game for her. It can be shown, that Alice always has a winning strategy.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n8 8\n2 3 1 8\n",
+            "output": "\nWHITE\n4 4\n"
+        },
+        {
+            "input": "\n6 6\n4 4 2 2\n6 3",
+            "output": "\nBLACK\n4 3\n"
+        }
+    ],
+    "note": "<p>In the first example, the white knight can reach it's target square in one move.</p><p>In the second example black knight wins, no matter what white knight moves.</p>",
+    "contestId": 1201,
+    "index": "E2",
+    "name": "Knightmare (hard)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "graphs",
+        "interactive",
+        "shortest paths"
+    ],
+    "solvedCount": 141
+}

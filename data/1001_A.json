@@ -1,0 +1,24 @@
+{
+    "title": "A. Generate plus state or minus state",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a qubit in state <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c1f9019c20fc8a9610d31c36ba7860cef0b7c55c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and an integer <span class=\"tex-span\"><i>sign</i></span>. </p><p>Your task is to convert the given qubit to state <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d92593c6760aba7602b98b147630fe99f3ba55f1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> if <span class=\"tex-span\"><i>sign</i>\u2009=\u20091</span> or <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/84838ca6c00c18d1930add5214964c1673061c43.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> if <span class=\"tex-span\"><i>sign</i>\u2009=\u2009\u2009-\u20091</span>.</p>",
+    "inputSpecification": "<p>You have to implement an operation which takes a qubit and an integer as an input and has no output. The \"output\" of your solution is the state in which it left the input qubit.</p><p>Your code should have the following signature:</p><pre class=\"verbatim\">namespace Solution {<br/>    open Microsoft.Quantum.Primitive;<br/>    open Microsoft.Quantum.Canon;<br/><br/>    operation Solve (q : Qubit, sign : Int) : ()<br/>    {<br/>        body<br/>        {<br/>            // your code here<br/>        }<br/>    }<br/>}</pre>",
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1001,
+    "index": "A",
+    "name": "Generate plus state or minus state",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 1005
+}

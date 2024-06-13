@@ -1,0 +1,41 @@
+{
+    "title": "F. Prefix Sums",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Consider the function <span class=\"tex-span\"><i>p</i>(<i>x</i>)</span>, where <span class=\"tex-span\"><i>x</i></span> is an array of <span class=\"tex-span\"><i>m</i></span> integers, which returns an array <span class=\"tex-span\"><i>y</i></span> consisting of <span class=\"tex-span\"><i>m</i>\u2009+\u20091</span> integers such that <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> is equal to the sum of first <span class=\"tex-span\"><i>i</i></span> elements of array <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>m</i></span>).</p><p>You have an infinite sequence of arrays <span class=\"tex-span\"><i>A</i><sup class=\"upper-index\">0</sup>,\u2009<i>A</i><sup class=\"upper-index\">1</sup>,\u2009<i>A</i><sup class=\"upper-index\">2</sup>...</span>, where <span class=\"tex-span\"><i>A</i><sup class=\"upper-index\">0</sup></span> is given in the input, and for each <span class=\"tex-span\"><i>i</i>\u2009\u2265\u20091</span> <span class=\"tex-span\"><i>A</i><sup class=\"upper-index\"><i>i</i></sup>\u2009=\u2009<i>p</i>(<i>A</i><sup class=\"upper-index\"><i>i</i>\u2009-\u20091</sup>)</span>. Also you have a positive integer <span class=\"tex-span\"><i>k</i></span>. You have to find minimum possible <span class=\"tex-span\"><i>i</i></span> such that <span class=\"tex-span\"><i>A</i><sup class=\"upper-index\"><i>i</i></sup></span> contains a number which is larger or equal than <span class=\"tex-span\"><i>k</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>). <span class=\"tex-span\"><i>n</i></span> is the size of array <span class=\"tex-span\"><i>A</i><sup class=\"upper-index\">0</sup></span>.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>A</i><sup class=\"upper-index\">0</sup><sub class=\"lower-index\">0</sub>,\u2009<i>A</i><sup class=\"upper-index\">0</sup><sub class=\"lower-index\">1</sub>... <i>A</i><sup class=\"upper-index\">0</sup><sub class=\"lower-index\"><i>n</i>\u2009-\u20091</sub></span> \u2014 the elements of <span class=\"tex-span\"><i>A</i><sup class=\"upper-index\">0</sup></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>A</i><sup class=\"upper-index\">0</sup><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>). At least two elements of <span class=\"tex-span\"><i>A</i><sup class=\"upper-index\">0</sup></span> are positive.</p>",
+    "outputSpecification": "<p>Print the minimum <span class=\"tex-span\"><i>i</i></span> such that <span class=\"tex-span\"><i>A</i><sup class=\"upper-index\"><i>i</i></sup></span> contains a number which is larger or equal than <span class=\"tex-span\"><i>k</i></span>.</p>",
+    "samples": [
+        {
+            "input": "2 2<br/>1 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3 6<br/>1 1 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3 1<br/>1 0 1<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 837,
+    "index": "F",
+    "name": "Prefix Sums",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "combinatorics",
+        "math",
+        "matrices"
+    ],
+    "solvedCount": 746
+}

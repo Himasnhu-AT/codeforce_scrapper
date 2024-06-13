@@ -1,0 +1,35 @@
+{
+    "title": "F. Team Rocket Rises Again",
+    "timeLimit": {
+        "value": 2.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>It's the turn of the year, so Bash wants to send presents to his friends. There are <span class=\"tex-span\"><i>n</i></span> cities in the Himalayan region and they are connected by <span class=\"tex-span\"><i>m</i></span> bidirectional roads. Bash is living in city <span class=\"tex-span\"><i>s</i></span>. Bash has exactly one friend in each of the other cities. Since Bash wants to surprise his friends, he decides to send a Pikachu to each of them. <span class=\"tex-font-style-bf\">Since there may be some cities which are not reachable from Bash's city, he only sends a Pikachu to those friends who live in a city reachable from his own city</span>. He also wants to send it to them as soon as possible.</p><p>He finds out the minimum time for each of his Pikachus to reach its destination city. Since he is a perfectionist, he informs all his friends with the time their gift will reach them. A Pikachu travels at a speed of <span class=\"tex-span\">1</span> meters per second. His friends were excited to hear this and would be unhappy if their presents got delayed. Unfortunately Team Rocket is on the loose and they came to know of Bash's plan. They want to maximize the number of friends who are unhappy with Bash.</p><p>They do this by destroying exactly one of the other <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> cities. This implies that <span class=\"tex-font-style-bf\">the friend residing in that city dies, so he is unhappy as well</span>.</p><p>Note that <span class=\"tex-font-style-bf\">if a city is destroyed, all the roads directly connected to the city are also destroyed and the Pikachu may be forced to take a longer alternate route</span>.</p><p><span class=\"tex-font-style-bf\">Please also note that only friends that are waiting for a gift count as unhappy, even if they die.</span></p><p>Since Bash is already a legend, can you help Team Rocket this time and find out the maximum number of Bash's friends who can be made unhappy by destroying exactly one city.</p>",
+    "inputSpecification": "<p>The first line contains three space separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/284399a97a1979fed316d54ddd16ca2f3e858fd6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>s</i>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the number of cities and the number of roads in the Himalayan region and the city Bash lives in.</p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines contain three space-separated integers <span class=\"tex-span\"><i>u</i></span>, <span class=\"tex-span\"><i>v</i></span> and <span class=\"tex-span\"><i>w</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i>,\u2009<i>v</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>u</i>\u2009\u2260\u2009<i>v</i></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>w</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) denoting that there exists a road between city <span class=\"tex-span\"><i>u</i></span> and city <span class=\"tex-span\"><i>v</i></span> of length <span class=\"tex-span\"><i>w</i></span> meters.</p><p>It is guaranteed that no road connects a city to itself and there are no two roads that connect the same pair of cities.</p>",
+    "outputSpecification": "<p>Print a single integer, the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "4 4 3<br/>1 2 1<br/>2 3 1<br/>2 4 1<br/>3 1 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "7 11 2<br/>1 2 5<br/>1 3 5<br/>2 4 2<br/>2 5 2<br/>3 6 3<br/>3 7 3<br/>4 6 2<br/>3 4 2<br/>6 7 3<br/>4 5 7<br/>4 7 7<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, on destroying the city <span class=\"tex-span\">2</span>, the length of shortest distance between pairs of cities <span class=\"tex-span\">(3,\u20092)</span> and <span class=\"tex-span\">(3,\u20094)</span> will change. Hence the answer is <span class=\"tex-span\">2</span>.</p>",
+    "contestId": 757,
+    "index": "F",
+    "name": "Team Rocket Rises Again",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 1107
+}

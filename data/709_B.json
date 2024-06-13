@@ -1,0 +1,39 @@
+{
+    "title": "B. Checkpoints",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya takes part in the orienteering competition. There are <span class=\"tex-span\"><i>n</i></span> checkpoints located along the line at coordinates <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span>. Vasya starts at the point with coordinate <span class=\"tex-span\"><i>a</i></span>. His goal is to visit at least <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> checkpoint in order to finish the competition. Participant are allowed to visit checkpoints in arbitrary order.</p><p>Vasya wants to pick such checkpoints and the order of visiting them that the total distance travelled is minimized. He asks you to calculate this minimum possible value.</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>, <span class=\"tex-span\">\u2009-\u20091\u2009000\u2009000\u2009\u2264\u2009<i>a</i>\u2009\u2264\u20091\u2009000\u2009000</span>)\u00a0\u2014 the number of checkpoints and Vasya's starting position respectively.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u20091\u2009000\u2009000\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091\u2009000\u2009000</span>)\u00a0\u2014 coordinates of the checkpoints.</p>",
+    "outputSpecification": "<p>Print one integer\u00a0\u2014 the minimum distance Vasya has to travel in order to visit at least <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> checkpoint.</p>",
+    "samples": [
+        {
+            "input": "3 10<br/>1 7 12<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "2 0<br/>11 -10<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "5 0<br/>0 0 1000 0 0<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample Vasya has to visit at least two checkpoints. The optimal way to achieve this is the walk to the third checkpoints (distance is <span class=\"tex-span\">12\u2009-\u200910\u2009=\u20092</span>) and then proceed to the second one (distance is <span class=\"tex-span\">12\u2009-\u20097\u2009=\u20095</span>). The total distance is equal to <span class=\"tex-span\">2\u2009+\u20095\u2009=\u20097</span>.</p><p>In the second sample it's enough to visit only one checkpoint so Vasya should just walk to the point <span class=\"tex-span\">\u2009-\u200910</span>.</p>",
+    "contestId": 709,
+    "index": "B",
+    "name": "Checkpoints",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 4709
+}

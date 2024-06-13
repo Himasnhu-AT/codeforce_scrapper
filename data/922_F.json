@@ -1,0 +1,40 @@
+{
+    "title": "F. Divisibility",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Imp is really pleased that you helped him. But it you solve the last problem, his gladness would raise even more.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/07971ee6e5e75115459520faadc129b3f0e828cc.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> Let's define <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1d604082d4de8c61651e735941d202d644537b64.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> for some set of integers <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d9eb720843ae2ed41d1a047ae839665aea2d0e65.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> as the number of pairs <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span> in <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d9eb720843ae2ed41d1a047ae839665aea2d0e65.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, such that:<ul> <li> <span class=\"tex-span\"><i>a</i></span> is <span class=\"tex-font-style-bf\">strictly less</span> than <span class=\"tex-span\"><i>b</i></span>; </li><li> <span class=\"tex-span\"><i>a</i></span> <span class=\"tex-font-style-bf\">divides</span> <span class=\"tex-span\"><i>b</i></span> without a remainder. </li></ul><p>You are to find such a set <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d9eb720843ae2ed41d1a047ae839665aea2d0e65.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, which is a subset of <span class=\"tex-span\">{1,\u20092,\u2009...,\u2009<i>n</i>}</span> (the set that contains all positive integers not greater than <span class=\"tex-span\"><i>n</i></span>), that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/63301879846d519ac37dae3a740b40f4ae240c45.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. </p>",
+    "inputSpecification": "<p>The only line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/22f4db067bc4b2ccec57ff5b60173368519d33b7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "outputSpecification": "<p>If there is no answer, print \"<span class=\"tex-font-style-tt\">No</span>\".</p><p>Otherwise, in the first line print \"<span class=\"tex-font-style-tt\">Yes</span>\", in the second\u00a0\u2014 an integer <span class=\"tex-span\"><i>m</i></span> that denotes the size of the set <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d9eb720843ae2ed41d1a047ae839665aea2d0e65.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> you have found, in the second line print <span class=\"tex-span\"><i>m</i></span> integers\u00a0\u2014 the elements of the set <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d9eb720843ae2ed41d1a047ae839665aea2d0e65.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, in any order.</p><p>If there are multiple answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>",
+            "output": "No<br/>"
+        },
+        {
+            "input": "6 6<br/>",
+            "output": "Yes<br/>5<br/>1 2 4 5 6 "
+        },
+        {
+            "input": "8 3<br/>",
+            "output": "Yes<br/>4<br/>2 4 5 8<br/>"
+        }
+    ],
+    "note": "<p>In the second sample, the valid pairs in the output set are <span class=\"tex-span\">(1,\u20092)</span>, <span class=\"tex-span\">(1,\u20094)</span>, <span class=\"tex-span\">(1,\u20095)</span>, <span class=\"tex-span\">(1,\u20096)</span>, <span class=\"tex-span\">(2,\u20094)</span>, <span class=\"tex-span\">(2,\u20096)</span>. Thus, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4057b55892a1e3b05e542533e16a59ad31321f41.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the third example, the valid pairs in the output set are <span class=\"tex-span\">(2,\u20094)</span>, <span class=\"tex-span\">(4,\u20098)</span>, <span class=\"tex-span\">(2,\u20098)</span>. Thus, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/381bc7acb76735c55592c41fe2170804b47f0f62.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 922,
+    "index": "F",
+    "name": "Divisibility",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "number theory"
+    ],
+    "solvedCount": 619
+}

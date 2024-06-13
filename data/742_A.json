@@ -1,0 +1,35 @@
+{
+    "title": "A. Arpa\u2019s hard exam and Mehrdad\u2019s naive cheat",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">There exists an island called Arpa\u2019s land, some beautiful girls live there, as ugly ones do.</span></p><p>Mehrdad wants to become minister of Arpa\u2019s land. Arpa has prepared an exam. Exam has only one question, given <span class=\"tex-span\"><i>n</i></span>, print the last digit of <span class=\"tex-span\">1378<sup class=\"upper-index\"><i>n</i></sup></span>. </p><center> <img class=\"tex-graphics\" height=\"222px\" src=\"https://espresso.codeforces.com/8cdb67733e38f827a08e9ecf737749c61afcee9f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"445px\"/> </center><p>Mehrdad has become quite confused and wants you to help him. Please help, although it's a naive cheat.</p>",
+    "inputSpecification": "<p>The single line of input contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">0\u2009\u2009\u2264\u2009\u2009<i>n</i>\u2009\u2009\u2264\u2009\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print single integer\u00a0\u2014 the last digit of <span class=\"tex-span\">1378<sup class=\"upper-index\"><i>n</i></sup></span>.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "8"
+        },
+        {
+            "input": "2<br/>",
+            "output": "4"
+        }
+    ],
+    "note": "<p>In the first example, last digit of <span class=\"tex-span\">1378<sup class=\"upper-index\">1</sup>\u2009=\u20091378</span> is <span class=\"tex-span\">8</span>.</p><p>In the second example, last digit of <span class=\"tex-span\">1378<sup class=\"upper-index\">2</sup>\u2009=\u20091378\u00b71378\u2009=\u20091898884</span> is <span class=\"tex-span\">4</span>.</p>",
+    "contestId": 742,
+    "index": "A",
+    "name": "Arpa\u2019s hard exam and Mehrdad\u2019s naive cheat",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 40431
+}

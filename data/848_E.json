@@ -1,0 +1,45 @@
+{
+    "title": "E. Days of Floral Colours",
+    "timeLimit": {
+        "value": 7.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The Floral Clock has been standing by the side of Mirror Lake for years. Though unable to keep time, it reminds people of the passage of time and the good old days.</p><p>On the rim of the Floral Clock are <span class=\"tex-span\">2<i>n</i></span> flowers, numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">2<i>n</i></span> clockwise, each of which has a colour among all <span class=\"tex-span\"><i>n</i></span> possible ones. For each colour, there are exactly two flowers with it, the <span class=\"tex-font-style-underline\">distance</span> between which <span class=\"tex-font-style-bf\">either is less than or equal to <span class=\"tex-span\">2</span>, or equals <span class=\"tex-span\"><i>n</i></span></span>. Additionally, if flowers <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> are of the same colour, then flowers opposite to <span class=\"tex-span\"><i>u</i></span> and opposite to <span class=\"tex-span\"><i>v</i></span> should be of the same colour as well \u2014 symmetry is beautiful!</p><p>Formally, the <span class=\"tex-font-style-underline\">distance</span> between two flowers is <span class=\"tex-span\">1</span> plus the number of flowers on the minor arc (or semicircle) between them. Below is a possible arrangement with <span class=\"tex-span\"><i>n</i>\u2009=\u20096</span> that cover all possibilities.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/5823416e200a6b28ce9315f76bd29cea69352a0b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The <span class=\"tex-font-style-underline\">beauty</span> of an arrangement is defined to be the product of the lengths of flower segments separated by all opposite flowers of the same colour. In other words, in order to compute the beauty, we remove from the circle all flowers that have the same colour as flowers opposite to them. Then, the beauty is the product of lengths of all remaining segments. Note that we include segments of length <span class=\"tex-span\">0</span> in this product. If there are no flowers that have the same colour as flower opposite to them, the beauty equals <span class=\"tex-span\">0</span>. For instance, the <span class=\"tex-font-style-underline\">beauty</span> of the above arrangement equals <span class=\"tex-span\">1\u2009\u00d7\u20093\u2009\u00d7\u20091\u2009\u00d7\u20093\u2009=\u20099</span> \u2014 the segments are <span class=\"tex-span\">{2}</span>, <span class=\"tex-span\">{4,\u20095,\u20096}</span>, <span class=\"tex-span\">{8}</span> and <span class=\"tex-span\">{10,\u200911,\u200912}</span>.</p><p>While keeping the constraints satisfied, there may be lots of different arrangements. Find out the sum of <span class=\"tex-font-style-underline\">beauty</span> over all possible arrangements, modulo <span class=\"tex-span\">998\u2009244\u2009353</span>. Two arrangements are considered different, if a pair <span class=\"tex-span\">(<i>u</i>,\u2009<i>v</i>)</span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i>,\u2009<i>v</i>\u2009\u2264\u20092<i>n</i></span>) exists such that flowers <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> are of the same colour in one of them, but not in the other.</p>",
+    "inputSpecification": "<p>The first and only line of input contains a lonely positive integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950\u2009000</span>)\u00a0\u2014 the number of colours present on the Floral Clock.</p>",
+    "outputSpecification": "<p>Output one integer \u2014 the sum of <span class=\"tex-font-style-underline\">beauty</span> over all possible arrangements of flowers, modulo <span class=\"tex-span\">998\u2009244\u2009353</span>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>",
+            "output": "24<br/>"
+        },
+        {
+            "input": "4<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "7<br/>",
+            "output": "1316<br/>"
+        },
+        {
+            "input": "15<br/>",
+            "output": "3436404<br/>"
+        }
+    ],
+    "note": "<p>With <span class=\"tex-span\"><i>n</i>\u2009=\u20093</span>, the following six arrangements each have a <span class=\"tex-font-style-underline\">beauty</span> of <span class=\"tex-span\">2\u2009\u00d7\u20092\u2009=\u20094</span>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/916b2049088bcd96a6218c1b5b2696d365382bbb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>While many others, such as the left one in the figure below, have a <span class=\"tex-font-style-underline\">beauty</span> of <span class=\"tex-span\">0</span>. The right one is invalid, since it's asymmetric.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/311de1d7fc8d3d7831ea0d12633e646720237e87.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 848,
+    "index": "E",
+    "name": "Days of Floral Colours",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "divide and conquer",
+        "dp",
+        "fft",
+        "math"
+    ],
+    "solvedCount": 202
+}

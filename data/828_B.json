@@ -1,0 +1,37 @@
+{
+    "title": "B. Black Square",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp has a checkered sheet of paper of size <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span>. Polycarp painted some of cells with black, the others remained white. Inspired by Malevich's \"Black Square\", Polycarp wants to paint minimum possible number of white cells with black so that all black cells form a square.</p><p>You are to determine the minimum possible number of cells needed to be painted black so that the black cells form a black square with sides parallel to the painting's sides. All the cells that do not belong to the square should be white. The square's side should have positive length.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>) \u2014 the sizes of the sheet.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain <span class=\"tex-span\"><i>m</i></span> letters '<span class=\"tex-font-style-tt\">B</span>' or '<span class=\"tex-font-style-tt\">W</span>' each \u2014 the description of initial cells' colors. If a letter is '<span class=\"tex-font-style-tt\">B</span>', then the corresponding cell is painted black, otherwise it is painted white.</p>",
+    "outputSpecification": "<p>Print the minimum number of cells needed to be painted black so that the black cells form a black square with sides parallel to the painting's sides. All the cells that do not belong to the square should be white. If it is impossible, print <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "samples": [
+        {
+            "input": "5 4<br/>WWWW<br/>WWWB<br/>WWWB<br/>WWBB<br/>WWWW<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "1 2<br/>BB<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "3 3<br/>WWW<br/>WWW<br/>WWW<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the first example it is needed to paint <span class=\"tex-span\">5</span> cells \u2014 <span class=\"tex-span\">(2,\u20092)</span>, <span class=\"tex-span\">(2,\u20093)</span>, <span class=\"tex-span\">(3,\u20092)</span>, <span class=\"tex-span\">(3,\u20093)</span> and <span class=\"tex-span\">(4,\u20092)</span>. Then there will be a square with side equal to three, and the upper left corner in <span class=\"tex-span\">(2,\u20092)</span>.</p><p>In the second example all the cells are painted black and form a rectangle, so it's impossible to get a square.</p><p>In the third example all cells are colored white, so it's sufficient to color any cell black.</p>",
+    "contestId": 828,
+    "index": "B",
+    "name": "Black Square",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 5655
+}

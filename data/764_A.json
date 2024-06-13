@@ -1,0 +1,39 @@
+{
+    "title": "A. Taymyr is calling you",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 255.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Comrade Dujikov is busy choosing artists for Timofey's birthday and is recieving calls from Taymyr from Ilia-alpinist.</p><p>Ilia-alpinist calls every <span class=\"tex-span\"><i>n</i></span> minutes, i.e. in minutes <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\">2<i>n</i></span>, <span class=\"tex-span\">3<i>n</i></span> and so on. Artists come to the comrade every <span class=\"tex-span\"><i>m</i></span> minutes, i.e. in minutes <span class=\"tex-span\"><i>m</i></span>, <span class=\"tex-span\">2<i>m</i></span>, <span class=\"tex-span\">3<i>m</i></span> and so on. The day is <span class=\"tex-span\"><i>z</i></span> minutes long, i.e. the day consists of minutes <span class=\"tex-span\">1,\u20092,\u2009...,\u2009<i>z</i></span>. How many artists should be killed so that there are no artists in the room when Ilia calls? Consider that a call and a talk with an artist take exactly one minute.</p>",
+    "inputSpecification": "<p>The only string contains three integers\u00a0\u2014 <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>z</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>,\u2009<i>z</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>).</p>",
+    "outputSpecification": "<p>Print single integer\u00a0\u2014 the minimum number of artists that should be killed so that there are no artists in the room when Ilia calls.</p>",
+    "samples": [
+        {
+            "input": "1 1 10<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "1 2 5<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "2 3 9<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>Taymyr is a place in the north of Russia.</p><p>In the first test the artists come each minute, as well as the calls, so we need to kill all of them.</p><p>In the second test we need to kill artists which come on the second and the fourth minutes.</p><p>In the third test\u00a0\u2014 only the artist which comes on the sixth minute. </p>",
+    "contestId": 764,
+    "index": "A",
+    "name": "Taymyr is calling you",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 16074
+}

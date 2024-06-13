@@ -1,0 +1,37 @@
+{
+    "title": "A. Hulk",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Dr. Bruce Banner hates his enemies (like others don't). As we all know, he can barely talk when he turns into the incredible Hulk. That's why he asked you to help him to express his feelings.</p><p>Hulk likes the Inception so much, and like that his feelings are complicated. They have <span class=\"tex-span\"><i>n</i></span> layers. The first layer is hate, second one is love, third one is hate and so on...</p><p>For example if <span class=\"tex-span\"><i>n</i>\u2009=\u20091</span>, then his feeling is \"<span class=\"tex-font-style-tt\">I hate it</span>\" or if <span class=\"tex-span\"><i>n</i>\u2009=\u20092</span> it's \"<span class=\"tex-font-style-tt\">I hate that I love it</span>\", and if <span class=\"tex-span\"><i>n</i>\u2009=\u20093</span> it's \"<span class=\"tex-font-style-tt\">I hate that I love that I hate it</span>\" and so on.</p><p>Please help Dr. Banner.</p>",
+    "inputSpecification": "<p>The only line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the number of layers of love and hate.</p>",
+    "outputSpecification": "<p>Print Dr.Banner's feeling in one line.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "I hate it<br/>"
+        },
+        {
+            "input": "2<br/>",
+            "output": "I hate that I love it<br/>"
+        },
+        {
+            "input": "3<br/>",
+            "output": "I hate that I love that I hate it<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 705,
+    "index": "A",
+    "name": "Hulk",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 100762
+}

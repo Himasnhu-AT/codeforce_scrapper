@@ -1,0 +1,38 @@
+{
+    "title": "F. Cutlet",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Arkady wants to have a dinner. He has just returned from a shop where he has bought a semifinished cutlet. He only needs to fry it. The cutlet should be fried for <span class=\"tex-span\">2<i>n</i></span> seconds, in particular, it should be fried for <span class=\"tex-span\"><i>n</i></span> seconds on one side and <span class=\"tex-span\"><i>n</i></span> seconds on the other side. Arkady has already got a frying pan and turn on fire, but understood that maybe he won't be able to flip the cutlet exactly after <span class=\"tex-span\"><i>n</i></span> seconds after the beginning of cooking.</p><p>Arkady is too busy with sorting sticker packs in his favorite messenger and can flip the cutlet only in some periods of time. Namely, there are <span class=\"tex-span\"><i>k</i></span> periods of time in which he can do it, the <span class=\"tex-span\"><i>i</i></span>-th of them is an interval of time from <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> seconds after he starts cooking till <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> seconds, inclusive. Arkady decided that it's not required to flip the cutlet exactly in the middle of cooking, instead, he will flip it several times in such a way that the cutlet will be fried exactly <span class=\"tex-span\"><i>n</i></span> seconds on one side and <span class=\"tex-span\"><i>n</i></span> seconds on the other side in total.</p><p>Help Arkady and find out if it's possible for him to cook the cutlet, if he is able to flip the cutlet only in given periods of time; and if yes, find the minimum number of flips he needs to cook the cutlet.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the number of seconds the cutlet should be cooked on each side and number of periods of time in which Arkady can flip it.</p><p>The next <span class=\"tex-span\"><i>k</i></span> lines contain descriptions of these intervals. Each line contains two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20092\u00b7<i>n</i></span>), meaning that Arkady can flip the cutlet in any moment starting from <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> seconds after the beginning of cooking and finishing at <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> seconds after beginning of cooking. In particular, if <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> then Arkady can flip the cutlet only in the moment <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span>. It's guaranteed that <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&gt;\u2009<i>r</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub></span> for all <span class=\"tex-span\">2\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>k</i></span>.</p>",
+    "outputSpecification": "<p>Output \"<span class=\"tex-font-style-tt\">Hungry</span>\" if Arkady won't be able to fry the cutlet for exactly <span class=\"tex-span\"><i>n</i></span> seconds on one side and exactly <span class=\"tex-span\"><i>n</i></span> seconds on the other side.</p><p>Otherwise, output \"<span class=\"tex-font-style-tt\">Full</span>\" in the first line, and the minimum number of times he should flip the cutlet in the second line.</p>",
+    "samples": [
+        {
+            "input": "10 2<br/>3 5<br/>11 13<br/>",
+            "output": "Full<br/>2<br/>"
+        },
+        {
+            "input": "10 3<br/>3 5<br/>9 10<br/>11 13<br/>",
+            "output": "Full<br/>1<br/>"
+        },
+        {
+            "input": "20 1<br/>3 19<br/>",
+            "output": "Hungry<br/>"
+        }
+    ],
+    "note": "<p>In the first example Arkady should flip the cutlet in time moment <span class=\"tex-span\">3</span> seconds after he starts cooking and in time moment <span class=\"tex-span\">13</span> seconds after he starts cooking.</p><p>In the second example, Arkady can flip the cutlet at <span class=\"tex-span\">10</span> seconds after he starts cooking.</p>",
+    "contestId": 939,
+    "index": "F",
+    "name": "Cutlet",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp"
+    ],
+    "solvedCount": 896
+}

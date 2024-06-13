@@ -1,0 +1,30 @@
+{
+    "title": "D. Mike and distribution",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mike has always been thinking about the harshness of social inequality. He's so obsessed with it that sometimes it even affects him while solving problems. At the moment, Mike has two sequences of positive integers <span class=\"tex-span\"><i>A</i>\u2009=\u2009[<i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub>]</span> and <span class=\"tex-span\"><i>B</i>\u2009=\u2009[<i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>b</i><sub class=\"lower-index\"><i>n</i></sub>]</span> of length <span class=\"tex-span\"><i>n</i></span> each which he uses to ask people some quite peculiar questions.</p><p>To test you on how good are you at spotting inequality in life, he wants you to find an <span class=\"tex-font-style-it\">\"unfair\"</span> subset of the original sequence. To be more precise, he wants you to select <span class=\"tex-span\"><i>k</i></span> numbers <span class=\"tex-span\"><i>P</i>\u2009=\u2009[<i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>k</i></sub>]</span> such that <span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span> for <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>k</i></span> and elements in <span class=\"tex-span\"><i>P</i></span> are distinct. Sequence <span class=\"tex-span\"><i>P</i></span> will represent indices of elements that you'll select from both sequences. He calls such a subset <span class=\"tex-span\"><i>P</i></span> <span class=\"tex-font-style-it\">\"unfair\"</span> if and only if the following conditions are satisfied: <span class=\"tex-span\">2\u00b7(<i>a</i><sub class=\"lower-index\"><i>p</i><sub class=\"lower-index\">1</sub></sub>\u2009+\u2009...\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>p</i><sub class=\"lower-index\"><i>k</i></sub></sub>)</span> is <span class=\"tex-font-style-bf\">greater</span> than the sum of all elements from sequence <span class=\"tex-span\"><i>A</i></span>, and <span class=\"tex-span\">2\u00b7(<i>b</i><sub class=\"lower-index\"><i>p</i><sub class=\"lower-index\">1</sub></sub>\u2009+\u2009...\u2009+\u2009<i>b</i><sub class=\"lower-index\"><i>p</i><sub class=\"lower-index\"><i>k</i></sub></sub>)</span> is <span class=\"tex-font-style-bf\">greater</span> than the sum of all elements from the sequence <span class=\"tex-span\"><i>B</i></span>. Also, <span class=\"tex-span\"><i>k</i></span> should be smaller or equal to <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e70d0af1413d58226605b883a776c3d3115f99a2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> because it will be to easy to find sequence <span class=\"tex-span\"><i>P</i></span> if he allowed you to select too many elements!</p><p>Mike guarantees you that a solution will always exist given the conditions described above, so please help him satisfy his curiosity!</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of elements in the sequences. </p><p>On the second line there are <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 elements of sequence <span class=\"tex-span\"><i>A</i></span>.</p><p>On the third line there are also <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>b</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 elements of sequence <span class=\"tex-span\"><i>B</i></span>.</p>",
+    "outputSpecification": "<p>On the first line output an integer <span class=\"tex-span\"><i>k</i></span> which represents the size of the found subset. <span class=\"tex-span\"><i>k</i></span> should be less or equal to <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a469312c13fe74770be91238847356d82f74c170.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>On the next line print <span class=\"tex-span\"><i>k</i></span> integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>k</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) \u2014 the elements of sequence <span class=\"tex-span\"><i>P</i></span>. You can print the numbers in any order you want. Elements in sequence <span class=\"tex-span\"><i>P</i></span> should be distinct.</p>",
+    "samples": [
+        {
+            "input": "5<br/>8 7 4 8 3<br/>4 2 5 3 7<br/>",
+            "output": "3<br/>1 4 5<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 798,
+    "index": "D",
+    "name": "Mike and distribution",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "sortings"
+    ],
+    "solvedCount": 1857
+}

@@ -1,0 +1,31 @@
+{
+    "title": "C. Tree Diameter",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There is a weighted tree with $$$n$$$ nodes and $$$n-1$$$ edges. The nodes are conveniently labeled from $$$1$$$ to $$$n$$$. The weights are positive integers at most $$$100$$$. Define the distance between two nodes to be the sum of edges on the unique path between the nodes. You would like to find the diameter of the tree. Diameter is the maximum distance between a pair of nodes.</p><p>Unfortunately, the tree isn't given to you, but you can ask some questions about it. In one question, you can specify two nonempty disjoint sets of nodes $$$p$$$ and $$$q$$$, and the judge will return the maximum distance between a node in $$$p$$$ and a node in $$$q$$$. In the words, maximum distance between $$$x$$$ and $$$y$$$, where $$$x \\in p$$$ and $$$y \\in q$$$. After asking not more than $$$9$$$ questions, you must report the maximum distance between any pair of nodes.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n2\n5\n9\n6\n10\n9\n10\n2\n99\n",
+            "output": "\n1 4 1 2 3 4 5\n1 4 2 3 4 5 1\n1 4 3 4 5 1 2\n1 4 4 5 1 2 3\n1 4 5 1 2 3 4\n-1 10\n1 1 1 2\n-1 99"
+        }
+    ],
+    "note": "<p>In the first example, the first tree looks as follows: <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/b69177a21c7a9b84c49d3ed9b34e43c6c9cd54e3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>In the first question, we have $$$p = {1}$$$, and $$$q = {2, 3, 4, 5}$$$. The maximum distance between a node in $$$p$$$ and a node in $$$q$$$ is $$$9$$$ (the distance between nodes $$$1$$$ and $$$5$$$).</p><p>The second tree is a tree with two nodes with an edge with weight $$$99$$$ between them.</p>",
+    "contestId": 1146,
+    "index": "C",
+    "name": "Tree Diameter",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "graphs",
+        "interactive"
+    ],
+    "solvedCount": 3535
+}

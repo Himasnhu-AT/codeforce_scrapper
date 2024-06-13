@@ -1,0 +1,31 @@
+{
+    "title": "F. Product transformation",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Consider an array <span class=\"tex-span\"><i>A</i></span> with <span class=\"tex-span\"><i>N</i></span> elements, all being the same integer <span class=\"tex-span\"><i>a</i></span>.</p><p>Define the product transformation as a simultaneous update <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>A</i><sub class=\"lower-index\"><i>i</i></sub>\u00b7<i>A</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span>, that is multiplying each element to the element right to it for <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bab7e22f732dff71f7d64d3ebfc08bb437dcd67f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, with the last number <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>N</i></sub></span> remaining the same. For example, if we start with an array <span class=\"tex-span\"><i>A</i></span> with <span class=\"tex-span\"><i>a</i>\u2009=\u20092</span> and <span class=\"tex-span\"><i>N</i>\u2009=\u20094</span>, then after one product transformation <span class=\"tex-span\"><i>A</i>\u2009=\u2009[4,\u2009 4,\u2009 4,\u2009 2]</span>, and after two product transformations <span class=\"tex-span\"><i>A</i>\u2009=\u2009[16,\u2009 16,\u2009 8,\u2009 2]</span>.</p><p>Your simple task is to calculate the array <span class=\"tex-span\"><i>A</i></span> after <span class=\"tex-span\"><i>M</i></span> product transformations. Since the numbers can get quite big you should output them modulo <span class=\"tex-span\"><i>Q</i></span>.</p>",
+    "inputSpecification": "<p>The first and only line of input contains four integers <span class=\"tex-span\"><i>N</i></span>, <span class=\"tex-span\"><i>M</i></span>, <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>Q</i></span> (<span class=\"tex-span\">7\u2009\u2264\u2009<i>Q</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>\u2009+\u2009123</span>, <span class=\"tex-span\">2\u2009\u2264\u2009<i>a</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>\u2009+\u2009123</span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/2ac3dce719aaa3202862fcb75cce57e5994e48b1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9e311783e65b119bb1fd35c8a4f2a4d6933d358d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is prime), where <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9e311783e65b119bb1fd35c8a4f2a4d6933d358d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is the multiplicative order of the integer <span class=\"tex-span\"><i>a</i></span> modulo <span class=\"tex-span\"><i>Q</i></span>, see notes for definition.</p>",
+    "outputSpecification": "<p>You should output the array <span class=\"tex-span\"><i>A</i></span> from left to right.</p>",
+    "samples": [
+        {
+            "input": "2 2 2 7<br/>",
+            "output": "1 2 "
+        }
+    ],
+    "note": "<p>The multiplicative order of a number <span class=\"tex-span\"><i>a</i></span> modulo <span class=\"tex-span\"><i>Q</i></span> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/38b13c1f6db75ae72784f8602e8230429b26cf2a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, is the smallest natural number <span class=\"tex-span\"><i>x</i></span> such that <span class=\"tex-span\"><i>a</i><sup class=\"upper-index\"><i>x</i></sup> <i>mod</i> <i>Q</i>\u2009=\u20091</span>. For example, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/64b53b8160eddc004a5b65223bf29dd636bb1832.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 852,
+    "index": "F",
+    "name": "Product transformation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 561
+}

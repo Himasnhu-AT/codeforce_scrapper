@@ -1,0 +1,39 @@
+{
+    "title": "D. Fight Against Traffic",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little town Nsk consists of <span class=\"tex-span\"><i>n</i></span> junctions connected by <span class=\"tex-span\"><i>m</i></span> bidirectional roads. Each road connects two distinct junctions and no two roads connect the same pair of junctions. It is possible to get from any junction to any other junction by these roads. The distance between two junctions is equal to the minimum possible number of roads on a path between them.</p><p>In order to improve the transportation system, the city council asks mayor to build one new road. The problem is that the mayor has just bought a wonderful new car and he really enjoys a ride from his home, located near junction <span class=\"tex-span\"><i>s</i></span> to work located near junction <span class=\"tex-span\"><i>t</i></span>. Thus, he wants to build a new road in such a way that the distance between these two junctions won't decrease. </p><p>You are assigned a task to compute the number of pairs of junctions that are not connected by the road, such that if the new road between these two junctions is built the distance between <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> won't decrease.</p>",
+    "inputSpecification": "<p>The firt line of the input contains integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span>, <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>s</i>,\u2009<i>t</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>s</i>\u2009\u2260\u2009<i>t</i></span>)\u00a0\u2014 the number of junctions and the number of roads in Nsk, as well as the indices of junctions where mayors home and work are located respectively. The <span class=\"tex-span\"><i>i</i></span>-th of the following <span class=\"tex-span\"><i>m</i></span> lines contains two integers <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>), meaning that this road connects junctions <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> directly. It is guaranteed that there is a path between any two junctions and no two roads connect the same pair of junctions.</p>",
+    "outputSpecification": "<p>Print one integer\u00a0\u2014 the number of pairs of junctions not connected by a direct road, such that building a road between these two junctions won't decrease the distance between junctions <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span>.</p>",
+    "samples": [
+        {
+            "input": "5 4 1 5<br/>1 2<br/>2 3<br/>3 4<br/>4 5<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "5 4 3 5<br/>1 2<br/>2 3<br/>3 4<br/>4 5<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "5 6 1 5<br/>1 2<br/>1 3<br/>1 4<br/>4 5<br/>3 5<br/>2 5<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 954,
+    "index": "D",
+    "name": "Fight Against Traffic",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 6340
+}

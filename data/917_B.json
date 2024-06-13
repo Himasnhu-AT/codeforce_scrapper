@@ -1,0 +1,36 @@
+{
+    "title": "B. MADMAX",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>As we all know, Max is the best video game player among her friends. Her friends were so jealous of hers, that they created an actual game just to prove that she's not the best at games. The game is played on a directed acyclic graph (a DAG) with <span class=\"tex-span\"><i>n</i></span> vertices and <span class=\"tex-span\"><i>m</i></span> edges. There's a character written on each edge, a lowercase English letter.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/f9ebcdf318eb077a2e812a25c049cf2fb61fe766.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Max and Lucas are playing the game. Max goes first, then Lucas, then Max again and so on. Each player has a marble, initially located at some vertex. Each player in his/her turn should move his/her marble along some edge (a player can move the marble from vertex <span class=\"tex-span\"><i>v</i></span> to vertex <span class=\"tex-span\"><i>u</i></span> if there's an outgoing edge from <span class=\"tex-span\"><i>v</i></span> to <span class=\"tex-span\"><i>u</i></span>). If the player moves his/her marble from vertex <span class=\"tex-span\"><i>v</i></span> to vertex <span class=\"tex-span\"><i>u</i></span>, the \"character\" of that round is the character written on the edge from <span class=\"tex-span\"><i>v</i></span> to <span class=\"tex-span\"><i>u</i></span>. There's one additional rule; the ASCII code of character of round <span class=\"tex-span\"><i>i</i></span> should be <span class=\"tex-font-style-bf\">greater than or equal</span> to the ASCII code of character of round <span class=\"tex-span\"><i>i</i>\u2009-\u20091</span> (for <span class=\"tex-span\"><i>i</i>\u2009&gt;\u20091</span>). The rounds are numbered for both players together, i.\u00a0e. Max goes in odd numbers, Lucas goes in even numbers. The player that can't make a move loses the game. The marbles may be at the same vertex at the same time.</p><p>Since the game could take a while and Lucas and Max have to focus on finding Dart, they don't have time to play. So they asked you, if they both play optimally, who wins the game?</p><p>You have to determine the winner of the game for all initial positions of the marbles.</p>",
+    "inputSpecification": "<p>The first line of input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/37372be2fa973707a2359c140f9c1f1a0de5fb71.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>).</p><p>The next <span class=\"tex-span\"><i>m</i></span> lines contain the edges. Each line contains two integers <span class=\"tex-span\"><i>v</i></span>, <span class=\"tex-span\"><i>u</i></span> and a lowercase English letter <span class=\"tex-span\"><i>c</i></span>, meaning there's an edge from <span class=\"tex-span\"><i>v</i></span> to <span class=\"tex-span\"><i>u</i></span> written <span class=\"tex-span\"><i>c</i></span> on it (<span class=\"tex-span\">1\u2009\u2264\u2009<i>v</i>,\u2009<i>u</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>v</i>\u2009\u2260\u2009<i>u</i></span>). There's at most one edge between any pair of vertices. It is guaranteed that the graph is acyclic.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> lines, a string of length <span class=\"tex-span\"><i>n</i></span> in each one. The <span class=\"tex-span\"><i>j</i></span>-th character in <span class=\"tex-span\"><i>i</i></span>-th line should be 'A' if Max will win the game in case her marble is initially at vertex <span class=\"tex-span\"><i>i</i></span> and Lucas's marble is initially at vertex <span class=\"tex-span\"><i>j</i></span>, and 'B' otherwise.</p>",
+    "samples": [
+        {
+            "input": "4 4<br/>1 2 b<br/>1 3 a<br/>2 4 c<br/>3 4 b<br/>",
+            "output": "BAAA<br/>ABAA<br/>BBBA<br/>BBBB<br/>"
+        },
+        {
+            "input": "5 8<br/>5 3 h<br/>1 2 c<br/>3 1 c<br/>3 2 r<br/>5 1 r<br/>4 3 z<br/>5 4 r<br/>5 2 h<br/>",
+            "output": "BABBB<br/>BBBBB<br/>AABBB<br/>AAABA<br/>AAAAB<br/>"
+        }
+    ],
+    "note": "<p>Here's the graph in the first sample test case:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/d748f2c28d5f2fb9d103a79f6196549f9d9a6acf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Here's the graph in the second sample test case:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/129a4f2045f65dd0eaf5ccd5a6e9089ed96caac0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 917,
+    "index": "B",
+    "name": "MADMAX",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "games",
+        "graphs"
+    ],
+    "solvedCount": 3496
+}

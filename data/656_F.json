@@ -1,0 +1,37 @@
+{
+    "title": "F. Ace It!",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"input-specification\"><div class=\"section-title\">Input</div><p>The only line of the input is a string of 7 characters. The first character is letter A, followed by 6 digits. The input is guaranteed to be valid (for certain definition of \"valid\").</p></div><div class=\"output-specification\"><div class=\"section-title\">Output</div><p>Output a single integer.</p></div><div class=\"sample-tests\"><div class=\"section-title\">Examples</div><div class=\"sample-test\"><div class=\"input\"><div class=\"title\">Input</div><pre>A221033<br/></pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>21<br/></pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>A223635<br/></pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>22<br/></pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>A232726<br/></pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>23<br/></pre></div></div></div>",
+    "inputSpecification": "<p>The only line of the input is a string of 7 characters. The first character is letter A, followed by 6 digits. The input is guaranteed to be valid (for certain definition of \"valid\").</p>",
+    "outputSpecification": "<p>Output a single integer.</p>",
+    "samples": [
+        {
+            "input": "A221033<br/>",
+            "output": "21<br/>"
+        },
+        {
+            "input": "A223635<br/>",
+            "output": "22<br/>"
+        },
+        {
+            "input": "A232726<br/>",
+            "output": "23<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 656,
+    "index": "F",
+    "name": "Ace It!",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 884
+}

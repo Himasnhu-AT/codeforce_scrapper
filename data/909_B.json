@@ -1,0 +1,38 @@
+{
+    "title": "B. Segments",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an integer <span class=\"tex-span\"><i>N</i></span>. Consider all possible segments on the coordinate axis with endpoints at integer points with coordinates between 0 and <span class=\"tex-span\"><i>N</i></span>, inclusive; there will be <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5e54199c623e6698508e30637903d25ae30f0d42.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> of them.</p><p>You want to draw these segments in several layers so that in each layer the segments don't overlap (they might touch at the endpoints though). You <span class=\"tex-font-style-bf\">can not</span> move the segments to a different location on the coordinate axis. </p><p>Find the minimal number of layers you have to use for the given <span class=\"tex-span\"><i>N</i></span>.</p>",
+    "inputSpecification": "<p>The only input line contains a single integer <span class=\"tex-span\"><i>N</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u2009100</span>).</p>",
+    "outputSpecification": "<p>Output a single integer - the minimal number of layers required to draw the segments for the given <span class=\"tex-span\"><i>N</i></span>.</p>",
+    "samples": [
+        {
+            "input": "2<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "4<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": "<p>As an example, here are the segments and their optimal arrangement into layers for <span class=\"tex-span\"><i>N</i>\u2009=\u20094</span>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/9475ce49bff01cb58b2d1aea7d5d637f489bbe7d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 909,
+    "index": "B",
+    "name": "Segments",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 6223
+}

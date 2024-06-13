@@ -1,0 +1,48 @@
+{
+    "title": "B. Vitamins",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Berland shop sells $$$n$$$ kinds of juices. Each juice has its price $$$c_i$$$. Each juice includes some set of vitamins in it. There are three types of vitamins: vitamin \"<span class=\"tex-font-style-tt\">A</span>\", vitamin \"<span class=\"tex-font-style-tt\">B</span>\" and vitamin \"<span class=\"tex-font-style-tt\">C</span>\". Each juice can contain one, two or all three types of vitamins in it.</p><p>Petya knows that he needs all three types of vitamins to stay healthy. What is the minimum total price of juices that Petya has to buy to obtain all three vitamins? Petya obtains some vitamin if he buys at least one juice containing it and drinks it.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ $$$(1 \\le n \\le 1\\,000)$$$ \u2014 the number of juices.</p><p>Each of the next $$$n$$$ lines contains an integer $$$c_i$$$ $$$(1 \\le c_i \\le 100\\,000)$$$ and a string $$$s_i$$$ \u2014 the price of the $$$i$$$-th juice and the vitamins it contains. String $$$s_i$$$ contains from $$$1$$$ to $$$3$$$ characters, and the only possible characters are \"<span class=\"tex-font-style-tt\">A</span>\", \"<span class=\"tex-font-style-tt\">B</span>\" and \"<span class=\"tex-font-style-tt\">C</span>\". It is guaranteed that each letter appears no more than once in each string $$$s_i$$$. The order of letters in strings $$$s_i$$$ is arbitrary.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-font-style-tt\">-1</span> if there is no way to obtain all three vitamins. Otherwise print the minimum total price of juices that Petya has to buy to obtain all three vitamins.</p>",
+    "samples": [
+        {
+            "input": "4<br/>5 C<br/>6 B<br/>16 BAC<br/>4 A<br/>",
+            "output": "15<br/>"
+        },
+        {
+            "input": "2<br/>10 AB<br/>15 BA<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "5<br/>10 A<br/>9 BC<br/>11 CA<br/>4 A<br/>5 B<br/>",
+            "output": "13<br/>"
+        },
+        {
+            "input": "6<br/>100 A<br/>355 BCA<br/>150 BC<br/>160 AC<br/>180 B<br/>190 CA<br/>",
+            "output": "250<br/>"
+        },
+        {
+            "input": "2<br/>5 BA<br/>11 CB<br/>",
+            "output": "16<br/>"
+        }
+    ],
+    "note": "<p>In the first example Petya buys the first, the second and the fourth juice. He spends $$$5 + 6 + 4 = 15$$$ and obtains all three vitamins. He can also buy just the third juice and obtain three vitamins, but its cost is $$$16$$$, which isn't optimal.</p><p>In the second example Petya can't obtain all three vitamins, as no juice contains vitamin \"<span class=\"tex-font-style-tt\">C</span>\".</p>",
+    "contestId": 1042,
+    "index": "B",
+    "name": "Vitamins",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "implementation"
+    ],
+    "solvedCount": 15407
+}

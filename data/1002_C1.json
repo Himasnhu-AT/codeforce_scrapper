@@ -1,0 +1,22 @@
+{
+    "title": "C1. Distinguish zero state and plus state with minimum error",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a qubit which is guaranteed to be either in <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c1f9019c20fc8a9610d31c36ba7860cef0b7c55c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> state or in <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d92593c6760aba7602b98b147630fe99f3ba55f1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> state. </p><p>Your task is to perform necessary operations and measurements to figure out which state it was and to return 0 if it was a <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c1f9019c20fc8a9610d31c36ba7860cef0b7c55c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> state or 1 if it was <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/891b1e75c93e44f237b7fde497062f8e85c1d952.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> state. The state of the qubit after the operations does not matter.</p><p>Note that these states are not orthogonal, and thus can not be distinguished perfectly. In each test your solution will be called 1000 times, and your goal is to get a correct answer at least 80% of the times. In each test <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c1f9019c20fc8a9610d31c36ba7860cef0b7c55c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/891b1e75c93e44f237b7fde497062f8e85c1d952.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> states will be provided with 50% probability.</p><p>You have to implement an operation which takes a qubit as an input and returns an integer. </p><p>Your code should have the following signature:</p><pre class=\"verbatim\">namespace Solution {<br/>    open Microsoft.Quantum.Primitive;<br/>    open Microsoft.Quantum.Canon;<br/><br/>    operation Solve (q : Qubit) : Int<br/>    {<br/>        body<br/>        {<br/>            // your code here<br/>        }<br/>    }<br/>}</pre>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1002,
+    "index": "C1",
+    "name": "Distinguish zero state and plus state with minimum error",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 299
+}

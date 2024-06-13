@@ -1,0 +1,34 @@
+{
+    "title": "B. String Typing",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a string <span class=\"tex-span\"><i>s</i></span> consisting of <span class=\"tex-span\"><i>n</i></span> lowercase Latin letters. You have to type this string using your keyboard.</p><p>Initially, you have an empty string. Until you type the whole string, you may perform the following operation:</p><ul> <li> add a character to the end of the string. </li></ul><p>Besides, <span class=\"tex-font-style-bf\">at most once</span> you may perform one additional operation: copy the string and append it to itself.</p><p>For example, if you have to type string <span class=\"tex-font-style-tt\">abcabca</span>, you can type it in <span class=\"tex-span\">7</span> operations if you type all the characters one by one. However, you can type it in <span class=\"tex-span\">5</span> operations if you type the string <span class=\"tex-font-style-tt\">abc</span> first and then copy it and type the last character.</p><p>If you have to type string <span class=\"tex-font-style-tt\">aaaaaaaaa</span>, the best option is to type <span class=\"tex-span\">4</span> characters one by one, then copy the string, and then type the remaining character.</p><p>Print the minimum number of operations you need to type the given string.</p>",
+    "inputSpecification": "<p>The first line of the input containing only one integer number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the length of the string you have to type. The second line containing the string <span class=\"tex-span\"><i>s</i></span> consisting of <span class=\"tex-span\"><i>n</i></span> lowercase Latin letters.</p>",
+    "outputSpecification": "<p>Print one integer number\u00a0\u2014 the minimum number of operations you need to type the given string.</p>",
+    "samples": [
+        {
+            "input": "7<br/>abcabca<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "8<br/>abcdefgh<br/>",
+            "output": "8<br/>"
+        }
+    ],
+    "note": "<p>The first test described in the problem statement.</p><p>In the second test you can only type all the characters one by one.</p>",
+    "contestId": 954,
+    "index": "B",
+    "name": "String Typing",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 7109
+}

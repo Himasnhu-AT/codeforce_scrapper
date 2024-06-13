@@ -1,0 +1,31 @@
+{
+    "title": "B. Vlad and Cafes",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vlad likes to eat in cafes very much. During his life, he has visited cafes <span class=\"tex-span\"><i>n</i></span> times. Unfortunately, Vlad started to feel that his last visits are not any different from each other. To fix that Vlad had a small research.</p><p>First of all, Vlad assigned individual indices to all cafes. Then, he wrote down indices of cafes he visited in a row, in order of visiting them. Now, Vlad wants to find such a cafe that his last visit to that cafe was before his last visits to every other cafe. In other words, he wants to find such a cafe that he hasn't been there for as long as possible. Help Vlad to find that cafe.</p>",
+    "inputSpecification": "<p>In first line there is one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 number of cafes indices written by Vlad.</p><p>In second line, <span class=\"tex-span\"><i>n</i></span> numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>) are written\u00a0\u2014 indices of cafes in order of being visited by Vlad. Vlad could visit some cafes more than once. Note that in numeration, some indices could be omitted.</p>",
+    "outputSpecification": "<p>Print one integer\u00a0\u2014 index of the cafe that Vlad hasn't visited for as long as possible.</p>",
+    "samples": [
+        {
+            "input": "5<br/>1 3 2 1 2<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "6<br/>2 1 2 2 4 1<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In first test, there are three cafes, and the last visits to cafes with indices <span class=\"tex-span\">1</span> and <span class=\"tex-span\">2</span> were after the last visit to cafe with index <span class=\"tex-span\">3</span>; so this cafe is the answer. </p><p>In second test case, there are also three cafes, but with indices <span class=\"tex-span\">1</span>, <span class=\"tex-span\">2</span> and <span class=\"tex-span\">4</span>. Cafes with indices <span class=\"tex-span\">1</span> and <span class=\"tex-span\">4</span> were visited after the last visit of cafe with index <span class=\"tex-span\">2</span>, so the answer is <span class=\"tex-span\">2</span>. Note that Vlad could omit some numbers while numerating the cafes.</p>",
+    "contestId": 886,
+    "index": "B",
+    "name": "Vlad and Cafes",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 7793
+}

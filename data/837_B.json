@@ -1,0 +1,42 @@
+{
+    "title": "B. Flag of Berland",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The flag of Berland is such rectangular field <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> that satisfies following conditions:</p><ul> <li> Flag consists of three colors which correspond to letters <span class=\"tex-font-style-tt\">'R'</span>, <span class=\"tex-font-style-tt\">'G'</span> and <span class=\"tex-font-style-tt\">'B'</span>. </li><li> Flag consists of three equal in width and height stripes, parralel to each other and to sides of the flag. Each stripe has <span class=\"tex-font-style-bf\">exactly one color</span>. </li><li> Each color should be used in <span class=\"tex-font-style-bf\">exactly one stripe</span>. </li></ul><p>You are given a field <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span>, consisting of characters <span class=\"tex-font-style-tt\">'R'</span>, <span class=\"tex-font-style-tt\">'G'</span> and <span class=\"tex-font-style-tt\">'B'</span>. Output \"<span class=\"tex-font-style-tt\">YES</span>\" (without quotes) if this field corresponds to correct flag of Berland. Otherwise, print \"<span class=\"tex-font-style-tt\">NO</span>\" (without quotes).</p>",
+    "inputSpecification": "<p>The first line contains two integer numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>) \u2014 the sizes of the field.</p><p>Each of the following <span class=\"tex-span\"><i>n</i></span> lines consisting of <span class=\"tex-span\"><i>m</i></span> characters <span class=\"tex-font-style-tt\">'R'</span>, <span class=\"tex-font-style-tt\">'G'</span> and <span class=\"tex-font-style-tt\">'B'</span> \u2014 the description of the field.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" (without quotes) if the given field corresponds to correct flag of Berland . Otherwise, print \"<span class=\"tex-font-style-tt\">NO</span>\" (without quotes).</p>",
+    "samples": [
+        {
+            "input": "6 5<br/>RRRRR<br/>RRRRR<br/>BBBBB<br/>BBBBB<br/>GGGGG<br/>GGGGG<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "4 3<br/>BRG<br/>BRG<br/>BRG<br/>BRG<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "6 7<br/>RRRGGGG<br/>RRRGGGG<br/>RRRGGGG<br/>RRRBBBB<br/>RRRBBBB<br/>RRRBBBB<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "4 4<br/>RRRR<br/>RRRR<br/>BBBB<br/>GGGG<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>The field in the third example doesn't have three parralel stripes.</p><p>Rows of the field in the fourth example are parralel to each other and to borders. But they have different heights \u2014 <span class=\"tex-font-style-tt\">2</span>, <span class=\"tex-font-style-tt\">1</span> and <span class=\"tex-font-style-tt\">1</span>.</p>",
+    "contestId": 837,
+    "index": "B",
+    "name": "Flag of Berland",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 3898
+}

@@ -1,0 +1,33 @@
+{
+    "title": "B. Magic Forest",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Imp is in a magic forest, where xorangles grow (wut?)</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/41a89e297f110aa906c319b9c9c581669469c1f7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>A xorangle of order <span class=\"tex-span\"><i>n</i></span> is such a non-degenerate triangle, that lengths of its sides are integers not exceeding <span class=\"tex-span\"><i>n</i></span>, and the xor-sum of the lengths is equal to zero. Imp has to count the number of distinct xorangles of order <span class=\"tex-span\"><i>n</i></span> to get out of the forest. </p><p>Formally, for a given integer <span class=\"tex-span\"><i>n</i></span> you have to find the number of such triples <span class=\"tex-span\">(<i>a</i>,\u2009<i>b</i>,\u2009<i>c</i>)</span>, that:</p><ul> <li> <span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u2009<i>b</i>\u2009\u2264\u2009<i>c</i>\u2009\u2264\u2009<i>n</i></span>; </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/616b9f69d1a3b7c1fc2c0a3423d1cf845ca80208.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b364f2e04c665b78b924ec10666327a4ef4635bc.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> denotes the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#XOR\">bitwise xor</a> of integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>. </li><li> <span class=\"tex-span\">(<i>a</i>,\u2009<i>b</i>,\u2009<i>c</i>)</span> form a non-degenerate (with strictly positive area) triangle. </li></ul>",
+    "inputSpecification": "<p>The only line contains a single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092500)</span>.</p>",
+    "outputSpecification": "<p>Print the number of xorangles of order <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "samples": [
+        {
+            "input": "6<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "10<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>The only xorangle in the first sample is <span class=\"tex-span\">(3,\u20095,\u20096)</span>.</p>",
+    "contestId": 922,
+    "index": "B",
+    "name": "Magic Forest",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force"
+    ],
+    "solvedCount": 8339
+}

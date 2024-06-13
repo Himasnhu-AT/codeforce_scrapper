@@ -1,0 +1,40 @@
+{
+    "title": "C. Timofey and remoduling",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Timofey likes integers a lot. Unfortunately, he is very young and can't work with very big integers, so he does all the operations modulo his favorite prime <span class=\"tex-span\"><i>m</i></span>. Also, Timofey likes to look for arithmetical progressions everywhere.</p><p>One of his birthday presents was a sequence of <span class=\"tex-font-style-bf\">distinct</span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. Timofey wants to know whether he can rearrange the elements of the sequence so that is will be an arithmetical progression modulo <span class=\"tex-span\"><i>m</i></span>, or not.</p><p>Arithmetical progression modulo <span class=\"tex-span\"><i>m</i></span> of length <span class=\"tex-span\"><i>n</i></span> with first element <span class=\"tex-span\"><i>x</i></span> and difference <span class=\"tex-span\"><i>d</i></span> is sequence of integers <span class=\"tex-span\"><i>x</i>,\u2009<i>x</i>\u2009+\u2009<i>d</i>,\u2009<i>x</i>\u2009+\u20092<i>d</i>,\u2009...,\u2009<i>x</i>\u2009+\u2009(<i>n</i>\u2009-\u20091)\u00b7<i>d</i></span>, each taken modulo <span class=\"tex-span\"><i>m</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\"><i>m</i></span> is prime)\u00a0\u2014 Timofey's favorite prime module and the length of the sequence.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-font-style-bf\">distinct</span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>m</i></span>)\u00a0\u2014 the elements of the sequence.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-font-style-tt\">-1</span> if it is not possible to rearrange the elements of the sequence so that is will be an arithmetical progression modulo <span class=\"tex-span\"><i>m</i></span>.</p><p>Otherwise, print two integers\u00a0\u2014 the first element of the obtained progression <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i>\u2009&lt;\u2009<i>m</i></span>) and its difference <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>d</i>\u2009&lt;\u2009<i>m</i></span>).</p><p>If there are multiple answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "17 5<br/>0 2 4 13 15<br/>",
+            "output": "13 2<br/>"
+        },
+        {
+            "input": "17 5<br/>0 2 4 13 14<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "5 3<br/>1 2 3<br/>",
+            "output": "3 4<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 763,
+    "index": "C",
+    "name": "Timofey and remoduling",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 706
+}

@@ -1,0 +1,42 @@
+{
+    "title": "C. Break Up",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Again, there are hard times in Berland! Many towns have such tensions that even civil war is possible. </p><p>There are <span class=\"tex-span\"><i>n</i></span> towns in Reberland, some pairs of which connected by two-way roads. It is not guaranteed that it is possible to reach one town from any other town using these roads. </p><p>Towns <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> announce the final break of any relationship and intend to rule out the possibility of moving between them by the roads. Now possibly it is needed to close several roads so that moving from <span class=\"tex-span\"><i>s</i></span> to <span class=\"tex-span\"><i>t</i></span> using roads becomes impossible. Each town agrees to spend money on closing no more than one road, therefore, the total number of closed roads will be <span class=\"tex-font-style-bf\">no more than two</span>.</p><p>Help them find set of no more than two roads such that there will be no way between <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> after closing these roads. For each road the budget required for its closure was estimated. Among all sets find such that the total budget for the closure of a set of roads is minimum.</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200930\u2009000</span>)\u00a0\u2014 the number of towns in Berland and the number of roads.</p><p>The second line contains integers <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>s</i>,\u2009<i>t</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>s</i>\u2009\u2260\u2009<i>t</i></span>)\u00a0\u2014 indices of towns which break up the relationships.</p><p>Then follow <span class=\"tex-span\"><i>m</i></span> lines, each of them contains three integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 indices of towns connected by the <span class=\"tex-span\"><i>i</i></span>-th road, and the budget on its closure.</p><p>All roads are bidirectional. It is allowed that the pair of towns is connected by more than one road. Roads that connect the city to itself are allowed. </p>",
+    "outputSpecification": "<p>In the first line print the minimum budget required to break up the relations between <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span>, if it is allowed to close no more than two roads.</p><p>In the second line print the value <span class=\"tex-span\"><i>c</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>c</i>\u2009\u2264\u20092</span>)\u00a0\u2014 the number of roads to be closed in the found solution.</p><p>In the third line print in any order <span class=\"tex-span\"><i>c</i></span> diverse integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span>\u00a0\u2014 indices of closed roads. Consider that the roads are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span> in the order they appear in the input. </p><p>If it is impossible to make towns <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> disconnected by removing no more than <span class=\"tex-span\">2</span> roads, the output should contain a single line <span class=\"tex-font-style-tt\">-1</span>. </p><p>If there are several possible answers, you may print any of them.</p>",
+    "samples": [
+        {
+            "input": "6 7<br/>1 6<br/>2 1 6<br/>2 3 5<br/>3 4 9<br/>4 6 4<br/>4 6 5<br/>4 5 1<br/>3 1 3<br/>",
+            "output": "8<br/>2<br/>2 7<br/>"
+        },
+        {
+            "input": "6 7<br/>1 6<br/>2 3 1<br/>1 2 2<br/>1 3 3<br/>4 5 4<br/>3 6 5<br/>4 6 6<br/>1 5 7<br/>",
+            "output": "9<br/>2<br/>4 5<br/>"
+        },
+        {
+            "input": "5 4<br/>1 5<br/>2 1 3<br/>3 2 1<br/>3 4 4<br/>4 5 2<br/>",
+            "output": "1<br/>1<br/>2<br/>"
+        },
+        {
+            "input": "2 3<br/>1 2<br/>1 2 734458840<br/>1 2 817380027<br/>1 2 304764803<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 700,
+    "index": "C",
+    "name": "Break Up",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs"
+    ],
+    "solvedCount": 1228
+}

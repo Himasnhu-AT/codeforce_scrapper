@@ -1,0 +1,39 @@
+{
+    "title": "C. Riverside Curio",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Arkady decides to observe a river for <span class=\"tex-span\"><i>n</i></span> consecutive days. The river's water level on each day is equal to some real value.</p><p>Arkady goes to the riverside each day and makes a mark on the side of the channel at the height of the water level, but if it coincides with a mark made before, no new mark is created. The water does not wash the marks away. Arkady writes down the number of marks strictly above the water level each day, on the <span class=\"tex-span\"><i>i</i></span>-th day this value is equal to <span class=\"tex-span\"><i>m</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>Define <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> as the number of marks strictly under the water level on the <span class=\"tex-span\"><i>i</i></span>-th day. You are to find out the minimum possible sum of <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> over all days. There are no marks on the channel before the first day.</p>",
+    "inputSpecification": "<p>The first line contains a single positive integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the number of days.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>m</i><sub class=\"lower-index\">1</sub>,\u2009<i>m</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>m</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>m</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>i</i></span>)\u00a0\u2014 the number of marks strictly above the water on each day.</p>",
+    "outputSpecification": "<p>Output one single integer\u00a0\u2014 the minimum possible sum of the number of marks strictly below the water level among all days.</p>",
+    "samples": [
+        {
+            "input": "6<br/>0 1 0 3 0 2<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "5<br/>0 1 2 1 2<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "5<br/>0 1 1 2 2<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first example, the following figure shows an optimal case.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/429bc0a4f26d8668b0555de4b48e75d94b071280.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Note that on day <span class=\"tex-span\">3</span>, a new mark should be created because if not, there cannot be <span class=\"tex-span\">3</span> marks above water on day <span class=\"tex-span\">4</span>. The total number of marks underwater is <span class=\"tex-span\">0\u2009+\u20090\u2009+\u20092\u2009+\u20090\u2009+\u20093\u2009+\u20091\u2009=\u20096</span>.</p><p>In the second example, the following figure shows an optimal case.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/fec65fff49f7e8a81763ef835a85d5095ed05d5d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 924,
+    "index": "C",
+    "name": "Riverside Curio",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy"
+    ],
+    "solvedCount": 3688
+}

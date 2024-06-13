@@ -1,0 +1,37 @@
+{
+    "title": "B. Buggy Robot",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Ivan has a robot which is situated on an infinite grid. Initially the robot is standing in the starting cell <span class=\"tex-span\">(0,\u20090)</span>. The robot can process commands. There are four types of commands it can perform:</p><ul> <li> <span class=\"tex-font-style-tt\">U</span> \u2014 move from the cell <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> to <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009+\u20091)</span>; </li><li> <span class=\"tex-font-style-tt\">D</span> \u2014 move from <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> to <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009-\u20091)</span>; </li><li> <span class=\"tex-font-style-tt\">L</span> \u2014 move from <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> to <span class=\"tex-span\">(<i>x</i>\u2009-\u20091,\u2009<i>y</i>)</span>; </li><li> <span class=\"tex-font-style-tt\">R</span> \u2014 move from <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> to <span class=\"tex-span\">(<i>x</i>\u2009+\u20091,\u2009<i>y</i>)</span>. </li></ul><p>Ivan entered a sequence of <span class=\"tex-span\"><i>n</i></span> commands, and the robot processed it. After this sequence the robot ended up in the starting cell <span class=\"tex-span\">(0,\u20090)</span>, but Ivan doubts that the sequence is such that after performing it correctly the robot ends up in the same cell. He thinks that some commands were ignored by robot. To acknowledge whether the robot is severely bugged, he needs to calculate the maximum possible number of commands that were performed correctly. Help Ivan to do the calculations!</p>",
+    "inputSpecification": "<p>The first line contains one number <span class=\"tex-span\"><i>n</i></span> \u2014 the length of sequence of commands entered by Ivan (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>).</p><p>The second line contains the sequence itself \u2014 a string consisting of <span class=\"tex-span\"><i>n</i></span> characters. Each character can be <span class=\"tex-font-style-tt\">U</span>, <span class=\"tex-font-style-tt\">D</span>, <span class=\"tex-font-style-tt\">L</span> or <span class=\"tex-font-style-tt\">R</span>.</p>",
+    "outputSpecification": "<p>Print the maximum possible number of commands from the sequence the robot could perform to end up in the starting cell.</p>",
+    "samples": [
+        {
+            "input": "4<br/>LDUR<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "5<br/>RRRUU<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "6<br/>LLRRRR<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 888,
+    "index": "B",
+    "name": "Buggy Robot",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy"
+    ],
+    "solvedCount": 9563
+}

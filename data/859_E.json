@@ -1,0 +1,37 @@
+{
+    "title": "E. Desk Disorder",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A new set of desks just arrived, and it's about time! Things were getting quite cramped in the office. You've been put in charge of creating a new seating chart for the engineers. The desks are numbered, and you sent out a survey to the engineering team asking each engineer the number of the desk they currently sit at, and the number of the desk they would like to sit at (which may be the same as their current desk). Each engineer must either remain where they sit, or move to the desired seat they indicated in the survey. No two engineers currently sit at the same desk, nor may any two engineers sit at the same desk in the new seating arrangement.</p><p>How many seating arrangements can you create that meet the specified requirements? The answer may be very large, so compute it modulo <span class=\"tex-span\">1000000007\u2009=\u200910<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>Input will begin with a line containing <span class=\"tex-span\"><i>N</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u2009100000</span>), the number of engineers. </p><p><span class=\"tex-span\"><i>N</i></span> lines follow, each containing exactly two integers. The <span class=\"tex-span\"><i>i</i></span>-th line contains the number of the current desk of the <span class=\"tex-span\"><i>i</i></span>-th engineer and the number of the desk the <span class=\"tex-span\"><i>i</i></span>-th engineer wants to move to. Desks are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">2\u00b7<i>N</i></span>. It is guaranteed that no two engineers sit at the same desk.</p>",
+    "outputSpecification": "<p>Print the number of possible assignments, modulo <span class=\"tex-span\">1000000007\u2009=\u200910<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "4<br/>1 5<br/>5 2<br/>3 7<br/>7 3<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "5<br/>1 10<br/>2 10<br/>3 10<br/>4 10<br/>5 5<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": "<p>These are the possible assignments for the first example: </p><ul> <li> 1 5 3 7 </li><li> 1 2 3 7 </li><li> 5 2 3 7 </li><li> 1 5 7 3 </li><li> 1 2 7 3 </li><li> 5 2 7 3 </li></ul>",
+    "contestId": 859,
+    "index": "E",
+    "name": "Desk Disorder",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 1697
+}

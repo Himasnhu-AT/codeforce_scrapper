@@ -1,0 +1,35 @@
+{
+    "title": "E. Team Work",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have a team of <span class=\"tex-span\"><i>N</i></span> people. For a particular task, you can pick any non-empty subset of people. The cost of having <span class=\"tex-span\"><i>x</i></span> people for the task is <span class=\"tex-span\"><i>x</i><sup class=\"upper-index\"><i>k</i></sup></span>. </p><p>Output the sum of costs over all non-empty subsets of people.</p>",
+    "inputSpecification": "<p>Only line of input contains two integers <span class=\"tex-span\"><i>N</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span> representing total number of people and <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20095000)</span>.</p>",
+    "outputSpecification": "<p>Output the sum of costs for all non empty subsets modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3 2<br/>",
+            "output": "24<br/>"
+        }
+    ],
+    "note": "<p>In the first example, there is only one non-empty subset <span class=\"tex-span\">{1}</span> with cost <span class=\"tex-span\">1<sup class=\"upper-index\">1</sup>\u2009=\u20091</span>.</p><p>In the second example, there are seven non-empty subsets.</p><p>- <span class=\"tex-span\">{1}</span> with cost <span class=\"tex-span\">1<sup class=\"upper-index\">2</sup>\u2009=\u20091</span></p><p>- <span class=\"tex-span\">{2}</span> with cost <span class=\"tex-span\">1<sup class=\"upper-index\">2</sup>\u2009=\u20091</span></p><p>- <span class=\"tex-span\">{1,\u20092}</span> with cost <span class=\"tex-span\">2<sup class=\"upper-index\">2</sup>\u2009=\u20094</span></p><p>- <span class=\"tex-span\">{3}</span> with cost <span class=\"tex-span\">1<sup class=\"upper-index\">2</sup>\u2009=\u20091</span></p><p>- <span class=\"tex-span\">{1,\u20093}</span> with cost <span class=\"tex-span\">2<sup class=\"upper-index\">2</sup>\u2009=\u20094</span></p><p>- <span class=\"tex-span\">{2,\u20093}</span> with cost <span class=\"tex-span\">2<sup class=\"upper-index\">2</sup>\u2009=\u20094</span></p><p>- <span class=\"tex-span\">{1,\u20092,\u20093}</span> with cost <span class=\"tex-span\">3<sup class=\"upper-index\">2</sup>\u2009=\u20099</span></p><p>The total cost is <span class=\"tex-span\">1\u2009+\u20091\u2009+\u20094\u2009+\u20091\u2009+\u20094\u2009+\u20094\u2009+\u20099\u2009=\u200924</span>.</p>",
+    "contestId": 932,
+    "index": "E",
+    "name": "Team Work",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 2729
+}

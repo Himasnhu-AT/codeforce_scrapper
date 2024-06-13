@@ -1,0 +1,31 @@
+{
+    "title": "D. Finding lines",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>After some programming contest Roma decided to try himself in tourism. His home country Uzhlyandia is a Cartesian plane. He wants to walk along each of the Main Straight Lines in Uzhlyandia. It is known that each of these lines is a straight line parallel to one of the axes (i.e. it is described with the equation <span class=\"tex-span\"><i>x</i>\u2009=\u2009<i>a</i></span> or <span class=\"tex-span\"><i>y</i>\u2009=\u2009<i>a</i></span>, where <span class=\"tex-span\"><i>a</i></span> is integer called the coordinate of this line).</p><p>Roma lost his own map, so he should find out the coordinates of all lines at first. Uncle Anton agreed to help him, using the following rules: </p><ul> <li> Initially Roma doesn't know the number of vertical and horizontal lines and their coordinates; </li><li> Roma can announce integer coordinates of some point in Uzhlandia, and Anton then will tell him the minimum among the distances from the chosen point to each of the lines. However, since the coordinates of the lines don't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">8</sup></span> by absolute value, Roma can't choose a point with coordinates exceeding <span class=\"tex-span\">10<sup class=\"upper-index\">8</sup></span> by absolute value. </li></ul><p>Uncle Anton is in a hurry to the UOI (Uzhlandian Olympiad in Informatics), so he can only answer no more than <span class=\"tex-span\">3\u00b710<sup class=\"upper-index\">5</sup></span> questions.</p><p>The problem is that Roma doesn't know how to find out the coordinates of the lines. Write a program that plays Roma's role and finds the coordinates.</p>",
+    "inputSpecification": "<p>There is no input initially. Your program should make queries to get information.</p><p>It is guaranteed that the number of horizontal and vertical lines is at least <span class=\"tex-span\">1</span> and less than or equal to <span class=\"tex-span\">10<sup class=\"upper-index\">4</sup></span> for each type.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "1<br/>1<br/>3<br/>2<br/>",
+            "output": "0 1 2<br/>0 -2 -2<br/>0 5 6<br/>0 -2 2<br/>1 1 2<br/>2<br/>0 -3<br/>"
+        }
+    ],
+    "note": "<p>The example test is </p><pre class=\"verbatim\"><br/>1 2<br/>2<br/>0 -3<br/></pre><p>The minimum distances are:</p><ul> <li> from <span class=\"tex-span\">(1,\u20092)</span> to <span class=\"tex-span\"><i>x</i>\u2009=\u20092</span>; </li><li> from <span class=\"tex-span\">(\u2009-\u20092,\u2009\u2009-\u20092)</span> to <span class=\"tex-span\"><i>y</i>\u2009=\u2009\u2009-\u20093</span>; </li><li> from <span class=\"tex-span\">(5,\u20096)</span> to <span class=\"tex-span\"><i>x</i>\u2009=\u20092</span>; </li><li> from <span class=\"tex-span\">(\u2009-\u20092,\u20092)</span> to <span class=\"tex-span\"><i>y</i>\u2009=\u20090</span>. </li></ul>",
+    "contestId": 788,
+    "index": "D",
+    "name": "Finding lines",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "divide and conquer",
+        "interactive"
+    ],
+    "solvedCount": 358
+}

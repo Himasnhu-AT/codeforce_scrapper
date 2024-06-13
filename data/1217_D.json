@@ -1,0 +1,35 @@
+{
+    "title": "D. Coloring Edges",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a directed graph with $$$n$$$ vertices and $$$m$$$ directed edges without self-loops or multiple edges.</p><p>Let's denote the $$$k$$$-coloring of a digraph as following: you color each edge in one of $$$k$$$ colors. The $$$k$$$-coloring is <span class=\"tex-font-style-bf\">good</span> if and only if there no cycle formed by edges of same color.</p><p>Find a good $$$k$$$-coloring of given digraph with minimum possible $$$k$$$.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$m$$$ ($$$2 \\le n \\le 5000$$$, $$$1 \\le m \\le 5000$$$) \u2014 the number of vertices and edges in the digraph, respectively.</p><p>Next $$$m$$$ lines contain description of edges \u2014 one per line. Each edge is a pair of integers $$$u$$$ and $$$v$$$ ($$$1 \\le u, v \\le n$$$, $$$u \\ne v$$$) \u2014 there is directed edge from $$$u$$$ to $$$v$$$ in the graph.</p><p>It is guaranteed that each ordered pair $$$(u, v)$$$ appears in the list of edges at most once.</p>",
+    "outputSpecification": "<p>In the first line print single integer $$$k$$$ \u2014 the number of used colors in a good $$$k$$$-coloring of given graph.</p><p>In the second line print $$$m$$$ integers $$$c_1, c_2, \\dots, c_m$$$ ($$$1 \\le c_i \\le k$$$), where $$$c_i$$$ is a color of the $$$i$$$-th edge (in order as they are given in the input).</p><p>If there are multiple answers print any of them (you still have to minimize $$$k$$$).</p>",
+    "samples": [
+        {
+            "input": "\n4 5\n1 2\n1 3\n3 4\n2 4\n1 4\n",
+            "output": "\n1\n1 1 1 1 1 \n"
+        },
+        {
+            "input": "\n3 3\n1 2\n2 3\n3 1\n",
+            "output": "\n2\n1 1 2 \n"
+        }
+    ],
+    "note": null,
+    "contestId": 1217,
+    "index": "D",
+    "name": "Coloring Edges",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs"
+    ],
+    "solvedCount": 5101
+}

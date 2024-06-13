@@ -1,0 +1,38 @@
+{
+    "title": "E. Sonya and Ice Cream",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Sonya likes ice cream very much. She eats it even during programming competitions. That is why the girl decided that she wants to open her own ice cream shops.</p><p>Sonya lives in a city with $$$n$$$ junctions and $$$n-1$$$ streets between them. All streets are two-way and connect two junctions. It is possible to travel from any junction to any other using one or more streets. City Hall allows opening shops only on junctions. The girl cannot open shops in the middle of streets. </p><p>Sonya has exactly $$$k$$$ friends whom she can trust. If she opens a shop, one of her friends has to work there and not to allow anybody to eat an ice cream not paying for it. Since Sonya does not want to skip an important competition, she will not work in shops personally.</p><p>Sonya wants all her ice cream shops to form a simple path of the length $$$r$$$ ($$$1 \\le r \\le k$$$), i.e. to be located in different junctions $$$f_1, f_2, \\dots, f_r$$$ and there is street between $$$f_i$$$ and $$$f_{i+1}$$$ for each $$$i$$$ from $$$1$$$ to $$$r-1$$$.</p><p>The girl takes care of potential buyers, so she also wants to minimize the maximum distance between the junctions to the nearest ice cream shop. The distance between two junctions $$$a$$$ and $$$b$$$ is equal to the sum of all the street lengths that you need to pass to get from the junction $$$a$$$ to the junction $$$b$$$. So Sonya wants to <span class=\"tex-font-style-it\">minimize</span></p><p>$$$$$$\\max_{a} \\min_{1 \\le i \\le r} d_{a,f_i}$$$$$$</p><p>where $$$a$$$ takes a value of all possible $$$n$$$ junctions, $$$f_i$$$\u00a0\u2014 the junction where the $$$i$$$-th Sonya's shop is located, and $$$d_{x,y}$$$\u00a0\u2014 the distance between the junctions $$$x$$$ and $$$y$$$.</p><p>Sonya is not sure that she can find the optimal shops locations, that is why she is asking you to help her to open not more than $$$k$$$ shops that will form a simple path and the maximum distance between any junction and the nearest shop would be minimal. </p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$k$$$ ($$$1\\leq k\\leq n\\leq 10^5$$$)\u00a0\u2014 the number of junctions and friends respectively.</p><p>Each of the next $$$n-1$$$ lines contains three integers $$$u_i$$$, $$$v_i$$$, and $$$d_i$$$ ($$$1\\leq u_i, v_i\\leq n$$$, $$$v_i\\neq u_i$$$, $$$1\\leq d\\leq 10^4$$$)\u00a0\u2014 junctions that are connected by a street and the length of this street. It is guaranteed that each pair of junctions is connected by at most one street. It is guaranteed that you can get from any junctions to any other.</p>",
+    "outputSpecification": "<p>Print one number\u00a0\u2014 the minimal possible maximum distance that you need to pass to get from any junction to the nearest ice cream shop. Sonya's shops must form a simple path and the number of shops must be at most $$$k$$$.</p>",
+    "samples": [
+        {
+            "input": "6 2<br/>1 2 3<br/>2 3 4<br/>4 5 2<br/>4 6 3<br/>2 4 6<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "10 3<br/>1 2 5<br/>5 7 2<br/>3 2 6<br/>10 6 3<br/>3 8 1<br/>6 4 2<br/>4 1 6<br/>6 9 4<br/>5 2 5<br/>",
+            "output": "7<br/>"
+        }
+    ],
+    "note": "<p>In the first example, you can choose the path 2-4, so the answer will be 4.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/d5483af4ccf0d72969381ef5f5b2dff6aa3b4df2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">The first example.</span> </center><p>In the second example, you can choose the path 4-1-2, so the answer will be 7.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/cdb6ee2890d8135acb2d392f8d4f95b61fd40a45.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">The second example.</span> </center>",
+    "contestId": 1004,
+    "index": "E",
+    "name": "Sonya and Ice Cream",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "greedy",
+        "shortest paths",
+        "trees"
+    ],
+    "solvedCount": 1015
+}

@@ -1,0 +1,35 @@
+{
+    "title": "F. Julia the snail",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>After hard work Igor decided to have some rest.</p><p>He decided to have a snail. He bought an aquarium with a slippery tree trunk in the center, and put a snail named Julia into the aquarium.</p><p>Igor noticed that sometimes Julia wants to climb onto the trunk, but can't do it because the trunk is too slippery. To help the snail Igor put some ropes on the tree, fixing the lower end of the <span class=\"tex-span\"><i>i</i></span>-th rope on the trunk on the height <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> above the ground, and the higher end on the height <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> above the ground.</p><p>For some reason no two ropes share the same position of the higher end, i.e. all <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> are distinct. Now Julia can move down at any place of the trunk, and also move up from the lower end of some rope to its higher end. Igor is proud of his work, and sometimes think about possible movements of the snail. Namely, he is interested in the following questions: \u00abSuppose the snail is on the trunk at height <span class=\"tex-span\"><i>x</i></span> now. What is the highest position on the trunk the snail can get on if it would never be lower than <span class=\"tex-span\"><i>x</i></span> or higher than <span class=\"tex-span\"><i>y</i></span>?\u00bb Please note that Julia can't move from a rope to the trunk before it reaches the higher end of the rope, and Igor is interested in the highest position <span class=\"tex-font-style-bf\">on the tree trunk</span>.</p><p>Igor is interested in many questions, and not always can answer them. Help him, write a program that answers these questions.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2009\u2264\u2009\u2009<i>n</i>\u2009\u2264\u2009\u2009100000</span>)\u00a0\u2014 the height of the trunk.</p><p>The second line contains single integer <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2009\u2264\u2009\u2009<i>m</i>\u2009\u2009\u2264\u2009\u2009100000</span>)\u00a0\u2014 the number of ropes.</p><p>The next <span class=\"tex-span\"><i>m</i></span> lines contain information about the ropes.</p><p>The <span class=\"tex-span\"><i>i</i></span>-th of these lines contains two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the heights on which the lower and the higher ends of the <span class=\"tex-span\"><i>i</i></span>-th rope are fixed, respectively. It is guaranteed that all <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> are distinct.</p><p>The next line contains single integer <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2009\u2264\u2009\u2009<i>q</i>\u2009\u2009\u2264\u2009\u2009100000</span>)\u00a0\u2014 the number of questions.</p><p>The next <span class=\"tex-span\"><i>q</i></span> lines contain information about the questions.</p><p>Each of these lines contain two integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\">1\u2009\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>y</i>\u2009\u2264\u2009<i>n</i></span>), where <span class=\"tex-span\"><i>x</i></span> is the height where Julia starts (and the height Julia can't get lower than), and <span class=\"tex-span\"><i>y</i></span> is the height Julia can't get higher than.</p>",
+    "outputSpecification": "<p>For each question print the maximum reachable for Julia height.</p>",
+    "samples": [
+        {
+            "input": "8<br/>4<br/>1 2<br/>3 4<br/>2 5<br/>6 7<br/>5<br/>1 2<br/>1 4<br/>1 6<br/>2 7<br/>6 8<br/>",
+            "output": "2<br/>2<br/>5<br/>5<br/>7<br/>"
+        },
+        {
+            "input": "10<br/>10<br/>3 7<br/>1 4<br/>1 6<br/>5 5<br/>1 1<br/>3 9<br/>7 8<br/>1 2<br/>3 3<br/>7 10<br/>10<br/>2 4<br/>1 7<br/>3 4<br/>3 5<br/>2 8<br/>2 5<br/>5 5<br/>3 5<br/>7 7<br/>3 10<br/>",
+            "output": "2<br/>7<br/>3<br/>3<br/>2<br/>2<br/>5<br/>3<br/>7<br/>10<br/>"
+        }
+    ],
+    "note": "<p>The picture of the first sample is on the left, the picture of the second sample is on the right. Ropes' colors are just for clarity, they don't mean anything.</p><center> <img class=\"tex-graphics\" height=\"302px\" src=\"https://espresso.codeforces.com/2c807017067ff53dad1d58949731ed37c848babf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"567px\"/> </center>",
+    "contestId": 793,
+    "index": "F",
+    "name": "Julia the snail",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dp"
+    ],
+    "solvedCount": 523
+}

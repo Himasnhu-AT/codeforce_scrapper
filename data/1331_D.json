@@ -1,0 +1,42 @@
+{
+    "title": "D. Again?",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"input-specification\"><div class=\"section-title\">Input</div><p>The only line of the input contains a 7-digit hexadecimal number. The first \"digit\" of the number is letter A, the rest of the \"digits\" are decimal digits 0-9.</p></div><div class=\"output-specification\"><div class=\"section-title\">Output</div><p>Output a single integer.</p></div><div class=\"sample-tests\"><div class=\"section-title\">Examples</div><div class=\"sample-test\"><div class=\"input\"><div class=\"title\">Input</div><pre>\nA278832\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n0\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\nA089956\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n0\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\nA089957\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n1\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\nA144045\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n1\n</pre></div></div></div>",
+    "inputSpecification": "<p>The only line of the input contains a 7-digit hexadecimal number. The first \"digit\" of the number is letter A, the rest of the \"digits\" are decimal digits 0-9.</p>",
+    "outputSpecification": "<p>Output a single integer.</p>",
+    "samples": [
+        {
+            "input": "\nA278832\n",
+            "output": "\n0\n"
+        },
+        {
+            "input": "\nA089956\n",
+            "output": "\n0\n"
+        },
+        {
+            "input": "\nA089957\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\nA144045\n",
+            "output": "\n1\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1331,
+    "index": "D",
+    "name": "Again?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "solvedCount": 11863
+}

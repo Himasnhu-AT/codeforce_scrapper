@@ -1,0 +1,24 @@
+{
+    "title": "E. Distinguish Bell states",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two qubits which are guaranteed to be in one of the Bell states:</p><ul><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3bd300187bec68a260f07bb41226aad198f9aef0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/2b05513e9a357b2122b3d30583a71885a247a3b8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8c3b892f53b8bf7ed84f55a5087ada2ab50dd4d1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d094280f4b9897c9aec5e2ba5e920d00e37656fc.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></li></ul><p>Your task is to perform necessary operations and measurements to figure out which state it was and to return the index of that state (0 for <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/aec27febc80bfeb882cb96d33386f048ce011703.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, 1 for <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4c7fe2c174363ceb367b7686e92c7fb9a36da8bf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> etc.). The state of the qubits after the operations does not matter.</p>",
+    "inputSpecification": "<p>You have to implement an operation which takes an array of two qubits as an input and returns an integer. </p><p>Your code should have the following signature:</p><pre class=\"verbatim\">namespace Solution {<br/>    open Microsoft.Quantum.Primitive;<br/>    open Microsoft.Quantum.Canon;<br/><br/>    operation Solve (qs : Qubit[]) : Int<br/>    {<br/>        body<br/>        {<br/>            // your code here<br/>        }<br/>    }<br/>}</pre>",
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1001,
+    "index": "E",
+    "name": "Distinguish Bell states",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 554
+}

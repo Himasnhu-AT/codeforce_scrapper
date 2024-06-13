@@ -1,0 +1,37 @@
+{
+    "title": "A. Sorting by Subsequences",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a sequence <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> consisting of <span class=\"tex-font-style-bf\">different</span> integers. It is required to split this sequence into the <span class=\"tex-font-style-bf\">maximum</span> number of subsequences such that after sorting integers in each of them in increasing order, the total sequence also will be sorted in increasing order.</p><p>Sorting integers in a subsequence is a process such that the numbers included in a subsequence are ordered in increasing order, and the numbers which are not included in a subsequence don't change their places.</p><p>Every element of the sequence must appear in exactly one subsequence.</p>",
+    "inputSpecification": "<p>The first line of input data contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the length of the sequence.</p><p>The second line of input data contains <span class=\"tex-span\"><i>n</i></span> different integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the elements of the sequence. It is guaranteed that all elements of the sequence are distinct.</p>",
+    "outputSpecification": "<p>In the first line print the maximum number of subsequences <span class=\"tex-span\"><i>k</i></span>, which the original sequence can be split into while fulfilling the requirements.</p><p>In the next <span class=\"tex-span\"><i>k</i></span> lines print the description of subsequences in the following format: the number of elements in subsequence <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009&lt;\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>), then <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">1</sub>,\u2009<i>l</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>l</i><sub class=\"lower-index\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 indices of these elements in the original sequence. </p><p>Indices could be printed in any order. Every index from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> must appear in output <span class=\"tex-font-style-bf\">exactly once</span>.</p><p>If there are several possible answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "6<br/>3 2 1 6 5 4<br/>",
+            "output": "4<br/>2 1 3<br/>1 2<br/>2 4 6<br/>1 5<br/>"
+        },
+        {
+            "input": "6<br/>83 -75 -49 11 37 62<br/>",
+            "output": "1<br/>6 1 2 3 4 5 6<br/>"
+        }
+    ],
+    "note": "<p>In the first sample output:</p><p>After sorting the first subsequence we will get sequence <span class=\"tex-span\">1\u00a02\u00a03\u00a06\u00a05\u00a04</span>.</p><p>Sorting the second subsequence changes nothing.</p><p>After sorting the third subsequence we will get sequence <span class=\"tex-span\">1\u00a02\u00a03\u00a04\u00a05\u00a06</span>.</p><p>Sorting the last subsequence changes nothing.</p>",
+    "contestId": 843,
+    "index": "A",
+    "name": "Sorting by Subsequences",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "implementation",
+        "math",
+        "sortings"
+    ],
+    "solvedCount": 5570
+}

@@ -1,0 +1,35 @@
+{
+    "title": "B. Recursive Queries",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let us define two functions <span class=\"tex-span\"><i>f</i></span> and <span class=\"tex-span\"><i>g</i></span> on positive integer numbers. </p><center> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/affd4e3cdcadc3ba7dbceb6a2c0eb4ba928c1e4b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/120df92771639f1f51a4b216dccd3ed7c32bb859.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </p></center><p>You need to process <span class=\"tex-span\"><i>Q</i></span> queries. In each query, you will be given three integers <span class=\"tex-span\"><i>l</i></span>, <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>k</i></span>. You need to print the number of integers <span class=\"tex-span\"><i>x</i></span> between <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span> inclusive, such that <span class=\"tex-span\"><i>g</i>(<i>x</i>)\u2009=\u2009<i>k</i></span>. </p>",
+    "inputSpecification": "<p>The first line of the input contains an integer <span class=\"tex-span\"><i>Q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>Q</i>\u2009\u2264\u20092\u2009\u00d7\u200910<sup class=\"upper-index\">5</sup></span>) representing the number of queries. </p><p><span class=\"tex-span\"><i>Q</i></span> lines follow, each of which contains 3 integers <span class=\"tex-span\"><i>l</i></span>, <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20099)</span>.</p>",
+    "outputSpecification": "<p>For each query, print a single line containing the answer for that query.</p>",
+    "samples": [
+        {
+            "input": "4<br/>22 73 9<br/>45 64 6<br/>47 55 7<br/>2 62 4<br/>",
+            "output": "1<br/>4<br/>0<br/>8<br/>"
+        },
+        {
+            "input": "4<br/>82 94 6<br/>56 67 4<br/>28 59 9<br/>39 74 4<br/>",
+            "output": "3<br/>1<br/>1<br/>5<br/>"
+        }
+    ],
+    "note": "<p>In the first example:</p><ul> <li> <span class=\"tex-span\"><i>g</i>(33)\u2009=\u20099</span> as <span class=\"tex-span\"><i>g</i>(33)\u2009=\u2009<i>g</i>(3\u2009\u00d7\u20093)\u2009=\u2009<i>g</i>(9)\u2009=\u20099</span> </li><li> <span class=\"tex-span\"><i>g</i>(47)\u2009=\u2009<i>g</i>(48)\u2009=\u2009<i>g</i>(60)\u2009=\u2009<i>g</i>(61)\u2009=\u20096</span> </li><li> There are no such integers between <span class=\"tex-span\">47</span> and <span class=\"tex-span\">55</span>. </li><li> <span class=\"tex-span\"><i>g</i>(4)\u2009=\u2009<i>g</i>(14)\u2009=\u2009<i>g</i>(22)\u2009=\u2009<i>g</i>(27)\u2009=\u2009<i>g</i>(39)\u2009=\u2009<i>g</i>(40)\u2009=\u2009<i>g</i>(41)\u2009=\u2009<i>g</i>(58)\u2009=\u20094</span> </li></ul>",
+    "contestId": 932,
+    "index": "B",
+    "name": "Recursive Queries",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dfs and similar"
+    ],
+    "solvedCount": 7827
+}

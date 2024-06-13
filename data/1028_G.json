@@ -1,0 +1,30 @@
+{
+    "title": "G. Guess the number",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>This problem is interactive.</p><p>You should guess hidden number $$$x$$$ which is between $$$1$$$ and $$$M = 10004205361450474$$$, inclusive.</p><p>You could use up to $$$5$$$ queries.</p><p>In each query, you can output an increasing sequence of $$$k \\leq x$$$ integers, each between $$$1$$$ and $$$M$$$, inclusive, and you will obtain one of the following as an answer:</p><ul> <li> either the hidden number belongs to your query sequence, in this case you immediately win; </li><li> or you will be given where the hidden number is located with respect to your query sequence, that is, either it is less than all numbers from the sequence, greater than all numbers from the sequence, or you will be given such an $$$i$$$ that the hidden number $$$x$$$ is between the $$$i$$$-th and the $$$(i+1)$$$-st numbers of your sequence. </li></ul><p>See the interaction section for clarity.</p><p>Be aware that the interactor is <span class=\"tex-font-style-it\">adaptive</span>, i.e. the hidden number can depend on queries the solution makes. However, it is guaranteed that for any solution the interactor works non-distinguishable from the situation when the hidden number is fixed beforehand.</p><p>Hacks are allowed only with fixed hidden number. A hack is represented by a single integer between $$$1$$$ and $$$M$$$. In all pretests the hidden number is fixed as well.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\u00a0<br/>2<br/><br/>0<br/><br/>-1",
+            "output": "2 2 3<br/><br/>2 20 30<br/><br/>3 5 7 9"
+        }
+    ],
+    "note": "<p>In the first example the number $$$5$$$ is hidden.</p>",
+    "contestId": 1028,
+    "index": "G",
+    "name": "Guess the number",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "interactive"
+    ],
+    "solvedCount": 533
+}

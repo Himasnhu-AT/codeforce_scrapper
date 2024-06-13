@@ -1,0 +1,35 @@
+{
+    "title": "E. Vasya's Function",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya is studying number theory. He has denoted a function <span class=\"tex-span\"><i>f</i>(<i>a</i>,\u2009<i>b</i>)</span> such that:</p><ul> <li> <span class=\"tex-span\"><i>f</i>(<i>a</i>,\u20090)\u2009=\u20090</span>; </li><li> <span class=\"tex-span\"><i>f</i>(<i>a</i>,\u2009<i>b</i>)\u2009=\u20091\u2009+\u2009<i>f</i>(<i>a</i>,\u2009<i>b</i>\u2009-\u2009<i>gcd</i>(<i>a</i>,\u2009<i>b</i>))</span>, where <span class=\"tex-span\"><i>gcd</i>(<i>a</i>,\u2009<i>b</i>)</span> is the greatest common divisor of <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>. </li></ul><p>Vasya has two numbers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>, and he wants to calculate <span class=\"tex-span\"><i>f</i>(<i>x</i>,\u2009<i>y</i>)</span>. He tried to do it by himself, but found out that calculating this function the way he wants to do that might take very long time. So he decided to ask you to implement a program that will calculate this function swiftly.</p>",
+    "inputSpecification": "<p>The first line contains two integer numbers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u200910<sup class=\"upper-index\">12</sup></span>).</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>f</i>(<i>x</i>,\u2009<i>y</i>)</span>.</p>",
+    "samples": [
+        {
+            "input": "3 5<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "6 3<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 837,
+    "index": "E",
+    "name": "Vasya's Function",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 1523
+}

@@ -1,0 +1,39 @@
+{
+    "title": "K. Road Widening",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mayor of city S just hates trees and lawns. They take so much space and there could be a road on the place they occupy!</p><p>The Mayor thinks that one of the main city streets could be considerably widened on account of lawn nobody needs anyway. Moreover, that might help reduce the car jams which happen from time to time on the street.</p><p>The street is split into <span class=\"tex-span\"><i>n</i></span> equal length parts from left to right, the <span class=\"tex-span\"><i>i</i></span>-th part is characterized by two integers: width of road <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span> and width of lawn <span class=\"tex-span\"><i>g</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2a19296ac697a67ed640472e82bdc132215de8a8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>For each of <span class=\"tex-span\"><i>n</i></span> parts the Mayor should decide the size of lawn to demolish. For the <span class=\"tex-span\"><i>i</i></span>-th part he can reduce lawn width by integer <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>g</i><sub class=\"lower-index\"><i>i</i></sub></span>). After it new road width of the <span class=\"tex-span\"><i>i</i></span>-th part will be equal to <span class=\"tex-span\"><i>s</i>'<sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009+\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and new lawn width will be equal to <span class=\"tex-span\"><i>g</i>'<sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>g</i><sub class=\"lower-index\"><i>i</i></sub>\u2009-\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>On the one hand, the Mayor wants to demolish as much lawn as possible (and replace it with road). On the other hand, he does not want to create a rapid widening or narrowing of the road, which would lead to car accidents. To avoid that, the Mayor decided that width of the road for consecutive parts should differ by at most <span class=\"tex-span\">1</span>, i.e. for each <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>n</i></span>) the inequation <span class=\"tex-span\">|<i>s</i>'<sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub>\u2009-\u2009<i>s</i>'<sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u20091</span> should hold. Initially this condition might not be true.</p><p>You need to find the the total width of lawns the Mayor will destroy according to his plan.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 number of parts of the street.</p><p>Each of the following <span class=\"tex-span\"><i>n</i></span> lines contains two integers <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>g</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>g</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 current width of road and width of the lawn on the <span class=\"tex-span\"><i>i</i></span>-th part of the street.</p>",
+    "outputSpecification": "<p>In the first line print the total width of lawns which will be removed.</p><p>In the second line print <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>s</i>'<sub class=\"lower-index\">1</sub>,\u2009<i>s</i>'<sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i>'<sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>s</i>'<sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009+\u2009<i>g</i><sub class=\"lower-index\"><i>i</i></sub></span>) \u2014 new widths of the road starting from the first part and to the last.</p><p>If there is no solution, print the only integer <span class=\"tex-font-style-tt\">-1</span> in the first line.</p>",
+    "samples": [
+        {
+            "input": "3<br/>4 5<br/>4 5<br/>4 10<br/>",
+            "output": "16<br/>9 9 10 <br/>"
+        },
+        {
+            "input": "4<br/>1 100<br/>100 1<br/>1 100<br/>100 1<br/>",
+            "output": "202<br/>101 101 101 101 <br/>"
+        },
+        {
+            "input": "3<br/>1 1<br/>100 100<br/>1 1<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 883,
+    "index": "K",
+    "name": "Road Widening",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 1076
+}

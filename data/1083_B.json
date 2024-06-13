@@ -1,0 +1,38 @@
+{
+    "title": "B. The Fair Nut and Strings",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Recently, the Fair Nut has written $$$k$$$ strings of length $$$n$$$, consisting of letters \"<span class=\"tex-font-style-tt\">a</span>\" and \"<span class=\"tex-font-style-tt\">b</span>\". He calculated $$$c$$$\u00a0\u2014 the number of strings that are prefixes of at least one of the written strings. <span class=\"tex-font-style-bf\">Every string was counted only one time</span>.</p><p>Then, he lost his sheet with strings. He remembers that all written strings were lexicographically <span class=\"tex-font-style-bf\">not smaller</span> than string $$$s$$$ and <span class=\"tex-font-style-bf\">not bigger</span> than string $$$t$$$. He is interested: what is the maximum value of $$$c$$$ that he could get.</p><p>A string $$$a$$$ is lexicographically smaller than a string $$$b$$$ if and only if one of the following holds:</p><ul><li> $$$a$$$ is a prefix of $$$b$$$, but $$$a \\ne b$$$;</li><li> in the first position where $$$a$$$ and $$$b$$$ differ, the string $$$a$$$ has a letter that appears earlier in the alphabet than the corresponding letter in $$$b$$$.</li></ul>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\leq n \\leq 5 \\cdot 10^5$$$, $$$1 \\leq k \\leq 10^9$$$).</p><p>The second line contains a string $$$s$$$ ($$$|s| = n$$$)\u00a0\u2014 the string consisting of letters \"<span class=\"tex-font-style-tt\">a</span>\" and \"<span class=\"tex-font-style-tt\">b</span>.</p><p>The third line contains a string $$$t$$$ ($$$|t| = n$$$)\u00a0\u2014 the string consisting of letters \"<span class=\"tex-font-style-tt\">a</span>\" and \"<span class=\"tex-font-style-tt\">b</span>.</p><p>It is guaranteed that string $$$s$$$ is lexicographically not bigger than $$$t$$$.</p>",
+    "outputSpecification": "<p>Print one number\u00a0\u2014 maximal value of $$$c$$$.</p>",
+    "samples": [
+        {
+            "input": "\n2 4\naa\nbb\n",
+            "output": "\n6\n"
+        },
+        {
+            "input": "\n3 3\naba\nbba\n",
+            "output": "\n8\n"
+        },
+        {
+            "input": "\n4 5\nabbb\nbaaa\n",
+            "output": "\n8\n"
+        }
+    ],
+    "note": "<p>In the first example, Nut could write strings \"<span class=\"tex-font-style-tt\">aa</span>\", \"<span class=\"tex-font-style-tt\">ab</span>\", \"<span class=\"tex-font-style-tt\">ba</span>\", \"<span class=\"tex-font-style-tt\">bb</span>\". These $$$4$$$ strings are prefixes of at least one of the written strings, as well as \"<span class=\"tex-font-style-tt\">a</span>\" and \"<span class=\"tex-font-style-tt\">b</span>\". Totally, $$$6$$$ strings.</p><p>In the second example, Nut could write strings \"<span class=\"tex-font-style-tt\">aba</span>\", \"<span class=\"tex-font-style-tt\">baa</span>\", \"<span class=\"tex-font-style-tt\">bba</span>\".</p><p>In the third example, there are only two different strings that Nut could write. If both of them are written, $$$c=8$$$.</p>",
+    "contestId": 1083,
+    "index": "B",
+    "name": "The Fair Nut and Strings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "strings"
+    ],
+    "solvedCount": 1877
+}

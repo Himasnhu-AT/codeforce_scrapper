@@ -1,0 +1,38 @@
+{
+    "title": "B. Heidi and Library (medium)",
+    "timeLimit": {
+        "value": 10.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Whereas humans nowadays read fewer and fewer books on paper, book readership among marmots has surged. Heidi has expanded the library and is now serving longer request sequences.</p>",
+    "inputSpecification": "<p>Same as the easy version, but the limits have changed: <span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>k</i>\u2009\u2264\u2009400\u2009000</span>.</p>",
+    "outputSpecification": "<p>Same as the easy version.</p>",
+    "samples": [
+        {
+            "input": "4 100<br/>1 2 2 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "4 1<br/>1 2 2 1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "4 2<br/>1 2 3 1<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 802,
+    "index": "B",
+    "name": "Heidi and Library (medium)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "greedy"
+    ],
+    "solvedCount": 1073
+}

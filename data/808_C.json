@@ -1,0 +1,39 @@
+{
+    "title": "C. Tea Party",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp invited all his friends to the tea party to celebrate the holiday. He has <span class=\"tex-span\"><i>n</i></span> cups, one for each of his <span class=\"tex-span\"><i>n</i></span> friends, with volumes <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. His teapot stores <span class=\"tex-span\"><i>w</i></span> milliliters of tea (<span class=\"tex-span\"><i>w</i>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\">1</sub>\u2009+\u2009<i>a</i><sub class=\"lower-index\">2</sub>\u2009+\u2009...\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>). Polycarp wants to pour tea in cups in such a way that:</p><ul> <li> Every cup will contain tea for at least half of its volume </li><li> Every cup will contain integer number of milliliters of tea </li><li> All the tea from the teapot will be poured into cups </li><li> All friends will be <span class=\"tex-font-style-it\">satisfied</span>. </li></ul><p>Friend with cup <span class=\"tex-span\"><i>i</i></span> won't be <span class=\"tex-font-style-it\">satisfied</span>, if there exists such cup <span class=\"tex-span\"><i>j</i></span> that cup <span class=\"tex-span\"><i>i</i></span> contains less tea than cup <span class=\"tex-span\"><i>j</i></span> but <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&gt;\u2009<i>a</i><sub class=\"lower-index\"><i>j</i></sub></span>.</p><p>For each cup output how many milliliters of tea should be poured in it. If it's impossible to pour all the tea and satisfy all conditions then output <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "inputSpecification": "<p>The first line contains two integer numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>w</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e5d84551489cb4fc0bb3ccad99a9b61ed555797d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>).</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>).</p>",
+    "outputSpecification": "<p>Output how many milliliters of tea every cup should contain. If there are multiple answers, print any of them.</p><p>If it's impossible to pour all the tea and satisfy all conditions then output <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "samples": [
+        {
+            "input": "2 10<br/>8 7<br/>",
+            "output": "6 4 <br/>"
+        },
+        {
+            "input": "4 4<br/>1 1 1 1<br/>",
+            "output": "1 1 1 1 <br/>"
+        },
+        {
+            "input": "3 10<br/>9 8 10<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the third example you should pour to the first cup at least 5 milliliters, to the second one at least 4, to the third one at least 5. It sums up to 14, which is greater than 10 milliliters available.</p>",
+    "contestId": 808,
+    "index": "C",
+    "name": "Tea Party",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 5989
+}

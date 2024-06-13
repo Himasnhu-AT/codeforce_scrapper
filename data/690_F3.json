@@ -1,0 +1,29 @@
+{
+    "title": "F3. Tree of Life (hard)",
+    "timeLimit": {
+        "value": 8.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>To add insult to injury, the zombies have taken all but two drawings from Heidi! Please help her recover the Tree of Life from only these two drawings.</p>",
+    "inputSpecification": "<p>The input format is the same as in the medium version, except that now the bound on <span class=\"tex-span\"><i>n</i></span> is <span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span> and that <span class=\"tex-span\"><i>k</i>\u2009=\u20092</span>.</p>",
+    "outputSpecification": "<p>The same as in the medium version.</p>",
+    "samples": [
+        {
+            "input": "1<br/>9 2<br/>6<br/>4 3<br/>5 4<br/>6 1<br/>8 6<br/>8 2<br/>7 1<br/>5<br/>8 6<br/>8 7<br/>8 1<br/>7 3<br/>5 1<br/>",
+            "output": "YES<br/>2 1<br/>3 1<br/>5 4<br/>6 5<br/>7 6<br/>8 5<br/>9 8<br/>1 4<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 690,
+    "index": "F3",
+    "name": "Tree of Life (hard)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "trees"
+    ],
+    "solvedCount": 46
+}

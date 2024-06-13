@@ -1,0 +1,38 @@
+{
+    "title": "E. Student's Camp",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Alex studied well and won the trip to student camp Alushta, located on the seashore. </p><p>Unfortunately, it's the period of the strong winds now and there is a chance the camp will be destroyed! Camp building can be represented as the rectangle of <span class=\"tex-span\"><i>n</i>\u2009+\u20092</span> concrete blocks height and <span class=\"tex-span\"><i>m</i></span> blocks width.</p><p>Every day there is a breeze blowing from the sea. Each block, except for the blocks of the upper and lower levers, such that there is no block to the left of it is destroyed with the probability <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d205a4be5f9d695a0646c69025e6a54ee3ac7d52.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Similarly, each night the breeze blows in the direction to the sea. Thus, each block (again, except for the blocks of the upper and lower levers) such that there is no block to the right of it is destroyed with the same probability <span class=\"tex-span\"><i>p</i></span>. Note, that blocks of the upper and lower level are <span class=\"tex-font-style-bf\">indestructible</span>, so there are only <span class=\"tex-span\"><i>n</i>\u00b7<i>m</i></span> blocks that can be destroyed.</p><p>The period of the strong winds will last for <span class=\"tex-span\"><i>k</i></span> days and <span class=\"tex-span\"><i>k</i></span> nights. If during this period the building will split in at least two connected components, it will collapse and Alex will have to find another place to spend summer.</p><p>Find the probability that Alex won't have to look for other opportunities and will be able to spend the summer in this camp.</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091500</span>) that define the size of the destructible part of building.</p><p>The second line of the input contains two integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) that define the probability <span class=\"tex-span\"><i>p</i></span>. It's guaranteed that integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> are coprime. </p><p>The third line contains a single integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009100\u2009000</span>)\u00a0\u2014 the number of days and nights strong wind will blow for.</p>",
+    "outputSpecification": "<p>Consider the answer as an irreducible fraction is equal to <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c443c7703e51f03d0eece0b96b9e84e425878209.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Print one integer equal to <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/46a07a0832c5d2a29e7744cd0f78b236b5c8d22d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. It's guaranteed that within the given constraints <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4457f0abe60184adcf8d578febe006b800a12494.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "2 2<br/>1 2<br/>1<br/>",
+            "output": "937500007<br/>"
+        },
+        {
+            "input": "5 1<br/>3 10<br/>1<br/>",
+            "output": "95964640<br/>"
+        },
+        {
+            "input": "3 3<br/>1 10<br/>5<br/>",
+            "output": "927188454<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, each of the four blocks is destroyed with the probability <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/eb946338365d9781f7d2e9ec692c26702d0ae3a7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. There are <span class=\"tex-span\">7</span> scenarios that result in building not collapsing, and the probability we are looking for is equal to <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d952828d9a444bd03168321a86984408b0e10b27.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, so you should print <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7f4efe64265b7f037ad984f8fd40cb932822d500.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/59f3ebd27f9ff51275182a22d64d5c143c015f4c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"378px\"/> </center>",
+    "contestId": 708,
+    "index": "E",
+    "name": "Student's Camp",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "math"
+    ],
+    "solvedCount": 941
+}

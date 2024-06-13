@@ -1,0 +1,36 @@
+{
+    "title": "F. Random Query",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array <span class=\"tex-span\"><i>a</i></span> consisting of <span class=\"tex-span\"><i>n</i></span> positive integers. You pick two integer numbers <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span> from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, inclusive (numbers are picked randomly, equiprobably and independently). If <span class=\"tex-span\"><i>l</i>\u2009&gt;\u2009<i>r</i></span>, then you swap values of <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span>. You have to calculate the expected value of the number of unique elements in segment of the array from index <span class=\"tex-span\"><i>l</i></span> to index <span class=\"tex-span\"><i>r</i></span>, inclusive (<span class=\"tex-span\">1</span>-indexed).</p>",
+    "inputSpecification": "<p>The first line contains one integer number <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>)</span>. The second line contains <span class=\"tex-span\"><i>n</i></span> integer numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>, ... <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>)</span> \u2014 elements of the array.</p>",
+    "outputSpecification": "<p>Print one number \u2014 the expected number of unique elements in chosen segment. </p><p>Your answer will be considered correct if its absolute or relative error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20094</sup></span> \u2014 formally, the answer is correct if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8e6753bb7c233d712f20d63937221dcfd71cab0e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <span class=\"tex-span\"><i>x</i></span> is jury's answer, and <span class=\"tex-span\"><i>y</i></span> is your answer.</p>",
+    "samples": [
+        {
+            "input": "2<br/>1 2<br/>",
+            "output": "1.500000<br/>"
+        },
+        {
+            "input": "2<br/>2 2<br/>",
+            "output": "1.000000<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 846,
+    "index": "F",
+    "name": "Random Query",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "math",
+        "probabilities",
+        "two pointers"
+    ],
+    "solvedCount": 2213
+}

@@ -1,0 +1,33 @@
+{
+    "title": "A. Love Triangle",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>As you could know there are no male planes nor female planes. However, each plane on Earth likes some other plane. There are <span class=\"tex-span\"><i>n</i></span> planes on Earth, numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, and the plane with number <span class=\"tex-span\"><i>i</i></span> likes the plane with number <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>i</i></sub></span>, where <span class=\"tex-span\">1\u2009\u2264\u2009<i>f</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span> and <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>i</i></span>.</p><p>We call a love triangle a situation in which plane <span class=\"tex-span\"><i>A</i></span> likes plane <span class=\"tex-span\"><i>B</i></span>, plane <span class=\"tex-span\"><i>B</i></span> likes plane <span class=\"tex-span\"><i>C</i></span> and plane <span class=\"tex-span\"><i>C</i></span> likes plane <span class=\"tex-span\"><i>A</i></span>. Find out if there is any love triangle on Earth.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20095000</span>)\u00a0\u2014 the number of planes.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">1</sub>,\u2009<i>f</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>f</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>f</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>i</i></span>), meaning that the <span class=\"tex-span\"><i>i</i></span>-th plane likes the <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>i</i></sub></span>-th.</p>",
+    "outputSpecification": "<p>Output \u00ab<span class=\"tex-font-style-tt\">YES</span>\u00bb if there is a love triangle consisting of planes on Earth. Otherwise, output \u00ab<span class=\"tex-font-style-tt\">NO</span>\u00bb.</p><p>You can output any letter in lower case or in upper case.</p>",
+    "samples": [
+        {
+            "input": "5<br/>2 4 5 1 3<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "5<br/>5 5 5 5 1<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>In first example plane <span class=\"tex-span\">2</span> likes plane <span class=\"tex-span\">4</span>, plane <span class=\"tex-span\">4</span> likes plane <span class=\"tex-span\">1</span>, plane <span class=\"tex-span\">1</span> likes plane <span class=\"tex-span\">2</span> and that is a love triangle.</p><p>In second example there are no love triangles.</p>",
+    "contestId": 939,
+    "index": "A",
+    "name": "Love Triangle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "graphs"
+    ],
+    "solvedCount": 24446
+}

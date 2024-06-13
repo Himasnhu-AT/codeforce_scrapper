@@ -1,0 +1,47 @@
+{
+    "title": "D1. The Wall (easy)",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">\"The zombies are lurking outside. Waiting. Moaning. And when they come...\"</span></p><p><span class=\"tex-font-style-it\">\"When they come?\"</span></p><p><span class=\"tex-font-style-it\">\"I hope the Wall is high enough.\"</span></p><p>Zombie attacks have hit the Wall, our line of defense in the North. Its protection is failing, and cracks are showing. In places, gaps have appeared, splitting the wall into multiple segments. We call on <span class=\"tex-font-style-it\">you</span> for help. Go forth and explore the wall! Report how many disconnected segments there are.</p><p>The wall is a two-dimensional structure made of bricks. Each brick is one unit wide and one unit high. Bricks are stacked on top of each other to form columns that are up to <span class=\"tex-span\"><i>R</i></span> bricks high. Each brick is placed either on the ground or directly on top of another brick. Consecutive non-empty columns form a <span class=\"tex-font-style-it\">wall segment</span>. The entire wall, all the segments and empty columns in-between, is <span class=\"tex-span\"><i>C</i></span> columns wide.</p>",
+    "inputSpecification": "<p>The first line of the input consists of two space-separated integers <span class=\"tex-span\"><i>R</i></span> and <span class=\"tex-span\"><i>C</i></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>R</i>,\u2009<i>C</i>\u2009\u2264\u2009100</span>. The next <span class=\"tex-span\"><i>R</i></span> lines provide a description of the columns as follows: </p><ul> <li> each of the <span class=\"tex-span\"><i>R</i></span> lines contains a string of length <span class=\"tex-span\"><i>C</i></span>, </li><li> the <span class=\"tex-span\"><i>c</i></span>-th character of line <span class=\"tex-span\"><i>r</i></span> is <span class=\"tex-font-style-tt\">B</span> if there is a brick in column <span class=\"tex-span\"><i>c</i></span> and row <span class=\"tex-span\"><i>R</i>\u2009-\u2009<i>r</i>\u2009+\u20091</span>, and <span class=\"tex-font-style-tt\">.</span> otherwise. </li></ul> The input will contain at least one character <span class=\"tex-font-style-tt\">B</span> and it will be valid.",
+    "outputSpecification": "<p>The number of wall segments in the input configuration.</p>",
+    "samples": [
+        {
+            "input": "3 7<br/>.......<br/>.......<br/>.BB.B..<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "4 5<br/>..B..<br/>..B..<br/>B.B.B<br/>BBB.B<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "4 6<br/>..B...<br/>B.B.BB<br/>BBB.BB<br/>BBBBBB<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "1 1<br/>B<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "10 7<br/>.......<br/>.......<br/>.......<br/>.......<br/>.......<br/>.......<br/>.......<br/>.......<br/>...B...<br/>B.BB.B.<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "8 8<br/>........<br/>........<br/>........<br/>........<br/>.B......<br/>.B.....B<br/>.B.....B<br/>.BB...BB<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In the first sample case, the 2nd and 3rd columns define the first wall segment, and the 5th column defines the second.</p>",
+    "contestId": 690,
+    "index": "D1",
+    "name": "The Wall (easy)",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 2564
+}

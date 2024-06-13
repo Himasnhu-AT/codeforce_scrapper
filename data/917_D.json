@@ -1,0 +1,40 @@
+{
+    "title": "D. Stranger Trees",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Will shares a psychic connection with the Upside Down Monster, so everything the monster knows, Will knows. Suddenly, he started drawing, page after page, non-stop. Joyce, his mom, and Chief Hopper put the drawings together, and they realized, it's a labeled tree!</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1c116a1f726c026673d4997f3fce49ed05fe4092.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>A tree is a connected acyclic graph. Will's tree has <span class=\"tex-span\"><i>n</i></span> vertices. Joyce and Hopper don't know what that means, so they're investigating this tree and similar trees. For each <span class=\"tex-span\"><i>k</i></span> such that <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u2009-\u20091</span>, they're going to investigate all labeled trees with <span class=\"tex-span\"><i>n</i></span> vertices that share exactly <span class=\"tex-span\"><i>k</i></span> edges with Will's tree. Two labeled trees are different if and only if there's a pair of vertices <span class=\"tex-span\">(<i>v</i>,\u2009<i>u</i>)</span> such that there's an edge between <span class=\"tex-span\"><i>v</i></span> and <span class=\"tex-span\"><i>u</i></span> in one tree and not in the other one.</p><p>Hopper and Joyce want to know how much work they have to do, so they asked you to tell them the number of labeled trees with <span class=\"tex-span\"><i>n</i></span> vertices that share exactly <span class=\"tex-span\"><i>k</i></span> edges with Will's tree, for each <span class=\"tex-span\"><i>k</i></span>. The answer could be very large, so they only asked you to tell them the answers modulo <span class=\"tex-span\">1000000007\u2009=\u200910<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The first line of input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the size of the tree.</p><p>The next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contain the edges of Will's tree. Each line contains two integers <span class=\"tex-span\"><i>v</i></span> and <span class=\"tex-span\"><i>u</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>v</i>,\u2009<i>u</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>v</i>\u2009\u2260\u2009<i>u</i></span>), endpoints of an edge. It is guaranteed that the given graph is a tree.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> integers in one line. <span class=\"tex-span\"><i>i</i></span>-th integer should be the number of the number of labeled trees with <span class=\"tex-span\"><i>n</i></span> vertices that share exactly <span class=\"tex-span\"><i>i</i>\u2009-\u20091</span> edges with Will's tree, modulo <span class=\"tex-span\">1000\u2009000\u2009007\u2009=\u200910<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2<br/>1 3<br/>",
+            "output": "0 2 1 "
+        },
+        {
+            "input": "4<br/>1 2<br/>2 3<br/>3 4<br/>",
+            "output": "1 7 7 1 "
+        },
+        {
+            "input": "4<br/>1 2<br/>1 3<br/>1 4<br/>",
+            "output": "0 9 6 1 "
+        }
+    ],
+    "note": null,
+    "contestId": 917,
+    "index": "D",
+    "name": "Stranger Trees",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "math",
+        "matrices",
+        "trees"
+    ],
+    "solvedCount": 1050
+}

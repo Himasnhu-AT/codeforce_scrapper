@@ -1,0 +1,22 @@
+{
+    "title": "07. Labyrinth-7",
+    "timeLimit": {
+        "value": 8.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>See the problem statement here: <a href=\"//codeforces.com/contest/921/problem/01\">http://codeforces.com/contest/921/problem/01</a>.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 921,
+    "index": "07",
+    "name": "Labyrinth-7",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 0
+}

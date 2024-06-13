@@ -1,0 +1,37 @@
+{
+    "title": "A. Quirky Quantifiers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"input-specification\"><div class=\"section-title\">Input</div><p>The input contains a single integer <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">10\u2009\u2264\u2009<i>a</i>\u2009\u2264\u2009999</span>).</p></div><div class=\"output-specification\"><div class=\"section-title\">Output</div><p>Output 0 or 1.</p></div><div class=\"sample-tests\"><div class=\"section-title\">Examples</div><div class=\"sample-test\"><div class=\"input\"><div class=\"title\">Input</div><pre>13<br/></pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>1<br/></pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>927<br/></pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>1<br/></pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>48<br/></pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>0<br/></pre></div></div></div>",
+    "inputSpecification": "<p>The input contains a single integer <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">10\u2009\u2264\u2009<i>a</i>\u2009\u2264\u2009999</span>).</p>",
+    "outputSpecification": "<p>Output 0 or 1.</p>",
+    "samples": [
+        {
+            "input": "13<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "927<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "48<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 952,
+    "index": "A",
+    "name": "Quirky Quantifiers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 11132
+}

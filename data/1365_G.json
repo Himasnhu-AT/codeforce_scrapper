@@ -1,0 +1,33 @@
+{
+    "title": "G. Secure Password",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is an interactive problem.</span></p><p>Ayush devised yet another scheme to set the password of his lock. The lock has $$$n$$$ slots where each slot can hold any non-negative integer. The password $$$P$$$ is a sequence of $$$n$$$ integers, $$$i$$$-th element of which goes into the $$$i$$$-th slot of the lock.</p><p>To set the password, Ayush comes up with an array $$$A$$$ of $$$n$$$ integers each in the range $$$[0, 2^{63}-1]$$$. He then sets the $$$i$$$-th element of $$$P$$$ as the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#OR\">bitwise OR</a> of all integers in the array except $$$A_i$$$.</p><p>You need to guess the password. To make a query, you can choose a non-empty subset of indices of the array and ask the <span class=\"tex-font-style-bf\">bitwise OR</span> all elements of the array with index in this subset. <span class=\"tex-font-style-bf\">You can ask no more than 13 queries</span>.</p>",
+    "inputSpecification": "<p>The first line of input contains one integer $$$n$$$ $$$(2 \\le n \\le 1000)$$$\u00a0\u2014 the number of slots in the lock.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n3\n\n1\n\n2\n\n4\n\n",
+            "output": "\n? 1 1\n\n? 1 2\n\n? 1 3\n\n! 6 5 3\n"
+        }
+    ],
+    "note": "<p>The array $$$A$$$ in the example is $$$\\{{1, 2, 4\\}}$$$. The first element of the password is bitwise OR of $$$A_2$$$ and $$$A_3$$$, the second element is bitwise OR of $$$A_1$$$ and $$$A_3$$$ and the third element is bitwise OR of $$$A_1$$$ and $$$A_2$$$. Hence the password sequence is $$$\\{{6, 5, 3\\}}$$$.</p>",
+    "contestId": 1365,
+    "index": "G",
+    "name": "Secure Password",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "constructive algorithms",
+        "interactive",
+        "math"
+    ],
+    "solvedCount": 927
+}

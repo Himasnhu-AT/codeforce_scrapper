@@ -1,0 +1,38 @@
+{
+    "title": "B. Cells Not Under Attack",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya has the square chessboard of size <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> rooks. Initially the chessboard is empty. Vasya will consequently put the rooks on the board one after another.</p><p>The cell of the field is under rook's attack, if there is at least one rook located in the same row or in the same column with this cell. If there is a rook located in the cell, this cell is also under attack.</p><p>You are given the positions of the board where Vasya will put rooks. For each rook you have to determine the number of cells which are <span class=\"tex-font-style-bf\">not under attack</span> after Vasya puts it on the board.</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009<i>min</i>(100\u2009000,\u2009<i>n</i><sup class=\"upper-index\">2</sup>)</span>)\u00a0\u2014 the size of the board and the number of rooks. </p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines contains integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the number of the row and the number of the column where Vasya will put the <span class=\"tex-span\"><i>i</i></span>-th rook. Vasya puts rooks on the board in the order they appear in the input. It is guaranteed that any cell will contain no more than one rook.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>m</i></span> integer, the <span class=\"tex-span\"><i>i</i></span>-th of them should be equal to the number of cells that are not under attack after first <span class=\"tex-span\"><i>i</i></span> rooks are put.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>1 1<br/>3 1<br/>2 2<br/>",
+            "output": "4 2 0 <br/>"
+        },
+        {
+            "input": "5 2<br/>1 5<br/>5 1<br/>",
+            "output": "16 9 <br/>"
+        },
+        {
+            "input": "100000 1<br/>300 400<br/>",
+            "output": "9999800001 <br/>"
+        }
+    ],
+    "note": "<p>On the picture below show the state of the board after put each of the three rooks. The cells which painted with grey color is not under the attack.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/b07af28703906d22db9833599ac5047e770d7d22.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 701,
+    "index": "B",
+    "name": "Cells Not Under Attack",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "math"
+    ],
+    "solvedCount": 11596
+}

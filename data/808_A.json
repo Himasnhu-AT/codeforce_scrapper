@@ -1,0 +1,37 @@
+{
+    "title": "A. Lucky Year",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Apart from having lots of holidays throughout the year, residents of Berland also have whole <span class=\"tex-font-style-it\">lucky</span> years. Year is considered <span class=\"tex-font-style-it\">lucky</span> if it has no more than <span class=\"tex-font-style-tt\">1</span> non-zero digit in its number. So years 100, 40000, 5 are <span class=\"tex-font-style-it\">lucky</span> and 12, 3001 and 12345 are not.</p><p>You are given current year in Berland. Your task is to find how long will residents of Berland wait till the next <span class=\"tex-font-style-it\">lucky</span> year.</p>",
+    "inputSpecification": "<p>The first line contains integer number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 current year in Berland.</p>",
+    "outputSpecification": "<p>Output amount of years from the current year to the next <span class=\"tex-font-style-it\">lucky</span> one.</p>",
+    "samples": [
+        {
+            "input": "4<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "201<br/>",
+            "output": "99<br/>"
+        },
+        {
+            "input": "4000<br/>",
+            "output": "1000<br/>"
+        }
+    ],
+    "note": "<p>In the first example next <span class=\"tex-font-style-it\">lucky</span> year is 5. In the second one \u2014 300. In the third \u2014 5000.</p>",
+    "contestId": 808,
+    "index": "A",
+    "name": "Lucky Year",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 9114
+}

@@ -1,0 +1,43 @@
+{
+    "title": "D. Jamie and To-do List",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">Why I have to finish so many assignments???</span></p><p>Jamie is getting very busy with his school life. He starts to forget the assignments that he has to do. He decided to write the things down on a to-do list. He assigns a value <span class=\"tex-font-style-tt\">priority</span> for each of his assignment <span class=\"tex-font-style-bf\">(lower value means more important)</span> so he can decide which he needs to spend more time on.</p><p>After a few days, Jamie finds out the list is too large that he can't even manage the list by himself! As you are a good friend of Jamie, help him write a program to support the following operations on the to-do list:</p><ul> <li> <span class=\"tex-span\"><i>set</i> <i>a</i><sub class=\"lower-index\"><i>i</i></sub> <i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00a0\u2014 Add assignment <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> to the to-do list if it is not present, and set its <span class=\"tex-font-style-tt\">priority</span> to <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>. If assignment <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is already in the to-do list, its <span class=\"tex-font-style-tt\">priority</span> <span class=\"tex-font-style-bf\">is changed</span> to <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>. </li><li> <span class=\"tex-span\"><i>remove</i> <i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00a0\u2014 Remove assignment <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> from the to-do list if it is present in it. </li><li> <span class=\"tex-span\"><i>query</i> <i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00a0\u2014 Output the number of assignments that are more important (have a <span class=\"tex-font-style-bf\">smaller</span> <span class=\"tex-font-style-tt\">priority</span> value) than assignment <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, so Jamie can decide a better schedule. Output <span class=\"tex-span\">\u2009-\u20091</span> if <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is not in the to-do list. </li><li> <span class=\"tex-span\"><i>undo</i> <i>d</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00a0\u2014 Undo all changes that have been made in the previous <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> days (not including the day of this operation) </li></ul><p>At day <span class=\"tex-span\">0</span>, the to-do list is empty. In each of the following <span class=\"tex-span\"><i>q</i></span> days, Jamie will do <span class=\"tex-font-style-bf\">exactly one</span> out of the four operations. If the operation is a <span class=\"tex-span\"><i>query</i></span>, you should <span class=\"tex-font-style-bf\">output the result of the query before proceeding to the next day</span>, or poor Jamie cannot make appropriate decisions.</p>",
+    "inputSpecification": "<p>The first line consists of a single integer <span class=\"tex-span\"><i>q</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>q</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>\u00a0\u2014 the number of operations.</p><p>The following <span class=\"tex-span\"><i>q</i></span> lines consists of the description of the operations. The <span class=\"tex-span\"><i>i</i></span>-th line consists of the operation that Jamie has done in the <span class=\"tex-span\"><i>i</i></span>-th day. The query has the following format:</p><p>The first word in the line indicates the type of operation. It must be one of the following four: <span class=\"tex-font-style-tt\">set</span>, <span class=\"tex-font-style-tt\">remove</span>, <span class=\"tex-font-style-tt\">query</span>, <span class=\"tex-font-style-tt\">undo</span>.</p><ul> <li> If it is a <span class=\"tex-font-style-tt\">set</span> operation, a string <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and an integer <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> follows <span class=\"tex-span\">(1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>. <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is the assignment that need to be set to <span class=\"tex-font-style-tt\">priority</span> <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>. </li><li> If it is a <span class=\"tex-font-style-tt\">remove</span> operation, a string <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> follows. <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is the assignment that need to be removed. </li><li> If it is a <span class=\"tex-font-style-tt\">query</span> operation, a string <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> follows. <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is the assignment that needs to be queried. </li><li> If it is a <span class=\"tex-font-style-tt\">undo</span> operation, an integer <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> follows <span class=\"tex-span\">(0\u2009\u2264\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>i</i>)</span>. <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> is the number of days that changes needed to be undone. </li></ul><p>All assignment names <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> only consists of lowercase English letters and have a length <span class=\"tex-span\">1\u2009\u2264\u2009|<i>a</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200915</span>.</p><p>It is guaranteed that the last operation is a <span class=\"tex-font-style-tt\">query</span> operation.</p>",
+    "outputSpecification": "<p>For each <span class=\"tex-font-style-tt\">query</span> operation, output a single integer\u00a0\u2014 the number of assignments that have a priority lower than assignment <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, or <span class=\"tex-span\">\u2009-\u20091</span> if <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is not in the to-do list.</p>",
+    "samples": [
+        {
+            "input": "8<br/>set chemlabreport 1<br/>set physicsexercise 2<br/>set chinesemockexam 3<br/>query physicsexercise<br/>query chinesemockexam<br/>remove physicsexercise<br/>query physicsexercise<br/>query chinesemockexam<br/>",
+            "output": "1<br/>2<br/>-1<br/>1<br/>"
+        },
+        {
+            "input": "8<br/>set physicsexercise 2<br/>set chinesemockexam 3<br/>set physicsexercise 1<br/>query physicsexercise<br/>query chinesemockexam<br/>undo 4<br/>query physicsexercise<br/>query chinesemockexam<br/>",
+            "output": "0<br/>1<br/>0<br/>-1<br/>"
+        },
+        {
+            "input": "5<br/>query economicsessay<br/>remove economicsessay<br/>query economicsessay<br/>undo 2<br/>query economicsessay<br/>",
+            "output": "-1<br/>-1<br/>-1<br/>"
+        },
+        {
+            "input": "5<br/>set economicsessay 1<br/>remove economicsessay<br/>undo 1<br/>undo 1<br/>query economicsessay<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 916,
+    "index": "D",
+    "name": "Jamie and To-do List",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "interactive",
+        "trees"
+    ],
+    "solvedCount": 493
+}

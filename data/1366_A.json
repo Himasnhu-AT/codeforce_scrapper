@@ -1,0 +1,31 @@
+{
+    "title": "A. Shovels and Swords",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp plays a well-known computer game (we won't mention its name). In this game, he can craft tools of two types \u2014 shovels and swords. To craft a shovel, Polycarp spends two sticks and one diamond; to craft a sword, Polycarp spends two diamonds and one stick.</p><p>Each tool can be sold for exactly one emerald. How many emeralds can Polycarp earn, if he has $$$a$$$ sticks and $$$b$$$ diamonds?</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$t$$$ ($$$1 \\le t \\le 1000$$$) \u2014 the number of test cases.</p><p>The only line of each test case contains two integers $$$a$$$ and $$$b$$$ ($$$0 \\le a, b \\le 10^9$$$)\u00a0\u2014 the number of sticks and the number of diamonds, respectively.</p>",
+    "outputSpecification": "<p>For each test case print one integer \u2014 the maximum number of emeralds Polycarp can earn.</p>",
+    "samples": [
+        {
+            "input": "\n4\n4 4\n1000000000 0\n7 15\n8 7\n",
+            "output": "\n2\n0\n7\n5\n"
+        }
+    ],
+    "note": "<p>In the first test case Polycarp can earn two emeralds as follows: craft one sword and one shovel.</p><p>In the second test case Polycarp does not have any diamonds, so he cannot craft anything.</p>",
+    "contestId": 1366,
+    "index": "A",
+    "name": "Shovels and Swords",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 29234
+}

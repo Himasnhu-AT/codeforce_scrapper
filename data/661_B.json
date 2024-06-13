@@ -1,0 +1,33 @@
+{
+    "title": "B. Seasons",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a name of a month. Output the season of the year to which it belongs (based on Northern hemisphere).</p>",
+    "inputSpecification": "<p>The input consists of a single string containing the name of one of the twelve months (January, February, March, April, May, June, July, August, September, October, November or December). The string is capitalized as given here.</p>",
+    "outputSpecification": "<p>Output a single string \u2014 the season of the year to which the given month belongs (winter, spring, summer or autumn). The name of the season should be in lowercase.</p>",
+    "samples": [
+        {
+            "input": "April<br/>",
+            "output": "spring<br/>"
+        },
+        {
+            "input": "November<br/>",
+            "output": "autumn<br/>"
+        }
+    ],
+    "note": "<p>Assume that winter is December through February, spring is March through May, summer is June through August and autumn is September through November.</p>",
+    "contestId": 661,
+    "index": "B",
+    "name": "Seasons",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 225
+}

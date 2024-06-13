@@ -1,0 +1,38 @@
+{
+    "title": "A. Compote",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Nikolay has <span class=\"tex-span\"><i>a</i></span> lemons, <span class=\"tex-span\"><i>b</i></span> apples and <span class=\"tex-span\"><i>c</i></span> pears. He decided to cook a compote. According to the recipe the fruits should be in the ratio <span class=\"tex-span\">1:\u20092:\u20094</span>. It means that for each lemon in the compote should be exactly <span class=\"tex-span\">2</span> apples and exactly <span class=\"tex-span\">4</span> pears. You can't crumble up, break up or cut these fruits into pieces. These fruits\u00a0\u2014 lemons, apples and pears\u00a0\u2014 should be put in the compote as whole fruits.</p><p>Your task is to determine the maximum total number of lemons, apples and pears from which Nikolay can cook the compote. It is possible that Nikolay can't use any fruits, in this case print <span class=\"tex-span\">0</span>. </p>",
+    "inputSpecification": "<p>The first line contains the positive integer <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of lemons Nikolay has. </p><p>The second line contains the positive integer <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of apples Nikolay has. </p><p>The third line contains the positive integer <span class=\"tex-span\"><i>c</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of pears Nikolay has.</p>",
+    "outputSpecification": "<p>Print the maximum total number of lemons, apples and pears from which Nikolay can cook the compote.</p>",
+    "samples": [
+        {
+            "input": "2<br/>5<br/>7<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "4<br/>7<br/>13<br/>",
+            "output": "21<br/>"
+        },
+        {
+            "input": "2<br/>3<br/>2<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first example Nikolay can use <span class=\"tex-span\">1</span> lemon, <span class=\"tex-span\">2</span> apples and <span class=\"tex-span\">4</span> pears, so the answer is <span class=\"tex-span\">1\u2009+\u20092\u2009+\u20094\u2009=\u20097</span>.</p><p>In the second example Nikolay can use <span class=\"tex-span\">3</span> lemons, <span class=\"tex-span\">6</span> apples and <span class=\"tex-span\">12</span> pears, so the answer is <span class=\"tex-span\">3\u2009+\u20096\u2009+\u200912\u2009=\u200921</span>.</p><p>In the third example Nikolay don't have enough pears to cook any compote, so the answer is <span class=\"tex-span\">0</span>. </p>",
+    "contestId": 746,
+    "index": "A",
+    "name": "Compote",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 20929
+}

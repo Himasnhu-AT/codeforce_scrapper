@@ -1,0 +1,31 @@
+{
+    "title": "D. Dasha and Chess",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">This is an interactive task.</span></p><p>Dasha and NN like playing chess. While playing a match they decided that normal chess isn't interesting enough for them, so they invented a game described below.</p><p>There are $$$666$$$ black rooks and $$$1$$$ white king on the chess board of size $$$999 \\times 999$$$. The white king wins if he gets checked by rook, or, in other words, if he moves onto the square which shares either a row or column with a black rook.</p><p>The sides take turns, starting with white. NN plays as a white king and on each of his turns he moves a king to one of the squares that are adjacent to his current position either by side or diagonally, or, formally, if the king was on the square $$$(x, y)$$$, it can move to the square $$$(nx, ny)$$$ if and only $$$\\max (|nx - x|, |ny - y|) = 1$$$ , $$$1 \\leq nx, ny \\leq 999$$$. NN is also forbidden from moving onto the squares occupied with black rooks, however, he can move onto the same row or column as a black rook.</p><p>Dasha, however, neglects playing by the chess rules, and instead of moving rooks normally she moves one of her rooks on any space devoid of other chess pieces. It is also possible that the rook would move onto the same square it was before and the position wouldn't change. However, she can't move the rook on the same row or column with the king.</p><p>Each player makes $$$2000$$$ turns, if the white king wasn't checked by a black rook during those turns, black wins. </p><p>NN doesn't like losing, but thinks the task is too difficult for him, so he asks you to write a program that will always win playing for the white king. Note that Dasha can see your king and play depending on its position.</p>",
+    "inputSpecification": "<p>In the beginning your program will receive $$$667$$$ lines from input. Each line contains two integers $$$x$$$ and $$$y$$$ ($$$1 \\leq x, y \\leq 999$$$) \u2014 the piece's coordinates. The first line contains the coordinates of the king and the next $$$666$$$ contain the coordinates of the rooks. The first coordinate denotes the number of the row where the piece is located, the second denotes the column. It is guaranteed that initially the king isn't in check and that all pieces occupy different squares.</p>",
+    "outputSpecification": "<p>After getting king checked, you program should terminate immediately without printing anything extra.</p>",
+    "samples": [
+        {
+            "input": "999 999<br/>1 1<br/>1 2<br/>2 1<br/>2 2<br/>1 3<br/>2 3<br/><...><br/>26 13<br/>26 14<br/>26 15<br/>26 16<br/><br/>1 700 800<br/><br/>2 1 2<br/><br/><...><br/><br/>-1 -1 -1<br/>",
+            "output": "<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>999 998<br/><br/>999 997<br/><br/><...><br/><br/>999 26<br/>"
+        }
+    ],
+    "note": "<p>The example is trimmed. The full initial positions of the rooks in the first test are available at <a href=\"https://pastebin.com/qQCTXgKP\">https://pastebin.com/qQCTXgKP</a>. It is not guaranteed that they will behave as in the example.</p>",
+    "contestId": 1100,
+    "index": "D",
+    "name": "Dasha and Chess",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "interactive"
+    ],
+    "solvedCount": 837
+}

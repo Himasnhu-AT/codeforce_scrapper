@@ -1,0 +1,42 @@
+{
+    "title": "A. Rounding",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya has a non-negative integer <span class=\"tex-span\"><i>n</i></span>. He wants to round it to nearest integer, which ends up with <span class=\"tex-span\">0</span>. If <span class=\"tex-span\"><i>n</i></span> already ends up with <span class=\"tex-span\">0</span>, Vasya considers it already rounded.</p><p>For example, if <span class=\"tex-span\"><i>n</i>\u2009=\u20094722</span> answer is <span class=\"tex-span\">4720</span>. If <span class=\"tex-span\"><i>n</i>\u2009=\u20095</span> Vasya can round it to <span class=\"tex-span\">0</span> or to <span class=\"tex-span\">10</span>. Both ways are correct.</p><p>For given <span class=\"tex-span\"><i>n</i></span> find out to which integer will Vasya round it.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 number that Vasya has.</p>",
+    "outputSpecification": "<p>Print result of rounding <span class=\"tex-span\"><i>n</i></span>. Pay attention that in some cases answer isn't unique. In that case print any correct answer.</p>",
+    "samples": [
+        {
+            "input": "5<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "113<br/>",
+            "output": "110<br/>"
+        },
+        {
+            "input": "1000000000<br/>",
+            "output": "1000000000<br/>"
+        },
+        {
+            "input": "5432359<br/>",
+            "output": "5432360<br/>"
+        }
+    ],
+    "note": "<p>In the first example <span class=\"tex-span\"><i>n</i>\u2009=\u20095</span>. Nearest integers, that ends up with zero are <span class=\"tex-span\">0</span> and <span class=\"tex-span\">10</span>. Any of these answers is correct, so you can print <span class=\"tex-span\">0</span> or <span class=\"tex-span\">10</span>.</p>",
+    "contestId": 898,
+    "index": "A",
+    "name": "Rounding",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 15652
+}

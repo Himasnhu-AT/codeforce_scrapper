@@ -1,0 +1,35 @@
+{
+    "title": "C2. Brain Network (medium)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Further research on zombie thought processes yielded interesting results. As we know from the previous problem, the nervous system of a zombie consists of <span class=\"tex-span\"><i>n</i></span> brains and <span class=\"tex-span\"><i>m</i></span> brain connectors joining some pairs of brains together. It was observed that the intellectual abilities of a zombie depend mainly on the topology of its nervous system. More precisely, we define the distance between two brains <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i>,\u2009<i>v</i>\u2009\u2264\u2009<i>n</i></span>) as the minimum number of brain connectors used when transmitting a thought between these two brains. The brain latency of a zombie is defined to be the maximum distance between any two of its brains. Researchers conjecture that the brain latency is the crucial parameter which determines how smart a given zombie is. Help them test this conjecture by writing a program to compute brain latencies of nervous systems.</p><p>In this problem you may assume that any nervous system given in the input is valid, i.e., it satisfies conditions (1) and (2) from the easy version.</p>",
+    "inputSpecification": "<p>The first line of the input contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100000</span>) denoting the number of brains (which are conveniently numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>) and the number of brain connectors in the nervous system, respectively. In the next <span class=\"tex-span\"><i>m</i></span> lines, descriptions of brain connectors follow. Every connector is given as a pair of brains <span class=\"tex-span\"><i>a</i>\u2002<i>b</i></span> it connects (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u2009<i>n</i></span> and <span class=\"tex-span\"><i>a</i>\u2009\u2260\u2009<i>b</i></span>).</p>",
+    "outputSpecification": "<p>Print one number \u2013 the brain latency.</p>",
+    "samples": [
+        {
+            "input": "4 3<br/>1 2<br/>1 3<br/>1 4<br/>",
+            "output": "2"
+        },
+        {
+            "input": "5 4<br/>1 2<br/>2 3<br/>3 4<br/>3 5<br/>",
+            "output": "3"
+        }
+    ],
+    "note": null,
+    "contestId": 690,
+    "index": "C2",
+    "name": "Brain Network (medium)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 3598
+}

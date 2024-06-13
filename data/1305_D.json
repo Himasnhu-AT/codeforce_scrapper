@@ -1,0 +1,32 @@
+{
+    "title": "D. Kuroni and the Celebration",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is an interactive problem.</span></p><p>After getting AC after 13 Time Limit Exceeded verdicts on a geometry problem, Kuroni went to an Italian restaurant to celebrate this holy achievement. Unfortunately, the excess sauce disoriented him, and he's now lost!</p><p>The United States of America can be modeled as a tree (why though) with $$$n$$$ vertices. The tree is rooted at vertex $$$r$$$, wherein lies Kuroni's hotel.</p><p>Kuroni has a phone app designed to help him in such emergency cases. To use the app, he has to input two vertices $$$u$$$ and $$$v$$$, and it'll return a vertex $$$w$$$, which is the lowest common ancestor of those two vertices.</p><p>However, since the phone's battery has been almost drained out from live-streaming Kuroni's celebration party, he could only use the app at most $$$\\lfloor \\frac{n}{2} \\rfloor$$$ times. After that, the phone would die and there will be nothing left to help our dear friend! :(</p><p>As the night is cold and dark, Kuroni needs to get back, so that he can reunite with his comfy bed and pillow(s). Can you help him figure out his hotel's location?</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n6\n1 4\n4 2\n5 3\n6 3\n2 3\n\n3\n\n4\n\n4\n\n",
+            "output": "\n\n\n\n\n\n\n? 5 6\n\n? 3 1\n\n? 1 2\n\n! 4"
+        }
+    ],
+    "note": "<p>Note that the example interaction contains extra empty lines so that it's easier to read. The real interaction doesn't contain any empty lines and you shouldn't print any extra empty lines as well.</p><p>The image below demonstrates the tree in the sample test:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/df1619f848490908fe36e4d1a2431126f2b546c3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 1305,
+    "index": "D",
+    "name": "Kuroni and the Celebration",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "interactive",
+        "trees"
+    ],
+    "solvedCount": 4766
+}

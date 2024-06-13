@@ -1,0 +1,39 @@
+{
+    "title": "B. Polycarp Training",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp wants to train before another programming competition. During the first day of his training he should solve exactly $$$1$$$ problem, during the second day \u2014 exactly $$$2$$$ problems, during the third day \u2014 exactly $$$3$$$ problems, and so on. During the $$$k$$$-th day he should solve $$$k$$$ problems.</p><p>Polycarp has a list of $$$n$$$ contests, the $$$i$$$-th contest consists of $$$a_i$$$ problems. During each day Polycarp has to choose <span class=\"tex-font-style-bf\">exactly one</span> of the contests he didn't solve yet and solve it. He solves <span class=\"tex-font-style-bf\">exactly $$$k$$$ problems from this contest</span>. Other problems are discarded from it. If there are no contests consisting of at least $$$k$$$ problems that Polycarp didn't solve yet during the $$$k$$$-th day, then Polycarp stops his training.</p><p>How many days Polycarp can train if he chooses the contests optimally?</p>",
+    "inputSpecification": "<p>The first line of the input contains one integer $$$n$$$ ($$$1 \\le n \\le 2 \\cdot 10^5$$$) \u2014 the number of contests.</p><p>The second line of the input contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i \\le 2 \\cdot 10^5$$$) \u2014 the number of problems in the $$$i$$$-th contest.</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the maximum number of days Polycarp can train if he chooses the contests optimally.</p>",
+    "samples": [
+        {
+            "input": "\n4\n3 1 4 1\n",
+            "output": "\n3\n"
+        },
+        {
+            "input": "\n3\n1 1 1\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n5\n1 1 1 2 2\n",
+            "output": "\n2\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1165,
+    "index": "B",
+    "name": "Polycarp Training",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 20453
+}

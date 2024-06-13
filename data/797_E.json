@@ -1,0 +1,31 @@
+{
+    "title": "E. Array Queries",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-span\"><i>a</i></span> is an array of <span class=\"tex-span\"><i>n</i></span> positive integers, all of which are not greater than <span class=\"tex-span\"><i>n</i></span>.</p><p>You have to process <span class=\"tex-span\"><i>q</i></span> queries to this array. Each query is represented by two numbers <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\"><i>k</i></span>. Several operations are performed in each query; each operation changes <span class=\"tex-span\"><i>p</i></span> to <span class=\"tex-span\"><i>p</i>\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>p</i></sub>\u2009+\u2009<i>k</i></span>. There operations are applied until <span class=\"tex-span\"><i>p</i></span> becomes greater than <span class=\"tex-span\"><i>n</i></span>. The answer to the query is the number of performed operations.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100000)</span>.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers \u2014 elements of <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span> for each <span class=\"tex-span\"><i>i</i></span> from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>).</p><p>The third line containts one integer <span class=\"tex-span\"><i>q</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>q</i>\u2009\u2264\u2009100000)</span>.</p><p>Then <span class=\"tex-span\"><i>q</i></span> lines follow. Each line contains the values of <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\"><i>k</i></span> for corresponding query <span class=\"tex-span\">(1\u2009\u2264\u2009<i>p</i>,\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>)</span>.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>q</i></span> integers, <span class=\"tex-span\"><i>i</i></span>th integer must be equal to the answer to <span class=\"tex-span\"><i>i</i></span>th query.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 1 1<br/>3<br/>1 1<br/>2 1<br/>3 1<br/>",
+            "output": "2<br/>1<br/>1<br/>"
+        }
+    ],
+    "note": "<p>Consider first example:</p><p>In first query after first operation <span class=\"tex-span\"><i>p</i>\u2009=\u20093</span>, after second operation <span class=\"tex-span\"><i>p</i>\u2009=\u20095</span>.</p><p>In next two queries <span class=\"tex-span\"><i>p</i></span> is greater than <span class=\"tex-span\"><i>n</i></span> after the first operation.</p>",
+    "contestId": 797,
+    "index": "E",
+    "name": "Array Queries",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp"
+    ],
+    "solvedCount": 4117
+}

@@ -1,0 +1,38 @@
+{
+    "title": "A. Left-handers, Right-handers and Ambidexters",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are at a water bowling training. There are <span class=\"tex-span\"><i>l</i></span> people who play with their left hand, <span class=\"tex-span\"><i>r</i></span> people, who play with their right hand, and <span class=\"tex-span\"><i>a</i></span> ambidexters, who can play with left or right hand.</p><p>The coach decided to form a team of even number of players, exactly half of the players should play with their right hand, and exactly half of the players should play with their left hand. One player should use only on of his hands.</p><p>Ambidexters play as well with their right hand as with their left hand. In the team, an ambidexter can play with their left hand, or with their right hand.</p><p>Please find the maximum possible size of the team, where equal number of players use their left and right hands, respectively.</p>",
+    "inputSpecification": "<p>The only line contains three integers <span class=\"tex-span\"><i>l</i></span>, <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>l</i>,\u2009<i>r</i>,\u2009<i>a</i>\u2009\u2264\u2009100</span>) \u2014 the number of left-handers, the number of right-handers and the number of ambidexters at the training. </p>",
+    "outputSpecification": "<p>Print a single even integer\u00a0\u2014 the maximum number of players in the team. It is possible that the team can only have zero number of players.</p>",
+    "samples": [
+        {
+            "input": "1 4 2<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "5 5 5<br/>",
+            "output": "14<br/>"
+        },
+        {
+            "input": "0 2 0<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first example you can form a team of <span class=\"tex-span\">6</span> players. You should take the only left-hander and two ambidexters to play with left hand, and three right-handers to play with right hand. The only person left can't be taken into the team.</p><p>In the second example you can form a team of <span class=\"tex-span\">14</span> people. You have to take all five left-handers, all five right-handers, two ambidexters to play with left hand and two ambidexters to play with right hand.</p>",
+    "contestId": 950,
+    "index": "A",
+    "name": "Left-handers, Right-handers and Ambidexters",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 14983
+}

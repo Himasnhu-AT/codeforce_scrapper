@@ -1,0 +1,37 @@
+{
+    "title": "E. Hidden Bipartite Graph",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Bob has a simple undirected connected graph (without self-loops and multiple edges). He wants to learn whether his graph is bipartite (that is, you can paint all vertices of the graph into two colors so that there is no edge connecting two vertices of the same color) or not. As he is not very good at programming, he asked Alice for help. He does not want to disclose his graph to Alice, but he agreed that Alice can ask him some questions about the graph.</p><p>The only question that Alice can ask is the following: she sends $$$s$$$\u00a0\u2014 a subset of vertices of the original graph. Bob answers with the number of edges that have both endpoints in $$$s$$$. Since he doesn't want Alice to learn too much about the graph, he allows her to ask no more than $$$20000$$$ questions. Furthermore, he suspects that Alice might introduce false messages to their communication channel, so when Alice finally tells him whether the graph is bipartite or not, she also needs to provide a proof\u00a0\u2014 either the partitions themselves or a cycle of odd length.</p><p>Your task is to help Alice to construct the queries, find whether the graph is bipartite. </p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\leq n \\leq 600$$$)\u00a0\u2014 the number of vertices in Bob's graph.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "<br/>4 4<br/>4 1<br/>1 3<br/>3 2<br/>2 4<br/>",
+            "output": "4<br/>4<br/>0<br/>1<br/>1<br/>1<br/>0"
+        },
+        {
+            "input": "? 4 <br/>1 2 3 4<br/>? 2<br/>1 2<br/>? 2<br/>1 3<br/>? 2<br/>1 4<br/>? 2<br/>2 4<br/>? 2<br/>3 4<br/>Y 2<br/>1 2",
+            "output": "4<br/>4<br/>3"
+        }
+    ],
+    "note": "<p>In the first case, Alice learns that there are $$$4$$$ edges in the whole graph. Over the course of the next three queries, she learns that vertex $$$1$$$ has two neighbors: $$$3$$$ and $$$4$$$. She then learns that while vertex $$$2$$$ is adjacent to $$$4$$$, the vertex $$$3$$$ isn't adjacent to $$$4$$$. There is only one option for the remaining edge, and that is $$$(2, 3)$$$. This means that the graph is a cycle on four vertices, with $$$(1, 2)$$$ being one partition and $$$(3, 4)$$$ being the second. Here, it would be also valid to output \"<span class=\"tex-font-style-tt\">3 4</span>\" on the second line.</p><p>In the second case, we also have a graph on four vertices and four edges. In the second query, Alice learns that there are three edges among vertices $$$(1, 2, 4)$$$. The only way this could possibly happen is that those form a triangle. As the triangle is not bipartite, Alice can report it as a proof. Notice that she does not learn where the fourth edge is, but she is able to answer Bob correctly anyway.</p>",
+    "contestId": 1033,
+    "index": "E",
+    "name": "Hidden Bipartite Graph",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "interactive"
+    ],
+    "solvedCount": 587
+}

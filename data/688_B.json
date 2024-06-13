@@ -1,0 +1,34 @@
+{
+    "title": "B. Lovely Palindromes",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Pari has a friend who loves palindrome numbers. A palindrome number is a number that reads the same forward or backward. For example <span class=\"tex-span\">12321</span>, <span class=\"tex-span\">100001</span> and <span class=\"tex-span\">1</span> are palindrome numbers, while <span class=\"tex-span\">112</span> and <span class=\"tex-span\">1021</span> are not.</p><p>Pari is trying to love them too, but only very special and gifted people can understand the beauty behind palindrome numbers. Pari loves integers with even length (i.e. the numbers with even number of digits), so she tries to see a lot of big palindrome numbers with even length (like a <span class=\"tex-span\">2</span>-digit <span class=\"tex-span\">11</span> or <span class=\"tex-span\">6</span>-digit <span class=\"tex-span\">122221</span>), so maybe she could see something in them.</p><p>Now Pari asks you to write a program that gets a huge integer <span class=\"tex-span\"><i>n</i></span> from the input and tells what is the <span class=\"tex-span\"><i>n</i></span>-th even-length positive palindrome number?</p>",
+    "inputSpecification": "<p>The only line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">100\u2009000</sup></span>).</p>",
+    "outputSpecification": "<p>Print the <span class=\"tex-span\"><i>n</i></span>-th even-length palindrome number.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "11<br/>"
+        },
+        {
+            "input": "10<br/>",
+            "output": "1001<br/>"
+        }
+    ],
+    "note": "<p>The first <span class=\"tex-span\">10</span> even-length palindrome numbers are <span class=\"tex-span\">11,\u200922,\u200933,\u2009... ,\u200988,\u200999</span> and <span class=\"tex-span\">1001</span>.</p>",
+    "contestId": 688,
+    "index": "B",
+    "name": "Lovely Palindromes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 30791
+}

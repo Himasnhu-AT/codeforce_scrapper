@@ -1,0 +1,35 @@
+{
+    "title": "D. Limak and Shooting Points",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Bearland is a dangerous place. Limak can\u2019t travel on foot. Instead, he has <span class=\"tex-span\"><i>k</i></span> magic teleportation stones. Each stone can be used <span class=\"tex-font-style-bf\">at most once</span>. The <span class=\"tex-span\"><i>i</i></span>-th stone allows to teleport to a point <span class=\"tex-span\">(<i>ax</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>ay</i><sub class=\"lower-index\"><i>i</i></sub>)</span>. Limak can use stones <span class=\"tex-font-style-bf\">in any order</span>.</p><p>There are <span class=\"tex-span\"><i>n</i></span> monsters in Bearland. The <span class=\"tex-span\"><i>i</i></span>-th of them stands at <span class=\"tex-span\">(<i>mx</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>my</i><sub class=\"lower-index\"><i>i</i></sub>)</span>.</p><p>The given <span class=\"tex-span\"><i>k</i>\u2009+\u2009<i>n</i></span> points are pairwise distinct.</p><p>After each teleportation, Limak can shoot an arrow in some direction. An arrow will hit the first monster in the chosen direction. Then, both an arrow and a monster disappear. It\u2019s dangerous to stay in one place for long, so Limak can shoot only one arrow from one place.</p><p>A monster should be afraid if it\u2019s possible that Limak will hit it. How many monsters should be afraid of Limak?</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>k</i></span> and <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20097</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of stones and the number of monsters.</p><p>The <span class=\"tex-span\"><i>i</i></span>-th of following <span class=\"tex-span\"><i>k</i></span> lines contains two integers <span class=\"tex-span\"><i>ax</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>ay</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>ax</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>ay</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 coordinates to which Limak can teleport using the <span class=\"tex-span\"><i>i</i></span>-th stone.</p><p>The <span class=\"tex-span\"><i>i</i></span>-th of last <span class=\"tex-span\"><i>n</i></span> lines contains two integers <span class=\"tex-span\"><i>mx</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>my</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>mx</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>my</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 coordinates of the <span class=\"tex-span\"><i>i</i></span>-th monster.</p><p>The given <span class=\"tex-span\"><i>k</i>\u2009+\u2009<i>n</i></span> points are pairwise distinct.</p>",
+    "outputSpecification": "<p>Print the number of monsters which should be afraid of Limak.</p>",
+    "samples": [
+        {
+            "input": "2 4<br/>-2 -1<br/>4 5<br/>4 2<br/>2 1<br/>4 -1<br/>1 -1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "3 8<br/>10 20<br/>0 0<br/>20 40<br/>300 600<br/>30 60<br/>170 340<br/>50 100<br/>28 56<br/>90 180<br/>-4 -8<br/>-1 -2<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, there are two stones and four monsters. Stones allow to teleport to points <span class=\"tex-span\">(\u2009-\u20092,\u2009\u2009-\u20091)</span> and <span class=\"tex-span\">(4,\u20095)</span>, marked blue in the drawing below. Monsters are at <span class=\"tex-span\">(4,\u20092)</span>, <span class=\"tex-span\">(2,\u20091)</span>, <span class=\"tex-span\">(4,\u2009\u2009-\u20091)</span> and <span class=\"tex-span\">(1,\u2009\u2009-\u20091)</span>, marked red. A monster at <span class=\"tex-span\">(4,\u2009\u2009-\u20091)</span> shouldn't be afraid because it's impossible that Limak will hit it with an arrow. Other three monsters can be hit and thus the answer is <span class=\"tex-span\">3</span>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/33bcb9e6a54e02d5158becd6e020be98136a149a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second sample, five monsters should be afraid. Safe monsters are those at <span class=\"tex-span\">(300,\u2009600)</span>, <span class=\"tex-span\">(170,\u2009340)</span> and <span class=\"tex-span\">(90,\u2009180)</span>.</p>",
+    "contestId": 698,
+    "index": "D",
+    "name": "Limak and Shooting Points",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "geometry",
+        "math"
+    ],
+    "solvedCount": 512
+}

@@ -1,0 +1,30 @@
+{
+    "title": "A2. Heidi Learns Hashing (Medium)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>After learning about polynomial hashing, Heidi decided to learn about shift-xor hashing. In particular, she came across this interesting problem.</p><p>Given a bitstring $$$y \\in \\{0,1\\}^n$$$ find out the number of different $$$k$$$ ($$$0 \\leq k &lt; n$$$) such that there exists $$$x \\in \\{0,1\\}^n$$$ for which $$$y = x \\oplus \\mbox{shift}^k(x).$$$</p><p>In the above, $$$\\oplus$$$ is the xor operation and $$$\\mbox{shift}^k$$$ is the operation of shifting a bitstring cyclically to the right $$$k$$$ times. For example, $$$001 \\oplus 111 = 110$$$ and $$$\\mbox{shift}^3(00010010111000) = 00000010010111$$$.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$n$$$ ($$$1 \\leq n \\leq 2 \\cdot 10^5$$$), the length of the bitstring $$$y$$$.</p><p>The second line contains the bitstring $$$y$$$.</p>",
+    "outputSpecification": "<p>Output a single integer: the number of suitable values of $$$k$$$.</p>",
+    "samples": [
+        {
+            "input": "\n4\n1010\n",
+            "output": "\n3\n"
+        }
+    ],
+    "note": "<p>In the first example:</p><ul> <li> $$$1100\\oplus \\mbox{shift}^1(1100) = 1010$$$ </li><li> $$$1000\\oplus \\mbox{shift}^2(1000) = 1010$$$ </li><li> $$$0110\\oplus \\mbox{shift}^3(0110) = 1010$$$ </li></ul><p>There is no $$$x$$$ such that $$$x \\oplus x = 1010$$$, hence the answer is $$$3$$$.</p>",
+    "contestId": 1184,
+    "index": "A2",
+    "name": "Heidi Learns Hashing (Medium)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "number theory"
+    ],
+    "solvedCount": 942
+}

@@ -1,0 +1,32 @@
+{
+    "title": "A. Even Subset Sum Problem",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array $$$a$$$ consisting of $$$n$$$ positive integers. Find a <span class=\"tex-font-style-bf\">non-empty</span> subset of its elements such that their sum is <span class=\"tex-font-style-bf\">even</span> (i.e. divisible by $$$2$$$) or determine that there is no such subset.</p><p>Both the given array and required subset may contain equal values.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 100$$$), number of test cases to solve. Descriptions of $$$t$$$ test cases follow.</p><p>A description of each test case consists of two lines. The first line contains a single integer $$$n$$$ ($$$1 \\leq n \\leq 100$$$), length of array $$$a$$$.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\ldots, a_n$$$ ($$$1 \\leq a_i \\leq 100$$$), elements of $$$a$$$. The given array $$$a$$$ can contain equal values (duplicates).</p>",
+    "outputSpecification": "<p>For each test case output $$$-1$$$ if there is no such subset of elements. Otherwise output positive integer $$$k$$$, number of elements in the required subset. Then output $$$k$$$ distinct integers ($$$1 \\leq p_i \\leq n$$$), indexes of the chosen elements. If there are multiple solutions output any of them.</p>",
+    "samples": [
+        {
+            "input": "\n3\n3\n1 4 3\n1\n15\n2\n3 5\n",
+            "output": "\n1\n2\n-1\n2\n1 2\n"
+        }
+    ],
+    "note": "<p>There are three test cases in the example.</p><p>In the first test case, you can choose the subset consisting of only the second element. Its sum is $$$4$$$ and it is even.</p><p>In the second test case, there is only one non-empty subset of elements consisting of the first element, however sum in it is odd, so there is no solution.</p><p>In the third test case, the subset consisting of all array's elements has even sum.</p>",
+    "contestId": 1323,
+    "index": "A",
+    "name": "Even Subset Sum Problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 19424
+}

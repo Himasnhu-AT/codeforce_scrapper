@@ -1,0 +1,34 @@
+{
+    "title": "E. Max History",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array <span class=\"tex-span\"><i>a</i></span> of length <span class=\"tex-span\"><i>n</i></span>. We define <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub></span> the following way:</p><ul> <li> Initially <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub>\u2009=\u20090</span>, <span class=\"tex-span\"><i>M</i>\u2009=\u20091</span>; </li><li> for every <span class=\"tex-span\">2\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span> if <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>M</i></sub>\u2009&lt;\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> then we set <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub>\u2009=\u2009<i>f</i><sub class=\"lower-index\"><i>a</i></sub>\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>M</i></sub></span> and then set <span class=\"tex-span\"><i>M</i>\u2009=\u2009<i>i</i></span>. </li></ul><p>Calculate the sum of <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub></span> over all <span class=\"tex-span\"><i>n</i>!</span> permutations of the array <span class=\"tex-span\"><i>a</i></span> modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p><p>Note: two elements are considered different if their indices differ, so for every array <span class=\"tex-span\"><i>a</i></span> there are exactly <span class=\"tex-span\"><i>n</i>!</span> permutations.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009\u20091 000 000</span>) \u2014 the size of array <span class=\"tex-span\"><i>a</i></span>.</p><p>Second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print the only integer, the sum of <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub></span> over all <span class=\"tex-span\"><i>n</i>!</span> permutations of the array <span class=\"tex-span\"><i>a</i></span> modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "2<br/>1 3<br/>",
+            "output": "1"
+        },
+        {
+            "input": "3<br/>1 1 2<br/>",
+            "output": "4"
+        }
+    ],
+    "note": "<p>For the second example all the permutations are:</p><ul> <li> <span class=\"tex-span\"><i>p</i>\u2009=\u2009[1,\u20092,\u20093]</span> : <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub></span> is equal to <span class=\"tex-span\">1</span>; </li><li> <span class=\"tex-span\"><i>p</i>\u2009=\u2009[1,\u20093,\u20092]</span> : <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub></span> is equal to <span class=\"tex-span\">1</span>; </li><li> <span class=\"tex-span\"><i>p</i>\u2009=\u2009[2,\u20091,\u20093]</span> : <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub></span> is equal to <span class=\"tex-span\">1</span>; </li><li> <span class=\"tex-span\"><i>p</i>\u2009=\u2009[2,\u20093,\u20091]</span> : <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub></span> is equal to <span class=\"tex-span\">1</span>; </li><li> <span class=\"tex-span\"><i>p</i>\u2009=\u2009[3,\u20091,\u20092]</span> : <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub></span> is equal to <span class=\"tex-span\">0</span>; </li><li> <span class=\"tex-span\"><i>p</i>\u2009=\u2009[3,\u20092,\u20091]</span> : <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub></span> is equal to <span class=\"tex-span\">0</span>. </li></ul><p>Where <span class=\"tex-span\"><i>p</i></span> is the array of the indices of initial array <span class=\"tex-span\"><i>a</i></span>. The sum of <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>a</i></sub></span> is equal to <span class=\"tex-span\">4</span>.</p>",
+    "contestId": 938,
+    "index": "E",
+    "name": "Max History",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "math"
+    ],
+    "solvedCount": 1236
+}

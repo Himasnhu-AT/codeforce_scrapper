@@ -1,0 +1,37 @@
+{
+    "title": "A. Sagheer and Crossroads",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Sagheer is walking in the street when he comes to an intersection of two roads. Each road can be represented as two parts where each part has <span class=\"tex-span\">3</span> lanes getting into the intersection (one for each direction) and <span class=\"tex-span\">3</span> lanes getting out of the intersection, so we have <span class=\"tex-span\">4</span> parts in total. Each part has <span class=\"tex-span\">4</span> lights, one for each lane getting into the intersection (<span class=\"tex-span\"><i>l</i></span> \u2014 left, <span class=\"tex-span\"><i>s</i></span> \u2014 straight, <span class=\"tex-span\"><i>r</i></span> \u2014 right) and a light <span class=\"tex-span\"><i>p</i></span> for a pedestrian crossing. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/db6c8e3d832c9815b7d34ad97db45605ef1a7277.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>An accident is possible if a car can hit a pedestrian. This can happen if the light of a pedestrian crossing of some part and the light of a lane that can get to or from that same part are green at the same time.</p><p>Now, Sagheer is monitoring the configuration of the traffic lights. Your task is to help him detect whether an accident is possible.</p>",
+    "inputSpecification": "<p>The input consists of four lines with each line describing a road part given in a counter-clockwise order.</p><p>Each line contains four integers <span class=\"tex-span\"><i>l</i></span>, <span class=\"tex-span\"><i>s</i></span>, <span class=\"tex-span\"><i>r</i></span>, <span class=\"tex-span\"><i>p</i></span> \u2014 for the left, straight, right and pedestrian lights, respectively. The possible values are <span class=\"tex-span\">0</span> for red light and <span class=\"tex-span\">1</span> for green light.</p>",
+    "outputSpecification": "<p>On a single line, print \"<span class=\"tex-font-style-tt\">YES</span>\" if an accident is possible, and \"<span class=\"tex-font-style-tt\">NO</span>\" otherwise.</p>",
+    "samples": [
+        {
+            "input": "1 0 0 1<br/>0 1 0 0<br/>0 0 1 0<br/>0 0 0 1<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "0 1 1 0<br/>1 0 1 0<br/>1 1 0 0<br/>0 0 0 1<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "1 0 0 0<br/>0 0 0 1<br/>0 0 0 0<br/>1 0 1 0<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>In the first example, some accidents are possible because cars of part <span class=\"tex-span\">1</span> can hit pedestrians of parts <span class=\"tex-span\">1</span> and <span class=\"tex-span\">4</span>. Also, cars of parts <span class=\"tex-span\">2</span> and <span class=\"tex-span\">3</span> can hit pedestrians of part <span class=\"tex-span\">4</span>.</p><p>In the second example, no car can pass the pedestrian crossing of part <span class=\"tex-span\">4</span> which is the only green pedestrian light. So, no accident can occur.</p>",
+    "contestId": 812,
+    "index": "A",
+    "name": "Sagheer and Crossroads",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 6177
+}

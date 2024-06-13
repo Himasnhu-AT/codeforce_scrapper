@@ -1,0 +1,42 @@
+{
+    "title": "F. Dirty plates",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>After one of celebrations there is a stack of dirty plates in Nikita's kitchen. Nikita has to wash them and put into a dryer. In dryer, the plates should be also placed in a stack also, and the plates sizes should increase down up. The sizes of all plates are distinct.</p><p>Nikita has no so much free space, specifically, he has a place for only one more stack of plates. Therefore, he can perform only such two operations: </p><ul> <li> Take any number of plates from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>a</i></span> from the top of the dirty stack, wash them and put them to the <span class=\"tex-font-style-it\">intermediate</span> stack. </li><li> Take any number of plates from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>b</i></span> from the top of the intermediate stack and put them to the stack in the dryer. </li></ul><p>Note that after performing each of the operations, the plates are put in the same order as they were before the operation.</p><p>You are given the sizes of the plates <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>n</i></sub></span> in the down up order in the dirty stack, and integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>. All the sizes are distinct. Write a program that determines whether or not Nikita can put the plates in increasing down up order in the dryer. If he is able to do so, the program should find some sequence of operations (not necessary optimal) to achieve it.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u2009<i>n</i></span>). The second line contains integers <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the sizes of the plates in down up order. All the sizes are distinct.</p>",
+    "outputSpecification": "<p>In the first line print \"<span class=\"tex-font-style-tt\">YES</span>\" if there is a solution. In this case, in the second line print integer <span class=\"tex-span\"><i>k</i></span>\u00a0\u2014 the number of operations. Then in <span class=\"tex-span\"><i>k</i></span> lines print the operations, one per line. Each operation is described by two integers <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>j</i></sub></span> and <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>j</i></sub></span>, where <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>j</i></sub>\u2009=\u20091</span>, if the operation is to wash the top <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>j</i></sub></span> places from the dirty stack and put them onto the intermediate stack, and <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>j</i></sub>\u2009=\u20092</span>, if the operation is to move th top <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>j</i></sub></span> plates from the intermediate stack to the dryer. </p><p>In case there is no solution, print single line \"<span class=\"tex-font-style-tt\">NO</span>\".</p><p>If there are multiple solutions, print any of them. Note that it is not necessary to minimize the number of operations.</p>",
+    "samples": [
+        {
+            "input": "6 2 3<br/>2 3 6 4 1 5<br/>",
+            "output": "YES<br/>8<br/>1 2<br/>1 1<br/>2 1<br/>1 2<br/>1 1<br/>2 1<br/>2 1<br/>2 3<br/>"
+        },
+        {
+            "input": "7 7 7<br/>1 2 3 4 5 6 7<br/>",
+            "output": "YES<br/>2<br/>1 7<br/>2 7<br/>"
+        },
+        {
+            "input": "7 1 1<br/>1 2 3 4 5 6 7<br/>",
+            "output": "YES<br/>14<br/>1 1<br/>1 1<br/>1 1<br/>1 1<br/>1 1<br/>1 1<br/>1 1<br/>2 1<br/>2 1<br/>2 1<br/>2 1<br/>2 1<br/>2 1<br/>2 1<br/>"
+        },
+        {
+            "input": "4 2 2<br/>3 2 1 4<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>In the first example the initial order of plates was <span class=\"tex-span\">2,\u20093,\u20096,\u20094,\u20091,\u20095</span>. Here is how the stacks look like after each of the operations: </p><ul> <li> [1\u00a02]: Dirty stack: <span class=\"tex-span\">6,\u20094,\u20091,\u20095</span>. Intermediary stack: <span class=\"tex-span\">2,\u20093</span>. The dryer is empty. </li><li> [1\u00a01]: Dirty stack: <span class=\"tex-span\">4,\u20091,\u20095</span>. Intermediary stack: <span class=\"tex-span\">6,\u20092,\u20093</span>. The dryer is empty. </li><li> [2\u00a01]: Dirty stack: <span class=\"tex-span\">4,\u20091,\u20095</span>. Intermediary stack: <span class=\"tex-span\">2,\u20093</span>. Dryer stack: <span class=\"tex-span\">6</span>. </li><li> [1\u00a02]: Dirty stack: <span class=\"tex-span\">5</span>. Intermediary stack: <span class=\"tex-span\">4,\u20091,\u20092,\u20093</span>. Dryer stack: <span class=\"tex-span\">6</span>. </li><li> [1\u00a01]: There are no dirty plates. Intermediary stack: <span class=\"tex-span\">5,\u20094,\u20091,\u20092,\u20093</span>. Dryer stack: <span class=\"tex-span\">6</span>. </li><li> [2\u00a01]: There are no dirty plates. Intermediary stack: <span class=\"tex-span\">4,\u20091,\u20092,\u20093</span>. Dryer stack: <span class=\"tex-span\">5,\u20096</span>. </li><li> [2\u00a01]: There are no dirty plates. Intermediary stack: <span class=\"tex-span\">1,\u20092,\u20093</span>. Dryer stack: <span class=\"tex-span\">4,\u20095,\u20096</span>. </li><li> [2\u00a03]: All the plates are in the dryer: <span class=\"tex-span\">1,\u20092,\u20093,\u20094,\u20095,\u20096</span>. </li></ul> In the second example it is possible to wash all the plates in one operation, and then move them all to the dryer.<p>This is not possible in the third example, because it is not permitted to move more than one plate at the same time. It is possible to wash plates one by one so that they are placed onto the intermediary stack in the reverse order, and then move plates one by one to the dryer. The final order is correct.</p>",
+    "contestId": 737,
+    "index": "F",
+    "name": "Dirty plates",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 70
+}

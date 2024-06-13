@@ -1,0 +1,34 @@
+{
+    "title": "C. Max Mex",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Once Grisha found a tree (connected graph without cycles) with a root in node $$$1$$$.</p><p>But this tree was not just a tree. A permutation $$$p$$$ of integers from $$$0$$$ to $$$n - 1$$$ is written in nodes, a number $$$p_i$$$ is written in node $$$i$$$.</p><p>As Grisha likes to invent some strange and interesting problems for himself, but not always can solve them, you need to help him deal with two types of queries on this tree.</p><p>Let's define a function $$$MEX(S)$$$, where $$$S$$$ is a set of non-negative integers, as a smallest non-negative integer that is not included in this set.</p><p>Let $$$l$$$ be a simple path in this tree. So let's define indices of nodes which lie on $$$l$$$ as $$$u_1$$$, $$$u_2$$$, $$$\\ldots$$$, $$$u_k$$$. </p><p>Define $$$V(l)$$$ as a set {$$$p_{u_1}$$$, $$$p_{u_2}$$$, $$$\\ldots$$$ , $$$p_{u_k}$$$}. </p><p>Then queries are: </p><ol> <li> For two nodes $$$i$$$ and $$$j$$$, swap $$$p_i$$$ and $$$p_j$$$. </li><li> Find the maximum value of $$$MEX(V(l))$$$ in all possible $$$l$$$. </li></ol>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$2 \\leq n \\leq 2 \\cdot 10^5$$$)\u00a0\u2014 the number of nodes of a tree.</p><p>The second line contains $$$n$$$ integers\u00a0\u2014 $$$p_1$$$, $$$p_2$$$, $$$\\ldots$$$, $$$p_n$$$ ($$$0\\leq p_i &lt; n$$$)\u00a0\u2014 the permutation $$$p$$$, it's guaranteed that all numbers are different .</p><p>The third line contains $$$n - 1$$$ integers\u00a0\u2014 $$$d_2$$$, $$$d_3$$$, $$$\\ldots$$$, $$$d_n$$$ ($$$1 \\leq d_i &lt; i$$$), where $$$d_i$$$ is a direct ancestor of node $$$i$$$ in a tree.</p><p>The fourth line contains a single integer $$$q$$$ ($$$1 \\leq q \\leq 2 \\cdot 10^5$$$)\u00a0\u2014 the number of queries.</p><p>The following $$$q$$$ lines contain the description of queries:</p><p>At the beginning of each of next $$$q$$$ lines, there is a single integer $$$t$$$ ($$$1$$$ or $$$2$$$)\u00a0\u2014 the type of a query: </p><ol> <li> If $$$t = 1$$$, the line also contains two integers $$$i$$$ and $$$j$$$ ($$$1 \\leq i, j \\leq n$$$)\u00a0\u2014 the indices of nodes, where values of the permutation should be swapped. </li><li> If $$$t = 2$$$, you need to find the maximum value of $$$MEX(V(l))$$$ in all possible $$$l$$$. </li></ol> ",
+    "outputSpecification": "<p>For each type 2 query print a single integer\u00a0\u2014 the answer for this query.</p>",
+    "samples": [
+        {
+            "input": "\n6\n2 5 0 3 1 4\n1 1 3 3 3\n3\n2\n1 6 3\n2\n",
+            "output": "\n3\n2\n"
+        },
+        {
+            "input": "\n6\n5 2 1 4 3 0\n1 1 1 3 3\n9\n2\n1 5 3\n2\n1 6 1\n2\n1 4 2\n2\n1 1 6\n2\n",
+            "output": "\n3\n2\n4\n4\n2\n"
+        }
+    ],
+    "note": "<p>Number written in brackets is a permutation value of a node. </p><center> <img class=\"tex-graphics\" height=\"302px\" src=\"https://espresso.codeforces.com/fcd42fd6c18bf401037ccf6d86659bd88f29ed25.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"302px\"/> </center> In the first example, for the first query, optimal path is a path from node $$$1$$$ to node $$$5$$$. For it, set of values is $$$\\{0, 1, 2\\}$$$ and $$$MEX$$$ is $$$3$$$. <center> <img class=\"tex-graphics\" height=\"302px\" src=\"https://espresso.codeforces.com/3f76301b320b3c8de974235f23fbc1b59926be49.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"302px\"/> </center> For the third query, optimal path is a path from node $$$5$$$ to node $$$6$$$. For it, set of values is $$$\\{0, 1, 4\\}$$$ and $$$MEX$$$ is $$$2$$$. <center> <img class=\"tex-graphics\" height=\"302px\" src=\"https://espresso.codeforces.com/86afdd0c22b7123eb99436655de4b68de72ac76d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"242px\"/> </center> In the second example, for the first query, optimal path is a path from node $$$2$$$ to node $$$6$$$. For it, set of values is $$$\\{0, 1, 2, 5\\}$$$ and $$$MEX$$$ is $$$3$$$. <center> <img class=\"tex-graphics\" height=\"302px\" src=\"https://espresso.codeforces.com/b8797c66572e112d5012ea5f9ff6abc82c25ec92.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"276px\"/> </center> For the third query, optimal path is a path from node $$$5$$$ to node $$$6$$$. For it, set of values is $$$\\{0, 1, 3\\}$$$ and $$$MEX$$$ is $$$2$$$. <center> <img class=\"tex-graphics\" height=\"302px\" src=\"https://espresso.codeforces.com/c1aa64a674ea296082de30f168a6cd9cbd4e85d6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"242px\"/> </center> For the fifth query, optimal path is a path from node $$$5$$$ to node $$$2$$$. For it, set of values is $$$\\{0, 1, 2, 3\\}$$$ and $$$MEX$$$ is $$$4$$$. <center> <img class=\"tex-graphics\" height=\"302px\" src=\"https://espresso.codeforces.com/2a0a05293c017b769998b0687614f7533edbb635.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"249px\"/> </center> For the seventh query, optimal path is a path from node $$$5$$$ to node $$$4$$$. For it, set of values is $$$\\{0, 1, 2, 3\\}$$$ and $$$MEX$$$ is $$$4$$$. <center> <img class=\"tex-graphics\" height=\"302px\" src=\"https://espresso.codeforces.com/2cad9a4d1c659bdcac5b23793aa2c43b6f52e0eb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"249px\"/> </center> For the ninth query, optimal path is a path from node $$$6$$$ to node $$$5$$$. For it, set of values is $$$\\{0, 1, 3\\}$$$ and $$$MEX$$$ is $$$2$$$. ",
+    "contestId": 1083,
+    "index": "C",
+    "name": "Max Mex",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "trees"
+    ],
+    "solvedCount": 847
+}

@@ -1,0 +1,32 @@
+{
+    "title": "D. Ehab and another another xor problem",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is an interactive problem!</span></p><p>Ehab plays a game with Laggy. Ehab has 2 hidden integers $$$(a,b)$$$. Laggy can ask a pair of integers $$$(c,d)$$$ and Ehab will reply with:</p><ul> <li> 1 if $$$a \\oplus c&gt;b \\oplus d$$$. </li><li> 0 if $$$a \\oplus c=b \\oplus d$$$. </li><li> -1 if $$$a \\oplus c&lt;b \\oplus d$$$. </li></ul><p>Operation $$$a \\oplus b$$$ is the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#XOR\">bitwise-xor operation</a> of two numbers $$$a$$$ and $$$b$$$.</p><p>Laggy should guess $$$(a,b)$$$ with <span class=\"tex-font-style-bf\">at most 62 questions</span>. You'll play this game. You're Laggy and the interactor is Ehab.</p><p><span class=\"tex-font-style-bf\">It's guaranteed that $$$0 \\le a,b&lt;2^{30}$$$.</span></p>",
+    "inputSpecification": "<p>See the interaction section.</p>",
+    "outputSpecification": "<p>To print the answer, print \"! a b\" (without quotes). <span class=\"tex-font-style-bf\">Don't forget to flush the output after printing the answer</span>.</p>",
+    "samples": [
+        {
+            "input": "1<br/>-1<br/>0",
+            "output": "? 2 1<br/>? 1 2<br/>? 2 0<br/>! 3 1"
+        }
+    ],
+    "note": "<p>In the sample:</p><p>The hidden numbers are $$$a=3$$$ and $$$b=1$$$.</p><p>In the first query: $$$3 \\oplus 2 = 1$$$ and $$$1 \\oplus 1 = 0$$$, so the answer is 1.</p><p>In the second query: $$$3 \\oplus 1 = 2$$$ and $$$1 \\oplus 2 = 3$$$, so the answer is -1.</p><p>In the third query: $$$3 \\oplus 2 = 1$$$ and $$$1 \\oplus 0 = 1$$$, so the answer is 0.</p><p>Then, we printed the answer.</p>",
+    "contestId": 1088,
+    "index": "D",
+    "name": "Ehab and another another xor problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "implementation",
+        "interactive"
+    ],
+    "solvedCount": 2781
+}

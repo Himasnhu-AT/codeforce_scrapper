@@ -1,0 +1,34 @@
+{
+    "title": "E. Balanced Binary Search Trees",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Recall that a binary search tree is a rooted binary tree, whose nodes each store a key and each have at most two distinguished subtrees, left and right. The key in each node must be greater than any key stored in the left subtree, and less than any key stored in the right subtree.</p><p>The depth of a vertex is the number of edges on the simple path from the vertex to the root. In particular, the depth of the root is $$$0$$$.</p><p>Let's call a binary search tree <span class=\"tex-font-style-it\">perfectly balanced</span> if there doesn't exist a binary search tree with the same number of vertices that has a strictly smaller sum of depths of its vertices.</p><p>Let's call a binary search tree with integer keys <span class=\"tex-font-style-it\">striped</span> if both of the following conditions are satisfied for every vertex $$$v$$$: </p><ul> <li> If $$$v$$$ has a <span class=\"tex-font-style-bf\">left</span> subtree whose root is $$$u$$$, then the parity of the key of $$$v$$$ is <span class=\"tex-font-style-bf\">different</span> from the parity of the key of $$$u$$$. </li><li> If $$$v$$$ has a <span class=\"tex-font-style-bf\">right</span> subtree whose root is $$$w$$$, then the parity of the key of $$$v$$$ is the <span class=\"tex-font-style-bf\">same</span> as the parity of the key of $$$w$$$. </li></ul><p>You are given a single integer $$$n$$$. Find the number of perfectly balanced striped binary search trees with $$$n$$$ vertices that have distinct integer keys between $$$1$$$ and $$$n$$$, inclusive. Output this number modulo $$$998\\,244\\,353$$$.</p>",
+    "inputSpecification": "<p>The only line contains a single integer $$$n$$$ ($$$1 \\le n \\le 10^6$$$), denoting the required number of vertices.</p>",
+    "outputSpecification": "<p>Output the number of perfectly balanced striped binary search trees with $$$n$$$ vertices and distinct integer keys between $$$1$$$ and $$$n$$$, inclusive, modulo $$$998\\,244\\,353$$$.</p>",
+    "samples": [
+        {
+            "input": "\n4\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n3\n",
+            "output": "\n0\n"
+        }
+    ],
+    "note": "<p>In the first example, this is the only tree that satisfies the conditions: <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/09c759f66afaa740f3dc0d168189fda1db452a28.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>In the second example, here are various trees that don't satisfy some condition: <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/62f37b935d381560a9a6044f1fcfafd18e74d4a2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 1237,
+    "index": "E",
+    "name": "Balanced Binary Search Trees",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "math"
+    ],
+    "solvedCount": 1272
+}

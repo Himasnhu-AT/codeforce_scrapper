@@ -1,0 +1,35 @@
+{
+    "title": "B. Odd sum",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given sequence <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> of integer numbers of length <span class=\"tex-span\"><i>n</i></span>. Your task is to find such subsequence that its sum is odd and maximum among all such subsequences. It's guaranteed that given sequence contains subsequence with odd sum.</p><p>Subsequence is a sequence that can be derived from another sequence by deleting some elements without changing the order of the remaining elements.</p><p>You should write a program which finds sum of the best subsequence.</p>",
+    "inputSpecification": "<p>The first line contains integer number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integer numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">4</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>). The sequence contains at least one subsequence with odd sum.</p>",
+    "outputSpecification": "<p>Print sum of resulting subseqeuence.</p>",
+    "samples": [
+        {
+            "input": "4<br/>-2 2 -3 1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "3<br/>2 -5 -3<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first example sum of the second and the fourth elements is <span class=\"tex-span\">3</span>.</p>",
+    "contestId": 797,
+    "index": "B",
+    "name": "Odd sum",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 10216
+}

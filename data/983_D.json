@@ -1,0 +1,33 @@
+{
+    "title": "D. Arkady and Rectangles",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Arkady has got an infinite plane painted in color $$$0$$$. Then he draws $$$n$$$ rectangles filled with paint with sides parallel to the Cartesian coordinate axes, one after another. The color of the $$$i$$$-th rectangle is $$$i$$$ (rectangles are enumerated from $$$1$$$ to $$$n$$$ in the order he draws them). It is possible that new rectangles cover some of the previous ones completely or partially.</p><p>Count the number of different colors on the plane after Arkady draws all the rectangles.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 100\\,000$$$)\u00a0\u2014 the number of rectangles.</p><p>The $$$i$$$-th of the next $$$n$$$ lines contains $$$4$$$ integers $$$x_1$$$, $$$y_1$$$, $$$x_2$$$ and $$$y_2$$$ ($$$-10^9 \\le x_1 &lt; x_2 \\le 10^9$$$, $$$-10^9 \\le y_1 &lt; y_2 \\le 10^9$$$)\u00a0\u2014 the coordinates of corners of the $$$i$$$-th rectangle.</p>",
+    "outputSpecification": "<p>In the single line print the number of different colors in the plane, including color $$$0$$$.</p>",
+    "samples": [
+        {
+            "input": "5<br/>-1 -1 1 1<br/>-4 0 0 4<br/>0 0 4 4<br/>-4 -4 0 0<br/>0 -4 4 0<br/>",
+            "output": "5"
+        },
+        {
+            "input": "4<br/>0 0 4 4<br/>-4 -4 0 0<br/>0 -4 4 0<br/>-2 -4 2 4<br/>",
+            "output": "5"
+        }
+    ],
+    "note": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/ba671b72d6655cf73930b8ac26d0064c6dc28bd3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"454px\"/> That's how the plane looks in the first sample<p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/b84e29026ee49b5972ce2479ad7cb4e72b99e516.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"454px\"/> That's how the plane looks in the second sample</p><p>$$$0$$$ = white, $$$1$$$ = cyan, $$$2$$$ = blue, $$$3$$$ = purple, $$$4$$$ = yellow, $$$5$$$ = red. </p></center>",
+    "contestId": 983,
+    "index": "D",
+    "name": "Arkady and Rectangles",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures"
+    ],
+    "solvedCount": 363
+}

@@ -1,0 +1,35 @@
+{
+    "title": "C. Elevator",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You work in a big office. It is a <span class=\"tex-span\">9</span>\u00a0floor building with an elevator that can accommodate up to <span class=\"tex-span\">4</span>\u00a0people. It is your responsibility to manage this elevator.</p><p>Today you are late, so there are queues on some floors already. For each person you know the floor where he currently is and the floor he wants to reach. Also, you know the order in which people came to the elevator.</p><p>According to the company's rules, if an employee comes to the elevator earlier than another one, he has to enter the elevator earlier too (even if these employees stay on different floors). Note that the employees are allowed to leave the elevator in arbitrary order.</p><p>The elevator has two commands: </p><ul> <li> Go up or down one floor. The movement takes <span class=\"tex-span\">1</span> second. </li><li> Open the doors on the current floor. During this operation all the employees who have reached their destination get out of the elevator. Then all the employees on the floor get in the elevator in the order they are queued up while it doesn't contradict the company's rules and there is enough space in the elevator. Each employee spends <span class=\"tex-span\">1</span> second to get inside and outside the elevator. </li></ul><p>Initially the elevator is empty and is located on the floor <span class=\"tex-span\">1</span>.</p><p>You are interested what is the minimum possible time you need to spend to deliver all the employees to their destination. It is not necessary to return the elevator to the floor <span class=\"tex-span\">1</span>.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092000</span>)\u00a0\u2014 the number of employees.</p><p>The <span class=\"tex-span\"><i>i</i></span>-th of the next <span class=\"tex-span\"><i>n</i></span> lines contains two integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20099</span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>)\u00a0\u2014 the floor on which an employee initially is, and the floor he wants to reach.</p><p>The employees are given in the order they came to the elevator.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the minimal possible time in seconds.</p>",
+    "samples": [
+        {
+            "input": "2<br/>3 5<br/>5 3<br/>",
+            "output": "10"
+        },
+        {
+            "input": "2<br/>5 3<br/>3 5<br/>",
+            "output": "12"
+        }
+    ],
+    "note": "<center> Explaination for the first sample <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/f06e67981fae3fe0ac1d5e18baf501aabd1225c9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\"><i>t</i>\u2009=\u20090</span><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1b7e25450a0703db67675fea25386865f0290049.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\"><i>t</i>\u2009=\u20092</span></p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/0f585328ada5689c39e5a7263a792979c00fb01a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\"><i>t</i>\u2009=\u20093</span></p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/61f0c2263487060af2083a06cedf6641d234e31b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\"><i>t</i>\u2009=\u20095</span></p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/4f5d7a22c1f2af851019589a1232851ced924fbf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\"><i>t</i>\u2009=\u20096</span></p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/4602434598e4844e9532caef51583bd84886b067.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\"><i>t</i>\u2009=\u20097</span></p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c1924de28ca19fe1346617380752126a2d4bbb75.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\"><i>t</i>\u2009=\u20099</span></p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2e58cd09a6a459da60780a790c49da336d0b2783.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\"><i>t</i>\u2009=\u200910</span></p></center>",
+    "contestId": 983,
+    "index": "C",
+    "name": "Elevator",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 803
+}

@@ -1,0 +1,34 @@
+{
+    "title": "A. Sasha and Sticks",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>It's one more school day now. Sasha doesn't like classes and is always bored at them. So, each day he invents some game and plays in it alone or with friends.</p><p>Today he invented one simple game to play with Lena, with whom he shares a desk. The rules are simple. Sasha draws <span class=\"tex-span\"><i>n</i></span> sticks in a row. After that the players take turns crossing out exactly <span class=\"tex-span\"><i>k</i></span> sticks from left or right in each turn. Sasha moves first, because he is the inventor of the game. If there are less than <span class=\"tex-span\"><i>k</i></span> sticks on the paper before some turn, the game ends. Sasha wins if he makes strictly more moves than Lena. Sasha wants to know the result of the game before playing, you are to help him.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>, <span class=\"tex-span\"><i>k</i>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the number of sticks drawn by Sasha and the number <span class=\"tex-span\"><i>k</i></span>\u00a0\u2014 the number of sticks to be crossed out on each turn.</p>",
+    "outputSpecification": "<p>If Sasha wins, print \"<span class=\"tex-font-style-tt\">YES</span>\" (without quotes), otherwise print \"<span class=\"tex-font-style-tt\">NO</span>\" (without quotes).</p><p>You can print each letter in arbitrary case (upper of lower).</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "10 4<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>In the first example Sasha crosses out <span class=\"tex-span\">1</span> stick, and then there are no sticks. So Lena can't make a move, and Sasha wins.</p><p>In the second example Sasha crosses out <span class=\"tex-span\">4</span> sticks, then Lena crosses out <span class=\"tex-span\">4</span> sticks, and after that there are only <span class=\"tex-span\">2</span> sticks left. Sasha can't make a move. The players make equal number of moves, so Sasha doesn't win.</p>",
+    "contestId": 832,
+    "index": "A",
+    "name": "Sasha and Sticks",
+    "type": "PROGRAMMING",
+    "tags": [
+        "games",
+        "math"
+    ],
+    "solvedCount": 20439
+}

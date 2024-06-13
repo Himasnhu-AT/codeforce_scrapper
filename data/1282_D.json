@@ -1,0 +1,31 @@
+{
+    "title": "D. Enchanted Artifact",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is an interactive problem.</span></p><p>After completing the last level of the enchanted temple, you received a powerful artifact of the 255th level. Do not rush to celebrate, because this artifact has a powerful rune that can be destroyed with a single <span class=\"tex-font-style-it\">spell</span> $$$s$$$, which you are going to find. </p><p>We define the spell as some <span class=\"tex-font-style-bf\">non-empty string</span> consisting only of the letters <span class=\"tex-font-style-tt\">a</span> and <span class=\"tex-font-style-tt\">b</span>.</p><p>At any time, you can cast an arbitrary non-empty spell $$$t$$$, and the rune on the artifact will begin to resist. <span class=\"tex-font-style-it\">Resistance</span> of the rune is the edit distance between the strings that specify the casted spell $$$t$$$ and the rune-destroying spell $$$s$$$.</p><p><a href=\"https://en.wikipedia.org/wiki/Levenshtein_distance\">Edit distance</a> of two strings $$$s$$$ and $$$t$$$ is a value equal to the minimum number of one-character operations of replacing, inserting and deleting characters in $$$s$$$ to get $$$t$$$. For example, the distance between <span class=\"tex-font-style-tt\">ababa</span> and <span class=\"tex-font-style-tt\">aaa</span> is $$$2$$$, the distance between <span class=\"tex-font-style-tt\">aaa</span> and <span class=\"tex-font-style-tt\">aba</span> is $$$1$$$, the distance between <span class=\"tex-font-style-tt\">bbaba</span> and <span class=\"tex-font-style-tt\">abb</span> is $$$3$$$. The edit distance is $$$0$$$ if and only if the strings are equal.</p><p>It is also worth considering that the artifact has a resistance limit \u00a0\u2014 if you cast more than $$$n + 2$$$ spells, where $$$n$$$ is the length of spell $$$s$$$, the rune will be blocked.</p><p>Thus, it takes $$$n + 2$$$ or fewer spells to destroy the rune that is on your artifact. Keep in mind that the required destructive spell $$$s$$$ must also be counted among these $$$n + 2$$$ spells.</p><p>Note that the length $$$n$$$ of the rune-destroying spell $$$s$$$ is not known to you in advance. It is only known that its length $$$n$$$ does not exceed $$$300$$$.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n\n2\n\n2\n\n1\n\n2\n\n3\n\n0",
+            "output": "\naaa\n\naaab\n\nabba\n\nbba\n\nabaaa\n\naabba"
+        }
+    ],
+    "note": null,
+    "contestId": 1282,
+    "index": "D",
+    "name": "Enchanted Artifact",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "interactive",
+        "strings"
+    ],
+    "solvedCount": 2113
+}

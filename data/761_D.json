@@ -1,0 +1,41 @@
+{
+    "title": "D. Dasha and Very Difficult Problem",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Dasha logged into the system and began to solve problems. One of them is as follows:</p><p>Given two sequences <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> of length <span class=\"tex-span\"><i>n</i></span> each you need to write a sequence <span class=\"tex-span\"><i>c</i></span> of length <span class=\"tex-span\"><i>n</i></span>, the <span class=\"tex-span\"><i>i</i></span>-th element of which is calculated as follows: <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009-\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>About sequences <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> we know that their elements are in the range from <span class=\"tex-span\"><i>l</i></span> to <span class=\"tex-span\"><i>r</i></span>. More formally, elements satisfy the following conditions: <span class=\"tex-span\"><i>l</i>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i></span> and <span class=\"tex-span\"><i>l</i>\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i></span>. About sequence <span class=\"tex-span\"><i>c</i></span> we know that all its elements are distinct.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/b7cdb2a944596a6321a27bfc441772efbcce4a0c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Dasha wrote a solution to that problem quickly, but checking her work on the standard test was not so easy. Due to an error in the test system only the sequence <span class=\"tex-span\"><i>a</i></span> and the <span class=\"tex-font-style-it\">compressed sequence</span> of the sequence <span class=\"tex-span\"><i>c</i></span> were known from that test.</p><p>Let's give the definition to a <span class=\"tex-font-style-it\">compressed sequence</span>. A <span class=\"tex-font-style-it\">compressed sequence</span> of sequence <span class=\"tex-span\"><i>c</i></span> of length <span class=\"tex-span\"><i>n</i></span> is a sequence <span class=\"tex-span\"><i>p</i></span> of length <span class=\"tex-span\"><i>n</i></span>, so that <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> equals to the number of integers which are less than or equal to <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> in the sequence <span class=\"tex-span\"><i>c</i></span>. For example, for the sequence <span class=\"tex-span\"><i>c</i>\u2009=\u2009[250,\u2009200,\u2009300,\u2009100,\u200950]</span> the compressed sequence will be <span class=\"tex-span\"><i>p</i>\u2009=\u2009[4,\u20093,\u20095,\u20092,\u20091]</span>. Pay attention that in <span class=\"tex-span\"><i>c</i></span> all integers are distinct. Consequently, the <span class=\"tex-font-style-it\">compressed sequence</span> contains all integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> inclusively.</p><p>Help Dasha to find any sequence <span class=\"tex-span\"><i>b</i></span> for which the calculated <span class=\"tex-font-style-it\">compressed sequence</span> of sequence <span class=\"tex-span\"><i>c</i></span> is correct.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>l</i></span>, <span class=\"tex-span\"><i>r</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20091\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span> \u2014 the length of the sequence and boundaries of the segment where the elements of sequences <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> are.</p><p>The next line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009\u2009...,\u2009\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(<i>l</i>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i>)</span> \u2014 the elements of the sequence <span class=\"tex-span\"><i>a</i></span>.</p><p>The next line contains <span class=\"tex-span\"><i>n</i></span> distinct integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009\u2009...,\u2009\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>)</span> \u2014 the <span class=\"tex-font-style-it\">compressed sequence</span> of the sequence <span class=\"tex-span\"><i>c</i></span>.</p>",
+    "outputSpecification": "<p>If there is no the suitable sequence <span class=\"tex-span\"><i>b</i></span>, then in the only line print \"<span class=\"tex-font-style-tt\">-1</span>\".</p><p>Otherwise, in the only line print <span class=\"tex-span\"><i>n</i></span> integers \u2014 the elements of any suitable sequence <span class=\"tex-span\"><i>b</i></span>.</p>",
+    "samples": [
+        {
+            "input": "5 1 5<br/>1 1 1 1 1<br/>3 1 5 4 2<br/>",
+            "output": "3 1 5 4 2 "
+        },
+        {
+            "input": "4 2 9<br/>3 4 8 9<br/>3 2 1 4<br/>",
+            "output": "2 2 2 9 "
+        },
+        {
+            "input": "6 1 5<br/>1 1 1 1 1 1<br/>2 3 5 4 1 6<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>Sequence <span class=\"tex-span\"><i>b</i></span> which was found in the second sample is suitable, because calculated sequence <span class=\"tex-span\"><i>c</i>\u2009=\u2009[2\u2009-\u20093,\u20092\u2009-\u20094,\u20092\u2009-\u20098,\u20099\u2009-\u20099]\u2009=\u2009[\u2009-\u20091,\u2009\u2009-\u20092,\u2009\u2009-\u20096,\u20090]</span> (note that <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009-\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>) has compressed sequence equals to <span class=\"tex-span\"><i>p</i>\u2009=\u2009[3,\u20092,\u20091,\u20094]</span>.</p>",
+    "contestId": 761,
+    "index": "D",
+    "name": "Dasha and Very Difficult Problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 3947
+}

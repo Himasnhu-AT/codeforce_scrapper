@@ -1,0 +1,37 @@
+{
+    "title": "A. Phone Numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's call a string <span class=\"tex-font-style-it\">a phone number</span> if it has length 11 and fits the pattern \"<span class=\"tex-font-style-tt\">8xxxxxxxxxx</span>\", where each \"<span class=\"tex-font-style-tt\">x</span>\" is replaced by a digit.</p><p>For example, \"<span class=\"tex-font-style-tt\">80123456789</span>\" and \"<span class=\"tex-font-style-tt\">80000000000</span>\" are phone numbers, while \"<span class=\"tex-font-style-tt\">8012345678</span>\" and \"<span class=\"tex-font-style-tt\">79000000000</span>\" are not.</p><p>You have $$$n$$$ cards with digits, and you want to use them to make as many phone numbers as possible. Each card must be used in at most one phone number, and you don't have to use all cards. The phone numbers do not necessarily have to be distinct.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$n$$$\u00a0\u2014 the number of cards with digits that you have ($$$1 \\leq n \\leq 100$$$).</p><p>The second line contains a string of $$$n$$$ digits (characters \"<span class=\"tex-font-style-tt\">0</span>\", \"<span class=\"tex-font-style-tt\">1</span>\", ..., \"<span class=\"tex-font-style-tt\">9</span>\") $$$s_1, s_2, \\ldots, s_n$$$. The string will not contain any other characters, such as leading or trailing spaces.</p>",
+    "outputSpecification": "<p>If at least one phone number can be made from these cards, output the maximum number of phone numbers that can be made. Otherwise, output 0.</p>",
+    "samples": [
+        {
+            "input": "11<br/>00000000008<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "22<br/>0011223344556677889988<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "11<br/>31415926535<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first example, one phone number, \"<span class=\"tex-font-style-tt\">8000000000</span>\", can be made from these cards.</p><p>In the second example, you can make two phone numbers from the cards, for example, \"<span class=\"tex-font-style-tt\">80123456789</span>\" and \"<span class=\"tex-font-style-tt\">80123456789</span>\".</p><p>In the third example you can't make any phone number from the given cards.</p>",
+    "contestId": 1060,
+    "index": "A",
+    "name": "Phone Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force"
+    ],
+    "solvedCount": 13779
+}

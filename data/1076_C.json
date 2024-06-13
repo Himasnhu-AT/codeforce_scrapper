@@ -1,0 +1,30 @@
+{
+    "title": "C. Meme Problem",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Try guessing the statement from this picture: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/cbc9379baddcb052da5505a28406687b93013a79.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>You are given a non-negative integer $$$d$$$. You have to find two non-negative real numbers $$$a$$$ and $$$b$$$ such that $$$a + b = d$$$ and $$$a \\cdot b = d$$$.</p>",
+    "inputSpecification": "<p>The first line contains $$$t$$$ ($$$1 \\le t \\le 10^3$$$) \u2014 the number of test cases.</p><p>Each test case contains one integer $$$d$$$ $$$(0 \\le d \\le 10^3)$$$.</p>",
+    "outputSpecification": "<p>For each test print one line.</p><p>If there is an answer for the $$$i$$$-th test, print \"Y\", and then the numbers $$$a$$$ and $$$b$$$.</p><p>If there is no answer for the $$$i$$$-th test, print \"N\".</p><p>Your answer will be considered correct if $$$|(a + b) - a \\cdot b| \\le 10^{-6}$$$ and $$$|(a + b) - d| \\le 10^{-6}$$$.</p>",
+    "samples": [
+        {
+            "input": "\n7\n69\n0\n1\n4\n5\n999\n1000\n",
+            "output": "\nY 67.985071301 1.014928699\nY 0.000000000 0.000000000\nN\nY 2.000000000 2.000000000\nY 3.618033989 1.381966011\nY 997.998996990 1.001003010\nY 998.998997995 1.001002005\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1076,
+    "index": "C",
+    "name": "Meme Problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "math"
+    ],
+    "solvedCount": 12155
+}

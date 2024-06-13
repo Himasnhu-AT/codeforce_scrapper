@@ -1,0 +1,37 @@
+{
+    "title": "A. Remove Duplicates",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Petya has an array $$$a$$$ consisting of $$$n$$$ integers. He wants to remove duplicate (equal) elements.</p><p>Petya wants to leave only the rightmost entry (occurrence) for each element of the array. The relative order of the remaining unique elements should not be changed.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 50$$$) \u2014 the number of elements in Petya's array.</p><p>The following line contains a sequence $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i \\le 1\\,000$$$) \u2014 the Petya's array.</p>",
+    "outputSpecification": "<p>In the first line print integer $$$x$$$ \u2014 the number of elements which will be left in Petya's array after he removed the duplicates.</p><p>In the second line print $$$x$$$ integers separated with a space \u2014 Petya's array after he removed the duplicates. For each unique element only the rightmost entry should be left.</p>",
+    "samples": [
+        {
+            "input": "6<br/>1 5 5 1 6 1<br/>",
+            "output": "3<br/>5 6 1 <br/>"
+        },
+        {
+            "input": "5<br/>2 4 2 4 4<br/>",
+            "output": "2<br/>2 4 <br/>"
+        },
+        {
+            "input": "5<br/>6 6 6 6 6<br/>",
+            "output": "1<br/>6 <br/>"
+        }
+    ],
+    "note": "<p>In the first example you should remove two integers $$$1$$$, which are in the positions $$$1$$$ and $$$4$$$. Also you should remove the integer $$$5$$$, which is in the position $$$2$$$.</p><p>In the second example you should remove integer $$$2$$$, which is in the position $$$1$$$, and two integers $$$4$$$, which are in the positions $$$2$$$ and $$$4$$$.</p><p>In the third example you should remove four integers $$$6$$$, which are in the positions $$$1$$$, $$$2$$$, $$$3$$$ and $$$4$$$.</p>",
+    "contestId": 978,
+    "index": "A",
+    "name": "Remove Duplicates",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 26295
+}

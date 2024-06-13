@@ -1,0 +1,38 @@
+{
+    "title": "A. Bus to Udayland",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>ZS the Coder and Chris the Baboon are travelling to Udayland! To get there, they have to get on the special IOI bus. The IOI bus has <span class=\"tex-span\"><i>n</i></span> rows of seats. There are <span class=\"tex-span\">4</span> seats in each row, and the seats are separated into pairs by a walkway. When ZS and Chris came, some places in the bus was already occupied.</p><p>ZS and Chris are good friends. They insist to get <span class=\"tex-font-style-bf\">a pair of neighbouring empty seats</span>. Two seats are considered neighbouring if they are in the same row and in the same pair. Given the configuration of the bus, can you help ZS and Chris determine where they should sit?</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000)</span>\u00a0\u2014 the number of rows of seats in the bus.</p><p>Then, <span class=\"tex-span\"><i>n</i></span> lines follow. Each line contains exactly <span class=\"tex-span\">5</span> characters, the first two of them denote the first pair of seats in the row, the third character denotes the walkway (it always equals '|') and the last two of them denote the second pair of seats in the row. </p><p>Each character, except the walkway, equals to 'O' or to 'X'. 'O' denotes an empty seat, 'X' denotes an occupied seat. See the sample cases for more details. </p>",
+    "outputSpecification": "<p>If it is possible for Chris and ZS to sit at neighbouring empty seats, print \"YES\" (without quotes) in the first line. In the next <span class=\"tex-span\"><i>n</i></span> lines print the bus configuration, where the characters in the pair of seats for Chris and ZS is changed with characters '+'. Thus the configuration should differ from the input one by exactly two charaters (they should be equal to 'O' in the input and to '+' in the output).</p><p>If there is no pair of seats for Chris and ZS, print \"NO\" (without quotes) in a single line.</p><p>If there are multiple solutions, you may print any of them.</p>",
+    "samples": [
+        {
+            "input": "6<br/>OO|OX<br/>XO|XX<br/>OX|OO<br/>XX|OX<br/>OO|OO<br/>OO|XX<br/>",
+            "output": "YES<br/>++|OX<br/>XO|XX<br/>OX|OO<br/>XX|OX<br/>OO|OO<br/>OO|XX<br/>"
+        },
+        {
+            "input": "4<br/>XO|OX<br/>XO|XX<br/>OX|OX<br/>XX|OX<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "5<br/>XX|XX<br/>XX|XX<br/>XO|OX<br/>XO|OO<br/>OX|XO<br/>",
+            "output": "YES<br/>XX|XX<br/>XX|XX<br/>XO|OX<br/>XO|++<br/>OX|XO<br/>"
+        }
+    ],
+    "note": "<p>Note that the following is an incorrect configuration for the first sample case because the seats must be in the same pair.</p><p><span class=\"tex-font-style-tt\">O+|+X</span></p><p><span class=\"tex-font-style-tt\">XO|XX</span></p><p><span class=\"tex-font-style-tt\">OX|OO</span></p><p><span class=\"tex-font-style-tt\">XX|OX</span></p><p><span class=\"tex-font-style-tt\">OO|OO</span></p><p><span class=\"tex-font-style-tt\">OO|XX</span></p>",
+    "contestId": 711,
+    "index": "A",
+    "name": "Bus to Udayland",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 28917
+}

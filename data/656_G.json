@@ -1,0 +1,33 @@
+{
+    "title": "G. You're a Professional",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A simple recommendation system would recommend a user things liked by a certain number of their friends. In this problem you will implement part of such a system.</p><p>You are given user's friends' opinions about a list of items. You are also given a threshold <span class=\"tex-span\"><i>T</i></span> \u2014 the minimal number of \"likes\" necessary for an item to be recommended to the user.</p><p>Output the number of items in the list liked by at least <span class=\"tex-span\"><i>T</i></span> of user's friends.</p>",
+    "inputSpecification": "<p>The first line of the input will contain three space-separated integers: the number of friends <span class=\"tex-span\"><i>F</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>F</i>\u2009\u2264\u200910</span>), the number of items <span class=\"tex-span\"><i>I</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>I</i>\u2009\u2264\u200910</span>) and the threshold <span class=\"tex-span\"><i>T</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>T</i>\u2009\u2264\u2009<i>F</i></span>).</p><p>The following <span class=\"tex-span\"><i>F</i></span> lines of input contain user's friends' opinions. <span class=\"tex-span\"><i>j</i></span>-th character of <span class=\"tex-span\"><i>i</i></span>-th line is '<span class=\"tex-font-style-tt\">Y</span>' if <span class=\"tex-span\"><i>i</i></span>-th friend likes <span class=\"tex-span\"><i>j</i></span>-th item, and '<span class=\"tex-font-style-tt\">N</span>' otherwise.</p>",
+    "outputSpecification": "<p>Output an integer \u2014 the number of items liked by at least <span class=\"tex-span\"><i>T</i></span> of user's friends.</p>",
+    "samples": [
+        {
+            "input": "3 3 2<br/>YYY<br/>NNN<br/>YNY<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "4 4 1<br/>NNNY<br/>NNYN<br/>NYNN<br/>YNNN<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 656,
+    "index": "G",
+    "name": "You're a Professional",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 476
+}

@@ -1,0 +1,22 @@
+{
+    "title": "D2. Oracle for f(x) = b * x + (1 - b) * (1 - x) mod 2",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Implement a quantum oracle on <span class=\"tex-span\"><i>N</i></span> qubits which implements the following function: </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b2eb3d0e407b200708fe5e4dc65e777bc2c88984.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>Here <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b27ec8b8056386de828da0df174348afa7d29512.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> (a vector of <span class=\"tex-span\"><i>N</i></span> integers, each of which can be 0 or 1), and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/823bed8a1021f190960cf0b721fad709b7641d0e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is a vector of <span class=\"tex-span\"><i>N</i></span> 1s.</p><p>For an explanation on how this type of quantum oracles works, see <a href=\"https://codeforces.com/blog/entry/60319\">Introduction to quantum oracles</a>.</p><p>You have to implement an operation which takes the following inputs:</p><ul><li> an array of <span class=\"tex-span\"><i>N</i></span> qubits <span class=\"tex-span\"><i>x</i></span> in arbitrary state (input register), <span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u20098</span>,</li><li> a qubit <span class=\"tex-span\"><i>y</i></span> in arbitrary state (output qubit),</li><li> an array of <span class=\"tex-span\"><i>N</i></span> integers <span class=\"tex-span\"><i>b</i></span>, representing the vector <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/71fa108edb785ca9f729fa3cd5ad18556dd682e4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Each element of <span class=\"tex-span\"><i>b</i></span> will be 0 or 1.</li></ul><p>The operation doesn't have an output; its \"output\" is the state in which it leaves the qubits.</p><p>Your code should have the following signature:</p><pre class=\"verbatim\">namespace Solution {<br/>    open Microsoft.Quantum.Primitive;<br/>    open Microsoft.Quantum.Canon;<br/><br/>    operation Solve (x : Qubit[], y : Qubit, b : Int[]) : ()<br/>    {<br/>        body<br/>        {<br/>            // your code here<br/>        }<br/>    }<br/>}</pre>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1002,
+    "index": "D2",
+    "name": "Oracle for f(x) = b * x + (1 - b) * (1 - x) mod 2",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 373
+}

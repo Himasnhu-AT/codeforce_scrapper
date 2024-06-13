@@ -1,0 +1,30 @@
+{
+    "title": "D. Decrease the Sum of Digits",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a positive integer $$$n$$$. In one move, you can increase $$$n$$$ by one (i.e. make $$$n := n + 1$$$). Your task is to find the minimum number of moves you need to perform in order to make the sum of digits of $$$n$$$ be less than or equal to $$$s$$$.</p><p>You have to answer $$$t$$$ independent test cases.</p>",
+    "inputSpecification": "<p>The first line of the input contains one integer $$$t$$$ ($$$1 \\le t \\le 2 \\cdot 10^4$$$) \u2014 the number of test cases. Then $$$t$$$ test cases follow.</p><p>The only line of the test case contains two integers $$$n$$$ and $$$s$$$ ($$$1 \\le n \\le 10^{18}$$$; $$$1 \\le s \\le 162$$$).</p>",
+    "outputSpecification": "<p>For each test case, print the answer: the minimum number of moves you need to perform in order to make the sum of digits of $$$n$$$ be less than or equal to $$$s$$$.</p>",
+    "samples": [
+        {
+            "input": "\n5\n2 1\n1 1\n500 4\n217871987498122 10\n100000000000000001 1\n",
+            "output": "\n8\n0\n500\n2128012501878\n899999999999999999\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1409,
+    "index": "D",
+    "name": "Decrease the Sum of Digits",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 18829
+}

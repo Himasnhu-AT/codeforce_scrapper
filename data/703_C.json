@@ -1,0 +1,30 @@
+{
+    "title": "C. Chris and Road",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>And while Mishka is enjoying her trip...</p><p>Chris is a little brown bear. No one knows, where and when he met Mishka, but for a long time they are together (excluding her current trip). However, best friends are important too. John is Chris' best friend.</p><p>Once walking with his friend, John gave Chris the following problem:</p><p>At the infinite horizontal road of width <span class=\"tex-span\"><i>w</i></span>, bounded by lines <span class=\"tex-span\"><i>y</i>\u2009=\u20090</span> and <span class=\"tex-span\"><i>y</i>\u2009=\u2009<i>w</i></span>, there is a bus moving, presented as a convex polygon of <span class=\"tex-span\"><i>n</i></span> vertices. The bus moves continuously with a constant speed of <span class=\"tex-span\"><i>v</i></span> in a straight <span class=\"tex-span\"><i>Ox</i></span> line in direction of decreasing <span class=\"tex-span\"><i>x</i></span> coordinates, thus in time <span class=\"tex-font-style-bf\">only <span class=\"tex-span\"><i>x</i></span> coordinates</span> of its points are changing. Formally, after time <span class=\"tex-span\"><i>t</i></span> each of <span class=\"tex-span\"><i>x</i></span> coordinates of its points will be decreased by <span class=\"tex-span\"><i>vt</i></span>.</p><p>There is a pedestrian in the point <span class=\"tex-span\">(0,\u20090)</span>, who can move only by a vertical pedestrian crossing, presented as a segment connecting points <span class=\"tex-span\">(0,\u20090)</span> and <span class=\"tex-span\">(0,\u2009<i>w</i>)</span> with any speed not exceeding <span class=\"tex-span\"><i>u</i></span>. Thus the pedestrian can move only in a straight line <span class=\"tex-span\"><i>Oy</i></span> in any direction with any speed not exceeding <span class=\"tex-span\"><i>u</i></span> and not leaving the road borders. The pedestrian can instantly change his speed, thus, for example, he can stop instantly.</p><p>Please look at the sample note picture for better understanding.</p><p>We consider the pedestrian is <span class=\"tex-font-style-it\">hit by the bus</span>, if at any moment the point he is located in lies <span class=\"tex-font-style-bf\">strictly inside</span> the bus polygon (this means that if the point lies on the polygon vertex or on its edge, the pedestrian is not hit by the bus).</p><p>You are given the bus position at the moment <span class=\"tex-span\">0</span>. Please help Chris determine minimum amount of time the pedestrian needs to cross the road and reach the point <span class=\"tex-span\">(0,\u2009<i>w</i>)</span> and not to be hit by the bus.</p>",
+    "inputSpecification": "<p>The first line of the input contains four integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>w</i></span>, <span class=\"tex-span\"><i>v</i></span>, <span class=\"tex-span\"><i>u</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>w</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>v</i>,\u2009\u2009<i>u</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of the bus polygon vertices, road width, bus speed and pedestrian speed respectively.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines describes polygon vertices in counter-clockwise order. <span class=\"tex-span\"><i>i</i></span>-th of them contains pair of integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>w</i></span>)\u00a0\u2014 coordinates of <span class=\"tex-span\"><i>i</i></span>-th polygon point. It is guaranteed that the polygon is non-degenerate.</p>",
+    "outputSpecification": "<p>Print the single real <span class=\"tex-span\"><i>t</i></span>\u00a0\u2014 the time the pedestrian needs to croos the road and not to be hit by the bus. The answer is considered correct if its relative or absolute error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "5 5 1 2<br/>1 2<br/>3 1<br/>4 3<br/>3 4<br/>1 4<br/>",
+            "output": "5.0000000000"
+        }
+    ],
+    "note": "<p>Following image describes initial position in the first sample case:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6d0966ee3194a0c11a228fa83f19a00157de89f7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 703,
+    "index": "C",
+    "name": "Chris and Road",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "implementation"
+    ],
+    "solvedCount": 1695
+}

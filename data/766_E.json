@@ -1,0 +1,43 @@
+{
+    "title": "E. Mahmoud and a xor trip",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mahmoud and Ehab live in a country with <span class=\"tex-span\"><i>n</i></span> cities numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> and connected by <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> undirected roads. It's guaranteed that you can reach any city from any other using these roads. Each city has a number <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> attached to it.</p><p>We define the distance from city <span class=\"tex-span\"><i>x</i></span> to city <span class=\"tex-span\"><i>y</i></span> as the <span class=\"tex-font-style-tt\">xor</span> of numbers attached to the cities on the path from <span class=\"tex-span\"><i>x</i></span> to <span class=\"tex-span\"><i>y</i></span> <span class=\"tex-font-style-bf\">(including both <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>)</span>. In other words if values attached to the cities on the path from <span class=\"tex-span\"><i>x</i></span> to <span class=\"tex-span\"><i>y</i></span> form an array <span class=\"tex-span\"><i>p</i></span> of length <span class=\"tex-span\"><i>l</i></span> then the distance between them is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9344d9e36d9d0ec430632599b3053395bd4497b2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c4b7092c0f7ce6535f2574569c98f7b3c2fe2c5f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is bitwise <span class=\"tex-font-style-tt\">xor</span> operation.</p><p>Mahmoud and Ehab want to choose two cities and make a journey from one to another. The index of the start city is always less than or equal to the index of the finish city (they may start and finish in the same city and in this case the distance equals the number attached to that city). They can't determine the two cities so they try every city as a start and every city with greater index as a finish. They want to know the total distance between all pairs of cities.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of cities in Mahmoud and Ehab's country.</p><p>Then the second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) which represent the numbers attached to the cities. Integer <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is attached to the city <span class=\"tex-span\"><i>i</i></span>.</p><p>Each of the next <span class=\"tex-span\"><i>n</i>\u2009\u2009-\u2009\u20091</span> lines contains two integers <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> (<span class=\"tex-span\">1\u2009\u2009\u2264\u2009\u2009<i>u</i>,\u2009\u2009<i>v</i>\u2009\u2009\u2264\u2009\u2009<i>n</i></span>, <span class=\"tex-span\"><i>u</i>\u2009\u2009\u2260\u2009\u2009<i>v</i></span>), denoting that there is an undirected road between cities <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span>. It's guaranteed that you can reach any city from any other using these roads.</p>",
+    "outputSpecification": "<p>Output one number denoting the total distance between all pairs of cities.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2 3<br/>1 2<br/>2 3<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "5<br/>1 2 3 4 5<br/>1 2<br/>2 3<br/>3 4<br/>3 5<br/>",
+            "output": "52<br/>"
+        },
+        {
+            "input": "5<br/>10 9 8 7 6<br/>1 2<br/>2 3<br/>3 4<br/>3 5<br/>",
+            "output": "131<br/>"
+        }
+    ],
+    "note": "<p>A bitwise <span class=\"tex-font-style-tt\">xor</span> takes two bit integers of equal length and performs the logical <span class=\"tex-font-style-tt\">xor</span> operation on each pair of corresponding bits. The result in each position is <span class=\"tex-span\">1</span> if only the first bit is <span class=\"tex-span\">1</span> or only the second bit is <span class=\"tex-span\">1</span>, but will be <span class=\"tex-span\">0</span> if both are <span class=\"tex-span\">0</span> or both are <span class=\"tex-span\">1</span>. You can read more about bitwise <span class=\"tex-font-style-tt\">xor</span> operation here: <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#XOR\">https://en.wikipedia.org/wiki/Bitwise_operation#XOR</a>.</p><p>In the first sample the available paths are:</p><ul> <li> city <span class=\"tex-span\">1</span> to itself with a distance of <span class=\"tex-span\">1</span>, </li><li> city <span class=\"tex-span\">2</span> to itself with a distance of <span class=\"tex-span\">2</span>, </li><li> city <span class=\"tex-span\">3</span> to itself with a distance of <span class=\"tex-span\">3</span>, </li><li> city <span class=\"tex-span\">1</span> to city <span class=\"tex-span\">2</span> with a distance of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8f3bf9fdacb25bb19b17c017c532cd102cb4993c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, </li><li> city <span class=\"tex-span\">1</span> to city <span class=\"tex-span\">3</span> with a distance of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b45e76ca68e4969fad668f1f4193d26cdc0a0014.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, </li><li> city <span class=\"tex-span\">2</span> to city <span class=\"tex-span\">3</span> with a distance of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3701990d023d19c5da0b315b5057d572ec11e4fd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. </li></ul> The total distance between all pairs of cities equals <span class=\"tex-span\">1\u2009+\u20092\u2009+\u20093\u2009+\u20093\u2009+\u20090\u2009+\u20091\u2009=\u200910</span>.",
+    "contestId": 766,
+    "index": "E",
+    "name": "Mahmoud and a xor trip",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "math",
+        "trees"
+    ],
+    "solvedCount": 2871
+}

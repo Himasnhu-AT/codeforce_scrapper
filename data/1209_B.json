@@ -1,0 +1,39 @@
+{
+    "title": "B. Koala and Lights",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>It is a holiday season, and Koala is decorating his house with cool lights! He owns $$$n$$$ lights, all of which flash periodically.</p><p>After taking a quick glance at them, Koala realizes that each of his lights can be described with two parameters $$$a_i$$$ and $$$b_i$$$. Light with parameters $$$a_i$$$ and $$$b_i$$$ will toggle (on to off, or off to on) every $$$a_i$$$ seconds starting from the $$$b_i$$$-th second. In other words, it will toggle at the moments $$$b_i$$$, $$$b_i + a_i$$$, $$$b_i + 2 \\cdot a_i$$$ and so on.</p><p>You know for each light whether it's initially on or off and its corresponding parameters $$$a_i$$$ and $$$b_i$$$. Koala is wondering what is the maximum number of lights that will ever be on at the same time. So you need to find that out.</p><center> <img class=\"tex-graphics\" height=\"302px\" src=\"https://espresso.codeforces.com/5b8ced351fc35747fda01b8c4aba8716b071979e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"643px\"/> <span class=\"tex-font-size-small\">Here is a graphic for the first example.</span> </center>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 100$$$), the number of lights.</p><p>The next line contains a string $$$s$$$ of $$$n$$$ characters. The $$$i$$$-th character is \"<span class=\"tex-font-style-tt\">1</span>\", if the $$$i$$$-th lamp is initially on. Otherwise, $$$i$$$-th character is \"<span class=\"tex-font-style-tt\">0</span>\".</p><p>The $$$i$$$-th of the following $$$n$$$ lines contains two integers $$$a_i$$$ and $$$b_i$$$ ($$$1 \\le a_i, b_i \\le 5$$$) \u00a0\u2014 the parameters of the $$$i$$$-th light.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the maximum number of lights that will ever be on at the same time.</p>",
+    "samples": [
+        {
+            "input": "\n3\n101\n3 3\n3 2\n3 1\n",
+            "output": "\n2\n"
+        },
+        {
+            "input": "\n4\n1111\n3 4\n5 2\n3 1\n3 2\n",
+            "output": "\n4\n"
+        },
+        {
+            "input": "\n6\n011100\n5 3\n5 5\n2 4\n3 5\n4 2\n1 5\n",
+            "output": "\n6\n"
+        }
+    ],
+    "note": "<p>For first example, the lamps' states are shown in the picture above. The largest number of simultaneously on lamps is $$$2$$$ (e.g. at the moment $$$2$$$).</p><p>In the second example, all lights are initially on. So the answer is $$$4$$$.</p>",
+    "contestId": 1209,
+    "index": "B",
+    "name": "Koala and Lights",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 8098
+}

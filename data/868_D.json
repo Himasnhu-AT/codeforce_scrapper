@@ -1,0 +1,33 @@
+{
+    "title": "D. Huge Strings",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given <span class=\"tex-span\"><i>n</i></span> strings <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>n</i></sub></span> consisting of characters <span class=\"tex-span\">0</span> and <span class=\"tex-span\">1</span>. <span class=\"tex-span\"><i>m</i></span> operations are performed, on each of them you concatenate two existing strings into a new one. On the <span class=\"tex-span\"><i>i</i></span>-th operation the concatenation <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></sub><i>s</i><sub class=\"lower-index\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></sub></span> is saved into a new string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>n</i>\u2009+\u2009<i>i</i></sub></span> (the operations are numbered starting from <span class=\"tex-span\">1</span>). After each operation you need to find the maximum positive integer <span class=\"tex-span\"><i>k</i></span> such that all possible strings consisting of <span class=\"tex-span\">0</span> and <span class=\"tex-span\">1</span> of length <span class=\"tex-span\"><i>k</i></span> (there are <span class=\"tex-span\">2<sup class=\"upper-index\"><i>k</i></sup></span> such strings) are substrings of the new string. If there is no such <span class=\"tex-span\"><i>k</i></span>, print <span class=\"tex-span\">0</span>.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the number of strings. The next <span class=\"tex-span\"><i>n</i></span> lines contain strings <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u2009100</span>), one per line. The total length of strings is not greater than <span class=\"tex-span\">100</span>.</p><p>The next line contains single integer <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the number of operations. <span class=\"tex-span\"><i>m</i></span> lines follow, each of them contains two integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> abd <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>\u2009+\u2009<i>i</i>\u2009-\u20091</span>)\u00a0\u2014 the number of strings that are concatenated to form <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>n</i>\u2009+\u2009<i>i</i></sub></span>.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>m</i></span> lines, each should contain one integer\u00a0\u2014 the answer to the question after the corresponding operation.</p>",
+    "samples": [
+        {
+            "input": "5<br/>01<br/>10<br/>101<br/>11111<br/>0<br/>3<br/>1 2<br/>6 5<br/>4 4<br/>",
+            "output": "1<br/>2<br/>0<br/>"
+        }
+    ],
+    "note": "<p>On the first operation, a new string \"<span class=\"tex-font-style-tt\">0110</span>\" is created. For <span class=\"tex-span\"><i>k</i>\u2009=\u20091</span> the two possible binary strings of length <span class=\"tex-span\"><i>k</i></span> are \"<span class=\"tex-font-style-tt\">0</span>\" and \"<span class=\"tex-font-style-tt\">1</span>\", they are substrings of the new string. For <span class=\"tex-span\"><i>k</i>\u2009=\u20092</span> and greater there exist strings of length <span class=\"tex-span\"><i>k</i></span> that do not appear in this string (for <span class=\"tex-span\"><i>k</i>\u2009=\u20092</span> such string is \"<span class=\"tex-font-style-tt\">00</span>\"). So the answer is <span class=\"tex-span\">1</span>.</p><p>On the second operation the string \"<span class=\"tex-font-style-tt\">01100</span>\" is created. Now all strings of length <span class=\"tex-span\"><i>k</i>\u2009=\u20092</span> are present.</p><p>On the third operation the string \"<span class=\"tex-font-style-tt\">1111111111</span>\" is created. There is no zero, so the answer is <span class=\"tex-span\">0</span>.</p>",
+    "contestId": 868,
+    "index": "D",
+    "name": "Huge Strings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 894
+}

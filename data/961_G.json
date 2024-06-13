@@ -1,0 +1,35 @@
+{
+    "title": "G. Partitions",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a set of <span class=\"tex-span\"><i>n</i></span> elements indexed from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. The weight of <span class=\"tex-span\"><i>i</i></span>-th element is <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span>. The weight of some subset of a given set is denoted as <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/dab8d9210e9882924b03a521d4eb19fed5b2bc74.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. The weight of some partition <span class=\"tex-span\"><i>R</i></span> of a given set into <span class=\"tex-span\"><i>k</i></span> subsets is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d79871cc5728032baa39fd4a9461918c62d2ac58.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> (recall that a partition of a given set is a set of its subsets such that every element of the given set belongs to exactly one subset in partition).</p><p>Calculate the sum of weights of all partitions of a given set into exactly <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-font-style-bf\">non-empty</span> subsets, and print it modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>. Two partitions are considered different iff there exist two elements <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> such that they belong to the same set in one of the partitions, and to different sets in another partition.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 the number of elements and the number of subsets in each partition, respectively.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u2014 weights of elements of the set.</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the sum of weights of all partitions of a given set into <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-font-style-bf\">non-empty</span> subsets, taken modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "4 2<br/>2 3 2 3<br/>",
+            "output": "160<br/>"
+        },
+        {
+            "input": "5 2<br/>1 2 3 4 5<br/>",
+            "output": "645<br/>"
+        }
+    ],
+    "note": "<p>Possible partitions in the first sample:</p><ol> <li> <span class=\"tex-span\">{{1,\u20092,\u20093},\u2009{4}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u20093\u00b7(<i>w</i><sub class=\"lower-index\">1</sub>\u2009+\u2009<i>w</i><sub class=\"lower-index\">2</sub>\u2009+\u2009<i>w</i><sub class=\"lower-index\">3</sub>)\u2009+\u20091\u00b7<i>w</i><sub class=\"lower-index\">4</sub>\u2009=\u200924</span>; </li><li> <span class=\"tex-span\">{{1,\u20092,\u20094},\u2009{3}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200926</span>; </li><li> <span class=\"tex-span\">{{1,\u20093,\u20094},\u2009{2}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200924</span>; </li><li> <span class=\"tex-span\">{{1,\u20092},\u2009{3,\u20094}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u20092\u00b7(<i>w</i><sub class=\"lower-index\">1</sub>\u2009+\u2009<i>w</i><sub class=\"lower-index\">2</sub>)\u2009+\u20092\u00b7(<i>w</i><sub class=\"lower-index\">3</sub>\u2009+\u2009<i>w</i><sub class=\"lower-index\">4</sub>)\u2009=\u200920</span>; </li><li> <span class=\"tex-span\">{{1,\u20093},\u2009{2,\u20094}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200920</span>; </li><li> <span class=\"tex-span\">{{1,\u20094},\u2009{2,\u20093}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200920</span>; </li><li> <span class=\"tex-span\">{{1},\u2009{2,\u20093,\u20094}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200926</span>; </li></ol><p>Possible partitions in the second sample:</p><ol> <li> <span class=\"tex-span\">{{1,\u20092,\u20093,\u20094},\u2009{5}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200945</span>; </li><li> <span class=\"tex-span\">{{1,\u20092,\u20093,\u20095},\u2009{4}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200948</span>; </li><li> <span class=\"tex-span\">{{1,\u20092,\u20094,\u20095},\u2009{3}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200951</span>; </li><li> <span class=\"tex-span\">{{1,\u20093,\u20094,\u20095},\u2009{2}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200954</span>; </li><li> <span class=\"tex-span\">{{2,\u20093,\u20094,\u20095},\u2009{1}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200957</span>; </li><li> <span class=\"tex-span\">{{1,\u20092,\u20093},\u2009{4,\u20095}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200936</span>; </li><li> <span class=\"tex-span\">{{1,\u20092,\u20094},\u2009{3,\u20095}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200937</span>; </li><li> <span class=\"tex-span\">{{1,\u20092,\u20095},\u2009{3,\u20094}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200938</span>; </li><li> <span class=\"tex-span\">{{1,\u20093,\u20094},\u2009{2,\u20095}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200938</span>; </li><li> <span class=\"tex-span\">{{1,\u20093,\u20095},\u2009{2,\u20094}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200939</span>; </li><li> <span class=\"tex-span\">{{1,\u20094,\u20095},\u2009{2,\u20093}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200940</span>; </li><li> <span class=\"tex-span\">{{2,\u20093,\u20094},\u2009{1,\u20095}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200939</span>; </li><li> <span class=\"tex-span\">{{2,\u20093,\u20095},\u2009{1,\u20094}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200940</span>; </li><li> <span class=\"tex-span\">{{2,\u20094,\u20095},\u2009{1,\u20093}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200941</span>; </li><li> <span class=\"tex-span\">{{3,\u20094,\u20095},\u2009{1,\u20092}}</span>, <span class=\"tex-span\"><i>W</i>(<i>R</i>)\u2009=\u200942</span>. </li></ol>",
+    "contestId": 961,
+    "index": "G",
+    "name": "Partitions",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 1312
+}

@@ -1,0 +1,37 @@
+{
+    "title": "B. Distances to Zero",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given the array of integer numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">0</sub>,\u2009<i>a</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20091</sub></span>. For each element find the distance to the nearest zero (to the element which equals to zero). There is at least one zero element in the given array.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 length of the array <span class=\"tex-span\"><i>a</i></span>. The second line contains integer elements of the array separated by single spaces (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print the sequence <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\">0</sub>,\u2009<i>d</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>d</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20091</sub></span>, where <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> is the difference of indices between <span class=\"tex-span\"><i>i</i></span> and nearest <span class=\"tex-span\"><i>j</i></span> such that <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>j</i></sub>\u2009=\u20090</span>. It is possible that <span class=\"tex-span\"><i>i</i>\u2009=\u2009<i>j</i></span>.</p>",
+    "samples": [
+        {
+            "input": "9<br/>2 1 0 3 0 0 3 2 4<br/>",
+            "output": "2 1 0 1 0 0 1 2 3 "
+        },
+        {
+            "input": "5<br/>0 1 2 3 4<br/>",
+            "output": "0 1 2 3 4 "
+        },
+        {
+            "input": "7<br/>5 6 0 1 -2 3 4<br/>",
+            "output": "2 1 0 1 2 3 4 "
+        }
+    ],
+    "note": null,
+    "contestId": 803,
+    "index": "B",
+    "name": "Distances to Zero",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms"
+    ],
+    "solvedCount": 6432
+}

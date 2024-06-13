@@ -1,0 +1,34 @@
+{
+    "title": "B. Mishka and trip",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Mishka is a great traveller and she visited many countries. After thinking about where to travel this time, she chose XXX\u00a0\u2014 beautiful, but little-known northern country.</p><p>Here are some interesting facts about XXX:</p><ol> <li> XXX consists of <span class=\"tex-span\"><i>n</i></span> cities, <span class=\"tex-span\"><i>k</i></span> of whose (just imagine!) are capital cities. </li><li> All of cities in the country are beautiful, but each is beautiful in its own way. Beauty value of <span class=\"tex-span\"><i>i</i></span>-th city equals to <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span>. </li><li> All the cities are consecutively connected by the roads, including <span class=\"tex-span\">1</span>-st and <span class=\"tex-span\"><i>n</i></span>-th city, forming a cyclic route <span class=\"tex-span\">1\u2009\u2014\u20092\u2009\u2014\u2009...\u2009\u2014\u2009<i>n</i>\u2009\u2014\u20091</span>. Formally, for every <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>n</i></span> there is a road between <span class=\"tex-span\"><i>i</i></span>-th and <span class=\"tex-span\"><i>i</i>\u2009+\u20091</span>-th city, and another one between <span class=\"tex-span\">1</span>-st and <span class=\"tex-span\"><i>n</i></span>-th city. </li><li> Each capital city is connected with each other city directly by the roads. Formally, if city <span class=\"tex-span\"><i>x</i></span> is a capital city, then for every <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i>,\u2009\u2009<i>i</i>\u2009\u2260\u2009<i>x</i></span>, there is a road between cities <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>i</i></span>. </li><li> There is <span class=\"tex-font-style-bf\">at most one</span> road between any two cities. </li><li> Price of passing a road directly depends on beauty values of cities it connects. Thus if there is a road between cities <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span>, price of passing it equals <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u00b7<i>c</i><sub class=\"lower-index\"><i>j</i></sub></span>.</li></ol><p>Mishka started to gather her things for a trip, but didn't still decide which route to follow and thus she asked you to help her determine summary price of passing <span class=\"tex-font-style-bf\">each of the roads</span> in XXX. Formally, for every pair of cities <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\"><i>a</i>\u2009&lt;\u2009<i>b</i></span>), such that there is a road between <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> you are to find sum of products <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>a</i></sub>\u00b7<i>c</i><sub class=\"lower-index\"><i>b</i></sub></span>. Will you help her?</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the number of cities in XXX and the number of capital cities among them.</p><p>The second line of the input contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub>,\u2009<i>c</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>c</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910\u2009000</span>)\u00a0\u2014 beauty values of the cities.</p><p>The third line of the input contains <span class=\"tex-span\"><i>k</i></span> distinct integers <span class=\"tex-span\"><i>id</i><sub class=\"lower-index\">1</sub>,\u2009<i>id</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>id</i><sub class=\"lower-index\"><i>k</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>id</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 indices of capital cities. Indices are given in ascending order.</p>",
+    "outputSpecification": "<p>Print the only integer\u00a0\u2014 summary price of passing each of the roads in XXX.</p>",
+    "samples": [
+        {
+            "input": "4 1<br/>2 3 1 2<br/>3<br/>",
+            "output": "17"
+        },
+        {
+            "input": "5 2<br/>3 5 2 2 4<br/>1 4<br/>",
+            "output": "71"
+        }
+    ],
+    "note": "<p>This image describes first sample case:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/9dcb0e62694349977e064303a74efd880af5eb03.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>It is easy to see that summary price is equal to <span class=\"tex-span\">17</span>.</p><p>This image describes second sample case:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c30146637f3647c2fc77818bbbf3c080f94f116e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>It is easy to see that summary price is equal to <span class=\"tex-span\">71</span>.</p>",
+    "contestId": 703,
+    "index": "B",
+    "name": "Mishka and trip",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 5642
+}

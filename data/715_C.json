@@ -1,0 +1,36 @@
+{
+    "title": "C. Digit Tree",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>ZS the Coder has a large tree. It can be represented as an undirected connected graph of <span class=\"tex-span\"><i>n</i></span> vertices numbered from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> and <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> edges between them. There is a single <span class=\"tex-font-style-bf\">nonzero</span> digit written on each edge.</p><p>One day, ZS the Coder was bored and decided to investigate some properties of the tree. He chose a positive integer <span class=\"tex-span\"><i>M</i></span>, which is <span class=\"tex-font-style-bf\">coprime</span> to <span class=\"tex-span\">10</span>, i.e. <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fa46c78ff9ecabee5b4e74c357a3aee84f6f4f54.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>ZS consider an <span class=\"tex-font-style-bf\">ordered pair</span> of distinct vertices <span class=\"tex-span\">(<i>u</i>,\u2009<i>v</i>)</span> <span class=\"tex-font-style-it\">interesting</span> when if he would follow the shortest path from vertex <span class=\"tex-span\"><i>u</i></span> to vertex <span class=\"tex-span\"><i>v</i></span> and write down all the digits he encounters on his path in the same order, he will get a decimal representaion of an integer divisible by <span class=\"tex-span\"><i>M</i></span>.</p><p>Formally, ZS consider an ordered pair of distinct vertices <span class=\"tex-span\">(<i>u</i>,\u2009<i>v</i>)</span> interesting if the following states true:</p><ul> <li> Let <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>\u2009=\u2009<i>u</i>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>k</i></sub>\u2009=\u2009<i>v</i></span> be the sequence of vertices on the shortest path from <span class=\"tex-span\"><i>u</i></span> to <span class=\"tex-span\"><i>v</i></span> in the order of encountering them; </li><li> Let <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>k</i></span>) be the digit written on the edge between vertices <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span>; </li><li> The integer <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/190a896ddf6cde6da388fdc81f0ddc179ba13787.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is divisible by <span class=\"tex-span\"><i>M</i></span>. </li></ul><p>Help ZS the Coder find the number of interesting pairs!</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers, <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>M</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>,<span class=\"tex-span\">\u20091\u2009\u2264\u2009<i>M</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/04163f181aee6ea0709922af5a3f8cc700b28f61.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>)\u00a0\u2014 the number of vertices and the number ZS has chosen respectively.</p><p>The next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contain three integers each. <span class=\"tex-span\"><i>i</i></span>-th of them contains <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span>, denoting an edge between vertices <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> with digit <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> written on it (<span class=\"tex-span\">0\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>n</i>,\u2009\u20091\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20099</span>).</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the number of interesting (by ZS the Coder's consideration) pairs.</p>",
+    "samples": [
+        {
+            "input": "6 7<br/>0 1 2<br/>4 2 4<br/>2 0 1<br/>3 0 9<br/>2 5 7<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "5 11<br/>1 2 3<br/>2 0 3<br/>3 0 3<br/>4 3 3<br/>",
+            "output": "8<br/>"
+        }
+    ],
+    "note": "<p>In the first sample case, the interesting pairs are <span class=\"tex-span\">(0,\u20094),\u2009(1,\u20092),\u2009(1,\u20095),\u2009(3,\u20092),\u2009(2,\u20095),\u2009(5,\u20092),\u2009(3,\u20095)</span>. The numbers that are formed by these pairs are <span class=\"tex-span\">14,\u200921,\u2009217,\u200991,\u20097,\u20097,\u2009917</span> respectively, which are all multiples of <span class=\"tex-span\">7</span>. Note that <span class=\"tex-span\">(2,\u20095)</span> and <span class=\"tex-span\">(5,\u20092)</span> are considered different. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/bc176c32d481cab5ee990dbd3a680ba9a0b96e6d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second sample case, the interesting pairs are <span class=\"tex-span\">(4,\u20090),\u2009(0,\u20094),\u2009(3,\u20092),\u2009(2,\u20093),\u2009(0,\u20091),\u2009(1,\u20090),\u2009(4,\u20091),\u2009(1,\u20094)</span>, and <span class=\"tex-span\">6</span> of these pairs give the number <span class=\"tex-span\">33</span> while <span class=\"tex-span\">2</span> of them give the number <span class=\"tex-span\">3333</span>, which are all multiples of <span class=\"tex-span\">11</span>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8de5df20f5042003a07c314d0ed3d64a0d3831aa.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 715,
+    "index": "C",
+    "name": "Digit Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "divide and conquer",
+        "dsu",
+        "trees"
+    ],
+    "solvedCount": 1994
+}

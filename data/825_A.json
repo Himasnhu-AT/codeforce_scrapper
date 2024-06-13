@@ -1,0 +1,33 @@
+{
+    "title": "A. Binary Protocol",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp has just invented a new binary protocol for data transmission. He is encoding positive integer decimal number to binary string using following algorithm:</p><ul> <li> Each digit is represented with number of <span class=\"tex-font-style-tt\">'1'</span> characters equal to the value of that digit (for <span class=\"tex-font-style-tt\">0</span> it is zero ones). </li><li> Digits are written one by one in order corresponding to number and separated by single <span class=\"tex-font-style-tt\">'0'</span> character. </li></ul><p>Though Polycarp learnt how to encode the numbers, he has no idea how to decode them back. Help him calculate the decoded number.</p>",
+    "inputSpecification": "<p>The first line contains one integer number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200989</span>) \u2014 length of the string <span class=\"tex-span\"><i>s</i></span>.</p><p>The second line contains string <span class=\"tex-span\"><i>s</i></span> \u2014 sequence of <span class=\"tex-font-style-tt\">'0'</span> and <span class=\"tex-font-style-tt\">'1'</span> characters, number in its encoded format. It is guaranteed that the number corresponding to the string is positive and doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup></span>. The string always starts with <span class=\"tex-font-style-tt\">'1'</span>.</p>",
+    "outputSpecification": "<p>Print the decoded number.</p>",
+    "samples": [
+        {
+            "input": "3<br/>111<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "9<br/>110011101<br/>",
+            "output": "2031<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 825,
+    "index": "A",
+    "name": "Binary Protocol",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 7567
+}

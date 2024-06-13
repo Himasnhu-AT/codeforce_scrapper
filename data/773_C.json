@@ -1,0 +1,40 @@
+{
+    "title": "C. Prairie Partition",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>It can be shown that any positive integer <span class=\"tex-span\"><i>x</i></span> can be uniquely represented as <span class=\"tex-span\"><i>x</i>\u2009=\u20091\u2009+\u20092\u2009+\u20094\u2009+\u2009...\u2009+\u20092<sup class=\"upper-index\"><i>k</i>\u2009-\u20091</sup>\u2009+\u2009<i>r</i></span>, where <span class=\"tex-span\"><i>k</i></span> and <span class=\"tex-span\"><i>r</i></span> are integers, <span class=\"tex-span\"><i>k</i>\u2009\u2265\u20090</span>, <span class=\"tex-span\">0\u2009&lt;\u2009<i>r</i>\u2009\u2264\u20092<sup class=\"upper-index\"><i>k</i></sup></span>. Let's call that representation <span class=\"tex-font-style-underline\">prairie partition</span> of <span class=\"tex-span\"><i>x</i></span>.</p><p>For example, the prairie partitions of <span class=\"tex-span\">12</span>, <span class=\"tex-span\">17</span>, <span class=\"tex-span\">7</span> and <span class=\"tex-span\">1</span> are: </p><center> <span class=\"tex-span\">12\u2009=\u20091\u2009+\u20092\u2009+\u20094\u2009+\u20095</span>,<p><span class=\"tex-span\">17\u2009=\u20091\u2009+\u20092\u2009+\u20094\u2009+\u20098\u2009+\u20092</span>,</p><p><span class=\"tex-span\">7\u2009=\u20091\u2009+\u20092\u2009+\u20094</span>,</p><p><span class=\"tex-span\">1\u2009=\u20091</span>. </p></center><p>Alice took a sequence of positive integers (possibly with repeating elements), replaced every element with the sequence of summands in its prairie partition, arranged the resulting numbers in non-decreasing order and gave them to Borys. Now Borys wonders how many elements Alice's original sequence could contain. Find all possible options!</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the number of numbers given from Alice to Borys.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">12</sup></span>; <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u2009...\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>)\u00a0\u2014 the numbers given from Alice to Borys.</p>",
+    "outputSpecification": "<p>Output, <span class=\"tex-font-style-bf\">in increasing order</span>, all possible values of <span class=\"tex-span\"><i>m</i></span> such that there exists a sequence of positive integers of length <span class=\"tex-span\"><i>m</i></span> such that if you replace every element with the summands in its prairie partition and arrange the resulting numbers in non-decreasing order, you will get the sequence given in the input.</p><p>If there are no such values of <span class=\"tex-span\"><i>m</i></span>, output a single integer <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "samples": [
+        {
+            "input": "8<br/>1 1 2 2 3 4 5 8<br/>",
+            "output": "2 <br/>"
+        },
+        {
+            "input": "6<br/>1 1 1 2 2 2<br/>",
+            "output": "2 3 <br/>"
+        },
+        {
+            "input": "5<br/>1 2 4 4 4<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first example, Alice could get the input sequence from <span class=\"tex-span\">[6,\u200920]</span> as the original sequence.</p><p>In the second example, Alice's original sequence could be either <span class=\"tex-span\">[4,\u20095]</span> or <span class=\"tex-span\">[3,\u20093,\u20093]</span>.</p>",
+    "contestId": 773,
+    "index": "C",
+    "name": "Prairie Partition",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 939
+}

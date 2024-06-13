@@ -1,0 +1,35 @@
+{
+    "title": "C. Lock Puzzle",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Welcome to another task about breaking the code lock! Explorers Whitfield and Martin came across an unusual safe, inside of which, according to rumors, there are untold riches, among which one can find the solution of the problem of discrete logarithm!</p><p>Of course, there is a code lock is installed on the safe. The lock has a screen that displays a string of <span class=\"tex-span\"><i>n</i></span> lowercase Latin letters. Initially, the screen displays string <span class=\"tex-span\"><i>s</i></span>. Whitfield and Martin found out that the safe will open when string <span class=\"tex-span\"><i>t</i></span> will be displayed on the screen.</p><p>The string on the screen can be changed using the operation \u00ab<span class=\"tex-font-style-tt\">shift</span> <span class=\"tex-span\"><i>x</i></span>\u00bb. In order to apply this operation, explorers choose an integer <span class=\"tex-span\"><i>x</i></span> from 0 to <span class=\"tex-span\"><i>n</i></span> inclusive. After that, the current string <span class=\"tex-span\"><i>p</i>\u2009=\u2009\u03b1\u03b2</span> changes to <span class=\"tex-span\">\u03b2<sup class=\"upper-index\"><i>R</i></sup>\u03b1</span>, where the length of <span class=\"tex-span\">\u03b2</span> is <span class=\"tex-span\"><i>x</i></span>, and the length of <span class=\"tex-span\">\u03b1</span> is <span class=\"tex-span\"><i>n</i>\u2009-\u2009<i>x</i></span>. In other words, the suffix of the length <span class=\"tex-span\"><i>x</i></span> of string <span class=\"tex-span\"><i>p</i></span> is reversed and moved to the beginning of the string. For example, after the operation \u00ab<span class=\"tex-font-style-tt\">shift</span> <span class=\"tex-span\">4</span>\u00bb the string \u00ab<span class=\"tex-font-style-tt\">abcacb</span>\u00bb will be changed with string \u00ab<span class=\"tex-font-style-tt\">bcacab</span> \u00bb, since <span class=\"tex-span\">\u03b1\u2009=\u2009</span><span class=\"tex-font-style-tt\">ab</span>, <span class=\"tex-span\">\u03b2\u2009=\u2009</span><span class=\"tex-font-style-tt\">cacb</span>, <span class=\"tex-span\">\u03b2<sup class=\"upper-index\"><i>R</i></sup>\u2009=\u2009</span><span class=\"tex-font-style-tt\">bcac</span>.</p><p>Explorers are afraid that if they apply too many operations \u00ab<span class=\"tex-font-style-tt\">shift</span>\u00bb, the lock will be locked forever. They ask you to find a way to get the string <span class=\"tex-span\"><i>t</i></span> on the screen, using no more than <span class=\"tex-span\">6100</span> operations.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span>, the length of the strings <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u2009000</span>).</p><p>After that, there are two strings <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span>, consisting of <span class=\"tex-span\"><i>n</i></span> lowercase Latin letters each.</p>",
+    "outputSpecification": "<p>If it is impossible to get string <span class=\"tex-span\"><i>t</i></span> from string <span class=\"tex-span\"><i>s</i></span> using no more than 6100 operations \u00ab<span class=\"tex-font-style-tt\">shift</span>\u00bb, print a single number <span class=\"tex-span\">\u2009-\u20091</span>.</p><p>Otherwise, in the first line output the number of operations <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20096100</span>). In the next line output <span class=\"tex-span\"><i>k</i></span> numbers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> corresponding to the operations \u00ab<span class=\"tex-font-style-tt\">shift</span> <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00bb (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) in the order in which they should be applied.</p>",
+    "samples": [
+        {
+            "input": "6<br/>abacbb<br/>babcba<br/>",
+            "output": "4<br/>6 3 2 3<br/>"
+        },
+        {
+            "input": "3<br/>aba<br/>bba<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 936,
+    "index": "C",
+    "name": "Lock Puzzle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 1157
+}

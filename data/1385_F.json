@@ -1,0 +1,32 @@
+{
+    "title": "F. Removing Leaves",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a tree (connected graph without cycles) consisting of $$$n$$$ vertices. The tree is unrooted \u2014 it is just a connected undirected graph without cycles.</p><p>In one move, you can choose exactly $$$k$$$ leaves (leaf is such a vertex that is connected to only one another vertex) connected <span class=\"tex-font-style-bf\">to the same vertex</span> and remove them with edges incident to them. I.e. you choose such leaves $$$u_1, u_2, \\dots, u_k$$$ that there are edges $$$(u_1, v)$$$, $$$(u_2, v)$$$, $$$\\dots$$$, $$$(u_k, v)$$$ and remove these leaves and these edges.</p><p>Your task is to find the <span class=\"tex-font-style-bf\">maximum</span> number of moves you can perform if you remove leaves optimally.</p><p>You have to answer $$$t$$$ independent test cases.</p>",
+    "inputSpecification": "<p>The first line of the input contains one integer $$$t$$$ ($$$1 \\le t \\le 2 \\cdot 10^4$$$) \u2014 the number of test cases. Then $$$t$$$ test cases follow.</p><p>The first line of the test case contains two integers $$$n$$$ and $$$k$$$ ($$$2 \\le n \\le 2 \\cdot 10^5$$$; $$$1 \\le k &lt; n$$$) \u2014 the number of vertices in the tree and the number of leaves you remove in one move, respectively. The next $$$n-1$$$ lines describe edges. The $$$i$$$-th edge is represented as two integers $$$x_i$$$ and $$$y_i$$$ ($$$1 \\le x_i, y_i \\le n$$$), where $$$x_i$$$ and $$$y_i$$$ are vertices the $$$i$$$-th edge connects. It is guaranteed that the given set of edges forms a tree.</p><p>It is guaranteed that the sum of $$$n$$$ does not exceed $$$2 \\cdot 10^5$$$ ($$$\\sum n \\le 2 \\cdot 10^5$$$).</p>",
+    "outputSpecification": "<p>For each test case, print the answer \u2014 the <span class=\"tex-font-style-bf\">maximum</span> number of moves you can perform if you remove leaves optimally.</p>",
+    "samples": [
+        {
+            "input": "\n4\n8 3\n1 2\n1 5\n7 6\n6 8\n3 1\n6 4\n6 1\n10 3\n1 2\n1 10\n2 3\n1 5\n1 6\n2 4\n7 10\n10 9\n8 10\n7 2\n3 1\n4 5\n3 6\n7 4\n1 2\n1 4\n5 1\n1 2\n2 3\n4 3\n5 3\n",
+            "output": "\n2\n3\n3\n4\n"
+        }
+    ],
+    "note": "<p>The picture corresponding to the first test case of the example:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/0bddde0ad7a72c3fe0c29dcad146b0e4dd2377e0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>There you can remove vertices $$$2$$$, $$$5$$$ and $$$3$$$ during the first move and vertices $$$1$$$, $$$7$$$ and $$$4$$$ during the second move.</p><p>The picture corresponding to the second test case of the example:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/9eb6a60c7e0f6cb16954aa764b874aac2c2fad3b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>There you can remove vertices $$$7$$$, $$$8$$$ and $$$9$$$ during the first move, then vertices $$$5$$$, $$$6$$$ and $$$10$$$ during the second move and vertices $$$1$$$, $$$3$$$ and $$$4$$$ during the third move.</p><p>The picture corresponding to the third test case of the example:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/0b9706f8a0726debc42a044a46f0e4f5b98ab39f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>There you can remove vertices $$$5$$$ and $$$7$$$ during the first move, then vertices $$$2$$$ and $$$4$$$ during the second move and vertices $$$1$$$ and $$$6$$$ during the third move.</p>",
+    "contestId": 1385,
+    "index": "F",
+    "name": "Removing Leaves",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "greedy",
+        "implementation",
+        "trees"
+    ],
+    "solvedCount": 2265
+}

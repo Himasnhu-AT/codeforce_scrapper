@@ -1,0 +1,37 @@
+{
+    "title": "A. Mister B and Book Reading",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mister B once received a gift: it was a book about aliens, which he started read immediately. This book had <span class=\"tex-span\"><i>c</i></span> pages.</p><p>At first day Mister B read <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">0</sub></span> pages, but after that he started to speed up. Every day, starting from the second, he read <span class=\"tex-span\"><i>a</i></span> pages more than on the previous day (at first day he read <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">0</sub></span> pages, at second\u00a0\u2014 <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">0</sub>\u2009+\u2009<i>a</i></span> pages, at third\u00a0\u2014 <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">0</sub>\u2009+\u20092<i>a</i></span> pages, and so on). But Mister B is just a human, so he physically wasn't able to read more than <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">1</sub></span> pages per day.</p><p>Also, to refresh his memory, every day, starting from the second, Mister B had to reread last <span class=\"tex-span\"><i>l</i></span> pages he read on the previous day. Mister B finished the book when he read the last page for the first time.</p><p>Help Mister B to calculate how many days he needed to finish the book.</p>",
+    "inputSpecification": "<p>First and only line contains five space-separated integers: <span class=\"tex-span\"><i>c</i></span>, <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">0</sub></span>, <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>l</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>l</i>\u2009&lt;\u2009<i>v</i><sub class=\"lower-index\">0</sub>\u2009\u2264\u2009<i>v</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i>\u2009\u2264\u20091000</span>) \u2014 the length of the book in pages, the initial reading speed, the maximum reading speed, the acceleration in reading speed and the number of pages for rereading.</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the number of days Mister B needed to finish the book.</p>",
+    "samples": [
+        {
+            "input": "5 5 10 5 4<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "12 4 12 4 1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "15 1 100 0 0<br/>",
+            "output": "15<br/>"
+        }
+    ],
+    "note": "<p>In the first sample test the book contains <span class=\"tex-span\">5</span> pages, so Mister B read it right at the first day.</p><p>In the second sample test at first day Mister B read pages number <span class=\"tex-span\">1\u2009-\u20094</span>, at second day\u00a0\u2014 <span class=\"tex-span\">4\u2009-\u200911</span>, at third day\u00a0\u2014 <span class=\"tex-span\">11\u2009-\u200912</span> and finished the book.</p><p>In third sample test every day Mister B read <span class=\"tex-span\">1</span> page of the book, so he finished in 15 days.</p>",
+    "contestId": 820,
+    "index": "A",
+    "name": "Mister B and Book Reading",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 8055
+}

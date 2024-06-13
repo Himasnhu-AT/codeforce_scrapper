@@ -1,0 +1,37 @@
+{
+    "title": "B. Div Times Mod",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya likes to solve equations. Today he wants to solve $$$(x~\\mathrm{div}~k) \\cdot (x \\bmod k) = n$$$, where $$$\\mathrm{div}$$$ and $$$\\mathrm{mod}$$$ stand for integer division and modulo operations (refer to the Notes below for exact definition). In this equation, $$$k$$$ and $$$n$$$ are positive integer parameters, and $$$x$$$ is a positive integer unknown. If there are several solutions, Vasya wants to find the smallest possible $$$x$$$. Can you help him?</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\leq n \\leq 10^6$$$, $$$2 \\leq k \\leq 1000$$$).</p>",
+    "outputSpecification": "<p>Print a single integer $$$x$$$\u00a0\u2014 the smallest positive integer solution to $$$(x~\\mathrm{div}~k) \\cdot (x \\bmod k) = n$$$. It is guaranteed that this equation has at least one positive integer solution.</p>",
+    "samples": [
+        {
+            "input": "\n6 3\n",
+            "output": "\n11\n"
+        },
+        {
+            "input": "\n1 2\n",
+            "output": "\n3\n"
+        },
+        {
+            "input": "\n4 6\n",
+            "output": "\n10\n"
+        }
+    ],
+    "note": "<p>The result of integer division $$$a~\\mathrm{div}~b$$$ is equal to the largest integer $$$c$$$ such that $$$b \\cdot c \\leq a$$$. $$$a$$$ modulo $$$b$$$ (shortened $$$a \\bmod b$$$) is the only integer $$$c$$$ such that $$$0 \\leq c &lt; b$$$, and $$$a - c$$$ is divisible by $$$b$$$.</p><p>In the first sample, $$$11~\\mathrm{div}~3 = 3$$$ and $$$11 \\bmod 3 = 2$$$. Since $$$3 \\cdot 2 = 6$$$, then $$$x = 11$$$ is a solution to $$$(x~\\mathrm{div}~3) \\cdot (x \\bmod 3) = 6$$$. One can see that $$$19$$$ is the only other positive integer solution, hence $$$11$$$ is the smallest one.</p>",
+    "contestId": 1085,
+    "index": "B",
+    "name": "Div Times Mod",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 9190
+}

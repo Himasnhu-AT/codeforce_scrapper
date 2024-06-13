@@ -1,0 +1,32 @@
+{
+    "title": "F. Integer Game",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is an interactive problem.</span></p><p>Anton and Harris are playing a game to decide which of them is the king of problemsetting.</p><p>There are three piles of stones, initially containing $$$a$$$, $$$b$$$, and $$$c$$$ stones, where $$$a$$$, $$$b$$$, and $$$c$$$ are <span class=\"tex-font-style-bf\">distinct</span> positive integers. On each turn of the game, the following sequence of events takes place:</p><ul> <li> The first player chooses a positive integer $$$y$$$ and provides it to the second player. </li><li> The second player adds $$$y$$$ stones to one of the piles, with the condition that <span class=\"tex-font-style-bf\">he cannot choose the same pile in two consecutive turns</span>. </li></ul><p>The second player loses if, at any point, two of the piles contain the same number of stones. The first player loses if $$$1000$$$ turns have passed without the second player losing.</p><p>Feeling confident in his skills, Anton decided to let Harris choose whether he wants to go first or second. Help Harris defeat Anton and become the king of problemsetting!</p>",
+    "inputSpecification": "<p>The first line of input contains three distinct positive integers $$$a$$$, $$$b$$$, and $$$c$$$ ($$$1 \\le a, b, c \\le 10^9$$$) \u00a0\u2014 the initial number of stones in piles $$$1$$$, $$$2$$$, and $$$3$$$ respectively.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n5 2 6\n\n\n3\n\n0",
+            "output": "\n\nFirst\n2\n\n3\n"
+        }
+    ],
+    "note": "<p>In the sample input, the piles initially have $$$5$$$, $$$2$$$, and $$$6$$$ stones. Harris decides to go first and provides the number $$$2$$$ to Anton. Anton adds $$$2$$$ stones to the third pile, which results in $$$5$$$, $$$2$$$, and $$$8$$$.</p><p>In the next turn, Harris chooses $$$3$$$. Note that Anton cannot add the stones to the third pile since he chose the third pile in the previous turn. Anton realizes that he has no valid moves left and reluctantly recognizes Harris as the king.</p>",
+    "contestId": 1375,
+    "index": "F",
+    "name": "Integer Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "interactive",
+        "math"
+    ],
+    "solvedCount": 1944
+}

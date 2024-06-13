@@ -1,0 +1,33 @@
+{
+    "title": "C. Magic Grid",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let us define a <span class=\"tex-font-style-it\">magic</span> grid to be a square matrix of integers of size $$$n \\times n$$$, satisfying the following conditions. </p><ul> <li> All integers from $$$0$$$ to $$$(n^2 - 1)$$$ inclusive appear in the matrix <span class=\"tex-font-style-bf\">exactly once</span>. </li><li> <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#XOR\">Bitwise XOR</a> of all elements in a row or a column must be the same for each row and column. </li></ul><p>You are given an integer $$$n$$$ which is a <span class=\"tex-font-style-bf\">multiple of $$$4$$$</span>. Construct a <span class=\"tex-font-style-it\">magic</span> grid of size $$$n \\times n$$$.</p>",
+    "inputSpecification": "<p>The only line of input contains an integer $$$n$$$ ($$$4 \\leq n \\leq 1000$$$). It is guaranteed that $$$n$$$ is a multiple of $$$4$$$.</p>",
+    "outputSpecification": "<p>Print a <span class=\"tex-font-style-it\">magic</span> grid, i.e. $$$n$$$ lines, the $$$i$$$-th of which contains $$$n$$$ space-separated integers, representing the $$$i$$$-th row of the grid.</p><p>If there are multiple answers, print any. We can show that an answer always exists.</p>",
+    "samples": [
+        {
+            "input": "\n4\n",
+            "output": "\n8 9 1 13\n3 12 7 5\n0 2 4 11\n6 10 15 14"
+        },
+        {
+            "input": "\n8\n",
+            "output": "\n19 55 11 39 32 36 4 52\n51 7 35 31 12 48 28 20\n43 23 59 15 0 8 16 44\n3 47 27 63 24 40 60 56\n34 38 6 54 17 53 9 37\n14 50 30 22 49 5 33 29\n2 10 18 46 41 21 57 13\n26 42 62 58 1 45 25 61"
+        }
+    ],
+    "note": "<p>In the first example, XOR of each row and each column is $$$13$$$.</p><p>In the second example, XOR of each row and each column is $$$60$$$.</p>",
+    "contestId": 1208,
+    "index": "C",
+    "name": "Magic Grid",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms"
+    ],
+    "solvedCount": 5937
+}

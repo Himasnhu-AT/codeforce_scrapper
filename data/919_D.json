@@ -1,0 +1,39 @@
+{
+    "title": "D. Substring",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a graph with $$$n$$$ nodes and $$$m$$$ <span class=\"tex-font-style-bf\">directed</span> edges. One lowercase letter is assigned to each node. We define a path's value as the number of the most frequently occurring letter. For example, if letters on a path are \"<span class=\"tex-font-style-tt\">abaca</span>\", then the value of that path is $$$3$$$. Your task is find a path whose value is the largest.</p>",
+    "inputSpecification": "<p>The first line contains two positive integers $$$n, m$$$ ($$$1 \\leq n, m \\leq 300\\,000$$$), denoting that the graph has $$$n$$$ nodes and $$$m$$$ directed edges.</p><p>The second line contains a string $$$s$$$ with only lowercase English letters. The $$$i$$$-th character is the letter assigned to the $$$i$$$-th node.</p><p>Then $$$m$$$ lines follow. Each line contains two integers $$$x, y$$$ ($$$1 \\leq x, y \\leq n$$$), describing a directed edge from $$$x$$$ to $$$y$$$. Note that $$$x$$$ can be equal to $$$y$$$ and there can be multiple edges between $$$x$$$ and $$$y$$$. Also the graph can be not connected.</p>",
+    "outputSpecification": "<p>Output a single line with a single integer denoting the largest value. If the value can be arbitrarily large, output <span class=\"tex-font-style-tt\">-1</span> instead.</p>",
+    "samples": [
+        {
+            "input": "5 4<br/>abaca<br/>1 2<br/>1 3<br/>3 4<br/>4 5<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "6 6<br/>xzyabc<br/>1 2<br/>3 1<br/>2 3<br/>5 4<br/>4 3<br/>6 4<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "10 14<br/>xzyzyzyzqx<br/>1 2<br/>2 4<br/>3 5<br/>4 5<br/>2 6<br/>6 8<br/>6 5<br/>2 10<br/>3 9<br/>10 9<br/>4 6<br/>1 10<br/>2 8<br/>3 7<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, the path with largest value is $$$1 \\to 3 \\to 4 \\to 5$$$. The value is $$$3$$$ because the letter '<span class=\"tex-font-style-tt\">a</span>' appears $$$3$$$ times.</p>",
+    "contestId": 919,
+    "index": "D",
+    "name": "Substring",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "graphs"
+    ],
+    "solvedCount": 9473
+}

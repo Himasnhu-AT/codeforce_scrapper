@@ -1,0 +1,35 @@
+{
+    "title": "B. Arpa's weak amphitheater and Mehrdad's valuable Hoses",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">Just to remind, girls in Arpa's land are really nice.</span></p><p>Mehrdad wants to invite some Hoses to the palace for a dancing party. Each Hos has some weight <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> and some beauty <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>. Also each Hos may have some friends. Hoses are divided in some friendship groups. Two Hoses <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> are in the same friendship group if and only if there is a sequence of Hoses <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>k</i></sub></span> such that <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span> are friends for each <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>k</i></span>, and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>\u2009=\u2009<i>x</i></span> and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>k</i></sub>\u2009=\u2009<i>y</i></span>.</p><center> <img class=\"tex-graphics\" height=\"222px\" src=\"https://espresso.codeforces.com/2c1647f5446aeb48775d99b7c985f3533e3f6e81.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"172px\"/> </center><p>Arpa allowed to use the amphitheater of palace to Mehrdad for this party. Arpa's amphitheater can hold at most <span class=\"tex-span\"><i>w</i></span> weight on it. </p><p>Mehrdad is so greedy that he wants to invite some Hoses such that sum of their weights is not greater than <span class=\"tex-span\"><i>w</i></span> and sum of their beauties is as large as possible. Along with that, from each friendship group he can either invite all Hoses, or no more than one. Otherwise, some Hoses will be hurt. Find for Mehrdad the maximum possible total beauty of Hoses he can invite so that no one gets hurt and the total weight doesn't exceed <span class=\"tex-span\"><i>w</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>w</i></span> (<span class=\"tex-span\">1\u2009\u2009\u2264\u2009\u2009<i>n</i>\u2009\u2009\u2264\u2009\u20091000</span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d7c2e8a9e8825bf9bd011e1092ebea5aeb2a1238.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>w</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of Hoses, the number of pair of friends and the maximum total weight of those who are invited.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\">1</sub>,\u2009<i>w</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>w</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>)\u00a0\u2014 the weights of the Hoses.</p><p>The third line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>b</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>)\u00a0\u2014 the beauties of the Hoses.</p><p>The next <span class=\"tex-span\"><i>m</i></span> lines contain pairs of friends, the <span class=\"tex-span\"><i>i</i></span>-th of them contains two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>), meaning that Hoses <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> are friends. Note that friendship is bidirectional. All pairs <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>)</span> are distinct.</p>",
+    "outputSpecification": "<p>Print the maximum possible total beauty of Hoses Mehrdad can invite so that no one gets hurt and the total weight doesn't exceed <span class=\"tex-span\"><i>w</i></span>.</p>",
+    "samples": [
+        {
+            "input": "3 1 5<br/>3 2 5<br/>2 4 2<br/>1 2<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "4 2 11<br/>2 4 6 6<br/>6 4 2 1<br/>1 2<br/>2 3<br/>",
+            "output": "7<br/>"
+        }
+    ],
+    "note": "<p>In the first sample there are two friendship groups: Hoses <span class=\"tex-span\">{1,\u20092}</span> and Hos <span class=\"tex-span\">{3}</span>. The best way is to choose all of Hoses in the first group, sum of their weights is equal to <span class=\"tex-span\">5</span> and sum of their beauty is <span class=\"tex-span\">6</span>.</p><p>In the second sample there are two friendship groups: Hoses <span class=\"tex-span\">{1,\u20092,\u20093}</span> and Hos <span class=\"tex-span\">{4}</span>. Mehrdad can't invite all the Hoses from the first group because their total weight is <span class=\"tex-span\">12\u2009&gt;\u200911</span>, thus the best way is to choose the first Hos from the first group and the only one from the second group. The total weight will be <span class=\"tex-span\">8</span>, and the total beauty will be <span class=\"tex-span\">7</span>.</p>",
+    "contestId": 741,
+    "index": "B",
+    "name": "Arpa's weak amphitheater and Mehrdad's valuable Hoses",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "dsu"
+    ],
+    "solvedCount": 5160
+}

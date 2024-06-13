@@ -1,0 +1,31 @@
+{
+    "title": "E. Vladik and Entertaining Flags",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In his spare time Vladik estimates beauty of the flags.</p><p>Every flag could be represented as the matrix <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> which consists of positive integers.</p><p>Let's define the beauty of the flag as number of components in its matrix. We call component a set of cells with same numbers and between any pair of cells from that set there exists a path through adjacent cells from same component. Here is the example of the partitioning some flag matrix into components:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6c6db2e2b1c3ec22949b9002cf1ac25c0efc58a0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>But this time he decided to change something in the process. Now he wants to estimate not the entire flag, but some segment. Segment of flag can be described as a submatrix of the flag matrix with opposite corners at <span class=\"tex-span\">(1,\u2009<i>l</i>)</span> and <span class=\"tex-span\">(<i>n</i>,\u2009<i>r</i>)</span>, where conditions <span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u2009<i>m</i></span> are satisfied.</p><p>Help Vladik to calculate the beauty for some segments of the given flag.</p>",
+    "inputSpecification": "<p>First line contains three space-separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span>, <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>,\u2009<i>q</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 dimensions of flag matrix and number of segments respectively.</p><p>Each of next <span class=\"tex-span\"><i>n</i></span> lines contains <span class=\"tex-span\"><i>m</i></span> space-separated integers\u00a0\u2014 description of flag matrix. All elements of flag matrix is positive integers not exceeding <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span>.</p><p>Each of next <span class=\"tex-span\"><i>q</i></span> lines contains two space-separated integers <span class=\"tex-span\"><i>l</i></span>, <span class=\"tex-span\"><i>r</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u2009<i>m</i></span>)\u00a0\u2014 borders of segment which beauty Vladik wants to know.</p>",
+    "outputSpecification": "<p>For each segment print the result on the corresponding line.</p>",
+    "samples": [
+        {
+            "input": "4 5 4<br/>1 1 1 1 1<br/>1 2 2 3 3<br/>1 1 1 2 5<br/>4 4 5 5 5<br/>1 5<br/>2 5<br/>1 2<br/>4 5<br/>",
+            "output": "6<br/>7<br/>3<br/>4<br/>"
+        }
+    ],
+    "note": "<p>Partitioning on components for every segment from first test case:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/5c89ff7036ddb39d2997c8f594d4a0729e524ab0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 811,
+    "index": "E",
+    "name": "Vladik and Entertaining Flags",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dsu",
+        "graphs"
+    ],
+    "solvedCount": 847
+}

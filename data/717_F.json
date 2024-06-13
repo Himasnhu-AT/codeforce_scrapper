@@ -1,0 +1,29 @@
+{
+    "title": "F. Heroes of Making Magic III",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>I\u2019m strolling on sunshine, yeah-ah! And doesn\u2019t it feel good! Well, it certainly feels good for our Heroes of Making Magic, who are casually walking on a one-directional road, fighting imps. Imps are weak and feeble creatures and they are not good at much. However, Heroes enjoy fighting them. For fun, if nothing else. </p><p>Our Hero, Ignatius, simply adores imps. He is observing a line of imps, represented as a zero-indexed array of integers <span class=\"tex-span\"><i>a</i></span> of length <span class=\"tex-span\"><i>n</i></span>, where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> denotes the number of imps at the <span class=\"tex-span\"><i>i</i></span>-th position. Sometimes, imps can appear out of nowhere. When heroes fight imps, they select a segment of the line, start at one end of the segment, and finish on the other end, without ever exiting the segment. They can move exactly one cell left or right from their current position and when they do so, they defeat one imp on the cell that they moved to, so, the number of imps on that cell decreases by one. This also applies when heroes appear at one end of the segment, at the beginning of their walk. </p><p>Their goal is to defeat all imps on the segment, without ever moving to an empty cell in it (without imps), since they would get bored. Since Ignatius loves imps, he doesn\u2019t really want to fight them, so no imps are harmed during the events of this task. However, he would like you to tell him whether it would be possible for him to clear a certain segment of imps in the above mentioned way if he wanted to. </p><p>You are given <span class=\"tex-span\"><i>q</i></span> queries, which have two types: </p><ul> <li> <span class=\"tex-span\">1</span> <span class=\"tex-span\"><i>a</i></span> <span class=\"tex-span\"><i>b</i></span> <span class=\"tex-span\"><i>k</i></span>\u00a0\u2014 denotes that <span class=\"tex-span\"><i>k</i></span> imps appear at each cell from the interval <span class=\"tex-span\">[<i>a</i>,\u2009<i>b</i>]</span> </li><li> <span class=\"tex-span\">2</span> <span class=\"tex-span\"><i>a</i></span> <span class=\"tex-span\"><i>b</i></span> - asks whether Ignatius could defeat all imps on the interval <span class=\"tex-span\">[<i>a</i>,\u2009<i>b</i>]</span> in the way described above </li></ul>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>), the length of the array <span class=\"tex-span\"><i>a</i></span>. The following line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20095\u2009000</span>), the initial number of imps in each cell. The third line contains a single integer <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>q</i>\u2009\u2264\u2009300\u2009000</span>), the number of queries. The remaining <span class=\"tex-span\"><i>q</i></span> lines contain one query each. Each query is provided by integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span> and, possibly, <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i>\u2009\u2264\u2009<i>b</i>\u2009&lt;\u2009<i>n</i></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20095\u2009000</span>).</p>",
+    "outputSpecification": "<p>For each second type of query output <span class=\"tex-span\">1</span> if it is possible to clear the segment, and <span class=\"tex-span\">0</span> if it is not.</p>",
+    "samples": [
+        {
+            "input": "3<br/>2 2 2<br/>3<br/>2 0 2<br/>1 1 1 1<br/>2 0 2<br/>",
+            "output": "0<br/>1<br/>"
+        }
+    ],
+    "note": "<p>For the first query, one can easily check that it is indeed impossible to get from the first to the last cell while clearing everything. After we add 1 to the second position, we can clear the segment, for example by moving in the following way: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d02f7e30dbba09ed3edaa4c8a24a17dc85d1482c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 717,
+    "index": "F",
+    "name": "Heroes of Making Magic III",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures"
+    ],
+    "solvedCount": 288
+}

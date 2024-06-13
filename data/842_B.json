@@ -1,0 +1,33 @@
+{
+    "title": "B. Gleb And Pizza",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Gleb ordered pizza home. When the courier delivered the pizza, he was very upset, because several pieces of sausage lay on the crust, and he does not really like the crust.</p><p>The pizza is a circle of radius <span class=\"tex-span\"><i>r</i></span> and center at the origin. Pizza consists of the main part \u2014 circle of radius <span class=\"tex-span\"><i>r</i>\u2009-\u2009<i>d</i></span> with center at the origin, and crust around the main part of the width <span class=\"tex-span\"><i>d</i></span>. Pieces of sausage are also circles. The radius of the <span class=\"tex-span\"><i>i</i></span>\u00a0-th piece of the sausage is <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span>, and the center is given as a pair (<span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>).</p><p>Gleb asks you to help determine the number of pieces of sausage caught on the crust. A piece of sausage got on the crust, if it completely lies on the crust.</p>",
+    "inputSpecification": "<p>First string contains two integer numbers <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>d</i>\u2009&lt;\u2009<i>r</i>\u2009\u2264\u2009500</span>)\u00a0\u2014 the radius of pizza and the width of crust.</p><p>Next line contains one integer number <span class=\"tex-span\"><i>n</i></span>\u00a0\u2014 the number of pieces of sausage (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p><p>Each of next <span class=\"tex-span\"><i>n</i></span> lines contains three integer numbers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u2009500\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009500</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009500</span>), where <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> are coordinates of the center of <span class=\"tex-span\"><i>i</i></span>-th peace of sausage, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00a0\u2014 radius of <span class=\"tex-span\"><i>i</i></span>-th peace of sausage.</p>",
+    "outputSpecification": "<p>Output the number of pieces of sausage that lay on the crust.</p>",
+    "samples": [
+        {
+            "input": "8 4<br/>7<br/>7 8 1<br/>-7 3 2<br/>0 2 1<br/>0 -2 2<br/>-3 -3 1<br/>0 6 2<br/>5 3 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "10 8<br/>4<br/>0 0 9<br/>0 0 10<br/>1 0 1<br/>1 0 2<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>Below is a picture explaining the first example. Circles of green color denote pieces of sausage lying on the crust.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/d095fb54467a6beb4f8f189a228fb3ab5e1c59ee.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 842,
+    "index": "B",
+    "name": "Gleb And Pizza",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 10115
+}

@@ -1,0 +1,39 @@
+{
+    "title": "B. Jamie and Binary Sequence (changed after round)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Jamie is preparing a Codeforces round. He has got an idea for a problem, but does not know how to solve it. Help him write a solution to the following problem:</p><p>Find <span class=\"tex-span\"><i>k</i></span> integers such that the sum of two to the power of each number equals to the number <span class=\"tex-span\"><i>n</i></span> and the largest integer in the answer is as small as possible. As there may be multiple answers, you are asked to output the lexicographically largest one. </p><p>To be more clear, consider all integer sequence with length <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(<i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>k</i></sub>)</span> with <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e0c467909ffdfc005a05156f897fa64e0cca9180.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Give a value <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d25c87c0291c0cfb246d13eca30caaf3b78a6937.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> to each sequence. Among all sequence(s) that have the minimum <span class=\"tex-span\"><i>y</i></span> value, output the one that is the lexicographically largest.</p><p>For definitions of powers and lexicographical order see notes.</p>",
+    "inputSpecification": "<p>The first line consists of two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup>,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>\u00a0\u2014 the required sum and the length of the sequence.</p>",
+    "outputSpecification": "<p>Output \"<span class=\"tex-font-style-tt\">No</span>\" (without quotes) in a single line if there does not exist such sequence. Otherwise, output \"<span class=\"tex-font-style-tt\">Yes</span>\" (without quotes) in the first line, and <span class=\"tex-span\"><i>k</i></span> numbers separated by space in the second line\u00a0\u2014 the required sequence.</p><p>It is guaranteed that the integers in the answer sequence fit the range <span class=\"tex-span\">[\u2009-\u200910<sup class=\"upper-index\">18</sup>,\u200910<sup class=\"upper-index\">18</sup>]</span>.</p>",
+    "samples": [
+        {
+            "input": "23 5<br/>",
+            "output": "Yes<br/>3 3 2 1 0 <br/>"
+        },
+        {
+            "input": "13 2<br/>",
+            "output": "No<br/>"
+        },
+        {
+            "input": "1 2<br/>",
+            "output": "Yes<br/>-1 -1 <br/>"
+        }
+    ],
+    "note": "<p><span class=\"tex-font-style-bf\">Sample 1:</span></p><p><span class=\"tex-span\">2<sup class=\"upper-index\">3</sup>\u2009+\u20092<sup class=\"upper-index\">3</sup>\u2009+\u20092<sup class=\"upper-index\">2</sup>\u2009+\u20092<sup class=\"upper-index\">1</sup>\u2009+\u20092<sup class=\"upper-index\">0</sup>\u2009=\u20098\u2009+\u20098\u2009+\u20094\u2009+\u20092\u2009+\u20091\u2009=\u200923</span></p><p>Answers like <span class=\"tex-span\">(3,\u20093,\u20092,\u20090,\u20091)</span> or <span class=\"tex-span\">(0,\u20091,\u20092,\u20093,\u20093)</span> are not lexicographically largest.</p><p>Answers like <span class=\"tex-span\">(4,\u20091,\u20091,\u20091,\u20090)</span> do not have the minimum <span class=\"tex-span\"><i>y</i></span> value.</p><p><span class=\"tex-font-style-bf\">Sample 2:</span></p><p>It can be shown there does not exist a sequence with length 2.</p><p><span class=\"tex-font-style-bf\">Sample 3:</span></p><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a8539b2d27aefc8d2fab6dfd8296d11c36dcaa40.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p><span class=\"tex-font-style-bf\">Powers of 2:</span></p><p>If <span class=\"tex-span\"><i>x</i>\u2009&gt;\u20090</span>, then <span class=\"tex-span\">2<sup class=\"upper-index\"><i>x</i></sup>\u2009=\u20092\u00b72\u00b72\u00b7...\u00b72</span> (<span class=\"tex-span\"><i>x</i></span> times).</p><p>If <span class=\"tex-span\"><i>x</i>\u2009=\u20090</span>, then <span class=\"tex-span\">2<sup class=\"upper-index\"><i>x</i></sup>\u2009=\u20091</span>.</p><p>If <span class=\"tex-span\"><i>x</i>\u2009&lt;\u20090</span>, then <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/766628f1c7814795eac1a0afaa1ff062c40ef29e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p><span class=\"tex-font-style-bf\">Lexicographical order:</span></p><p>Given two different sequences of the same length, <span class=\"tex-span\">(<i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>a</i><sub class=\"lower-index\"><i>k</i></sub>)</span> and <span class=\"tex-span\">(<i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>b</i><sub class=\"lower-index\"><i>k</i></sub>)</span>, the first one is smaller than the second one for the lexicographical order, if and only if <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>, for the first <span class=\"tex-span\"><i>i</i></span> where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> differ.</p>",
+    "contestId": 916,
+    "index": "B",
+    "name": "Jamie and Binary Sequence (changed after round)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 1684
+}

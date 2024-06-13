@@ -1,0 +1,40 @@
+{
+    "title": "F. Bicolored Segments",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given $$$n$$$ segments $$$[l_1, r_1], [l_2, r_2], \\dots, [l_n, r_n]$$$. Each segment has one of two colors: the $$$i$$$-th segment's color is $$$t_i$$$.</p><p>Let's call a pair of segments $$$i$$$ and $$$j$$$ <span class=\"tex-font-style-it\">bad</span> if the following two conditions are met:</p><ul> <li> $$$t_i \\ne t_j$$$; </li><li> the segments $$$[l_i, r_i]$$$ and $$$[l_j, r_j]$$$ intersect, embed or touch, i.\u2009e. there exists an integer $$$x$$$ such that $$$x \\in [l_i, r_i]$$$ and $$$x \\in [l_j, r_j]$$$. </li></ul><p>Calculate the maximum number of segments that can be selected from the given ones, so that there is no <span class=\"tex-font-style-it\">bad</span> pair among the selected ones.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 2 \\cdot 10^5$$$)\u00a0\u2014 number of segments.</p><p>The next $$$n$$$ lines contains three integers $$$l_i, r_i, t_i$$$ ($$$1 \\le l_i \\le r_i \\le 10^9; t_i \\in \\{1, 2\\}$$$)\u00a0\u2014 description of the $$$i$$$-th segment.</p>",
+    "outputSpecification": "<p>Print the maximum number of segments that can be selected, so that there is no <span class=\"tex-font-style-it\">bad</span> pair among the selected segments.</p>",
+    "samples": [
+        {
+            "input": "\n3\n1 3 1\n4 6 2\n2 5 1\n",
+            "output": "\n2\n"
+        },
+        {
+            "input": "\n5\n5 8 1\n1 3 2\n3 4 2\n6 6 1\n2 10 2\n",
+            "output": "\n4\n"
+        },
+        {
+            "input": "\n7\n19 20 1\n13 15 2\n6 11 2\n4 10 1\n14 17 1\n13 13 2\n5 9 1\n",
+            "output": "\n5\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1389,
+    "index": "F",
+    "name": "Bicolored Segments",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp",
+        "graph matchings",
+        "sortings"
+    ],
+    "solvedCount": 949
+}

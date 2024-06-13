@@ -1,0 +1,30 @@
+{
+    "title": "D. Masha and Cactus",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Masha is fond of cacti. When she was a little girl, she decided to plant a tree. Now Masha wants to make a nice cactus out of her tree.</p><p>Recall that <span class=\"tex-font-style-underline\">tree</span> is a connected undirected graph that has no cycles. <span class=\"tex-font-style-underline\">Cactus</span> is a connected undirected graph such that each vertex belongs to at most one cycle.</p><p>Masha has some additional edges that she can add to a tree. For each edge she knows which vertices it would connect and the <span class=\"tex-font-style-underline\">beauty</span> of this edge. Masha can add some of these edges to the graph if the resulting graph is a cactus. <span class=\"tex-font-style-underline\">Beauty</span> of the resulting cactus is sum of beauties of all added edges. </p><p>Help Masha find out what maximum <span class=\"tex-font-style-underline\">beauty</span> of the resulting cactus she can achieve.</p>",
+    "inputSpecification": "<p>The first line of the input data contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span>\u00a0\u2014 the number of vertices in a tree, and the number of additional edges available (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>; <span class=\"tex-span\">0\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>).</p><p>Let us describe Masha's tree. It has a root at vertex 1. The second line contains <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> integers: <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">2</sub>,\u2009<i>p</i><sub class=\"lower-index\">3</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>, here <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00a0\u2014 is the parent of a vertex <span class=\"tex-span\"><i>i</i></span>\u00a0\u2014 the first vertex on a path from the vertex <span class=\"tex-span\"><i>i</i></span> to the root of the tree (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>i</i></span>).</p><p>The following <span class=\"tex-span\"><i>m</i></span> lines contain three integers <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00a0\u2014 pairs of vertices to be connected by the additional edges that Masha can add to the tree and <span class=\"tex-font-style-underline\">beauty</span> of edge (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>; <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>; <span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>).</p><p>It is guaranteed that no additional edge coincides with the edge of the tree.</p>",
+    "outputSpecification": "<p>Output one integer\u00a0\u2014 the maximum <span class=\"tex-font-style-underline\">beauty</span> of a cactus Masha can achieve.</p>",
+    "samples": [
+        {
+            "input": "7 3<br/>1 1 2 2 3 3<br/>4 5 1<br/>6 7 1<br/>2 3 1<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 856,
+    "index": "D",
+    "name": "Masha and Cactus",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "trees"
+    ],
+    "solvedCount": 372
+}

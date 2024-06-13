@@ -1,0 +1,36 @@
+{
+    "title": "E. Mike and code of a permutation",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mike has discovered a new way to encode permutations. If he has a permutation <span class=\"tex-span\"><i>P</i>\u2009=\u2009[<i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub>]</span>, he will encode it in the following way:</p><p>Denote by <span class=\"tex-span\"><i>A</i>\u2009=\u2009[<i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub>]</span> a sequence of length <span class=\"tex-span\"><i>n</i></span> which will represent the code of the permutation. For each <span class=\"tex-span\"><i>i</i></span> from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> sequentially, he will choose the smallest unmarked <span class=\"tex-span\"><i>j</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>n</i></span>) such that <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>p</i><sub class=\"lower-index\"><i>j</i></sub></span> and will assign to <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> the number <span class=\"tex-span\"><i>j</i></span> (in other words he performs <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>j</i></span>) and will mark <span class=\"tex-span\"><i>j</i></span>. If there is no such <span class=\"tex-span\"><i>j</i></span>, he'll assign to <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> the number <span class=\"tex-span\">\u2009-\u20091</span> (he performs <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009\u2009-\u20091</span>). </p><p>Mike forgot his original permutation but he remembers its code. Your task is simple: find <span class=\"tex-font-style-bf\">any</span> permutation such that its code is the same as the code of Mike's original permutation.</p><p>You may assume that there will always be at least one valid permutation.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009500\u2009000</span>) \u2014 length of permutation.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span> or <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009\u2009-\u20091</span>) \u2014 the code of Mike's permutation.</p><p>You may assume that all positive values from <span class=\"tex-span\"><i>A</i></span> are different.</p>",
+    "outputSpecification": "<p>In first and only line print <span class=\"tex-span\"><i>n</i></span> numbers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) \u2014 a permutation <span class=\"tex-span\"><i>P</i></span> which has the same code as the given one. Note that numbers in permutation are distinct.</p>",
+    "samples": [
+        {
+            "input": "6<br/>2 -1 1 5 -1 4<br/>",
+            "output": "2 6 1 4 5 3<br/>"
+        },
+        {
+            "input": "8<br/>2 -1 4 -1 6 -1 8 -1<br/>",
+            "output": "1 8 2 7 3 6 4 5<br/>"
+        }
+    ],
+    "note": "<p>For the permutation from the first example:</p><p><span class=\"tex-span\"><i>i</i>\u2009=\u20091</span>, the smallest <span class=\"tex-span\"><i>j</i></span> is <span class=\"tex-span\">2</span> because <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">2</sub>\u2009=\u20096\u2009&gt;\u2009<i>p</i><sub class=\"lower-index\">1</sub>\u2009=\u20092</span>.</p><p><span class=\"tex-span\"><i>i</i>\u2009=\u20092</span>, there is no <span class=\"tex-span\"><i>j</i></span> because <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">2</sub>\u2009=\u20096</span> is the greatest element in the permutation.</p><p><span class=\"tex-span\"><i>i</i>\u2009=\u20093</span>, the smallest <span class=\"tex-span\"><i>j</i></span> is <span class=\"tex-span\">1</span> because <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>\u2009=\u20092\u2009&gt;\u2009<i>p</i><sub class=\"lower-index\">3</sub>\u2009=\u20091</span>.</p><p><span class=\"tex-span\"><i>i</i>\u2009=\u20094</span>, the smallest <span class=\"tex-span\"><i>j</i></span> is <span class=\"tex-span\">5</span> (<span class=\"tex-span\">2</span> was already marked) because <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">5</sub>\u2009=\u20095\u2009&gt;\u2009<i>p</i><sub class=\"lower-index\">4</sub>\u2009=\u20094</span>.</p><p><span class=\"tex-span\"><i>i</i>\u2009=\u20095</span>, there is no <span class=\"tex-span\"><i>j</i></span> because <span class=\"tex-span\">2</span> is already marked.</p><p><span class=\"tex-span\"><i>i</i>\u2009=\u20096</span>, the smallest <span class=\"tex-span\"><i>j</i></span> is <span class=\"tex-span\">4</span> because <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">4</sub>\u2009=\u20094\u2009&gt;\u2009<i>p</i><sub class=\"lower-index\">6</sub>\u2009=\u20093</span>.</p>",
+    "contestId": 798,
+    "index": "E",
+    "name": "Mike and code of a permutation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "graphs",
+        "sortings"
+    ],
+    "solvedCount": 463
+}

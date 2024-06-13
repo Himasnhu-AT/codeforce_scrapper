@@ -1,0 +1,38 @@
+{
+    "title": "D. Bicolorings",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a grid, consisting of $$$2$$$ rows and $$$n$$$ columns. Each cell of this grid should be colored either black or white.</p><p>Two cells are considered neighbours if they have a <span class=\"tex-font-style-bf\">common border</span> and share the same color. Two cells $$$A$$$ and $$$B$$$ belong to the same component if they are neighbours, or if there is a neighbour of $$$A$$$ that belongs to the same component with $$$B$$$.</p><p>Let's call some bicoloring <span class=\"tex-font-style-it\">beautiful</span> if it has exactly $$$k$$$ components.</p><p>Count the number of <span class=\"tex-font-style-it\">beautiful</span> bicolorings. The number can be big enough, so print the answer modulo $$$998244353$$$.</p>",
+    "inputSpecification": "<p>The only line contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\le n \\le 1000$$$, $$$1 \\le k \\le 2n$$$) \u2014 the number of columns in a grid and the number of components required.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number of <span class=\"tex-font-style-it\">beautiful</span> bicolorings modulo $$$998244353$$$.</p>",
+    "samples": [
+        {
+            "input": "3 4<br/>",
+            "output": "12<br/>"
+        },
+        {
+            "input": "4 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "1 2<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>One of possible bicolorings in sample $$$1$$$:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/bcb6b73ac9d71af6824485e446a6fc3596df15b2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1051,
+    "index": "D",
+    "name": "Bicolorings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "dp"
+    ],
+    "solvedCount": 7197
+}

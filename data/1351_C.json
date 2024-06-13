@@ -1,0 +1,30 @@
+{
+    "title": "C. Skier",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Skier rides on a snowy field. Its movements can be described by a string of characters '<span class=\"tex-font-style-tt\">S</span>', '<span class=\"tex-font-style-tt\">N</span>', '<span class=\"tex-font-style-tt\">W</span>', '<span class=\"tex-font-style-tt\">E</span>' (which correspond to $$$1$$$ meter movement in the south, north, west or east direction respectively).</p><p>It is known that if he moves along a previously unvisited segment of a path (i.e. this segment of the path is visited the first time), then the time of such movement is $$$5$$$ seconds. If he rolls along previously visited segment of a path (i.e., this segment of the path has been covered by his path before), then it takes $$$1$$$ second.</p><p>Find the skier's time to roll all the path.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$) \u2014 the number of test cases in the input. Then $$$t$$$ test cases follow.</p><p>Each set is given by one nonempty string of the characters '<span class=\"tex-font-style-tt\">S</span>', '<span class=\"tex-font-style-tt\">N</span>', '<span class=\"tex-font-style-tt\">W</span>', '<span class=\"tex-font-style-tt\">E</span>'. The length of the string does not exceed $$$10^5$$$ characters.</p><p>The sum of the lengths of $$$t$$$ given lines over all test cases in the input does not exceed $$$10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, print the desired path time in seconds.</p>",
+    "samples": [
+        {
+            "input": "\n5\nNNN\nNS\nWWEN\nWWEE\nNWNWS\n",
+            "output": "\n15\n6\n16\n12\n25\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1351,
+    "index": "C",
+    "name": "Skier",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "implementation"
+    ],
+    "solvedCount": 8313
+}

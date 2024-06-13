@@ -1,0 +1,38 @@
+{
+    "title": "B. Lara Croft and the New Game",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You might have heard about the next game in Lara Croft series coming out this year. You also might have watched its trailer. Though you definitely missed the main idea about its plot, so let me lift the veil of secrecy.</p><p>Lara is going to explore yet another dangerous dungeon. Game designers decided to use good old 2D environment. The dungeon can be represented as a rectangle matrix of <span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>m</i></span> columns. Cell <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> is the cell in the <span class=\"tex-span\"><i>x</i></span>-th row in the <span class=\"tex-span\"><i>y</i></span>-th column. Lara can move between the neighbouring by side cells in all four directions.</p><p>Moreover, she has even chosen the path for herself to avoid all the traps. She enters the dungeon in cell <span class=\"tex-span\">(1,\u20091)</span>, that is top left corner of the matrix. Then she goes down all the way to cell <span class=\"tex-span\">(<i>n</i>,\u20091)</span> \u2014 the bottom left corner. Then she starts moving in the snake fashion \u2014 all the way to the right, one cell up, then to the left to the cell in <span class=\"tex-span\">2</span>-nd column, one cell up. She moves until she runs out of non-visited cells. <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> given are such that she always end up in cell <span class=\"tex-span\">(1,\u20092)</span>.</p><p>Lara has already moved to a neighbouring cell <span class=\"tex-span\"><i>k</i></span> times. Can you determine her current position?</p>",
+    "inputSpecification": "<p>The only line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, <span class=\"tex-font-style-bf\"><span class=\"tex-span\"><i>n</i></span> is always even</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009&lt;\u2009<i>n</i>\u00b7<i>m</i></span>). Note that <span class=\"tex-span\"><i>k</i></span> doesn't fit into <span class=\"tex-span\">32</span>-bit integer type!</p>",
+    "outputSpecification": "<p>Print the cell (the row and the column where the cell is situated) where Lara ends up after she moves <span class=\"tex-span\"><i>k</i></span> times.</p>",
+    "samples": [
+        {
+            "input": "4 3 0<br/>",
+            "output": "1 1<br/>"
+        },
+        {
+            "input": "4 3 11<br/>",
+            "output": "1 2<br/>"
+        },
+        {
+            "input": "4 3 7<br/>",
+            "output": "3 2<br/>"
+        }
+    ],
+    "note": "<p>Here is her path on matrix <span class=\"tex-span\">4</span> by <span class=\"tex-span\">3</span>:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/bb25517a173d78f9cbf03bb706d6742234dabfb5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 976,
+    "index": "B",
+    "name": "Lara Croft and the New Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 5673
+}

@@ -1,0 +1,43 @@
+{
+    "title": "D. Almost Identity Permutations",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A permutation <span class=\"tex-span\"><i>p</i></span> of size <span class=\"tex-span\"><i>n</i></span> is an array such that every integer from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> occurs exactly once in this array.</p><p>Let's call a permutation an <span class=\"tex-font-style-it\">almost identity permutation</span> iff there exist at least <span class=\"tex-span\"><i>n</i>\u2009-\u2009<i>k</i></span> indices <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>) such that <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>i</i></span>.</p><p>Your task is to count the number of <span class=\"tex-font-style-it\">almost identity</span> permutations for given numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">4\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20094</span>).</p>",
+    "outputSpecification": "<p>Print the number of <span class=\"tex-font-style-it\">almost identity</span> permutations for given <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span>.</p>",
+    "samples": [
+        {
+            "input": "4 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "4 2<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "5 3<br/>",
+            "output": "31<br/>"
+        },
+        {
+            "input": "5 4<br/>",
+            "output": "76<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 888,
+    "index": "D",
+    "name": "Almost Identity Permutations",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 7790
+}

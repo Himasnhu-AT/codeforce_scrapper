@@ -1,0 +1,33 @@
+{
+    "title": "A. Chores",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Luba has to do <span class=\"tex-span\"><i>n</i></span> chores today. <span class=\"tex-span\"><i>i</i></span>-th chore takes <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> units of time to complete. It is guaranteed that for every <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/33efc769667118b03a335770b969c3a335b55f01.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> the condition <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2265\u2009<i>a</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub></span> is met, so the sequence is sorted.</p><p>Also Luba can work really hard on some chores. She can choose not more than <span class=\"tex-span\"><i>k</i></span> any chores and do each of them in <span class=\"tex-span\"><i>x</i></span> units of time instead of <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6920e94f798823d25de0307d3d79fea4434bb5ec.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>).</p><p>Luba is very responsible, so she has to do all <span class=\"tex-span\"><i>n</i></span> chores, and now she wants to know the minimum time she needs to do everything. Luba cannot do two chores simultaneously.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i>,\u2009<i>k</i>,\u2009<i>x</i>\u00a0(1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100,\u20091\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200999</span>) \u2014 the number of chores Luba has to do, the number of chores she can do in <span class=\"tex-span\"><i>x</i></span> units of time, and the number <span class=\"tex-span\"><i>x</i></span> itself.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integer numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u00a0(2\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100)</span> \u2014 the time Luba has to spend to do <span class=\"tex-span\"><i>i</i></span>-th chore.</p><p>It is guaranteed that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6920e94f798823d25de0307d3d79fea4434bb5ec.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, and for each <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/33efc769667118b03a335770b969c3a335b55f01.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2265\u2009<i>a</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub></span>.</p>",
+    "outputSpecification": "<p>Print one number \u2014 minimum time Luba needs to do all <span class=\"tex-span\"><i>n</i></span> chores.</p>",
+    "samples": [
+        {
+            "input": "4 2 2<br/>3 6 7 10<br/>",
+            "output": "13<br/>"
+        },
+        {
+            "input": "5 2 1<br/>100 100 100 100 100<br/>",
+            "output": "302<br/>"
+        }
+    ],
+    "note": "<p>In the first example the best option would be to do the third and the fourth chore, spending <span class=\"tex-span\"><i>x</i>\u2009=\u20092</span> time on each instead of <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">3</sub></span> and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">4</sub></span>, respectively. Then the answer is <span class=\"tex-span\">3\u2009+\u20096\u2009+\u20092\u2009+\u20092\u2009=\u200913</span>.</p><p>In the second example Luba can choose any two chores to spend <span class=\"tex-span\"><i>x</i></span> time on them instead of <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>. So the answer is <span class=\"tex-span\">100\u00b73\u2009+\u20092\u00b71\u2009=\u2009302</span>.</p>",
+    "contestId": 873,
+    "index": "A",
+    "name": "Chores",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 8011
+}

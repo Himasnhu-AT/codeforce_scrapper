@@ -1,0 +1,37 @@
+{
+    "title": "E. The very same Munchhausen",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A positive integer $$$a$$$ is given. Baron Munchausen claims that he knows such a positive integer $$$n$$$ that if one multiplies $$$n$$$ by $$$a$$$, the sum of its digits decreases $$$a$$$ times. In other words, $$$S(an) = S(n)/a$$$, where $$$S(x)$$$ denotes the sum of digits of the number $$$x$$$. </p><p>Find out if what Baron told can be true.</p>",
+    "inputSpecification": "<p>The only line contains a single integer $$$a$$$ ($$$2 \\le a \\le 10^3$$$).</p>",
+    "outputSpecification": "<p>If there is no such number $$$n$$$, print $$$-1$$$.</p><p>Otherwise print any appropriate positive integer $$$n$$$. Your number must not consist of more than $$$5\\cdot10^5$$$ digits. We can show that under given constraints either there is no answer, or there is an answer no longer than $$$5\\cdot10^5$$$ digits.</p>",
+    "samples": [
+        {
+            "input": "\n2\n",
+            "output": "\n6\n"
+        },
+        {
+            "input": "\n3\n",
+            "output": "\n6669\n"
+        },
+        {
+            "input": "\n10\n",
+            "output": "\n-1\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1120,
+    "index": "E",
+    "name": "The very same Munchhausen",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force"
+    ],
+    "solvedCount": 114
+}

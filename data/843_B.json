@@ -1,0 +1,31 @@
+{
+    "title": "B. Interactive LowerBound",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">This is an interactive problem.</span></p><p>You are given a <span class=\"tex-font-style-bf\">sorted</span> in increasing order singly linked list. You should find the minimum integer in the list which is greater than or equal to <span class=\"tex-span\"><i>x</i></span>.</p><p>More formally, there is a singly liked list built on an array of <span class=\"tex-span\"><i>n</i></span> elements. Element with index <span class=\"tex-span\"><i>i</i></span> contains two integers: <span class=\"tex-span\"><i>value</i><sub class=\"lower-index\"><i>i</i></sub></span> is the integer value in this element, and <span class=\"tex-span\"><i>next</i><sub class=\"lower-index\"><i>i</i></sub></span> that is the index of the next element of the singly linked list (or <span class=\"tex-font-style-tt\">-1</span>, if the current element is the last). The list is sorted, i.e. if <span class=\"tex-span\"><i>next</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009\u2009-\u20091</span>, then <span class=\"tex-span\"><i>value</i><sub class=\"lower-index\"><i>next</i><sub class=\"lower-index\"><i>i</i></sub></sub>\u2009&gt;\u2009<i>value</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>You are given the number of elements in the list <span class=\"tex-span\"><i>n</i></span>, the index of the first element <span class=\"tex-span\"><i>start</i></span>, and the integer <span class=\"tex-span\"><i>x</i></span>.</p><p>You can make up to <span class=\"tex-span\">2000</span> queries of the following two types:</p><ul> <li> <span class=\"tex-font-style-tt\">? i</span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 ask the values <span class=\"tex-span\"><i>value</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>next</i><sub class=\"lower-index\"><i>i</i></sub></span>, </li><li> <span class=\"tex-font-style-tt\">! ans</span>\u00a0\u2014 give the answer for the problem: the minimum integer, greater than or equal to <span class=\"tex-span\"><i>x</i></span>, or <span class=\"tex-font-style-tt\">! -1</span>, if there are no such integers. Your program should terminate after this query. </li></ul><p>Write a program that solves this problem.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>start</i></span>, <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>start</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the number of elements in the list, the index of the first element and the integer <span class=\"tex-span\"><i>x</i></span>.</p>",
+    "outputSpecification": "<p>To print the answer for the problem, print <span class=\"tex-font-style-tt\">! ans</span>, where <span class=\"tex-font-style-tt\">ans</span> is the minimum integer in the list greater than or equal to <span class=\"tex-span\"><i>x</i></span>, or <span class=\"tex-font-style-tt\">-1</span>, if there is no such integer.</p>",
+    "samples": [
+        {
+            "input": "5 3 80<br/>97 -1<br/>58 5<br/>16 2<br/>81 1<br/>79 4<br/>",
+            "output": "? 1<br/>? 2<br/>? 3<br/>? 4<br/>? 5<br/>! 81"
+        }
+    ],
+    "note": "<p>You can read more about singly linked list by the following link: <a href=\"https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list\">https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list</a> </p><center><p>The illustration for the first sample case. Start and finish elements are marked dark. <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/5202ec3b5e896b7db692ff7b80457c26cf6adb32.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p></center>",
+    "contestId": 843,
+    "index": "B",
+    "name": "Interactive LowerBound",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "interactive",
+        "probabilities"
+    ],
+    "solvedCount": 2162
+}

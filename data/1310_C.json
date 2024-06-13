@@ -1,0 +1,35 @@
+{
+    "title": "C. Au Pont Rouge",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>VK just opened its second HQ in St. Petersburg! Side of its office building has a huge string $$$s$$$ written on its side. This part of the office is supposed to be split into $$$m$$$ meeting rooms in such way that meeting room walls are strictly between letters on the building. Obviously, meeting rooms should not be of size 0, but can be as small as one letter wide. Each meeting room will be named after the substring of $$$s$$$ written on its side.</p><center><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6afe6b99c289cdcf144b5360342c1c1af8c3c3f1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>For each possible arrangement of $$$m$$$ meeting rooms we ordered a test meeting room label for the meeting room with lexicographically <span class=\"tex-font-style-bf\">minimal</span> name. When delivered, those labels got sorted <span class=\"tex-font-style-bf\">backward</span> lexicographically.</p><p>What is printed on $$$k$$$th label of the delivery?</p>",
+    "inputSpecification": "<p>In the first line, you are given three integer numbers $$$n, m, k$$$\u00a0\u2014 length of string $$$s$$$, number of planned meeting rooms to split $$$s$$$ into and number of the interesting label ($$$2 \\le n \\le 1\\,000; 1 \\le m \\le 1\\,000; 1 \\le k \\le 10^{18}$$$).</p><p>Second input line has string $$$s$$$, consisting of $$$n$$$ lowercase english letters.</p><p>For given $$$n, m, k$$$ there are at least $$$k$$$ ways to split $$$s$$$ into $$$m$$$ substrings.</p>",
+    "outputSpecification": "<p>Output single string \u2013 name of meeting room printed on $$$k$$$-th label of the delivery.</p>",
+    "samples": [
+        {
+            "input": "\n4 2 1\nabac\n",
+            "output": "\naba\n"
+        },
+        {
+            "input": "\n19 5 1821\naupontrougevkoffice\n",
+            "output": "\nau\n"
+        }
+    ],
+    "note": "<p>In the first example, delivery consists of the labels \"<span class=\"tex-font-style-tt\">aba</span>\", \"<span class=\"tex-font-style-tt\">ab</span>\", \"<span class=\"tex-font-style-tt\">a</span>\".</p><p>In the second example, delivery consists of $$$3060$$$ labels. The first label is \"<span class=\"tex-font-style-tt\">aupontrougevkof</span>\" and the last one is \"<span class=\"tex-font-style-tt\">a</span>\".</p>",
+    "contestId": 1310,
+    "index": "C",
+    "name": "Au Pont Rouge",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "dp",
+        "strings"
+    ],
+    "solvedCount": 483
+}

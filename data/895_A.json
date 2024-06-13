@@ -1,0 +1,42 @@
+{
+    "title": "A. Pizza Separation",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Students Vasya and Petya are studying at the BSU (Byteland State University). At one of the breaks they decided to order a pizza. In this problem pizza is a circle of some radius. The pizza was delivered already cut into <span class=\"tex-span\"><i>n</i></span> pieces. The <span class=\"tex-span\"><i>i</i></span>-th piece is a sector of angle equal to <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>. Vasya and Petya want to divide all pieces of pizza into two <span class=\"tex-font-style-it\">continuous</span> sectors in such way that the difference between angles of these sectors is minimal. Sector angle is sum of angles of all pieces in it. Pay attention, that one of sectors can be empty.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009360</span>) \u00a0\u2014 the number of pieces into which the delivered pizza was cut.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009360</span>) \u00a0\u2014 the angles of the sectors into which the pizza was cut. The sum of all <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is 360.</p>",
+    "outputSpecification": "<p>Print one integer \u00a0\u2014 the minimal difference between angles of sectors that will go to Vasya and Petya.</p>",
+    "samples": [
+        {
+            "input": "4<br/>90 90 90 90<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "3<br/>100 100 160<br/>",
+            "output": "40<br/>"
+        },
+        {
+            "input": "1<br/>360<br/>",
+            "output": "360<br/>"
+        },
+        {
+            "input": "4<br/>170 30 150 10<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In first sample Vasya can take <span class=\"tex-span\">1</span> and <span class=\"tex-span\">2</span> pieces, Petya can take <span class=\"tex-span\">3</span> and <span class=\"tex-span\">4</span> pieces. Then the answer is <span class=\"tex-span\">|(90\u2009+\u200990)\u2009-\u2009(90\u2009+\u200990)|\u2009=\u20090</span>.</p><p>In third sample there is only one piece of pizza that can be taken by only one from Vasya and Petya. So the answer is <span class=\"tex-span\">|360\u2009-\u20090|\u2009=\u2009360</span>.</p><p>In fourth sample Vasya can take <span class=\"tex-span\">1</span> and <span class=\"tex-span\">4</span> pieces, then Petya will take <span class=\"tex-span\">2</span> and <span class=\"tex-span\">3</span> pieces. So the answer is <span class=\"tex-span\">|(170\u2009+\u200910)\u2009-\u2009(30\u2009+\u2009150)|\u2009=\u20090</span>.</p><p>Picture explaning fourth sample:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/4bb3450aca241f92fedcba5479bf1b6d22cf813d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>Both red and green sectors consist of two adjacent pieces of pizza. So Vasya can take green sector, then Petya will take red sector.</p>",
+    "contestId": 895,
+    "index": "A",
+    "name": "Pizza Separation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 6474
+}

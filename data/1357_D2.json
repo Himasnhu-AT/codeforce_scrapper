@@ -1,0 +1,22 @@
+{
+    "title": "D2. Quantum Classification - Dataset 4",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>This problem is identical to the problem <a href=\"https://codeforces.com/contest/1357/problem/D1\">D1</a> in every aspect except the <a href=\"https://assets.codeforces.com/rounds/1357/training_data4.json\">training dataset</a>. Please refer to that problem for the full problem statement.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1357,
+    "index": "D2",
+    "name": "Quantum Classification - Dataset 4",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 110
+}

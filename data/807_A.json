@@ -1,0 +1,38 @@
+{
+    "title": "A. Is it rated?",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-underline\">Is it rated?</span></p><p>Here it is. The Ultimate Question of Competitive Programming, Codeforces, and Everything. And you are here to answer it.</p><p>Another Codeforces round has been conducted. No two participants have the same number of points. For each participant, from the top to the bottom of the standings, their rating before and after the round is known.</p><p>It's known that if at least one participant's rating has changed, then the round was rated for sure.</p><p>It's also known that if the round was rated and a participant with lower rating took a better place in the standings than a participant with higher rating, then at least one round participant's rating has changed.</p><p>In this problem, you should not make any other assumptions about the rating system.</p><p>Determine if the current round is rated, unrated, or it's impossible to determine whether it is rated of not.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of round participants.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains two integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20094126</span>)\u00a0\u2014 the rating of the <span class=\"tex-span\"><i>i</i></span>-th participant before and after the round, respectively. The participants are listed in order from the top to the bottom of the standings.</p>",
+    "outputSpecification": "<p>If the round is rated for sure, print \"<span class=\"tex-font-style-tt\">rated</span>\". If the round is unrated for sure, print \"<span class=\"tex-font-style-tt\">unrated</span>\". If it's impossible to determine whether the round is rated or not, print \"<span class=\"tex-font-style-tt\">maybe</span>\".</p>",
+    "samples": [
+        {
+            "input": "6<br/>3060 3060<br/>2194 2194<br/>2876 2903<br/>2624 2624<br/>3007 2991<br/>2884 2884<br/>",
+            "output": "rated<br/>"
+        },
+        {
+            "input": "4<br/>1500 1500<br/>1300 1300<br/>1200 1200<br/>1400 1400<br/>",
+            "output": "unrated<br/>"
+        },
+        {
+            "input": "5<br/>3123 3123<br/>2777 2777<br/>2246 2246<br/>2246 2246<br/>1699 1699<br/>",
+            "output": "maybe<br/>"
+        }
+    ],
+    "note": "<p>In the first example, the ratings of the participants in the third and fifth places have changed, therefore, the round was rated.</p><p>In the second example, no one's rating has changed, but the participant in the second place has lower rating than the participant in the fourth place. Therefore, if the round was rated, someone's rating would've changed for sure.</p><p>In the third example, no one's rating has changed, and the participants took places in non-increasing order of their rating. Therefore, it's impossible to determine whether the round is rated or not.</p>",
+    "contestId": 807,
+    "index": "A",
+    "name": "Is it rated?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 19725
+}

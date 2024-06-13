@@ -1,0 +1,41 @@
+{
+    "title": "A. Unimodal Array",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Array of integers is <span class=\"tex-font-style-it\">unimodal</span>, if:</p><ul> <li> it is strictly increasing in the beginning; </li><li> after that it is constant; </li><li> after that it is strictly decreasing. </li></ul><p>The first block (increasing) and the last block (decreasing) may be absent. It is allowed that both of this blocks are absent.</p><p>For example, the following three arrays are unimodal: <span class=\"tex-span\">[5,\u20097,\u200911,\u200911,\u20092,\u20091]</span>, <span class=\"tex-span\">[4,\u20094,\u20092]</span>, <span class=\"tex-span\">[7]</span>, but the following three are not unimodal: <span class=\"tex-span\">[5,\u20095,\u20096,\u20096,\u20091]</span>, <span class=\"tex-span\">[1,\u20092,\u20091,\u20092]</span>, <span class=\"tex-span\">[4,\u20095,\u20095,\u20096]</span>.</p><p>Write a program that checks if an array is unimodal.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) \u2014 the number of elements in the array.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091\u2009000</span>) \u2014 the elements of the array.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" if the given array is unimodal. Otherwise, print \"<span class=\"tex-font-style-tt\">NO</span>\".</p><p>You can output each letter in any case (upper or lower).</p>",
+    "samples": [
+        {
+            "input": "6<br/>1 5 5 5 4 2<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "5<br/>10 20 30 20 10<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "4<br/>1 2 1 2<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "7<br/>3 3 3 3 3 3 3<br/>",
+            "output": "YES<br/>"
+        }
+    ],
+    "note": "<p>In the first example the array is unimodal, because it is strictly increasing in the beginning (from position <span class=\"tex-span\">1</span> to position <span class=\"tex-span\">2</span>, inclusively), that it is constant (from position <span class=\"tex-span\">2</span> to position <span class=\"tex-span\">4</span>, inclusively) and then it is strictly decreasing (from position <span class=\"tex-span\">4</span> to position <span class=\"tex-span\">6</span>, inclusively).</p>",
+    "contestId": 831,
+    "index": "A",
+    "name": "Unimodal Array",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 10057
+}

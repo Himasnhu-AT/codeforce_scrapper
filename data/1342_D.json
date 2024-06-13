@@ -1,0 +1,46 @@
+{
+    "title": "D. Multiple Testcases",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>So you decided to hold a contest on Codeforces. You prepared the problems: statements, solutions, checkers, validators, tests... Suddenly, your coordinator asks you to change all your tests to multiple testcases in the easiest problem!</p><p>Initially, each test in that problem is just an array. The maximum size of an array is $$$k$$$. For simplicity, the contents of arrays don't matter. You have $$$n$$$ tests \u2014 the $$$i$$$-th test is an array of size $$$m_i$$$ ($$$1 \\le m_i \\le k$$$).</p><p>Your coordinator asks you to distribute all of your arrays into multiple testcases. Each testcase can include multiple arrays. However, each testcase should include no more than $$$c_1$$$ arrays of size <span class=\"tex-font-style-bf\">greater than or equal to $$$1$$$</span> ($$$\\ge 1$$$), no more than $$$c_2$$$ arrays of size <span class=\"tex-font-style-bf\">greater than or equal to $$$2$$$</span>, $$$\\dots$$$, no more than $$$c_k$$$ arrays of size <span class=\"tex-font-style-bf\">greater than or equal to $$$k$$$</span>. Also, $$$c_1 \\ge c_2 \\ge \\dots \\ge c_k$$$.</p><p>So now your goal is to create the new testcases in such a way that: </p><ul> <li> each of the initial arrays appears in <span class=\"tex-font-style-bf\">exactly one</span> testcase; </li><li> for each testcase the given conditions hold; </li><li> the number of testcases is minimum possible. </li></ul><p>Print the minimum possible number of testcases you can achieve and the sizes of arrays included in each testcase.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\le n, k \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the number of initial tests and the limit for the size of each array.</p><p>The second line contains $$$n$$$ integers $$$m_1, m_2, \\dots, m_n$$$ ($$$1 \\le m_i \\le k$$$)\u00a0\u2014 the sizes of the arrays in the original tests.</p><p>The third line contains $$$k$$$ integers $$$c_1, c_2, \\dots, c_k$$$ ($$$n \\ge c_1 \\ge c_2 \\ge \\dots \\ge c_k \\ge 1$$$); $$$c_i$$$ is the maximum number of arrays of size greater than or equal to $$$i$$$ you can have in a single testcase.</p>",
+    "outputSpecification": "<p>In the first line print a single integer $$$ans$$$ ($$$1 \\le ans \\le n$$$)\u00a0\u2014 the minimum number of testcases you can achieve.</p><p>Each of the next $$$ans$$$ lines should contain the description of a testcase in the following format:</p><p>$$$t$$$ $$$a_1$$$ $$$a_2$$$ $$$\\dots$$$ $$$a_{t}$$$ ($$$1 \\le t\\le n$$$)\u00a0\u2014 the testcase includes $$$t$$$ arrays, $$$a_i$$$ is the size of the $$$i$$$-th array in that testcase.</p><p>Each of the initial arrays should appear in <span class=\"tex-font-style-bf\">exactly one</span> testcase. In particular, it implies that the sum of $$$t$$$ over all $$$ans$$$ testcases should be equal to $$$n$$$.</p><p>Note that the answer always exists due to $$$c_k \\ge 1$$$ (and therefore $$$c_1 \\ge 1$$$).</p><p>If there are multiple answers, you can output any one of them.</p>",
+    "samples": [
+        {
+            "input": "\n4 3\n1 2 2 3\n4 1 1\n",
+            "output": "\n3\n1 2\n2 1 3\n1 2\n"
+        },
+        {
+            "input": "\n6 10\n5 8 1 10 8 7\n6 6 4 4 3 2 2 2 1 1\n",
+            "output": "\n2\n3 8 5 7\n3 10 8 1\n"
+        },
+        {
+            "input": "\n5 1\n1 1 1 1 1\n5\n",
+            "output": "\n1\n5 1 1 1 1 1\n"
+        },
+        {
+            "input": "\n5 1\n1 1 1 1 1\n1\n",
+            "output": "\n5\n1 1\n1 1\n1 1\n1 1\n1 1\n"
+        }
+    ],
+    "note": "<p>In the first example there is no way to distribute the tests into less than $$$3$$$ testcases. The given answer satisfies the conditions: each of the testcases includes no more than $$$4$$$ arrays of size greater than or equal to $$$1$$$ and no more than $$$1$$$ array of sizes greater than or equal to $$$2$$$ and $$$3$$$.</p><p>Note that there are multiple valid answers for this test. For example, testcases with sizes $$$[[2], [1, 2], [3]]$$$ would also be correct.</p><p>However, testcases with sizes $$$[[1, 2], [2, 3]]$$$ would be incorrect because there are $$$2$$$ arrays of size greater than or equal to $$$2$$$ in the second testcase.</p><p>Note the difference between the third and the fourth examples. You can include up to $$$5$$$ arrays of size greater than or equal to $$$1$$$ in the third example, so you can put all arrays into a single testcase. And you can have only up to $$$1$$$ array in the fourth example. Thus, every array should be included in a separate testcase.</p>",
+    "contestId": 1342,
+    "index": "D",
+    "name": "Multiple Testcases",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "sortings",
+        "two pointers"
+    ],
+    "solvedCount": 5897
+}

@@ -1,0 +1,30 @@
+{
+    "title": "B. Neural Network country",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Due to the recent popularity of the Deep learning new countries are starting to look like Neural Networks. That is, the countries are being built deep with many layers, each layer possibly having many cities. They also have one entry, and one exit point.</p><p>There are exactly <span class=\"tex-span\"><i>L</i></span> layers, each having <span class=\"tex-span\"><i>N</i></span> cities. Let us look at the two adjacent layers <span class=\"tex-span\"><i>L</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>L</i><sub class=\"lower-index\">2</sub></span>. Each city from the layer <span class=\"tex-span\"><i>L</i><sub class=\"lower-index\">1</sub></span> is connected to each city from the layer <span class=\"tex-span\"><i>L</i><sub class=\"lower-index\">2</sub></span> with the traveling cost <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>ij</i></sub></span> for <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6feada5da84083f5558df10bc20b690db6351806.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, and each pair of adjacent layers has the same cost in between their cities as any other pair (they just stacked the same layers, as usual). Also, the traveling costs to each city from the layer <span class=\"tex-span\"><i>L</i><sub class=\"lower-index\">2</sub></span> are same for all cities in the <span class=\"tex-span\"><i>L</i><sub class=\"lower-index\">1</sub></span>, that is <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>ij</i></sub></span> is the same for <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bd93786c4620662044c83c65e0d3e9779838640a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, and fixed <span class=\"tex-span\"><i>j</i></span>.</p><p>Doctor G. needs to speed up his computations for this country so he asks you to find the number of paths he can take from entry to exit point such that his traveling cost is divisible by given number <span class=\"tex-span\"><i>M</i></span>.</p>",
+    "inputSpecification": "<p>The first line of input contains <span class=\"tex-span\"><i>N</i> (1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>)</span>, <span class=\"tex-span\"><i>L</i> (2\u2009\u2264\u2009<i>L</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> and <span class=\"tex-span\"><i>M</i> (2\u2009\u2264\u2009<i>M</i>\u2009\u2264\u2009100)</span>, the number of cities in each layer, the number of layers and the number that travelling cost should be divisible by, respectively.</p><p>Second, third and fourth line contain <span class=\"tex-span\"><i>N</i></span> integers each denoting costs <span class=\"tex-span\">0\u2009\u2264\u2009<i>cost</i>\u2009\u2264\u2009<i>M</i></span> from entry point to the first layer, costs between adjacent layers as described above, and costs from the last layer to the exit point.</p>",
+    "outputSpecification": "<p>Output a single integer, the number of paths Doctor G. can take which have total cost divisible by <span class=\"tex-span\"><i>M</i></span>, modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "2 3 13<br/>4 6<br/>2 1<br/>3 4<br/>",
+            "output": "2"
+        }
+    ],
+    "note": "<p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/959c8bea1eef9daad659ecab34d36a2f692c5e88.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>This is a country with <span class=\"tex-span\">3</span> layers, each layer having <span class=\"tex-span\">2</span> cities. Paths <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/ea33f7ca0560180dc03b2657e6a1f9fd874e5adc.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4b3fe7f211ecca3ab05c72cd3b995d28d037ab45.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> are the only paths having total cost divisible by <span class=\"tex-span\">13</span>. Notice that input edges for layer cities have the same cost, and that they are same for all layers.</p>",
+    "contestId": 852,
+    "index": "B",
+    "name": "Neural Network country",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "matrices"
+    ],
+    "solvedCount": 1389
+}

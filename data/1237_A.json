@@ -1,0 +1,34 @@
+{
+    "title": "A. Balanced Rating Changes",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Another Codeforces Round has just finished! It has gathered $$$n$$$ participants, and according to the results, the expected rating change of participant $$$i$$$ is $$$a_i$$$. These rating changes are <span class=\"tex-font-style-it\">perfectly balanced</span>\u00a0\u2014 their sum is equal to $$$0$$$.</p><p>Unfortunately, due to minor technical glitches, the round is declared <span class=\"tex-font-style-it\">semi-rated</span>. It means that all rating changes must be divided by two.</p><p>There are two conditions though: </p><ul> <li> For each participant $$$i$$$, their modified rating change $$$b_i$$$ must be integer, and as close to $$$\\frac{a_i}{2}$$$ as possible. It means that either $$$b_i = \\lfloor \\frac{a_i}{2} \\rfloor$$$ or $$$b_i = \\lceil \\frac{a_i}{2} \\rceil$$$. In particular, if $$$a_i$$$ is even, $$$b_i = \\frac{a_i}{2}$$$. Here $$$\\lfloor x \\rfloor$$$ denotes rounding down to the largest integer not greater than $$$x$$$, and $$$\\lceil x \\rceil$$$ denotes rounding up to the smallest integer not smaller than $$$x$$$. </li><li> The modified rating changes must be perfectly balanced\u00a0\u2014 their sum must be equal to $$$0$$$. </li></ul><p>Can you help with that?</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$2 \\le n \\le 13\\,845$$$), denoting the number of participants.</p><p>Each of the next $$$n$$$ lines contains a single integer $$$a_i$$$ ($$$-336 \\le a_i \\le 1164$$$), denoting the rating change of the $$$i$$$-th participant.</p><p>The sum of all $$$a_i$$$ is equal to $$$0$$$.</p>",
+    "outputSpecification": "<p>Output $$$n$$$ integers $$$b_i$$$, each denoting the modified rating change of the $$$i$$$-th participant in order of input.</p><p>For any $$$i$$$, it must be true that either $$$b_i = \\lfloor \\frac{a_i}{2} \\rfloor$$$ or $$$b_i = \\lceil \\frac{a_i}{2} \\rceil$$$. The sum of all $$$b_i$$$ must be equal to $$$0$$$.</p><p>If there are multiple solutions, print any. We can show that a solution exists for any valid input.</p>",
+    "samples": [
+        {
+            "input": "\n3\n10\n-5\n-5\n",
+            "output": "\n5\n-2\n-3\n"
+        },
+        {
+            "input": "\n7\n-7\n-29\n0\n3\n24\n-29\n38\n",
+            "output": "\n-3\n-15\n0\n2\n12\n-15\n19\n"
+        }
+    ],
+    "note": "<p>In the first example, $$$b_1 = 5$$$, $$$b_2 = -3$$$ and $$$b_3 = -2$$$ is another correct solution.</p><p>In the second example there are $$$6$$$ possible solutions, one of them is shown in the example output.</p>",
+    "contestId": 1237,
+    "index": "A",
+    "name": "Balanced Rating Changes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 18931
+}

@@ -1,0 +1,41 @@
+{
+    "title": "C1. Increasing Subsequence (easy version)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">The only difference between problems C1 and C2 is that all values in input of problem C1 are distinct (this condition may be false for problem C2)</span>.</p><p>You are given a sequence $$$a$$$ consisting of $$$n$$$ integers. <span class=\"tex-font-style-bf\">All these integers are distinct, each value from $$$1$$$ to $$$n$$$ appears in the sequence exactly once.</span></p><p>You are making a sequence of moves. During each move you must take either the leftmost element of the sequence or the rightmost element of the sequence, write it down and remove it from the sequence. Your task is to write down a <span class=\"tex-font-style-bf\">strictly</span> increasing sequence, and among all such sequences you should take the longest (the length of the sequence is the number of elements in it).</p><p>For example, for the sequence $$$[2, 1, 5, 4, 3]$$$ the answer is $$$4$$$ (you take $$$2$$$ and the sequence becomes $$$[1, 5, 4, 3]$$$, then you take the rightmost element $$$3$$$ and the sequence becomes $$$[1, 5, 4]$$$, then you take $$$4$$$ and the sequence becomes $$$[1, 5]$$$ and then you take $$$5$$$ and the sequence becomes $$$[1]$$$, the obtained increasing sequence is $$$[2, 3, 4, 5]$$$).</p>",
+    "inputSpecification": "<p>The first line of the input contains one integer $$$n$$$ ($$$1 \\le n \\le 2 \\cdot 10^5$$$) \u2014 the number of elements in $$$a$$$.</p><p>The second line of the input contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i \\le n$$$), where $$$a_i$$$ is the $$$i$$$-th element of $$$a$$$. <span class=\"tex-font-style-bf\">All these integers are pairwise distinct</span>.</p>",
+    "outputSpecification": "<p>In the first line of the output print $$$k$$$ \u2014 the maximum number of elements in a <span class=\"tex-font-style-bf\">strictly</span> increasing sequence you can obtain.</p><p>In the second line print a string $$$s$$$ of length $$$k$$$, where the $$$j$$$-th character of this string $$$s_j$$$ should be '<span class=\"tex-font-style-tt\">L</span>' if you take the leftmost element during the $$$j$$$-th move and '<span class=\"tex-font-style-tt\">R</span>' otherwise. If there are multiple answers, you can print any.</p>",
+    "samples": [
+        {
+            "input": "\n5\n2 1 5 4 3\n",
+            "output": "\n4\nLRRR\n"
+        },
+        {
+            "input": "\n7\n1 3 5 6 7 4 2\n",
+            "output": "\n7\nLRLRLLL\n"
+        },
+        {
+            "input": "\n3\n1 2 3\n",
+            "output": "\n3\nLLL\n"
+        },
+        {
+            "input": "\n4\n1 2 4 3\n",
+            "output": "\n4\nLLRL\n"
+        }
+    ],
+    "note": "<p>The first example is described in the problem statement.</p>",
+    "contestId": 1157,
+    "index": "C1",
+    "name": "Increasing Subsequence (easy version)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy"
+    ],
+    "solvedCount": 12419
+}

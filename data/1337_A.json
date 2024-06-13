@@ -1,0 +1,30 @@
+{
+    "title": "A. Ichihime and Triangle",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Ichihime is the current priestess of the Mahjong Soul Temple. She claims to be human, despite her cat ears.</p><p>These days the temple is holding a math contest. Usually, Ichihime lacks interest in these things, but this time the prize for the winner is her favorite \u2014 cookies. Ichihime decides to attend the contest. Now she is solving the following problem.</p><center><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/460965cc95e110488641a549ff72e6b554689699.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center>\u00a0<p>You are given four positive integers $$$a$$$, $$$b$$$, $$$c$$$, $$$d$$$, such that $$$a \\leq b \\leq c \\leq d$$$. </p><p>Your task is to find three integers $$$x$$$, $$$y$$$, $$$z$$$, satisfying the following conditions:</p><ul><li> $$$a \\leq x \\leq b$$$.</li><li> $$$b \\leq y \\leq c$$$.</li><li> $$$c \\leq z \\leq d$$$.</li><li> There exists a triangle with a positive non-zero area and the lengths of its three sides are $$$x$$$, $$$y$$$, and $$$z$$$.</li></ul><p>Ichihime desires to get the cookie, but the problem seems too hard for her. Can you help her?</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 1000$$$) \u00a0\u2014 the number of test cases.</p><p>The next $$$t$$$ lines describe test cases. Each test case is given as four space-separated integers $$$a$$$, $$$b$$$, $$$c$$$, $$$d$$$ ($$$1 \\leq a \\leq b \\leq c \\leq d \\leq 10^9$$$).</p>",
+    "outputSpecification": "<p>For each test case, print three integers $$$x$$$, $$$y$$$, $$$z$$$ \u00a0\u2014 the integers you found satisfying the conditions given in the statement.</p><p>It is guaranteed that the answer always exists. If there are multiple answers, print any.</p>",
+    "samples": [
+        {
+            "input": "\n4\n1 3 5 7\n1 5 5 7\n100000 200000 300000 400000\n1 1 977539810 977539810\n",
+            "output": "\n3 4 5\n5 5 5\n182690 214748 300999\n1 977539810 977539810\n"
+        }
+    ],
+    "note": "<p>One of the possible solutions to the first test case:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/18f634d31f7ba8b732b09cf7534c10b3f2e3afc4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>One of the possible solutions to the second test case:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/264e51bb6d26b7a1119d7e9e96133e5ffda65898.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 1337,
+    "index": "A",
+    "name": "Ichihime and Triangle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 36577
+}

@@ -1,0 +1,39 @@
+{
+    "title": "E. Aquarium decoration",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Arkady and Masha want to choose decorations for thier aquarium in Fishdom game. They have <span class=\"tex-span\"><i>n</i></span> decorations to choose from, each of them has some cost. To complete a task Arkady and Masha need to choose <span class=\"tex-font-style-bf\">exactly</span> <span class=\"tex-span\"><i>m</i></span> decorations from given, and they want to spend as little money as possible.</p><p>There is one difficulty: Masha likes some <span class=\"tex-span\"><i>a</i></span> of the given decorations, Arkady likes some <span class=\"tex-span\"><i>b</i></span> of the given decorations. Some decorations may be liked by both Arkady and Masha, or not be liked by both. The friends want to choose such decorations so that each of them likes <span class=\"tex-font-style-bf\">at least</span> <span class=\"tex-span\"><i>k</i></span> decorations among the chosen. Help Masha and Arkady find the minimum sum of money they need to spend.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the number of decorations, how many decorations the friends should choose, how many decorations each of them should like among the chosen.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub>,\u2009<i>c</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>c</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 decorations costs.</p><p>The third line contains single integer <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the number of decorations liked by Masha. The fourth line contains <span class=\"tex-span\"><i>a</i></span> distinct integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>a</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the ids of decorations liked by Masha.</p><p>The next two lines describe decorations liked by Arkady in the same format.</p>",
+    "outputSpecification": "<p>Print single integer: the minimum sum of money the friends should spend to fulfill all constraints. If it is not possible, print <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "samples": [
+        {
+            "input": "4 3 2<br/>3 2 2 1<br/>2<br/>1 2<br/>2<br/>1 3<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "4 3 2<br/>3 2 2 1<br/>2<br/>1 2<br/>3<br/>4 1 3<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "4 2 2<br/>3 2 2 1<br/>2<br/>1 2<br/>3<br/>4 1 3<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first example the only possible variant to choose <span class=\"tex-span\">3</span> decorations having all conditions satisfied is to choose decorations <span class=\"tex-span\">1</span>, <span class=\"tex-span\">2</span>, <span class=\"tex-span\">3</span>.</p><p>In the second example friends can choose decoration <span class=\"tex-span\">4</span> instead of decoration <span class=\"tex-span\">3</span>, because this one is one coin cheaper.</p><p>In the third example it's not possible to choose <span class=\"tex-span\">2</span> decorations in a way that both are liked by both Masha and Arkady.</p>",
+    "contestId": 799,
+    "index": "E",
+    "name": "Aquarium decoration",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "greedy",
+        "two pointers"
+    ],
+    "solvedCount": 919
+}

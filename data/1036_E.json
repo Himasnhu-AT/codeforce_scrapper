@@ -1,0 +1,35 @@
+{
+    "title": "E. Covered Points",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given $$$n$$$ segments on a Cartesian plane. Each segment's endpoints have integer coordinates. Segments can intersect with each other. No two segments lie on the same line.</p><p>Count the number of distinct points with <span class=\"tex-font-style-bf\">integer coordinates</span>, which are covered by at least one segment.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 1000$$$) \u2014 the number of segments.</p><p>Each of the next $$$n$$$ lines contains four integers $$$Ax_i, Ay_i, Bx_i, By_i$$$ ($$$-10^6 \\le Ax_i, Ay_i, Bx_i, By_i \\le 10^6$$$) \u2014 the coordinates of the endpoints $$$A$$$, $$$B$$$ ($$$A \\ne B$$$) of the $$$i$$$-th segment.</p><p>It is guaranteed that no two segments lie on the same line.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number of distinct points with integer coordinates, which are covered by at least one segment.</p>",
+    "samples": [
+        {
+            "input": "9<br/>0 0 4 4<br/>-1 5 4 0<br/>4 0 4 4<br/>5 2 11 2<br/>6 1 6 7<br/>5 6 11 6<br/>10 1 10 7<br/>7 0 9 8<br/>10 -1 11 -1<br/>",
+            "output": "42<br/>"
+        },
+        {
+            "input": "4<br/>-1 2 1 2<br/>-1 0 1 0<br/>-1 0 0 3<br/>0 3 1 0<br/>",
+            "output": "7<br/>"
+        }
+    ],
+    "note": "<p>The image for the first example:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/764899a97d2a0d7f8af59dc98dd8848e30f26922.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Several key points are marked blue, the answer contains some non-marked points as well.</p><p>The image for the second example:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/3d3c84caa2b574b5bd8baac97fea18f447472409.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1036,
+    "index": "E",
+    "name": "Covered Points",
+    "type": "PROGRAMMING",
+    "tags": [
+        "fft",
+        "geometry",
+        "number theory"
+    ],
+    "solvedCount": 1420
+}

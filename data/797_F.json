@@ -1,0 +1,36 @@
+{
+    "title": "F. Mice and Holes",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One day Masha came home and noticed <span class=\"tex-span\"><i>n</i></span> mice in the corridor of her flat. Of course, she shouted loudly, so scared mice started to run to the holes in the corridor.</p><p>The corridor can be represeted as a numeric axis with <span class=\"tex-span\"><i>n</i></span> mice and <span class=\"tex-span\"><i>m</i></span> holes on it. <span class=\"tex-span\"><i>i</i></span>th mouse is at the coordinate <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, and <span class=\"tex-span\"><i>j</i></span>th hole \u2014 at coordinate <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>j</i></sub></span>. <span class=\"tex-span\"><i>j</i></span>th hole has enough room for <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>j</i></sub></span> mice, so not more than <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>j</i></sub></span> mice can enter this hole.</p><p>What is the minimum sum of distances that mice have to go through so that they all can hide in the holes? If <span class=\"tex-span\"><i>i</i></span>th mouse goes to the hole <span class=\"tex-span\"><i>j</i></span>, then its distance is <span class=\"tex-span\">|<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009-\u2009<i>p</i><sub class=\"lower-index\"><i>j</i></sub>|</span>.</p><p>Print the minimum sum of distances.</p>",
+    "inputSpecification": "<p>The first line contains two integer numbers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20095000</span>) \u2014 the number of mice and the number of holes, respectively.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), where <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> is the coordinate of <span class=\"tex-span\"><i>i</i></span>th mouse.</p><p>Next <span class=\"tex-span\"><i>m</i></span> lines contain pairs of integer numbers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>j</i></sub>,\u2009<i>c</i><sub class=\"lower-index\"><i>j</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>,\u20091\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u20095000</span>), where <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>j</i></sub></span> is the coordinate of <span class=\"tex-span\"><i>j</i></span>th hole, and <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>j</i></sub></span> is the maximum number of mice that can hide in the hole <span class=\"tex-span\"><i>j</i></span>.</p>",
+    "outputSpecification": "<p>Print one integer number \u2014 the minimum sum of distances. If there is no solution, print <span class=\"tex-font-style-tt\">-1</span> instead.</p>",
+    "samples": [
+        {
+            "input": "4 5<br/>6 2 8 9<br/>3 6<br/>2 1<br/>3 6<br/>4 7<br/>4 7<br/>",
+            "output": "11<br/>"
+        },
+        {
+            "input": "7 2<br/>10 20 30 40 50 45 35<br/>-1000000000 10<br/>1000000000 1<br/>",
+            "output": "7000000130<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 797,
+    "index": "F",
+    "name": "Mice and Holes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 1102
+}

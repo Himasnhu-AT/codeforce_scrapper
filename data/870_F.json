@@ -1,0 +1,34 @@
+{
+    "title": "F. Paths",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a positive integer <span class=\"tex-span\"><i>n</i></span>. Let's build a graph on vertices <span class=\"tex-span\">1,\u20092,\u2009...,\u2009<i>n</i></span> in such a way that there is an edge between vertices <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> if and only if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a9f8cfef2277cc8f4fc17d13f965e877c0eaed30.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Let <span class=\"tex-span\"><i>d</i>(<i>u</i>,\u2009<i>v</i>)</span> be the shortest distance between <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span>, or <span class=\"tex-span\">0</span> if there is no path between them. Compute the sum of values <span class=\"tex-span\"><i>d</i>(<i>u</i>,\u2009<i>v</i>)</span> over all <span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i>\u2009&lt;\u2009<i>v</i>\u2009\u2264\u2009<i>n</i></span>.</p><p>The <span class=\"tex-span\"><i>gcd</i></span> (greatest common divisor) of two positive integers is the maximum positive integer that divides both of the integers.</p>",
+    "inputSpecification": "<p>Single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">7</sup></span>).</p>",
+    "outputSpecification": "<p>Print the sum of <span class=\"tex-span\"><i>d</i>(<i>u</i>,\u2009<i>v</i>)</span> over all <span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i>\u2009&lt;\u2009<i>v</i>\u2009\u2264\u2009<i>n</i></span>.</p>",
+    "samples": [
+        {
+            "input": "6<br/>",
+            "output": "8<br/>"
+        },
+        {
+            "input": "10<br/>",
+            "output": "44<br/>"
+        }
+    ],
+    "note": "<p>All shortest paths in the first example: </p><ul> <li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7b7a110945393c2b47718b811aadf12cbe125f3f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e9af98cb64a31b6dae850dbfb30429b9a091c123.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d43a3ea9a040a07b650cc4d74a5f6a69395d0005.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1725357f3b9d9284226b8c2848aab916720da24f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9e05d0e132bba9db531dc61149062e6f9f5ff34a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/043fdd1108540c9fbac49c9177d6ec0021cbd896.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li></ul><p>There are no paths between other pairs of vertices.</p><p>The total distance is <span class=\"tex-span\">2\u2009+\u20091\u2009+\u20091\u2009+\u20092\u2009+\u20091\u2009+\u20091\u2009=\u20098</span>.</p>",
+    "contestId": 870,
+    "index": "F",
+    "name": "Paths",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "number theory"
+    ],
+    "solvedCount": 600
+}

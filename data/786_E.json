@@ -1,0 +1,36 @@
+{
+    "title": "E. ALT",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>ALT is a planet in a galaxy called \"Encore\". Humans rule this planet but for some reason there's no dog in their planet, so the people there are sad and depressed. Rick and Morty are universal philanthropists and they want to make people in ALT happy. </p><p>ALT has <span class=\"tex-span\"><i>n</i></span> cities numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> bidirectional roads numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span>. One can go from any city to any other city using these roads.</p><p>There are two types of people in ALT:</p><ol> <li> Guardians. A guardian lives in a house alongside a road and guards the road. </li><li> Citizens. A citizen lives in a house inside a city and works in an office in another city. </li></ol><p>Every person on ALT is either a guardian or a citizen and there's exactly one guardian alongside each road. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/61dcf062c022f6ca6a051935d105ab8c874a42c0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Rick and Morty talked to all the people in ALT, and here's what they got:</p><ul> <li> There are <span class=\"tex-span\"><i>m</i></span> citizens living in ALT. </li><li> Citizen number <span class=\"tex-span\"><i>i</i></span> lives in city number <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and works in city number <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>. </li><li> Every day each citizen will go through all roads along the shortest path from his home to his work. </li><li> A citizen will be happy if and only if either he himself has a puppy himself or all of guardians along his path to his work has a puppy (he sees the guardian's puppy in each road and will be happy). </li><li> A guardian is always happy. </li></ul><p>You need to tell Rick and Morty the minimum number of puppies they need in order to make all people in ALT happy, and also provide an optimal way to distribute these puppies.</p>",
+    "inputSpecification": "<p>The first line of input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u2009\u00d7\u200910<sup class=\"upper-index\">4</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>) \u2014 number of cities and number of citizens respectively.</p><p>The next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contain the roads, <span class=\"tex-span\"><i>i</i></span>-th line contains endpoint of <span class=\"tex-span\"><i>i</i></span>-th edge, <span class=\"tex-span\"><i>v</i></span> and <span class=\"tex-span\"><i>u</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>v</i>,\u2009<i>u</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>v</i>\u2009\u2260\u2009<i>u</i></span>).</p><p>The next <span class=\"tex-span\"><i>m</i></span> lines contain the information about citizens. <span class=\"tex-span\"><i>i</i></span>-th line contains two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>).</p>",
+    "outputSpecification": "<p>In the first line of input print a single integer <span class=\"tex-span\"><i>k</i></span>, the total number of puppies they need (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i></span>).</p><p>In the second line print an integer <span class=\"tex-span\"><i>q</i></span>, the number of puppies to give to citizens, followed by <span class=\"tex-span\"><i>q</i></span> distinct integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>q</i></sub></span>, index of citizens to give puppy to (<span class=\"tex-span\">0\u2009\u2264\u2009<i>q</i>\u2009\u2264\u2009<i>min</i>(<i>m</i>,\u2009<i>k</i>)</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>m</i></span>).</p><p>In the third line print an integer <span class=\"tex-span\"><i>e</i></span>, the number of puppies to give to guardians, followed by <span class=\"tex-span\"><i>e</i></span> distinct integers <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>b</i><sub class=\"lower-index\"><i>e</i></sub></span>, index of road of guardians to give puppy to (<span class=\"tex-span\">0\u2009\u2264\u2009<i>e</i>\u2009\u2264\u2009<i>min</i>(<i>n</i>\u2009-\u20091,\u2009<i>k</i>)</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>\u2009-\u20091</span>).</p><p>Sum of <span class=\"tex-span\"><i>q</i></span> and <span class=\"tex-span\"><i>e</i></span> should be equal to <span class=\"tex-span\"><i>k</i></span>.</p>",
+    "samples": [
+        {
+            "input": "4 5<br/>2 4<br/>3 4<br/>1 4<br/>2 4<br/>2 1<br/>2 4<br/>1 2<br/>2 3<br/>",
+            "output": "3<br/>1 5 <br/>2 3 1 <br/>"
+        },
+        {
+            "input": "4 7<br/>3 4<br/>1 4<br/>2 1<br/>4 2<br/>4 2<br/>2 4<br/>1 4<br/>2 1<br/>3 1<br/>4 2<br/>",
+            "output": "3<br/>1 6 <br/>2 2 3 <br/>"
+        }
+    ],
+    "note": "<p>Map of ALT in the first sample testcase (numbers written on a road is its index):</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/e37848bd14a5afd4038dbdf7b44ddc8027f094d9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Map of ALT in the second sample testcase (numbers written on a road is its index): </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2b32454688a3ca0111418923557cdd11f6a3e41e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 786,
+    "index": "E",
+    "name": "ALT",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "flows",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 608
+}

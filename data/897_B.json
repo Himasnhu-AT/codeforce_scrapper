@@ -1,0 +1,33 @@
+{
+    "title": "B. Chtholly's request",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"epigraph\"><div class=\"epigraph-text\"><span class=\"tex-font-style-it\"> \u2014 Thanks a lot for today.<p>\u2014 I experienced so many great things.</p><p>\u2014 You gave me memories like dreams... But I have to leave now...</p><p>\u2014 One last request, can you...</p><p>\u2014 Help me solve a Codeforces problem?</p><p>\u2014 ......</p><p>\u2014 What?</p></span></div></div><p>Chtholly has been thinking about a problem for days:</p><p>If a number is <span class=\"tex-font-style-it\">palindrome</span> and length of its decimal representation without leading zeros is even, we call it a zcy number. A number is <span class=\"tex-font-style-it\">palindrome</span> means when written in decimal representation, it contains no leading zeros and reads the same forwards and backwards. For example <span class=\"tex-font-style-tt\">12321</span> and <span class=\"tex-font-style-tt\">1221</span> are palindromes and <span class=\"tex-font-style-tt\">123</span> and <span class=\"tex-font-style-tt\">12451</span> are not. Moreover, <span class=\"tex-font-style-tt\">1221</span> is zcy number and <span class=\"tex-font-style-tt\">12321</span> is not.</p><p>Given integers <span class=\"tex-span\"><i>k</i></span> and <span class=\"tex-span\"><i>p</i></span>, calculate the sum of the <span class=\"tex-span\"><i>k</i></span> smallest zcy numbers and output this sum modulo <span class=\"tex-span\"><i>p</i></span>.</p><p>Unfortunately, Willem isn't good at solving this kind of problems, so he asks you for help!</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>k</i></span> and <span class=\"tex-span\"><i>p</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20091\u2009\u2264\u2009<i>p</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>.</p>",
+    "outputSpecification": "<p>Output single integer\u00a0\u2014 answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "2 100<br/>",
+            "output": "33<br/>"
+        },
+        {
+            "input": "5 30<br/>",
+            "output": "15<br/>"
+        }
+    ],
+    "note": "<p>In the first example, the smallest zcy number is <span class=\"tex-span\">11</span>, and the second smallest zcy number is <span class=\"tex-span\">22</span>.</p><p>In the second example, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/68fffad54395f7d920ad0384e07c6215ddc64141.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 897,
+    "index": "B",
+    "name": "Chtholly's request",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force"
+    ],
+    "solvedCount": 7097
+}

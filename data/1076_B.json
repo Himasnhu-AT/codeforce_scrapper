@@ -1,0 +1,35 @@
+{
+    "title": "B. Divisor Subtraction",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an integer number $$$n$$$. The following algorithm is applied to it:</p><ol> <li> if $$$n = 0$$$, then end algorithm; </li><li> find the smallest <span class=\"tex-font-style-bf\">prime</span> divisor $$$d$$$ of $$$n$$$; </li><li> subtract $$$d$$$ from $$$n$$$ and go to step $$$1$$$. </li></ol><p>Determine the number of subtrations the algorithm will make.</p>",
+    "inputSpecification": "<p>The only line contains a single integer $$$n$$$ ($$$2 \\le n \\le 10^{10}$$$).</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number of subtractions the algorithm will make.</p>",
+    "samples": [
+        {
+            "input": "\n5\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n4\n",
+            "output": "\n2\n"
+        }
+    ],
+    "note": "<p>In the first example $$$5$$$ is the smallest prime divisor, thus it gets subtracted right away to make a $$$0$$$.</p><p>In the second example $$$2$$$ is the smallest prime divisor at both steps.</p>",
+    "contestId": 1076,
+    "index": "B",
+    "name": "Divisor Subtraction",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 12631
+}

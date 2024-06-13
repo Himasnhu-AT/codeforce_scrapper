@@ -1,0 +1,36 @@
+{
+    "title": "C. Jon Snow and his Favourite Number",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Jon Snow now has to fight with White Walkers. He has <span class=\"tex-span\"><i>n</i></span> rangers, each of which has his own strength. Also Jon Snow has his favourite number <span class=\"tex-span\"><i>x</i></span>. Each ranger can fight with a white walker only if the strength of the white walker equals his strength. He however thinks that his rangers are weak and need to improve. Jon now thinks that if he takes the bitwise XOR of strengths of some of rangers with his favourite number <span class=\"tex-span\"><i>x</i></span>, he might get soldiers of high strength. So, he decided to do the following operation <span class=\"tex-span\"><i>k</i></span> times: </p><ol><li> Arrange all the rangers in a straight line in the order of increasing strengths.</li><li> Take the bitwise XOR (is written as <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c4b7092c0f7ce6535f2574569c98f7b3c2fe2c5f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>) of the strength of each alternate ranger with <span class=\"tex-span\"><i>x</i></span> and update it's strength.</li></ol> Suppose, Jon has <span class=\"tex-span\">5</span> rangers with strengths <span class=\"tex-span\">[9,\u20097,\u200911,\u200915,\u20095]</span> and he performs the operation <span class=\"tex-span\">1</span> time with <span class=\"tex-span\"><i>x</i>\u2009=\u20092</span>. He first arranges them in the order of their strengths, <span class=\"tex-span\">[5,\u20097,\u20099,\u200911,\u200915]</span>. Then he does the following: <ol><li> The strength of first ranger is updated to <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b989fec42185029adec488aa738b78d9de953aef.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, i.e. <span class=\"tex-span\">7</span>.</li><li> The strength of second ranger remains the same, i.e. <span class=\"tex-span\">7</span>.</li><li> The strength of third ranger is updated to <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3c7c9436158c0744fffbc90f5dcf6769683b82c2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, i.e. <span class=\"tex-span\">11</span>.</li><li> The strength of fourth ranger remains the same, i.e. <span class=\"tex-span\">11</span>.</li><li> The strength of fifth ranger is updated to <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/842bb4d07e058ad06611d99fc15455f0a936cb03.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, i.e. <span class=\"tex-span\">13</span>.</li></ol> The new strengths of the <span class=\"tex-span\">5</span> rangers are <span class=\"tex-span\">[7,\u20097,\u200911,\u200911,\u200913]</span><p>Now, Jon wants to know the maximum and minimum strength of the rangers after performing the above operations <span class=\"tex-span\"><i>k</i></span> times. He wants your help for this task. Can you help him?</p>",
+    "inputSpecification": "<p>First line consists of three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>k</i></span>, <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">3</sup></span>) \u2014 number of rangers Jon has, the number of times Jon will carry out the operation and Jon's favourite number respectively.</p><p>Second line consists of <span class=\"tex-span\"><i>n</i></span> integers representing the strengths of the rangers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">3</sup></span>).</p>",
+    "outputSpecification": "<p>Output two integers, the maximum and the minimum strength of the rangers after performing the operation <span class=\"tex-span\"><i>k</i></span> times.</p>",
+    "samples": [
+        {
+            "input": "5 1 2<br/>9 7 11 15 5<br/>",
+            "output": "13 7"
+        },
+        {
+            "input": "2 100000 569<br/>605 986<br/>",
+            "output": "986 605"
+        }
+    ],
+    "note": null,
+    "contestId": 768,
+    "index": "C",
+    "name": "Jon Snow and his Favourite Number",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 3774
+}

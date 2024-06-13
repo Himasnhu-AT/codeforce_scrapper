@@ -1,0 +1,38 @@
+{
+    "title": "C. Journey",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Recently Irina arrived to one of the most famous cities of Berland\u00a0\u2014 the Berlatov city. There are <span class=\"tex-span\"><i>n</i></span> showplaces in the city, numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, and some of them are connected by one-directional roads. The roads in Berlatov are designed in a way such that there <span class=\"tex-font-style-bf\">are no</span> cyclic routes between showplaces.</p><p>Initially Irina stands at the showplace <span class=\"tex-span\">1</span>, and the endpoint of her journey is the showplace <span class=\"tex-span\"><i>n</i></span>. Naturally, Irina wants to visit as much showplaces as she can during her journey. However, Irina's stay in Berlatov is limited and she can't be there for more than <span class=\"tex-span\"><i>T</i></span> time units.</p><p>Help Irina determine how many showplaces she may visit during her journey from showplace <span class=\"tex-span\">1</span> to showplace <span class=\"tex-span\"><i>n</i></span> within a time not exceeding <span class=\"tex-span\"><i>T</i></span>. It is guaranteed that there is at least one route from showplace <span class=\"tex-span\">1</span> to showplace <span class=\"tex-span\"><i>n</i></span> such that Irina will spend no more than <span class=\"tex-span\"><i>T</i></span> time units passing it.</p>",
+    "inputSpecification": "<p>The first line of the input contains three integers <span class=\"tex-span\"><i>n</i>,\u2009<i>m</i></span> and <span class=\"tex-span\"><i>T</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20095000,\u2009\u20091\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20095000,\u2009\u20091\u2009\u2264\u2009<i>T</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the number of showplaces, the number of roads between them and the time of Irina's stay in Berlatov respectively.</p><p>The next <span class=\"tex-span\"><i>m</i></span> lines describes roads in Berlatov. <span class=\"tex-span\"><i>i</i></span>-th of them contains <span class=\"tex-span\">3</span> integers <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>,\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>,\u20091\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), meaning that there is a road starting from showplace <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and leading to showplace <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>, and Irina spends <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> time units to pass it. It is guaranteed that the roads do not form cyclic routes.</p><p><span class=\"tex-font-style-bf\">It is guaranteed, that there is at most one road between each pair of showplaces.</span></p>",
+    "outputSpecification": "<p>Print the single integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the maximum number of showplaces that Irina can visit during her journey from showplace <span class=\"tex-span\">1</span> to showplace <span class=\"tex-span\"><i>n</i></span> within time not exceeding <span class=\"tex-span\"><i>T</i></span>, in the first line.</p><p>Print <span class=\"tex-span\"><i>k</i></span> distinct integers in the second line\u00a0\u2014 indices of showplaces that Irina will visit on her route, in the order of encountering them.</p><p>If there are multiple answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "4 3 13<br/>1 2 5<br/>2 3 7<br/>2 4 8<br/>",
+            "output": "3<br/>1 2 4 <br/>"
+        },
+        {
+            "input": "6 6 7<br/>1 2 2<br/>1 3 3<br/>3 6 3<br/>2 4 2<br/>4 6 2<br/>6 5 1<br/>",
+            "output": "4<br/>1 2 4 6 <br/>"
+        },
+        {
+            "input": "5 5 6<br/>1 3 3<br/>3 5 3<br/>1 2 2<br/>2 4 3<br/>4 5 2<br/>",
+            "output": "3<br/>1 3 5 <br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 721,
+    "index": "C",
+    "name": "Journey",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "graphs"
+    ],
+    "solvedCount": 5715
+}

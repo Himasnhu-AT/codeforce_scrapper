@@ -1,0 +1,44 @@
+{
+    "title": "E. Jordan Smiley",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/f5d68ed69f4ec8fcc71db0c55cf6acb9860b5e4a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The input contains two integers $$$row$$$, $$$col$$$ ($$$0 \\le row, col \\le 63$$$), separated by a single space.</p>",
+    "outputSpecification": "<p>Output \"IN\" or \"OUT\".</p>",
+    "samples": [
+        {
+            "input": "\n0 0\n",
+            "output": "\nOUT\n"
+        },
+        {
+            "input": "\n27 0\n",
+            "output": "\nIN\n"
+        },
+        {
+            "input": "\n0 27\n",
+            "output": "\nOUT\n"
+        },
+        {
+            "input": "\n27 27\n",
+            "output": "\nIN\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1331,
+    "index": "E",
+    "name": "Jordan Smiley",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "dfs and similar",
+        "geometry",
+        "implementation"
+    ],
+    "solvedCount": 1204
+}

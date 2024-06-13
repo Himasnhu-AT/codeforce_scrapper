@@ -1,0 +1,41 @@
+{
+    "title": "E. Dasha and Puzzle",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Dasha decided to have a rest after solving the problem. She had been ready to start her favourite activity \u2014 origami, but remembered the puzzle that she could not solve. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/3d86f0c565e01142ed2c47a3d9d915a87ed84e9b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The tree is a non-oriented connected graph without cycles. In particular, there always are <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> edges in a tree with <span class=\"tex-span\"><i>n</i></span> vertices.</p><p>The puzzle is to position the vertices at the points of the Cartesian plane with integral coordinates, so that the segments between the vertices connected by edges are parallel to the coordinate axes. Also, the intersection of segments is allowed only at their ends. Distinct vertices should be placed at different points. </p><p>Help Dasha to find any suitable way to position the tree vertices on the plane.</p><p>It is guaranteed that if it is possible to position the tree vertices on the plane without violating the condition which is given above, then you can do it by using points with integral coordinates which don't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">18</sup></span> in absolute value.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200930)</span> \u2014 the number of vertices in the tree. </p><p>Each of next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contains two integers <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) that mean that the <span class=\"tex-span\"><i>i</i></span>-th edge of the tree connects vertices <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>It is guaranteed that the described graph is a tree.</p>",
+    "outputSpecification": "<p>If the puzzle doesn't have a solution then in the only line print \"<span class=\"tex-font-style-tt\">NO</span>\".</p><p>Otherwise, the first line should contain \"<span class=\"tex-font-style-tt\">YES</span>\". The next <span class=\"tex-span\"><i>n</i></span> lines should contain the pair of integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(|<i>x</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>y</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">18</sup>)</span> \u2014 the coordinates of the point which corresponds to the <span class=\"tex-span\"><i>i</i></span>-th vertex of the tree.</p><p>If there are several solutions, print any of them. </p>",
+    "samples": [
+        {
+            "input": "7<br/>1 2<br/>1 3<br/>2 4<br/>2 5<br/>3 6<br/>3 7",
+            "output": "YES<br/>0 0<br/>1 0<br/>0 1<br/>2 0<br/>1 -1<br/>-1 1<br/>0 2"
+        },
+        {
+            "input": "6<br/>1 2<br/>2 3<br/>2 4<br/>2 5<br/>2 6<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "4<br/>1 2<br/>2 3<br/>3 4",
+            "output": "YES<br/>3 3<br/>4 3<br/>5 3<br/>6 3"
+        }
+    ],
+    "note": "<p>In the first sample one of the possible positions of tree is: <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/360c9c903e5177970a5a3b2711f6718c2163ffd8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 761,
+    "index": "E",
+    "name": "Dasha and Puzzle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "trees"
+    ],
+    "solvedCount": 1912
+}

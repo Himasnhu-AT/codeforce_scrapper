@@ -1,0 +1,30 @@
+{
+    "title": "F. Lost Root",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The graph is called <span class=\"tex-font-style-it\">tree</span> if it is connected and has no cycles. Suppose the tree is rooted at some vertex. Then tree is called to be perfect $$$k$$$-ary tree if each vertex is either a leaf (has no children) or has exactly $$$k$$$ children. Also, in perfect $$$k$$$-ary tree all leafs must have same depth.</p><p>For example, the picture below illustrates perfect binary tree with $$$15$$$ vertices:</p><center><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/212b825ffa19c8bd5916718aea990947658efda6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>There is a perfect $$$k$$$-ary tree with $$$n$$$ nodes. The nodes are labeled with distinct integers from $$$1$$$ to $$$n$$$, however you don't know how nodes are labelled. Still, you want to find the label of the root of the tree.</p><p>You are allowed to make at most $$$60 \\cdot n$$$ queries of the following type:</p><ul> <li> \"<span class=\"tex-font-style-tt\">? $$$a$$$ $$$b$$$ $$$c$$$</span>\", the query returns \"<span class=\"tex-font-style-tt\">Yes</span>\" if node with label $$$b$$$ lies on the path from $$$a$$$ to $$$c$$$ and \"<span class=\"tex-font-style-tt\">No</span>\" otherwise. </li></ul><p>Both $$$a$$$ and $$$c$$$ are considered to be lying on the path from $$$a$$$ to $$$c$$$.</p><p>When you are ready to report the root of the tree, print </p><ul> <li> \"<span class=\"tex-font-style-tt\">! $$$s$$$</span>\", where $$$s$$$ is the label of the root of the tree. </li></ul><p>It is possible to report the root only once and this query is not counted towards limit of $$$60 \\cdot n$$$ queries.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "3 2<br/><br/>No<br/><br/>Yes<br/>",
+            "output": "? 1 3 2<br/><br/>? 1 2 3<br/><br/>! 2"
+        }
+    ],
+    "note": "<p>The tree in the example is as follows:</p><center><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/b5d55580981b03e2b023387c3d4a7111cd2d673d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>The input and output for example illustrate possible interaction on that test (empty lines are inserted only for clarity).</p><p>The hack corresponding to the example would look like:</p><pre class=\"verbatim\"><br/>3 2<br/>2 3 1<br/></pre>",
+    "contestId": 1061,
+    "index": "F",
+    "name": "Lost Root",
+    "type": "PROGRAMMING",
+    "tags": [
+        "interactive",
+        "probabilities"
+    ],
+    "solvedCount": 715
+}

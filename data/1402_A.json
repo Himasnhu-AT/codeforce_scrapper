@@ -1,0 +1,34 @@
+{
+    "title": "A. Fancy Fence",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Everybody knows that Bal\u00e1zs has the fanciest fence in the whole town. It's built up from $$$N$$$ fancy sections. The sections are rectangles standing closely next to each other on the ground. The $$$i$$$th section has integer height $$$h_i$$$ and integer width $$$w_i$$$.  We are looking for fancy rectangles on this fancy fence.  A rectangle is fancy if: </p><ul> <li> its sides are either horizontal or vertical and have integer lengths </li><li> the distance between the rectangle and the ground is integer </li><li> the distance between the rectangle and the left side of the first section is integer </li><li> it's lying completely on sections </li></ul> What is the number of fancy rectangles?  This number can be very big, so we are interested in it modulo $$$10^9+7$$$.",
+    "inputSpecification": "<p>The first line contains $$$N$$$ ($$$1\\leq N \\leq 10^{5}$$$) \u2013 the number of sections.  The second line contains $$$N$$$ space-separated integers, the $$$i$$$th number is $$$h_i$$$ ($$$1 \\leq h_i \\leq 10^{9}$$$).  The third line contains $$$N$$$ space-separated integers, the $$$i$$$th number is $$$w_i$$$ ($$$1 \\leq w_i \\leq 10^{9}$$$).</p>",
+    "outputSpecification": "<p>You should print a single integer, the number of fancy rectangles modulo $$$10^9+7$$$. So the output range is $$$0,1,2,\\ldots, 10^9+6$$$.</p>",
+    "samples": [
+        {
+            "input": "\n2\n1 2\n1 2\n",
+            "output": "\n12\n"
+        }
+    ],
+    "note": "<p>The fence looks like this:  <img class=\"tex-graphics\" height=\"189px\" src=\"https://espresso.codeforces.com/4cdd9740a73dbe20839f9c2c6f63013dc64c3228.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>There are 5 fancy rectangles of shape:  <img class=\"tex-graphics\" height=\"49px\" src=\"https://espresso.codeforces.com/623fa3317dbe6f14bfc09de4e84a5697f7fd50b4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>There are 3 fancy rectangles of shape:  <img class=\"tex-graphics\" height=\"49px\" src=\"https://espresso.codeforces.com/ed1242a9b1ba23b3ed0fb1091687db4c38636361.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>There is 1 fancy rectangle of shape:  <img class=\"tex-graphics\" height=\"49px\" src=\"https://espresso.codeforces.com/dc72fb71437165929d3c2e8f75bf36f4a3ebde55.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>There are 2 fancy rectangles of shape:  <img class=\"tex-graphics\" height=\"76px\" src=\"https://espresso.codeforces.com/aa2d3c6f72712ddf9675a15cf8ae86163213bf9f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>There is 1 fancy rectangle of shape:  <img class=\"tex-graphics\" height=\"76px\" src=\"https://espresso.codeforces.com/e7cccc5f98caea29c15d0cefc2a709b195d3e85b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 1402,
+    "index": "A",
+    "name": "Fancy Fence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "data structures",
+        "dsu",
+        "implementation",
+        "math",
+        "sortings"
+    ],
+    "solvedCount": 1151
+}

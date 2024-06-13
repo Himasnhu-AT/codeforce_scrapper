@@ -1,0 +1,35 @@
+{
+    "title": "F. Card Game",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Digital collectible card games have become very popular recently. So Vova decided to try one of these.</p><p>Vova has <span class=\"tex-span\"><i>n</i></span> cards in his collection. Each of these cards is characterised by its power <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>, magic number <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> and level <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span>. Vova wants to build a deck with total power not less than <span class=\"tex-span\"><i>k</i></span>, but magic numbers may not allow him to do so \u2014 Vova can't place two cards in a deck if the sum of the magic numbers written on these cards is a prime number. Also Vova cannot use a card if its level is greater than the level of Vova's character.</p><p>At the moment Vova's character's level is <span class=\"tex-span\">1</span>. Help Vova to determine the minimum level he needs to reach in order to build a deck with the required total power.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009100000</span>).</p><p>Then <span class=\"tex-span\"><i>n</i></span> lines follow, each of these lines contains three numbers that represent the corresponding card: <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>).</p>",
+    "outputSpecification": "<p>If Vova won't be able to build a deck with required power, print <span class=\"tex-span\">\u2009-\u20091</span>. Otherwise print the minimum level Vova has to reach in order to build a deck.</p>",
+    "samples": [
+        {
+            "input": "5 8<br/>5 5 1<br/>1 5 4<br/>4 6 3<br/>1 12 4<br/>3 12 1<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "3 7<br/>4 4 1<br/>5 8 2<br/>5 3 3<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 808,
+    "index": "F",
+    "name": "Card Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "flows",
+        "graphs"
+    ],
+    "solvedCount": 1106
+}
