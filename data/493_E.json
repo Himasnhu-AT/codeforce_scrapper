@@ -1,0 +1,33 @@
+{
+    "title": "E. Vasya and Polynomial",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya is studying in the last class of school and soon he will take exams. He decided to study polynomials. <span class=\"tex-font-style-underline\">Polynomial</span> is a function <span class=\"tex-span\"><i>P</i>(<i>x</i>)\u2009=\u2009<i>a</i><sub class=\"lower-index\">0</sub>\u2009+\u2009<i>a</i><sub class=\"lower-index\">1</sub><i>x</i><sup class=\"upper-index\">1</sup>\u2009+\u2009...\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub><i>x</i><sup class=\"upper-index\"><i>n</i></sup></span>. Numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> are called <span class=\"tex-font-style-underline\">coefficients</span> of a polynomial, non-negative integer <span class=\"tex-span\"><i>n</i></span> is called a <span class=\"tex-font-style-underline\">degree</span> of a polynomial.</p><p>Vasya has made a bet with his friends that he can solve any problem with polynomials. They suggested him the problem: \"Determine how many polynomials <span class=\"tex-span\"><i>P</i>(<i>x</i>)</span> exist with <span class=\"tex-font-style-bf\">integer non-negative</span> coefficients so that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/022f26a75e278ec50b558954524ca5729e932807.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0212320a6b840272697461ac14a2563310211a70.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/95310776bcda3053fea9e3a9f129d60508d2d8c1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <span class=\"tex-span\"><i>b</i></span> are given positive integers\"? </p><p>Vasya does not like losing bets, but he has no idea how to solve this task, so please help him to solve the problem.</p>",
+    "inputSpecification": "<p>The input contains three integer positive numbers <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/ae773843333f7d3b00d2c2b7e457ab15d35f2a11.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> no greater than <span class=\"tex-span\">10<sup class=\"upper-index\">18</sup></span>.</p>",
+    "outputSpecification": "<p>If there is an infinite number of such polynomials, then print \"<span class=\"tex-font-style-tt\">inf</span>\" <span class=\"tex-font-style-bf\">without quotes</span>, otherwise print the reminder of an answer modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "2 2 2<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "2 3 3<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 493,
+    "index": "E",
+    "name": "Vasya and Polynomial",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 479
+}

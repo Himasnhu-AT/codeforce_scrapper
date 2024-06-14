@@ -1,0 +1,40 @@
+{
+    "title": "B. The Child and Set",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>At the children's day, the child came to Picks's house, and messed his house up. Picks was angry at him. A lot of important things were lost, in particular the favorite set of Picks.</p><p>Fortunately, Picks remembers something about his set <span class=\"tex-span\"><i>S</i></span>:</p><ul> <li> its elements were distinct integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>limit</i></span>; </li><li> the value of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/dbdbeec11e8b492563da65b3e453ae26fd50a6f4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> was equal to <span class=\"tex-span\"><i>sum</i></span>; here <span class=\"tex-span\"><i>lowbit</i>(<i>x</i>)</span> equals <span class=\"tex-span\">2<sup class=\"upper-index\"><i>k</i></sup></span> where <span class=\"tex-span\"><i>k</i></span> is the position of the first one in the binary representation of <span class=\"tex-span\"><i>x</i></span>. For example, <span class=\"tex-span\"><i>lowbit</i>(10010<sub class=\"lower-index\">2</sub>)\u2009=\u200910<sub class=\"lower-index\">2</sub>,\u2009<i>lowbit</i>(10001<sub class=\"lower-index\">2</sub>)\u2009=\u20091<sub class=\"lower-index\">2</sub>,\u2009<i>lowbit</i>(10000<sub class=\"lower-index\">2</sub>)\u2009=\u200910000<sub class=\"lower-index\">2</sub></span> (binary representation). </li></ul><p>Can you help Picks and find any set <span class=\"tex-span\"><i>S</i></span>, that satisfies all the above conditions?</p>",
+    "inputSpecification": "<p>The first line contains two integers: <span class=\"tex-span\"><i>sum</i>,\u2009<i>limit</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>sum</i>,\u2009<i>limit</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>.</p>",
+    "outputSpecification": "<p>In the first line print an integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>, denoting the size of <span class=\"tex-span\"><i>S</i></span>. Then print the elements of set <span class=\"tex-span\"><i>S</i></span> in any order. If there are multiple answers, print any of them.</p><p>If it's impossible to find a suitable set, print <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "samples": [
+        {
+            "input": "5 5<br/>",
+            "output": "2<br/>4 5<br/>"
+        },
+        {
+            "input": "4 3<br/>",
+            "output": "3<br/>2 3 1<br/>"
+        },
+        {
+            "input": "5 1<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In sample test 1: <span class=\"tex-span\"><i>lowbit</i>(4)\u2009=\u20094,\u2009<i>lowbit</i>(5)\u2009=\u20091,\u20094\u2009+\u20091\u2009=\u20095</span>.</p><p>In sample test 2: <span class=\"tex-span\"><i>lowbit</i>(1)\u2009=\u20091,\u2009<i>lowbit</i>(2)\u2009=\u20092,\u2009<i>lowbit</i>(3)\u2009=\u20091,\u20091\u2009+\u20092\u2009+\u20091\u2009=\u20094</span>.</p>",
+    "contestId": 437,
+    "index": "B",
+    "name": "The Child and Set",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 9243
+}

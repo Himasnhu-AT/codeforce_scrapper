@@ -1,0 +1,35 @@
+{
+    "title": "A. Funky Numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>As you very well know, this year's funkiest numbers are so called triangular numbers (that is, integers that are representable as <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/48cf4d33526da5209922c993ddf2320013993147.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <span class=\"tex-span\"><i>k</i></span> is some positive integer), and the coolest numbers are those that are representable as a sum of two triangular numbers.</p><p>A well-known hipster Andrew adores everything funky and cool but unfortunately, he isn't good at maths. Given number <span class=\"tex-span\"><i>n</i></span>, help him define whether this number can be represented by a sum of two triangular numbers (not necessarily different)!</p>",
+    "inputSpecification": "<p>The first input line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>.</p>",
+    "outputSpecification": "<p>Print \"YES\" (without the quotes), if <span class=\"tex-span\"><i>n</i></span> can be represented as a sum of two triangular numbers, otherwise print \"NO\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "256<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "512<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>In the first sample number <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/92095692c6ea93e9e3b837a0408ba7543549d5b2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the second sample number <span class=\"tex-span\">512</span> can not be represented as a sum of two triangular numbers.</p>",
+    "contestId": 192,
+    "index": "A",
+    "name": "Funky Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 10184
+}

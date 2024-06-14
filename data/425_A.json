@@ -1,0 +1,34 @@
+{
+    "title": "A. Sereja and Swaps",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>As usual, Sereja has array <span class=\"tex-span\"><i>a</i></span>, its elements are integers: <span class=\"tex-span\"><i>a</i>[1],\u2009<i>a</i>[2],\u2009...,\u2009<i>a</i>[<i>n</i>]</span>. Let's introduce notation:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/eeff175d11496a6af7bbd528a58e3e5c10fdf69d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>A swap operation is the following sequence of actions:</p><ul> <li> choose two indexes <span class=\"tex-span\"><i>i</i>,\u2009<i>j</i></span> <span class=\"tex-span\">(<i>i</i>\u2009\u2260\u2009<i>j</i>)</span>; </li><li> perform assignments <span class=\"tex-span\"><i>tmp</i>\u2009=\u2009<i>a</i>[<i>i</i>],\u2009<i>a</i>[<i>i</i>]\u2009=\u2009<i>a</i>[<i>j</i>],\u2009<i>a</i>[<i>j</i>]\u2009=\u2009<i>tmp</i></span>. </li></ul><p>What maximum value of function <span class=\"tex-span\"><i>m</i>(<i>a</i>)</span> can Sereja get if he is allowed to perform at most <span class=\"tex-span\"><i>k</i></span> swap operations?</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200;\u00a01\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910)</span>. The next line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i>[1]</span>, <span class=\"tex-span\"><i>a</i>[2]</span>, <span class=\"tex-span\">...</span>, <span class=\"tex-span\"><i>a</i>[<i>n</i>]</span> <span class=\"tex-span\">(\u2009-\u20091000\u2009\u2264\u2009<i>a</i>[<i>i</i>]\u2009\u2264\u20091000)</span>.</p>",
+    "outputSpecification": "<p>In a single line print the maximum value of <span class=\"tex-span\"><i>m</i>(<i>a</i>)</span> that Sereja can get if he is allowed to perform at most <span class=\"tex-span\"><i>k</i></span> swap operations.</p>",
+    "samples": [
+        {
+            "input": "10 2<br/>10 -1 2 2 2 2 2 2 -1 10<br/>",
+            "output": "32<br/>"
+        },
+        {
+            "input": "5 10<br/>-1 -1 -1 -1 -1<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 425,
+    "index": "A",
+    "name": "Sereja and Swaps",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "sortings"
+    ],
+    "solvedCount": 3818
+}

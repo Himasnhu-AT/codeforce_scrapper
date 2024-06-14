@@ -1,0 +1,35 @@
+{
+    "title": "C. Valera and Tubes ",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Valera has got a rectangle table consisting of <span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>m</i></span> columns. Valera numbered the table rows starting from one, from top to bottom and the columns \u2013 starting from one, from left to right. We will represent cell that is on the intersection of row <span class=\"tex-span\"><i>x</i></span> and column <span class=\"tex-span\"><i>y</i></span> by a pair of integers <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>.</p><p>Valera wants to place exactly <span class=\"tex-span\"><i>k</i></span> tubes on his rectangle table. A tube is such sequence of table cells <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>)</span>, <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>)</span>, <span class=\"tex-span\">...</span>, <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>r</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>r</i></sub>)</span>, that: </p><ul> <li> <span class=\"tex-span\"><i>r</i>\u2009\u2265\u20092</span>; </li><li> for any integer <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>r</i>\u2009-\u20091)</span> the following equation <span class=\"tex-span\">|<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009-\u2009<i>x</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub>|\u2009+\u2009|<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009-\u2009<i>y</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub>|\u2009=\u20091</span> holds; </li><li> each table cell, which belongs to the tube, must occur exactly once in the sequence. </li></ul><p>Valera thinks that the tubes are arranged in a fancy manner if the following conditions are fulfilled: </p><ul> <li> no pair of tubes has common cells; </li><li> each cell of the table belongs to some tube. </li></ul><p>Help Valera to arrange <span class=\"tex-span\"><i>k</i></span> tubes on his rectangle table in a fancy manner.</p>",
+    "inputSpecification": "<p>The first line contains three space-separated integers <span class=\"tex-span\"><i>n</i>,\u2009<i>m</i>,\u2009<i>k</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009300</span>; <span class=\"tex-span\">2\u2009\u2264\u20092<i>k</i>\u2009\u2264\u2009<i>n</i>\u00b7<i>m</i></span>) \u2014 the number of rows, the number of columns and the number of tubes, correspondingly. </p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>k</i></span> lines. In the <span class=\"tex-span\"><i>i</i></span>-th line print the description of the <span class=\"tex-span\"><i>i</i></span>-th tube: first print integer <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (the number of tube cells), then print <span class=\"tex-span\">2<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i>1</sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i>1</sub>,\u2009<i>x</i><sub class=\"lower-index\"><i>i</i>2</sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i>2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>ir</i><sub class=\"lower-index\"><i>i</i></sub></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>ir</i><sub class=\"lower-index\"><i>i</i></sub></sub></span> (the sequence of table cells).</p><p>If there are multiple solutions, you can print any of them. It is guaranteed that at least one solution exists. </p>",
+    "samples": [
+        {
+            "input": "3 3 3<br/>",
+            "output": "3 1 1 1 2 1 3<br/>3 2 1 2 2 2 3<br/>3 3 1 3 2 3 3<br/>"
+        },
+        {
+            "input": "2 3 1<br/>",
+            "output": "6 1 1 1 2 1 3 2 3 2 2 2 1<br/>"
+        }
+    ],
+    "note": "<p>Picture for the first sample: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c2678e0205bd9f7a34f9d7bb54ff04d91282231d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Picture for the second sample: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c6bcb3a60557e80f852503aa5e870d8aee4376bc.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 441,
+    "index": "C",
+    "name": "Valera and Tubes ",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "implementation"
+    ],
+    "solvedCount": 10909
+}

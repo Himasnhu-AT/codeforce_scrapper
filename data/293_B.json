@@ -1,0 +1,42 @@
+{
+    "title": "B. Distinct Paths",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have a rectangular <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span>-cell board. Some cells are already painted some of <span class=\"tex-span\"><i>k</i></span> colors. You need to paint each uncolored cell one of the <span class=\"tex-span\"><i>k</i></span> colors so that any path from the upper left square to the lower right one doesn't contain any two cells of the same color. The path can go only along side-adjacent cells and can only go down or right.</p><p>Print the number of possible paintings modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i>,\u2009<i>m</i>,\u2009<i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910)</span>. The next <span class=\"tex-span\"><i>n</i></span> lines contain <span class=\"tex-span\"><i>m</i></span> integers each \u2014 the board. The first of them contains <span class=\"tex-span\"><i>m</i></span> uppermost cells of the board from the left to the right and the second one contains <span class=\"tex-span\"><i>m</i></span> cells from the second uppermost row and so on. If a number in a line equals 0, then the corresponding cell isn't painted. Otherwise, this number represents the initial color of the board cell \u2014 an integer from 1 to <span class=\"tex-span\"><i>k</i></span>.</p><p>Consider all colors numbered from 1 to <span class=\"tex-span\"><i>k</i></span> in some manner.</p>",
+    "outputSpecification": "<p>Print the number of possible paintings modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "2 2 4<br/>0 0<br/>0 0<br/>",
+            "output": "48<br/>"
+        },
+        {
+            "input": "2 2 4<br/>1 2<br/>2 1<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "5 6 10<br/>0 0 0 0 0 0<br/>0 0 0 0 0 0<br/>0 0 0 0 0 0<br/>0 0 0 0 0 0<br/>0 0 0 0 0 0<br/>",
+            "output": "3628800<br/>"
+        },
+        {
+            "input": "2 6 10<br/>1 2 3 4 5 6<br/>0 0 0 0 0 0<br/>",
+            "output": "4096<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 293,
+    "index": "B",
+    "name": "Distinct Paths",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "combinatorics"
+    ],
+    "solvedCount": 774
+}

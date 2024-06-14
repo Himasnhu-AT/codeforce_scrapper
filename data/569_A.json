@@ -1,0 +1,38 @@
+{
+    "title": "A. Music",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Lesha loves listening to music via his smartphone. But the smartphone doesn't have much memory, so Lesha listens to his favorite songs in a well-known social network InTalk.</p><p>Unfortunately, internet is not that fast in the city of Ekaterinozavodsk and the song takes a lot of time to download. But Lesha is quite impatient. The song's duration is <span class=\"tex-span\"><i>T</i></span> seconds. Lesha downloads the first <span class=\"tex-span\"><i>S</i></span> seconds of the song and plays it. When the playback reaches the point that has not yet been downloaded, Lesha immediately plays the song from the start (the loaded part of the song stays in his phone, and the download is continued from the same place), and it happens until the song is downloaded completely and Lesha listens to it to the end. For <span class=\"tex-span\"><i>q</i></span> seconds of real time the Internet allows you to download <span class=\"tex-span\"><i>q</i>\u2009-\u20091</span> seconds of the track.</p><p>Tell Lesha, for how many times he will start the song, including the very first start.</p>",
+    "inputSpecification": "<p>The single line contains three integers <span class=\"tex-span\"><i>T</i>,\u2009<i>S</i>,\u2009<i>q</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>q</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>S</i>\u2009&lt;\u2009<i>T</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the number of times the song will be restarted.</p>",
+    "samples": [
+        {
+            "input": "5 2 2<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "5 4 7<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "6 2 3<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the first test, the song is played twice faster than it is downloaded, which means that during four first seconds Lesha reaches the moment that has not been downloaded, and starts the song again. After another two seconds, the song is downloaded completely, and thus, Lesha starts the song twice.</p><p>In the second test, the song is almost downloaded, and Lesha will start it only once.</p><p>In the third sample test the download finishes and Lesha finishes listening at the same moment. Note that song isn't restarted in this case.</p>",
+    "contestId": 569,
+    "index": "A",
+    "name": "Music",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 4752
+}

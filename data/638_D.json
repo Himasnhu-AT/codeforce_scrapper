@@ -1,0 +1,39 @@
+{
+    "title": "D. Three-dimensional Turtle Super Computer ",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A super computer has been built in the Turtle Academy of Sciences. The computer consists of <span class=\"tex-span\"><i>n</i>\u00b7<i>m</i>\u00b7<i>k</i></span> CPUs. The architecture was the paralellepiped of size <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i>\u2009\u00d7\u2009<i>k</i></span>, split into <span class=\"tex-span\">1\u2009\u00d7\u20091\u2009\u00d7\u20091</span> cells, each cell contains exactly one CPU. Thus, each CPU can be simultaneously identified as a group of three numbers from the layer number from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, the line number from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span> and the column number from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>k</i></span>.</p><p>In the process of the Super Computer's work the CPUs can send each other messages by the famous turtle scheme: CPU <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>,\u2009<i>z</i>)</span> can send messages to CPUs <span class=\"tex-span\">(<i>x</i>\u2009+\u20091,\u2009<i>y</i>,\u2009<i>z</i>)</span>, <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009+\u20091,\u2009<i>z</i>)</span> and <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>,\u2009<i>z</i>\u2009+\u20091)</span> (of course, if they exist), there is no feedback, that is, CPUs <span class=\"tex-span\">(<i>x</i>\u2009+\u20091,\u2009<i>y</i>,\u2009<i>z</i>)</span>, <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009+\u20091,\u2009<i>z</i>)</span> and <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>,\u2009<i>z</i>\u2009+\u20091)</span> cannot send messages to CPU <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>,\u2009<i>z</i>)</span>.</p><p>Over time some CPUs broke down and stopped working. Such CPUs cannot send messages, receive messages or serve as intermediates in transmitting messages. We will say that CPU <span class=\"tex-span\">(<i>a</i>,\u2009<i>b</i>,\u2009<i>c</i>)</span> <span class=\"tex-font-style-it\">controls</span> CPU <span class=\"tex-span\">(<i>d</i>,\u2009<i>e</i>,\u2009<i>f</i>)</span> , if there is a chain of CPUs <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>z</i><sub class=\"lower-index\"><i>i</i></sub>)</span>, such that <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">1</sub>\u2009=\u2009<i>a</i>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>\u2009=\u2009<i>b</i>,\u2009<i>z</i><sub class=\"lower-index\">1</sub>\u2009=\u2009<i>c</i>)</span>, <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>p</i></sub>\u2009=\u2009<i>d</i>,\u2009<i>y</i><sub class=\"lower-index\"><i>p</i></sub>\u2009=\u2009<i>e</i>,\u2009<i>z</i><sub class=\"lower-index\"><i>p</i></sub>\u2009=\u2009<i>f</i>)</span> (here and below <span class=\"tex-span\"><i>p</i></span> is the length of the chain) and the CPU in the chain with number <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\"><i>i</i>\u2009&lt;\u2009<i>p</i></span>) can send messages to CPU <span class=\"tex-span\"><i>i</i>\u2009+\u20091</span>.</p><p>Turtles are quite concerned about the denial-proofness of the system of communication between the remaining CPUs. For that they want to know the number of critical CPUs. A CPU <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>,\u2009<i>z</i>)</span> is <span class=\"tex-font-style-it\">critical</span>, if turning it off will disrupt some control, that is, if there are two distinctive from <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>,\u2009<i>z</i>)</span> CPUs: <span class=\"tex-span\">(<i>a</i>,\u2009<i>b</i>,\u2009<i>c</i>)</span> and <span class=\"tex-span\">(<i>d</i>,\u2009<i>e</i>,\u2009<i>f</i>)</span>, such that <span class=\"tex-span\">(<i>a</i>,\u2009<i>b</i>,\u2009<i>c</i>)</span> controls <span class=\"tex-span\">(<i>d</i>,\u2009<i>e</i>,\u2009<i>f</i>)</span> before <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>,\u2009<i>z</i>)</span> is turned off and stopped controlling it after the turning off.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>,\u2009<i>k</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the dimensions of the Super Computer. </p><p>Then <span class=\"tex-span\"><i>n</i></span> blocks follow, describing the current state of the processes. The blocks correspond to the layers of the Super Computer in the order from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. Each block consists of <span class=\"tex-span\"><i>m</i></span> lines, <span class=\"tex-span\"><i>k</i></span> characters in each \u2014 the description of a layer in the format of an <span class=\"tex-span\"><i>m</i>\u2009\u00d7\u2009<i>k</i></span> table. Thus, the state of the CPU <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>,\u2009<i>z</i>)</span> is corresponded to the <span class=\"tex-span\"><i>z</i></span>-th character of the <span class=\"tex-span\"><i>y</i></span>-th line of the block number <span class=\"tex-span\"><i>x</i></span>. Character \"<span class=\"tex-font-style-tt\">1</span>\" corresponds to a working CPU and character \"<span class=\"tex-font-style-tt\">0</span>\" corresponds to a malfunctioning one. The blocks are separated by exactly one empty line.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number of critical CPUs, that is, such that turning only this CPU off will disrupt some control.</p>",
+    "samples": [
+        {
+            "input": "2 2 3<br/>000<br/>000<br/><br/>111<br/>111<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3 3 3<br/>111<br/>111<br/>111<br/><br/>111<br/>111<br/>111<br/><br/>111<br/>111<br/>111<br/>",
+            "output": "19<br/>"
+        },
+        {
+            "input": "1 1 10<br/>0101010101<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the whole first layer of CPUs is malfunctional. In the second layer when CPU <span class=\"tex-span\">(2,\u20091,\u20092)</span> turns off, it disrupts the control by CPU <span class=\"tex-span\">(2,\u20091,\u20093)</span> over CPU <span class=\"tex-span\">(2,\u20091,\u20091)</span>, and when CPU <span class=\"tex-span\">(2,\u20092,\u20092)</span> is turned off, it disrupts the control over CPU <span class=\"tex-span\">(2,\u20092,\u20093)</span> by CPU <span class=\"tex-span\">(2,\u20092,\u20091)</span>.</p><p>In the second sample all processors except for the corner ones are critical.</p><p>In the third sample there is not a single processor controlling another processor, so the answer is <span class=\"tex-span\">0</span>.</p>",
+    "contestId": 638,
+    "index": "D",
+    "name": "Three-dimensional Turtle Super Computer ",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "graphs"
+    ],
+    "solvedCount": 689
+}

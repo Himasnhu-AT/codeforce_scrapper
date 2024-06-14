@@ -1,0 +1,35 @@
+{
+    "title": "B. Chip 'n Dale Rescue Rangers",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A team of furry rescue rangers was sitting idle in their hollow tree when suddenly they received a signal of distress. In a few moments they were ready, and the dirigible of the rescue chipmunks hit the road.</p><p>We assume that the action takes place on a Cartesian plane. The headquarters of the rescuers is located at point <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>)</span>, and the distress signal came from the point <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>)</span>.</p><p>Due to Gadget's engineering talent, the rescuers' dirigible can instantly change its current velocity and direction of movement at any moment and as many times as needed. The only limitation is: the speed of the aircraft relative to the air can not exceed <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/05a28aed63c92fafe8f32513b33646154faf8683.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> meters per second.</p><p>Of course, Gadget is a true rescuer and wants to reach the destination as soon as possible. The matter is complicated by the fact that the wind is blowing in the air and it affects the movement of the dirigible. According to the weather forecast, the wind will be defined by the vector <span class=\"tex-span\">(<i>v</i><sub class=\"lower-index\"><i>x</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>y</i></sub>)</span> for the nearest <span class=\"tex-span\"><i>t</i></span> seconds, and then will change to <span class=\"tex-span\">(<i>w</i><sub class=\"lower-index\"><i>x</i></sub>,\u2009<i>w</i><sub class=\"lower-index\"><i>y</i></sub>)</span>. These vectors give both the direction and velocity of the wind. Formally, if a dirigible is located at the point <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>, while its own velocity relative to the air is equal to zero and the wind <span class=\"tex-span\">(<i>u</i><sub class=\"lower-index\"><i>x</i></sub>,\u2009<i>u</i><sub class=\"lower-index\"><i>y</i></sub>)</span> is blowing, then after <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c9148a5f77a39b4083611f2ac760c9479d17582c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> seconds the new position of the dirigible will be <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f42cccc4419e311f702830ad221b81f335011df6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Gadget is busy piloting the aircraft, so she asked Chip to calculate how long will it take them to reach the destination if they fly optimally. He coped with the task easily, but Dale is convinced that Chip has given the random value, aiming only not to lose the face in front of Gadget. Dale has asked you to find the right answer.</p><p>It is guaranteed that the speed of the wind at any moment of time is strictly less than the maximum possible speed of the airship relative to the air.</p>",
+    "inputSpecification": "<p>The first line of the input contains four integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">2</sub></span> (<span class=\"tex-span\">|<i>x</i><sub class=\"lower-index\">1</sub>|,\u2009\u2009|<i>y</i><sub class=\"lower-index\">1</sub>|,\u2009\u2009|<i>x</i><sub class=\"lower-index\">2</sub>|,\u2009\u2009|<i>y</i><sub class=\"lower-index\">2</sub>|\u2009\u2264\u200910\u2009000</span>)\u00a0\u2014 the coordinates of the rescuers' headquarters and the point, where signal of the distress came from, respectively. </p><p>The second line contains two integers <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/05a28aed63c92fafe8f32513b33646154faf8683.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">0\u2009&lt;\u2009<i>v</i>,\u2009<i>t</i>\u2009\u2264\u20091000</span>), which are denoting the maximum speed of the chipmunk dirigible relative to the air and the moment of time when the wind changes according to the weather forecast, respectively. </p><p>Next follow one per line two pairs of integer <span class=\"tex-span\">(<i>v</i><sub class=\"lower-index\"><i>x</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>y</i></sub>)</span> and <span class=\"tex-span\">(<i>w</i><sub class=\"lower-index\"><i>x</i></sub>,\u2009<i>w</i><sub class=\"lower-index\"><i>y</i></sub>)</span>, describing the wind for the first <span class=\"tex-span\"><i>t</i></span> seconds and the wind that will blow at all the remaining time, respectively. It is guaranteed that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4ddbd171d9061576ebb160327d6360a2129809aa.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e2970f5978fa0d3691dc2f7ae02f0c21a76e2d47.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "outputSpecification": "<p>Print a single real value\u00a0\u2014 the minimum time the rescuers need to get to point <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>)</span>. You answer will be considered correct if its absolute or relative error does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>. </p><p>Namely: let's assume that your answer is <span class=\"tex-span\"><i>a</i></span>, and the answer of the jury is <span class=\"tex-span\"><i>b</i></span>. The checker program will consider your answer correct, if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c97ba2000ebfad962bff7ffd8d043594f5ae1086.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "0 0 5 5<br/>3 2<br/>-1 -1<br/>-1 0<br/>",
+            "output": "3.729935587093555327<br/>"
+        },
+        {
+            "input": "0 0 0 1000<br/>100 1000<br/>-50 0<br/>50 0<br/>",
+            "output": "11.547005383792516398<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 590,
+    "index": "B",
+    "name": "Chip 'n Dale Rescue Rangers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "geometry",
+        "math"
+    ],
+    "solvedCount": 1743
+}

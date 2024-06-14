@@ -1,0 +1,38 @@
+{
+    "title": "D. Chocolate",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Bob has a rectangular chocolate bar of the size <span class=\"tex-span\"><i>W</i>\u2009\u00d7\u2009<i>H</i></span>. He introduced a cartesian coordinate system so that the point <span class=\"tex-span\">(0,\u20090)</span> corresponds to the lower-left corner of the bar, and the point <span class=\"tex-span\">(<i>W</i>,\u2009<i>H</i>)</span> corresponds to the upper-right corner. Bob decided to split the bar into pieces by breaking it. Each break is a segment parallel to one of the coordinate axes, which connects the edges of the bar. More formally, each break goes along the line <span class=\"tex-span\"><i>x</i>\u2009=\u2009<i>x</i><sub class=\"lower-index\"><i>c</i></sub></span> or <span class=\"tex-span\"><i>y</i>\u2009=\u2009<i>y</i><sub class=\"lower-index\"><i>c</i></sub></span>, where <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>c</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>c</i></sub></span> are integers. It should divide one part of the bar into two non-empty parts. After Bob breaks some part into two parts, he breaks the resulting parts <span class=\"tex-font-style-bf\">separately and independently from each other</span>. Also he doesn't move the parts of the bar. Bob made <span class=\"tex-span\"><i>n</i></span> breaks and wrote them down in his notebook in arbitrary order. At the end he got <span class=\"tex-span\"><i>n</i>\u2009+\u20091</span> parts. Now he wants to calculate their areas. Bob is lazy, so he asks you to do this task.</p>",
+    "inputSpecification": "<p>The first line contains 3 integers <span class=\"tex-span\"><i>W</i></span>, <span class=\"tex-span\"><i>H</i></span> and <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>W</i>,\u2009<i>H</i>,\u2009<i>n</i>\u2009\u2264\u2009100</span>) \u2014 width of the bar, height of the bar and amount of breaks. Each of the following <span class=\"tex-span\"><i>n</i></span> lines contains four integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i>,\u20091</sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i>,\u20091</sub>,\u2009<i>x</i><sub class=\"lower-index\"><i>i</i>,\u20092</sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i>,\u20092</sub></span> \u2014 coordinates of the endpoints of the <span class=\"tex-span\"><i>i</i></span>-th break (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i>,\u20091</sub>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i>,\u20092</sub>\u2009\u2264\u2009<i>W</i>,\u20090\u2009\u2264\u2009<i>y</i><sub class=\"lower-index\"><i>i</i>,\u20091</sub>\u2009\u2264\u2009<i>y</i><sub class=\"lower-index\"><i>i</i>,\u20092</sub>\u2009\u2264\u2009<i>H</i></span>, or <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i>,\u20091</sub>\u2009=\u2009<i>x</i><sub class=\"lower-index\"><i>i</i>,\u20092</sub></span>, or <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i>,\u20091</sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\"><i>i</i>,\u20092</sub></span>). Breaks are given in arbitrary order.</p><p>It is guaranteed that the set of breaks is correct, i.e. there is some order of the given breaks that each next break divides exactly one part of the bar into two non-empty parts.</p>",
+    "outputSpecification": "<p>Output <span class=\"tex-span\"><i>n</i>\u2009+\u20091</span> numbers \u2014 areas of the resulting parts in the increasing order.</p>",
+    "samples": [
+        {
+            "input": "2 2 2<br/>1 0 1 2<br/>0 1 1 1<br/>",
+            "output": "1 1 2 "
+        },
+        {
+            "input": "2 2 3<br/>1 0 1 2<br/>0 1 1 1<br/>1 1 2 1<br/>",
+            "output": "1 1 1 1 "
+        },
+        {
+            "input": "2 4 2<br/>0 1 2 1<br/>0 3 2 3<br/>",
+            "output": "2 2 4 "
+        }
+    ],
+    "note": null,
+    "contestId": 31,
+    "index": "D",
+    "name": "Chocolate",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "implementation"
+    ],
+    "solvedCount": 1002
+}

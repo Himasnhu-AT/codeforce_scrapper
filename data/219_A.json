@@ -1,0 +1,34 @@
+{
+    "title": "A. k-String",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A string is called a <span class=\"tex-span\"><i>k</i></span>-string if it can be represented as <span class=\"tex-span\"><i>k</i></span> concatenated copies of some string. For example, the string \"<span class=\"tex-font-style-tt\">aabaabaabaab</span>\" is at the same time a 1-string, a 2-string and a 4-string, but it is not a 3-string, a 5-string, or a 6-string and so on. Obviously any string is a 1-string.</p><p>You are given a string <span class=\"tex-span\"><i>s</i></span>, consisting of lowercase English letters and a positive integer <span class=\"tex-span\"><i>k</i></span>. Your task is to reorder the letters in the string <span class=\"tex-span\"><i>s</i></span> in such a way that the resulting string is a <span class=\"tex-span\"><i>k</i></span>-string.</p>",
+    "inputSpecification": "<p>The first input line contains integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20091000</span>). The second line contains <span class=\"tex-span\"><i>s</i></span>, all characters in <span class=\"tex-span\"><i>s</i></span> are lowercase English letters. The string length <span class=\"tex-span\"><i>s</i></span> satisfies the inequality <span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u20091000</span>, where <span class=\"tex-span\">|<i>s</i>|</span> is the length of string <span class=\"tex-span\"><i>s</i></span>.</p>",
+    "outputSpecification": "<p>Rearrange the letters in string <span class=\"tex-span\"><i>s</i></span> in such a way that the result is a <span class=\"tex-span\"><i>k</i></span>-string. Print the result on a single output line. If there are multiple solutions, print any of them.</p><p>If the solution doesn't exist, print \"<span class=\"tex-font-style-tt\">-1</span>\" (without quotes).</p>",
+    "samples": [
+        {
+            "input": "2<br/>aazz<br/>",
+            "output": "azaz<br/>"
+        },
+        {
+            "input": "3<br/>abcabcabz<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 219,
+    "index": "A",
+    "name": "k-String",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 26408
+}

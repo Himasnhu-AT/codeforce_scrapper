@@ -1,0 +1,35 @@
+{
+    "title": "B. Nearest Fraction",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given three positive integers <span class=\"tex-span\"><i>x</i>,\u2009<i>y</i>,\u2009<i>n</i></span>. Your task is to find the nearest fraction to fraction <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d9049b74dfcebaef5774f475b1e3ef4ed39cfc63.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> whose denominator is no more than <span class=\"tex-span\"><i>n</i></span>. </p><p>Formally, you should find such pair of integers <span class=\"tex-span\"><i>a</i>,\u2009<i>b</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>b</i>\u2009\u2264\u2009<i>n</i>;\u00a00\u2009\u2264\u2009<i>a</i>)</span> that the value <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a4bb27e47b8ebb13e650f4f8a897d41377cf4360.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is as minimal as possible.</p><p>If there are multiple \"nearest\" fractions, choose the one with the minimum denominator. If there are multiple \"nearest\" fractions with the minimum denominator, choose the one with the minimum numerator.</p>",
+    "inputSpecification": "<p>A single line contains three integers <span class=\"tex-span\"><i>x</i>,\u2009<i>y</i>,\u2009<i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>,\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>.</p>",
+    "outputSpecification": "<p>Print the required fraction in the format \"<span class=\"tex-span\"><i>a</i></span>/<span class=\"tex-span\"><i>b</i></span>\" (without quotes).</p>",
+    "samples": [
+        {
+            "input": "3 7 6<br/>",
+            "output": "2/5<br/>"
+        },
+        {
+            "input": "7 2 4<br/>",
+            "output": "7/2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 281,
+    "index": "B",
+    "name": "Nearest Fraction",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "two pointers"
+    ],
+    "solvedCount": 2941
+}

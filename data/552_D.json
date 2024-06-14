@@ -1,0 +1,42 @@
+{
+    "title": "D. Vanya and Triangles",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vanya got bored and he painted <span class=\"tex-span\"><i>n</i></span> distinct points on the plane. After that he connected all the points pairwise and saw that as a result many triangles were formed with vertices in the painted points. He asks you to count the number of the formed triangles with the <span class=\"tex-font-style-bf\">non-zero</span> area.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092000</span>) \u2014 the number of the points painted on the plane. </p><p>Next <span class=\"tex-span\"><i>n</i></span> lines contain two integers each <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u2009100\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>) \u2014 the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th point. It is guaranteed that no two given points coincide.</p>",
+    "outputSpecification": "<p>In the first line print an integer \u2014 the number of triangles with the non-zero area among the painted points.</p>",
+    "samples": [
+        {
+            "input": "4<br/>0 0<br/>1 1<br/>2 0<br/>2 2<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "3<br/>0 0<br/>1 1<br/>2 0<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "1<br/>1 1<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>Note to the first sample test. There are <span class=\"tex-span\">3</span> triangles formed: <span class=\"tex-span\">(0,\u20090)\u2009-\u2009(1,\u20091)\u2009-\u2009(2,\u20090)</span>; <span class=\"tex-span\">(0,\u20090)\u2009-\u2009(2,\u20092)\u2009-\u2009(2,\u20090)</span>; <span class=\"tex-span\">(1,\u20091)\u2009-\u2009(2,\u20092)\u2009-\u2009(2,\u20090)</span>.</p><p>Note to the second sample test. There is <span class=\"tex-span\">1</span> triangle formed: <span class=\"tex-span\">(0,\u20090)\u2009-\u2009(1,\u20091)\u2009-\u2009(2,\u20090)</span>.</p><p>Note to the third sample test. A single point doesn't form a single triangle.</p>",
+    "contestId": 552,
+    "index": "D",
+    "name": "Vanya and Triangles",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "data structures",
+        "geometry",
+        "math",
+        "sortings"
+    ],
+    "solvedCount": 4369
+}

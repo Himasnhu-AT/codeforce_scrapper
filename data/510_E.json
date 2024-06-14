@@ -1,0 +1,41 @@
+{
+    "title": "E. Fox And Dinner",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Fox Ciel is participating in a party in Prime Kingdom. There are <span class=\"tex-span\"><i>n</i></span> foxes there (include Fox Ciel). The i-th fox is <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> years old.</p><p>They will have dinner around some round tables. You want to distribute foxes such that:</p><ol> <li> Each fox is sitting at some table. </li><li> Each table has at least 3 foxes sitting around it. </li><li> The sum of ages of any two adjacent foxes around each table should be a prime number. </li></ol><p>If <span class=\"tex-span\"><i>k</i></span> foxes <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">2</sub></span>, ..., <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>k</i></sub></span> are sitting around table in clockwise order, then for <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>k</i>\u2009-\u20091</span>: <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span> are adjacent, and <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>k</i></sub></span> are also adjacent.</p><p>If it is possible to distribute the foxes in the desired manner, find out a way to do that.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200</span>): the number of foxes in this party. </p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>).</p>",
+    "outputSpecification": "<p>If it is impossible to do this, output \"Impossible\".</p><p>Otherwise, in the first line output an integer <span class=\"tex-span\"><i>m</i></span> (<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5cd564e095e2874c1e6a1699ca0447540b5da9d4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>): the number of tables.</p><p>Then output <span class=\"tex-span\"><i>m</i></span> lines, each line should start with an integer <span class=\"tex-span\"><i>k</i></span> -=\u2013 the number of foxes around that table, and then <span class=\"tex-span\"><i>k</i></span> numbers \u2014 indices of fox sitting around that table in clockwise order.</p><p>If there are several possible arrangements, output any of them.</p>",
+    "samples": [
+        {
+            "input": "4<br/>3 4 8 9<br/>",
+            "output": "1<br/>4 1 2 4 3<br/>"
+        },
+        {
+            "input": "5<br/>2 2 2 2 2<br/>",
+            "output": "Impossible<br/>"
+        },
+        {
+            "input": "12<br/>2 3 4 5 6 7 8 9 10 11 12 13<br/>",
+            "output": "1<br/>12 1 2 3 6 5 12 9 8 7 10 11 4<br/>"
+        },
+        {
+            "input": "24<br/>2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25<br/>",
+            "output": "3<br/>6 1 2 3 6 5 4<br/>10 7 8 9 12 15 14 13 16 11 10<br/>8 17 18 23 22 19 20 21 24<br/>"
+        }
+    ],
+    "note": "<p>In example 1, they can sit around one table, their ages are: 3-8-9-4, adjacent sums are: 11, 17, 13 and 7, all those integers are primes.</p><p>In example 2, it is not possible: the sum of 2+2 = 4 is not a prime number.</p>",
+    "contestId": 510,
+    "index": "E",
+    "name": "Fox And Dinner",
+    "type": "PROGRAMMING",
+    "tags": [
+        "flows"
+    ],
+    "solvedCount": 2154
+}

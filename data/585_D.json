@@ -1,0 +1,37 @@
+{
+    "title": "D. Lizard Era: Beginning",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In the game Lizard Era: Beginning the protagonist will travel with three companions: Lynn, Meliana and Worrigan. Overall the game has <span class=\"tex-span\"><i>n</i></span> mandatory quests. To perform each of them, you need to take <span class=\"tex-font-style-bf\">exactly two</span> companions.</p><p>The attitude of each of the companions to the hero is an integer. Initially, the attitude of each of them to the hero of neutral and equal to 0. As the hero completes quests, he makes actions that change the attitude of the companions, whom he took to perform this task, in positive or negative direction.</p><p>Tell us what companions the hero needs to choose to make their attitude equal after completing all the quests. If this can be done in several ways, choose the one in which the value of resulting attitude is greatest possible.</p>",
+    "inputSpecification": "<p>The first line contains positive integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200925</span>) \u2014 the number of important tasks. </p><p>Next <span class=\"tex-span\"><i>n</i></span> lines contain the descriptions of the tasks \u2014 the <span class=\"tex-span\"><i>i</i></span>-th line contains three integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>m</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> \u2014 the values by which the attitude of Lynn, Meliana and Worrigan respectively will change towards the hero if the hero takes them on the <span class=\"tex-span\"><i>i</i></span>-th task. All the numbers in the input are integers and do not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">7</sup></span> in absolute value.</p>",
+    "outputSpecification": "<p>If there is no solution, print in the first line \"<span class=\"tex-font-style-tt\">Impossible</span>\".</p><p>Otherwise, print <span class=\"tex-span\"><i>n</i></span> lines, two characters is each line \u2014 in the <span class=\"tex-span\"><i>i</i></span>-th line print the first letters of the companions' names that hero should take to complete the <span class=\"tex-span\"><i>i</i></span>-th task ('<span class=\"tex-font-style-tt\">L</span>' for Lynn, '<span class=\"tex-font-style-tt\">M</span>' for Meliana, '<span class=\"tex-font-style-tt\">W</span>' for Worrigan). Print the letters in any order, if there are multiple solutions, print any of them.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 0 0<br/>0 1 0<br/>0 0 1<br/>",
+            "output": "LM<br/>MW<br/>MW<br/>"
+        },
+        {
+            "input": "7<br/>0 8 9<br/>5 9 -2<br/>6 -8 -7<br/>9 4 5<br/>-4 -9 9<br/>-4 5 2<br/>-6 8 -7<br/>",
+            "output": "LM<br/>MW<br/>LM<br/>LW<br/>MW<br/>LM<br/>LW<br/>"
+        },
+        {
+            "input": "2<br/>1 0 0<br/>1 1 0<br/>",
+            "output": "Impossible<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 585,
+    "index": "D",
+    "name": "Lizard Era: Beginning",
+    "type": "PROGRAMMING",
+    "tags": [
+        "meet-in-the-middle"
+    ],
+    "solvedCount": 1581
+}

@@ -1,0 +1,41 @@
+{
+    "title": "A. Reposts",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One day Polycarp published a funny picture in a social network making a poll about the color of his handle. Many of his friends started reposting Polycarp's joke to their news feed. Some of them reposted the reposts and so on.</p><p>These events are given as a sequence of strings \"<span class=\"tex-font-style-it\">name1</span> <span class=\"tex-font-style-tt\">reposted</span> <span class=\"tex-font-style-it\">name2</span>\", where <span class=\"tex-font-style-it\">name1</span> is the name of the person who reposted the joke, and <span class=\"tex-font-style-it\">name2</span> is the name of the person from whose news feed the joke was reposted. It is guaranteed that for each string \"<span class=\"tex-font-style-it\">name1</span> <span class=\"tex-font-style-tt\">reposted</span> <span class=\"tex-font-style-it\">name2</span>\" user \"<span class=\"tex-font-style-it\">name1</span>\" didn't have the joke in his feed yet, and \"<span class=\"tex-font-style-it\">name2</span>\" already had it in his feed by the moment of repost. Polycarp was registered as \"<span class=\"tex-font-style-tt\">Polycarp</span>\" and initially the joke was only in his feed.</p><p>Polycarp measures the popularity of the joke as the length of the largest repost chain. Print the popularity of Polycarp's joke.</p>",
+    "inputSpecification": "<p>The first line of the input contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200</span>) \u2014 the number of reposts. Next follow the reposts in the order they were made. Each of them is written on a single line and looks as \"<span class=\"tex-font-style-it\">name1</span> <span class=\"tex-font-style-tt\">reposted</span> <span class=\"tex-font-style-it\">name2</span>\". All the names in the input consist of lowercase or uppercase English letters and/or digits and have lengths from 2 to 24 characters, inclusive.</p><p>We know that the user names are case-insensitive, that is, two names that only differ in the letter case correspond to the same social network user.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the maximum length of a repost chain.</p>",
+    "samples": [
+        {
+            "input": "5<br/>tourist reposted Polycarp<br/>Petr reposted Tourist<br/>WJMZBMR reposted Petr<br/>sdya reposted wjmzbmr<br/>vepifanov reposted sdya<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "6<br/>Mike reposted Polycarp<br/>Max reposted Polycarp<br/>EveryOne reposted Polycarp<br/>111 reposted Polycarp<br/>VkCup reposted Polycarp<br/>Codeforces reposted Polycarp<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "1<br/>SoMeStRaNgEgUe reposted PoLyCaRp<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 522,
+    "index": "A",
+    "name": "Reposts",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 15809
+}

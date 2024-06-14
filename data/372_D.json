@@ -1,0 +1,37 @@
+{
+    "title": "D. Choosing Subtree is Fun",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There is a tree consisting of <span class=\"tex-span\"><i>n</i></span> vertices. The vertices are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>.</p><p>Let's define the length of an interval <span class=\"tex-span\">[<i>l</i>,\u2009<i>r</i>]</span> as the value <span class=\"tex-span\"><i>r</i>\u2009-\u2009<i>l</i>\u2009+\u20091</span>. The score of a subtree of this tree is the maximum length of such an interval <span class=\"tex-span\">[<i>l</i>,\u2009<i>r</i>]</span> that, the vertices with numbers <span class=\"tex-span\"><i>l</i>,\u2009<i>l</i>\u2009+\u20091,\u2009...,\u2009<i>r</i></span> belong to the subtree.</p><p>Considering all subtrees of the tree whose size is at most <span class=\"tex-span\"><i>k</i></span>, return the maximum score of the subtree. Note, that in this problem tree is not rooted, so a subtree \u2014 is an arbitrary connected subgraph of the tree.</p>",
+    "inputSpecification": "<p>There are two integers in the first line, <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>). Each of the next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contains integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>,\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>). That means <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> are connected by a tree edge.</p><p>It is guaranteed that the input represents a tree.</p>",
+    "outputSpecification": "<p>Output should contain a single integer \u2014 the maximum possible score.</p>",
+    "samples": [
+        {
+            "input": "10 6<br/>4 10<br/>10 6<br/>2 9<br/>9 6<br/>8 5<br/>7 1<br/>4 7<br/>7 3<br/>1 8<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "16 7<br/>13 11<br/>12 11<br/>2 14<br/>8 6<br/>9 15<br/>16 11<br/>5 14<br/>6 15<br/>4 3<br/>11 15<br/>15 14<br/>10 1<br/>3 14<br/>14 7<br/>1 7<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": "<p>For the first case, there is some subtree whose size is at most <span class=\"tex-span\">6</span>, including <span class=\"tex-span\">3</span> consecutive numbers of vertices. For example, the subtree that consists of <span class=\"tex-span\">{1,\u20093,\u20094,\u20095,\u20097,\u20098}</span> or of <span class=\"tex-span\">{1,\u20094,\u20096,\u20097,\u20098,\u200910}</span> includes <span class=\"tex-span\">3</span> consecutive numbers of vertices. But there is no subtree whose size is at most <span class=\"tex-span\">6</span>, which includes <span class=\"tex-span\">4</span> or more consecutive numbers of vertices.</p>",
+    "contestId": 372,
+    "index": "D",
+    "name": "Choosing Subtree is Fun",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dfs and similar",
+        "trees",
+        "two pointers"
+    ],
+    "solvedCount": 918
+}

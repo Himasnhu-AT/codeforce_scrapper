@@ -1,0 +1,37 @@
+{
+    "title": "A. Flag",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>According to a new ISO standard, a flag of every country should have a chequered field <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span>, each square should be of one of 10 colours, and the flag should be \u00abstriped\u00bb: each horizontal row of the flag should contain squares of the same colour, and the colours of adjacent horizontal rows should be different. Berland's government asked you to find out whether their flag meets the new ISO standard.</p>",
+    "inputSpecification": "<p>The first line of the input contains numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>), <span class=\"tex-span\"><i>n</i></span> \u2014 the amount of rows, <span class=\"tex-span\"><i>m</i></span> \u2014 the amount of columns on the flag of Berland. Then there follows the description of the flag: each of the following <span class=\"tex-span\"><i>n</i></span> lines contain <span class=\"tex-span\"><i>m</i></span> characters. Each character is a digit between <span class=\"tex-font-style-tt\">0</span> and <span class=\"tex-font-style-tt\">9</span>, and stands for the colour of the corresponding square.</p>",
+    "outputSpecification": "<p>Output <span class=\"tex-font-style-tt\">YES</span>, if the flag meets the new ISO standard, and <span class=\"tex-font-style-tt\">NO</span> otherwise.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>000<br/>111<br/>222<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "3 3<br/>000<br/>000<br/>111<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "3 3<br/>000<br/>111<br/>002<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 16,
+    "index": "A",
+    "name": "Flag",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 13732
+}

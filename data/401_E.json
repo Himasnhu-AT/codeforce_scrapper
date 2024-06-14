@@ -1,0 +1,29 @@
+{
+    "title": "E. Olympic Games",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">This problem was deleted from the contest, because it was used previously at another competition.</span></p>",
+    "inputSpecification": "",
+    "outputSpecification": "",
+    "samples": [
+        {
+            "input": "1 1<br/>1 2 100<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 401,
+    "index": "E",
+    "name": "Olympic Games",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 168
+}

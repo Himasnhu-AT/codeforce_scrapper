@@ -1,0 +1,38 @@
+{
+    "title": "A. Island Puzzle",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A remote island chain contains <span class=\"tex-span\"><i>n</i></span> islands, labeled <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>n</i></span>. Bidirectional bridges connect the islands to form a simple cycle\u00a0\u2014 a bridge connects islands <span class=\"tex-span\">1</span> and <span class=\"tex-span\">2</span>, islands <span class=\"tex-span\">2</span> and <span class=\"tex-span\">3</span>, and so on, and additionally a bridge connects islands <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\">1</span>. The center of each island contains an identical pedestal, and all but one of the islands has a fragile, uniquely colored statue currently held on the pedestal. The remaining island holds only an empty pedestal.</p><p>The islanders want to rearrange the statues in a new order. To do this, they repeat the following process: First, they choose an island directly adjacent to the island containing an empty pedestal. Then, they painstakingly carry the statue on this island across the adjoining bridge and place it on the empty pedestal.</p><p>Determine if it is possible for the islanders to arrange the statues in the desired order.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>)\u00a0\u2014 the total number of islands.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>\u2009-\u20091</span>)\u00a0\u2014 the statue currently placed on the <span class=\"tex-span\"><i>i</i></span>-th island. If <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u20090</span>, then the island has no statue. It is guaranteed that the <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> are distinct.</p><p>The third line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>\u2009-\u20091</span>) \u2014 the desired statues of the <span class=\"tex-span\"><i>i</i></span>th island. Once again, <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u20090</span> indicates the island desires no statue. It is guaranteed that the <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> are distinct.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" (without quotes) if the rearrangement can be done in the existing network, and \"<span class=\"tex-font-style-tt\">NO</span>\" otherwise.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 0 2<br/>2 0 1<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "2<br/>1 0<br/>0 1<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "4<br/>1 2 3 0<br/>0 3 2 1<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, the islanders can first move statue <span class=\"tex-span\">1</span> from island <span class=\"tex-span\">1</span> to island <span class=\"tex-span\">2</span>, then move statue <span class=\"tex-span\">2</span> from island <span class=\"tex-span\">3</span> to island <span class=\"tex-span\">1</span>, and finally move statue <span class=\"tex-span\">1</span> from island <span class=\"tex-span\">2</span> to island <span class=\"tex-span\">3</span>.</p><p>In the second sample, the islanders can simply move statue <span class=\"tex-span\">1</span> from island <span class=\"tex-span\">1</span> to island <span class=\"tex-span\">2</span>.</p><p>In the third sample, no sequence of movements results in the desired position.</p>",
+    "contestId": 634,
+    "index": "A",
+    "name": "Island Puzzle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 3093
+}

@@ -1,0 +1,33 @@
+{
+    "title": "E. Gena and Second Distance",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Gena doesn't like geometry, so he asks you to solve this problem for him.</p><p>A rectangle with sides parallel to coordinate axes contains <span class=\"tex-span\"><i>n</i></span> dots. Let's consider some point of the plane. Let's count the distances from this point to the given <span class=\"tex-span\"><i>n</i></span> points. Let's sort these numbers in the non-decreasing order. We'll call the beauty of the point the second element of this array. If there are two mimimum elements in this array, the beaty will be equal to this minimum.</p><p>Find the maximum beauty of a point inside the given rectangle.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>w</i>,\u2009<i>h</i>,\u2009<i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>w</i>,\u2009<i>h</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>,\u20092\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>) \u2014 the lengths of the rectangle sides and the number of points. Next <span class=\"tex-span\"><i>n</i></span> lines contain two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>w</i>,\u20090\u2009\u2264\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>h</i></span>) each \u2014 the coordinates of a point. It is possible that it will be coincident points.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the maximum beauty of a point with the absolute or relative error of at most <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20099</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "5 5 4<br/>0 0<br/>5 0<br/>0 5<br/>5 5<br/>",
+            "output": "4.99999999941792339<br/>"
+        },
+        {
+            "input": "5 5 3<br/>4 0<br/>2 5<br/>4 1<br/>",
+            "output": "5.65685424744772014<br/>"
+        }
+    ],
+    "note": "<p>The point which beauty we need to find must have coordinates (<span class=\"tex-span\"><i>x</i>,\u2009<i>y</i></span>), where <span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>w</i>,\u20090\u2009\u2264\u2009<i>y</i>\u2009\u2264\u2009<i>h</i></span>. Some of the <span class=\"tex-span\"><i>n</i></span> points can coincide.</p>",
+    "contestId": 442,
+    "index": "E",
+    "name": "Gena and Second Distance",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 170
+}

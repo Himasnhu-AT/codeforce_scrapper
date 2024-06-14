@@ -1,0 +1,35 @@
+{
+    "title": "B. Andrey and Problem",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Andrey needs one more problem to conduct a programming contest. He has <span class=\"tex-span\"><i>n</i></span> friends who are always willing to help. He can ask some of them to come up with a contest problem. Andrey knows one value for each of his fiends \u2014 the probability that this friend will come up with a problem if Andrey asks him.</p><p>Help Andrey choose people to ask. As he needs only one problem, Andrey is going to be really upset if no one comes up with a problem or if he gets more than one problem from his friends. You need to choose such a set of people that maximizes the chances of Andrey not getting upset.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100)</span> \u2014 the number of Andrey's friends. The second line contains <span class=\"tex-span\"><i>n</i></span> real numbers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(0.0\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091.0)</span> \u2014 the probability that the <span class=\"tex-span\"><i>i</i></span>-th friend can come up with a problem. The probabilities are given with at most 6 digits after decimal point.</p>",
+    "outputSpecification": "<p>Print a single real number \u2014 the probability that Andrey won't get upset at the optimal choice of friends. The answer will be considered valid if it differs from the correct one by at most <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20099</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "4<br/>0.1 0.2 0.3 0.8<br/>",
+            "output": "0.800000000000<br/>"
+        },
+        {
+            "input": "2<br/>0.1 0.2<br/>",
+            "output": "0.260000000000<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the best strategy for Andrey is to ask only one of his friends, the most reliable one.</p><p>In the second sample the best strategy for Andrey is to ask all of his friends to come up with a problem. Then the probability that he will get exactly one problem is <span class=\"tex-span\">0.1\u00b70.8\u2009+\u20090.9\u00b70.2\u2009=\u20090.26</span>.</p>",
+    "contestId": 442,
+    "index": "B",
+    "name": "Andrey and Problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "math",
+        "probabilities"
+    ],
+    "solvedCount": 4908
+}

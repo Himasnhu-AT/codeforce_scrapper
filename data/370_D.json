@@ -1,0 +1,44 @@
+{
+    "title": "D. Broken Monitor",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Innocentius has a problem \u2014 his computer monitor has broken. Now some of the pixels are \"dead\", that is, they are always black. As consequence, Innocentius can't play the usual computer games. He is recently playing the following game with his younger brother Polycarpus.</p><p>Innocentius is touch-typing a program that paints a white square one-pixel wide frame on the black screen. As the monitor is broken, some pixels that should be white remain black. Polycarpus should look at what the program displayed on the screen and guess the position and size of the frame Innocentius has painted. Polycarpus doesn't like the game but Innocentius persuaded brother to play as \"the game is good for the imagination and attention\".</p><p>Help Polycarpus, automatize his part in the gaming process. Write the code that finds such possible <span class=\"tex-font-style-it\">square</span> frame that:</p><ul> <li> the frame's width is 1 pixel, </li><li> the frame doesn't go beyond the borders of the screen, </li><li> all white pixels of the monitor are located on the frame, </li><li> of all frames that satisfy the previous three conditions, the required frame must have the smallest size. </li></ul><p>Formally, a square frame is represented by such pixels of the solid square, that are on the square's border, that is, are not fully surrounded by the other pixels of the square. For example, if the frame's size is <span class=\"tex-span\"><i>d</i>\u2009=\u20093</span>, then it consists of 8 pixels, if its size is <span class=\"tex-span\"><i>d</i>\u2009=\u20092</span>, then it contains 4 pixels and if <span class=\"tex-span\"><i>d</i>\u2009=\u20091</span>, then the frame is reduced to a single pixel.</p>",
+    "inputSpecification": "<p>The first line contains the resolution of the monitor as a pair of integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20092000</span>). The next <span class=\"tex-span\"><i>n</i></span> lines contain exactly <span class=\"tex-span\"><i>m</i></span> characters each \u2014 the state of the monitor pixels at the moment of the game. Character \"<span class=\"tex-font-style-tt\">.</span>\" (period, ASCII code 46) corresponds to the black pixel, and character \"<span class=\"tex-font-style-tt\">w</span>\" (lowercase English letter <span class=\"tex-font-style-tt\">w</span>) corresponds to the white pixel. It is guaranteed that at least one pixel of the monitor is white.</p>",
+    "outputSpecification": "<p>Print the monitor screen. Represent the sought frame by characters \"<span class=\"tex-font-style-tt\">+</span>\" (the \"plus\" character). The pixels that has become white during the game mustn't be changed. Print them as \"<span class=\"tex-font-style-tt\">w</span>\". If there are multiple possible ways to position the frame of the minimum size, print any of them.</p><p>If the required frame doesn't exist, then print a single line containing number <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "samples": [
+        {
+            "input": "4 8<br/>..w..w..<br/>........<br/>........<br/>..w..w..<br/>",
+            "output": "..w++w..<br/>..+..+..<br/>..+..+..<br/>..w++w..<br/>"
+        },
+        {
+            "input": "5 6<br/>......<br/>.w....<br/>......<br/>..w...<br/>......<br/>",
+            "output": "......<br/>+w+...<br/>+.+...<br/>++w...<br/>......<br/>"
+        },
+        {
+            "input": "2 4<br/>....<br/>.w..<br/>",
+            "output": "....<br/>.w..<br/>"
+        },
+        {
+            "input": "2 6<br/>w..w.w<br/>...w..<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the required size of the optimal frame equals 4. In the second sample the size of the optimal frame equals 3. In the third sample, the size of the optimal frame is 1. In the fourth sample, the required frame doesn't exist.</p>",
+    "contestId": 370,
+    "index": "D",
+    "name": "Broken Monitor",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 619
+}

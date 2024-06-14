@@ -1,0 +1,35 @@
+{
+    "title": "B. A and B and Compilation Errors",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">A and B are preparing themselves for programming contests.</span></p><p>B loves to debug his code. But before he runs the solution and starts debugging, he has to first compile the code.</p><p>Initially, the compiler displayed <span class=\"tex-span\"><i>n</i></span> compilation errors, each of them is represented as a positive integer. After some effort, B managed to fix some mistake and then another one mistake.</p><p>However, despite the fact that B is sure that he corrected the two errors, he can not understand exactly what compilation errors disappeared \u2014 the compiler of the language which B uses shows errors in the new order every time! B is sure that unlike many other programming languages, compilation errors for his programming language do not depend on each other, that is, if you correct one error, the set of other error does not change.</p><p>Can you help B find out exactly what two errors he corrected?</p>",
+    "inputSpecification": "<p>The first line of the input contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the initial number of compilation errors.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the errors the compiler displayed for the first time. </p><p>The third line contains <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> space-separated integers <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>b</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20091</sub></span> \u2014 the errors displayed at the second compilation. It is guaranteed that the sequence in the third line contains all numbers of the second string except for exactly one. </p><p>The fourth line contains <span class=\"tex-span\"><i>n</i>\u2009-\u20092</span> space-separated integers <span class=\"tex-span\"><i>\u0441</i><sub class=\"lower-index\">1</sub>,\u2009<i>\u0441</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>\u0441</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20092</sub></span> \u2014 the errors displayed at the third compilation. It is guaranteed that the sequence in the fourth line contains all numbers of the third line except for exactly one. </p>",
+    "outputSpecification": "<p>Print two numbers on a single line: the numbers of the compilation errors that disappeared after B made the first and the second correction, respectively. </p>",
+    "samples": [
+        {
+            "input": "5<br/>1 5 8 123 7<br/>123 7 5 1<br/>5 1 7<br/>",
+            "output": "8<br/>123<br/>"
+        },
+        {
+            "input": "6<br/>1 4 3 3 5 7<br/>3 7 5 4 3<br/>4 3 7 5<br/>",
+            "output": "1<br/>3<br/>"
+        }
+    ],
+    "note": "<p>In the first test sample B first corrects the error number 8, then the error number 123.</p><p>In the second test sample B first corrects the error number 1, then the error number 3. Note that if there are multiple errors with the same number, B can correct only one of them in one step. </p>",
+    "contestId": 519,
+    "index": "B",
+    "name": "A and B and Compilation Errors",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 38124
+}

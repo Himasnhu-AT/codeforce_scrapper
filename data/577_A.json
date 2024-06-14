@@ -1,0 +1,38 @@
+{
+    "title": "A. Multiplication Table",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's consider a table consisting of <span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>n</i></span> columns. The cell located at the intersection of <span class=\"tex-span\"><i>i</i></span>-th row and <span class=\"tex-span\"><i>j</i></span>-th column contains number <span class=\"tex-span\"><i>i</i>\u2009\u00d7\u2009<i>j</i></span>. The rows and columns are numbered starting from 1.</p><p>You are given a positive integer <span class=\"tex-span\"><i>x</i></span>. Your task is to count the number of cells in a table that contain number <span class=\"tex-span\"><i>x</i></span>.</p>",
+    "inputSpecification": "<p>The single line contains numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the size of the table and the number that we are looking for in the table.</p>",
+    "outputSpecification": "<p>Print a single number: the number of times <span class=\"tex-span\"><i>x</i></span> occurs in the table.</p>",
+    "samples": [
+        {
+            "input": "10 5<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "6 12<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "5 13<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>A table for the second sample test is given below. The occurrences of number <span class=\"tex-span\">12</span> are marked bold. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/04eb71f1d39b275ce6250d8c246a67c20ed0548f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 577,
+    "index": "A",
+    "name": "Multiplication Table",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "number theory"
+    ],
+    "solvedCount": 38497
+}

@@ -1,0 +1,38 @@
+{
+    "title": "D. Game with Powers",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya and Petya wrote down all integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> to play the \"powers\" game (<span class=\"tex-span\"><i>n</i></span> can be quite large; however, Vasya and Petya are not confused by this fact).</p><p>Players choose numbers in turn (Vasya chooses first). If some number <span class=\"tex-span\"><i>x</i></span> is chosen at the current turn, it is forbidden to choose <span class=\"tex-span\"><i>x</i></span> or all of its other positive integer powers (that is, <span class=\"tex-span\"><i>x</i><sup class=\"upper-index\">2</sup></span>, <span class=\"tex-span\"><i>x</i><sup class=\"upper-index\">3</sup></span>, <span class=\"tex-span\">...</span>) at the next turns. For instance, if the number <span class=\"tex-span\">9</span> is chosen at the first turn, one cannot choose <span class=\"tex-span\">9</span> or <span class=\"tex-span\">81</span> later, while it is still allowed to choose <span class=\"tex-span\">3</span> or <span class=\"tex-span\">27</span>. The one who cannot make a move loses.</p><p>Who wins if both Vasya and Petya play optimally?</p>",
+    "inputSpecification": "<p>Input contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print the name of the winner \u2014 \"<span class=\"tex-font-style-tt\">Vasya</span>\" or \"<span class=\"tex-font-style-tt\">Petya</span>\" (without quotes).</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "Vasya<br/>"
+        },
+        {
+            "input": "2<br/>",
+            "output": "Petya<br/>"
+        },
+        {
+            "input": "8<br/>",
+            "output": "Petya<br/>"
+        }
+    ],
+    "note": "<p>In the first sample Vasya will choose 1 and win immediately.</p><p>In the second sample no matter which number Vasya chooses during his first turn, Petya can choose the remaining number and win.</p>",
+    "contestId": 317,
+    "index": "D",
+    "name": "Game with Powers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "games"
+    ],
+    "solvedCount": 985
+}

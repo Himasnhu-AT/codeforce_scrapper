@@ -1,0 +1,33 @@
+{
+    "title": "J. Planting Trees",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya is a <span class=\"tex-font-style-underline\">Greencode</span> wildlife preservation society proponent. One day he found an empty field nobody owned, divided it into <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> squares and decided to plant a forest there. Vasya will plant <span class=\"tex-span\"><i>nm</i></span> trees of all different heights from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>nm</i></span>. For his forest to look more natural he wants any two trees growing in the side neighbouring squares to have the absolute value of difference in heights to be strictly more than 1. Help Vasya: make the plan of the forest planting for which this condition is fulfilled.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>) \u2014 the number of rows and columns on Vasya's field</p>",
+    "outputSpecification": "<p>If there's no solution, print <span class=\"tex-font-style-tt\">-1</span>. Otherwise, print <span class=\"tex-span\"><i>n</i></span> lines containing <span class=\"tex-span\"><i>m</i></span> numbers each \u2014 the trees' planting plan. In every square of the plan the height of a tree that should be planted on this square should be written. If there are several solutions to that problem, print any of them.</p>",
+    "samples": [
+        {
+            "input": "2 3<br/>",
+            "output": "3 6 2<br/>5 1 4<br/>"
+        },
+        {
+            "input": "2 1<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 45,
+    "index": "J",
+    "name": "Planting Trees",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms"
+    ],
+    "solvedCount": 917
+}

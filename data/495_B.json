@@ -1,0 +1,38 @@
+{
+    "title": "B. Modular Equations",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Last week, Hamed learned about a new type of equations in his math class called Modular Equations. Lets define <span class=\"tex-span\"><i>i</i></span> modulo <span class=\"tex-span\"><i>j</i></span> as the remainder of division of <span class=\"tex-span\"><i>i</i></span> by <span class=\"tex-span\"><i>j</i></span> and denote it by <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/dd2b46f89067e3a9d9987c4263de702dd7518fa7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. A Modular Equation, as Hamed's teacher described, is an equation of the form <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fc4bae676fb9b7279f0b9e6781d3d2d6abf86586.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> in which <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> are two non-negative integers and <span class=\"tex-span\"><i>x</i></span> is a variable. We call a positive integer <span class=\"tex-span\"><i>x</i></span> for which <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fc4bae676fb9b7279f0b9e6781d3d2d6abf86586.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> a <span class=\"tex-font-style-underline\">solution</span> of our equation.</p><p>Hamed didn't pay much attention to the class since he was watching a movie. He only managed to understand the definitions of these equations.</p><p>Now he wants to write his math exercises but since he has no idea how to do that, he asked you for help. He has told you all he knows about Modular Equations and asked you to write a program which given two numbers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> determines how many answers the Modular Equation <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fc4bae676fb9b7279f0b9e6781d3d2d6abf86586.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> has.</p>",
+    "inputSpecification": "<p>In the only line of the input two space-separated integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) are given.</p>",
+    "outputSpecification": "<p>If there is an infinite number of answers to our equation, print \"infinity\" (without the quotes). Otherwise print the number of solutions of the Modular Equation <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fc4bae676fb9b7279f0b9e6781d3d2d6abf86586.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "21 5<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "9435152 272<br/>",
+            "output": "282<br/>"
+        },
+        {
+            "input": "10 10<br/>",
+            "output": "infinity<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the answers of the Modular Equation are 8 and 16 since <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6f5ff39ebd209bf990adaf91f4b82f9687097224.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 495,
+    "index": "B",
+    "name": "Modular Equations",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 6612
+}

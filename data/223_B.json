@@ -1,0 +1,39 @@
+{
+    "title": "B. Two Strings",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A <span class=\"tex-font-style-it\">subsequence</span> of length <span class=\"tex-span\">|<i>x</i>|</span> of string <span class=\"tex-span\"><i>s</i>\u2009=\u2009<i>s</i><sub class=\"lower-index\">1</sub><i>s</i><sub class=\"lower-index\">2</sub>... <i>s</i><sub class=\"lower-index\">|<i>s</i>|</sub></span> (where <span class=\"tex-span\">|<i>s</i>|</span> is the length of string <span class=\"tex-span\"><i>s</i></span>) is a string <span class=\"tex-span\"><i>x</i>\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>k</i><sub class=\"lower-index\">1</sub></sub><i>s</i><sub class=\"lower-index\"><i>k</i><sub class=\"lower-index\">2</sub></sub>... <i>s</i><sub class=\"lower-index\"><i>k</i><sub class=\"lower-index\">|<i>x</i>|</sub></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>k</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>k</i><sub class=\"lower-index\">2</sub>\u2009&lt;\u2009...\u2009&lt;\u2009<i>k</i><sub class=\"lower-index\">|<i>x</i>|</sub>\u2009\u2264\u2009|<i>s</i>|)</span>.</p><p>You've got two strings\u00a0\u2014 <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span>. Let's consider all subsequences of string <span class=\"tex-span\"><i>s</i></span>, coinciding with string <span class=\"tex-span\"><i>t</i></span>. Is it true that each character of string <span class=\"tex-span\"><i>s</i></span> occurs in at least one of these subsequences? In other words, is it true that for all <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009|<i>s</i>|)</span>, there is such subsequence <span class=\"tex-span\"><i>x</i>\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>k</i><sub class=\"lower-index\">1</sub></sub><i>s</i><sub class=\"lower-index\"><i>k</i><sub class=\"lower-index\">2</sub></sub>... <i>s</i><sub class=\"lower-index\"><i>k</i><sub class=\"lower-index\">|<i>x</i>|</sub></sub></span> of string <span class=\"tex-span\"><i>s</i></span>, that <span class=\"tex-span\"><i>x</i>\u2009=\u2009<i>t</i></span> and for some <span class=\"tex-span\"><i>j</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009|<i>x</i>|)</span> <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>j</i></sub>\u2009=\u2009<i>i</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains string <span class=\"tex-span\"><i>s</i></span>, the second line contains string <span class=\"tex-span\"><i>t</i></span>. Each line consists only of lowercase English letters. The given strings are non-empty, the length of each string does not exceed <span class=\"tex-span\">2\u00b710<sup class=\"upper-index\">5</sup></span>.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">Yes</span>\" (without the quotes), if each character of the string <span class=\"tex-span\"><i>s</i></span> occurs in at least one of the described subsequences, or \"<span class=\"tex-font-style-tt\">No</span>\" (without the quotes) otherwise.</p>",
+    "samples": [
+        {
+            "input": "abab<br/>ab<br/>",
+            "output": "Yes<br/>"
+        },
+        {
+            "input": "abacaba<br/>aba<br/>",
+            "output": "No<br/>"
+        },
+        {
+            "input": "abc<br/>ba<br/>",
+            "output": "No<br/>"
+        }
+    ],
+    "note": "<p>In the first sample string <span class=\"tex-span\"><i>t</i></span> can occur in the string <span class=\"tex-span\"><i>s</i></span> as a subsequence in three ways: <span class=\"tex-font-style-tt\"><span class=\"tex-font-style-bf\">ab</span>ab</span>, <span class=\"tex-font-style-tt\"><span class=\"tex-font-style-bf\">a</span>ba<span class=\"tex-font-style-bf\">b</span></span> and <span class=\"tex-font-style-tt\">ab<span class=\"tex-font-style-bf\">ab</span></span>. In these occurrences each character of string <span class=\"tex-span\"><i>s</i></span> occurs at least once.</p><p>In the second sample the 4-th character of the string <span class=\"tex-span\"><i>s</i></span> doesn't occur in any occurrence of string <span class=\"tex-span\"><i>t</i></span>.</p><p>In the third sample there is no occurrence of string <span class=\"tex-span\"><i>t</i></span> in string <span class=\"tex-span\"><i>s</i></span>.</p>",
+    "contestId": 223,
+    "index": "B",
+    "name": "Two Strings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp",
+        "strings"
+    ],
+    "solvedCount": 1731
+}

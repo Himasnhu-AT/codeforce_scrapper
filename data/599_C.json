@@ -1,0 +1,33 @@
+{
+    "title": "C. Day at the Beach",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One day Squidward, Spongebob and Patrick decided to go to the beach. Unfortunately, the weather was bad, so the friends were unable to ride waves. However, they decided to spent their time building sand castles.</p><p>At the end of the day there were <span class=\"tex-span\"><i>n</i></span> castles built by friends. Castles are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, and the height of the <span class=\"tex-span\"><i>i</i></span>-th castle is equal to <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\"><i>i</i></sub></span>. When friends were about to leave, Squidward noticed, that castles are not ordered by their height, and this looks ugly. Now friends are going to reorder the castles in a way to obtain that condition <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>h</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span> holds for all <span class=\"tex-span\"><i>i</i></span> from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span>.</p><p>Squidward suggested the following process of sorting castles: </p><ul> <li> Castles are split into <span class=\"tex-font-style-it\">blocks</span>\u00a0\u2014 groups of <span class=\"tex-font-style-bf\">consecutive</span> castles. Therefore the block from <span class=\"tex-span\"><i>i</i></span> to <span class=\"tex-span\"><i>j</i></span> will include castles <span class=\"tex-span\"><i>i</i>,\u2009<i>i</i>\u2009+\u20091,\u2009...,\u2009<i>j</i></span>. A block may consist of a single castle. </li><li> The partitioning is chosen in such a way that every castle is a part of <span class=\"tex-font-style-bf\">exactly</span> one block. </li><li> Each block is sorted independently from other blocks, that is the sequence <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>h</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub>,\u2009...,\u2009<i>h</i><sub class=\"lower-index\"><i>j</i></sub></span> becomes sorted. </li><li> The partitioning should satisfy the condition that after each block is sorted, the sequence <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\"><i>i</i></sub></span> becomes sorted too. This may always be achieved by saying that the whole sequence is a single block. </li></ul><p>Even Patrick understands that increasing the number of blocks in partitioning will ease the sorting process. Now friends ask you to count the maximum possible number of blocks in a partitioning that satisfies all the above requirements.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>)\u00a0\u2014 the number of castles Spongebob, Patrick and Squidward made from sand during the day.</p><p>The next line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>h</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>). The <span class=\"tex-span\"><i>i</i></span>-th of these integers corresponds to the height of the <span class=\"tex-span\"><i>i</i></span>-th castle.</p>",
+    "outputSpecification": "<p>Print the maximum possible number of blocks in a valid partitioning.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2 3<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "4<br/>2 1 3 2<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the partitioning looks like that: [1][2][3].</p><center> <img class=\"tex-graphics\" height=\"227px\" src=\"https://espresso.codeforces.com/f57a6884243f958cb962a93fa61f13416e26e58b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"378px\"/> </center><p>In the second sample the partitioning is: [2, 1][3, 2]</p><center> <img class=\"tex-graphics\" height=\"227px\" src=\"https://espresso.codeforces.com/04990a78a3b4d02a856d5966515ddd3b6746c863.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"378px\"/> </center>",
+    "contestId": 599,
+    "index": "C",
+    "name": "Day at the Beach",
+    "type": "PROGRAMMING",
+    "tags": [
+        "sortings"
+    ],
+    "solvedCount": 4584
+}

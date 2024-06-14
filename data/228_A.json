@@ -1,0 +1,33 @@
+{
+    "title": "A. Is your horseshoe on the other hoof?",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Valera the Horse is going to the party with friends. He has been following the fashion trends for a while, and he knows that it is very popular to wear all horseshoes of different color. Valera has got four horseshoes left from the last year, but maybe some of them have the same color. In this case he needs to go to the store and buy some few more horseshoes, not to lose face in front of his stylish comrades.</p><p>Fortunately, the store sells horseshoes of all colors under the sun and Valera has enough money to buy any four of them. However, in order to save the money, he would like to spend as little money as possible, so you need to help Valera and determine what is the minimum number of horseshoes he needs to buy to wear four horseshoes of different colors to a party.</p>",
+    "inputSpecification": "<p>The first line contains four space-separated integers <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009<i>s</i><sub class=\"lower-index\">3</sub>,\u2009<i>s</i><sub class=\"lower-index\">4</sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009<i>s</i><sub class=\"lower-index\">3</sub>,\u2009<i>s</i><sub class=\"lower-index\">4</sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span> \u2014 the colors of horseshoes Valera has.</p><p>Consider all possible colors indexed with integers.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the minimum number of horseshoes Valera needs to buy.</p>",
+    "samples": [
+        {
+            "input": "1 7 3 3<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "7 7 7 7<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 228,
+    "index": "A",
+    "name": "Is your horseshoe on the other hoof?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 103571
+}

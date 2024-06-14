@@ -1,0 +1,35 @@
+{
+    "title": "A. Bear and Poker",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Limak is an old brown bear. He often plays poker with his friends. Today they went to a casino. There are <span class=\"tex-span\"><i>n</i></span> players (including Limak himself) and right now all of them have bids on the table. <span class=\"tex-span\"><i>i</i></span>-th of them has bid with size <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> dollars.</p><p>Each player can double his bid any number of times and triple his bid any number of times. The casino has a great jackpot for making all bids equal. Is it possible that Limak and his friends will win a jackpot?</p>",
+    "inputSpecification": "<p>First line of input contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>), the number of players.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integer numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the bids of players.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">Yes</span>\" (without the quotes) if players can make their bids become equal, or \"<span class=\"tex-font-style-tt\">No</span>\" otherwise.</p>",
+    "samples": [
+        {
+            "input": "4<br/>75 150 75 50<br/>",
+            "output": "Yes<br/>"
+        },
+        {
+            "input": "3<br/>100 150 250<br/>",
+            "output": "No<br/>"
+        }
+    ],
+    "note": "<p>In the first sample test first and third players should double their bids twice, second player should double his bid once and fourth player should both double and triple his bid.</p><p>It can be shown that in the second sample test there is no way to make all bids equal.</p>",
+    "contestId": 573,
+    "index": "A",
+    "name": "Bear and Poker",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 16345
+}

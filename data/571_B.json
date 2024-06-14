@@ -1,0 +1,39 @@
+{
+    "title": "B. Minimization",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've got array <span class=\"tex-span\"><i>A</i></span>, consisting of <span class=\"tex-span\"><i>n</i></span> integers and a positive integer <span class=\"tex-span\"><i>k</i></span>. Array <span class=\"tex-span\"><i>A</i></span> is indexed by integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>.</p><p>You need to permute the array elements so that value </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3e1b97e91b1df6d0f262ced182f58f6fa9ba3dad.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center> became minimal possible. In particular, it is allowed not to change order of elements at all.",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i>,\u2009<i>k</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>min</i>(5000,\u2009<i>n</i>\u2009-\u20091)</span>). </p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>A</i>[1],\u2009<i>A</i>[2],\u2009...,\u2009<i>A</i>[<i>n</i>]</span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>A</i>[<i>i</i>]\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), separate by spaces \u2014 elements of the array <span class=\"tex-span\"><i>A</i></span>.</p>",
+    "outputSpecification": "<p>Print the minimum possible value of the sum described in the statement.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>1 2 4<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "5 2<br/>3 -5 3 -5 3<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "6 3<br/>4 3 4 3 2 5<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>In the first test one of the optimal permutations is <span class=\"tex-span\">1\u00a04\u00a02</span>. </p><p>In the second test the initial order is optimal. </p><p>In the third test one of the optimal permutations is <span class=\"tex-span\">2\u00a03\u00a04\u00a04\u00a03\u00a05</span>.</p>",
+    "contestId": 571,
+    "index": "B",
+    "name": "Minimization",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 2539
+}

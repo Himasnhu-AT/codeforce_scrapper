@@ -1,0 +1,37 @@
+{
+    "title": "D. Superhero's Job",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>It's tough to be a superhero. And it's twice as tough to resist the supervillain who is cool at math. Suppose that you're an ordinary Batman in an ordinary city of Gotham. Your enemy Joker mined the building of the city administration and you only have several minutes to neutralize the charge. To do that you should enter the cancel code on the bomb control panel.</p><p>However, that mad man decided to give you a hint. This morning the mayor found a playing card under his pillow. There was a line written on the card:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5e9a26ebdde1f76c2d835193532711996566d434.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>The bomb has a note saying \"<span class=\"tex-span\"><i>J</i>(<i>x</i>)\u2009=\u2009<i>A</i></span>\", where <span class=\"tex-span\"><i>A</i></span> is some positive integer. You suspect that the cancel code is some integer <span class=\"tex-span\"><i>x</i></span> that meets the equation <span class=\"tex-span\"><i>J</i>(<i>x</i>)\u2009=\u2009<i>A</i></span>. Now in order to decide whether you should neutralize the bomb or run for your life, you've got to count how many distinct positive integers <span class=\"tex-span\"><i>x</i></span> meet this equation.</p>",
+    "inputSpecification": "<p>The single line of the input contains a single integer <span class=\"tex-span\"><i>A</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>A</i>\u2009\u2264\u200910<sup class=\"upper-index\">12</sup></span>).</p>",
+    "outputSpecification": "<p>Print the number of solutions of the equation <span class=\"tex-span\"><i>J</i>(<i>x</i>)\u2009=\u2009<i>A</i></span>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "24<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>Record <span class=\"tex-span\"><i>x</i>|<i>n</i></span> means that number <span class=\"tex-span\"><i>n</i></span> divides number <span class=\"tex-span\"><i>x</i></span>.</p><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f651455cf24acab8e8b76da4abe0ec8f028ec17b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is defined as the largest positive integer that divides both <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>.</p><p>In the first sample test the only suitable value of <span class=\"tex-span\"><i>x</i></span> is <span class=\"tex-span\">2</span>. Then <span class=\"tex-span\"><i>J</i>(2)\u2009=\u20091\u2009+\u20092</span>.</p><p>In the second sample test the following values of <span class=\"tex-span\"><i>x</i></span> match:</p><ul> <li> <span class=\"tex-span\"><i>x</i>\u2009=\u200914</span>, <span class=\"tex-span\"><i>J</i>(14)\u2009=\u20091\u2009+\u20092\u2009+\u20097\u2009+\u200914\u2009=\u200924</span> </li><li> <span class=\"tex-span\"><i>x</i>\u2009=\u200915</span>, <span class=\"tex-span\"><i>J</i>(15)\u2009=\u20091\u2009+\u20093\u2009+\u20095\u2009+\u200915\u2009=\u200924</span> </li><li> <span class=\"tex-span\"><i>x</i>\u2009=\u200923</span>, <span class=\"tex-span\"><i>J</i>(23)\u2009=\u20091\u2009+\u200923\u2009=\u200924</span> </li></ul>",
+    "contestId": 542,
+    "index": "D",
+    "name": "Superhero's Job",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "hashing",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 500
+}

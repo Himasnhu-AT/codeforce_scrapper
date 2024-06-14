@@ -1,0 +1,37 @@
+{
+    "title": "E. Martian Colony",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The first ship with the Earth settlers landed on Mars. The colonists managed to build <span class=\"tex-span\"><i>n</i></span> necessary structures on the surface of the planet (which can be regarded as a plane, and the construction can be regarded as points on it). But one day the scanners recorded suspicious activity on the outskirts of the colony. It was decided to use the protective force field generating system to protect the colony against possible trouble.</p><p>The system works as follows: the surface contains a number of generators of the field (they can also be considered as points). The active range of each generator is a circle of radius <span class=\"tex-span\"><i>r</i></span> centered at the location of the generator (the boundary of the circle is also included in the range). After the system is activated, it stretches the protective force field <span class=\"tex-font-style-bf\">only over the part of the surface, which is within the area of all generators' activity</span>. That is, the protected part is the <span class=\"tex-font-style-bf\">intersection</span> of the generators' active ranges.</p><p>The number of generators available to the colonists is not limited, but the system of field generation consumes a lot of energy. More precisely, the energy consumption does not depend on the number of generators, but it is directly proportional to the <span class=\"tex-font-style-bf\">area</span>, which is protected by the field. Also, it is necessary that all the existing buildings are located within the protected area.</p><p>Determine the smallest possible area of the protected part of the surface containing all the buildings.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>r</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>r</i>\u2009\u2264\u200950000</span>) \u2014 the number of buildings and the active ranges of the generators, correspondingly.</p><p>Next <span class=\"tex-span\"><i>n</i></span> lines contains the buildings' coordinates. The <span class=\"tex-span\"><i>i</i>\u2009+\u20091</span>-th (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>) line contains two real numbers with at most three digits after the decimal point <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">|<i>x</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>y</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200950000</span>) \u2014 coordinates of the <span class=\"tex-span\"><i>i</i></span>-th building. It is guaranteed that no two buildings are located at the same point, and no two different buildings are located closer than <span class=\"tex-span\">1</span>.</p><p>It is guaranteed that there exists a circle with radius <span class=\"tex-span\"><i>r</i></span> that contains all the buildings.</p>",
+    "outputSpecification": "<p>Print the single real number \u2014 the minimum area of the protected part containing all the buildings. The answer is accepted if absolute or relative error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20094</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "3 5<br/>0.00 0.000<br/>0.0 8.00<br/>6 8.00<br/>",
+            "output": "78.5398163397<br/>"
+        },
+        {
+            "input": "4 1000<br/>0.0 0.0<br/>0 2.00<br/>2.00 2<br/>2.0 0.00<br/>",
+            "output": "4.0026666140<br/>"
+        },
+        {
+            "input": "4 5<br/>3.00 0.0<br/>-3 0.00<br/>0.000 1<br/>0.0 -1.00<br/>",
+            "output": "8.1750554397<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the given radius equals the radius of the circle circumscribed around the given points. That's why the circle that corresponds to it is the sought area. The answer is <span class=\"tex-span\">25\u03c0</span>.</p><p>In the second sample the area nearly coincides with the square which has vertexes in the given points.</p><p>The area for the third sample is shown on the picture below.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/bbf7435a0b532966f3e1edc36065e3e8e8b4b1e2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 154,
+    "index": "E",
+    "name": "Martian Colony",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 92
+}

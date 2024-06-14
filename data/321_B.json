@@ -1,0 +1,39 @@
+{
+    "title": "B. Ciel and Duel",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Fox Ciel is playing a card game with her friend Jiro.</p><p>Jiro has <span class=\"tex-span\"><i>n</i></span> cards, each one has two attributes: <span class=\"tex-span\"><i>position</i></span> (Attack or Defense) and <span class=\"tex-span\"><i>strength</i></span>. Fox Ciel has <span class=\"tex-span\"><i>m</i></span> cards, each one has these two attributes too. It's known that position of all Ciel's cards is Attack.</p><p>Now is Ciel's battle phase, Ciel can do the following operation many times:</p><ol> <li> Choose one of her cards <span class=\"tex-span\"><i>X</i></span>. This card mustn't be chosen before. </li><li> If Jiro has no alive cards at that moment, he gets the damage equal to (<span class=\"tex-span\"><i>X</i></span>'s strength). Otherwise, Ciel needs to choose one Jiro's alive card <span class=\"tex-span\"><i>Y</i></span>, then: <ul> <li> If <span class=\"tex-span\"><i>Y</i></span>'s position is Attack, then (<span class=\"tex-span\"><i>X</i></span>'s strength) <span class=\"tex-span\">\u2009\u2265\u2009</span> (<span class=\"tex-span\"><i>Y</i></span>'s strength) must hold. After this attack, card <span class=\"tex-span\"><i>Y</i></span> dies, and Jiro gets the damage equal to (<span class=\"tex-span\"><i>X</i></span>'s strength) - (<span class=\"tex-span\"><i>Y</i></span>'s strength). </li><li> If <span class=\"tex-span\"><i>Y</i></span>'s position is Defense, then (<span class=\"tex-span\"><i>X</i></span>'s strength) <span class=\"tex-span\">\u2009&gt;\u2009</span> (<span class=\"tex-span\"><i>Y</i></span>'s strength) must hold. After this attack, card <span class=\"tex-span\"><i>Y</i></span> dies, but Jiro gets no damage. </li></ul> </li></ol><p>Ciel can end her battle phase at any moment (so, she can use not all her cards). Help the Fox to calculate the maximal sum of damage Jiro can get.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>) \u2014 the number of cards Jiro and Ciel have.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains a string <span class=\"tex-span\"><i>position</i></span> and an integer <span class=\"tex-span\"><i>strength</i></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>strength</i>\u2009\u2264\u20098000)</span> \u2014 the position and strength of Jiro's current card. Position is the string \"<span class=\"tex-font-style-tt\">ATK</span>\" for attack, and the string \"<span class=\"tex-font-style-tt\">DEF</span>\" for defense.</p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines contains an integer <span class=\"tex-span\"><i>strength</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>strength</i>\u2009\u2264\u20098000</span>) \u2014 the strength of Ciel's current card.</p>",
+    "outputSpecification": "<p>Output an integer: the maximal damage Jiro can get.</p>",
+    "samples": [
+        {
+            "input": "2 3<br/>ATK 2000<br/>DEF 1700<br/>2500<br/>2500<br/>2500<br/>",
+            "output": "3000<br/>"
+        },
+        {
+            "input": "3 4<br/>ATK 10<br/>ATK 100<br/>ATK 1000<br/>1<br/>11<br/>101<br/>1001<br/>",
+            "output": "992<br/>"
+        },
+        {
+            "input": "2 4<br/>DEF 0<br/>ATK 0<br/>0<br/>0<br/>1<br/>1<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the first test case, Ciel has 3 cards with same <span class=\"tex-span\"><i>strength</i></span>. The best strategy is as follows. First she uses one of these 3 cards to attack \"ATK 2000\" card first, this attack destroys that card and Jiro gets <span class=\"tex-span\">2500\u2009-\u20092000\u2009=\u2009500</span> damage. Then she uses the second card to destroy the \"DEF 1700\" card. Jiro doesn't get damage that time. Now Jiro has no cards so she can use the third card to attack and Jiro gets <span class=\"tex-span\">2500</span> damage. So the answer is <span class=\"tex-span\">500\u2009+\u20092500\u2009=\u20093000</span>.</p><p>In the second test case, she should use the \"1001\" card to attack the \"ATK 100\" card, then use the \"101\" card to attack the \"ATK 10\" card. Now Ciel still has cards but she can choose to end her battle phase. The total damage equals <span class=\"tex-span\">(1001\u2009-\u2009100)\u2009+\u2009(101\u2009-\u200910)\u2009=\u2009992</span>.</p><p>In the third test case note that she can destroy the \"ATK 0\" card by a card with strength equal to 0, but she can't destroy a \"DEF 0\" card with that card.</p>",
+    "contestId": 321,
+    "index": "B",
+    "name": "Ciel and Duel",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "flows",
+        "greedy"
+    ],
+    "solvedCount": 2978
+}

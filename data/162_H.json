@@ -1,0 +1,33 @@
+{
+    "title": "H. Alternating case",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a string consisting of alphabet letters. Convert it to alternating case: the letters on odd positions should be in uppercase, and the letters on even positions should be lowercase. The letters are numbered staring from 1.</p>",
+    "inputSpecification": "<p>The only line of input contains a string between <span class=\"tex-span\">1</span> and <span class=\"tex-span\">100</span> characters long. Each character of the string is either an uppercase ('A'-'Z') or a lowercase ('a'-'z') letter.</p>",
+    "outputSpecification": "<p>Output the resulting string.</p>",
+    "samples": [
+        {
+            "input": "Codeforces<br/>",
+            "output": "CoDeFoRcEs<br/>"
+        },
+        {
+            "input": "VKCup<br/>",
+            "output": "VkCuP<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 162,
+    "index": "H",
+    "name": "Alternating case",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 214
+}

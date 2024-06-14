@@ -1,0 +1,33 @@
+{
+    "title": "C. The Labyrinth",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a rectangular field of <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> cells. Each cell is either empty or impassable (contains an obstacle). Empty cells are marked with '<span class=\"tex-font-style-tt\">.</span>', impassable cells are marked with '<span class=\"tex-font-style-tt\">*</span>'. Let's call two empty cells <span class=\"tex-font-style-tt\">adjacent</span> if they share a side.</p><p>Let's call a <span class=\"tex-font-style-it\">connected component</span> any non-extendible set of cells such that any two of them are connected by the path of adjacent cells. It is a typical well-known definition of a connected component.</p><p>For each impassable cell <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> imagine that it is an empty cell (all other cells remain unchanged) and find the size (the number of cells) of the connected component which contains <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>. You should do it for each impassable cell independently.</p><p>The answer should be printed as a matrix with <span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>m</i></span> columns. The <span class=\"tex-span\"><i>j</i></span>-th symbol of the <span class=\"tex-span\"><i>i</i></span>-th row should be \"<span class=\"tex-font-style-tt\">.</span>\" if the cell is empty at the start. Otherwise the <span class=\"tex-span\"><i>j</i></span>-th symbol of the <span class=\"tex-span\"><i>i</i></span>-th row should contain the only digit \u2014- the answer modulo <span class=\"tex-span\">10</span>. The matrix should be printed without any spaces.</p><p>To make your output faster it is recommended to build the output as an array of <span class=\"tex-span\"><i>n</i></span> strings having length <span class=\"tex-span\"><i>m</i></span> and print it as a sequence of lines. It will be much faster than writing character-by-character.</p><p>As input/output can reach huge size it is recommended to use fast input/output methods: for example, prefer to use <span class=\"tex-font-style-tt\">scanf/printf</span> instead of <span class=\"tex-font-style-tt\">cin/cout</span> in C++, prefer to use <span class=\"tex-font-style-tt\">BufferedReader/PrintWriter</span> instead of <span class=\"tex-font-style-tt\">Scanner/System.out</span> in <span class=\"tex-font-style-tt\">Java</span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i>,\u2009<i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000</span>) \u2014 the number of rows and columns in the field.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains <span class=\"tex-span\"><i>m</i></span> symbols: \"<span class=\"tex-font-style-tt\">.</span>\" for empty cells, \"<span class=\"tex-font-style-tt\">*</span>\" for impassable cells.</p>",
+    "outputSpecification": "<p>Print the answer as a matrix as described above. See the examples to precise the format of the output.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>*.*<br/>.*.<br/>*.*<br/>",
+            "output": "3.3<br/>.5.<br/>3.3<br/>"
+        },
+        {
+            "input": "4 5<br/>**..*<br/>..***<br/>.*.*.<br/>*.*.*<br/>",
+            "output": "46..3<br/>..732<br/>.6.4.<br/>5.4.3<br/>"
+        }
+    ],
+    "note": "<p>In first example, if we imagine that the central cell is empty then it will be included to component of size <span class=\"tex-span\">5</span> (cross). If any of the corner cell will be empty then it will be included to component of size <span class=\"tex-span\">3</span> (corner).</p>",
+    "contestId": 616,
+    "index": "C",
+    "name": "The Labyrinth",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar"
+    ],
+    "solvedCount": 5386
+}

@@ -1,0 +1,43 @@
+{
+    "title": "D. Number of Binominal Coefficients",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>For a given prime integer <span class=\"tex-span\"><i>p</i></span> and integers <span class=\"tex-span\">\u03b1,\u2009<i>A</i></span> calculate the number of pairs of integers <span class=\"tex-span\">(<i>n</i>,\u2009<i>k</i>)</span>, such that <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009<i>A</i></span> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a4b0ae77c1b1e95e3cba7276cfb7fecdb99b4221.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is divisible by <span class=\"tex-span\"><i>p</i><sup class=\"upper-index\">\u03b1</sup></span>. </p><p>As the answer can be rather large, print the remainder of the answer moduly <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p><p>Let us remind you that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a4b0ae77c1b1e95e3cba7276cfb7fecdb99b4221.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is the number of ways <span class=\"tex-span\"><i>k</i></span> objects can be chosen from the set of <span class=\"tex-span\"><i>n</i></span> objects.</p>",
+    "inputSpecification": "<p>The first line contains two integers, <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\">\u03b1</span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i>,\u2009\u03b1\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, <span class=\"tex-span\"><i>p</i></span> is prime). </p><p>The second line contains the decimal record of integer <span class=\"tex-span\"><i>A</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>A</i>\u2009&lt;\u200910<sup class=\"upper-index\">1000</sup></span>) without leading zeroes.</p>",
+    "outputSpecification": "<p>In the single line print the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "2 2<br/>7<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "3 1<br/>9<br/>",
+            "output": "17<br/>"
+        },
+        {
+            "input": "3 3<br/>9<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "2 4<br/>5000<br/>",
+            "output": "8576851<br/>"
+        }
+    ],
+    "note": "<p>In the first sample three binominal coefficients divisible by 4 are <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a4c2b94fb12d1298dafcd1d14d7e1f6a47500264.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/80436d3bb1008bf8943b41f46211501e7fea05e9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bb01b873c593007ca5b10a8897a71c4b0d7dabae.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 582,
+    "index": "D",
+    "name": "Number of Binominal Coefficients",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 609
+}

@@ -1,0 +1,33 @@
+{
+    "title": "A. Vanya and Cubes",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vanya got <span class=\"tex-span\"><i>n</i></span> cubes. He decided to build a pyramid from them. Vanya wants to build the pyramid as follows: the top level of the pyramid must consist of <span class=\"tex-span\">1</span> cube, the second level must consist of <span class=\"tex-span\">1\u2009+\u20092\u2009=\u20093</span> cubes, the third level must have <span class=\"tex-span\">1\u2009+\u20092\u2009+\u20093\u2009=\u20096</span> cubes, and so on. Thus, the <span class=\"tex-span\"><i>i</i></span>-th level of the pyramid must have <span class=\"tex-span\">1\u2009+\u20092\u2009+\u2009...\u2009+\u2009(<i>i</i>\u2009-\u20091)\u2009+\u2009<i>i</i></span> cubes.</p><p>Vanya wants to know what is the maximum height of the pyramid that he can make using the given cubes.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>) \u2014 the number of cubes given to Vanya.</p>",
+    "outputSpecification": "<p>Print the maximum possible height of the pyramid in the single line.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "25<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>Illustration to the second sample: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/302faf42dc2d28ad81fbac6d4af287892627ebef.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 492,
+    "index": "A",
+    "name": "Vanya and Cubes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 47495
+}

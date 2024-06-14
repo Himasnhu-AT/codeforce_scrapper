@@ -1,0 +1,33 @@
+{
+    "title": "A. Queue on Bus Stop",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>It's that time of the year when the Russians flood their countryside summer cottages (dachas) and the bus stop has a lot of people. People rarely go to the dacha on their own, it's usually a group, so the people stand in queue by groups.</p><p>The bus stop queue has <span class=\"tex-span\"><i>n</i></span> groups of people. The <span class=\"tex-span\"><i>i</i></span>-th group from the beginning has <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> people. Every <span class=\"tex-span\">30</span> minutes an empty bus arrives at the bus stop, it can carry at most <span class=\"tex-span\"><i>m</i></span> people. Naturally, the people from the first group enter the bus first. Then go the people from the second group and so on. Note that the order of groups in the queue never changes. Moreover, if some group cannot fit all of its members into the current bus, it waits for the next bus together with other groups standing after it in the queue.</p><p>Your task is to determine how many buses is needed to transport all <span class=\"tex-span\"><i>n</i></span> groups to the dacha countryside.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100)</span>. The next line contains <span class=\"tex-span\"><i>n</i></span> integers: <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>m</i>)</span>.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number of buses that is needed to transport all <span class=\"tex-span\"><i>n</i></span> groups to the dacha countryside.</p>",
+    "samples": [
+        {
+            "input": "4 3<br/>2 3 2 1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "3 4<br/>1 2 1<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 435,
+    "index": "A",
+    "name": "Queue on Bus Stop",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 10012
+}

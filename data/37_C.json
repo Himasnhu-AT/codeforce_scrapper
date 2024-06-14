@@ -1,0 +1,35 @@
+{
+    "title": "C. Old Berland Language",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Berland scientists know that the Old Berland language had exactly <span class=\"tex-span\"><i>n</i></span> words. Those words had lengths of <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">1</sub>,\u2009<i>l</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>l</i><sub class=\"lower-index\"><i>n</i></sub></span> letters. Every word consisted of two letters, <span class=\"tex-span\">0</span> and <span class=\"tex-span\">1</span>. Ancient Berland people spoke quickly and didn\u2019t make pauses between the words, but at the same time they could always understand each other perfectly. It was possible because no word was a prefix of another one. The prefix of a string is considered to be one of its substrings that starts from the initial symbol.</p><p>Help the scientists determine whether all the words of the Old Berland language can be reconstructed and if they can, output the words themselves.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>N</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u20091000</span>) \u2014 the number of words in Old Berland language. The second line contains <span class=\"tex-span\"><i>N</i></span> space-separated integers \u2014 the lengths of these words. All the lengths are natural numbers not exceeding <span class=\"tex-span\">1000</span>.</p>",
+    "outputSpecification": "<p>If there\u2019s no such set of words, in the single line output <span class=\"tex-font-style-tt\">NO</span>. Otherwise, in the first line output <span class=\"tex-font-style-tt\">YES</span>, and in the next <span class=\"tex-span\"><i>N</i></span> lines output the words themselves in the order their lengths were given in the input file. If the answer is not unique, output any.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2 3<br/>",
+            "output": "YES<br/>0<br/>10<br/>110<br/>"
+        },
+        {
+            "input": "3<br/>1 1 1<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 37,
+    "index": "C",
+    "name": "Old Berland Language",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "greedy",
+        "trees"
+    ],
+    "solvedCount": 1569
+}

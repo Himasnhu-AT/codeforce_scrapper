@@ -1,0 +1,31 @@
+{
+    "title": "D. Plus and xor",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Bitwise exclusive OR (or bitwise addition modulo two) is a binary operation which is equivalent to applying logical exclusive OR to every pair of bits located on the same positions in binary notation of operands. In other words, a binary digit of the result is equal to 1 if and only if bits on the respective positions in the operands are different.</p><p>For example, if <span class=\"tex-span\"><i>X</i>\u2009=\u2009109<sub class=\"lower-index\">10</sub>\u2009=\u20091101101<sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\"><i>Y</i>\u2009=\u200941<sub class=\"lower-index\">10</sub>\u2009=\u2009101001<sub class=\"lower-index\">2</sub></span>, then: </p><center> <span class=\"tex-span\"><i>X</i></span> <span class=\"tex-font-style-tt\">xor</span> <span class=\"tex-span\"><i>Y</i>\u00a0\u2009=\u2009\u00a068<sub class=\"lower-index\">10</sub>\u00a0\u2009=\u2009\u00a01000100<sub class=\"lower-index\">2</sub></span>. </center><p>Write a program, which takes two non-negative integers <span class=\"tex-span\"><i>A</i></span> and <span class=\"tex-span\"><i>B</i></span> as an input and finds two non-negative integers <span class=\"tex-span\"><i>X</i></span> and <span class=\"tex-span\"><i>Y</i></span>, which satisfy the following conditions: </p><ul> <li> <span class=\"tex-span\"><i>A</i>\u2009=\u2009<i>X</i>\u2009+\u2009<i>Y</i></span> </li><li> <span class=\"tex-span\"><i>B</i>\u00a0\u2009=\u2009\u00a0<i>X</i></span> <span class=\"tex-font-style-tt\">xor</span> <span class=\"tex-span\"><i>Y</i></span>, where <span class=\"tex-font-style-tt\">xor</span> is bitwise exclusive or. </li><li> <span class=\"tex-span\"><i>X</i></span> is the smallest number among all numbers for which the first two conditions are true. </li></ul>",
+    "inputSpecification": "<p>The first line contains integer number <span class=\"tex-span\"><i>A</i></span> and the second line contains integer number <span class=\"tex-span\"><i>B</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>A</i>,\u2009<i>B</i>\u2009\u2264\u20092<sup class=\"upper-index\">64</sup>\u2009-\u20091</span>).</p>",
+    "outputSpecification": "<p>The only output line should contain two integer non-negative numbers <span class=\"tex-span\"><i>X</i></span> and <span class=\"tex-span\"><i>Y</i></span>. Print the only number <span class=\"tex-font-style-tt\">-1</span> if there is no answer.</p>",
+    "samples": [
+        {
+            "input": "142<br/>76<br/>",
+            "output": "33 109<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 76,
+    "index": "D",
+    "name": "Plus and xor",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 2007
+}

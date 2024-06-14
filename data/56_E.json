@@ -1,0 +1,35 @@
+{
+    "title": "E. Domino Principle",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya is interested in arranging dominoes. He is fed up with common dominoes and he uses the dominoes of different heights. He put <span class=\"tex-span\"><i>n</i></span> dominoes on the table along one axis, going from left to right. Every domino stands perpendicular to that axis so that the axis passes through the center of its base. The <span class=\"tex-span\"><i>i</i></span>-th domino has the coordinate <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and the height <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\"><i>i</i></sub></span>. Now Vasya wants to learn for every domino, how many dominoes will fall if he pushes it to the right. Help him do that. </p><p>Consider that a domino falls if it is touched strictly above the base. In other words, the fall of the domino with the initial coordinate <span class=\"tex-span\"><i>x</i></span> and height <span class=\"tex-span\"><i>h</i></span> leads to the fall of all dominoes on the segment <span class=\"tex-span\">[<i>x</i>\u2009+\u20091,\u2009<i>x</i>\u2009+\u2009<i>h</i>\u2009-\u20091]</span>.</p><center><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6be8a0bab99fd497cc3eba6b86f7f0cf07804cea.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) which is the number of dominoes. Then follow <span class=\"tex-span\"><i>n</i></span> lines containing two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">8</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">8</sup>,\u20092\u2009\u2264\u2009<i>h</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">8</sup></span>) each, which are the coordinate and height of every domino. No two dominoes stand on one point.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> space-separated numbers <span class=\"tex-span\"><i>z</i><sub class=\"lower-index\"><i>i</i></sub></span> \u2014 the number of dominoes that will fall if Vasya pushes the <span class=\"tex-span\"><i>i</i></span>-th domino to the right (including the domino itself).</p>",
+    "samples": [
+        {
+            "input": "4<br/>16 5<br/>20 5<br/>10 10<br/>18 2<br/>",
+            "output": "3 1 4 1 "
+        },
+        {
+            "input": "4<br/>0 10<br/>1 5<br/>9 10<br/>15 10<br/>",
+            "output": "4 1 2 1 "
+        }
+    ],
+    "note": null,
+    "contestId": 56,
+    "index": "E",
+    "name": "Domino Principle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "sortings"
+    ],
+    "solvedCount": 2235
+}

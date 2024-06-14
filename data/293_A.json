@@ -1,0 +1,46 @@
+{
+    "title": "A. Weird Game",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Yaroslav, Andrey and Roman can play cubes for hours and hours. But the game is for three, so when Roman doesn't show up, Yaroslav and Andrey play another game. </p><p>Roman leaves a word for each of them. Each word consists of <span class=\"tex-span\">2\u00b7<i>n</i></span> binary characters \"<span class=\"tex-font-style-tt\">0</span>\" or \"<span class=\"tex-font-style-tt\">1</span>\". After that the players start moving in turns. Yaroslav moves first. During a move, a player must choose an integer from 1 to <span class=\"tex-span\">2\u00b7<i>n</i></span>, which hasn't been chosen by anybody up to that moment. Then the player takes a piece of paper and writes out the corresponding character from his string. </p><p>Let's represent Yaroslav's word as <span class=\"tex-span\"><i>s</i>\u2009=\u2009<i>s</i><sub class=\"lower-index\">1</sub><i>s</i><sub class=\"lower-index\">2</sub>... <i>s</i><sub class=\"lower-index\">2<i>n</i></sub></span>. Similarly, let's represent Andrey's word as <span class=\"tex-span\"><i>t</i>\u2009=\u2009<i>t</i><sub class=\"lower-index\">1</sub><i>t</i><sub class=\"lower-index\">2</sub>... <i>t</i><sub class=\"lower-index\">2<i>n</i></sub></span>. Then, if Yaroslav choose number <span class=\"tex-span\"><i>k</i></span> during his move, then he is going to write out character <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>k</i></sub></span> on the piece of paper. Similarly, if Andrey choose number <span class=\"tex-span\"><i>r</i></span> during his move, then he is going to write out character <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>r</i></sub></span> on the piece of paper.</p><p>The game finishes when no player can make a move. After the game is over, Yaroslav makes some integer from the characters written on his piece of paper (Yaroslav can arrange these characters as he wants). Andrey does the same. The resulting numbers can contain leading zeroes. The person with the largest number wins. If the numbers are equal, the game ends with a draw.</p><p>You are given two strings <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span>. Determine the outcome of the game provided that Yaroslav and Andrey play optimally well.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>). The second line contains string <span class=\"tex-span\"><i>s</i></span> \u2014 Yaroslav's word. The third line contains string <span class=\"tex-span\"><i>t</i></span> \u2014 Andrey's word.</p><p>It is guaranteed that both words consist of <span class=\"tex-span\">2\u00b7<i>n</i></span> characters \"<span class=\"tex-font-style-tt\">0</span>\" and \"<span class=\"tex-font-style-tt\">1</span>\".</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">First</span>\", if both players play optimally well and Yaroslav wins. If Andrey wins, print \"<span class=\"tex-font-style-tt\">Second</span>\" and if the game ends with a draw, print \"<span class=\"tex-font-style-tt\">Draw</span>\". Print the words without the quotes.</p>",
+    "samples": [
+        {
+            "input": "2<br/>0111<br/>0001<br/>",
+            "output": "First<br/>"
+        },
+        {
+            "input": "3<br/>110110<br/>001001<br/>",
+            "output": "First<br/>"
+        },
+        {
+            "input": "3<br/>111000<br/>000111<br/>",
+            "output": "Draw<br/>"
+        },
+        {
+            "input": "4<br/>01010110<br/>00101101<br/>",
+            "output": "First<br/>"
+        },
+        {
+            "input": "4<br/>01100000<br/>10010011<br/>",
+            "output": "Second<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 293,
+    "index": "A",
+    "name": "Weird Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "games",
+        "greedy"
+    ],
+    "solvedCount": 2827
+}

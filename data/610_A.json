@@ -1,0 +1,34 @@
+{
+    "title": "A. Pasha and Stick",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Pasha has a wooden stick of some positive integer length <span class=\"tex-span\"><i>n</i></span>. He wants to perform exactly three cuts to get four parts of the stick. Each part must have some positive integer length and the sum of these lengths will obviously be <span class=\"tex-span\"><i>n</i></span>. </p><p>Pasha likes rectangles but hates squares, so he wonders, how many ways are there to split a stick into four parts so that it's possible to form a rectangle using these parts, but is impossible to form a square.</p><p>Your task is to help Pasha and count the number of such ways. Two ways to cut the stick are considered distinct if there exists some integer <span class=\"tex-span\"><i>x</i></span>, such that the number of parts of length <span class=\"tex-span\"><i>x</i></span> in the first way differ from the number of parts of length <span class=\"tex-span\"><i>x</i></span> in the second way.</p>",
+    "inputSpecification": "<p>The first line of the input contains a positive integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">9</sup></span>) \u2014 the length of Pasha's stick.</p>",
+    "outputSpecification": "<p>The output should contain a single integer\u00a0\u2014 the number of ways to split Pasha's stick into four parts of positive integer length so that it's possible to make a rectangle by connecting the ends of these parts, but is impossible to form a square. </p>",
+    "samples": [
+        {
+            "input": "6<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "20<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>There is only one way to divide the stick in the first sample {1, 1, 2, 2}.</p><p>Four ways to divide the stick in the second sample are {1, 1, 9, 9}, {2, 2, 8, 8}, {3, 3, 7, 7} and {4, 4, 6, 6}. Note that {5, 5, 5, 5} doesn't work.</p>",
+    "contestId": 610,
+    "index": "A",
+    "name": "Pasha and Stick",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "math"
+    ],
+    "solvedCount": 22282
+}

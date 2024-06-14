@@ -1,0 +1,38 @@
+{
+    "title": "A. Lucky Division",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-underline\">Petya loves lucky numbers. Everybody knows that lucky numbers are positive integers whose decimal representation contains only the lucky digits <span class=\"tex-font-style-bf\">4</span> and <span class=\"tex-font-style-bf\">7</span>. For example, numbers <span class=\"tex-font-style-bf\">47</span>, <span class=\"tex-font-style-bf\">744</span>, <span class=\"tex-font-style-bf\">4</span> are lucky and <span class=\"tex-font-style-bf\">5</span>, <span class=\"tex-font-style-bf\">17</span>, <span class=\"tex-font-style-bf\">467</span> are not.</span></p><p>Petya calls a number <span class=\"tex-font-style-underline\">almost lucky</span> if it could be evenly divided by some lucky number. Help him find out if the given number <span class=\"tex-span\"><i>n</i></span> is almost lucky.</p>",
+    "inputSpecification": "<p>The single line contains an integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000)</span> \u2014 the number that needs to be checked.</p>",
+    "outputSpecification": "<p>In the only line print \"<span class=\"tex-font-style-tt\">YES</span>\" (without the quotes), if number <span class=\"tex-span\"><i>n</i></span> is almost lucky. Otherwise, print \"<span class=\"tex-font-style-tt\">NO</span>\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "47<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "16<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "78<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>Note that all lucky numbers are almost lucky as any number is evenly divisible by itself.</p><p>In the first sample <span class=\"tex-span\">47</span> is a lucky number. In the second sample <span class=\"tex-span\">16</span> is divisible by <span class=\"tex-span\">4</span>.</p>",
+    "contestId": 122,
+    "index": "A",
+    "name": "Lucky Division",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "number theory"
+    ],
+    "solvedCount": 117651
+}

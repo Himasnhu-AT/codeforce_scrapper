@@ -1,0 +1,34 @@
+{
+    "title": "B. Progress Bar",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A progress bar is an element of graphical interface that displays the progress of a process for this very moment before it is completed. Let's take a look at the following form of such a bar.</p><p>A bar is represented as <span class=\"tex-span\"><i>n</i></span> squares, located in line. To add clarity, let's number them with positive integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> from the left to the right. Each square has saturation (<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> for the <span class=\"tex-span\"><i>i</i></span>-th square), which is measured by an integer from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>k</i></span>. When the bar for some <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>) is displayed, squares <span class=\"tex-span\">1,\u20092,\u2009... ,\u2009<i>i</i>\u2009-\u20091</span> has the saturation <span class=\"tex-span\"><i>k</i></span>, squares <span class=\"tex-span\"><i>i</i>\u2009+\u20091,\u2009<i>i</i>\u2009+\u20092,\u2009... ,\u2009<i>n</i></span> has the saturation <span class=\"tex-span\">0</span>, and the saturation of the square <span class=\"tex-span\"><i>i</i></span> can have any value from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>k</i></span>.</p><p>So some first squares of the progress bar always have the saturation <span class=\"tex-span\"><i>k</i></span>. Some last squares always have the saturation <span class=\"tex-span\">0</span>. And there is no more than one square that has the saturation different from <span class=\"tex-span\">0</span> and <span class=\"tex-span\"><i>k</i></span>.</p><p>The degree of the process's completion is measured in percents. Let the process be <span class=\"tex-span\"><i>t</i></span>% completed. Then the following inequation is fulfilled: </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b409a1d17f3e5356e7e72566ff1b99fd47ec1b59.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>An example of such a bar can be seen on the picture.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c5c3951d407b9d376bf210a8c1a4010bfedcaf36.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>For the given <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>k</i></span>, <span class=\"tex-span\"><i>t</i></span> determine the measures of saturation for all the squares <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> of the progress bar.</p>",
+    "inputSpecification": "<p>We are given 3 space-separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>k</i></span>, <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>k</i>\u2009\u2264\u2009100</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>t</i>\u2009\u2264\u2009100</span>).</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> numbers. The <span class=\"tex-span\"><i>i</i></span>-th of them should be equal to <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p>",
+    "samples": [
+        {
+            "input": "10 10 54<br/>",
+            "output": "10 10 10 10 10 4 0 0 0 0 "
+        },
+        {
+            "input": "11 13 37<br/>",
+            "output": "13 13 13 13 0 0 0 0 0 0 0 "
+        }
+    ],
+    "note": null,
+    "contestId": 71,
+    "index": "B",
+    "name": "Progress Bar",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 4396
+}

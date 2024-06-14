@@ -1,0 +1,34 @@
+{
+    "title": "A. Calculating Function",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>For a positive integer <span class=\"tex-span\"><i>n</i></span> let's define a function <span class=\"tex-span\"><i>f</i></span>:</p><p><span class=\"tex-span\"><i>f</i>(<i>n</i>)\u2009=\u2009\u2009-\u20091\u2009+\u20092\u2009-\u20093\u2009+\u2009..\u2009+\u2009(\u2009-\u20091)<sup class=\"upper-index\"><i>n</i></sup><i>n</i></span> </p><p>Your task is to calculate <span class=\"tex-span\"><i>f</i>(<i>n</i>)</span> for a given integer <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "inputSpecification": "<p>The single line contains the positive integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">15</sup></span>).</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>f</i>(<i>n</i>)</span> in a single line.</p>",
+    "samples": [
+        {
+            "input": "4<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "5<br/>",
+            "output": "-3<br/>"
+        }
+    ],
+    "note": "<p><span class=\"tex-span\"><i>f</i>(4)\u2009=\u2009\u2009-\u20091\u2009+\u20092\u2009-\u20093\u2009+\u20094\u2009=\u20092</span></p><p><span class=\"tex-span\"><i>f</i>(5)\u2009=\u2009\u2009-\u20091\u2009+\u20092\u2009-\u20093\u2009+\u20094\u2009-\u20095\u2009=\u2009\u2009-\u20093</span></p>",
+    "contestId": 486,
+    "index": "A",
+    "name": "Calculating Function",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 111047
+}

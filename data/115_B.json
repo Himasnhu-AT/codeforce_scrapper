@@ -1,0 +1,38 @@
+{
+    "title": "B. Lawnmower",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have a garden consisting entirely of grass and weeds. Your garden is described by an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> grid, with rows numbered <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> from top to bottom, and columns <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span> from left to right. Each cell is identified by a pair <span class=\"tex-span\">(<i>r</i>,\u2009<i>c</i>)</span> which means that the cell is located at row <span class=\"tex-span\"><i>r</i></span> and column <span class=\"tex-span\"><i>c</i></span>. Each cell may contain either grass or weeds. For example, a <span class=\"tex-span\">4\u2009\u00d7\u20095</span> garden may look as follows (empty cells denote grass):</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/50eb313baaf29ad5684e742751bccc46a2b5445b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>You have a land-mower with you to mow all the weeds. Initially, you are standing with your lawnmower at the top-left corner of the garden. That is, at cell <span class=\"tex-span\">(1,\u20091)</span>. At any moment of time you are facing a certain direction \u2014 either left or right. And initially, you face right.</p><p>In one move you can do either one of these:</p><p>1) Move one cell in the direction that you are facing.</p><ul><p> </p><li> if you are facing right: move from cell <span class=\"tex-span\">(<i>r</i>,\u2009<i>c</i>)</span> to cell <span class=\"tex-span\">(<i>r</i>,\u2009<i>c</i>\u2009+\u20091)</span><p> </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c276e1bed94be3719d1c66b91ee47c682881a1a1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p> </p></li><li> if you are facing left: move from cell <span class=\"tex-span\">(<i>r</i>,\u2009<i>c</i>)</span> to cell <span class=\"tex-span\">(<i>r</i>,\u2009<i>c</i>\u2009-\u20091)</span><p> </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/db006bc9e0faafd4c87d6af4370af935b196c207.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center></li></ul> 2) Move one cell down (that is, from cell <span class=\"tex-span\">(<i>r</i>,\u2009<i>c</i>)</span> to cell <span class=\"tex-span\">(<i>r</i>\u2009+\u20091,\u2009<i>c</i>)</span>), and change your direction to the opposite one.<ul><p> </p><li> if you were facing right previously, you will face left<p> </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6419636d10a92c8e4e1a225909f27a8d288a9e6a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p> </p></li><li> if you were facing left previously, you will face right<p> </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8235e5e624726e6623d22e8e7de53a91868abfac.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> </li></ul><p>You are not allowed to leave the garden. Weeds will be mowed if you and your lawnmower are standing at the cell containing the weeds (your direction doesn't matter). This action isn't counted as a move.</p><p>What is the minimum number of moves required to mow all the weeds?</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009150</span>) \u2014 the number of rows and columns respectively. Then follow <span class=\"tex-span\"><i>n</i></span> lines containing <span class=\"tex-span\"><i>m</i></span> characters each \u2014 the content of the grid. \"<span class=\"tex-font-style-tt\">G</span>\" means that this cell contains grass. \"<span class=\"tex-font-style-tt\">W</span>\" means that this cell contains weeds. </p><p>It is guaranteed that the top-left corner of the grid will contain grass.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the minimum number of moves required to mow all the weeds.</p>",
+    "samples": [
+        {
+            "input": "4 5<br/>GWGGW<br/>GGWGG<br/>GWGGG<br/>WGGGG<br/>",
+            "output": "11<br/>"
+        },
+        {
+            "input": "3 3<br/>GWW<br/>WWW<br/>WWG<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "1 1<br/>G<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>For the first example, this is the picture of the initial state of the grid:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/7d962d3c57565b1f285036e43348e3382d156169.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>A possible solution is by mowing the weeds as illustrated below:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6f352e6c8e92492cca3507ca4252f53da66f4a4e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 115,
+    "index": "B",
+    "name": "Lawnmower",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 2436
+}

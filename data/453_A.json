@@ -1,0 +1,37 @@
+{
+    "title": "A. Little Pony and Expected Maximum",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Twilight Sparkle was playing Ludo with her friends Rainbow Dash, Apple Jack and Flutter Shy. But she kept losing. Having returned to the castle, Twilight Sparkle became interested in the dice that were used in the game.</p><p>The dice has <span class=\"tex-span\"><i>m</i></span> faces: the first face of the dice contains a dot, the second one contains two dots, and so on, the <span class=\"tex-span\"><i>m</i></span>-th face contains <span class=\"tex-span\"><i>m</i></span> dots. Twilight Sparkle is sure that when the dice is tossed, each face appears with probability <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4a6dcb043a4e66ef2bd9dd59ca7be7f0048f2ceb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Also she knows that each toss is independent from others. Help her to calculate the expected maximum number of dots she could get after tossing the dice <span class=\"tex-span\"><i>n</i></span> times.</p>",
+    "inputSpecification": "<p>A single line contains two integers <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>,\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p>",
+    "outputSpecification": "<p>Output a single real number corresponding to the expected maximum. The answer will be considered correct if its relative or absolute error doesn't exceed <span class=\"tex-span\">10\u2009<sup class=\"upper-index\">\u2009-\u20094</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "6 1<br/>",
+            "output": "3.500000000000<br/>"
+        },
+        {
+            "input": "6 3<br/>",
+            "output": "4.958333333333<br/>"
+        },
+        {
+            "input": "2 2<br/>",
+            "output": "1.750000000000<br/>"
+        }
+    ],
+    "note": "<p>Consider the third test example. If you've made two tosses:</p><ol> <li> You can get 1 in the first toss, and 2 in the second. Maximum equals to 2. </li><li> You can get 1 in the first toss, and 1 in the second. Maximum equals to 1. </li><li> You can get 2 in the first toss, and 1 in the second. Maximum equals to 2. </li><li> You can get 2 in the first toss, and 2 in the second. Maximum equals to 2. </li></ol><p>The probability of each outcome is 0.25, that is expectation equals to: </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0c198ca13cd3b68986a83dd1bb24ec5f6be5a8ca.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>You can read about expectation using the following link: <span class=\"tex-font-style-tt\">http://en.wikipedia.org/wiki/Expected_value</span></p>",
+    "contestId": 453,
+    "index": "A",
+    "name": "Little Pony and Expected Maximum",
+    "type": "PROGRAMMING",
+    "tags": [
+        "probabilities"
+    ],
+    "solvedCount": 10041
+}

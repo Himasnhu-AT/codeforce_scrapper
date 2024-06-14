@@ -1,0 +1,37 @@
+{
+    "title": "A. Game With Sticks",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>After winning gold and silver in IOI 2014, Akshat and Malvika want to have some fun. Now they are playing a game on a grid made of <span class=\"tex-span\"><i>n</i></span> horizontal and <span class=\"tex-span\"><i>m</i></span> vertical sticks.</p><p>An <span class=\"tex-font-style-it\">intersection point</span> is any point on the grid which is formed by the intersection of one horizontal stick and one vertical stick.</p><p>In the grid shown below, <span class=\"tex-span\"><i>n</i>\u2009=\u20093</span> and <span class=\"tex-span\"><i>m</i>\u2009=\u20093</span>. There are <span class=\"tex-span\"><i>n</i>\u2009+\u2009<i>m</i>\u2009=\u20096</span> sticks in total (horizontal sticks are shown in red and vertical sticks are shown in green). There are <span class=\"tex-span\"><i>n</i>\u00b7<i>m</i>\u2009=\u20099</span> intersection points, numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">9</span>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/35872993e9eebb348b3a53cdab731e61b66bd30c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The rules of the game are very simple. The players move in turns. Akshat won gold, so he makes the first move. During his/her move, a player must choose any remaining intersection point and remove from the grid all sticks which pass through this point. A player will lose the game if he/she cannot make a move (i.e. there are no intersection points remaining on the grid at his/her move).</p><p>Assume that both players play optimally. Who will win the game?</p>",
+    "inputSpecification": "<p>The first line of input contains two space-separated integers, <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>).</p>",
+    "outputSpecification": "<p>Print a single line containing \"<span class=\"tex-font-style-tt\">Akshat</span>\" or \"<span class=\"tex-font-style-tt\">Malvika</span>\" (without the quotes), depending on the winner of the game.</p>",
+    "samples": [
+        {
+            "input": "2 2<br/>",
+            "output": "Malvika<br/>"
+        },
+        {
+            "input": "2 3<br/>",
+            "output": "Malvika<br/>"
+        },
+        {
+            "input": "3 3<br/>",
+            "output": "Akshat<br/>"
+        }
+    ],
+    "note": "<p><span class=\"tex-font-style-it\">Explanation of the first sample:</span></p><p>The grid has four intersection points, numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">4</span>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/034c713c527471648741d4d10ca115ec786c733e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>If Akshat chooses intersection point <span class=\"tex-span\">1</span>, then he will remove two sticks (<span class=\"tex-span\">1\u2009-\u20092</span> and <span class=\"tex-span\">1\u2009-\u20093</span>). The resulting grid will look like this.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/91032c4c6be9d154543301439088de56e8c0cf8f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Now there is only one remaining intersection point (i.e. <span class=\"tex-span\">4</span>). Malvika must choose it and remove both remaining sticks. After her move the grid will be empty.</p><p>In the empty grid, Akshat cannot make any move, hence he will lose.</p><p>Since all <span class=\"tex-span\">4</span> intersection points of the grid are equivalent, Akshat will lose no matter which one he picks.</p>",
+    "contestId": 451,
+    "index": "A",
+    "name": "Game With Sticks",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 63319
+}

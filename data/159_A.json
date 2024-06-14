@@ -1,0 +1,35 @@
+{
+    "title": "A. Friends or Not",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarpus has a hobby \u2014 he develops an unusual social network. His work is almost completed, and there is only one more module to implement \u2014 the module which determines friends. Oh yes, in this social network one won't have to add friends manually! Pairs of friends are deduced in the following way. Let's assume that user <span class=\"tex-span\"><i>A</i></span> sent user <span class=\"tex-span\"><i>B</i></span> a message at time <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub></span>, and user <span class=\"tex-span\"><i>B</i></span> sent user <span class=\"tex-span\"><i>A</i></span> a message at time <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">2</sub></span>. If <span class=\"tex-span\">0\u2009&lt;\u2009<i>t</i><sub class=\"lower-index\">2</sub>\u2009-\u2009<i>t</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>d</i></span>, then user <span class=\"tex-span\"><i>B</i></span>'s message was <span class=\"tex-font-style-it\">an answer</span> to user <span class=\"tex-span\"><i>A</i></span>'s one. Users <span class=\"tex-span\"><i>A</i></span> and <span class=\"tex-span\"><i>B</i></span> are considered to be friends if <span class=\"tex-span\"><i>A</i></span> answered at least one <span class=\"tex-span\"><i>B</i></span>'s message or <span class=\"tex-span\"><i>B</i></span> answered at least one <span class=\"tex-span\"><i>A</i></span>'s message.</p><p>You are given the log of messages in chronological order and a number <span class=\"tex-span\"><i>d</i></span>. Find all pairs of users who will be considered to be friends.</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>d</i>\u2009\u2264\u20091000</span>). The next <span class=\"tex-span\"><i>n</i></span> lines contain the messages log. The <span class=\"tex-span\"><i>i</i></span>-th line contains one line of the log formatted as \"<span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\"><i>B</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span>\" (without the quotes), which means that user <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>i</i></sub></span> sent a message to user <span class=\"tex-span\"><i>B</i><sub class=\"lower-index\"><i>i</i></sub></span> at time <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>). <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>B</i><sub class=\"lower-index\"><i>i</i></sub></span> are non-empty strings at most <span class=\"tex-span\">20</span> characters long, consisting of lowercase letters ('<span class=\"tex-font-style-tt\">a</span>' ... '<span class=\"tex-font-style-tt\">z</span>'), and <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> is an integer (<span class=\"tex-span\">0\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910000</span>). It is guaranteed that the lines are given in non-decreasing order of <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span>'s and that no user sent a message to himself. The elements in the lines are separated by single spaces.</p>",
+    "outputSpecification": "<p>In the first line print integer <span class=\"tex-span\"><i>k</i></span> \u2014 the number of pairs of friends. In the next <span class=\"tex-span\"><i>k</i></span> lines print pairs of friends as \"<span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\"><i>B</i><sub class=\"lower-index\"><i>i</i></sub></span>\" (without the quotes). You can print users in pairs and the pairs themselves in any order. Each pair must be printed exactly once.</p>",
+    "samples": [
+        {
+            "input": "4 1<br/>vasya petya 1<br/>petya vasya 2<br/>anya ivan 2<br/>ivan anya 4<br/>",
+            "output": "1<br/>petya vasya<br/>"
+        },
+        {
+            "input": "1 1000<br/>a b 0<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample test case Vasya and Petya are friends because their messages' sending times are one second apart. Anya and Ivan are not, because their messages' sending times differ by more than one second.</p>",
+    "contestId": 159,
+    "index": "A",
+    "name": "Friends or Not",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 2461
+}

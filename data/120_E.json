@@ -1,0 +1,30 @@
+{
+    "title": "E. Put Knight!",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Petya and Gena play a very interesting game \"Put a Knight!\" on a chessboard <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>n</i></span> in size. In this game they take turns to put chess pieces called \"knights\" on the board so that no two knights could threat each other. A knight located in square <span class=\"tex-span\">(<i>r</i>,\u2009<i>c</i>)</span> can threat squares <span class=\"tex-span\">(<i>r</i>\u2009-\u20091,\u2009<i>c</i>\u2009+\u20092)</span>, <span class=\"tex-span\">(<i>r</i>\u2009-\u20091,\u2009<i>c</i>\u2009-\u20092)</span>, <span class=\"tex-span\">(<i>r</i>\u2009+\u20091,\u2009<i>c</i>\u2009+\u20092)</span>, <span class=\"tex-span\">(<i>r</i>\u2009+\u20091,\u2009<i>c</i>\u2009-\u20092)</span>, <span class=\"tex-span\">(<i>r</i>\u2009-\u20092,\u2009<i>c</i>\u2009+\u20091)</span>, <span class=\"tex-span\">(<i>r</i>\u2009-\u20092,\u2009<i>c</i>\u2009-\u20091)</span>, <span class=\"tex-span\">(<i>r</i>\u2009+\u20092,\u2009<i>c</i>\u2009+\u20091)</span> and <span class=\"tex-span\">(<i>r</i>\u2009+\u20092,\u2009<i>c</i>\u2009-\u20091)</span> (some of the squares may be located outside the chessboard). The player who can't put a new knight during his move loses. Determine which player wins considering that both players play optimally well and Petya starts.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>T</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>T</i>\u2009\u2264\u2009100</span>) \u2014 the number of boards, for which you should determine the winning player. Next <span class=\"tex-span\"><i>T</i></span> lines contain <span class=\"tex-span\"><i>T</i></span> integers <span class=\"tex-span\"><i>n</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910000</span>) \u2014 the sizes of the chessboards.</p>",
+    "outputSpecification": "<p>For each <span class=\"tex-span\"><i>n</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u00d7\u2009<i>n</i><sub class=\"lower-index\"><i>i</i></sub></span> board print on a single line \"<span class=\"tex-font-style-tt\">0</span>\" if Petya wins considering both players play optimally well. Otherwise, print \"<span class=\"tex-font-style-tt\">1</span>\".</p>",
+    "samples": [
+        {
+            "input": "2<br/>2<br/>1<br/>",
+            "output": "1<br/>0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 120,
+    "index": "E",
+    "name": "Put Knight!",
+    "type": "PROGRAMMING",
+    "tags": [
+        "games",
+        "math"
+    ],
+    "solvedCount": 2653
+}

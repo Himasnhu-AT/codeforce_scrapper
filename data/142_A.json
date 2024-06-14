@@ -1,0 +1,38 @@
+{
+    "title": "A. Help Farmer",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Once upon a time in the Kingdom of Far Far Away lived Sam the Farmer. Sam had a cow named Dawn and he was deeply attached to her. Sam would spend the whole summer stocking hay to feed Dawn in winter. Sam scythed hay and put it into haystack. As Sam was a bright farmer, he tried to make the process of storing hay simpler and more convenient to use. He collected the hay into cubical hay blocks of the same size. Then he stored the blocks in his barn. After a summer spent in hard toil Sam stored <span class=\"tex-span\"><i>A</i>\u00b7<i>B</i>\u00b7<i>C</i></span> hay blocks and stored them in a barn as a rectangular parallelepiped <span class=\"tex-span\"><i>A</i></span> layers high. Each layer had <span class=\"tex-span\"><i>B</i></span> rows and each row had <span class=\"tex-span\"><i>C</i></span> blocks.</p><p>At the end of the autumn Sam came into the barn to admire one more time the hay he'd been stacking during this hard summer. Unfortunately, Sam was horrified to see that the hay blocks had been carelessly scattered around the barn. The place was a complete mess. As it turned out, thieves had sneaked into the barn. They completely dissembled and took away a layer of blocks from the parallelepiped's front, back, top and sides. As a result, the barn only had a parallelepiped containing <span class=\"tex-span\">(<i>A</i>\u2009-\u20091)\u2009\u00d7\u2009(<i>B</i>\u2009-\u20092)\u2009\u00d7\u2009(<i>C</i>\u2009-\u20092)</span> hay blocks. To hide the evidence of the crime, the thieves had dissembled the parallelepiped into single <span class=\"tex-span\">1\u2009\u00d7\u20091\u2009\u00d7\u20091</span> blocks and scattered them around the barn. After the theft Sam counted <span class=\"tex-span\"><i>n</i></span> hay blocks in the barn but he forgot numbers <span class=\"tex-span\"><i>A</i></span>, <span class=\"tex-span\"><i>B</i></span> \u0438 <span class=\"tex-span\"><i>C</i></span>.</p><p>Given number <span class=\"tex-span\"><i>n</i></span>, find the minimally possible and maximally possible number of stolen hay blocks.</p>",
+    "inputSpecification": "<p>The only line contains integer <span class=\"tex-span\"><i>n</i></span> from the problem's statement (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print space-separated minimum and maximum number of hay blocks that could have been stolen by the thieves.</p><p>Note that the answer to the problem can be large enough, so you must use the 64-bit integer type for calculations. Please, do not use the %lld specificator to read or write 64-bit integers in \u0421++. It is preferred to use cin, cout streams or the %I64d specificator.</p>",
+    "samples": [
+        {
+            "input": "4<br/>",
+            "output": "28 41<br/>"
+        },
+        {
+            "input": "7<br/>",
+            "output": "47 65<br/>"
+        },
+        {
+            "input": "12<br/>",
+            "output": "48 105<br/>"
+        }
+    ],
+    "note": "<p>Let's consider the first sample test. If initially Sam has a parallelepiped consisting of <span class=\"tex-span\">32\u2009=\u20092\u2009\u00d7\u20094\u2009\u00d7\u20094</span> hay blocks in his barn, then after the theft the barn has <span class=\"tex-span\">4\u2009=\u2009(2\u2009-\u20091)\u2009\u00d7\u2009(4\u2009-\u20092)\u2009\u00d7\u2009(4\u2009-\u20092)</span> hay blocks left. Thus, the thieves could have stolen <span class=\"tex-span\">32\u2009-\u20094\u2009=\u200928</span> hay blocks. If Sam initially had a parallelepiped consisting of <span class=\"tex-span\">45\u2009=\u20095\u2009\u00d7\u20093\u2009\u00d7\u20093</span> hay blocks in his barn, then after the theft the barn has <span class=\"tex-span\">4\u2009=\u2009(5\u2009-\u20091)\u2009\u00d7\u2009(3\u2009-\u20092)\u2009\u00d7\u2009(3\u2009-\u20092)</span> hay blocks left. Thus, the thieves could have stolen <span class=\"tex-span\">45\u2009-\u20094\u2009=\u200941</span> hay blocks. No other variants of the blocks' initial arrangement (that leave Sam with exactly 4 blocks after the theft) can permit the thieves to steal less than 28 or more than 41 blocks.</p>",
+    "contestId": 142,
+    "index": "A",
+    "name": "Help Farmer",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "math"
+    ],
+    "solvedCount": 2583
+}

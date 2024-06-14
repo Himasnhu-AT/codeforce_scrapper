@@ -1,0 +1,40 @@
+{
+    "title": "D. Cunning Gena",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A boy named Gena really wants to get to the \"Russian Code Cup\" finals, or at least get a t-shirt. But the offered problems are too complex, so he made an arrangement with his <span class=\"tex-span\"><i>n</i></span> friends that they will solve the problems for him.</p><p>The participants are offered <span class=\"tex-span\"><i>m</i></span> problems on the contest. For each friend, Gena knows what problems he can solve. But Gena's friends won't agree to help Gena for nothing: the <span class=\"tex-span\"><i>i</i></span>-th friend asks Gena <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> rubles for his help <span class=\"tex-font-style-bf\">in solving all the problems</span> he can. Also, the friend agreed to write a code for Gena only if Gena's computer is connected to at least <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>i</i></sub></span> monitors, each monitor costs <span class=\"tex-span\"><i>b</i></span> rubles.</p><p>Gena is careful with money, so he wants to spend as little money as possible to solve all the problems. Help Gena, tell him how to spend the smallest possible amount of money. Initially, there's no monitors connected to Gena's computer.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>; <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200920</span>; <span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the number of Gena's friends, the number of problems and the cost of a single monitor.</p><p>The following <span class=\"tex-span\">2<i>n</i></span> lines describe the friends. Lines number <span class=\"tex-span\">2<i>i</i></span> and <span class=\"tex-span\">(2<i>i</i>\u2009+\u20091)</span> contain the information about the <span class=\"tex-span\"><i>i</i></span>-th friend. The <span class=\"tex-span\">2<i>i</i></span>-th line contains three integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>m</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>; <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>; <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>m</i></span>)\u00a0\u2014 the desired amount of money, monitors and the number of problems the friend can solve. The <span class=\"tex-span\">(2<i>i</i>\u2009+\u20091)</span>-th line contains <span class=\"tex-span\"><i>m</i><sub class=\"lower-index\"><i>i</i></sub></span> distinct positive integers\u00a0\u2014 the numbers of problems that the <span class=\"tex-span\"><i>i</i></span>-th friend can solve. The problems are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span>.</p>",
+    "outputSpecification": "<p>Print the minimum amount of money Gena needs to spend to solve all the problems. Or print -1, if this cannot be achieved.</p>",
+    "samples": [
+        {
+            "input": "2 2 1<br/>100 1 1<br/>2<br/>100 2 1<br/>1<br/>",
+            "output": "202<br/>"
+        },
+        {
+            "input": "3 2 5<br/>100 1 1<br/>1<br/>100 1 1<br/>2<br/>200 1 2<br/>1 2<br/>",
+            "output": "205<br/>"
+        },
+        {
+            "input": "1 2 1<br/>1 1 1<br/>1<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 417,
+    "index": "D",
+    "name": "Cunning Gena",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 2383
+}

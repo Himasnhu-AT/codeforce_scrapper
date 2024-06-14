@@ -1,0 +1,43 @@
+{
+    "title": "B. New Year and Old Property",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The year 2015 is almost over.</p><p>Limak is a little polar bear. He has recently learnt about the binary system. He noticed that the passing year has exactly one zero in its representation in the binary system\u00a0\u2014 <span class=\"tex-span\">2015<sub class=\"lower-index\">10</sub>\u2009=\u200911111011111<sub class=\"lower-index\">2</sub></span>. Note that he doesn't care about the number of zeros in the decimal representation.</p><p>Limak chose some interval of years. He is going to count all years from this interval that have exactly one zero in the binary representation. Can you do it faster?</p><p>Assume that all positive integers are always written without leading zeros.</p>",
+    "inputSpecification": "<p>The only line of the input contains two integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>)\u00a0\u2014 the first year and the last year in Limak's interval respectively.</p>",
+    "outputSpecification": "<p>Print one integer\u00a0\u2013 the number of years Limak will count in his chosen interval.</p>",
+    "samples": [
+        {
+            "input": "5 10<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "2015 2015<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "100 105<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "72057594000000000 72057595000000000<br/>",
+            "output": "26<br/>"
+        }
+    ],
+    "note": "<p>In the first sample Limak's interval contains numbers <span class=\"tex-span\">5<sub class=\"lower-index\">10</sub>\u2009=\u2009101<sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\">6<sub class=\"lower-index\">10</sub>\u2009=\u2009110<sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\">7<sub class=\"lower-index\">10</sub>\u2009=\u2009111<sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\">8<sub class=\"lower-index\">10</sub>\u2009=\u20091000<sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\">9<sub class=\"lower-index\">10</sub>\u2009=\u20091001<sub class=\"lower-index\">2</sub></span> and <span class=\"tex-span\">10<sub class=\"lower-index\">10</sub>\u2009=\u20091010<sub class=\"lower-index\">2</sub></span>. Two of them (<span class=\"tex-span\">101<sub class=\"lower-index\">2</sub></span> and <span class=\"tex-span\">110<sub class=\"lower-index\">2</sub></span>) have the described property.</p>",
+    "contestId": 611,
+    "index": "B",
+    "name": "New Year and Old Property",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 9842
+}

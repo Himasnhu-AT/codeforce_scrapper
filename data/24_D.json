@@ -1,0 +1,35 @@
+{
+    "title": "D. Broken robot",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You received as a gift a very clever robot walking on a rectangular board. Unfortunately, you understood that it is broken and behaves rather strangely (randomly). The board consists of <span class=\"tex-span\"><i>N</i></span> rows and <span class=\"tex-span\"><i>M</i></span> columns of cells. The robot is initially at some cell on the <span class=\"tex-span\"><i>i</i></span>-th row and the <span class=\"tex-span\"><i>j</i></span>-th column. Then at every step the robot could go to some another cell. The aim is to go to the bottommost (<span class=\"tex-span\"><i>N</i></span>-th) row. The robot can stay at it's current cell, move to the left, move to the right, or move to the cell below the current. If the robot is in the leftmost column it cannot move to the left, and if it is in the rightmost column it cannot move to the right. At every step all possible moves are equally probable. Return the expected number of step to reach the bottommost row.</p>",
+    "inputSpecification": "<p>On the first line you will be given two space separated integers <span class=\"tex-span\"><i>N</i></span> and <span class=\"tex-span\"><i>M</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>,\u2009<i>M</i>\u2009\u2264\u20091000</span>). On the second line you will be given another two space separated integers <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>N</i>,\u20091\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>M</i></span>) \u2014 the number of the initial row and the number of the initial column. Note that, <span class=\"tex-span\">(1,\u20091)</span> is the upper left corner of the board and <span class=\"tex-span\">(<i>N</i>,\u2009<i>M</i>)</span> is the bottom right corner.</p>",
+    "outputSpecification": "<p>Output the expected number of steps on a line of itself with at least <span class=\"tex-span\">4</span> digits after the decimal point.</p>",
+    "samples": [
+        {
+            "input": "10 10<br/>10 4<br/>",
+            "output": "0.0000000000<br/>"
+        },
+        {
+            "input": "10 14<br/>5 14<br/>",
+            "output": "18.0038068653<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 24,
+    "index": "D",
+    "name": "Broken robot",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "math",
+        "probabilities"
+    ],
+    "solvedCount": 1812
+}

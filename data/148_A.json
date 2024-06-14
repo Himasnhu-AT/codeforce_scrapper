@@ -1,0 +1,35 @@
+{
+    "title": "A. Insomnia cure",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>\u00abOne dragon. Two dragon. Three dragon\u00bb, \u2014 the princess was counting. She had trouble falling asleep, and she got bored of counting lambs when she was nine.</p><p>However, just counting dragons was boring as well, so she entertained herself at best she could. Tonight she imagined that all dragons were here to steal her, and she was fighting them off. Every <span class=\"tex-span\"><i>k</i></span>-th dragon got punched in the face with a frying pan. Every <span class=\"tex-span\"><i>l</i></span>-th dragon got his tail shut into the balcony door. Every <span class=\"tex-span\"><i>m</i></span>-th dragon got his paws trampled with sharp heels. Finally, she threatened every <span class=\"tex-span\"><i>n</i></span>-th dragon to call her mom, and he withdrew in panic.</p><p>How many imaginary dragons suffered moral or physical damage tonight, if the princess counted a total of <span class=\"tex-span\"><i>d</i></span> dragons?</p>",
+    "inputSpecification": "<p>Input data contains integer numbers <span class=\"tex-span\"><i>k</i>,\u2009<i>l</i>,\u2009<i>m</i>,\u2009<i>n</i></span> and <span class=\"tex-span\"><i>d</i></span>, each number in a separate line (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>,\u2009<i>l</i>,\u2009<i>m</i>,\u2009<i>n</i>\u2009\u2264\u200910</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>d</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p>",
+    "outputSpecification": "<p>Output the number of damaged dragons.</p>",
+    "samples": [
+        {
+            "input": "1<br/>2<br/>3<br/>4<br/>12<br/>",
+            "output": "12<br/>"
+        },
+        {
+            "input": "2<br/>3<br/>4<br/>5<br/>24<br/>",
+            "output": "17<br/>"
+        }
+    ],
+    "note": "<p>In the first case every first dragon got punched with a frying pan. Some of the dragons suffered from other reasons as well, but the pan alone would be enough.</p><p>In the second case dragons 1, 7, 11, 13, 17, 19 and 23 escaped unharmed.</p>",
+    "contestId": 148,
+    "index": "A",
+    "name": "Insomnia cure",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 88248
+}

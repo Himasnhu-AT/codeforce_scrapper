@@ -1,0 +1,35 @@
+{
+    "title": "A. Vasya and Robot",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya has <span class=\"tex-span\"><i>n</i></span> items lying in a line. The items are consecutively numbered by numbers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> in such a way that the leftmost item has number <span class=\"tex-span\">1</span>, the rightmost item has number <span class=\"tex-span\"><i>n</i></span>. Each item has a weight, the <span class=\"tex-span\"><i>i</i></span>-th item weights <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> kilograms.</p><p>Vasya needs to collect all these items, however he won't do it by himself. He uses his brand new robot. The robot has two different arms \u2014 the left one and the right one. The robot can consecutively perform the following actions: </p><ol> <li> Take the leftmost item with the left hand and spend <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u00b7\u2009<i>l</i></span> energy units (<span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> is a weight of the leftmost item, <span class=\"tex-span\"><i>l</i></span> is some parameter). If the previous action was the same (left-hand), then the robot spends extra <span class=\"tex-span\"><i>Q</i><sub class=\"lower-index\"><i>l</i></sub></span> energy units; </li><li> Take the rightmost item with the right hand and spend <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u00b7\u2009<i>r</i></span> energy units (<span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>j</i></sub></span> is a weight of the rightmost item, <span class=\"tex-span\"><i>r</i></span> is some parameter). If the previous action was the same (right-hand), then the robot spends extra <span class=\"tex-span\"><i>Q</i><sub class=\"lower-index\"><i>r</i></sub></span> energy units; </li></ol><p>Naturally, Vasya wants to program the robot in a way that the robot spends as little energy as possible. He asked you to solve this problem. Your task is to find the minimum number of energy units robot spends to collect all items.</p>",
+    "inputSpecification": "<p>The first line contains five integers <span class=\"tex-span\"><i>n</i>,\u2009<i>l</i>,\u2009<i>r</i>,\u2009<i>Q</i><sub class=\"lower-index\"><i>l</i></sub>,\u2009<i>Q</i><sub class=\"lower-index\"><i>r</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>;\u20091\u2009\u2264\u2009<i>l</i>,\u2009<i>r</i>\u2009\u2264\u2009100;\u20091\u2009\u2264\u2009<i>Q</i><sub class=\"lower-index\"><i>l</i></sub>,\u2009<i>Q</i><sub class=\"lower-index\"><i>r</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup>)</span>.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\">1</sub>,\u2009<i>w</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>w</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100)</span>.</p>",
+    "outputSpecification": "<p>In the single line print a single number \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "3 4 4 19 1<br/>42 3 99<br/>",
+            "output": "576<br/>"
+        },
+        {
+            "input": "4 7 2 3 9<br/>1 2 3 4<br/>",
+            "output": "34<br/>"
+        }
+    ],
+    "note": "<p>Consider the first sample. As <span class=\"tex-span\"><i>l</i>\u2009=\u2009<i>r</i></span>, we can take an item in turns: first from the left side, then from the right one and last item from the left. In total the robot spends <span class=\"tex-span\">4\u00b742\u2009+\u20094\u00b799\u2009+\u20094\u00b73\u2009=\u2009576</span> energy units.</p><p>The second sample. The optimal solution is to take one item from the right, then one item from the left and two items from the right. In total the robot spends <span class=\"tex-span\">(2\u00b74)\u2009+\u2009(7\u00b71)\u2009+\u2009(2\u00b73)\u2009+\u2009(2\u00b72\u2009+\u20099)\u2009=\u200934</span> energy units.</p>",
+    "contestId": 354,
+    "index": "A",
+    "name": "Vasya and Robot",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 5407
+}

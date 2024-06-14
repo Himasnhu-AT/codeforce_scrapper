@@ -1,0 +1,33 @@
+{
+    "title": "C. Dreamoon and Sums",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Dreamoon loves summing up something for no reason. One day he obtains two integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> occasionally. He wants to calculate the sum of all <span class=\"tex-font-style-it\">nice</span> integers. Positive integer <span class=\"tex-span\"><i>x</i></span> is called <span class=\"tex-font-style-it\">nice</span> if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/747b668d05dce59a14c79f7573cf84d4af25536c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f2c3c9a716cef71591af317f816d0d89605de8cd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <span class=\"tex-span\"><i>k</i></span> is some <span class=\"tex-font-style-bf\">integer</span> number in range <span class=\"tex-span\">[1,\u2009<i>a</i>]</span>.</p><p>By <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1e6fb3a33a9e71aae77ea40b847b4751cad6a9b2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> we denote the <span class=\"tex-font-style-it\">quotient</span> of integer division of <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>. By <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/13ccd3404ca33681bef79230f269517728677a3a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> we denote the <span class=\"tex-font-style-it\">remainder</span> of integer division of <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>. You can read more about these operations here: <span class=\"tex-font-style-tt\">http://goo.gl/AcsXhT</span>.</p><p>The answer may be large, so please print its remainder modulo <span class=\"tex-span\">1\u2009000\u2009000\u2009007</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>). Can you compute it faster than Dreamoon?</p>",
+    "inputSpecification": "<p>The single line of the input contains two integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">7</sup></span>).</p>",
+    "outputSpecification": "<p>Print a single integer representing the answer modulo <span class=\"tex-span\">1\u2009000\u2009000\u2009007</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>).</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "2 2<br/>",
+            "output": "8<br/>"
+        }
+    ],
+    "note": "<p>For the first sample, there are no nice integers because <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/03b1dc6bae5180f8a2d8eb85789e8b393e585970.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is always zero.</p><p>For the second sample, the set of nice integers is <span class=\"tex-span\">{3,\u20095}</span>.</p>",
+    "contestId": 476,
+    "index": "C",
+    "name": "Dreamoon and Sums",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 5416
+}

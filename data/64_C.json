@@ -1,0 +1,36 @@
+{
+    "title": "C. Table",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The integer numbers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>nm</i></span> was put into rectangular table having <span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>m</i></span> columns. The numbers was put from left to right, from top to bottom, i.e. the first row contains integers <span class=\"tex-span\">1,\u20092,\u2009...,\u2009<i>m</i></span>, the second \u2014 <span class=\"tex-span\"><i>m</i>\u2009+\u20091,\u2009<i>m</i>\u2009+\u20092,\u2009...,\u20092\u2009*\u2009<i>m</i></span> and so on.</p><p>After it these numbers was written on the paper in another order: from top to bottom, from left to right. First, the numbers in the first column was written (from top to bottom) and so on.</p><p>Print the <span class=\"tex-span\"><i>k</i></span>-th number on the paper.</p>",
+    "inputSpecification": "<p>The only line in the input contains three integer numbers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200920000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>nm</i></span>).</p>",
+    "outputSpecification": "<p>Print the required number.</p>",
+    "samples": [
+        {
+            "input": "3 4 11<br/>",
+            "output": "8<br/>"
+        },
+        {
+            "input": "20000 10000 200000000<br/>",
+            "output": "200000000<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 64,
+    "index": "C",
+    "name": "Table",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "greedy",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 332
+}

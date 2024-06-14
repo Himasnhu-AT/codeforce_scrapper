@@ -1,0 +1,33 @@
+{
+    "title": "E. Sum and product",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given integers <span class=\"tex-span\"><i>N</i></span> and <span class=\"tex-span\"><i>D</i></span>. Find <span class=\"tex-span\"><i>N</i></span> positive integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>...<i>x</i><sub class=\"lower-index\"><i>N</i></sub></span> such that the difference of their product and their sum equals <span class=\"tex-span\"><i>D</i></span>.</p>",
+    "inputSpecification": "<p>The only line of input contains integers <span class=\"tex-span\"><i>N</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>N</i>\u2009\u2264\u20091000</span>) and <span class=\"tex-span\"><i>D</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>D</i>\u2009\u2264\u20091000</span>).</p>",
+    "outputSpecification": "<p>Output <span class=\"tex-span\"><i>N</i></span> integers that satisfy the given condition in non-decreasing order (in a single line, separated with spaces). Note that some numbers can be equal. Numbers printed by you must not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "2 1<br/>",
+            "output": "2 3<br/>"
+        },
+        {
+            "input": "3 5<br/>",
+            "output": "1 2 8<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 530,
+    "index": "E",
+    "name": "Sum and product",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 303
+}

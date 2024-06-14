@@ -1,0 +1,35 @@
+{
+    "title": "C. Find Pair",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've got another problem dealing with arrays. Let's consider an arbitrary sequence containing <span class=\"tex-span\"><i>n</i></span> (not necessarily different) integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>, ..., <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. We are interested in all possible pairs of numbers (<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>j</i></sub></span>), (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>,\u2009<i>j</i>\u2009\u2264\u2009<i>n</i></span>). In other words, let's consider all <span class=\"tex-span\"><i>n</i><sup class=\"upper-index\">2</sup></span> pairs of numbers, picked from the given array.</p><p>For example, in sequence <span class=\"tex-span\"><i>a</i>\u2009=\u2009{3,\u20091,\u20095}</span> are <span class=\"tex-span\">9</span> pairs of numbers: <span class=\"tex-span\">(3,\u20093),\u2009(3,\u20091),\u2009(3,\u20095),\u2009(1,\u20093),\u2009(1,\u20091),\u2009(1,\u20095),\u2009(5,\u20093),\u2009(5,\u20091),\u2009(5,\u20095)</span>.</p><p>Let's sort all resulting pairs lexicographically by non-decreasing. Let us remind you that pair (<span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>q</i><sub class=\"lower-index\">1</sub></span>) is <span class=\"tex-font-style-underline\">lexicographically less</span> than pair (<span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\"><i>q</i><sub class=\"lower-index\">2</sub></span>) only if either <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub></span> &lt; <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">2</sub></span>, or <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub></span> = <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">2</sub></span> and <span class=\"tex-span\"><i>q</i><sub class=\"lower-index\">1</sub></span> &lt; <span class=\"tex-span\"><i>q</i><sub class=\"lower-index\">2</sub></span>.</p><p>Then the sequence, mentioned above, will be sorted like that: <span class=\"tex-span\">(1,\u20091),\u2009(1,\u20093),\u2009(1,\u20095),\u2009(3,\u20091),\u2009(3,\u20093),\u2009(3,\u20095),\u2009(5,\u20091),\u2009(5,\u20093),\u2009(5,\u20095)</span></p><p>Let's number all the pair in the sorted list from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i><sup class=\"upper-index\">2</sup></span>. Your task is formulated like this: you should find the <span class=\"tex-span\"><i>k</i></span>-th pair in the ordered list of all possible pairs of the array you've been given.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i><sup class=\"upper-index\">2</sup></span>). The second line contains the array containing <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>, ..., <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>). The numbers in the array can coincide. All numbers are separated with spaces.</p><p>Please do not use the <span class=\"tex-font-style-tt\">%lld</span> specificator to read or write 64-bit integers in \u0421++. It is preferred to use <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span>, streams or the <span class=\"tex-font-style-tt\">%I64d</span> specificator instead.</p>",
+    "outputSpecification": "<p>In the single line print two numbers \u2014 the sought <span class=\"tex-span\"><i>k</i></span>-th pair.</p>",
+    "samples": [
+        {
+            "input": "2 4<br/>2 1<br/>",
+            "output": "2 2<br/>"
+        },
+        {
+            "input": "3 2<br/>3 1 5<br/>",
+            "output": "1 3<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the sorted sequence for the given array looks as: <span class=\"tex-span\">(1,\u20091),\u2009(1,\u20092),\u2009(2,\u20091),\u2009(2,\u20092)</span>. The <span class=\"tex-span\">4</span>-th of them is pair <span class=\"tex-span\">(2,\u20092)</span>.</p><p>The sorted sequence for the array from the second sample is given in the statement. The <span class=\"tex-span\">2</span>-nd pair there is <span class=\"tex-span\">(1,\u20093)</span>.</p>",
+    "contestId": 160,
+    "index": "C",
+    "name": "Find Pair",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math",
+        "sortings"
+    ],
+    "solvedCount": 3387
+}

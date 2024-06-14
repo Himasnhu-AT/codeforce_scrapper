@@ -1,0 +1,33 @@
+{
+    "title": "C. Points on Plane",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>On a plane are <span class=\"tex-span\"><i>n</i></span> points (<span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>) with integer coordinates between <span class=\"tex-span\">0</span> and <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span>. The distance between the two points with numbers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> is said to be the following value: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/03274f8c977ad3feb5d9f6ede91c69bcaef04972.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> (the distance calculated by such formula is called <span class=\"tex-font-style-it\">Manhattan distance</span>).</p><p>We call a hamiltonian path to be some permutation <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> of numbers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. We say that the length of this path is value <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/2872e932e7cab8f5f7a9c718441f7534261ed638.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Find some hamiltonian path with a length of no more than <span class=\"tex-span\">25\u2009\u00d7\u200910<sup class=\"upper-index\">8</sup></span>. Note that you do not have to minimize the path length.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>).</p><p>The <span class=\"tex-span\"><i>i</i>\u2009+\u20091</span>-th line contains the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th point: <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>).</p><p>It is guaranteed that no two points coincide.</p>",
+    "outputSpecification": "<p>Print the permutation of numbers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> \u2014 the sought Hamiltonian path. The permutation must meet the inequality <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70f9e4aeb31a2c8d58e32efe76501886a9a44af7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>If there are multiple possible answers, print any of them.</p><p>It is guaranteed that the answer exists.</p>",
+    "samples": [
+        {
+            "input": "5<br/>0 7<br/>8 10<br/>3 4<br/>5 0<br/>9 12<br/>",
+            "output": "4 3 1 2 5 <br/>"
+        }
+    ],
+    "note": "<p>In the sample test the total distance is:</p><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c772e61c616e1c27114e3facb9e6db6c5cf93b82.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p><span class=\"tex-span\">(|5\u2009-\u20093|\u2009+\u2009|0\u2009-\u20094|)\u2009+\u2009(|3\u2009-\u20090|\u2009+\u2009|4\u2009-\u20097|)\u2009+\u2009(|0\u2009-\u20098|\u2009+\u2009|7\u2009-\u200910|)\u2009+\u2009(|8\u2009-\u20099|\u2009+\u2009|10\u2009-\u200912|)\u2009=\u20092\u2009+\u20094\u2009+\u20093\u2009+\u20093\u2009+\u20098\u2009+\u20093\u2009+\u20091\u2009+\u20092\u2009=\u200926</span></p>",
+    "contestId": 576,
+    "index": "C",
+    "name": "Points on Plane",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "divide and conquer",
+        "geometry",
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 3246
+}

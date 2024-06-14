@@ -1,0 +1,34 @@
+{
+    "title": "A. Palindromic Times",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-underline\">Tattah is asleep if and only if Tattah is attending a lecture.</span> This is a well-known formula among Tattah's colleagues.</p><p>On a Wednesday afternoon, Tattah was attending Professor HH's lecture. At <span class=\"tex-font-style-tt\">12:21</span>, right before falling asleep, he was staring at the digital watch around Saher's wrist. He noticed that the digits on the clock were the same when read from both directions i.e. a palindrome.</p><p>In his sleep, he started dreaming about such rare moments of the day when the time displayed on a digital clock is a palindrome. As soon as he woke up, he felt destined to write a program that finds the next such moment.</p><p>However, he still hasn't mastered the skill of programming while sleeping, so your task is to help him.</p>",
+    "inputSpecification": "<p>The first and only line of the input starts with a string with the format \"<span class=\"tex-font-style-tt\">HH:MM</span>\" where \"<span class=\"tex-font-style-tt\">HH</span>\" is from \"<span class=\"tex-font-style-tt\">00</span>\" to \"<span class=\"tex-font-style-tt\">23</span>\" and \"<span class=\"tex-font-style-tt\">MM</span>\" is from \"<span class=\"tex-font-style-tt\">00</span>\" to \"<span class=\"tex-font-style-tt\">59</span>\". Both \"<span class=\"tex-font-style-tt\">HH</span>\" and \"<span class=\"tex-font-style-tt\">MM</span>\" have exactly two digits.</p>",
+    "outputSpecification": "<p>Print the palindromic time of day that comes soonest after the time given in the input. If the input time is palindromic, output the soonest palindromic time after the input time.</p>",
+    "samples": [
+        {
+            "input": "12:21<br/>",
+            "output": "13:31<br/>"
+        },
+        {
+            "input": "23:59<br/>",
+            "output": "00:00<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 108,
+    "index": "A",
+    "name": "Palindromic Times",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 9221
+}

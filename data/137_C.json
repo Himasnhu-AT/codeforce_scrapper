@@ -1,0 +1,37 @@
+{
+    "title": "C. History",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarpus likes studying at school a lot and he is always diligent about his homework. Polycarpus has never had any problems with natural sciences as his great-great-grandfather was the great physicist Seinstein. On the other hand though, Polycarpus has never had an easy time with history.</p><p>Everybody knows that the World history encompasses exactly <span class=\"tex-span\"><i>n</i></span> events: the <span class=\"tex-span\"><i>i</i></span>-th event had continued from the year <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> to the year <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> inclusive (<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>). Polycarpus easily learned the dates when each of <span class=\"tex-span\"><i>n</i></span> events started and ended (Polycarpus inherited excellent memory from his great-great-granddad). But the teacher gave him a more complicated task: Polycaprus should know when all events began and ended and he should also find out for each event whether it includes another event. Polycarpus' teacher thinks that an event <span class=\"tex-span\"><i>j</i></span> includes an event <span class=\"tex-span\"><i>i</i></span> if <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>j</i></sub>\u2009&lt;\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>b</i><sub class=\"lower-index\"><i>j</i></sub></span>. Your task is simpler: find the number of events that are included in some other event.</p>",
+    "inputSpecification": "<p>The first input line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) which represents the number of events. Next <span class=\"tex-span\"><i>n</i></span> lines contain descriptions of the historical events, one event per line. The <span class=\"tex-span\"><i>i</i>\u2009+\u20091</span> line contains two integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the beginning and the end of the <span class=\"tex-span\"><i>i</i></span>-th event. No two events start or finish in the same year, that is, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>a</i><sub class=\"lower-index\"><i>j</i></sub>,\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>b</i><sub class=\"lower-index\"><i>j</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>a</i><sub class=\"lower-index\"><i>j</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>b</i><sub class=\"lower-index\"><i>j</i></sub></span> for all <span class=\"tex-span\"><i>i</i></span>, <span class=\"tex-span\"><i>j</i></span> (where <span class=\"tex-span\"><i>i</i>\u2009\u2260\u2009<i>j</i></span>). Events are given in arbitrary order.</p>",
+    "outputSpecification": "<p>Print the only integer \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "5<br/>1 10<br/>2 9<br/>3 8<br/>4 7<br/>5 6<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "5<br/>1 100<br/>2 50<br/>51 99<br/>52 98<br/>10 60<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "1<br/>1 1000000000<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first example the fifth event is contained in the fourth. Similarly, the fourth event is contained in the third, the third \u2014 in the second and the second \u2014 in the first.</p><p>In the second example all events except the first one are contained in the first.</p><p>In the third example only one event, so the answer is 0.</p>",
+    "contestId": 137,
+    "index": "C",
+    "name": "History",
+    "type": "PROGRAMMING",
+    "tags": [
+        "sortings"
+    ],
+    "solvedCount": 7106
+}

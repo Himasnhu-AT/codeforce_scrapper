@@ -1,0 +1,39 @@
+{
+    "title": "E. Product Sum",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Blake is the boss of Kris, however, this doesn't spoil their friendship. They often gather at the bar to talk about intriguing problems about maximising some values. This time the problem is really special.</p><p>You are given an array <span class=\"tex-span\"><i>a</i></span> of length <span class=\"tex-span\"><i>n</i></span>. The <span class=\"tex-font-style-it\">characteristic</span> of this array is the value <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/2e111bb14e07b268a6efbbdc554cdbef6e466ad0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>\u00a0\u2014 the sum of the products of the values <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> by <span class=\"tex-span\"><i>i</i></span>. One may perform the following operation <span class=\"tex-font-style-bf\">exactly once</span>: pick some element of the array and move to any position. In particular, it's allowed to move the element to the beginning or to the end of the array. Also, it's allowed to put it back to the initial position. The goal is to get the array with the maximum possible value of characteristic.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c5f4727a8afec681d653f07989ed89ad6ebf7820.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>)\u00a0\u2014 the size of the array <span class=\"tex-span\"><i>a</i></span>.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\">|<i>a</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u20091\u2009000\u2009000</span>)\u00a0\u2014 the elements of the array <span class=\"tex-span\"><i>a</i></span>.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the maximum possible value of characteristic of <span class=\"tex-span\"><i>a</i></span> that can be obtained by performing no more than one move.</p>",
+    "samples": [
+        {
+            "input": "4<br/>4 3 2 5<br/>",
+            "output": "39"
+        },
+        {
+            "input": "5<br/>1 1 2 7 1<br/>",
+            "output": "49"
+        },
+        {
+            "input": "3<br/>1 1 2<br/>",
+            "output": "9"
+        }
+    ],
+    "note": "<p>In the first sample, one may pick the first element and place it before the third (before <span class=\"tex-span\">5</span>). Thus, the answer will be <span class=\"tex-span\">3\u00b71\u2009+\u20092\u00b72\u2009+\u20094\u00b73\u2009+\u20095\u00b74\u2009=\u200939</span>.</p><p>In the second sample, one may pick the fifth element of the array and place it before the third. The answer will be <span class=\"tex-span\">1\u00b71\u2009+\u20091\u00b72\u2009+\u20091\u00b73\u2009+\u20092\u00b74\u2009+\u20097\u00b75\u2009=\u200949</span>.</p>",
+    "contestId": 631,
+    "index": "E",
+    "name": "Product Sum",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp",
+        "geometry"
+    ],
+    "solvedCount": 2241
+}

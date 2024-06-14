@@ -1,0 +1,33 @@
+{
+    "title": "A. Beautiful Year",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>It seems like the year of 2013 came only yesterday. Do you know a curious fact? The year of 2013 is the first year after the old 1987 with only distinct digits.</p><p>Now you are suggested to solve the following problem: given a year number, find the minimum year number which is strictly larger than the given one and has only distinct digits.</p>",
+    "inputSpecification": "<p>The single line contains integer <span class=\"tex-span\"><i>y</i></span> <span class=\"tex-span\">(1000\u2009\u2264\u2009<i>y</i>\u2009\u2264\u20099000)</span> \u2014 the year number.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the minimum year number that is strictly larger than <span class=\"tex-span\"><i>y</i></span> and all it's digits are distinct. It is guaranteed that the answer exists.</p>",
+    "samples": [
+        {
+            "input": "1987<br/>",
+            "output": "2013<br/>"
+        },
+        {
+            "input": "2013<br/>",
+            "output": "2014<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 271,
+    "index": "A",
+    "name": "Beautiful Year",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force"
+    ],
+    "solvedCount": 129625
+}

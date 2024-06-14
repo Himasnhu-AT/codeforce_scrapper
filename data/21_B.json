@@ -1,0 +1,34 @@
+{
+    "title": "B. Intersection",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two set of points. The first set is determined by the equation <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\">1</sub><i>x</i>\u2009+\u2009<i>B</i><sub class=\"lower-index\">1</sub><i>y</i>\u2009+\u2009<i>C</i><sub class=\"lower-index\">1</sub>\u2009=\u20090</span>, and the second one is determined by the equation <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\">2</sub><i>x</i>\u2009+\u2009<i>B</i><sub class=\"lower-index\">2</sub><i>y</i>\u2009+\u2009<i>C</i><sub class=\"lower-index\">2</sub>\u2009=\u20090</span>.</p><p>Write the program which finds the number of points in the intersection of two given sets.</p>",
+    "inputSpecification": "<p>The first line of the input contains three integer numbers <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\">1</sub>,\u2009<i>B</i><sub class=\"lower-index\">1</sub>,\u2009<i>C</i><sub class=\"lower-index\">1</sub></span> separated by space. The second line contains three integer numbers <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\">2</sub>,\u2009<i>B</i><sub class=\"lower-index\">2</sub>,\u2009<i>C</i><sub class=\"lower-index\">2</sub></span> separated by space. All the numbers are between -100 and 100, inclusive.</p>",
+    "outputSpecification": "<p>Print the number of points in the intersection or <span class=\"tex-font-style-tt\">-1</span> if there are infinite number of points.</p>",
+    "samples": [
+        {
+            "input": "1 1 0<br/>2 2 0<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "1 1 0<br/>2 -2 0<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 21,
+    "index": "B",
+    "name": "Intersection",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 1310
+}

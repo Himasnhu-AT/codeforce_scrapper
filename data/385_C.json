@@ -1,0 +1,39 @@
+{
+    "title": "C. Bear and Prime Numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Recently, the bear started studying data structures and faced the following problem.</p><p>You are given a sequence of integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span> of length <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> queries, each of them is characterized by two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span>. Let's introduce <span class=\"tex-span\"><i>f</i>(<i>p</i>)</span> to represent the number of such indexes <span class=\"tex-span\"><i>k</i></span>, that <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>k</i></sub></span> is divisible by <span class=\"tex-span\"><i>p</i></span>. The answer to the query <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> is the sum: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5e448f6c1a0e40843cecdbbeb95970464626032f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <span class=\"tex-span\"><i>S</i>(<i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>)</span> is a set of prime numbers from segment <span class=\"tex-span\">[<i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>]</span> (both borders are included in the segment).</p><p>Help the bear cope with the problem.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>)</span>. The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(2\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">7</sup>)</span>. The numbers are not necessarily distinct.</p><p>The third line contains integer <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200950000)</span>. Each of the following <span class=\"tex-span\"><i>m</i></span> lines contains a pair of space-separated integers, <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(2\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">9</sup>)</span> \u2014 the numbers that characterize the current query.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>m</i></span> integers \u2014 the answers to the queries on the order the queries appear in the input.</p>",
+    "samples": [
+        {
+            "input": "6<br/>5 5 7 10 14 15<br/>3<br/>2 11<br/>3 12<br/>4 4<br/>",
+            "output": "9<br/>7<br/>0<br/>"
+        },
+        {
+            "input": "7<br/>2 3 5 7 11 4 8<br/>2<br/>8 10<br/>2 123<br/>",
+            "output": "0<br/>7<br/>"
+        }
+    ],
+    "note": "<p>Consider the first sample. Overall, the first sample has 3 queries.</p><ol> <li> The first query <span class=\"tex-span\"><i>l</i>\u2009=\u20092</span>, <span class=\"tex-span\"><i>r</i>\u2009=\u200911</span> comes. You need to count <span class=\"tex-span\"><i>f</i>(2)\u2009+\u2009<i>f</i>(3)\u2009+\u2009<i>f</i>(5)\u2009+\u2009<i>f</i>(7)\u2009+\u2009<i>f</i>(11)\u2009=\u20092\u2009+\u20091\u2009+\u20094\u2009+\u20092\u2009+\u20090\u2009=\u20099</span>. </li><li> The second query comes <span class=\"tex-span\"><i>l</i>\u2009=\u20093</span>, <span class=\"tex-span\"><i>r</i>\u2009=\u200912</span>. You need to count <span class=\"tex-span\"><i>f</i>(3)\u2009+\u2009<i>f</i>(5)\u2009+\u2009<i>f</i>(7)\u2009+\u2009<i>f</i>(11)\u2009=\u20091\u2009+\u20094\u2009+\u20092\u2009+\u20090\u2009=\u20097</span>. </li><li> The third query comes <span class=\"tex-span\"><i>l</i>\u2009=\u20094</span>, <span class=\"tex-span\"><i>r</i>\u2009=\u20094</span>. As this interval has no prime numbers, then the sum equals 0. </li></ol>",
+    "contestId": 385,
+    "index": "C",
+    "name": "Bear and Prime Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dp",
+        "implementation",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 9445
+}

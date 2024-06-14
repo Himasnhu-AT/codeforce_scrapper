@@ -1,0 +1,34 @@
+{
+    "title": "A. Average Numbers",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a sequence of positive integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. Find all such indices <span class=\"tex-span\"><i>i</i></span>, that the <span class=\"tex-span\"><i>i</i></span>-th element equals the arithmetic mean of all <span class=\"tex-font-style-it\">other</span> elements (that is all elements except for this one).</p>",
+    "inputSpecification": "<p>The first line contains the integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>). The second line contains elements of the sequence <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>). All the elements are positive integers.</p>",
+    "outputSpecification": "<p>Print on the first line the number of the sought indices. Print on the second line the sought indices in the increasing order. All indices are integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>.</p><p>If the sought elements do not exist, then the first output line should contain number <span class=\"tex-span\">0</span>. In this case you may either not print the second line or print an empty line.</p>",
+    "samples": [
+        {
+            "input": "5<br/>1 2 3 4 5<br/>",
+            "output": "1<br/>3 "
+        },
+        {
+            "input": "4<br/>50 50 50 50<br/>",
+            "output": "4<br/>1 2 3 4 "
+        }
+    ],
+    "note": null,
+    "contestId": 134,
+    "index": "A",
+    "name": "Average Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 3817
+}

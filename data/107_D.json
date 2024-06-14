@@ -1,0 +1,39 @@
+{
+    "title": "D. Crime Management",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Zeyad wants to commit <span class=\"tex-span\"><i>n</i></span> crimes in Egypt and not be punished at the end. There are several types of crimes. For example, bribery is a crime but is not considered such when repeated twice. Therefore, bribery is not considered a crime when repeated an even number of times. Speeding is a crime, but is not considered such when repeated a number of times which is a multiple of five.</p><p>More specifically, <span class=\"tex-span\"><i>c</i></span> conditions on crime repetitions are known. Each condition describes the crime type <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> and its multiplicity <span class=\"tex-span\"><i>m</i><sub class=\"lower-index\"><i>i</i></sub></span>. If the number of times Zeyad committed the crime <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> is a multiple of <span class=\"tex-span\"><i>m</i><sub class=\"lower-index\"><i>i</i></sub></span>, Zeyad will not be punished for crime <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span>. Some crimes may be listed more than once. In this case fulfilling at least one condition for this crime is enough to not be punished for it. Of course, if for certain crime the number of times Zeyad committed it is zero, he is innocent with respect to this crime.</p><p>Now Zeyad is interested in a number of ways he can commit exactly <span class=\"tex-span\"><i>n</i></span> crimes without any punishment.</p><p>The order of commiting the crimes matters. More formally, two ways, sequences <span class=\"tex-span\"><i>w</i>1</span> and <span class=\"tex-span\"><i>w</i>2</span>, of committing <span class=\"tex-span\"><i>n</i></span> crimes are equal if <span class=\"tex-span\"><i>w</i>1<sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>w</i>2<sub class=\"lower-index\"><i>i</i></sub></span>, for all <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>c</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup>,\u20090\u2009\u2264\u2009<i>c</i>\u2009\u2264\u20091000</span>) \u2014 the number of crimes Zeyad would like to commit and the number of conditions he is aware of.</p><p>Then the definitions for <span class=\"tex-span\"><i>c</i></span> conditions follow. There are <span class=\"tex-span\">26</span> types of crimes. Each crime definition consists of crime type \u2014 a capital Latin letter \u2014 and its multiplicity. </p><p>The multiplicity of each crime is a positive integer number and the product of all multiplicities does not exceed <span class=\"tex-span\">123</span>. Some conditions may be repeated in the input more than once.</p><p>Crime of multiplicity <span class=\"tex-span\">1</span> is not yielding any punishment regardless of the number of times it was committed. The strictness of the law is compensated by the fact that it's non-mandatory.</p><p>Obviously, if some crime is not listed in the set of conditions, then Zeyad will not consider it, as committing it would unavoidably lead to the punishment.</p><p>Please, do not use the <span class=\"tex-font-style-tt\">%lld</span> specificator to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span> stream (you may also use the <span class=\"tex-font-style-tt\">%I64d</span> specificator).</p>",
+    "outputSpecification": "<p>Output the number of different ways Zeyad can commit exactly <span class=\"tex-span\"><i>n</i></span> crimes with no punishment modulo <span class=\"tex-span\">12345</span>.</p>",
+    "samples": [
+        {
+            "input": "5 2<br/>A 1<br/>B 2<br/>",
+            "output": "16<br/>"
+        },
+        {
+            "input": "6 3<br/>A 1<br/>B 2<br/>C 3<br/>",
+            "output": "113<br/>"
+        },
+        {
+            "input": "8 3<br/>A 2<br/>A 3<br/>B 2<br/>",
+            "output": "128<br/>"
+        }
+    ],
+    "note": "<p>In the first test case, the 16 ways are: AAAAA, AAABB, AABAB, AABBA, ABAAB, ABABA, ABBAA, BAAAB, BAABA, BABAA, BBAAA, ABBBB, BABBB, BBABB, BBBAB, BBBBA.</p>",
+    "contestId": 107,
+    "index": "D",
+    "name": "Crime Management",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "graphs",
+        "matrices"
+    ],
+    "solvedCount": 401
+}

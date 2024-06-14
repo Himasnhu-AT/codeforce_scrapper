@@ -1,0 +1,35 @@
+{
+    "title": "E. Square Table",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>While resting on the ship after the \"Russian Code Cup\" a boy named Misha invented an interesting game. He promised to give his quadrocopter to whoever will be the first one to make a rectangular table of size <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span>, consisting of positive integers such that the sum of the squares of numbers for each row and each column was also a square.</p><p>Since checking the correctness of the table manually is difficult, Misha asks you to make each number in the table to not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">8</sup></span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>) \u00a0\u2014 the size of the table. </p>",
+    "outputSpecification": "<p>Print the table that meets the condition: <span class=\"tex-span\"><i>n</i></span> lines containing <span class=\"tex-span\"><i>m</i></span> integers, separated by spaces. If there are multiple possible answers, you are allowed to print anyone. It is guaranteed that there exists at least one correct answer.</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>",
+            "output": "1"
+        },
+        {
+            "input": "1 2<br/>",
+            "output": "3 4"
+        }
+    ],
+    "note": null,
+    "contestId": 417,
+    "index": "E",
+    "name": "Square Table",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "probabilities"
+    ],
+    "solvedCount": 784
+}

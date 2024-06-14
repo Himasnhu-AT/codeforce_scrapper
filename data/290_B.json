@@ -1,0 +1,38 @@
+{
+    "title": "B. QR code",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/efcf19893fbe3acf70db8722c789adaba41caeaf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The input contains two integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200932</span>), separated by a single space.</p>",
+    "outputSpecification": "<p>Output a single integer.</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "3 7<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "13 10<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 290,
+    "index": "B",
+    "name": "QR code",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "solvedCount": 2408
+}

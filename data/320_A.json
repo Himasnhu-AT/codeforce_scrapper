@@ -1,0 +1,38 @@
+{
+    "title": "A. Magic Numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A magic number is a number formed by concatenation of numbers <span class=\"tex-span\">1</span>, <span class=\"tex-span\">14</span> and <span class=\"tex-span\">144</span>. We can use each of these numbers any number of times. Therefore <span class=\"tex-span\">14144</span>, <span class=\"tex-span\">141414</span> and <span class=\"tex-span\">1411</span> are magic numbers but <span class=\"tex-span\">1444</span>, <span class=\"tex-span\">514</span> and <span class=\"tex-span\">414</span> are not.</p><p>You're given a number. Determine if it is a magic number or not.</p>",
+    "inputSpecification": "<p>The first line of input contains an integer <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>. This number doesn't contain leading zeros.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" if <span class=\"tex-span\"><i>n</i></span> is a magic number or print \"<span class=\"tex-font-style-tt\">NO</span>\" if it's not.</p>",
+    "samples": [
+        {
+            "input": "114114<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "1111<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "441231<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 320,
+    "index": "A",
+    "name": "Magic Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "greedy"
+    ],
+    "solvedCount": 34168
+}

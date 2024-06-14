@@ -1,0 +1,35 @@
+{
+    "title": "D. Big Problems for Organizers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The Finals of the \"Russian Code Cup\" 2214 will be held in <span class=\"tex-span\"><i>n</i></span> hotels. Two hotels (let's assume that they are the main hotels), will host all sorts of events, and the remaining hotels will accommodate the participants. The hotels are connected by <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> roads, you can get from any hotel to any other one.</p><p>The organizers wonder what is the minimum time all the participants need to get to the main hotels, if each participant goes to the main hotel that is nearest to him and moving between two hotels connected by a road takes one unit of time.</p><p>The hosts consider various options for the location of the main hotels. For each option help the organizers to find minimal time.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100000</span>)\u00a0\u2014 the number of hotels. The next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contain two integers each \u00a0\u2014 the numbers of the hotels that have a road between them. Consider hotels are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>.</p><p>The next line contains an integer <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009100000</span>)\u00a0\u2014 the number of queries. The following <span class=\"tex-span\"><i>m</i></span> lines contains two distinct integers each\u00a0\u2014 the numbers of the hotels we assume to be the main.</p>",
+    "outputSpecification": "<p>For each request of the organizers print a single integer\u00a0\u2014 the time that all participants need to reach the main hotels.</p>",
+    "samples": [
+        {
+            "input": "3<br/>2 3<br/>3 1<br/>3<br/>2 1<br/>2 3<br/>3 1<br/>",
+            "output": "1<br/>1<br/>1<br/>"
+        },
+        {
+            "input": "4<br/>1 4<br/>1 2<br/>2 3<br/>3<br/>1 4<br/>1 3<br/>2 3<br/>",
+            "output": "2<br/>1<br/>2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 418,
+    "index": "D",
+    "name": "Big Problems for Organizers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 470
+}

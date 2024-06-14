@@ -1,0 +1,37 @@
+{
+    "title": "B. Shifting",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>John Doe has found the beautiful permutation formula.</p><p>Let's take permutation <span class=\"tex-span\"><i>p</i>\u2009=\u2009<i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>. Let's define transformation <span class=\"tex-span\"><i>f</i></span> of this permutation: </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0a705f2454ef08a9dae1484aa12af1da33f1d1d2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>where <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(<i>k</i>\u2009&gt;\u20091)</span> is an integer, the transformation parameter, <span class=\"tex-span\"><i>r</i></span> is such maximum integer that <span class=\"tex-span\"><i>rk</i>\u2009\u2264\u2009<i>n</i></span>. If <span class=\"tex-span\"><i>rk</i>\u2009=\u2009<i>n</i></span>, then elements <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>rk</i>\u2009+\u20091</sub>,\u2009<i>p</i><sub class=\"lower-index\"><i>rk</i>\u2009+\u20092</sub></span> and so on are omitted. In other words, the described transformation of permutation <span class=\"tex-span\"><i>p</i></span> cyclically shifts to the left each consecutive block of length <span class=\"tex-span\"><i>k</i></span> and the last block with the length equal to the remainder after dividing <span class=\"tex-span\"><i>n</i></span> by <span class=\"tex-span\"><i>k</i></span>. </p><p>John Doe thinks that permutation <span class=\"tex-span\"><i>f</i>(<i>f</i>(\u00a0...\u00a0<i>f</i>(<i>p</i>\u2009=\u2009[1,\u20092,\u2009...,\u2009<i>n</i>],\u20092)\u00a0...\u00a0,\u2009<i>n</i>\u2009-\u20091),\u2009<i>n</i>)</span> is beautiful. Unfortunately, he cannot quickly find the beautiful permutation he's interested in. That's why he asked you to help him.</p><p>Your task is to find a beautiful permutation for the given <span class=\"tex-span\"><i>n</i></span>. For clarifications, see the notes to the third sample.</p>",
+    "inputSpecification": "<p>A single line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>).</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> distinct space-separated integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> \u2014 a beautiful permutation of size <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "samples": [
+        {
+            "input": "2<br/>",
+            "output": "2 1 <br/>"
+        },
+        {
+            "input": "3<br/>",
+            "output": "1 3 2 <br/>"
+        },
+        {
+            "input": "4<br/>",
+            "output": "4 2 3 1 <br/>"
+        }
+    ],
+    "note": "<p>A note to the third test sample: </p><ul> <li> <span class=\"tex-span\"><i>f</i>([1,\u20092,\u20093,\u20094],\u20092)\u2009=\u2009[2,\u20091,\u20094,\u20093]</span> </li><li> <span class=\"tex-span\"><i>f</i>([2,\u20091,\u20094,\u20093],\u20093)\u2009=\u2009[1,\u20094,\u20092,\u20093]</span> </li><li> <span class=\"tex-span\"><i>f</i>([1,\u20094,\u20092,\u20093],\u20094)\u2009=\u2009[4,\u20092,\u20093,\u20091]</span> </li></ul>",
+    "contestId": 286,
+    "index": "B",
+    "name": "Shifting",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 1103
+}

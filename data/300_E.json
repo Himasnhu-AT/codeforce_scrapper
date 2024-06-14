@@ -1,0 +1,35 @@
+{
+    "title": "E. Empire Strikes Back",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In a far away galaxy there is war again. The treacherous Republic made <span class=\"tex-span\"><i>k</i></span> precision strikes of power <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> on the Empire possessions. To cope with the republican threat, the Supreme Council decided to deal a decisive blow to the enemy forces. </p><p>To successfully complete the conflict, the confrontation balance after the blow should be a positive integer. The balance of confrontation is a number that looks like <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/cb0172a656698061aefa8eb30b2dbcd1e31f508e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <span class=\"tex-span\"><i>p</i>\u2009=\u2009<i>n</i>!</span> (<span class=\"tex-span\"><i>n</i></span> is the power of the Imperial strike), <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/be803394f3ab1c18735553e728d31caeeea3bf83.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. After many years of war the Empire's resources are low. So to reduce the costs, <span class=\"tex-span\"><i>n</i></span> should be a minimum positive integer that is approved by the commanders.</p><p>Help the Empire, find the minimum positive integer <span class=\"tex-span\"><i>n</i></span>, where the described fraction is a positive integer.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>)</span>. The second line contains <span class=\"tex-span\"><i>k</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>k</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">7</sup>)</span>.</p>",
+    "outputSpecification": "<p>Print the minimum positive integer <span class=\"tex-span\"><i>n</i></span>, needed for the Empire to win.</p><p>Please, do not use the <span class=\"tex-font-style-tt\">%lld</span> to read or write 64-but integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specificator.</p>",
+    "samples": [
+        {
+            "input": "2<br/>1000 1000<br/>",
+            "output": "2000"
+        },
+        {
+            "input": "1<br/>2<br/>",
+            "output": "2"
+        }
+    ],
+    "note": null,
+    "contestId": 300,
+    "index": "E",
+    "name": "Empire Strikes Back",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 1028
+}

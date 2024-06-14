@@ -1,0 +1,25 @@
+{
+    "title": "D. Broken checker",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>\"This problem is rubbish! There is not statement, and there are only 5 test cases. The problemsetter took liberties with this problem!\" \u2014 people complained in the comments to one round on Codeforces. And even more... No, wait, the checker for the problem was alright, that's a mercy.</p>",
+    "inputSpecification": "<p>The only line of the input contains an integer between 1 and 5, inclusive. All tests for this problem are different. The contents of the test case doesn't need to be equal to its index.</p>",
+    "outputSpecification": "<p>The only line of the output contains an integer between 1 and 3, inclusive.</p>",
+    "samples": [],
+    "note": "<p>This problem has no samples, since there so few test cases.</p>",
+    "contestId": 171,
+    "index": "D",
+    "name": "Broken checker",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "brute force"
+    ],
+    "solvedCount": 2527
+}

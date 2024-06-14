@@ -1,0 +1,37 @@
+{
+    "title": "C. Plumber",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little John aspires to become a plumber! Today he has drawn a grid consisting of <span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>m</i></span> columns, consisting of <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> square cells.</p><p>In each cell he will draw a pipe segment. He can only draw four types of segments numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">4</span>, illustrated as follows:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/fcfb2cc0f6b4d5dd758913f8ec0ffb75e2537626.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Each pipe segment has two ends, illustrated by the arrows in the picture above. For example, segment <span class=\"tex-span\">1</span> has ends at top and left side of it.</p><p>Little John considers the piping system to be leaking if there is at least one pipe segment inside the grid whose end is not connected to another pipe's end or to the border of the grid. The image below shows an example of leaking and non-leaking systems of size <span class=\"tex-span\">1\u2009\u00d7\u20092</span>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/a594e2ebc9562badc419e9ab0d9cd2d633f349ae.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Now, you will be given the grid that has been partially filled by Little John. Each cell will either contain one of the four segments above, or be empty. Find the number of possible different non-leaking final systems after Little John finishes filling <span class=\"tex-font-style-bf\">all</span> of the empty cells with pipe segments. Print this number modulo <span class=\"tex-span\">1000003</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">6</sup>\u2009+\u20093</span>).</p><p>Note that rotations or flipping of the grid are not allowed and so two configurations that are identical only when one of them has been rotated or flipped either horizontally or vertically are considered two different configurations.</p>",
+    "inputSpecification": "<p>The first line will contain two single-space separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>,\u2009<i>n</i>\u00b7<i>m</i>\u2009\u2264\u20095\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 the number of rows and columns respectively. Then <span class=\"tex-span\"><i>n</i></span> lines follow, each contains exactly <span class=\"tex-span\"><i>m</i></span> characters \u2014 the description of the grid. Each character describes a cell and is either one of these: </p><ul> <li> \"<span class=\"tex-font-style-tt\">1</span>\" - \"<span class=\"tex-font-style-tt\">4</span>\" \u2014 a pipe segment of one of four types as described above </li><li> \"<span class=\"tex-font-style-tt\">.</span>\" \u2014 an empty cell </li></ul>",
+    "outputSpecification": "<p>Print a single integer denoting the number of possible final non-leaking pipe systems modulo <span class=\"tex-span\">1000003</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">6</sup>\u2009+\u20093</span>). If there are no such configurations, print <span class=\"tex-span\">0</span>.</p>",
+    "samples": [
+        {
+            "input": "2 2<br/>13<br/>..<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3 1<br/>1<br/>4<br/>.<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "2 2<br/>3.<br/>.1<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>For the first example, the initial configuration of the grid is as follows. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c14a207fc0187825d452abc5f1a87ec5379b2680.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The only two possible final non-leaking pipe configurations are as follows:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/648283013db802bf02f0752ea7f9ef7690862b89.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/953c21a6a995b9db2a092bc26f81b7270aec7887.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>For the second example, the initial grid is already leaking, so there will be no final grid that is non-leaking.</p><p>For the final example, there's only one possible non-leaking final grid as follows.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/799e3f21b4092831e14c01a445eaa6848dba1240.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 115,
+    "index": "C",
+    "name": "Plumber",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 589
+}

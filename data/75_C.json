@@ -1,0 +1,30 @@
+{
+    "title": "C. Modified GCD",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Well, here is another math class task. In mathematics, GCD is the greatest common divisor, and it's an easy task to calculate the GCD between two positive integers.</p><p>A common divisor for two positive numbers is a number which both numbers are divisible by.</p><p>But your teacher wants to give you a harder task, in this task you have to find the greatest common divisor <span class=\"tex-span\"><i>d</i></span> between two integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> that is in a given range from <span class=\"tex-span\"><i>low</i></span> to <span class=\"tex-span\"><i>high</i></span> (inclusive), i.e. <span class=\"tex-span\"><i>low</i>\u2009\u2264\u2009<i>d</i>\u2009\u2264\u2009<i>high</i></span>. It is possible that there is no common divisor in the given range.</p><p>You will be given the two integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>, then <span class=\"tex-span\"><i>n</i></span> queries. Each query is a range from <span class=\"tex-span\"><i>low</i></span> to <span class=\"tex-span\"><i>high</i></span> and you have to answer each query.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>, the two integers as described above (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>). The second line contains one integer <span class=\"tex-span\"><i>n</i></span>, the number of queries (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>). Then <span class=\"tex-span\"><i>n</i></span> lines follow, each line contains one query consisting of two integers, <span class=\"tex-span\"><i>low</i></span> and <span class=\"tex-span\"><i>high</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>low</i>\u2009\u2264\u2009<i>high</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> lines. The <span class=\"tex-span\"><i>i</i></span>-th of them should contain the result of the <span class=\"tex-span\"><i>i</i></span>-th query in the input. If there is no common divisor in the given range for any query, you should print <span class=\"tex-font-style-tt\">-1</span> as a result for this query.</p>",
+    "samples": [
+        {
+            "input": "9 27<br/>3<br/>1 5<br/>10 11<br/>9 11<br/>",
+            "output": "3<br/>-1<br/>9<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 75,
+    "index": "C",
+    "name": "Modified GCD",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "number theory"
+    ],
+    "solvedCount": 12123
+}

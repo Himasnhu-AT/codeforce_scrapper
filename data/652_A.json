@@ -1,0 +1,42 @@
+{
+    "title": "A. Gabriel and Caterpillar",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The <span class=\"tex-span\">9</span>-th grade student Gabriel noticed a caterpillar on a tree when walking around in a forest after the classes. The caterpillar was on the height <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\">1</sub></span> cm from the ground. On the height <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\">2</sub></span> cm (<span class=\"tex-span\"><i>h</i><sub class=\"lower-index\">2</sub>\u2009&gt;\u2009<i>h</i><sub class=\"lower-index\">1</sub></span>) on the same tree hung an apple and the caterpillar was crawling to the apple.</p><p>Gabriel is interested when the caterpillar gets the apple. He noted that the caterpillar goes up by <span class=\"tex-span\"><i>a</i></span> cm per hour by day and slips down by <span class=\"tex-span\"><i>b</i></span> cm per hour by night.</p><p>In how many days Gabriel should return to the forest to see the caterpillar get the apple. You can consider that the day starts at <span class=\"tex-span\">10</span> am and finishes at <span class=\"tex-span\">10</span> pm. Gabriel's classes finish at <span class=\"tex-span\">2</span> pm. You can consider that Gabriel noticed the caterpillar just after the classes at <span class=\"tex-span\">2</span> pm.</p><p>Note that the forest is magic so the caterpillar can slip down under the ground and then lift to the apple.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\">1</sub>,\u2009<i>h</i><sub class=\"lower-index\">2</sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>h</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>h</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the heights of the position of the caterpillar and the apple in centimeters.</p><p>The second line contains two integers <span class=\"tex-span\"><i>a</i>,\u2009<i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the distance the caterpillar goes up by day and slips down by night, in centimeters per hour.</p>",
+    "outputSpecification": "<p>Print the only integer <span class=\"tex-span\"><i>k</i></span> \u2014 the number of days Gabriel should wait to return to the forest and see the caterpillar getting the apple.</p><p>If the caterpillar can't get the apple print the only integer <span class=\"tex-span\">\u2009-\u20091</span>.</p>",
+    "samples": [
+        {
+            "input": "10 30<br/>2 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "10 13<br/>1 1<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "10 19<br/>1 2<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "1 50<br/>5 4<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the first example at <span class=\"tex-span\">10</span> pm of the first day the caterpillar gets the height <span class=\"tex-span\">26</span>. At <span class=\"tex-span\">10</span> am of the next day it slips down to the height <span class=\"tex-span\">14</span>. And finally at <span class=\"tex-span\">6</span> pm of the same day the caterpillar gets the apple.</p><p>Note that in the last example the caterpillar was slipping down under the ground and getting the apple on the next day.</p>",
+    "contestId": 652,
+    "index": "A",
+    "name": "Gabriel and Caterpillar",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 4575
+}

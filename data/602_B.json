@@ -1,0 +1,35 @@
+{
+    "title": "B. Approximating a Constant Range",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>When Xellos was doing a practice course in university, he once had to measure the intensity of an effect that slowly approached equilibrium. A good way to determine the equilibrium intensity would be choosing a sufficiently large number of consecutive data points that seems as constant as possible and taking their average. Of course, with the usual sizes of data, it's nothing challenging\u00a0\u2014 but why not make a similar programming contest problem while we're at it?</p><p>You're given a sequence of <span class=\"tex-span\"><i>n</i></span> data points <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. There aren't any big jumps between consecutive data points\u00a0\u2014 for each <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>n</i></span>, it's guaranteed that <span class=\"tex-span\">|<i>a</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub>\u2009-\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u20091</span>.</p><p>A range <span class=\"tex-span\">[<i>l</i>,\u2009<i>r</i>]</span> of data points is said to be <span class=\"tex-font-style-it\">almost constant</span> if the difference between the largest and the smallest value in that range is at most <span class=\"tex-span\">1</span>. Formally, let <span class=\"tex-span\"><i>M</i></span> be the maximum and <span class=\"tex-span\"><i>m</i></span> the minimum value of <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> for <span class=\"tex-span\"><i>l</i>\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>r</i></span>; the range <span class=\"tex-span\">[<i>l</i>,\u2009<i>r</i>]</span> is almost constant if <span class=\"tex-span\"><i>M</i>\u2009-\u2009<i>m</i>\u2009\u2264\u20091</span>.</p><p>Find the length of the longest almost constant range.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>)\u00a0\u2014 the number of data points.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100\u2009000</span>).</p>",
+    "outputSpecification": "<p>Print a single number\u00a0\u2014 the maximum length of an almost constant range of the given sequence.</p>",
+    "samples": [
+        {
+            "input": "5<br/>1 2 3 3 2<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "11<br/>5 4 5 5 6 7 8 8 8 7 6<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, the longest almost constant range is <span class=\"tex-span\">[2,\u20095]</span>; its length (the number of data points in it) is 4.</p><p>In the second sample, there are three almost constant ranges of length <span class=\"tex-span\">4</span>: <span class=\"tex-span\">[1,\u20094]</span>, <span class=\"tex-span\">[6,\u20099]</span> and <span class=\"tex-span\">[7,\u200910]</span>; the only almost constant range of the maximum length <span class=\"tex-span\">5</span> is <span class=\"tex-span\">[6,\u200910]</span>.</p>",
+    "contestId": 602,
+    "index": "B",
+    "name": "Approximating a Constant Range",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "implementation",
+        "two pointers"
+    ],
+    "solvedCount": 10493
+}

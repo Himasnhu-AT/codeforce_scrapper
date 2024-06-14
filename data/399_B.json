@@ -1,0 +1,35 @@
+{
+    "title": "B. Red and Blue Balls",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>User ainta has a stack of <span class=\"tex-span\"><i>n</i></span> red and blue balls. He can apply a certain operation which changes the colors of the balls inside the stack.</p><ul> <li> While the top ball inside the stack is red, pop the ball from the top of the stack. </li><li> Then replace the blue ball on the top with a red ball. </li><li> And finally push some blue balls to the stack until the stack has total of <span class=\"tex-span\"><i>n</i></span> balls inside. </li></ul> \u00a0<p>If there are no blue balls inside the stack, ainta can't apply this operation. Given the initial state of the stack, ainta wants to know the maximum number of operations he can repeatedly apply.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>) \u2014 the number of balls inside the stack.</p><p>The second line contains a string <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">|<i>s</i>|\u2009=\u2009<i>n</i></span>) describing the initial state of the stack. The <span class=\"tex-span\"><i>i</i></span>-th character of the string <span class=\"tex-span\"><i>s</i></span> denotes the color of the <span class=\"tex-span\"><i>i</i></span>-th ball (we'll number the balls from top to bottom of the stack). If the character is \"<span class=\"tex-font-style-tt\">R</span>\", the color is red. If the character is \"<span class=\"tex-font-style-tt\">B</span>\", the color is blue.</p>",
+    "outputSpecification": "<p>Print the maximum number of operations ainta can repeatedly apply.</p><p>Please, do not write the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "3<br/>RBR<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "4<br/>RBBR<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "5<br/>RBBRR<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": "<p>The first example is depicted below.</p><p>The explanation how user ainta applies the first operation. He pops out one red ball, changes the color of the ball in the middle from blue to red, and pushes one blue ball.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/d6330a7cffcba5eb28b6067d354042b77dcf46a3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The explanation how user ainta applies the second operation. He will not pop out red balls, he simply changes the color of the ball on the top from blue to red.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/d1ac6399128245d74d42a2e491a2ce811ae2c44b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>From now on, ainta can't apply any operation because there are no blue balls inside the stack. ainta applied two operations, so the answer is 2.</p><p>The second example is depicted below. The blue arrow denotes a single operation.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/fafcdb1ecc8dcc6f8eadf0587b8b16ed2a804b8d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 399,
+    "index": "B",
+    "name": "Red and Blue Balls",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 1820
+}

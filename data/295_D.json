@@ -1,0 +1,38 @@
+{
+    "title": "D. Greg and Caves",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Greg has a pad. The pad's screen is an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> rectangle, each cell can be either black or white. We'll consider the pad rows to be numbered with integers from 1 to <span class=\"tex-span\"><i>n</i></span> from top to bottom. Similarly, the pad's columns are numbered with integers from 1 to <span class=\"tex-span\"><i>m</i></span> from left to right.</p><p>Greg thinks that the pad's screen displays a cave if the following conditions hold:</p><ul> <li> There is a segment <span class=\"tex-span\">[<i>l</i>,\u2009<i>r</i>]</span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u2009<i>n</i>)</span>, such that each of the rows <span class=\"tex-span\"><i>l</i>,\u2009<i>l</i>\u2009+\u20091,\u2009...,\u2009<i>r</i></span> has exactly two black cells and all other rows have only white cells. </li><li> There is a row number <span class=\"tex-span\"><i>t</i></span> <span class=\"tex-span\">(<i>l</i>\u2009\u2264\u2009<i>t</i>\u2009\u2264\u2009<i>r</i>)</span>, such that for all pairs of rows with numbers <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span> <span class=\"tex-span\">(<i>l</i>\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>t</i>)</span> the set of columns between the black cells in row <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-font-style-bf\">(with the columns where is these black cells)</span> is the subset of the set of columns between the black cells in row <span class=\"tex-span\"><i>j</i></span> <span class=\"tex-font-style-bf\">(with the columns where is these black cells)</span>. Similarly, for all pairs of rows with numbers <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span> <span class=\"tex-span\">(<i>t</i>\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>r</i>)</span> the set of columns between the black cells in row <span class=\"tex-span\"><i>j</i></span> <span class=\"tex-font-style-bf\">(with the columns where is these black cells)</span> is the subset of the set of columns between the black cells in row <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-font-style-bf\">(with the columns where is these black cells)</span>. </li></ul><p>Greg wondered, how many ways there are to paint a cave on his pad. Two ways can be considered distinct if there is a cell that has distinct colors on the two pictures.</p><p>Help Greg.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> \u2014 the pad's screen size <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20092000)</span>.</p>",
+    "outputSpecification": "<p>In the single line print the remainder after dividing the answer to the problem by <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "4 4<br/>",
+            "output": "485<br/>"
+        },
+        {
+            "input": "3 5<br/>",
+            "output": "451<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 295,
+    "index": "D",
+    "name": "Greg and Caves",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp"
+    ],
+    "solvedCount": 640
+}

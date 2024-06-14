@@ -1,0 +1,34 @@
+{
+    "title": "D. Landmarks",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>We have an old building with <span class=\"tex-span\"><i>n</i>\u2009+\u20092</span> columns in a row. These columns support the ceiling. These columns are located in points with coordinates <span class=\"tex-span\">0\u2009=\u2009<i>x</i><sub class=\"lower-index\">0</sub>\u2009&lt;\u2009<i>x</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009...\u2009&lt;\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub>\u2009&lt;\u2009<i>x</i><sub class=\"lower-index\"><i>n</i>\u2009+\u20091</sub></span>. The leftmost and the rightmost columns are special, we will call them <span class=\"tex-font-style-it\">bearing</span>, the other columns are <span class=\"tex-font-style-it\">ordinary</span>. </p><p>For each column we know its durability <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span>. Let's consider an ordinary column with coordinate <span class=\"tex-span\"><i>x</i></span>. Let's assume that the coordinate of the closest to it column to the left (bearing or ordinary) is <span class=\"tex-span\"><i>a</i></span> and the coordinate of the closest to it column to the right (also, bearing or ordinary) is <span class=\"tex-span\"><i>b</i></span>. In this task let's assume that this column supports the segment of the ceiling from point <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9670c1b8ea2a42278bf13bfad9c19ee66fa35c24.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> to point <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/48944c57f1aa347e876ceb030a40985b5d3c4291.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> (here both fractions are considered as real division). If the length of the segment of the ceiling supported by the column exceeds <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span>, then the column cannot support it and it crashes after a while, and after that the load is being redistributeed between the neighbouring columns according to the same principle.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/f734cdd02ed9543f24a80b358293f187d5bb8405.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Thus, ordinary columns will be crashing for some time until the process stops at some state. One can prove that the set of the remaining columns doesn't depend on the order in which columns crash. If there are only two bearing columns left in the end, then we assume that the whole construction crashes under the weight of the roof. But if at least one ordinary column stays in addition to the bearing ones, then the building doesn't crash.</p><p>To make the building stronger, we can add one extra ordinary column of arbitrary durability <span class=\"tex-span\"><i>d</i>'</span> at any (not necessarily integer) point <span class=\"tex-span\">0\u2009&lt;\u2009<i>x</i>'\u2009&lt;\u2009<i>x</i><sub class=\"lower-index\"><i>n</i>\u2009+\u20091</sub></span>. If point <span class=\"tex-span\"><i>x</i>'</span> is already occupied by an ordinary column, it is replaced by a new one.</p><p>Your task is to find out: what minimal durability can the added column have so that the building doesn't crash?</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of ordinary columns.</p><p>The second line contains <span class=\"tex-span\"><i>n</i>\u2009+\u20092</span> integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">0</sub>,\u2009<i>x</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub>,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i>\u2009+\u20091</sub></span> (<span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">0</sub>\u2009=\u20090</span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>x</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span> for <span class=\"tex-span\">0\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>n</i>\u2009+\u20091</sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the coordinates of the columns.</p><p>The third line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\">1</sub>,\u2009<i>d</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>d</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the minimum possible durability of the column that you need to add in order to make the building stay. If you do not have to add the column, please print <span class=\"tex-span\">0</span>. Your answer will be checked with the relative or absolute error <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20094</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "2<br/>0 20 40 100<br/>15 40<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "3<br/>0 4 10 28 30<br/>9 13 5<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 533,
+    "index": "D",
+    "name": "Landmarks",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp"
+    ],
+    "solvedCount": 218
+}

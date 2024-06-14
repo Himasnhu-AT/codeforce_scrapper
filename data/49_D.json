@@ -1,0 +1,43 @@
+{
+    "title": "D. Game",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya and Petya have invented a new game. Vasya takes a stripe consisting of <span class=\"tex-span\">1\u2009\u00d7\u2009<i>n</i></span> square and paints the squares black and white. After that Petya can start moves \u2014 during a move he may choose any two neighboring squares of one color and repaint these two squares any way he wants, perhaps in different colors. Petya can only repaint the squares in white and black colors. Petya\u2019s aim is to repaint the stripe so that no two neighboring squares were of one color. Help Petya, using the given initial coloring, find the minimum number of moves Petya needs to win.</p>",
+    "inputSpecification": "<p>The first line contains number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>) which represents the stripe\u2019s length. The second line contains exactly <span class=\"tex-span\"><i>n</i></span> symbols \u2014 the line\u2019s initial coloring. <span class=\"tex-font-style-tt\">0</span> corresponds to a white square, <span class=\"tex-font-style-tt\">1</span> corresponds to a black one.</p>",
+    "outputSpecification": "<p>If Petya cannot win with such an initial coloring, print <span class=\"tex-font-style-tt\">-1</span>. Otherwise print the minimum number of moves Petya needs to win.</p>",
+    "samples": [
+        {
+            "input": "6<br/>111010<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "5<br/>10001<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "7<br/>1100010<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "5<br/>00100<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In the first sample Petya can take squares 1 and 2. He repaints square 1 to black and square 2 to white.</p><p>In the second sample Petya can take squares 2 and 3. He repaints square 2 to white and square 3 to black.</p>",
+    "contestId": 49,
+    "index": "D",
+    "name": "Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "implementation"
+    ],
+    "solvedCount": 1847
+}

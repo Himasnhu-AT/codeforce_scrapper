@@ -1,0 +1,37 @@
+{
+    "title": "B. The Time",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given the current time in <span class=\"tex-span\">24</span>-hour format <span class=\"tex-font-style-tt\">hh:mm</span>. Find and print the time after <span class=\"tex-span\"><i>a</i></span> minutes.</p><p>Note that you should find only the time after <span class=\"tex-span\"><i>a</i></span> minutes, see the examples to clarify the problem statement.</p><p>You can read more about <span class=\"tex-span\">24</span>-hour format here <a href=\"https://en.wikipedia.org/wiki/24-hour_clock\">https://en.wikipedia.org/wiki/24-hour_clock</a>.</p>",
+    "inputSpecification": "<p>The first line contains the current time in the format <span class=\"tex-font-style-tt\">hh:mm</span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>hh</i>\u2009&lt;\u200924,\u20090\u2009\u2264\u2009<i>mm</i>\u2009&lt;\u200960</span>). The hours and the minutes are given with two digits (the hours or the minutes less than <span class=\"tex-span\">10</span> are given with the leading zeroes).</p><p>The second line contains integer <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>) \u2014 the number of the minutes passed.</p>",
+    "outputSpecification": "<p>The only line should contain the time after <span class=\"tex-span\"><i>a</i></span> minutes in the format described in the input. Note that you should print exactly two digits for the hours and the minutes (add leading zeroes to the numbers if needed).</p><p>See the examples to check the input/output format.</p>",
+    "samples": [
+        {
+            "input": "23:59<br/>10<br/>",
+            "output": "00:09<br/>"
+        },
+        {
+            "input": "20:20<br/>121<br/>",
+            "output": "22:21<br/>"
+        },
+        {
+            "input": "10:10<br/>0<br/>",
+            "output": "10:10<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 622,
+    "index": "B",
+    "name": "The Time",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 9129
+}

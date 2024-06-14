@@ -1,0 +1,35 @@
+{
+    "title": "E. Hexagons",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Ayrat is looking for the perfect code. He decided to start his search from an infinite field tiled by hexagons. For convenience the coordinate system is introduced, take a look at the picture to see how the coordinates of hexagon are defined: </p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/bc466ab74df5e91521f2cfe66adc538e7d2c4b67.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8806b7f10135d41961070039076960bf89a93257.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> Ayrat is searching through the field. He started at point <span class=\"tex-span\">(0,\u20090)</span> and is moving along the spiral (see second picture). Sometimes he forgets where he is now. Help Ayrat determine his location after <span class=\"tex-span\"><i>n</i></span> moves.</p>",
+    "inputSpecification": "<p>The only line of the input contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>)\u00a0\u2014 the number of Ayrat's moves.</p>",
+    "outputSpecification": "<p>Print two integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>\u00a0\u2014 current coordinates of Ayrat coordinates.</p>",
+    "samples": [
+        {
+            "input": "3<br/>",
+            "output": "-2 0<br/>"
+        },
+        {
+            "input": "7<br/>",
+            "output": "3 2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 615,
+    "index": "E",
+    "name": "Hexagons",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 965
+}

@@ -1,0 +1,30 @@
+{
+    "title": "E. Darth Vader and Tree",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>When Darth Vader gets bored, he sits down on the sofa, closes his eyes and thinks of an infinite rooted tree where each node has exactly <span class=\"tex-span\"><i>n</i></span> sons, at that for each node, the distance between it an its <span class=\"tex-span\"><i>i</i></span>-th left child equals to <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span>. The Sith Lord loves counting the number of nodes in the tree that are at a distance at most <span class=\"tex-span\"><i>x</i></span> from the root. The distance is the sum of the lengths of edges on the path between nodes.</p><p>But he has got used to this activity and even grew bored of it. 'Why does he do that, then?' \u2014 you may ask. It's just that he feels superior knowing that only he can solve this problem. </p><p>Do you want to challenge Darth Vader himself? Count the required number of nodes. As the answer can be rather large, find it modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20090\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the number of children of each node and the distance from the root within the range of which you need to count the nodes.</p><p>The next line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>) \u2014 the length of the edge that connects each node with its <span class=\"tex-span\"><i>i</i></span>-th child.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the number of vertexes in the tree at distance from the root equal to at most <span class=\"tex-span\"><i>x</i></span>. </p>",
+    "samples": [
+        {
+            "input": "3 3<br/>1 2 3<br/>",
+            "output": "8<br/>"
+        }
+    ],
+    "note": "<p>Pictures to the sample (the yellow color marks the nodes the distance to which is at most three)</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/301b6d42ffae792af27753b1b51697b165bcda8c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> ",
+    "contestId": 514,
+    "index": "E",
+    "name": "Darth Vader and Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "matrices"
+    ],
+    "solvedCount": 1387
+}

@@ -1,0 +1,34 @@
+{
+    "title": "A. Word Capitalization",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Capitalization is writing a word with its first letter as a capital letter. Your task is to capitalize the given word.</p><p>Note, that during capitalization all the letters except the first one remains unchanged.</p>",
+    "inputSpecification": "<p>A single line contains a non-empty word. This word consists of lowercase and uppercase English letters. The length of the word will not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">3</sup></span>.</p>",
+    "outputSpecification": "<p>Output the given word after capitalization.</p>",
+    "samples": [
+        {
+            "input": "ApPLe<br/>",
+            "output": "ApPLe<br/>"
+        },
+        {
+            "input": "konjac<br/>",
+            "output": "Konjac<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 281,
+    "index": "A",
+    "name": "Word Capitalization",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 199157
+}

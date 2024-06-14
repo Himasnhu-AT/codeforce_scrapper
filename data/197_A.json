@@ -1,0 +1,35 @@
+{
+    "title": "A. Plate Game",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've got a rectangular table with length <span class=\"tex-span\"><i>a</i></span> and width <span class=\"tex-span\"><i>b</i></span> and the infinite number of plates of radius <span class=\"tex-span\"><i>r</i></span>. Two players play the following game: they take turns to put the plates on the table so that the plates don't lie on each other (but they can touch each other), and so that any point on any plate is located within the table's border. During the game one cannot move the plates that already lie on the table. The player who cannot make another move loses. Determine which player wins, the one who moves first or the one who moves second, provided that both players play optimally well.</p>",
+    "inputSpecification": "<p>A single line contains three space-separated integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span>, <span class=\"tex-span\"><i>r</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>,\u2009<i>r</i>\u2009\u2264\u2009100)</span> \u2014 the table sides and the plates' radius, correspondingly.</p>",
+    "outputSpecification": "<p>If wins the player who moves first, print \"<span class=\"tex-font-style-tt\">First</span>\" (without the quotes). Otherwise print \"<span class=\"tex-font-style-tt\">Second</span>\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "5 5 2<br/>",
+            "output": "First<br/>"
+        },
+        {
+            "input": "6 7 4<br/>",
+            "output": "Second<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the table has place for only one plate. The first player puts a plate on the table, the second player can't do that and loses.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/454f688fd0b73462c71f86bf1de3d9db7f2303e6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second sample the table is so small that it doesn't have enough place even for one plate. So the first player loses without making a single move.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2605d65aca063e9cba7d555b6be2c74da2ea2be0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 197,
+    "index": "A",
+    "name": "Plate Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "math"
+    ],
+    "solvedCount": 6063
+}

@@ -1,0 +1,37 @@
+{
+    "title": "A. Pashmak and Garden",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Pashmak has fallen in love with an attractive girl called Parmida since one year ago...</p><p>Today, Pashmak set up a meeting with his partner in a romantic garden. Unfortunately, Pashmak has forgotten where the garden is. But he remembers that the garden looks like a square with sides parallel to the coordinate axes. He also remembers that there is exactly one tree on each vertex of the square. Now, Pashmak knows the position of only two of the trees. Help him to find the position of two remaining ones.</p>",
+    "inputSpecification": "<p>The first line contains four space-separated <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub></span> <span class=\"tex-span\">(\u2009-\u2009100\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u2009100)</span> integers, where <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">1</sub></span> are coordinates of the first tree and <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">2</sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">2</sub></span> are coordinates of the second tree. It's guaranteed that the given points are distinct.</p>",
+    "outputSpecification": "<p>If there is no solution to the problem, print <span class=\"tex-font-style-tt\">-1</span>. Otherwise print four space-separated integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">3</sub>,\u2009<i>y</i><sub class=\"lower-index\">3</sub>,\u2009<i>x</i><sub class=\"lower-index\">4</sub>,\u2009<i>y</i><sub class=\"lower-index\">4</sub></span> that correspond to the coordinates of the two other trees. If there are several solutions you can output any of them. </p><p>Note that <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">3</sub>,\u2009<i>y</i><sub class=\"lower-index\">3</sub>,\u2009<i>x</i><sub class=\"lower-index\">4</sub>,\u2009<i>y</i><sub class=\"lower-index\">4</sub></span> must be in the range <span class=\"tex-span\">(\u2009-\u20091000\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">3</sub>,\u2009<i>y</i><sub class=\"lower-index\">3</sub>,\u2009<i>x</i><sub class=\"lower-index\">4</sub>,\u2009<i>y</i><sub class=\"lower-index\">4</sub>\u2009\u2264\u20091000)</span>.</p>",
+    "samples": [
+        {
+            "input": "0 0 0 1<br/>",
+            "output": "1 0 1 1<br/>"
+        },
+        {
+            "input": "0 0 1 1<br/>",
+            "output": "0 1 1 0<br/>"
+        },
+        {
+            "input": "0 0 1 2<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 459,
+    "index": "A",
+    "name": "Pashmak and Garden",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 31680
+}

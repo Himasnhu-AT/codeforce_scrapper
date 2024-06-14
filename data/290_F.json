@@ -1,0 +1,40 @@
+{
+    "title": "F. Greedy Petya",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Petya is an unexperienced programming contestant. Recently he has come across the following problem:</p><p><span class=\"tex-font-style-it\">You are given a non-directed graph which consists of <span class=\"tex-span\"><i>n</i></span> nodes and <span class=\"tex-span\"><i>m</i></span> edges. Your task is to determine whether the graph contains a Hamiltonian path.</span></p><p>Petya wrote a quick bug-free code which he believes solves this problem. After that Petya decided to give this problem for April Fools Day contest. Unfortunately, Petya might have made a mistake, and it's quite possible that his algorithm is wrong. But this isn't a good excuse to leave the contest without submitting this problem, is it?</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i>,\u2009<i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200920;\u00a00\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009400)</span>. Next <span class=\"tex-span\"><i>m</i></span> lines contain pairs of integers <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>)</span>.</p>",
+    "outputSpecification": "<p>Follow the format of Petya's code output.</p>",
+    "samples": [
+        {
+            "input": "2 3<br/>1 2<br/>2 1<br/>1 1<br/>",
+            "output": "Yes<br/>"
+        },
+        {
+            "input": "3 0<br/>",
+            "output": "No<br/>"
+        },
+        {
+            "input": "10 20<br/>3 10<br/>4 6<br/>4 9<br/>7 5<br/>8 8<br/>3 10<br/>9 7<br/>5 2<br/>9 2<br/>10 6<br/>10 4<br/>1 1<br/>7 2<br/>8 4<br/>7 2<br/>1 8<br/>5 4<br/>10 2<br/>8 5<br/>5 2<br/>",
+            "output": "No<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 290,
+    "index": "F",
+    "name": "Greedy Petya",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "dfs and similar",
+        "graphs",
+        "greedy"
+    ],
+    "solvedCount": 128
+}

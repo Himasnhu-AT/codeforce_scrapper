@@ -1,0 +1,31 @@
+{
+    "title": "A. Fancy Fence",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Emuskald needs a fence around his farm, but he is too lazy to build it himself. So he purchased a fence-building robot.</p><p>He wants the fence to be a regular polygon. The robot builds the fence along a single path, but it can only make fence corners at a single angle <span class=\"tex-span\"><i>a</i></span>.</p><p>Will the robot be able to build the fence Emuskald wants? In other words, is there a regular polygon which angles are equal to <span class=\"tex-span\"><i>a</i></span>?</p>",
+    "inputSpecification": "<p>The first line of input contains an integer <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">0\u2009&lt;\u2009<i>t</i>\u2009&lt;\u2009180</span>) \u2014 the number of tests. Each of the following <span class=\"tex-span\"><i>t</i></span> lines contains a single integer <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">0\u2009&lt;\u2009<i>a</i>\u2009&lt;\u2009180</span>) \u2014 the angle the robot can make corners at measured in degrees.</p>",
+    "outputSpecification": "<p>For each test, output on a single line \"<span class=\"tex-font-style-tt\">YES</span>\" (without quotes), if the robot can build a fence Emuskald wants, and \"<span class=\"tex-font-style-tt\">NO</span>\" (without quotes), if it is impossible.</p>",
+    "samples": [
+        {
+            "input": "3<br/>30<br/>60<br/>90<br/>",
+            "output": "NO<br/>YES<br/>YES<br/>"
+        }
+    ],
+    "note": "<p>In the first test case, it is impossible to build the fence, since there is no regular polygon with angle <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/df5f4b07dd5316fde165b43657b2696e2919e791.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the second test case, the fence is a regular triangle, and in the last test case \u2014 a square.</p>",
+    "contestId": 270,
+    "index": "A",
+    "name": "Fancy Fence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 43843
+}

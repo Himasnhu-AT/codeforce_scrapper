@@ -1,0 +1,37 @@
+{
+    "title": "D. Pawn",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>On some square in the lowest row of a chessboard a stands a pawn. It has only two variants of moving: upwards and leftwards or upwards and rightwards. The pawn can choose from which square of the lowest row it can start its journey. On each square lay from 0 to 9 peas. The pawn wants to reach the uppermost row having collected as many peas as possible. As there it will have to divide the peas between itself and its <span class=\"tex-span\"><i>k</i></span> brothers, the number of peas must be divisible by <span class=\"tex-span\"><i>k</i>\u2009+\u20091</span>. Find the maximal number of peas it will be able to collect and which moves it should make to do it.</p><p>The pawn cannot throw peas away or leave the board. When a pawn appears in some square of the board (including the first and last square of the way), it necessarily takes all the peas.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span>, <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100,\u20090\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910</span>) \u2014 the number of rows and columns on the chessboard, the number of the pawn's brothers. Then follow <span class=\"tex-span\"><i>n</i></span> lines containing each <span class=\"tex-span\"><i>m</i></span> numbers from 0 to 9 without spaces \u2014 the chessboard's description. Each square is described by one number \u2014 the number of peas in it. The first line corresponds to the uppermost row and the last line \u2014 to the lowest row.</p>",
+    "outputSpecification": "<p>If it is impossible to reach the highest row having collected the number of peas divisible by <span class=\"tex-span\"><i>k</i>\u2009+\u20091</span>, print <span class=\"tex-font-style-tt\">-1</span>. </p><p>Otherwise, the first line must contain a single number \u2014 the maximal number of peas the pawn can collect given that the number must be divisible by <span class=\"tex-span\"><i>k</i>\u2009+\u20091</span>. The second line must contain a single number \u2014 the number of the square's column in the lowest row, from which the pawn must start its journey. The columns are numbered from the left to the right with integral numbers starting from <span class=\"tex-span\">1</span>. The third line must contain a line consisting of <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> symbols \u2014 the description of the pawn's moves. If the pawn must move upwards and leftwards, print <span class=\"tex-font-style-tt\">L</span>, if it must move upwards and rightwards, print <span class=\"tex-font-style-tt\">R</span>. If there are several solutions to that problem, print any of them.</p>",
+    "samples": [
+        {
+            "input": "3 3 1<br/>123<br/>456<br/>789<br/>",
+            "output": "16<br/>2<br/>RL<br/>"
+        },
+        {
+            "input": "3 3 0<br/>123<br/>456<br/>789<br/>",
+            "output": "17<br/>3<br/>LR<br/>"
+        },
+        {
+            "input": "2 2 10<br/>98<br/>75<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 41,
+    "index": "D",
+    "name": "Pawn",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp"
+    ],
+    "solvedCount": 2202
+}

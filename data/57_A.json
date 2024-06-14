@@ -1,0 +1,39 @@
+{
+    "title": "A. Square Earth?",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Meg the Rabbit decided to do something nice, specifically \u2014 to determine the shortest distance between two points on the surface of our planet. But Meg... what can you say, she wants everything simple. So, she already regards our planet as a two-dimensional circle. No, wait, it's even worse \u2014 as a square of side <span class=\"tex-span\"><i>n</i></span>. Thus, the task has been reduced to finding the shortest path between two dots on a square (the path should go through the square sides). To simplify the task let us consider the vertices of the square to lie at points whose coordinates are: <span class=\"tex-span\">(0,\u20090)</span>, <span class=\"tex-span\">(<i>n</i>,\u20090)</span>, <span class=\"tex-span\">(0,\u2009<i>n</i>)</span> and <span class=\"tex-span\">(<i>n</i>,\u2009<i>n</i>)</span>.</p>",
+    "inputSpecification": "<p>The single line contains 5 space-separated integers: <span class=\"tex-span\"><i>n</i>,\u2009<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000,\u20090\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u2009<i>n</i></span>) which correspondingly represent a side of the square, the coordinates of the first point and the coordinates of the second point. It is guaranteed that the points lie on the sides of the square.</p>",
+    "outputSpecification": "<p>You must print on a single line the shortest distance between the points.</p>",
+    "samples": [
+        {
+            "input": "2 0 0 1 0<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 0 1 2 1<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "100 0 0 100 100<br/>",
+            "output": "200<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 57,
+    "index": "A",
+    "name": "Square Earth?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 2823
+}

@@ -1,0 +1,33 @@
+{
+    "title": "D. Set subtraction",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a starting set consisting of all integers from 1 to 1000, inclusive. You are also given several sets which need to be subtracted from the starting set (i.e., each number which is in at least one of these sets needs to be removed from the starting set). Each subtracted set is represented as an interval of integers from <span class=\"tex-span\"><i>A</i></span> to <span class=\"tex-span\"><i>B</i></span>, inclusive. Output the result after all subtractions.</p>",
+    "inputSpecification": "<p>The first line of input contains an integer <span class=\"tex-span\"><i>N</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>N</i>\u2009\u2264\u2009100</span>) \u2014 the number of intervals to be subtracted. The following <span class=\"tex-span\"><i>N</i></span> lines contain pairs of integers <span class=\"tex-span\"><i>A</i></span> and <span class=\"tex-span\"><i>B</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>A</i>\u2009\u2264\u2009<i>B</i>\u2009\u2264\u20091000</span>) \u2014 lower and upper bounds of the intervals. Intervals can intersect. An interval can consist of a single number.</p>",
+    "outputSpecification": "<p>Output the result of subtractions in the following format: in one line output first the number of integers in the resulting set and then the integers of the set, sorted in increasing order, separated by single space.</p>",
+    "samples": [
+        {
+            "input": "2<br/>1 900<br/>902 999<br/>",
+            "output": "2 901 1000<br/>"
+        },
+        {
+            "input": "3<br/>1 500<br/>200 746<br/>150 1000<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 530,
+    "index": "D",
+    "name": "Set subtraction",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 447
+}

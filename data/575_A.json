@@ -1,0 +1,31 @@
+{
+    "title": "A. Fibonotci",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Fibonotci sequence is an integer recursive sequence defined by the recurrence relation </p><center> <span class=\"tex-span\"><i>F</i><sub class=\"lower-index\"><i>n</i></sub>\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20091</sub>\u00b7<i>F</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20091</sub>\u2009+\u2009<i>s</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20092</sub>\u00b7<i>F</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20092</sub></span> </center> with <center> <span class=\"tex-span\"><i>F</i><sub class=\"lower-index\">0</sub>\u2009=\u20090,\u2009<i>F</i><sub class=\"lower-index\">1</sub>\u2009=\u20091</span> </center><p>Sequence <span class=\"tex-span\"><i>s</i></span> is an infinite and almost cyclic sequence with a cycle of length <span class=\"tex-span\"><i>N</i></span>. A sequence <span class=\"tex-span\"><i>s</i></span> is called almost cyclic with a cycle of length <span class=\"tex-span\"><i>N</i></span> if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/abdce465bcf8d0d338a86425f5fa2335716b3d7a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, for <span class=\"tex-span\"><i>i</i>\u2009\u2265\u2009<i>N</i></span>, except for a finite number of values <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span>, for which <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d2ab32073499aaaf8b0d9c2b91c11a459e9232fd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> (<span class=\"tex-span\"><i>i</i>\u2009\u2265\u2009<i>N</i></span>).</p><p>Following is an example of an almost cyclic sequence with a cycle of length 4: </p><center> s = (5,3,8,11,5,3,7,11,5,3,8,11,\u2026) </center><p>Notice that the only value of <span class=\"tex-span\"><i>s</i></span> for which the equality <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/cd0d4348232c2fbd13e29e43ab74867ddd55b748.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> does not hold is <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">6</sub></span> (<span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">6</sub>\u2009=\u20097</span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub>\u2009=\u20098</span>). You are given <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">0</sub>,\u2009<i>s</i><sub class=\"lower-index\">1</sub>,\u2009...<i>s</i><sub class=\"lower-index\"><i>N</i>\u2009-\u20091</sub></span> and all the values of sequence <span class=\"tex-span\"><i>s</i></span> for which <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d2ab32073499aaaf8b0d9c2b91c11a459e9232fd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> (<span class=\"tex-span\"><i>i</i>\u2009\u2265\u2009<i>N</i></span>).</p><p>Find <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0201bb0e22294177386737ca97362911941b14b8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "inputSpecification": "<p>The first line contains two numbers <span class=\"tex-span\"><i>K</i></span> and <span class=\"tex-span\"><i>P</i></span>. The second line contains a single number <span class=\"tex-span\"><i>N</i></span>. The third line contains <span class=\"tex-span\"><i>N</i></span> numbers separated by spaces, that represent the first <span class=\"tex-span\"><i>N</i></span> numbers of the sequence <span class=\"tex-span\"><i>s</i></span>. The fourth line contains a single number <span class=\"tex-span\"><i>M</i></span>, the number of values of sequence <span class=\"tex-span\"><i>s</i></span> for which <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d2ab32073499aaaf8b0d9c2b91c11a459e9232fd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Each of the following <span class=\"tex-span\"><i>M</i></span> lines contains two numbers <span class=\"tex-span\"><i>j</i></span> and <span class=\"tex-span\"><i>v</i></span>, indicating that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/564d9a2c078730cf3e878e777c1048b58dd9fa77.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>j</i></sub>\u2009=\u2009<i>v</i></span>. All j-s are distinct.</p><ul> <li> <span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>,\u2009<i>M</i>\u2009\u2264\u200950000</span> </li><li> <span class=\"tex-span\">0\u2009\u2264\u2009<i>K</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span> </li><li> <span class=\"tex-span\">1\u2009\u2264\u2009<i>P</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span> </li><li> <span class=\"tex-span\">1\u2009\u2264\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, for all <span class=\"tex-span\"><i>i</i>\u2009=\u20090,\u20091,\u2009...<i>N</i>\u2009-\u20091</span> </li><li> <span class=\"tex-span\"><i>N</i>\u2009\u2264\u2009<i>j</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span> </li><li> <span class=\"tex-span\">1\u2009\u2264\u2009<i>v</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span> </li><li> All values are integers </li></ul>",
+    "outputSpecification": "<p>Output should contain a single integer equal to <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0201bb0e22294177386737ca97362911941b14b8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "10 8<br/>3<br/>1 2 1<br/>2<br/>7 3<br/>5 4<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 575,
+    "index": "A",
+    "name": "Fibonotci",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "math",
+        "matrices"
+    ],
+    "solvedCount": 769
+}

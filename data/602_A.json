@@ -1,0 +1,38 @@
+{
+    "title": "A. Two Bases",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>After seeing the \"ALL YOUR BASE ARE BELONG TO US\" meme for the first time, numbers <span class=\"tex-span\"><i>X</i></span> and <span class=\"tex-span\"><i>Y</i></span> realised that they have different bases, which complicated their relations.</p><p>You're given a number <span class=\"tex-span\"><i>X</i></span> represented in base <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>x</i></sub></span> and a number <span class=\"tex-span\"><i>Y</i></span> represented in base <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>y</i></sub></span>. Compare those two numbers.</p>",
+    "inputSpecification": "<p>The first line of the input contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>x</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910</span>, <span class=\"tex-span\">2\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>x</i></sub>\u2009\u2264\u200940</span>), where <span class=\"tex-span\"><i>n</i></span> is the number of digits in the <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>x</i></sub></span>-based representation of <span class=\"tex-span\"><i>X</i></span>. </p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>b</i><sub class=\"lower-index\"><i>x</i></sub></span>) \u2014 the digits of <span class=\"tex-span\"><i>X</i></span>. They are given in the order from the most significant digit to the least significant one.</p><p>The following two lines describe <span class=\"tex-span\"><i>Y</i></span> in the same way: the third line contains two space-separated integers <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>y</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910</span>, <span class=\"tex-span\">2\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>y</i></sub>\u2009\u2264\u200940</span>, <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>x</i></sub>\u2009\u2260\u2009<i>b</i><sub class=\"lower-index\"><i>y</i></sub></span>), where <span class=\"tex-span\"><i>m</i></span> is the number of digits in the <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>y</i></sub></span>-based representation of <span class=\"tex-span\"><i>Y</i></span>, and the fourth line contains <span class=\"tex-span\"><i>m</i></span> space-separated integers <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>y</i><sub class=\"lower-index\"><i>m</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>b</i><sub class=\"lower-index\"><i>y</i></sub></span>) \u2014 the digits of <span class=\"tex-span\"><i>Y</i></span>.</p><p>There will be no leading zeroes. Both <span class=\"tex-span\"><i>X</i></span> and <span class=\"tex-span\"><i>Y</i></span> will be positive. All digits of both numbers are given in the standard decimal numeral system.</p>",
+    "outputSpecification": "<p>Output a single character (quotes for clarity): </p><ul> <li> '<span class=\"tex-font-style-tt\">&lt;</span>' if <span class=\"tex-span\"><i>X</i>\u2009&lt;\u2009<i>Y</i></span> </li><li> '<span class=\"tex-font-style-tt\">&gt;</span>' if <span class=\"tex-span\"><i>X</i>\u2009&gt;\u2009<i>Y</i></span> </li><li> '<span class=\"tex-font-style-tt\">=</span>' if <span class=\"tex-span\"><i>X</i>\u2009=\u2009<i>Y</i></span> </li></ul>",
+    "samples": [
+        {
+            "input": "6 2<br/>1 0 1 1 1 1<br/>2 10<br/>4 7<br/>",
+            "output": "=<br/>"
+        },
+        {
+            "input": "3 3<br/>1 0 2<br/>2 5<br/>2 4<br/>",
+            "output": "<<br/>"
+        },
+        {
+            "input": "7 16<br/>15 15 4 0 0 7 10<br/>7 9<br/>4 8 0 3 1 5 0<br/>",
+            "output": "><br/>"
+        }
+    ],
+    "note": "<p>In the first sample, <span class=\"tex-span\"><i>X</i>\u2009=\u2009101111<sub class=\"lower-index\">2</sub>\u2009=\u200947<sub class=\"lower-index\">10</sub>\u2009=\u2009<i>Y</i></span>.</p><p>In the second sample, <span class=\"tex-span\"><i>X</i>\u2009=\u2009102<sub class=\"lower-index\">3</sub>\u2009=\u200921<sub class=\"lower-index\">5</sub></span> and <span class=\"tex-span\"><i>Y</i>\u2009=\u200924<sub class=\"lower-index\">5</sub>\u2009=\u2009112<sub class=\"lower-index\">3</sub></span>, thus <span class=\"tex-span\"><i>X</i>\u2009&lt;\u2009<i>Y</i></span>.</p><p>In the third sample, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/603a342b0ae3e56fed542d1c50c0a5ff6ce2cbaa.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <span class=\"tex-span\"><i>Y</i>\u2009=\u20094803150<sub class=\"lower-index\">9</sub></span>. We may notice that <span class=\"tex-span\"><i>X</i></span> starts with much larger digits and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>x</i></sub></span> is much larger than <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>y</i></sub></span>, so <span class=\"tex-span\"><i>X</i></span> is clearly larger than <span class=\"tex-span\"><i>Y</i></span>.</p>",
+    "contestId": 602,
+    "index": "A",
+    "name": "Two Bases",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 8380
+}

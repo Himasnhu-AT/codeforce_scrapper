@@ -1,0 +1,38 @@
+{
+    "title": "A. Chips",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are <span class=\"tex-span\"><i>n</i></span> walruses sitting in a circle. All of them are numbered in the clockwise order: the walrus number <span class=\"tex-span\">2</span> sits to the left of the walrus number <span class=\"tex-span\">1</span>, the walrus number <span class=\"tex-span\">3</span> sits to the left of the walrus number <span class=\"tex-span\">2</span>, ..., the walrus number <span class=\"tex-span\">1</span> sits to the left of the walrus number <span class=\"tex-span\"><i>n</i></span>.</p><p>The presenter has <span class=\"tex-span\"><i>m</i></span> chips. The presenter stands in the middle of the circle and starts giving the chips to the walruses starting from walrus number <span class=\"tex-span\">1</span> and moving clockwise. The walrus number <span class=\"tex-span\"><i>i</i></span> gets <span class=\"tex-span\"><i>i</i></span> chips. If the presenter can't give the current walrus the required number of chips, then the presenter takes the remaining chips and the process ends. Determine by the given <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> how many chips the presenter will get in the end.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>) \u2014 the number of walruses and the number of chips correspondingly.</p>",
+    "outputSpecification": "<p>Print the number of chips the presenter ended up with.</p>",
+    "samples": [
+        {
+            "input": "4 11<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "17 107<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3 8<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the presenter gives one chip to the walrus number <span class=\"tex-span\">1</span>, two chips to the walrus number <span class=\"tex-span\">2</span>, three chips to the walrus number <span class=\"tex-span\">3</span>, four chips to the walrus number <span class=\"tex-span\">4</span>, then again one chip to the walrus number <span class=\"tex-span\">1</span>. After that the presenter runs out of chips. He can't give anything to the walrus number <span class=\"tex-span\">2</span> and the process finishes.</p><p>In the third sample the presenter gives one chip to the walrus number <span class=\"tex-span\">1</span>, two chips to the walrus number <span class=\"tex-span\">2</span>, three chips to the walrus number <span class=\"tex-span\">3</span>, then again one chip to the walrus number <span class=\"tex-span\">1</span>. The presenter has one chip left and he can't give two chips to the walrus number <span class=\"tex-span\">2</span>, that's why the presenter takes the last chip.</p>",
+    "contestId": 92,
+    "index": "A",
+    "name": "Chips",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 18320
+}

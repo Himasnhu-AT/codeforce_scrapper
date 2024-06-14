@@ -1,0 +1,35 @@
+{
+    "title": "B. Football Kit",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Consider a football tournament where <span class=\"tex-span\"><i>n</i></span> teams participate. Each team has two football kits: for home games, and for away games. The kit for home games of the <span class=\"tex-span\"><i>i</i></span>-th team has color <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and the kit for away games of this team has color <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>)</span>.</p><p>In the tournament, each team plays exactly one home game and exactly one away game with each other team (<span class=\"tex-span\"><i>n</i>(<i>n</i>\u2009-\u20091)</span> games in total). The team, that plays the home game, traditionally plays in its home kit. The team that plays an away game plays in its away kit. However, if two teams has the kits of the same color, they cannot be distinguished. In this case the away team plays in its home kit.</p><p>Calculate how many games in the described tournament each team plays in its home kit and how many games it plays in its away kit.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> \u2014 the number of teams. Next <span class=\"tex-span\"><i>n</i></span> lines contain the description of the teams. The <span class=\"tex-span\"><i>i</i></span>-th line contains two space-separated numbers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>;\u00a0<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>)</span> \u2014 the color numbers for the home and away kits of the <span class=\"tex-span\"><i>i</i></span>-th team.</p>",
+    "outputSpecification": "<p>For each team, print on a single line two space-separated integers \u2014 the number of games this team is going to play in home and away kits, correspondingly. Print the answers for the teams in the order they appeared in the input.</p>",
+    "samples": [
+        {
+            "input": "2<br/>1 2<br/>2 1<br/>",
+            "output": "2 0<br/>2 0<br/>"
+        },
+        {
+            "input": "3<br/>1 2<br/>2 1<br/>1 3<br/>",
+            "output": "3 1<br/>4 0<br/>2 2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 432,
+    "index": "B",
+    "name": "Football Kit",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 11531
+}

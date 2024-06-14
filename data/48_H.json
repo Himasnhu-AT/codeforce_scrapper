@@ -1,0 +1,33 @@
+{
+    "title": "H. Black and White",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>According to the legends the king of Berland Berl I was noted for his love of beauty and order. One day he ordered to tile the palace hall's floor where balls and receptions used to take place with black and white tiles according to a regular geometrical pattern invented by him. However, as is after the case, due to low financing there were only <span class=\"tex-span\"><i>a</i></span> black and <span class=\"tex-span\"><i>b</i></span> white tiles delivered to the palace. The other <span class=\"tex-span\"><i>c</i></span> tiles were black and white (see the picture).</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2786736eba96dcc519372e86ab18088b2c4b0738.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The initial plan failed! Having learned of that, the king gave a new command: tile the floor with the available tiles so that no black side of a tile touched a white one. The tiles are squares of one size <span class=\"tex-span\">1\u2009\u00d7\u20091</span>, every black and white tile can be rotated in one of the four ways. </p><p>The court programmer was given the task to work out the plan of tiling and he coped with the task and didn't suffer the consequences of disobedience. And can you cope with it?</p>",
+    "inputSpecification": "<p>The first line contains given integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>) which represent the sizes of the rectangle that needs to be tiled. The next line contains non-negative numbers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span> and <span class=\"tex-span\"><i>c</i></span>, <span class=\"tex-span\"><i>a</i>\u2009+\u2009<i>b</i>\u2009+\u2009<i>c</i>\u2009=\u2009<i>nm</i></span>, <span class=\"tex-span\"><i>c</i>\u2009\u2265\u2009<i>m</i></span>. </p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\">2<i>n</i></span> lines containing <span class=\"tex-span\">2<i>m</i></span> characters each \u2014 the tiling scheme. Every tile is represented by a square <span class=\"tex-span\">2\u2009\u00d7\u20092</span> in the following manner (the order corresponds to the order of the picture above): </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/12a58dc2c7f594475831098cec0a36265f845a84.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> If multiple solutions exist, output any.",
+    "samples": [
+        {
+            "input": "2 2<br/>0 0 4<br/>",
+            "output": "<span class=\"tex-span\">\\</span>../<br/>#<span class=\"tex-span\">\\</span>/#<br/><span class=\"tex-span\">\\</span>##/<br/>.<span class=\"tex-span\">\\</span>/.<br/>"
+        },
+        {
+            "input": "2 3<br/>1 2 3<br/>",
+            "output": "###/<span class=\"tex-span\">\\</span>#<br/>##/..<span class=\"tex-span\">\\</span><br/>#/....<br/>/.....<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 48,
+    "index": "H",
+    "name": "Black and White",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms"
+    ],
+    "solvedCount": 137
+}

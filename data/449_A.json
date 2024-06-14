@@ -1,0 +1,38 @@
+{
+    "title": "A. Jzzhu and Chocolate",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Jzzhu has a big rectangular chocolate bar that consists of <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> unit squares. He wants to cut this bar exactly <span class=\"tex-span\"><i>k</i></span> times. Each cut must meet the following requirements:</p><ul> <li> each cut should be straight (horizontal or vertical); </li><li> each cut should go along edges of unit squares (it is prohibited to divide any unit chocolate square with cut); </li><li> each cut should go inside the whole chocolate bar, and all cuts must be distinct. </li></ul><p>The picture below shows a possible way to cut a <span class=\"tex-span\">5\u2009\u00d7\u20096</span> chocolate for <span class=\"tex-span\">5</span> times.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/27ac5173d5bdad7a51319cdf36c083c223192d93.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Imagine Jzzhu have made <span class=\"tex-span\"><i>k</i></span> cuts and the big chocolate is splitted into several pieces. Consider the smallest (by area) piece of the chocolate, Jzzhu wants this piece to be as large as possible. What is the maximum possible area of smallest piece he can get with exactly <span class=\"tex-span\"><i>k</i></span> cuts? The area of a chocolate piece is the number of unit squares in it.</p>",
+    "inputSpecification": "<p>A single line contains three integers <span class=\"tex-span\"><i>n</i>,\u2009<i>m</i>,\u2009<i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>;\u00a01\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">9</sup>)</span>.</p>",
+    "outputSpecification": "<p>Output a single integer representing the answer. If it is impossible to cut the big chocolate <span class=\"tex-span\"><i>k</i></span> times, print <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "samples": [
+        {
+            "input": "3 4 1<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "6 4 2<br/>",
+            "output": "8<br/>"
+        },
+        {
+            "input": "2 3 4<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, Jzzhu can cut the chocolate following the picture below:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/dbf76f376f38f0a80ce3c29a71d9f93d34e62e2f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second sample the optimal division looks like this:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/fb510c2288c2444d4ba9676454d01a47337cf03f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the third sample, it's impossible to cut a <span class=\"tex-span\">2\u2009\u00d7\u20093</span> chocolate <span class=\"tex-span\">4</span> times.</p>",
+    "contestId": 449,
+    "index": "A",
+    "name": "Jzzhu and Chocolate",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 3874
+}

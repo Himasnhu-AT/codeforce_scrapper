@@ -1,0 +1,38 @@
+{
+    "title": "C. Vectors",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>At a geometry lesson Gerald was given a task: to get vector <span class=\"tex-span\"><i>B</i></span> out of vector <span class=\"tex-span\"><i>A</i></span>. Besides, the teacher permitted him to perform the following operations with vector <span class=\"tex-span\"><i>\u0410</i></span>:</p><ul><li> Turn the vector by <span class=\"tex-span\">90</span> degrees clockwise.</li><li> Add to the vector a certain vector <span class=\"tex-span\"><i>C</i></span>.</li></ul><p>Operations could be performed in any order any number of times.</p><p>Can Gerald cope with the task?</p>",
+    "inputSpecification": "<p>The first line contains integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub></span> \u0438 <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">1</sub></span> \u2014 the coordinates of the vector <span class=\"tex-span\"><i>A</i></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">8</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u200910<sup class=\"upper-index\">8</sup></span>). The second and the third line contain in the similar manner vectors <span class=\"tex-span\"><i>B</i></span> and <span class=\"tex-span\"><i>C</i></span> (their coordinates are integers; their absolute value does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">8</sup></span>).</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" (without the quotes) if it is possible to get vector <span class=\"tex-span\"><i>B</i></span> using the given operations. Otherwise print \"<span class=\"tex-font-style-tt\">NO</span>\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "0 0<br/>1 1<br/>0 1<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "0 0<br/>1 1<br/>1 1<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "0 0<br/>1 1<br/>2 2<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 101,
+    "index": "C",
+    "name": "Vectors",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 687
+}

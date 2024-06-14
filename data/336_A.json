@@ -1,0 +1,34 @@
+{
+    "title": "A. Vasily the Bear and Triangle",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasily the bear has a <span class=\"tex-font-style-it\">favorite rectangle</span>, it has one vertex at point <span class=\"tex-span\">(0,\u20090)</span>, and the opposite vertex at point <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>. Of course, the sides of Vasya's favorite rectangle are parallel to the coordinate axes. </p><p>Vasya also loves triangles, if the triangles have one vertex at point <span class=\"tex-span\"><i>B</i>\u2009=\u2009(0,\u20090)</span>. That's why today he asks you to find two points <span class=\"tex-span\"><i>A</i>\u2009=\u2009(<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>)</span> and <span class=\"tex-span\"><i>C</i>\u2009=\u2009(<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>)</span>, such that the following conditions hold:</p><ul> <li> the coordinates of points: <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">2</sub></span> are integers. Besides, the following inequation holds: <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>x</i><sub class=\"lower-index\">2</sub></span>; </li><li> the triangle formed by point <span class=\"tex-span\"><i>A</i></span>, <span class=\"tex-span\"><i>B</i></span> and <span class=\"tex-span\"><i>C</i></span> is rectangular and isosceles (<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/2936a38a3166d972e7d168a8789cd9d5cc13bdd1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is right); </li><li> all points of the favorite rectangle are located inside or on the border of triangle <span class=\"tex-span\"><i>ABC</i></span>; </li><li> the area of triangle <span class=\"tex-span\"><i>ABC</i></span> is as small as possible. </li></ul><p>Help the bear, find the required points. It is not so hard to proof that these points are unique.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>x</i>,\u2009<i>y</i></span> <span class=\"tex-span\">(\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>,\u2009<i>x</i>\u2009\u2260\u20090,\u2009<i>y</i>\u2009\u2260\u20090)</span>.</p>",
+    "outputSpecification": "<p>Print in the single line four integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub></span> \u2014 the coordinates of the required points.</p>",
+    "samples": [
+        {
+            "input": "10 5<br/>",
+            "output": "0 15 15 0<br/>"
+        },
+        {
+            "input": "-10 5<br/>",
+            "output": "-15 0 0 15<br/>"
+        }
+    ],
+    "note": "<p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/a9ea2088c4294ce8f23801562fda36b830df2c3f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p><span class=\"tex-font-size-script\">Figure to the first sample</span></p>",
+    "contestId": 336,
+    "index": "A",
+    "name": "Vasily the Bear and Triangle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 9912
+}

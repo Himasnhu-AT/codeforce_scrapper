@@ -1,0 +1,30 @@
+{
+    "title": "B. Balancer",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Petya has <span class=\"tex-span\"><i>k</i></span> matches, placed in <span class=\"tex-span\"><i>n</i></span> matchboxes lying in a line from left to right. We know that <span class=\"tex-span\"><i>k</i></span> is divisible by <span class=\"tex-span\"><i>n</i></span>. Petya wants all boxes to have the same number of matches inside. For that, he can move a match from its box to the adjacent one in one move. How many such moves does he need to achieve the desired configuration?</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950000</span>). The second line contains <span class=\"tex-span\"><i>n</i></span> non-negative numbers that do not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup></span>, the <span class=\"tex-span\"><i>i</i></span>-th written number is the number of matches in the <span class=\"tex-span\"><i>i</i></span>-th matchbox. It is guaranteed that the total number of matches is divisible by <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "outputSpecification": "<p>Print the total minimum number of moves.</p>",
+    "samples": [
+        {
+            "input": "6<br/>1 6 2 5 3 7<br/>",
+            "output": "12<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 440,
+    "index": "B",
+    "name": "Balancer",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 1923
+}

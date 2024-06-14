@@ -1,0 +1,35 @@
+{
+    "title": "A. Kyoya and Photobooks",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Kyoya Ootori is selling photobooks of the Ouran High School Host Club. He has 26 photos, labeled \"a\" to \"z\", and he has compiled them into a photo booklet with some photos in some order (possibly with some photos being duplicated). A photo booklet can be described as a string of lowercase letters, consisting of the photos in the booklet in order. He now wants to sell some \"special edition\" photobooks, each with one extra photo inserted anywhere in the book. He wants to make as many distinct photobooks as possible, so he can make more money. He asks Haruhi, how many distinct photobooks can he make by inserting one extra photo into the photobook he already has?</p><p>Please help Haruhi solve this problem.</p>",
+    "inputSpecification": "<p>The first line of input will be a single string <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u200920</span>). String <span class=\"tex-span\"><i>s</i></span> consists only of lowercase English letters. </p>",
+    "outputSpecification": "<p>Output a single integer equal to the number of distinct photobooks Kyoya Ootori can make.</p>",
+    "samples": [
+        {
+            "input": "a<br/>",
+            "output": "51<br/>"
+        },
+        {
+            "input": "hi<br/>",
+            "output": "76<br/>"
+        }
+    ],
+    "note": "<p>In the first case, we can make '<span class=\"tex-font-style-tt\">ab</span>','<span class=\"tex-font-style-tt\">ac</span>',<span class=\"tex-span\">...</span>,'<span class=\"tex-font-style-tt\">az</span>','<span class=\"tex-font-style-tt\">ba</span>','<span class=\"tex-font-style-tt\">ca</span>',<span class=\"tex-span\">...</span>,'<span class=\"tex-font-style-tt\">za</span>', and '<span class=\"tex-font-style-tt\">aa</span>', producing a total of 51 distinct photo booklets. </p>",
+    "contestId": 554,
+    "index": "A",
+    "name": "Kyoya and Photobooks",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "math",
+        "strings"
+    ],
+    "solvedCount": 12822
+}

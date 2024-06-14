@@ -1,0 +1,33 @@
+{
+    "title": "A. Measuring Lengths in Baden",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Lengths are measures in Baden in inches and feet. To a length from centimeters it is enough to know that an inch equals three centimeters in Baden and one foot contains 12 inches.</p><p>You are given a length equal to <span class=\"tex-span\"><i>n</i></span> centimeters. Your task is to convert it to feet and inches so that the number of feet was maximum. The result should be an integer rounded to the closest value containing an integral number of inches.</p><p>Note that when you round up, 1 cm rounds up to 0 inches and 2 cm round up to 1 inch.</p>",
+    "inputSpecification": "<p>The only line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910000</span>).</p>",
+    "outputSpecification": "<p>Print two non-negative space-separated integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>, where <span class=\"tex-span\"><i>a</i></span> is the numbers of feet and <span class=\"tex-span\"><i>b</i></span> is the number of inches.</p>",
+    "samples": [
+        {
+            "input": "42<br/>",
+            "output": "1 2<br/>"
+        },
+        {
+            "input": "5<br/>",
+            "output": "0 2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 125,
+    "index": "A",
+    "name": "Measuring Lengths in Baden",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 2647
+}

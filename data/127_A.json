@@ -1,0 +1,37 @@
+{
+    "title": "A. Wasted Time",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mr. Scrooge, a very busy man, decided to count the time he wastes on all sorts of useless stuff to evaluate the lost profit. He has already counted the time he wastes sleeping and eating. And now Mr. Scrooge wants to count the time he has wasted signing papers.</p><p>Mr. Scrooge's signature can be represented as a polyline <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\">1</sub><i>A</i><sub class=\"lower-index\">2</sub>... <i>A</i><sub class=\"lower-index\"><i>n</i></sub></span>. Scrooge signs like that: first it places a pen at the point <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\">1</sub></span>, then draws a segment from point <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\">1</sub></span> to point <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\">2</sub></span>, then he draws a segment from point <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\">2</sub></span> to point <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\">3</sub></span> and so on to point <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>n</i></sub></span>, where he stops signing and takes the pen off the paper. At that the resulting line can intersect with itself and partially repeat itself but Scrooge pays no attention to it and never changes his signing style. As Scrooge makes the signature, he never takes the pen off the paper and his writing speed is constant \u2014 <span class=\"tex-span\">50</span> millimeters per second.</p><p>Scrooge signed exactly <span class=\"tex-span\"><i>k</i></span> papers throughout his life and all those signatures look the same.</p><p>Find the total time Scrooge wasted signing the papers.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20091000</span>). Each of the following <span class=\"tex-span\"><i>n</i></span> lines contains the coordinates of the polyline's endpoints. The <span class=\"tex-span\"><i>i</i></span>-th one contains coordinates of the point <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>i</i></sub></span> \u2014 integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>, separated by a space.</p><p>All points <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>i</i></sub></span> are different. The absolute value of all coordinates does not exceed <span class=\"tex-span\">20</span>. The coordinates are measured in millimeters.</p>",
+    "outputSpecification": "<p>Print one real number \u2014 the total time Scrooges wastes on signing the papers in seconds. The absolute or relative error should not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "2 1<br/>0 0<br/>10 0<br/>",
+            "output": "0.200000000"
+        },
+        {
+            "input": "5 10<br/>3 1<br/>-5 6<br/>-2 -1<br/>3 2<br/>10 0<br/>",
+            "output": "6.032163204"
+        },
+        {
+            "input": "6 10<br/>5 0<br/>4 0<br/>6 0<br/>3 0<br/>7 0<br/>2 0<br/>",
+            "output": "3.000000000"
+        }
+    ],
+    "note": null,
+    "contestId": 127,
+    "index": "A",
+    "name": "Wasted Time",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 10806
+}

@@ -1,0 +1,33 @@
+{
+    "title": "E. Anfisa the Monkey",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Anfisa the monkey learns to type. She is yet unfamiliar with the \"space\" key and can only type in lower-case Latin letters. Having typed for a fairly long line, Anfisa understood that it would be great to divide what she has written into <span class=\"tex-span\"><i>k</i></span> lines not shorter than <span class=\"tex-span\"><i>a</i></span> and not longer than <span class=\"tex-span\"><i>b</i></span>, for the text to resemble human speech more. Help Anfisa.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>k</i></span>, <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009200</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u2009<i>b</i>\u2009\u2264\u2009200</span>). The second line contains a sequence of lowercase Latin letters \u2014 the text typed by Anfisa. It is guaranteed that the given line is not empty and its length does not exceed <span class=\"tex-span\">200</span> symbols.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>k</i></span> lines, each of which contains no less than <span class=\"tex-span\"><i>a</i></span> and no more than <span class=\"tex-span\"><i>b</i></span> symbols \u2014 Anfisa's text divided into lines. It is not allowed to perform any changes in the text, such as: deleting or adding symbols, changing their order, etc. If the solution is not unique, print any of them. If there is no solution, print \"No solution\" (without quotes). </p>",
+    "samples": [
+        {
+            "input": "3 2 5<br/>abrakadabra<br/>",
+            "output": "ab<br/>rakad<br/>abra<br/>"
+        },
+        {
+            "input": "4 1 2<br/>abrakadabra<br/>",
+            "output": "No solution<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 44,
+    "index": "E",
+    "name": "Anfisa the Monkey",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp"
+    ],
+    "solvedCount": 4889
+}

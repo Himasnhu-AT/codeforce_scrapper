@@ -1,0 +1,33 @@
+{
+    "title": "F. Meta-universe",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Consider infinite grid of unit cells. Some of those cells are <span class=\"tex-font-style-it\">planets</span>. </p><p><span class=\"tex-font-style-it\">Meta-universe</span> <span class=\"tex-span\"><i>M</i>\u2009=\u2009{<i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>k</i></sub>}</span> is a set of planets. Suppose there is an infinite row or column with following two properties: 1) it doesn't contain any planet <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> of meta-universe <span class=\"tex-span\"><i>M</i></span> on it; 2) there are planets of <span class=\"tex-span\"><i>M</i></span> located on both sides from this row or column. In this case we can turn the meta-universe <span class=\"tex-span\"><i>M</i></span> into two non-empty meta-universes <span class=\"tex-span\"><i>M</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>M</i><sub class=\"lower-index\">2</sub></span> containing planets that are located on respective sides of this row or column. </p><p>A meta-universe which can't be split using operation above is called a <span class=\"tex-font-style-it\">universe</span>. We perform such operations until all meta-universes turn to universes.</p><p>Given positions of the planets in the original meta-universe, find the number of universes that are result of described process. It can be proved that each universe is uniquely identified not depending from order of splitting.</p>",
+    "inputSpecification": "<p>The first line of input contains an integer <span class=\"tex-span\"><i>n</i></span>, (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>), denoting the number of planets in the meta-universe.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines each contain integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>, (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), denoting the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th planet. All planets are located in different cells.</p>",
+    "outputSpecification": "<p>Print the number of resulting universes.</p>",
+    "samples": [
+        {
+            "input": "5<br/>0 0<br/>0 2<br/>2 0<br/>2 1<br/>2 2<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "8<br/>0 0<br/>1 0<br/>0 2<br/>0 3<br/>3 0<br/>3 1<br/>2 3<br/>3 3<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>The following figure describes the first test case:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/26a53dec7378ebe1b6b09af6603f7be35dbd062d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 475,
+    "index": "F",
+    "name": "Meta-universe",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures"
+    ],
+    "solvedCount": 227
+}

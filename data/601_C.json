@@ -1,0 +1,39 @@
+{
+    "title": "C. Kleof\u00e1\u0161 and the n-thlon",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Kleof\u00e1\u0161 is participating in an <span class=\"tex-span\"><i>n</i></span>-thlon - a tournament consisting of <span class=\"tex-span\"><i>n</i></span> different competitions in <span class=\"tex-span\"><i>n</i></span> different disciplines (numbered <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>n</i></span>). There are <span class=\"tex-span\"><i>m</i></span> participants in the <span class=\"tex-span\"><i>n</i></span>-thlon and each of them participates in all competitions.</p><p>In each of these <span class=\"tex-span\"><i>n</i></span> competitions, the participants are given <span class=\"tex-font-style-underline\">ranks</span> from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span> in such a way that no two participants are given the same rank - in other words, the ranks in each competition form a permutation of numbers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span>. The <span class=\"tex-font-style-underline\">score</span> of a participant in a competition is equal to his/her rank in it.</p><p>The <span class=\"tex-font-style-underline\">overall score</span> of each participant is computed as the sum of that participant's scores in all competitions.</p><p>The <span class=\"tex-font-style-underline\">overall rank</span> of each participant is equal to <span class=\"tex-span\">1\u2009+\u2009<i>k</i></span>, where <span class=\"tex-span\"><i>k</i></span> is the number of participants with <span class=\"tex-font-style-bf\">strictly smaller</span> overall score.</p><p>The <span class=\"tex-span\"><i>n</i></span>-thlon is over now, but the results haven't been published yet. Kleof\u00e1\u0161 still remembers his ranks in each particular competition; however, he doesn't remember anything about how well the other participants did. Therefore, Kleof\u00e1\u0161 would like to know his expected overall rank.</p><p>All competitors are equally good at each discipline, so all rankings (permutations of ranks of everyone except Kleof\u00e1\u0161) in each competition are equiprobable.</p>",
+    "inputSpecification": "<p>The first line of the input contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of competitions and the number of participants respectively.</p><p>Then, <span class=\"tex-span\"><i>n</i></span> lines follow. The <span class=\"tex-span\"><i>i</i></span>-th of them contains one integer <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>m</i></span>)\u00a0\u2014 the rank of Kleof\u00e1\u0161 in the <span class=\"tex-span\"><i>i</i></span>-th competition.</p>",
+    "outputSpecification": "<p>Output a single real number \u2013 the expected overall rank of Kleof\u00e1\u0161. Your answer will be considered correct if its relative or absolute error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20099</sup></span>.</p><p>Namely: let's assume that your answer is <span class=\"tex-span\"><i>a</i></span>, and the answer of the jury is <span class=\"tex-span\"><i>b</i></span>. The checker program will consider your answer correct, if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c5e2d5f952bf0600d65151cbd23c801f49c2c594.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "4 10<br/>2<br/>1<br/>2<br/>1<br/>",
+            "output": "1.0000000000000000<br/>"
+        },
+        {
+            "input": "5 5<br/>1<br/>2<br/>3<br/>4<br/>5<br/>",
+            "output": "2.7500000000000000<br/>"
+        },
+        {
+            "input": "3 6<br/>2<br/>4<br/>2<br/>",
+            "output": "1.6799999999999999<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, Kleof\u00e1\u0161 has overall score <span class=\"tex-span\">6</span>. Nobody else can have overall score less than <span class=\"tex-span\">6</span> (but it's possible for one other person to have overall score <span class=\"tex-span\">6</span> as well), so his overall rank must be <span class=\"tex-span\">1</span>.</p>",
+    "contestId": 601,
+    "index": "C",
+    "name": "Kleof\u00e1\u0161 and the n-thlon",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "math",
+        "probabilities"
+    ],
+    "solvedCount": 1292
+}

@@ -1,0 +1,38 @@
+{
+    "title": "E. Pashmak and Graph",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Pashmak's homework is a problem about graphs. Although he always tries to do his homework completely, he can't solve this problem. As you know, he's really weak at graph theory; so try to help him in solving the problem.</p><p>You are given a weighted directed graph with <span class=\"tex-span\"><i>n</i></span> vertices and <span class=\"tex-span\"><i>m</i></span> edges. You need to find a path (perhaps, non-simple) with maximum number of edges, such that the weights of the edges increase along the path. In other words, each edge of the path must have strictly greater weight than the previous edge in the path.</p><p>Help Pashmak, print the number of edges in the required path.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup>;\u00a01\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009<i>min</i>(<i>n</i>\u00b7(<i>n</i>\u2009-\u20091),\u20093\u00b710<sup class=\"upper-index\">5</sup>))</span>. Then, <span class=\"tex-span\"><i>m</i></span> lines follows. The <span class=\"tex-span\"><i>i</i></span>-th line contains three space separated integers: <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>;\u00a01\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> which indicates that there's a directed edge with weight <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> from vertex <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> to vertex <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>It's guaranteed that the graph doesn't contain self-loops and multiple edges.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>1 2 1<br/>2 3 1<br/>3 1 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3 3<br/>1 2 1<br/>2 3 2<br/>3 1 3<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "6 7<br/>1 2 1<br/>3 2 5<br/>2 4 2<br/>2 5 2<br/>2 6 9<br/>5 4 3<br/>4 3 4<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the maximum trail can be any of this trails: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1534088dd4d998a9bcc7e17dba96f7c213c54fc6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the second sample the maximum trail is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9b1d1f66686c43090329870c208942499764a73b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the third sample the maximum trail is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1db1cef44580d43663d6896f0190e5ccee9502c9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 459,
+    "index": "E",
+    "name": "Pashmak and Graph",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "sortings"
+    ],
+    "solvedCount": 5284
+}

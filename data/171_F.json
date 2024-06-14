@@ -1,0 +1,32 @@
+{
+    "title": "F. ucyhf",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>qd ucyhf yi q fhycu dkcruh mxeiu huluhiu yi q tyvvuhudj fhycu dkcruh. oekh jqia yi je vydt jxu djx ucyhf.</p>",
+    "inputSpecification": "<p>jxu ydfkj sediyiji ev q iydwbu ydjuwuh <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>d</i>\u2009\u2264\u200911184</span>) \u2014 jxu edu-rqiut ydtun ev jxu ucyhf je vydt.</p>",
+    "outputSpecification": "<p>ekjfkj q iydwbu dkcruh.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "13<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 171,
+    "index": "F",
+    "name": "ucyhf",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "brute force",
+        "implementation",
+        "number theory"
+    ],
+    "solvedCount": 1256
+}

@@ -1,0 +1,33 @@
+{
+    "title": "E. Euclidean Distance",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a multiset of points on the plane with integer coordinates. Find the maximum distance between two points from this multiset.</p>",
+    "inputSpecification": "<p>The first line of input contains the number of points <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>). Next, <span class=\"tex-span\"><i>n</i></span> pairs of lines follow, each describing a single point: the first line contains <span class=\"tex-span\"><i>x</i></span>-coordinate, the second one \u2014 the <span class=\"tex-span\"><i>y</i></span>-coordinate (<span class=\"tex-span\">\u2009-\u200950\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u200950</span>). Some of the points can have identical coordinates.</p>",
+    "outputSpecification": "<p>Output the maximum distance between two points from this multiset. The answer is considered to be correct if its absolute or relative error does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20094</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>0<br/>1<br/>2<br/>3<br/>4<br/>5<br/>",
+            "output": "5.656854249<br/>"
+        },
+        {
+            "input": "3<br/>10<br/>12<br/>-5<br/>8<br/>10<br/>12<br/>",
+            "output": "15.5241747<br/>"
+        }
+    ],
+    "note": "<p>In the first case the maximum distance is between points <span class=\"tex-span\">(0,\u20091)</span> and <span class=\"tex-span\">(4,\u20095)</span>. In the second case two of the points are the same, so the maximum distance is between one of them and the third point.</p>",
+    "contestId": 153,
+    "index": "E",
+    "name": "Euclidean Distance",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 75
+}

@@ -1,0 +1,34 @@
+{
+    "title": "B. Dima and Text Messages",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Seryozha has a very changeable character. This time he refused to leave the room to Dima and his girlfriend (her hame is Inna, by the way). However, the two lovebirds can always find a way to communicate. Today they are writing text messages to each other.</p><p>Dima and Inna are using a secret code in their text messages. When Dima wants to send Inna some sentence, he writes out all words, inserting a heart before each word and after the last word. A heart is a sequence of two characters: the \"less\" characters (<span class=\"tex-font-style-tt\">&lt;</span>) and the digit three (<span class=\"tex-font-style-tt\">3</span>). After applying the code, a test message looks like that: &lt;3<span class=\"tex-span\"><i>word</i><sub class=\"lower-index\">1</sub></span>&lt;3<span class=\"tex-span\"><i>word</i><sub class=\"lower-index\">2</sub></span>&lt;3 ... <span class=\"tex-span\"><i>word</i><sub class=\"lower-index\"><i>n</i></sub></span>&lt;3.</p><p>Encoding doesn't end here. Then Dima inserts a random number of small English characters, digits, signs \"more\" and \"less\" into any places of the message.</p><p>Inna knows Dima perfectly well, so she knows what phrase Dima is going to send her beforehand. Inna has just got a text message. Help her find out if Dima encoded the message correctly. In other words, find out if a text message could have been received by encoding in the manner that is described above.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> \u2014 the number of words in Dima's message. Next <span class=\"tex-span\"><i>n</i></span> lines contain non-empty words, one word per line. The words only consist of small English letters. The total length of all words doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">5</sup></span>. </p><p>The last line contains non-empty text message that Inna has got. The number of characters in the text message doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">5</sup></span>. A text message can contain only small English letters, digits and signs more and less.</p>",
+    "outputSpecification": "<p>In a single line, print \"<span class=\"tex-font-style-tt\">yes</span>\" (without the quotes), if Dima decoded the text message correctly, and \"<span class=\"tex-font-style-tt\">no</span>\" (without the quotes) otherwise.</p>",
+    "samples": [
+        {
+            "input": "3<br/>i<br/>love<br/>you<br/><3i<3love<23you<3<br/>",
+            "output": "yes<br/>"
+        },
+        {
+            "input": "7<br/>i<br/>am<br/>not<br/>main<br/>in<br/>the<br/>family<br/><3i<>3am<3the<3<main<3in<3the<3><3family<3<br/>",
+            "output": "no<br/>"
+        }
+    ],
+    "note": "<p>Please note that Dima got a good old kick in the pants for the second sample from the statement.</p>",
+    "contestId": 358,
+    "index": "B",
+    "name": "Dima and Text Messages",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "strings"
+    ],
+    "solvedCount": 3688
+}

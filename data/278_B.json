@@ -1,0 +1,34 @@
+{
+    "title": "B. New Problem",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Coming up with a new problem isn't as easy as many people think. Sometimes it is hard enough to name it. We'll consider a title <span class=\"tex-font-style-underline\">original</span> if it doesn't occur as a substring in any titles of recent Codeforces problems. </p><p>You've got the titles of <span class=\"tex-span\"><i>n</i></span> last problems \u2014 the strings, consisting of lowercase English letters. Your task is to find the shortest original title for the new problem. If there are multiple such titles, choose the lexicographically minimum one. Note, that title of the problem can't be an empty string.</p><p>A <span class=\"tex-font-style-it\">substring</span> <span class=\"tex-span\"><i>s</i>[<i>l</i>... <i>r</i>]</span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u2009|<i>s</i>|)</span> of string <span class=\"tex-span\"><i>s</i>\u2009=\u2009<i>s</i><sub class=\"lower-index\">1</sub><i>s</i><sub class=\"lower-index\">2</sub>... <i>s</i><sub class=\"lower-index\">|<i>s</i>|</sub></span> (where <span class=\"tex-span\">|<i>s</i>|</span> is the length of string <span class=\"tex-span\"><i>s</i></span>) is string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>l</i></sub><i>s</i><sub class=\"lower-index\"><i>l</i>\u2009+\u20091</sub>... <i>s</i><sub class=\"lower-index\"><i>r</i></sub></span>.</p><p>String <span class=\"tex-span\"><i>x</i>\u2009=\u2009<i>x</i><sub class=\"lower-index\">1</sub><i>x</i><sub class=\"lower-index\">2</sub>... <i>x</i><sub class=\"lower-index\"><i>p</i></sub></span> is <span class=\"tex-font-style-it\">lexicographically smaller</span> than string <span class=\"tex-span\"><i>y</i>\u2009=\u2009<i>y</i><sub class=\"lower-index\">1</sub><i>y</i><sub class=\"lower-index\">2</sub>... <i>y</i><sub class=\"lower-index\"><i>q</i></sub></span>, if either <span class=\"tex-span\"><i>p</i>\u2009&lt;\u2009<i>q</i></span> and <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>x</i><sub class=\"lower-index\"><i>p</i></sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\"><i>p</i></sub></span>, or there exists such number <span class=\"tex-span\"><i>r</i></span> <span class=\"tex-span\">(<i>r</i>\u2009&lt;\u2009<i>p</i>,\u2009<i>r</i>\u2009&lt;\u2009<i>q</i>)</span>, that <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>x</i><sub class=\"lower-index\"><i>r</i></sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\"><i>r</i></sub></span> and <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>r</i>\u2009+\u20091</sub>\u2009&lt;\u2009<i>y</i><sub class=\"lower-index\"><i>r</i>\u2009+\u20091</sub></span>. The string characters are compared by their ASCII codes.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200930</span>) \u2014 the number of titles you've got to consider. Then follow <span class=\"tex-span\"><i>n</i></span> problem titles, one per line. Each title only consists of lowercase English letters (specifically, it doesn't contain any spaces) and has the length from 1 to 20, inclusive.</p>",
+    "outputSpecification": "<p>Print a string, consisting of lowercase English letters \u2014 the lexicographically minimum shortest original title.</p>",
+    "samples": [
+        {
+            "input": "5<br/>threehorses<br/>goodsubstrings<br/>secret<br/>primematrix<br/>beautifulyear<br/>",
+            "output": "j<br/>"
+        },
+        {
+            "input": "4<br/>aa<br/>bdefghijklmn<br/>opqrstuvwxyz<br/>c<br/>",
+            "output": "ab<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the first 9 letters of the English alphabet (<span class=\"tex-font-style-tt\">a, b, c, d, e, f, g, h, i</span>) occur in the problem titles, so the answer is letter <span class=\"tex-font-style-tt\">j</span>.</p><p>In the second sample the titles contain 26 English letters, so the shortest original title cannot have length 1. Title <span class=\"tex-font-style-tt\">aa</span> occurs as a substring in the first title.</p>",
+    "contestId": 278,
+    "index": "B",
+    "name": "New Problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "strings"
+    ],
+    "solvedCount": 3422
+}

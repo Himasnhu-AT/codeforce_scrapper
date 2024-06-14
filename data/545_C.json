@@ -1,0 +1,34 @@
+{
+    "title": "C. Woodcutters",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Susie listens to fairy tales before bed every day. Today's fairy tale was about wood cutters and the little girl immediately started imagining the choppers cutting wood. She imagined the situation that is described below.</p><p>There are <span class=\"tex-span\"><i>n</i></span> trees located along the road at points with coordinates <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span>. Each tree has its height <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\"><i>i</i></sub></span>. Woodcutters can cut down a tree and fell it to the left or to the right. After that it occupies one of the segments <span class=\"tex-span\">[<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009-\u2009<i>h</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>]</span> or <span class=\"tex-span\">[<i>x</i><sub class=\"lower-index\"><i>i</i></sub>;<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009+\u2009<i>h</i><sub class=\"lower-index\"><i>i</i></sub>]</span>. The tree that is not cut down occupies a single point with coordinate <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>. Woodcutters can fell a tree if the segment to be occupied by the fallen tree doesn't contain any occupied point. The woodcutters want to process as many trees as possible, so Susie wonders, what is the maximum number of trees to fell. </p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of trees.</p><p>Next <span class=\"tex-span\"><i>n</i></span> lines contain pairs of integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>h</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>h</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the coordinate and the height of the <span class=\"tex-span\"><i>\u0456</i></span>-th tree.</p><p>The pairs are given in the order of ascending <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>. No two trees are located at the point with the same coordinate.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the maximum number of trees that you can cut down by the given rules.</p>",
+    "samples": [
+        {
+            "input": "5<br/>1 2<br/>2 1<br/>5 10<br/>10 9<br/>19 1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "5<br/>1 2<br/>2 1<br/>5 10<br/>10 9<br/>20 1<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>In the first sample you can fell the trees like that: </p><ul> <li> fell the <span class=\"tex-span\">1</span>-st tree to the left \u2014 now it occupies segment <span class=\"tex-span\">[\u2009-\u20091;1]</span> </li><li> fell the <span class=\"tex-span\">2</span>-nd tree to the right \u2014 now it occupies segment <span class=\"tex-span\">[2;3]</span> </li><li> leave the <span class=\"tex-span\">3</span>-rd tree \u2014 it occupies point <span class=\"tex-span\">5</span> </li><li> leave the <span class=\"tex-span\">4</span>-th tree \u2014 it occupies point <span class=\"tex-span\">10</span> </li><li> fell the <span class=\"tex-span\">5</span>-th tree to the right \u2014 now it occupies segment <span class=\"tex-span\">[19;20]</span> </li></ul><p>In the second sample you can also fell <span class=\"tex-span\">4</span>-th tree to the right, after that it will occupy segment <span class=\"tex-span\">[10;19]</span>.</p>",
+    "contestId": 545,
+    "index": "C",
+    "name": "Woodcutters",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy"
+    ],
+    "solvedCount": 26647
+}

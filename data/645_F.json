@@ -1,0 +1,35 @@
+{
+    "title": "F. Cowslip Collections",
+    "timeLimit": {
+        "value": 8.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In an attempt to make peace with the Mischievious Mess Makers, Bessie and Farmer John are planning to plant some flower gardens to complement the lush, grassy fields of Bovinia. As any good horticulturist knows, each garden they plant must have the exact same arrangement of flowers. Initially, Farmer John has <span class=\"tex-span\"><i>n</i></span> different species of flowers he can plant, with <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> flowers of the <span class=\"tex-span\"><i>i</i></span>-th species.</p><p>On each of the next <span class=\"tex-span\"><i>q</i></span> days, Farmer John will receive a batch of flowers of a new species. On day <span class=\"tex-span\"><i>j</i></span>, he will receive <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>j</i></sub></span> flowers of the same species, but of a different species from those Farmer John already has. </p><p>Farmer John, knowing the right balance between extravagance and minimalism, wants exactly <span class=\"tex-span\"><i>k</i></span> species of flowers to be used. Furthermore, to reduce waste, each flower of the <span class=\"tex-span\"><i>k</i></span> species Farmer John chooses must be planted in some garden. And each of the gardens must be identical; that is to say that each of the <span class=\"tex-span\"><i>k</i></span> chosen species should have an equal number of flowers in each garden. As Farmer John is a proponent of national equality, he would like to create the greatest number of gardens possible.</p><p>After receiving flowers on each of these <span class=\"tex-span\"><i>q</i></span> days, Farmer John would like to know the sum, over all possible choices of <span class=\"tex-span\"><i>k</i></span> species, of the maximum number of gardens he could create. Since this could be a large number, you should output your result modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>k</i></span> and <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>q</i>\u2009\u2264\u2009100\u2009000</span>).</p><p>The <span class=\"tex-span\"><i>i</i></span>-th (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>) of the next <span class=\"tex-span\"><i>n</i></span> lines of the input contains an integer <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091\u2009000\u2009000</span>), the number of flowers of species <span class=\"tex-span\"><i>i</i></span> Farmer John has initially.</p><p>The <span class=\"tex-span\"><i>j</i></span>-th (<span class=\"tex-span\">1\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>q</i></span>) of the next <span class=\"tex-span\"><i>q</i></span> lines of the input contains an integer <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>j</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u20091\u2009000\u2009000</span>), the number of flowers of a new species Farmer John receives on day <span class=\"tex-span\"><i>j</i></span>.</p>",
+    "outputSpecification": "<p>After each of the <span class=\"tex-span\"><i>q</i></span> days, output the sum of the maximum possible number of gardens, where the sum is taken over all possible choices of <span class=\"tex-span\"><i>k</i></span> species, modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "3 3 2<br/>4<br/>6<br/>9<br/>8<br/>6<br/>",
+            "output": "5<br/>16<br/>"
+        },
+        {
+            "input": "4 1 2<br/>6<br/>5<br/>4<br/>3<br/>2<br/>1<br/>",
+            "output": "20<br/>21<br/>"
+        }
+    ],
+    "note": "<p>In the first sample case, after the first day Farmer John has <span class=\"tex-span\">(4,\u20096,\u20099,\u20098)</span> of each type of flower, and <span class=\"tex-span\"><i>k</i>\u2009=\u20093</span>.</p><p>Choosing <span class=\"tex-span\">(4,\u20096,\u20098)</span> lets him make <span class=\"tex-span\">2</span> gardens, each with <span class=\"tex-span\">(2,\u20093,\u20094)</span> of each flower, respectively. Choosing <span class=\"tex-span\">(4,\u20096,\u20099)</span>, <span class=\"tex-span\">(4,\u20099,\u20098)</span> and <span class=\"tex-span\">(6,\u20099,\u20098)</span> each only let him make one garden, since there is no number of gardens that each species can be evenly split into. So the sum over all choices of <span class=\"tex-span\"><i>k</i>\u2009=\u20093</span> flowers is <span class=\"tex-span\">2\u2009+\u20091\u2009+\u20091\u2009+\u20091\u2009=\u20095</span>.</p><p>After the second day, Farmer John has <span class=\"tex-span\">(4,\u20096,\u20099,\u20098,\u20096)</span> of each flower. The sum over all choices is <span class=\"tex-span\">1\u2009+\u20092\u2009+\u20092\u2009+\u20091\u2009+\u20091\u2009+\u20092\u2009+\u20092\u2009+\u20093\u2009+\u20091\u2009+\u20091\u2009=\u200916</span>.</p><p>In the second sample case, <span class=\"tex-span\"><i>k</i>\u2009=\u20091</span>. With <span class=\"tex-span\"><i>x</i></span> flowers Farmer John can make <span class=\"tex-span\"><i>x</i></span> gardens. So the answers to the queries are <span class=\"tex-span\">6\u2009+\u20095\u2009+\u20094\u2009+\u20093\u2009+\u20092\u2009=\u200920</span> and <span class=\"tex-span\">6\u2009+\u20095\u2009+\u20094\u2009+\u20093\u2009+\u20092\u2009+\u20091\u2009=\u200921</span>.</p>",
+    "contestId": 645,
+    "index": "F",
+    "name": "Cowslip Collections",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 762
+}

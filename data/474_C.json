@@ -1,0 +1,30 @@
+{
+    "title": "C. Captain Marmot",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Captain Marmot wants to prepare a huge and important battle against his enemy, Captain Snake. For this battle he has <span class=\"tex-span\"><i>n</i></span> regiments, each consisting of <span class=\"tex-span\">4</span> moles.</p><p>Initially, each mole <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u20094<i>n</i></span>) is placed at some position <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>)</span> in the Cartesian plane. Captain Marmot wants to move some moles to make the regiments <span class=\"tex-font-style-bf\">compact</span>, if it's possible.</p><p>Each mole <span class=\"tex-span\"><i>i</i></span> has a home placed at the position <span class=\"tex-span\">(<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>)</span>. Moving this mole one time means rotating his position point <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>)</span> <span class=\"tex-span\">90</span> degrees counter-clockwise around it's home point <span class=\"tex-span\">(<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>)</span>.</p><p>A regiment is <span class=\"tex-font-style-bf\">compact</span> only if the position points of the <span class=\"tex-span\">4</span> moles form a square with non-zero area.</p><p>Help Captain Marmot to find out for each regiment the minimal number of moves required to make that regiment compact, if it's possible.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>), the number of regiments.</p><p>The next <span class=\"tex-span\">4<i>n</i></span> lines contain <span class=\"tex-span\">4</span> integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">4</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>).</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> lines to the standard output. If the regiment <span class=\"tex-span\"><i>i</i></span> can be made compact, the <span class=\"tex-span\"><i>i</i></span>-th line should contain one integer, the minimal number of required moves. Otherwise, on the <span class=\"tex-span\"><i>i</i></span>-th line print <span class=\"tex-font-style-tt\">\"-1\"</span> (without quotes).</p>",
+    "samples": [
+        {
+            "input": "4<br/>1 1 0 0<br/>-1 1 0 0<br/>-1 1 0 0<br/>1 -1 0 0<br/>1 1 0 0<br/>-2 1 0 0<br/>-1 1 0 0<br/>1 -1 0 0<br/>1 1 0 0<br/>-1 1 0 0<br/>-1 1 0 0<br/>-1 1 0 0<br/>2 2 0 1<br/>-1 0 0 -2<br/>3 0 0 -2<br/>-1 1 -2 0<br/>",
+            "output": "1<br/>-1<br/>3<br/>3<br/>"
+        }
+    ],
+    "note": "<p>In the first regiment we can move once the second or the third mole.</p><p>We can't make the second regiment compact.</p><p>In the third regiment, from the last <span class=\"tex-span\">3</span> moles we can move once one and twice another one.</p><p>In the fourth regiment, we can move <span class=\"tex-font-style-bf\">twice</span> the first mole and <span class=\"tex-font-style-bf\">once</span> the third mole.</p>",
+    "contestId": 474,
+    "index": "C",
+    "name": "Captain Marmot",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "geometry"
+    ],
+    "solvedCount": 3077
+}

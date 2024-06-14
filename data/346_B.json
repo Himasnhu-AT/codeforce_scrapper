@@ -1,0 +1,34 @@
+{
+    "title": "B. Lucky Common Subsequence",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In mathematics, a <span class=\"tex-font-style-it\">subsequence</span> is a sequence that can be derived from another sequence by deleting some elements without changing the order of the remaining elements. For example, the sequence <span class=\"tex-font-style-tt\">BDF</span> is a subsequence of <span class=\"tex-font-style-tt\">ABCDEF</span>. A <span class=\"tex-font-style-it\">substring</span> of a string is a continuous subsequence of the string. For example, <span class=\"tex-font-style-tt\">BCD</span> is a substring of <span class=\"tex-font-style-tt\">ABCDEF</span>.</p><p>You are given two strings <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> and another string called <span class=\"tex-span\"><i>virus</i></span>. Your task is to find the longest common subsequence of <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span>, such that it doesn't contain <span class=\"tex-span\"><i>virus</i></span> as a substring.</p>",
+    "inputSpecification": "<p>The input contains three strings in three separate lines: <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> and <span class=\"tex-span\"><i>virus</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i><sub class=\"lower-index\">1</sub>|,\u2009|<i>s</i><sub class=\"lower-index\">2</sub>|,\u2009|<i>virus</i>|\u2009\u2264\u2009100</span>). Each string consists only of uppercase English letters.</p>",
+    "outputSpecification": "<p>Output the longest common subsequence of <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> without <span class=\"tex-span\"><i>virus</i></span> as a substring. If there are multiple answers, any of them will be accepted. </p><p>If there is no valid common subsequence, output 0.</p>",
+    "samples": [
+        {
+            "input": "AJKEQSLOBSROFGZ<br/>OVGURWZLWVLUXTH<br/>OZ<br/>",
+            "output": "ORZ<br/>"
+        },
+        {
+            "input": "AA<br/>A<br/>A<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 346,
+    "index": "B",
+    "name": "Lucky Common Subsequence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "strings"
+    ],
+    "solvedCount": 3364
+}

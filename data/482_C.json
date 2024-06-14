@@ -1,0 +1,39 @@
+{
+    "title": "C. Game with Strings",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You play the game with your friend. The description of this game is listed below. </p><p>Your friend creates <span class=\"tex-span\"><i>n</i></span> distinct strings of the same length <span class=\"tex-span\"><i>m</i></span> and tells you all the strings. Then he randomly chooses one of them. He chooses strings equiprobably, i.e. the probability of choosing each of the <span class=\"tex-span\"><i>n</i></span> strings equals <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/68d6f939906e1ed93f58f66830326d540298fdfa.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. You want to guess which string was chosen by your friend. </p><p>In order to guess what string your friend has chosen, you are allowed to ask him questions. Each question has the following form: \u00abWhat character stands on position <span class=\"tex-span\"><i>pos</i></span> in the string you have chosen?\u00bb A string is considered guessed when the answers to the given questions uniquely identify the string. After the string is guessed, you stop asking questions. </p><p>You do not have a particular strategy, so as each question you equiprobably ask about a position that hasn't been yet mentioned. Your task is to determine the expected number of questions needed to guess the string chosen by your friend.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>)\u00a0\u2014 the number of strings your friend came up with.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain the strings that your friend has created. It is guaranteed that all the strings are distinct and only consist of large and small English letters. Besides, the lengths of all strings are the same and are between <span class=\"tex-span\">1</span> to <span class=\"tex-span\">20</span> inclusive.</p>",
+    "outputSpecification": "<p>Print the single number \u2014 the expected value. Your answer will be considered correct if its absolute or relative error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20099</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "2<br/>aab<br/>aac<br/>",
+            "output": "2.000000000000000<br/>"
+        },
+        {
+            "input": "3<br/>aaA<br/>aBa<br/>Caa<br/>",
+            "output": "1.666666666666667<br/>"
+        },
+        {
+            "input": "3<br/>aca<br/>vac<br/>wqq<br/>",
+            "output": "1.000000000000000<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the strings only differ in the character in the third position. So only the following situations are possible: </p><ul> <li> you guess the string in one question. The event's probability is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/adaad783a304f9e72218e6e79114c6551a112aad.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>; </li><li> you guess the string in two questions. The event's probability is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/caddcdaf0d707d9e4ffa41e63e462a3c90474546.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\">\u00b7</span> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6bb1686dc4a3e6a10e00b92d434455668cb330a8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> = <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/adaad783a304f9e72218e6e79114c6551a112aad.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> (as in this case the first question should ask about the position that is other than the third one); </li><li> you guess the string in three questions. The event's probability is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/caddcdaf0d707d9e4ffa41e63e462a3c90474546.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\">\u00b7</span> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6bb1686dc4a3e6a10e00b92d434455668cb330a8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\">\u00b7</span> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a53d50910d43b79b6602f97f9fde950c9d1bdf77.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> = <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/adaad783a304f9e72218e6e79114c6551a112aad.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>; </li></ul><p>Thus, the expected value is equal to <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5f789afab0601bacf9123c73584184ef358740fb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>In the second sample we need at most two questions as any pair of questions uniquely identifies the string. So the expected number of questions is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/208df5d4b6316ba263eede5d4cf4b844075718f1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the third sample whatever position we ask about in the first question, we immediately identify the string.</p>",
+    "contestId": 482,
+    "index": "C",
+    "name": "Game with Strings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "probabilities"
+    ],
+    "solvedCount": 882
+}

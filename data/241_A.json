@@ -1,0 +1,33 @@
+{
+    "title": "A. Old Peykan",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are <span class=\"tex-span\"><i>n</i></span> cities in the country where the Old Peykan lives. These cities are located on a straight line, we'll denote them from left to right as <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub>,\u2009<i>c</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>c</i><sub class=\"lower-index\"><i>n</i></sub></span>. The Old Peykan wants to travel from city <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub></span> to <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>n</i></sub></span> using roads. There are <span class=\"tex-span\">(<i>n</i>\u2009-\u20091)</span> <span class=\"tex-font-style-bf\">one way</span> roads, the <span class=\"tex-span\"><i>i</i></span>-th road goes from city <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> to city <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span> and is <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> kilometers long.</p><p>The Old Peykan travels 1 kilometer in 1 hour and consumes 1 liter of fuel during this time.</p><p>Each city <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> (except for the last city <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>n</i></sub></span>) has a supply of <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span> liters of fuel which immediately transfers to the Old Peykan if it passes the city or stays in it. This supply refreshes instantly <span class=\"tex-span\"><i>k</i></span> hours after it transfers. The Old Peykan can stay in a city for a while and fill its fuel tank many times. </p><p>Initially (at time zero) the Old Peykan is at city <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> liters of fuel is transferred to it's empty tank from <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub></span>'s supply. The Old Peykan's fuel tank capacity is unlimited. Old Peykan can not continue its travel if its tank is emptied strictly between two cities.</p><p>Find the minimum time the Old Peykan needs to reach city <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>n</i></sub></span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains two space-separated integers <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>m</i>,\u2009<i>k</i>\u2009\u2264\u20091000)</span>. The value <span class=\"tex-span\"><i>m</i></span> specifies the number of roads between cities which is equal to <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span>.</p><p>The next line contains <span class=\"tex-span\"><i>m</i></span> space-separated integers <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\">1</sub>,\u2009<i>d</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>d</i><sub class=\"lower-index\"><i>m</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000)</span> and the following line contains <span class=\"tex-span\"><i>m</i></span> space-separated integers <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>m</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000)</span>.</p>",
+    "outputSpecification": "<p>In the only line of the output print a single integer \u2014 the minimum time required for The Old Peykan to reach city <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>n</i></sub></span> from city <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub></span>.</p>",
+    "samples": [
+        {
+            "input": "4 6<br/>1 2 5 2<br/>2 3 3 4<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "2 3<br/>5 6<br/>5 5<br/>",
+            "output": "14<br/>"
+        }
+    ],
+    "note": "<p>In the second sample above, the Old Peykan stays in <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub></span> for 3 hours.</p>",
+    "contestId": 241,
+    "index": "A",
+    "name": "Old Peykan",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy"
+    ],
+    "solvedCount": 2205
+}

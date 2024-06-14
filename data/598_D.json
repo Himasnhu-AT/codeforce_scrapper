@@ -1,0 +1,35 @@
+{
+    "title": "D. Igor In the Museum",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Igor is in the museum and he wants to see as many pictures as possible.</p><p>Museum can be represented as a rectangular field of <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> cells. Each cell is either empty or impassable. Empty cells are marked with '<span class=\"tex-font-style-tt\">.</span>', impassable cells are marked with '<span class=\"tex-font-style-tt\">*</span>'. Every two adjacent cells of different types (one empty and one impassable) are divided by a wall containing one picture.</p><p>At the beginning Igor is in some empty cell. At every moment he can move to any empty cell that share a side with the current one.</p><p>For several starting positions you should calculate the maximum number of pictures that Igor can see. Igor is able to see the picture only if he is in the cell adjacent to the wall with this picture. Igor have a lot of time, so he will examine every picture he can see.</p>",
+    "inputSpecification": "<p>First line of the input contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>min</i>(<i>n</i>\u00b7<i>m</i>,\u2009100\u2009000)</span>)\u00a0\u2014 the museum dimensions and the number of starting positions to process.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains <span class=\"tex-span\"><i>m</i></span> symbols '<span class=\"tex-font-style-tt\">.</span>', '<span class=\"tex-font-style-tt\">*</span>' \u2014 the description of the museum. It is guaranteed that all border cells are impassable, so Igor can't go out from the museum.</p><p>Each of the last <span class=\"tex-span\"><i>k</i></span> lines contains two integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>n</i>,\u20091\u2009\u2264\u2009<i>y</i>\u2009\u2264\u2009<i>m</i></span>)\u00a0\u2014 the row and the column of one of Igor's starting positions respectively. Rows are numbered from top to bottom, columns \u2014 from left to right. It is guaranteed that all starting positions are empty cells.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>k</i></span> integers\u00a0\u2014 the maximum number of pictures, that Igor can see if he starts in corresponding position.</p>",
+    "samples": [
+        {
+            "input": "5 6 3<br/>******<br/>*..*.*<br/>******<br/>*....*<br/>******<br/>2 2<br/>2 5<br/>4 3<br/>",
+            "output": "6<br/>4<br/>10<br/>"
+        },
+        {
+            "input": "4 4 1<br/>****<br/>*..*<br/>*.**<br/>****<br/>3 2<br/>",
+            "output": "8<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 598,
+    "index": "D",
+    "name": "Igor In the Museum",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 10609
+}

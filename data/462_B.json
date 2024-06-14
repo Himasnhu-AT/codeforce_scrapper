@@ -1,0 +1,33 @@
+{
+    "title": "B. Appleman and Card Game",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Appleman has <span class=\"tex-span\"><i>n</i></span> cards. Each card has an uppercase letter written on it. Toastman must choose <span class=\"tex-span\"><i>k</i></span> cards from Appleman's cards. Then Appleman should give Toastman some coins depending on the chosen cards. Formally, for each Toastman's card <span class=\"tex-span\"><i>i</i></span> you should calculate how much Toastman's cards have the letter equal to letter on <span class=\"tex-span\"><i>i</i></span>th, then sum up all these quantities, such a number of coins Appleman should give to Toastman.</p><p>Given the description of Appleman's cards. What is the maximum number of coins Toastman can get?</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>). The next line contains <span class=\"tex-span\"><i>n</i></span> uppercase letters without spaces \u2014 the <span class=\"tex-span\"><i>i</i></span>-th letter describes the <span class=\"tex-span\"><i>i</i></span>-th card of the Appleman.</p>",
+    "outputSpecification": "<p>Print a single integer \u2013 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "15 10<br/>DZFDFZDFDDDDDDF<br/>",
+            "output": "82<br/>"
+        },
+        {
+            "input": "6 4<br/>YJSNPI<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>In the first test example Toastman can choose nine cards with letter <span class=\"tex-font-style-tt\">D</span> and one additional card with any letter. For each card with <span class=\"tex-font-style-tt\">D</span> he will get 9 coins and for the additional card he will get 1 coin.</p>",
+    "contestId": 462,
+    "index": "B",
+    "name": "Appleman and Card Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy"
+    ],
+    "solvedCount": 14106
+}

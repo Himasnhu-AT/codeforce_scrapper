@@ -1,0 +1,34 @@
+{
+    "title": "D. Board Game",
+    "timeLimit": {
+        "value": 2.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are playing a board card game. In this game the player has two characteristics, <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>\u00a0\u2014 the white magic skill and the black magic skill, respectively. There are <span class=\"tex-span\"><i>n</i></span> spell cards lying on the table, each of them has four characteristics, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span>. In one move a player can pick one of the cards and cast the spell written on it, but only if first two of it's characteristics meet the requirement <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>x</i></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>y</i></span>, i.e. if the player has enough magic skill to cast this spell. However, after casting the spell the characteristics of a player change and become equal to <span class=\"tex-span\"><i>x</i>\u2009=\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i>\u2009=\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>At the beginning of the game both characteristics of a player are equal to zero. The goal of the game is to cast the <span class=\"tex-span\"><i>n</i></span>-th spell. Your task is to make it in as few moves as possible. You are allowed to use spell in any order and any number of times (for example, you may not use some spells at all).</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>)\u00a0\u2014 the number of cards on the table.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains four integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the characteristics of the corresponding card.</p>",
+    "outputSpecification": "<p>In the first line print a single integer <span class=\"tex-span\"><i>k</i></span>\u00a0\u2014 the minimum number of moves needed to cast the <span class=\"tex-span\"><i>n</i></span>-th spell and in the second line print <span class=\"tex-span\"><i>k</i></span> numbers\u00a0\u2014 the indices of the cards in the order in which you should cast them. In case there are multiple possible solutions, print any of them.</p><p>If it is impossible to cast the <span class=\"tex-span\"><i>n</i></span>-th spell, print <span class=\"tex-span\">\u2009-\u20091</span>.</p>",
+    "samples": [
+        {
+            "input": "4<br/>0 0 3 4<br/>2 2 5 3<br/>4 1 1 7<br/>5 3 8 8<br/>",
+            "output": "3<br/>1 2 4<br/>"
+        },
+        {
+            "input": "2<br/>0 0 4 6<br/>5 1 1000000000 1000000000<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 605,
+    "index": "D",
+    "name": "Board Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dfs and similar"
+    ],
+    "solvedCount": 792
+}

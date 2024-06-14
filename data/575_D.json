@@ -1,0 +1,30 @@
+{
+    "title": "D. Tablecity",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There was a big bank robbery in Tablecity. In order to catch the thief, the President called none other than Albert \u2013 Tablecity\u2019s Chief of Police. Albert does not know where the thief is located, but he does know how he moves.</p><p>Tablecity can be represented as <span class=\"tex-span\">1000\u2009\u00d7\u20092</span> grid, where every cell represents one district. Each district has its own unique name \u201c<span class=\"tex-span\">(<i>X</i>,\u2009<i>Y</i>)</span>\u201d, where <span class=\"tex-span\"><i>X</i></span> and <span class=\"tex-span\"><i>Y</i></span> are the coordinates of the district in the grid. The thief\u2019s movement is as </p><p>Every hour the thief will leave the district <span class=\"tex-span\">(<i>X</i>,\u2009<i>Y</i>)</span> he is currently hiding in, and move to one of the districts: <span class=\"tex-span\">(<i>X</i>\u2009-\u20091,\u2009<i>Y</i>)</span>, <span class=\"tex-span\">(<i>X</i>\u2009+\u20091,\u2009<i>Y</i>)</span>, <span class=\"tex-span\">(<i>X</i>\u2009-\u20091,\u2009<i>Y</i>\u2009-\u20091)</span>, <span class=\"tex-span\">(<i>X</i>\u2009-\u20091,\u2009<i>Y</i>\u2009+\u20091)</span>, <span class=\"tex-span\">(<i>X</i>\u2009+\u20091,\u2009<i>Y</i>\u2009-\u20091)</span>, <span class=\"tex-span\">(<i>X</i>\u2009+\u20091,\u2009<i>Y</i>\u2009+\u20091)</span> as long as it exists in Tablecity. </p><p>Below is an example of thief\u2019s possible movements if he is located in district (7,1):</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/b027a25294a9843ae45355766323313b2cc23db0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>Albert has enough people so that <span class=\"tex-font-style-bf\">every hour</span> he can pick any <span class=\"tex-font-style-bf\">two</span> districts in Tablecity and fully investigate them, making sure that if the thief is located in one of them, he will get caught. Albert promised the President that the thief will be caught in <span class=\"tex-font-style-bf\">no more</span> than 2015 hours and needs your help in order to achieve that.</p>",
+    "inputSpecification": "<p>There is no input for this problem. </p>",
+    "outputSpecification": "<p>The first line of output contains integer <span class=\"tex-span\"><i>N</i></span> \u2013 duration of police search in hours. Each of the following <span class=\"tex-span\"><i>N</i></span> lines contains exactly 4 integers <span class=\"tex-span\"><i>X</i><sub class=\"lower-index\"><i>i</i>1</sub></span>, <span class=\"tex-span\"><i>Y</i><sub class=\"lower-index\"><i>i</i>1</sub></span>, <span class=\"tex-span\"><i>X</i><sub class=\"lower-index\"><i>i</i>2</sub></span>, <span class=\"tex-span\"><i>Y</i><sub class=\"lower-index\"><i>i</i>2</sub></span> separated by spaces, that represent 2 districts (<span class=\"tex-span\"><i>X</i><sub class=\"lower-index\"><i>i</i>1</sub></span>, <span class=\"tex-span\"><i>Y</i><sub class=\"lower-index\"><i>i</i>1</sub></span>), (<span class=\"tex-span\"><i>X</i><sub class=\"lower-index\"><i>i</i>2</sub></span>, <span class=\"tex-span\"><i>Y</i><sub class=\"lower-index\"><i>i</i>2</sub></span>) which got investigated during i-th hour. Output is given in <span class=\"tex-font-style-bf\">chronological</span> order (i-th line contains districts investigated during i-th hour) and should <span class=\"tex-font-style-bf\">guarantee</span> that the thief is caught in no more than 2015 hours, <span class=\"tex-font-style-bf\">regardless of thief\u2019s initial position and movement</span>.</p><ul> <li> <span class=\"tex-span\"><i>N</i>\u2009\u2264\u20092015</span> </li><li> <span class=\"tex-span\">1\u2009\u2264\u2009<i>X</i>\u2009\u2264\u20091000</span> </li><li> <span class=\"tex-span\">1\u2009\u2264\u2009<i>Y</i>\u2009\u2264\u20092</span> </li></ul>",
+    "samples": [
+        {
+            "input": "\u0412 \u044d\u0442\u043e\u0439 \u0437\u0430\u0434\u0430\u0447\u0435 \u043d\u0435\u0442 \u043f\u0440\u0438\u043c\u0435\u0440\u043e\u0432 \u0432\u0432\u043e\u0434\u0430-\u0432\u044b\u0432\u043e\u0434\u0430.<br/>This problem doesn't have sample input and output.",
+            "output": "\u0421\u043c\u043e\u0442\u0440\u0438\u0442\u0435 \u0437\u0430\u043c\u0435\u0447\u0430\u043d\u0438\u0435 \u043d\u0438\u0436\u0435.<br/>See the note below."
+        }
+    ],
+    "note": "<p>Let's consider the following output:</p><p>2</p><p>5 1 50 2</p><p>8 1 80 2</p><p>This output is not guaranteed to catch the thief and is not correct. It is given to you only to show the expected output format. There exists a combination of an initial position and a movement strategy such that the police will not catch the thief.</p><p>Consider the following initial position and thief\u2019s movement:</p><p>In the first hour, the thief is located in district (1,1). Police officers will search districts (5,1) and (50,2) and will not find him.</p><p>At the start of the second hour, the thief moves to district (2,2). Police officers will search districts (8,1) and (80,2) and will not find him.</p><p>Since there is no further investigation by the police, the thief escaped!</p>",
+    "contestId": 575,
+    "index": "D",
+    "name": "Tablecity",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 1808
+}

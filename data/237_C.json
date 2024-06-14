@@ -1,0 +1,39 @@
+{
+    "title": "C. Primes on Interval",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've decided to carry out a survey in the theory of prime numbers. Let us remind you that a prime number is a positive integer that has exactly two distinct positive integer divisors.</p><p>Consider positive integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>a</i>\u2009+\u20091</span>, <span class=\"tex-span\">...</span>, <span class=\"tex-span\"><i>b</i></span> <span class=\"tex-span\">(<i>a</i>\u2009\u2264\u2009<i>b</i>)</span>. You want to find the minimum integer <span class=\"tex-span\"><i>l</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>b</i>\u2009-\u2009<i>a</i>\u2009+\u20091)</span> such that for any integer <span class=\"tex-span\"><i>x</i></span> <span class=\"tex-span\">(<i>a</i>\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>b</i>\u2009-\u2009<i>l</i>\u2009+\u20091)</span> among <span class=\"tex-span\"><i>l</i></span> integers <span class=\"tex-span\"><i>x</i></span>, <span class=\"tex-span\"><i>x</i>\u2009+\u20091</span>, <span class=\"tex-span\">...</span>, <span class=\"tex-span\"><i>x</i>\u2009+\u2009<i>l</i>\u2009-\u20091</span> there are at least <span class=\"tex-span\"><i>k</i></span> prime numbers. </p><p>Find and print the required minimum <span class=\"tex-span\"><i>l</i></span>. If no value <span class=\"tex-span\"><i>l</i></span> meets the described limitations, print -1.</p>",
+    "inputSpecification": "<p>A single line contains three space-separated integers <span class=\"tex-span\"><i>a</i>,\u2009<i>b</i>,\u2009<i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>,\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>;\u00a0<i>a</i>\u2009\u2264\u2009<i>b</i></span>).</p>",
+    "outputSpecification": "<p>In a single line print a single integer \u2014 the required minimum <span class=\"tex-span\"><i>l</i></span>. If there's no solution, print -1.</p>",
+    "samples": [
+        {
+            "input": "2 4 2<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "6 13 1<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "1 4 3<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 237,
+    "index": "C",
+    "name": "Primes on Interval",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "number theory",
+        "two pointers"
+    ],
+    "solvedCount": 5604
+}

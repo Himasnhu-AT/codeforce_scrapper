@@ -1,0 +1,38 @@
+{
+    "title": "A. Vasya and Digital Root",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya has recently found out what a digital root of a number is and he decided to share his knowledge with you.</p><p>Let's assume that <span class=\"tex-span\"><i>S</i>(<i>n</i>)</span> is the sum of digits of number <span class=\"tex-span\"><i>n</i></span>, for example, <span class=\"tex-span\"><i>S</i>(4098)\u2009=\u20094\u2009+\u20090\u2009+\u20099\u2009+\u20098\u2009=\u200921</span>. Then the digital root of number <span class=\"tex-span\"><i>n</i></span> equals to: </p><ol> <li> <span class=\"tex-span\"><i>dr</i>(<i>n</i>)\u2009=\u2009<i>S</i>(<i>n</i>)</span>, if <span class=\"tex-span\"><i>S</i>(<i>n</i>)\u2009&lt;\u200910</span>; </li><li> <span class=\"tex-span\"><i>dr</i>(<i>n</i>)\u2009=\u2009<i>dr</i>(\u2009<i>S</i>(<i>n</i>)\u2009)</span>, if <span class=\"tex-span\"><i>S</i>(<i>n</i>)\u2009\u2265\u200910</span>. </li></ol><p>For example, <span class=\"tex-span\"><i>dr</i>(4098)\u2009\u2009=\u2009\u2009<i>dr</i>(21)\u2009\u2009=\u2009\u20093</span>.</p><p>Vasya is afraid of large numbers, so the numbers he works with are at most <span class=\"tex-span\">10<sup class=\"upper-index\">1000</sup></span>. For all such numbers, he has proved that <span class=\"tex-span\"><i>dr</i>(<i>n</i>)\u2009\u2009=\u2009\u2009<i>S</i>(\u2009<i>S</i>(\u2009<i>S</i>(\u2009<i>S</i>(<i>n</i>)\u2009)\u2009)\u2009)</span> <span class=\"tex-span\">(<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">1000</sup>)</span>.</p><p>Now Vasya wants to quickly find numbers with the given digital root. The problem is, he hasn't learned how to do that and he asked you to help him. You task is, given numbers <span class=\"tex-span\"><i>k</i></span> and <span class=\"tex-span\"><i>d</i></span>, find the number consisting of exactly <span class=\"tex-span\"><i>k</i></span> digits (the leading zeroes are not allowed), with digital root equal to <span class=\"tex-span\"><i>d</i></span>, or else state that such number does not exist.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>k</i></span> and <span class=\"tex-span\"><i>d</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20091000;\u20020\u2009\u2264\u2009<i>d</i>\u2009\u2264\u20099)</span>.</p>",
+    "outputSpecification": "<p>In a single line print either any number that meets the requirements (without the leading zeroes) or \"<span class=\"tex-font-style-tt\">No solution</span>\" (without the quotes), if the corresponding number does not exist.</p><p>The chosen number must consist of exactly <span class=\"tex-span\"><i>k</i></span> digits. We assume that number 0 doesn't contain any leading zeroes.</p>",
+    "samples": [
+        {
+            "input": "4 4<br/>",
+            "output": "5881<br/>"
+        },
+        {
+            "input": "5 1<br/>",
+            "output": "36172<br/>"
+        },
+        {
+            "input": "1 0<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>For the first test sample <span class=\"tex-span\"><i>dr</i>(5881)\u2009\u2009=\u2009\u2009<i>dr</i>(22)\u2009\u2009=\u2009\u20094</span>.</p><p>For the second test sample <span class=\"tex-span\"><i>dr</i>(36172)\u2009\u2009=\u2009\u2009<i>dr</i>(19)\u2009\u2009=\u2009\u2009<i>dr</i>(10)\u2009\u2009=\u2009\u20091</span>.</p>",
+    "contestId": 355,
+    "index": "A",
+    "name": "Vasya and Digital Root",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 9289
+}

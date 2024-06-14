@@ -1,0 +1,33 @@
+{
+    "title": "A. Elephant",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>An elephant decided to visit his friend. It turned out that the elephant's house is located at point <span class=\"tex-span\">0</span> and his friend's house is located at point <span class=\"tex-span\"><i>x</i>(<i>x</i>\u2009&gt;\u20090)</span> of the coordinate line. In one step the elephant can move <span class=\"tex-span\">1</span>, <span class=\"tex-span\">2</span>, <span class=\"tex-span\">3</span>, <span class=\"tex-span\">4</span> or <span class=\"tex-span\">5</span> positions forward. Determine, what is the minimum number of steps he need to make in order to get to his friend's house.</p>",
+    "inputSpecification": "<p>The first line of the input contains an integer <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u20091\u2009000\u2009000</span>)\u00a0\u2014 The coordinate of the friend's house.</p>",
+    "outputSpecification": "<p>Print the minimum number of steps that elephant needs to make to get from point <span class=\"tex-span\">0</span> to point <span class=\"tex-span\"><i>x</i></span>.</p>",
+    "samples": [
+        {
+            "input": "5<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "12<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the elephant needs to make one step of length <span class=\"tex-span\">5</span> to reach the point <span class=\"tex-span\"><i>x</i></span>.</p><p>In the second sample the elephant can get to point <span class=\"tex-span\"><i>x</i></span> if he moves by <span class=\"tex-span\">3</span>, <span class=\"tex-span\">5</span> and <span class=\"tex-span\">4</span>. There are other ways to get the optimal answer but the elephant cannot reach <span class=\"tex-span\"><i>x</i></span> in less than three moves.</p>",
+    "contestId": 617,
+    "index": "A",
+    "name": "Elephant",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 173044
+}

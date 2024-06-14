@@ -1,0 +1,35 @@
+{
+    "title": "B. Gnikool Ssalg",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a string. Reverse its characters.</p>",
+    "inputSpecification": "<p>The only line of input contains a string between <span class=\"tex-span\">1</span> and <span class=\"tex-span\">100</span> characters long. Each character of the string has ASCII-code between <span class=\"tex-span\">33</span> (exclamation mark) and <span class=\"tex-span\">126</span> (tilde), inclusive.</p>",
+    "outputSpecification": "<p>Output the characters of this string in reverse order.</p>",
+    "samples": [
+        {
+            "input": "secrofedoc<br/>",
+            "output": "codeforces<br/>"
+        },
+        {
+            "input": "!ssalg-gnikool5<br/>",
+            "output": "5looking-glass!<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 130,
+    "index": "B",
+    "name": "Gnikool Ssalg",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 518
+}

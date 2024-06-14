@@ -1,0 +1,38 @@
+{
+    "title": "E. Unsolvable",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Consider the following equation: </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e132675bc04c8df0b7e312e08476a7157b8f823d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center> where sign <span class=\"tex-span\">[<i>a</i>]</span> represents the integer part of number <span class=\"tex-span\"><i>a</i></span>.<p>Let's find all integer <span class=\"tex-span\"><i>z</i></span> <span class=\"tex-span\">(<i>z</i>\u2009&gt;\u20090)</span>, for which this equation is <span class=\"tex-font-style-it\">unsolvable</span> in positive integers. The phrase \"unsolvable in positive integers\" means that there are no such positive integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009&gt;\u20090)</span>, for which the given above equation holds.</p><p>Let's write out all such <span class=\"tex-span\"><i>z</i></span> in the increasing order: <span class=\"tex-span\"><i>z</i><sub class=\"lower-index\">1</sub>,\u2009<i>z</i><sub class=\"lower-index\">2</sub>,\u2009<i>z</i><sub class=\"lower-index\">3</sub></span>, and so on <span class=\"tex-span\">(<i>z</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>z</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub>)</span>. Your task is: given the number <span class=\"tex-span\"><i>n</i></span>, find the number <span class=\"tex-span\"><i>z</i><sub class=\"lower-index\"><i>n</i></sub></span>.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200940</span>).</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number <span class=\"tex-span\"><i>z</i><sub class=\"lower-index\"><i>n</i></sub></span> modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>. It is guaranteed that the answer exists.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "1"
+        },
+        {
+            "input": "2<br/>",
+            "output": "3"
+        },
+        {
+            "input": "3<br/>",
+            "output": "15"
+        }
+    ],
+    "note": null,
+    "contestId": 225,
+    "index": "E",
+    "name": "Unsolvable",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 784
+}

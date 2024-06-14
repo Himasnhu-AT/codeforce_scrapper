@@ -1,0 +1,41 @@
+{
+    "title": "D. Levko and Sets",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Levko loves all sorts of sets very much.</p><p>Levko has two arrays of integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>b</i><sub class=\"lower-index\"><i>m</i></sub></span> and a prime number <span class=\"tex-span\"><i>p</i></span>. Today he generates <span class=\"tex-span\"><i>n</i></span> sets. Let's describe the generation process for the <span class=\"tex-span\"><i>i</i></span>-th set:</p><ol> <li> First it has a single number <span class=\"tex-span\">1</span>. </li><li> Let's take any element <span class=\"tex-span\"><i>c</i></span> from this set. For all <span class=\"tex-span\"><i>j</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>m</i></span>) if number <span class=\"tex-span\">(<i>c</i>\u00b7<i>a</i><sub class=\"lower-index\"><i>i</i></sub><sup class=\"upper-index\"><i>b</i><sub class=\"lower-index\"><i>j</i></sub></sup>)\u00a0<i>mod</i>\u00a0<i>p</i></span> doesn't occur in the set, then add it to the set. </li><li> Repeat step <span class=\"tex-span\">2</span> as long as we can add at least one element to our set. </li></ol><p>Levko wonders, how many numbers belong to at least one set. That is, he wants to know what size is the union of <span class=\"tex-span\"><i>n</i></span> generated sets.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>p</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">2\u2009\u2264\u2009<i>p</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), <span class=\"tex-span\"><i>p</i></span> is prime. </p><p>The second line contains space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>p</i></span>). The third line contains space-separated integers <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>b</i><sub class=\"lower-index\"><i>m</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>The single number \u2014 the size of the union of the sets.</p>",
+    "samples": [
+        {
+            "input": "1 1 7<br/>2<br/>5<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "1 2 7<br/>2<br/>2 4<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "2 1 7<br/>1 6<br/>2<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 1 7<br/>1 6<br/>5<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 360,
+    "index": "D",
+    "name": "Levko and Sets",
+    "type": "PROGRAMMING",
+    "tags": [
+        "number theory"
+    ],
+    "solvedCount": 394
+}

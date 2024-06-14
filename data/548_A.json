@@ -1,0 +1,35 @@
+{
+    "title": "A. Mike and Fax",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>While Mike was walking in the subway, all the stuff in his back-bag dropped on the ground. There were several fax messages among them. He concatenated these strings in some order and now he has string <span class=\"tex-span\"><i>s</i></span>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6ad1575448bfc61e22a22cecbcd744ce8a3993a9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>He is not sure if this is his own back-bag or someone else's. He remembered that there were exactly <span class=\"tex-span\"><i>k</i></span> messages in his own bag, each was a <span class=\"tex-font-style-it\">palindrome</span> string and all those strings had the same length.</p><p>He asked you to help him and tell him if he has worn his own back-bag. Check if the given string <span class=\"tex-span\"><i>s</i></span> is a concatenation of <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-font-style-it\">palindromes</span> of the same length.</p>",
+    "inputSpecification": "<p>The first line of input contains string <span class=\"tex-span\"><i>s</i></span> containing lowercase English letters (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u20091000</span>).</p><p>The second line contains integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20091000</span>).</p>",
+    "outputSpecification": "<p>Print \"YES\"(without quotes) if he has worn his own back-bag or \"NO\"(without quotes) otherwise.</p>",
+    "samples": [
+        {
+            "input": "saba<br/>2<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "saddastavvat<br/>2<br/>",
+            "output": "YES<br/>"
+        }
+    ],
+    "note": "<p><span class=\"tex-font-style-it\">Palindrome</span> is a string reading the same forward and backward.</p><p>In the second sample, the faxes in his back-bag can be \"saddas\" and \"tavvat\".</p>",
+    "contestId": 548,
+    "index": "A",
+    "name": "Mike and Fax",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 9860
+}

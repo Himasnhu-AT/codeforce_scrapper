@@ -1,0 +1,35 @@
+{
+    "title": "E. Special Graph",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In this problem you will need to deal with an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> grid graph. The graph's vertices are the nodes of the <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> grid. The graph's edges are all the sides and diagonals of the grid's unit squares.</p><p>The figure below shows a <span class=\"tex-span\">3\u2009\u00d7\u20095</span> graph. The black lines are the graph's edges, the colored circles are the graph's vertices. The vertices of the graph are painted on the picture for a reason: the coloring is a correct vertex coloring of the <span class=\"tex-span\">3\u2009\u00d7\u20095</span> graph into four colors. A graph coloring is correct if and only if each vertex is painted and no two vertices connected by an edge are painted the same color.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6ff4617b587b03d9d4f33d18eb6216c3bbe5e594.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>You are given the size of the grid graph <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> and the colors of some of its vertices. Find any way how to paint the unpainted vertices of the graph in 4 colors to make the final coloring a correct vertex graph coloring. If there is no such correct vertex coloring, say that the answer doesn't exist.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(2\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000)</span>. Each of the next <span class=\"tex-span\"><i>n</i></span> lines consists of <span class=\"tex-span\"><i>m</i></span> characters \u2014 the given graph. Each character is either \u00ab<span class=\"tex-font-style-tt\">0</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">1</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">2</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">3</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">4</span>\u00bb. Character \u00ab<span class=\"tex-font-style-tt\">0</span>\u00bb means that the corresponding vertex is unpainted, otherwise the character means the color of the vertex.</p><p>Assume that all the available colors are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">4</span>.</p>",
+    "outputSpecification": "<p>If there is no way to get correct vertex coloring of the graph, print 0 in a single line. Otherwise print the colored <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> graph. Print the graph in the same format as in the input.</p><p>If multiple answers exist, print any of them.</p>",
+    "samples": [
+        {
+            "input": "3 5<br/>10101<br/>00020<br/>01000<br/>",
+            "output": "13131<br/>42424<br/>31313<br/>"
+        },
+        {
+            "input": "2 2<br/>00<br/>00<br/>",
+            "output": "12<br/>34<br/>"
+        },
+        {
+            "input": "2 2<br/>11<br/>00<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>The answer to the first sample is shown on the picture (1 \u2014 green color, 2 \u2014 blue, 3 \u2014 dark blue, 4 \u2014 pink).</p><p>In the second sample there exists 4! answers, each of them is considered correct.</p><p>In the third sample two vertices with equal colors are connected. So the correct vertex coloring couldn't be obtained.</p>",
+    "contestId": 435,
+    "index": "E",
+    "name": "Special Graph",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 235
+}

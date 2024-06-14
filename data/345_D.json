@@ -1,0 +1,39 @@
+{
+    "title": "D. Chain Letter",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A chain letter is a kind of a message which urges the recipient to forward it to as many contacts as possible, usually with some kind of mystic explanation. Of course, this is only a superstition, and you don't believe in it, but all your friends do. You know that today there will be one of these letters going around, and you want to know how many times you'll receive it \u2014 of course, not that you'll be sending it yourself!</p><p>You are given an array of strings <span class=\"tex-span\"><i>f</i></span> with <span class=\"tex-span\"><i>n</i></span> elements which describes the contacts between you and <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> of your friends: <span class=\"tex-span\"><i>j</i></span>-th character of <span class=\"tex-span\"><i>i</i></span>-th string (<span class=\"tex-span\"><i>f</i></span>[<span class=\"tex-span\"><i>i</i></span>][<span class=\"tex-span\"><i>j</i></span>]) is \"<span class=\"tex-font-style-tt\">1</span>\" if people <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span> will send messages to each other, and \"<span class=\"tex-font-style-tt\">0</span>\" otherwise. Person 1 starts sending the letter to all his contacts; every person who receives the letter for the first time sends it to all his contacts. You are person <span class=\"tex-span\"><i>n</i></span>, and you don't forward the letter when you receive it. </p><p>Calculate the number of copies of this letter you'll receive.</p>",
+    "inputSpecification": "<p>The first line of the input contains an integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950)</span> \u2014 the number of people involved. Next <span class=\"tex-span\"><i>n</i></span> following lines contain elements of <span class=\"tex-span\"><i>f</i></span>, strings of length <span class=\"tex-span\"><i>n</i></span>. Each character in <span class=\"tex-span\"><i>f</i></span> is either \"<span class=\"tex-font-style-tt\">0</span>\" or \"<span class=\"tex-font-style-tt\">1</span>\". It's guaranteed that two following equations hold: <span class=\"tex-span\"><i>f</i></span>[<span class=\"tex-span\"><i>i</i></span>][<span class=\"tex-span\"><i>j</i></span>] = <span class=\"tex-span\"><i>f</i></span>[<span class=\"tex-span\"><i>j</i></span>][<span class=\"tex-span\"><i>i</i></span>], <span class=\"tex-span\"><i>f</i></span>[<span class=\"tex-span\"><i>i</i></span>][<span class=\"tex-span\"><i>i</i></span>] = 0, for all <span class=\"tex-span\"><i>i</i>,\u2009<i>j</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>,\u2009<i>j</i>\u2009\u2264\u2009<i>n</i>)</span>.</p>",
+    "outputSpecification": "<p>Output a single integer \u2014 the number of copies of the letter you will receive eventually.</p>",
+    "samples": [
+        {
+            "input": "4<br/>0111<br/>1011<br/>1101<br/>1110<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "4<br/>0110<br/>1010<br/>1100<br/>0000<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "4<br/>0101<br/>1001<br/>0001<br/>1110<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In the first case, everybody sends letters to everyone, so you get copies from all three of your friends.</p><p>In the second case, you don't know any of these people, so they don't bother you with their superstitious stuff.</p><p>In the third case, two of your friends send you copies of the letter but the third friend doesn't know them so he is unaffected.</p>",
+    "contestId": 345,
+    "index": "D",
+    "name": "Chain Letter",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "dfs and similar",
+        "graphs"
+    ],
+    "solvedCount": 77
+}

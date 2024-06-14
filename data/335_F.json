@@ -1,0 +1,38 @@
+{
+    "title": "F. Buy One, Get One Free",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A nearby pie shop is having a special sale. For each pie you pay full price for, you may select one pie of a strictly lesser value to get for free. Given the prices of all the pies you wish to acquire, determine the minimum total amount you must pay for all of the pies.</p>",
+    "inputSpecification": "<p>Input will begin with an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009500000</span>), the number of pies you wish to acquire. Following this is a line with <span class=\"tex-span\"><i>n</i></span> integers, each indicating the cost of a pie. All costs are positive integers not exceeding <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup></span>.</p>",
+    "outputSpecification": "<p>Print the minimum cost to acquire all the pies.</p><p>Please, do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "6<br/>3 4 5 3 4 5<br/>",
+            "output": "14<br/>"
+        },
+        {
+            "input": "5<br/>5 5 5 5 5<br/>",
+            "output": "25<br/>"
+        },
+        {
+            "input": "4<br/>309999 6000 2080 2080<br/>",
+            "output": "314159<br/>"
+        }
+    ],
+    "note": "<p>In the first test case you can pay for a pie with cost 5 and get a pie with cost 4 for free, then pay for a pie with cost 5 and get a pie with cost 3 for free, then pay for a pie with cost 4 and get a pie with cost 3 for free.</p><p>In the second test case you have to pay full price for every pie.</p>",
+    "contestId": 335,
+    "index": "F",
+    "name": "Buy One, Get One Free",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy"
+    ],
+    "solvedCount": 482
+}

@@ -1,0 +1,41 @@
+{
+    "title": "B. Pasha Maximizes",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Pasha has a positive integer <span class=\"tex-span\"><i>a</i></span> without leading zeroes. Today he decided that the number is too small and he should make it larger. Unfortunately, the only operation Pasha can do is to swap two adjacent decimal digits of the integer.</p><p>Help Pasha count the maximum number he can get if he has the time to make at most <span class=\"tex-span\"><i>k</i></span> swaps.</p>",
+    "inputSpecification": "<p>The single line contains two integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup>;\u00a00\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009100)</span>.</p>",
+    "outputSpecification": "<p>Print the maximum number that Pasha can get if he makes at most <span class=\"tex-span\"><i>k</i></span> swaps.</p>",
+    "samples": [
+        {
+            "input": "1990 1<br/>",
+            "output": "9190<br/>"
+        },
+        {
+            "input": "300 0<br/>",
+            "output": "300<br/>"
+        },
+        {
+            "input": "1034 2<br/>",
+            "output": "3104<br/>"
+        },
+        {
+            "input": "9090000078001234 6<br/>",
+            "output": "9907000008001234<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 435,
+    "index": "B",
+    "name": "Pasha Maximizes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy"
+    ],
+    "solvedCount": 6794
+}

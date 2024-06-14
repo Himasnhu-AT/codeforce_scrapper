@@ -1,0 +1,30 @@
+{
+    "title": "Q. Pyramids",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>IT City administration has no rest because of the fame of the Pyramids in Egypt. There is a project of construction of pyramid complex near the city in the place called Emerald Walley. The distinction of the complex is that its pyramids will be not only quadrangular as in Egypt but also triangular and pentagonal. Of course the amount of the city budget funds for the construction depends on the pyramids' volume. Your task is to calculate the volume of the pilot project consisting of three pyramids \u2014 one triangular, one quadrangular and one pentagonal.</p><p>The first pyramid has equilateral triangle as its base, and all 6 edges of the pyramid have equal length. The second pyramid has a square as its base and all 8 edges of the pyramid have equal length. The third pyramid has a regular pentagon as its base and all 10 edges of the pyramid have equal length.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/417fc648b5c50cd54ffe5a0458b0d65f57fe10a2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The only line of the input contains three integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">3</sub>,\u2009<i>l</i><sub class=\"lower-index\">4</sub>,\u2009<i>l</i><sub class=\"lower-index\">5</sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\">3</sub>,\u2009<i>l</i><sub class=\"lower-index\">4</sub>,\u2009<i>l</i><sub class=\"lower-index\">5</sub>\u2009\u2264\u20091000</span>) \u2014 the edge lengths of triangular, quadrangular and pentagonal pyramids correspondingly.</p>",
+    "outputSpecification": "<p>Output one number \u2014 the total volume of the pyramids. Absolute or relative error should not be greater than <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20099</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "2 5 3<br/>",
+            "output": "38.546168065709"
+        }
+    ],
+    "note": null,
+    "contestId": 630,
+    "index": "Q",
+    "name": "Pyramids",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "math"
+    ],
+    "solvedCount": 1221
+}

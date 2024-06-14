@@ -1,0 +1,35 @@
+{
+    "title": "A. Clear Symmetry",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Consider some square matrix <span class=\"tex-span\"><i>A</i></span> with side <span class=\"tex-span\"><i>n</i></span> consisting of zeros and ones. There are <span class=\"tex-span\"><i>n</i></span> rows numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> from top to bottom and <span class=\"tex-span\"><i>n</i></span> columns numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> from left to right in this matrix. We'll denote the element of the matrix which is located at the intersection of the <span class=\"tex-span\"><i>i</i></span>-row and the <span class=\"tex-span\"><i>j</i></span>-th column as <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span>.</p><p>Let's call matrix <span class=\"tex-span\"><i>A</i></span> <span class=\"tex-font-style-underline\">clear</span> if no two cells containing ones have a common side.</p><p>Let's call matrix <span class=\"tex-span\"><i>A</i></span> <span class=\"tex-font-style-underline\">symmetrical</span> if it matches the matrices formed from it by a horizontal and/or a vertical reflection. Formally, for each pair <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>,\u2009<i>j</i>\u2009\u2264\u2009<i>n</i>)</span> both of the following conditions must be met: <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub>\u2009=\u2009<i>A</i><sub class=\"lower-index\"><i>n</i>\u2009-\u2009<i>i</i>\u2009+\u20091,\u2009<i>j</i></sub></span> and <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub>\u2009=\u2009<i>A</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>n</i>\u2009-\u2009<i>j</i>\u2009+\u20091</sub></span>.</p><p>Let's define the <span class=\"tex-font-style-underline\">sharpness</span> of matrix <span class=\"tex-span\"><i>A</i></span> as the number of ones in it.</p><p>Given integer <span class=\"tex-span\"><i>x</i></span>, your task is to find the smallest positive integer <span class=\"tex-span\"><i>n</i></span> such that there exists a clear symmetrical matrix <span class=\"tex-span\"><i>A</i></span> with side <span class=\"tex-span\"><i>n</i></span> and sharpness <span class=\"tex-span\"><i>x</i></span>.</p>",
+    "inputSpecification": "<p>The only line contains a single integer <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009100</span>) \u2014 the required sharpness of the matrix.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the sought value of <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "samples": [
+        {
+            "input": "4<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "9<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": "<p>The figure below shows the matrices that correspond to the samples:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/b645f14acce57b47fb84ad631e38226eee6b0ed4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 201,
+    "index": "A",
+    "name": "Clear Symmetry",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 2974
+}

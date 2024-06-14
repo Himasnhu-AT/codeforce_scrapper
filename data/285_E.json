@@ -1,0 +1,47 @@
+{
+    "title": "E. Positions in Permutations",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\"><span class=\"tex-font-style-bf\">Permutation</span> <span class=\"tex-span\"><i>p</i></span> is an ordered set of integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009\u2009...,\u2009\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>, consisting of <span class=\"tex-span\"><i>n</i></span> distinct positive integers, each of them doesn't exceed <span class=\"tex-span\"><i>n</i></span>. We'll denote the <span class=\"tex-span\"><i>i</i></span>-th element of permutation <span class=\"tex-span\"><i>p</i></span> as <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>. We'll call number <span class=\"tex-span\"><i>n</i></span> the size or the length of permutation <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009\u2009...,\u2009\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>.</span></p><p>We'll call position <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>) in permutation <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-font-style-it\">good</span>, if <span class=\"tex-span\">|<i>p</i>[<i>i</i>]\u2009-\u2009<i>i</i>|\u2009=\u20091</span>. Count the number of permutations of size <span class=\"tex-span\"><i>n</i></span> with exactly <span class=\"tex-span\"><i>k</i></span> good positions. Print the answer modulo <span class=\"tex-span\">1000000007</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>).</p>",
+    "inputSpecification": "<p>The single line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000,\u20090\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i></span>).</p>",
+    "outputSpecification": "<p>Print the number of permutations of length <span class=\"tex-span\"><i>n</i></span> with exactly <span class=\"tex-span\"><i>k</i></span> good positions modulo <span class=\"tex-span\">1000000007</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>).</p>",
+    "samples": [
+        {
+            "input": "1 0<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 1<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "3 2<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "4 1<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "7 4<br/>",
+            "output": "328<br/>"
+        }
+    ],
+    "note": "<p>The only permutation of size 1 has 0 good positions.</p><p>Permutation <span class=\"tex-span\">(1,\u20092)</span> has 0 good positions, and permutation <span class=\"tex-span\">(2,\u20091)</span> has 2 positions.</p><p>Permutations of size 3:</p><ol><li> <span class=\"tex-span\">(1,\u20092,\u20093)</span> \u2014 0 positions</li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/eacaee9ed78760263daaea6c99f00e6bed9f63f4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> \u2014 2 positions</li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/343aae148f8c6b48690f76a6df180f876ed28a70.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> \u2014 2 positions</li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9a68a5e5de70440f14a7d6b51e01c4c2073157ea.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> \u2014 2 positions</li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d3fc11bb6a53a29b6b096f9567b8cbdca17addba.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> \u2014 2 positions</li><li> <span class=\"tex-span\">(3,\u20092,\u20091)</span> \u2014 0 positions</li></ol>",
+    "contestId": 285,
+    "index": "E",
+    "name": "Positions in Permutations",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 943
+}

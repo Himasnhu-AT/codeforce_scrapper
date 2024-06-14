@@ -1,0 +1,35 @@
+{
+    "title": "A. Nineteen",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Alice likes word \"<span class=\"tex-font-style-tt\">nineteen</span>\" very much. She has a string <span class=\"tex-span\"><i>s</i></span> and wants the string to contain as many such words as possible. For that reason she can rearrange the letters of the string.</p><p>For example, if she has string \"<span class=\"tex-font-style-tt\">xiineteenppnnnewtnee</span>\", she can get string \"<span class=\"tex-font-style-tt\">x<span class=\"tex-font-style-bf\">nineteen</span>pp<span class=\"tex-font-style-bf\">nineteen</span>w</span>\", containing (the occurrences marked) two such words. More formally, word \"<span class=\"tex-font-style-tt\">nineteen</span>\" occurs in the string the number of times you can read it starting from some letter of the string. Of course, you shouldn't skip letters.</p><p>Help her to find the maximum number of \"<span class=\"tex-font-style-tt\">nineteen</span>\"s that she can get in her string.</p>",
+    "inputSpecification": "<p>The first line contains a non-empty string <span class=\"tex-span\"><i>s</i></span>, consisting only of lowercase English letters. The length of string <span class=\"tex-span\"><i>s</i></span> doesn't exceed 100.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the maximum number of \"<span class=\"tex-font-style-tt\">nineteen</span>\"s that she can get in her string.</p>",
+    "samples": [
+        {
+            "input": "nniinneetteeeenn<br/>",
+            "output": "2"
+        },
+        {
+            "input": "nneteenabcnneteenabcnneteenabcnneteenabcnneteenabcii<br/>",
+            "output": "2"
+        },
+        {
+            "input": "nineteenineteen<br/>",
+            "output": "2"
+        }
+    ],
+    "note": null,
+    "contestId": 393,
+    "index": "A",
+    "name": "Nineteen",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 6531
+}

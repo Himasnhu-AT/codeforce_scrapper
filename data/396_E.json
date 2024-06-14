@@ -1,0 +1,37 @@
+{
+    "title": "E. On Iteration of One Well-Known Function",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Of course, many of you can calculate <span class=\"tex-span\">\u03c6(<i>n</i>)</span> \u2014 the number of positive integers that are less than or equal to <span class=\"tex-span\"><i>n</i></span>, that are coprime with <span class=\"tex-span\"><i>n</i></span>. But what if we need to calculate <span class=\"tex-span\">\u03c6(\u03c6(...\u03c6(<i>n</i>)))</span>, where function <span class=\"tex-span\">\u03c6</span> is taken <span class=\"tex-span\"><i>k</i></span> times and <span class=\"tex-span\"><i>n</i></span> is given in the canonical decomposition into prime factors? </p><p>You are given <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span>, calculate the value of <span class=\"tex-span\">\u03c6(\u03c6(...\u03c6(<i>n</i>)))</span>. Print the result in the canonical decomposition into prime factors.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of distinct prime divisors in the canonical representaion of <span class=\"tex-span\"><i>n</i></span>.</p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines contains a pair of space-separated integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>;\u00a01\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">17</sup></span>) \u2014 another prime divisor of number <span class=\"tex-span\"><i>n</i></span> and its power in the canonical representation. The sum of all <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">17</sup></span>. Prime divisors in the input follow in the strictly increasing order.</p><p>The last line contains integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>).</p>",
+    "outputSpecification": "<p>In the first line, print integer <span class=\"tex-span\"><i>w</i></span> \u2014 the number of distinct prime divisors of number <span class=\"tex-span\">\u03c6(\u03c6(...\u03c6(<i>n</i>)))</span>, where function <span class=\"tex-span\">\u03c6</span> is taken <span class=\"tex-span\"><i>k</i></span> times.</p><p>Each of the next <span class=\"tex-span\"><i>w</i></span> lines must contain two space-separated integers <span class=\"tex-span\"><i>q</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2265\u20091)</span> \u2014 another prime divisor and its power in the canonical representaion of the result. Numbers <span class=\"tex-span\"><i>q</i><sub class=\"lower-index\"><i>i</i></sub></span> must go in the strictly increasing order.</p>",
+    "samples": [
+        {
+            "input": "1<br/>7 1<br/>1<br/>",
+            "output": "2<br/>2 1<br/>3 1<br/>"
+        },
+        {
+            "input": "1<br/>7 1<br/>2<br/>",
+            "output": "1<br/>2 1<br/>"
+        },
+        {
+            "input": "1<br/>2 100000000000000000<br/>10000000000000000<br/>",
+            "output": "1<br/>2 90000000000000000<br/>"
+        }
+    ],
+    "note": "<p>You can read about canonical representation of a positive integer here: <span class=\"tex-font-style-tt\">http://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic</span>.</p><p>You can read about function <span class=\"tex-span\">\u03c6(<i>n</i>)</span> here: <span class=\"tex-font-style-tt\">http://en.wikipedia.org/wiki/Euler's_totient_function</span>.</p>",
+    "contestId": 396,
+    "index": "E",
+    "name": "On Iteration of One Well-Known Function",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 145
+}

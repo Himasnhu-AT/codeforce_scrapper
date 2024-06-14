@@ -1,0 +1,35 @@
+{
+    "title": "A. Elimination",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The finalists of the \"Russian Code Cup\" competition in 2214 will be the participants who win in one of the elimination rounds.</p><p>The elimination rounds are divided into main and additional. Each of the main elimination rounds consists of <span class=\"tex-span\"><i>c</i></span> problems, the winners of the round are the first <span class=\"tex-span\"><i>n</i></span> people in the rating list. Each of the additional elimination rounds consists of <span class=\"tex-span\"><i>d</i></span> problems. The winner of the additional round is one person. Besides, <span class=\"tex-span\"><i>k</i></span> winners of the past finals are invited to the finals without elimination.</p><p>As a result of all elimination rounds at least <span class=\"tex-span\"><i>n</i>\u00b7<i>m</i></span> people should go to the finals. You need to organize elimination rounds in such a way, that at least <span class=\"tex-span\"><i>n</i>\u00b7<i>m</i></span> people go to the finals, and the total amount of used problems in all rounds is as small as possible.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>c</i></span> and <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i>,\u2009<i>d</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the number of problems in the main and additional rounds, correspondingly. The second line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>). Finally, the third line contains an integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the number of the pre-chosen winners. </p>",
+    "outputSpecification": "<p>In the first line, print a single integer \u2014 the minimum number of problems the jury needs to prepare.</p>",
+    "samples": [
+        {
+            "input": "1 10<br/>7 2<br/>1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "2 2<br/>2 1<br/>2<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 417,
+    "index": "A",
+    "name": "Elimination",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 2901
+}

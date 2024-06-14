@@ -1,0 +1,37 @@
+{
+    "title": "B. Moodular Arithmetic",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>As behooves any intelligent schoolboy, Kevin Sun is studying psycowlogy, cowculus, and cryptcowgraphy at the Bovinia State University (BGU) under Farmer Ivan. During his Mathematics of Olympiads (MoO) class, Kevin was confronted with a weird functional equation and needs your help. For two fixed integers <span class=\"tex-span\"><i>k</i></span> and <span class=\"tex-span\"><i>p</i></span>, where <span class=\"tex-span\"><i>p</i></span> is an odd prime number, the functional equation states that </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d32930750914fa084e25b2ac3a62522c472d892e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center> <p>for some function <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8abaddab496241de4e28d64aa08568e882a89140.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. (This equation should hold for any integer <span class=\"tex-span\"><i>x</i></span> in the range <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>p</i>\u2009-\u20091</span>, inclusive.)</p><p>It turns out that <span class=\"tex-span\"><i>f</i></span> can actually be many different functions. Instead of finding a solution, Kevin wants you to count the number of distinct functions <span class=\"tex-span\"><i>f</i></span> that satisfy this equation. Since the answer may be very large, you should print your result modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The input consists of two space-separated integers <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>p</i>\u2009\u2264\u20091\u2009000\u2009000</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>p</i>\u2009-\u20091</span>) on a single line. It is guaranteed that <span class=\"tex-span\"><i>p</i></span> is an odd prime number.</p>",
+    "outputSpecification": "<p>Print a single integer, the number of distinct functions <span class=\"tex-span\"><i>f</i></span> modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "5 4<br/>",
+            "output": "25<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, <span class=\"tex-span\"><i>p</i>\u2009=\u20093</span> and <span class=\"tex-span\"><i>k</i>\u2009=\u20092</span>. The following functions work: </p><ol> <li> <span class=\"tex-span\"><i>f</i>(0)\u2009=\u20090</span>, <span class=\"tex-span\"><i>f</i>(1)\u2009=\u20091</span>, <span class=\"tex-span\"><i>f</i>(2)\u2009=\u20092</span>. </li><li> <span class=\"tex-span\"><i>f</i>(0)\u2009=\u20090</span>, <span class=\"tex-span\"><i>f</i>(1)\u2009=\u20092</span>, <span class=\"tex-span\"><i>f</i>(2)\u2009=\u20091</span>. </li><li> <span class=\"tex-span\"><i>f</i>(0)\u2009=\u2009<i>f</i>(1)\u2009=\u2009<i>f</i>(2)\u2009=\u20090</span>. </li></ol>",
+    "contestId": 603,
+    "index": "B",
+    "name": "Moodular Arithmetic",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "dsu",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 2539
+}

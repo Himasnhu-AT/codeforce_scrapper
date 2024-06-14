@@ -1,0 +1,45 @@
+{
+    "title": "C. Design Tutorial: Make It Nondeterministic",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A way to make a new task is to make it nondeterministic or probabilistic. For example, the hard task of Topcoder SRM 595, Constellation, is the probabilistic version of a convex hull.</p><p>Let's try to make a new task. Firstly we will use the following task. There are <span class=\"tex-span\"><i>n</i></span> people, sort them by their name. It is just an ordinary sorting problem, but we can make it more interesting by adding nondeterministic element. There are <span class=\"tex-span\"><i>n</i></span> people, each person will use either his/her first name or last name as a handle. Can the lexicographical order of the handles be exactly equal to the given permutation <span class=\"tex-span\"><i>p</i></span>?</p><p>More formally, if we denote the handle of the <span class=\"tex-span\"><i>i</i></span>-th person as <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\"><i>i</i></sub></span>, then the following condition must hold: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7da83a168f60958e75fb0519eaef2bfeb7b2a382.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> \u2014 the number of people.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines each contains two strings. The <span class=\"tex-span\"><i>i</i></span>-th line contains strings <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009|<i>f</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>s</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200950)</span> \u2014 the first name and last name of the <span class=\"tex-span\"><i>i</i></span>-th person. Each string consists only of lowercase English letters. All of the given <span class=\"tex-span\">2<i>n</i></span> strings will be distinct.</p><p>The next line contains <span class=\"tex-span\"><i>n</i></span> distinct integers: <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>)</span>.</p>",
+    "outputSpecification": "<p>If it is possible, output \"<span class=\"tex-font-style-tt\">YES</span>\", otherwise output \"<span class=\"tex-font-style-tt\">NO</span>\".</p>",
+    "samples": [
+        {
+            "input": "3<br/>gennady korotkevich<br/>petr mitrichev<br/>gaoyuan chen<br/>1 2 3<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "3<br/>gennady korotkevich<br/>petr mitrichev<br/>gaoyuan chen<br/>3 1 2<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "2<br/>galileo galilei<br/>nicolaus copernicus<br/>2 1<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "10<br/>rean schwarzer<br/>fei claussell<br/>alisa reinford<br/>eliot craig<br/>laura arseid<br/>jusis albarea<br/>machias regnitz<br/>sara valestin<br/>emma millstein<br/>gaius worzel<br/>1 2 3 4 5 6 7 8 9 10<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "10<br/>rean schwarzer<br/>fei claussell<br/>alisa reinford<br/>eliot craig<br/>laura arseid<br/>jusis albarea<br/>machias regnitz<br/>sara valestin<br/>emma millstein<br/>gaius worzel<br/>2 4 9 6 5 7 1 3 8 10<br/>",
+            "output": "YES<br/>"
+        }
+    ],
+    "note": "<p>In example 1 and 2, we have 3 people: tourist, Petr and me (cgy4ever). You can see that whatever handle is chosen, I must be the first, then tourist and Petr must be the last.</p><p>In example 3, if Copernicus uses \"copernicus\" as his handle, everything will be alright.</p>",
+    "contestId": 472,
+    "index": "C",
+    "name": "Design Tutorial: Make It Nondeterministic",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy"
+    ],
+    "solvedCount": 6321
+}

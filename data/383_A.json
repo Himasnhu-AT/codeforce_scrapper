@@ -1,0 +1,34 @@
+{
+    "title": "A. Milking cows",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Iahub helps his grandfather at the farm. Today he must milk the cows. There are <span class=\"tex-span\"><i>n</i></span> cows sitting in a row, numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> from left to right. Each cow is either facing to the left or facing to the right. When Iahub milks a cow, all the cows that see the current cow get scared and lose one unit of the quantity of milk that they can give. A cow facing left sees all the cows with lower indices than her index, and a cow facing right sees all the cows with higher indices than her index. A cow that got scared once can get scared again (and lose one more unit of milk). A cow that has been milked once cannot get scared and lose any more milk. You can assume that a cow never loses all the milk she can give (a cow gives an infinitely amount of milk).</p><p>Iahub can decide the order in which he milks the cows. But he must milk each cow exactly once. Iahub wants to lose as little milk as possible. Print the minimum amount of milk that is lost.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200000)</span>. The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>, ..., <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>, where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is <span class=\"tex-span\">0</span> if the cow number <span class=\"tex-span\"><i>i</i></span> is facing left, and <span class=\"tex-span\">1</span> if it is facing right.</p>",
+    "outputSpecification": "<p>Print a single integer, the minimum amount of lost milk.</p><p>Please, do not write the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "4<br/>0 0 1 0<br/>",
+            "output": "1"
+        },
+        {
+            "input": "5<br/>1 0 1 0 1<br/>",
+            "output": "3"
+        }
+    ],
+    "note": "<p>In the first sample Iahub milks the cows in the following order: cow <span class=\"tex-span\">3</span>, cow <span class=\"tex-span\">4</span>, cow <span class=\"tex-span\">2</span>, cow <span class=\"tex-span\">1</span>. When he milks cow <span class=\"tex-span\">3</span>, cow <span class=\"tex-span\">4</span> loses <span class=\"tex-span\">1</span> unit of milk. After that, no more milk is lost.</p>",
+    "contestId": 383,
+    "index": "A",
+    "name": "Milking cows",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "greedy"
+    ],
+    "solvedCount": 5217
+}

@@ -1,0 +1,46 @@
+{
+    "title": "E. Empty Rectangles",
+    "timeLimit": {
+        "value": 12.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've got an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> table (<span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>m</i></span> columns), each cell of the table contains a \"0\" or a \"1\".</p><p>Your task is to calculate the number of rectangles with the sides that are parallel to the sides of the table and go along the cell borders, such that the number one occurs exactly <span class=\"tex-span\"><i>k</i></span> times in the rectangle. </p>",
+    "inputSpecification": "<p>The first line contains three space-separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20092500</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20096</span>) \u2014 the sizes of the table and the required number of numbers one.</p><p>Next <span class=\"tex-span\"><i>n</i></span> lines each contains <span class=\"tex-span\"><i>m</i></span> characters \"0\" or \"1\". The <span class=\"tex-span\"><i>i</i></span>-th character of the <span class=\"tex-span\"><i>j</i></span>-th line corresponds to the character that is in the <span class=\"tex-span\"><i>j</i></span>-th row and the <span class=\"tex-span\"><i>i</i></span>-th column of the table.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the number of rectangles that contain exactly <span class=\"tex-span\"><i>k</i></span> numbers one.</p><p>Please, do not write the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "3 3 2<br/>101<br/>000<br/>101<br/>",
+            "output": "8<br/>"
+        },
+        {
+            "input": "5 5 1<br/>00000<br/>00000<br/>00100<br/>00000<br/>00000<br/>",
+            "output": "81<br/>"
+        },
+        {
+            "input": "5 5 6<br/>01010<br/>10101<br/>01010<br/>10101<br/>01010<br/>",
+            "output": "12<br/>"
+        },
+        {
+            "input": "3 3 0<br/>001<br/>010<br/>000<br/>",
+            "output": "15<br/>"
+        },
+        {
+            "input": "4 4 0<br/>0000<br/>0101<br/>0000<br/>0000<br/>",
+            "output": "52<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 364,
+    "index": "E",
+    "name": "Empty Rectangles",
+    "type": "PROGRAMMING",
+    "tags": [
+        "divide and conquer",
+        "two pointers"
+    ],
+    "solvedCount": 536
+}

@@ -1,0 +1,35 @@
+{
+    "title": "B. PFAST Inc.",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>When little Petya grew up and entered the university, he started to take part in \u0410\u0421\u041c contests. Later he realized that he doesn't like how the \u0410\u0421\u041c contests are organised: the team could only have three members (and he couldn't take all his friends to the competitions and distribute the tasks between the team members efficiently), so he decided to organize his own contests PFAST Inc. \u2014 Petr and Friends Are Solving Tasks Corporation. PFAST Inc. rules allow a team to have unlimited number of members.</p><p>To make this format of contests popular he organised his own tournament. To create the team he will prepare for the contest organised by the PFAST Inc. rules, he chose several volunteers (up to 16 people) and decided to compile a team from them. Petya understands perfectly that if a team has two people that don't get on well, then the team will perform poorly. Put together a team with as many players as possible given that all players should get on well with each other.</p>",
+    "inputSpecification": "<p>The first line contains two integer numbers <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200916</span>) \u2014 the number of volunteers, and <span class=\"tex-span\"><i>m</i></span> (<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/35327467f2c3b20f43402683e6545bccfc361a3b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>) \u2014 the number of pairs that do not get on. Next <span class=\"tex-span\"><i>n</i></span> lines contain the volunteers' names (each name is a non-empty string consisting of no more than 10 uppercase and/or lowercase Latin letters). Next <span class=\"tex-span\"><i>m</i></span> lines contain two names \u2014 the names of the volunteers who do not get on. The names in pair are separated with a single space. Each pair of volunteers who do not get on occurs exactly once. The strings are case-sensitive. All <span class=\"tex-span\"><i>n</i></span> names are distinct.</p>",
+    "outputSpecification": "<p>The first output line should contain the single number <span class=\"tex-span\"><i>k</i></span> \u2014 the number of people in the sought team. Next <span class=\"tex-span\"><i>k</i></span> lines should contain the names of the sought team's participants in the lexicographical order. If there are several variants to solve the problem, print any of them. Petya might not be a member of the sought team. </p>",
+    "samples": [
+        {
+            "input": "3 1<br/>Petya<br/>Vasya<br/>Masha<br/>Petya Vasya<br/>",
+            "output": "2<br/>Masha<br/>Petya<br/>"
+        },
+        {
+            "input": "3 0<br/>Pasha<br/>Lesha<br/>Vanya<br/>",
+            "output": "3<br/>Lesha<br/>Pasha<br/>Vanya<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 114,
+    "index": "B",
+    "name": "PFAST Inc.",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "graphs"
+    ],
+    "solvedCount": 3552
+}

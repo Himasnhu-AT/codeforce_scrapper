@@ -1,0 +1,32 @@
+{
+    "title": "B. Mike and Feet",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mike is the president of country What-The-Fatherland. There are <span class=\"tex-span\"><i>n</i></span> bears living in this country besides Mike. All of them are standing in a line and they are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> from left to right. <span class=\"tex-span\"><i>i</i></span>-th bear is exactly <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> feet high. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/65b7b7139929f64feed80e9fb77b31157a4292bf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>A group of bears is a non-empty contiguous segment of the line. The <span class=\"tex-font-style-it\">size</span> of a group is the number of bears in that group. The <span class=\"tex-font-style-it\">strength</span> of a group is the minimum height of the bear in that group.</p><p>Mike is a curious to know for each <span class=\"tex-span\"><i>x</i></span> such that <span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>n</i></span> the maximum strength among all groups of size <span class=\"tex-span\"><i>x</i></span>.</p>",
+    "inputSpecification": "<p>The first line of input contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u2009\u00d7\u200910<sup class=\"upper-index\">5</sup></span>), the number of bears.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers separated by space, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), heights of bears.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> integers in one line. For each <span class=\"tex-span\"><i>x</i></span> from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, print the maximum strength among all groups of size <span class=\"tex-span\"><i>x</i></span>.</p>",
+    "samples": [
+        {
+            "input": "10<br/>1 2 3 4 5 4 3 2 1 6<br/>",
+            "output": "6 4 4 3 3 2 2 1 1 1 <br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 547,
+    "index": "B",
+    "name": "Mike and Feet",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "dsu"
+    ],
+    "solvedCount": 8301
+}

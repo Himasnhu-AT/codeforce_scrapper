@@ -1,0 +1,35 @@
+{
+    "title": "I. Rotation",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Ehsan loves geometry! Especially he likes to rotate points!</p><p>Given a point in the plane, Ehsan likes to rotate it by <span class=\"tex-span\"><i>k</i></span> degrees (counter-clockwise), around the <span class=\"tex-font-style-underline\">origin</span>. What is the result of this rotation?</p>",
+    "inputSpecification": "<p>A single integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009&lt;\u2009360</span>) is given in the first line. Two integer numbers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> are given in the second line (<span class=\"tex-span\">\u2009-\u20091390\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u20091390</span>).</p>",
+    "outputSpecification": "<p>Write two numbers. The result of the rotation. Your answer must have a relative error less than <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20091</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "90<br/>1 1<br/>",
+            "output": "-1.00000000 1.00000000<br/>"
+        },
+        {
+            "input": "180<br/>1 1390<br/>",
+            "output": "-1.00000000 -1390.00000000<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 100,
+    "index": "I",
+    "name": "Rotation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "geometry",
+        "math"
+    ],
+    "solvedCount": 342
+}

@@ -1,0 +1,34 @@
+{
+    "title": "H. Degenerate Matrix",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The <span class=\"tex-font-style-it\">determinant</span> of a matrix <span class=\"tex-span\">2\u2009\u00d7\u20092</span> is defined as follows:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f36307f7f874a9b10893d1508d416e7c9a97fbb9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>A matrix is called <span class=\"tex-font-style-it\">degenerate</span> if its determinant is equal to zero. </p><p>The <span class=\"tex-font-style-it\">norm</span> <span class=\"tex-span\">||<i>A</i>||</span> of a matrix <span class=\"tex-span\"><i>A</i></span> is defined as a maximum of absolute values of its elements.</p><p>You are given a matrix <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e78540a0de68f85833f82714a7141114b781276e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Consider any degenerate matrix <span class=\"tex-span\"><i>B</i></span> such that norm <span class=\"tex-span\">||<i>A</i>\u2009-\u2009<i>B</i>||</span> is minimum possible. Determine <span class=\"tex-span\">||<i>A</i>\u2009-\u2009<i>B</i>||</span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">|<i>a</i>|,\u2009|<i>b</i>|\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), the elements of the first row of matrix <span class=\"tex-span\"><i>A</i></span>. </p><p>The second line contains two integers <span class=\"tex-span\"><i>c</i></span> and <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">|<i>c</i>|,\u2009|<i>d</i>|\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) the elements of the second row of matrix <span class=\"tex-span\"><i>A</i></span>.</p>",
+    "outputSpecification": "<p>Output a single real number, the minimum possible value of <span class=\"tex-span\">||<i>A</i>\u2009-\u2009<i>B</i>||</span>. Your answer is considered to be correct if its absolute or relative error does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20099</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "1 2<br/>3 4<br/>",
+            "output": "0.2000000000<br/>"
+        },
+        {
+            "input": "1 0<br/>0 1<br/>",
+            "output": "0.5000000000<br/>"
+        }
+    ],
+    "note": "<p>In the first sample matrix <span class=\"tex-span\"><i>B</i></span> is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/ce214ad27bde5d77f87492eedd74d34c745f72a1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>In the second sample matrix <span class=\"tex-span\"><i>B</i></span> is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a07c34fbc6e9328bcb519d3f780eea6e02e5dc87.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 549,
+    "index": "H",
+    "name": "Degenerate Matrix",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "math"
+    ],
+    "solvedCount": 1839
+}

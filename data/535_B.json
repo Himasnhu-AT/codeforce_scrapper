@@ -1,0 +1,40 @@
+{
+    "title": "B. Tavas and SaDDas",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-underline\">Once again Tavas started eating coffee mix without water! Keione told him that it smells awful, but he didn't stop doing that. That's why Keione told his smart friend, SaDDas to punish him! SaDDas took Tavas' headphones and told him: \"If you solve the following problem, I'll return it to you.\"</span></p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/3e0a793e69c51f8896982bcb6f7244161ef928f2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The problem is: </p><p>You are given a <span class=\"tex-font-style-it\">lucky number</span> <span class=\"tex-span\"><i>n</i></span>. <span class=\"tex-font-style-it\">Lucky numbers</span> are the positive integers whose decimal representations contain only the lucky digits 4 and 7. For example, numbers <span class=\"tex-font-style-bf\">47</span>, <span class=\"tex-font-style-bf\">744</span>, <span class=\"tex-font-style-bf\">4</span> are lucky and <span class=\"tex-font-style-bf\">5</span>, <span class=\"tex-font-style-bf\">17</span>, <span class=\"tex-font-style-bf\">467</span> are not.</p><p>If we sort all lucky numbers in increasing order, what's the 1-based index of <span class=\"tex-span\"><i>n</i></span>? </p><p>Tavas is not as smart as SaDDas, so he asked you to do him a favor and solve this problem so he can have his headphones back.</p>",
+    "inputSpecification": "<p>The first and only line of input contains a lucky number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print the index of <span class=\"tex-span\"><i>n</i></span> among all lucky numbers.</p>",
+    "samples": [
+        {
+            "input": "4<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "7<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "77<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 535,
+    "index": "B",
+    "name": "Tavas and SaDDas",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "combinatorics",
+        "implementation"
+    ],
+    "solvedCount": 21831
+}

@@ -1,0 +1,40 @@
+{
+    "title": "A. Primes or Palindromes?",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Rikhail Mubinchik believes that the current definition of prime numbers is obsolete as they are too complex and unpredictable. A palindromic number is another matter. It is aesthetically pleasing, and it has a number of remarkable properties. Help Rikhail to convince the scientific community in this!</p><p>Let us remind you that a number is called <span class=\"tex-font-style-it\">prime</span> if it is integer larger than one, and is not divisible by any positive integer other than itself and one.</p><p>Rikhail calls a number a <span class=\"tex-font-style-it\">palindromic</span> if it is integer, positive, and its decimal representation without leading zeros is a palindrome, i.e. reads the same from left to right and right to left.</p><p>One problem with prime numbers is that there are too many of them. Let's introduce the following notation: <span class=\"tex-span\">\u03c0(<i>n</i>)</span>\u00a0\u2014 the number of primes no larger than <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>rub</i>(<i>n</i>)</span>\u00a0\u2014 the number of palindromic numbers no larger than <span class=\"tex-span\"><i>n</i></span>. Rikhail wants to prove that there are a lot more primes than palindromic ones.</p><p>He asked you to solve the following problem: for a given value of the coefficient <span class=\"tex-span\"><i>A</i></span> find the maximum <span class=\"tex-span\"><i>n</i></span>, such that <span class=\"tex-span\">\u03c0(<i>n</i>)\u2009\u2264\u2009<i>A</i>\u00b7<i>rub</i>(<i>n</i>)</span>.</p>",
+    "inputSpecification": "<p>The input consists of two positive integers <span class=\"tex-span\"><i>p</i></span>, <span class=\"tex-span\"><i>q</i></span>, the numerator and denominator of the fraction that is the value of <span class=\"tex-span\"><i>A</i></span>\u00a0(<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/041bd986f782f4473b6391bc9e8fd014d9ba53f8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>,\u00a0<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/33b89d29647f62d25a0dad09f24bb0db3ba22b17.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>).</p>",
+    "outputSpecification": "<p>If such maximum number exists, then print it. Otherwise, print <span class=\"tex-font-style-tt\">\"Palindromic tree is better than splay tree\"</span> (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>",
+            "output": "40<br/>"
+        },
+        {
+            "input": "1 42<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "6 4<br/>",
+            "output": "172<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 568,
+    "index": "A",
+    "name": "Primes or Palindromes?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 5009
+}

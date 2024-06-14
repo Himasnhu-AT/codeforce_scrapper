@@ -1,0 +1,38 @@
+{
+    "title": "F. Mirror Box",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a box full of mirrors. Box consists of grid of size <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span>. Each cell of the grid contains a mirror put in the shape of '<span class=\"tex-span\">\\</span>' or '<span class=\"tex-span\">\u2009/\u2009</span>' (<span class=\"tex-span\">45</span> degree to the horizontal or vertical line). But mirrors in some cells have been destroyed. You want to put new mirrors into these grids so that the following two conditions are satisfied:</p><ol> <li> If you put a light ray horizontally/vertically into the middle of any unit segment that is side of some border cell, the light will go out from the neighboring unit segment to the segment you put the ray in.</li><li> each unit segment of the grid of the mirror box can be penetrated by at least one light ray horizontally/vertically put into the box according to the rules of the previous paragraph </li></ol><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/643a0f21b491cadddad30353996a0fcefddce291.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>After you tried putting some mirrors, you find out that there are many ways of doing so. How many possible ways are there? The answer might be large, so please find the result modulo prime number <span class=\"tex-span\"><i>MOD</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span>, <span class=\"tex-span\"><i>MOD</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>, <span class=\"tex-span\">3\u2009\u2264\u2009<i>MOD</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>, <span class=\"tex-span\"><i>MOD</i></span> is prime), <span class=\"tex-span\"><i>m</i></span>, <span class=\"tex-span\"><i>n</i></span> indicates the dimensions of a box and <span class=\"tex-span\"><i>MOD</i></span> is the number to module the answer.</p><p>The following <span class=\"tex-span\"><i>n</i></span> lines each contains a string of length <span class=\"tex-span\"><i>m</i></span>. Each string contains only '<span class=\"tex-span\">\u2009/\u2009</span>', '<span class=\"tex-span\">\\</span>', '*', where '*' denotes that the mirror in that grid has been destroyed. </p><p>It is guaranteed that the number of '*' is no more than <span class=\"tex-span\">200</span>.</p>",
+    "outputSpecification": "<p>Output the answer modulo <span class=\"tex-span\"><i>MOD</i></span>.</p>",
+    "samples": [
+        {
+            "input": "2 2 1000000007<br/>*/<br/>/*<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 2 1000000007<br/>**<br/>\\\\",
+            "output": "1"
+        },
+        {
+            "input": "2 2 3<br/>**<br/>**<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>The only way for sample 1 is shown on the left picture from the statement.</p><p>The only way for sample 2 is shown on the right picture from the statement.</p><p>For the third sample, there are <span class=\"tex-span\">5</span> possibilities that are listed below: </p><p>1.</p><p><span class=\"tex-font-style-tt\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8d9b0974a3bf579f6c12ba1ba0aa3796ea59060e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></span></p><p><span class=\"tex-font-style-tt\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f2ee1062a283d466b9df9ba3fa7c40522b51114e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></span></p><p>2.</p><p><span class=\"tex-font-style-tt\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4a86df1213fb62655431f8fa11acc9097af41cd8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></span></p><p><span class=\"tex-font-style-tt\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f2ee1062a283d466b9df9ba3fa7c40522b51114e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></span></p><p>3.</p><p><span class=\"tex-font-style-tt\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4ae9fe994b7cb99b6fd878d2ecb5479a2b0c079d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></span></p><p><span class=\"tex-font-style-tt\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4a86df1213fb62655431f8fa11acc9097af41cd8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></span></p><p>4.</p><p><span class=\"tex-font-style-tt\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4ae9fe994b7cb99b6fd878d2ecb5479a2b0c079d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></span></p><p><span class=\"tex-font-style-tt\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8d9b0974a3bf579f6c12ba1ba0aa3796ea59060e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></span></p><p>5.</p><p><span class=\"tex-font-style-tt\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f2ee1062a283d466b9df9ba3fa7c40522b51114e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></span></p><p><span class=\"tex-font-style-tt\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4ae9fe994b7cb99b6fd878d2ecb5479a2b0c079d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></span></p><p>The answer is then module by <span class=\"tex-span\">3</span> so the output should be <span class=\"tex-span\">2</span>.</p>",
+    "contestId": 578,
+    "index": "F",
+    "name": "Mirror Box",
+    "type": "PROGRAMMING",
+    "tags": [
+        "matrices",
+        "trees"
+    ],
+    "solvedCount": 538
+}

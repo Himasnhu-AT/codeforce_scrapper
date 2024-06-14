@@ -1,0 +1,31 @@
+{
+    "title": "A. DZY Loves Sequences",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>DZY has a sequence <span class=\"tex-span\"><i>a</i></span>, consisting of <span class=\"tex-span\"><i>n</i></span> integers.</p><p>We'll call a sequence <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>a</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>j</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>n</i>)</span> a subsegment of the sequence <span class=\"tex-span\"><i>a</i></span>. The value <span class=\"tex-span\">(<i>j</i>\u2009-\u2009<i>i</i>\u2009+\u20091)</span> denotes the length of the subsegment.</p><p>Your task is to find the longest subsegment of <span class=\"tex-span\"><i>a</i></span>, such that it is possible to change at most one number (change one number to any integer you want) from the subsegment to make the subsegment strictly increasing.</p><p>You only need to output the length of the subsegment you find.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i>\u00a0(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>. The next line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub>\u00a0(1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>.</p>",
+    "outputSpecification": "<p>In a single line print the answer to the problem \u2014 the maximum length of the required subsegment.</p>",
+    "samples": [
+        {
+            "input": "6<br/>7 2 3 1 5 6<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": "<p>You can choose subsegment <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub>,\u2009<i>a</i><sub class=\"lower-index\">3</sub>,\u2009<i>a</i><sub class=\"lower-index\">4</sub>,\u2009<i>a</i><sub class=\"lower-index\">5</sub>,\u2009<i>a</i><sub class=\"lower-index\">6</sub></span> and change its 3rd element (that is <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">4</sub></span>) to 4.</p>",
+    "contestId": 446,
+    "index": "A",
+    "name": "DZY Loves Sequences",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "implementation",
+        "two pointers"
+    ],
+    "solvedCount": 12297
+}

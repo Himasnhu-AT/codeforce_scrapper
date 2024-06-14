@@ -1,0 +1,33 @@
+{
+    "title": "B. Berland Bingo",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Lately, a national version of a bingo game has become very popular in Berland. There are <span class=\"tex-span\"><i>n</i></span> players playing the game, each player has a card with numbers. The numbers on each card are distinct, but distinct cards can have equal numbers. The card of the <span class=\"tex-span\"><i>i</i></span>-th player contains <span class=\"tex-span\"><i>m</i><sub class=\"lower-index\"><i>i</i></sub></span> numbers.</p><p>During the game the host takes numbered balls one by one from a bag. He reads the number aloud in a high and clear voice and then puts the ball away. All participants cross out the number if it occurs on their cards. The person who crosses out all numbers from his card first, wins. If multiple people cross out all numbers from their cards at the same time, there are no winners in the game. At the beginning of the game the bag contains 100 balls numbered 1 through 100, the numbers of all balls are distinct.</p><p>You are given the cards for each player. Write a program that determines whether a player can win the game at the most favorable for him scenario or not.</p>",
+    "inputSpecification": "<p>The first line of the input contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) \u2014 the number of the players. Then follow <span class=\"tex-span\"><i>n</i></span> lines, each line describes a player's card. The line that describes a card starts from integer <span class=\"tex-span\"><i>m</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>) that shows how many numbers the <span class=\"tex-span\"><i>i</i></span>-th player's card has. Then follows a sequence of integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>,\u20091</sub>,\u2009<i>a</i><sub class=\"lower-index\"><i>i</i>,\u20092</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>m</i><sub class=\"lower-index\"><i>i</i></sub></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>k</i></sub>\u2009\u2264\u2009100</span>) \u2014 the numbers on the <span class=\"tex-span\"><i>i</i></span>-th player's card. The numbers in the lines are separated by single spaces.</p><p>It is guaranteed that all the numbers on each card are distinct.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> lines, the <span class=\"tex-span\"><i>i</i></span>-th line must contain word \"<span class=\"tex-font-style-tt\">YES</span>\" (without the quotes), if the <span class=\"tex-span\"><i>i</i></span>-th player can win, and \"<span class=\"tex-font-style-tt\">NO</span>\" (without the quotes) otherwise.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 1<br/>3 2 4 1<br/>2 10 11<br/>",
+            "output": "YES<br/>NO<br/>YES<br/>"
+        },
+        {
+            "input": "2<br/>1 1<br/>1 1<br/>",
+            "output": "NO<br/>NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 370,
+    "index": "B",
+    "name": "Berland Bingo",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 2477
+}

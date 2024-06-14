@@ -1,0 +1,33 @@
+{
+    "title": "D. Rosetta Problem",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<pre class=\"verbatim\"><br/>++++++++[&gt;+&gt;++&gt;+++&gt;++++&gt;+++++&gt;++++++&gt;+++++++&gt;++++++++&gt;+++++++++&gt;++++++++++&gt;+\n++++++++++&gt;++++++++++++&gt;+++++++++++++&gt;++++++++++++++&gt;+++++++++++++++&gt;+++++++\n+++++++++&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;-]&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;.&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;++.--&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;+.-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;--.++&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;\n&gt;&gt;&gt;&gt;&gt;&gt;----.++++&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;.&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;--.++&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;\n&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;---.+++&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;---.+++&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;\n&gt;&gt;&gt;&gt;++.--&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;---.+++&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;++.--&lt;&lt;&lt;\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;.\n\nDCBA:^!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHdcbD`Y^]\\UZYRv\n9876543210/.-,+*)('&amp;%$#\"!~}|{zyxwvutsrqponm+*)('&amp;%$#cya`=^]\\[ZYXWVUTSRQPONML\nKJfe^cba`_X]VzTYRv98TSRQ3ONMLEi,+*)('&amp;%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^\n]\\[ZYXWVUTSonPlkjchg`ed]#DCBA@?&gt;=&lt;;:9876543OHGLKDIHGFE&gt;b%$#\"!~}|{zyxwvutsrqp\nonmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMibafedcba`_X|?&gt;Z&lt;XWVUTSRKo\\\n<br/></pre><p> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/37db5e66e1a913bef2e164b948a63322e16dda69.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><pre class=\"verbatim\"><br/>v34*8+6+,78+9*3+,93+9*5+,28+9*1+,55+9*4+,23*6*2*,91,@,+7*9*25,*48,+3*9+38,+&lt;\n&gt;62*9*2+,34*9*3+,66+9*8+,52*9*7+,75+9*8+,92+9*6+,48+9*3+,43*9*2+,84*,26*9*3^<br/></pre>",
+    "inputSpecification": "<p>The input contains a single integer <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i>\u2009\u2264\u20091\u2009000\u2009000</span>).</p>",
+    "outputSpecification": "<p>Output a single integer.</p>",
+    "samples": [
+        {
+            "input": "<br/>++++++++[>+>++>+++>++++>+++++>++++++>+++++++>++++++++>+++++++++>++++++++++>+\n++++++++++>++++++++++++>+++++++++++++>++++++++++++++>+++++++++++++++>+++++++\n+++++++++<<<<<<<<<<<<<<<<-]>>>>>>>>>>.<<<<<<<<<<>>>>>>>>>>>>>>++.--<<<<<<<<<\n<<<<<>>>>>>>>>>>>>+.-<<<<<<<<<<<<<>>>>>>>>>>>>>>--.++<<<<<<<<<<<<<<>>>>>>>>>\n>>>>>>----.++++<<<<<<<<<<<<<<<>>>>.<<<<>>>>>>>>>>>>>>--.++<<<<<<<<<<<<<<>>>>\n>>>>>>>>>>>---.+++<<<<<<<<<<<<<<<>>>>>>>>>>>>>>---.+++<<<<<<<<<<<<<<>>>>>>>>\n>>>>++.--<<<<<<<<<<<<>>>>>>>>>>>>>---.+++<<<<<<<<<<<<<>>>>>>>>>>>>>>++.--<<<\n<<<<<<<<<<<.\n\nDCBA:^!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHdcbD`Y^]\\UZYRv\n9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponm+*)('&%$#cya`=^]\\[ZYXWVUTSRQPONML\nKJfe^cba`_X]VzTYRv98TSRQ3ONMLEi,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^\n]\\[ZYXWVUTSonPlkjchg`ed]#DCBA@?>=<;:9876543OHGLKDIHGFE>b%$#\"!~}|{zyxwvutsrqp\nonmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMibafedcba`_X|?>Z<XWVUTSRKo\\\n<br/>",
+            "output": "<br/>v34*8+6+,78+9*3+,93+9*5+,28+9*1+,55+9*4+,23*6*2*,91,@,+7*9*25,*48,+3*9+38,+<\n>62*9*2+,34*9*3+,66+9*8+,52*9*7+,75+9*8+,92+9*6+,48+9*3+,43*9*2+,84*,26*9*3^<br/>"
+        },
+        {
+            "input": "129<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 656,
+    "index": "D",
+    "name": "Rosetta Problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 943
+}

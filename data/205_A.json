@@ -1,0 +1,34 @@
+{
+    "title": "A. Little Elephant and Rozdil",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The Little Elephant loves Ukraine very much. Most of all he loves town Rozdol (ukr. \"Rozdil\").</p><p>However, Rozdil is dangerous to settle, so the Little Elephant wants to go to some other town. The Little Elephant doesn't like to spend much time on travelling, so for his journey he will choose a town that needs minimum time to travel to. If there are multiple such cities, then the Little Elephant won't go anywhere.</p><p>For each town except for Rozdil you know the time needed to travel to this town. Find the town the Little Elephant will go to or print \"<span class=\"tex-font-style-tt\">Still Rozdil</span>\", if he stays in Rozdil.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> \u2014 the number of cities. The next line contains <span class=\"tex-span\"><i>n</i></span> integers, separated by single spaces: the <span class=\"tex-span\"><i>i</i></span>-th integer represents the time needed to go from town Rozdil to the <span class=\"tex-span\"><i>i</i></span>-th town. The time values are positive integers, not exceeding <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup></span>.</p><p>You can consider the cities numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, inclusive. Rozdil is not among the numbered cities.</p>",
+    "outputSpecification": "<p>Print the answer on a single line \u2014 the number of the town the Little Elephant will go to. If there are multiple cities with minimum travel time, print \"<span class=\"tex-font-style-tt\">Still Rozdil</span>\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "2<br/>7 4<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "7<br/>7 4 47 100 4 9 12<br/>",
+            "output": "Still Rozdil<br/>"
+        }
+    ],
+    "note": "<p>In the first sample there are only two cities where the Little Elephant can go. The travel time for the first town equals <span class=\"tex-span\">7</span>, to the second one \u2014 <span class=\"tex-span\">4</span>. The town which is closest to Rodzil (the only one) is the second one, so the answer is <span class=\"tex-span\">2</span>.</p><p>In the second sample the closest cities are cities two and five, the travelling time to both of them equals <span class=\"tex-span\">4</span>, so the answer is \"<span class=\"tex-font-style-tt\">Still Rozdil</span>\".</p>",
+    "contestId": 205,
+    "index": "A",
+    "name": "Little Elephant and Rozdil",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 21727
+}

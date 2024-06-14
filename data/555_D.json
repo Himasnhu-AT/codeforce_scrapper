@@ -1,0 +1,35 @@
+{
+    "title": "D. Case of a Top Secret",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Andrewid the Android is a galaxy-famous detective. Now he is busy with a top secret case, the details of which are not subject to disclosure.</p><p>However, he needs help conducting one of the investigative experiment. There are <span class=\"tex-span\"><i>n</i></span> pegs put on a plane, they are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th of them are <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u20090)</span>. Then, we tie to the bottom of one of the pegs a weight on a tight rope of length <span class=\"tex-span\"><i>l</i></span> (thus, its coordinates will be equal to <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009\u2009-\u2009<i>l</i>)</span>, where <span class=\"tex-span\"><i>i</i></span> is the number of the used peg). Then the weight is pushed to the right, so that it starts to rotate counterclockwise. At the same time, if the weight during rotation touches some of the other pegs, it then begins to rotate around that peg. Suppose that each peg itself is very thin and does not affect the rope length while weight is rotating around it.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/9f13820811911ef071989ae90a83032f2f91a7bd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>More formally, if at some moment the segment of the rope contains one or more pegs in addition to the peg around which the weight is rotating, the weight will then rotate around the farthermost one of them on a shorter segment of a rope. In particular, if the segment of the rope touches some peg by its endpoint, it is considered that the weight starts to rotate around that peg on a segment of the rope of length <span class=\"tex-span\">0</span>.</p><p>At some moment the weight will begin to rotate around some peg, without affecting the rest of the pegs. Andrewid interested in determining the number of this peg.</p><p>Andrewid prepared <span class=\"tex-span\"><i>m</i></span> queries containing initial conditions for pushing the weight, help him to determine for each of them, around what peg the weight will eventually rotate.</p>",
+    "inputSpecification": "<p>The first line contains integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 the number of pegs and queries.</p><p>The next line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the coordinates of the pegs. It is guaranteed that the coordinates of all the pegs are distinct integers.</p><p>Next <span class=\"tex-span\"><i>m</i></span> lines contain the descriptions of the queries of pushing the weight, each consists of two integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) and <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the number of the starting peg and the length of the rope.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>m</i></span> lines, the <span class=\"tex-span\"><i>i</i></span>-th line should contain the number of the peg around which the weight will eventually rotate after the <span class=\"tex-span\"><i>i</i></span>-th push.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>0 3 5<br/>2 3<br/>1 8<br/>",
+            "output": "3<br/>2<br/>"
+        },
+        {
+            "input": "4 4<br/>1 5 7 15<br/>1 4<br/>2 15<br/>3 16<br/>1 28<br/>",
+            "output": "2<br/>4<br/>3<br/>1<br/>"
+        }
+    ],
+    "note": "<p>Picture to the first sample test:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8bc7392d3f6441884836fdead4a4afbac2a19f49.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </p><p>Picture to the second sample test:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/abef521ff4b500a39098df2ced95cb992c1845ed.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>Note that in the last query weight starts to rotate around the peg 1 attached to a rope segment of length 0.</p>",
+    "contestId": 555,
+    "index": "D",
+    "name": "Case of a Top Secret",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 858
+}

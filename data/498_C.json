@@ -1,0 +1,35 @@
+{
+    "title": "C. Array and Operations",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have written on a piece of paper an array of <span class=\"tex-span\"><i>n</i></span> positive integers <span class=\"tex-span\"><i>a</i>[1],\u2009<i>a</i>[2],\u2009...,\u2009<i>a</i>[<i>n</i>]</span> and <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-font-style-it\">good</span> pairs of integers <span class=\"tex-span\">(<i>i</i><sub class=\"lower-index\">1</sub>,\u2009<i>j</i><sub class=\"lower-index\">1</sub>),\u2009(<i>i</i><sub class=\"lower-index\">2</sub>,\u2009<i>j</i><sub class=\"lower-index\">2</sub>),\u2009...,\u2009(<i>i</i><sub class=\"lower-index\"><i>m</i></sub>,\u2009<i>j</i><sub class=\"lower-index\"><i>m</i></sub>)</span>. Each <span class=\"tex-font-style-it\">good</span> pair <span class=\"tex-span\">(<i>i</i><sub class=\"lower-index\"><i>k</i></sub>,\u2009<i>j</i><sub class=\"lower-index\"><i>k</i></sub>)</span> meets the following conditions: <span class=\"tex-span\"><i>i</i><sub class=\"lower-index\"><i>k</i></sub>\u2009+\u2009<i>j</i><sub class=\"lower-index\"><i>k</i></sub></span> is an odd number and <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i><sub class=\"lower-index\"><i>k</i></sub>\u2009&lt;\u2009<i>j</i><sub class=\"lower-index\"><i>k</i></sub>\u2009\u2264\u2009<i>n</i></span>.</p><p>In one operation you can perform a sequence of actions: </p><ul> <li> take one of the <span class=\"tex-font-style-it\">good</span> pairs <span class=\"tex-span\">(<i>i</i><sub class=\"lower-index\"><i>k</i></sub>,\u2009<i>j</i><sub class=\"lower-index\"><i>k</i></sub>)</span> and some integer <span class=\"tex-span\"><i>v</i></span> (<span class=\"tex-span\"><i>v</i>\u2009&gt;\u20091</span>), which divides both numbers <span class=\"tex-span\"><i>a</i>[<i>i</i><sub class=\"lower-index\"><i>k</i></sub>]</span> and <span class=\"tex-span\"><i>a</i>[<i>j</i><sub class=\"lower-index\"><i>k</i></sub>]</span>; </li><li> divide both numbers by <span class=\"tex-span\"><i>v</i></span>, i. e. perform the assignments: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/192b5056ddf57cd3030615790d2a21051c01bc9d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f143c28d601c34862d9b5035284c5bde440a0e3d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. </li></ul><p>Determine the maximum number of operations you can sequentially perform on the given array. Note that one pair may be used several times in the described operations.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009100</span>).</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>a</i>[1],\u2009<i>a</i>[2],\u2009...,\u2009<i>a</i>[<i>n</i>]</span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>[<i>i</i>]\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the description of the array.</p><p>The following <span class=\"tex-span\"><i>m</i></span> lines contain the description of <span class=\"tex-font-style-it\">good</span> pairs. The <span class=\"tex-span\"><i>k</i></span>-th line contains two space-separated integers <span class=\"tex-span\"><i>i</i><sub class=\"lower-index\"><i>k</i></sub></span>, <span class=\"tex-span\"><i>j</i><sub class=\"lower-index\"><i>k</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i><sub class=\"lower-index\"><i>k</i></sub>\u2009&lt;\u2009<i>j</i><sub class=\"lower-index\"><i>k</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>i</i><sub class=\"lower-index\"><i>k</i></sub>\u2009+\u2009<i>j</i><sub class=\"lower-index\"><i>k</i></sub></span> is an odd number).</p><p>It is guaranteed that all the <span class=\"tex-font-style-it\">good</span> pairs are distinct.</p>",
+    "outputSpecification": "<p>Output the answer for the problem.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>8 3 8<br/>1 2<br/>2 3<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "3 2<br/>8 12 8<br/>1 2<br/>2 3<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 498,
+    "index": "C",
+    "name": "Array and Operations",
+    "type": "PROGRAMMING",
+    "tags": [
+        "flows",
+        "graph matchings",
+        "number theory"
+    ],
+    "solvedCount": 3323
+}

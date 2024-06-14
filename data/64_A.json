@@ -1,0 +1,34 @@
+{
+    "title": "A. Factorial",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Print the factorial of the given integer number <span class=\"tex-span\"><i>n</i></span>. The factorial of <span class=\"tex-span\"><i>n</i></span> is equal to <span class=\"tex-span\">1\u00b72\u00b7...\u00b7<i>n</i></span>.</p>",
+    "inputSpecification": "<p>The only line contains <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910</span>).</p>",
+    "outputSpecification": "<p>Print the factorial of <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "5<br/>",
+            "output": "120<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 64,
+    "index": "A",
+    "name": "Factorial",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "solvedCount": 2719
+}

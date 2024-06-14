@@ -1,0 +1,36 @@
+{
+    "title": "B. Quasi Binary",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A number is called <span class=\"tex-font-style-it\">quasibinary</span> if its decimal representation contains only digits 0 or 1. For example, numbers 0, 1, 101, 110011\u00a0\u2014 are quasibinary and numbers 2, 12, 900 are not.</p><p>You are given a positive integer <span class=\"tex-span\"><i>n</i></span>. Represent it as a sum of minimum number of quasibinary numbers.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>).</p>",
+    "outputSpecification": "<p>In the first line print a single integer <span class=\"tex-span\"><i>k</i></span>\u00a0\u2014 the minimum number of numbers in the representation of number <span class=\"tex-span\"><i>n</i></span> as a sum of quasibinary numbers.</p><p>In the second line print <span class=\"tex-span\"><i>k</i></span> numbers \u2014 the elements of the sum. All these numbers should be quasibinary according to the definition above, their sum should equal <span class=\"tex-span\"><i>n</i></span>. Do not have to print the leading zeroes in the numbers. The order of numbers doesn't matter. If there are multiple possible representations, you are allowed to print any of them.</p>",
+    "samples": [
+        {
+            "input": "9<br/>",
+            "output": "9<br/>1 1 1 1 1 1 1 1 1 <br/>"
+        },
+        {
+            "input": "32<br/>",
+            "output": "3<br/>10 11 11 <br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 538,
+    "index": "B",
+    "name": "Quasi Binary",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 17686
+}

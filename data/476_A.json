@@ -1,0 +1,34 @@
+{
+    "title": "A. Dreamoon and Stairs",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Dreamoon wants to climb up a stair of <span class=\"tex-span\"><i>n</i></span> steps. He can climb <span class=\"tex-span\">1</span> or <span class=\"tex-span\">2</span> steps at each move. Dreamoon wants the number of moves to be a multiple of an integer <span class=\"tex-span\"><i>m</i></span>. </p><p>What is the minimal number of moves making him climb to the top of the stairs that satisfies his condition?</p>",
+    "inputSpecification": "<p>The single line contains two space separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">0\u2009&lt;\u2009<i>n</i>\u2009\u2264\u200910000,\u20091\u2009&lt;\u2009<i>m</i>\u2009\u2264\u200910</span>).</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the minimal number of moves being a multiple of <span class=\"tex-span\"><i>m</i></span>. If there is no way he can climb satisfying condition print <span class=\"tex-span\">\u2009-\u20091</span> instead.</p>",
+    "samples": [
+        {
+            "input": "10 2<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "3 5<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>For the first sample, Dreamoon could climb in 6 moves with following sequence of steps: {2, 2, 2, 2, 1, 1}.</p><p>For the second sample, there are only three valid sequence of steps {2, 1}, {1, 2}, {1, 1, 1} with 2, 2, and 3 steps respectively. All these numbers are not multiples of 5.</p>",
+    "contestId": 476,
+    "index": "A",
+    "name": "Dreamoon and Stairs",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 41742
+}

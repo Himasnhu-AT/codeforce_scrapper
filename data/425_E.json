@@ -1,0 +1,41 @@
+{
+    "title": "E. Sereja and Sets",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's assume that set <span class=\"tex-span\"><i>S</i></span> consists of <span class=\"tex-span\"><i>m</i></span> distinct intervals <span class=\"tex-span\">[<i>l</i><sub class=\"lower-index\">1</sub>,\u2009<i>r</i><sub class=\"lower-index\">1</sub>]</span>, <span class=\"tex-span\">[<i>l</i><sub class=\"lower-index\">2</sub>,\u2009<i>r</i><sub class=\"lower-index\">2</sub>]</span>, <span class=\"tex-span\">...</span>, <span class=\"tex-span\">[<i>l</i><sub class=\"lower-index\"><i>m</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>m</i></sub>]</span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>; <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> are integers).</p><p>Let's assume that <span class=\"tex-span\"><i>f</i>(<i>S</i>)</span> is the maximum number of intervals that you can choose from the set <span class=\"tex-span\"><i>S</i></span>, such that every two of them do not intersect. We assume that two intervals, <span class=\"tex-span\">[<i>l</i><sub class=\"lower-index\">1</sub>,\u2009<i>r</i><sub class=\"lower-index\">1</sub>]</span> and <span class=\"tex-span\">[<i>l</i><sub class=\"lower-index\">2</sub>,\u2009<i>r</i><sub class=\"lower-index\">2</sub>]</span>, intersect if there is an integer <span class=\"tex-span\"><i>x</i></span>, which meets two inequalities: <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\">2</sub></span>.</p><p>Sereja wonders, how many sets <span class=\"tex-span\"><i>S</i></span> are there, such that <span class=\"tex-span\"><i>f</i>(<i>S</i>)\u2009=\u2009<i>k</i></span>? Count this number modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "inputSpecification": "<p>The first line contains integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009500;\u00a00\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009500)</span>.</p>",
+    "outputSpecification": "<p>In a single line, print the answer to the problem modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "3 1<br/>",
+            "output": "23<br/>"
+        },
+        {
+            "input": "3 2<br/>",
+            "output": "32<br/>"
+        },
+        {
+            "input": "2 0<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 2<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 425,
+    "index": "E",
+    "name": "Sereja and Sets",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp"
+    ],
+    "solvedCount": 550
+}

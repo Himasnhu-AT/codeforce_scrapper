@@ -1,0 +1,34 @@
+{
+    "title": "B. Present from Lena",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya's birthday is approaching and Lena decided to sew a patterned handkerchief to him as a present. Lena chose digits from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>n</i></span> as the pattern. The digits will form a rhombus. The largest digit <span class=\"tex-span\"><i>n</i></span> should be located in the centre. The digits should decrease as they approach the edges. For example, for <span class=\"tex-span\"><i>n</i>\u2009=\u20095</span> the handkerchief pattern should look like that: </p><pre class=\"verbatim\"><br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00\u00a01\u00a02\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a00\u00a01\u00a02\u00a03\u00a02\u00a01\u00a00<br/>\u00a0\u00a00\u00a01\u00a02\u00a03\u00a04\u00a03\u00a02\u00a01\u00a00<br/>0\u00a01\u00a02\u00a03\u00a04\u00a05\u00a04\u00a03\u00a02\u00a01\u00a00<br/>\u00a0\u00a00\u00a01\u00a02\u00a03\u00a04\u00a03\u00a02\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a00\u00a01\u00a02\u00a03\u00a02\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00\u00a01\u00a02\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00<br/></pre><p>Your task is to determine the way the handkerchief will look like by the given <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains the single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20099</span>).</p>",
+    "outputSpecification": "<p>Print a picture for the given <span class=\"tex-span\"><i>n</i></span>. You should strictly observe the number of spaces before the first digit on each line. Every two adjacent digits in the same line should be separated by exactly one space. There should be no spaces after the last digit at the end of each line.</p>",
+    "samples": [
+        {
+            "input": "<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00\u00a01\u00a02\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a00\u00a01\u00a02\u00a03\u00a02\u00a01\u00a00<br/>\u00a0\u00a00\u00a01\u00a02\u00a03\u00a04\u00a03\u00a02\u00a01\u00a00<br/>0\u00a01\u00a02\u00a03\u00a04\u00a05\u00a04\u00a03\u00a02\u00a01\u00a00<br/>\u00a0\u00a00\u00a01\u00a02\u00a03\u00a04\u00a03\u00a02\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a00\u00a01\u00a02\u00a03\u00a02\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00\u00a01\u00a02\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00\u00a01\u00a00<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a00<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "    0<br/>  0 1 0<br/>0 1 2 1 0<br/>  0 1 0<br/>    0<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 118,
+    "index": "B",
+    "name": "Present from Lena",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 28796
+}

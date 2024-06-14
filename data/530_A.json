@@ -1,0 +1,37 @@
+{
+    "title": "A. Quadratic equation",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a quadratic equation with integer coefficients <span class=\"tex-span\"><i>A</i>\u2009*\u2009<i>X</i><sup class=\"upper-index\">2</sup>\u2009+\u2009<i>B</i>\u2009*\u2009<i>X</i>\u2009+\u2009<i>C</i>\u2009=\u20090</span>. It is guaranteed that <span class=\"tex-span\"><i>A</i>\u2009\u2260\u20090</span> and that the equation has at least one real root. Output the roots of the equation.</p>",
+    "inputSpecification": "<p>The only line of input contains integers <span class=\"tex-span\"><i>A</i>,\u2009<i>B</i></span> and <span class=\"tex-span\"><i>C</i></span> (<span class=\"tex-span\">\u2009-\u20091000\u2009\u2264\u2009<i>A</i>,\u2009<i>B</i>,\u2009<i>C</i>\u2009\u2264\u20091000,\u2009<i>A</i>\u2009\u2260\u20090</span>), separated by spaces.</p>",
+    "outputSpecification": "<p>Output the roots of the equation in increasing order. If the equation has a single root of multiplicity 2, output it once. The root is considered to be correct if its absolute or relative error does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20094</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "1 -2 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "1 0 -1<br/>",
+            "output": "-1 1<br/>"
+        },
+        {
+            "input": "2 -3 1<br/>",
+            "output": "0.5 1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 530,
+    "index": "A",
+    "name": "Quadratic equation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 669
+}

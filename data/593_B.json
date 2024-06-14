@@ -1,0 +1,42 @@
+{
+    "title": "B. Anton and Lines",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The teacher gave Anton a large geometry homework, but he didn't do it (as usual) as he participated in a regular round on Codeforces. In the task he was given a set of <span class=\"tex-span\"><i>n</i></span> lines defined by the equations <span class=\"tex-span\"><i>y</i>\u2009=\u2009<i>k</i><sub class=\"lower-index\"><i>i</i></sub>\u00b7<i>x</i>\u2009+\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>. It was necessary to determine whether there is at least one point of intersection of two of these lines, that lays strictly inside the strip between <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>x</i><sub class=\"lower-index\">2</sub></span>. In other words, is it true that there are <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>j</i>\u2009\u2264\u2009<i>n</i></span> and <span class=\"tex-span\"><i>x</i>',\u2009<i>y</i>'</span>, such that: </p><ul> <li> <span class=\"tex-span\"><i>y</i>'\u2009=\u2009<i>k</i><sub class=\"lower-index\"><i>i</i></sub>\u2009*\u2009<i>x</i>'\u2009+\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>, that is, point <span class=\"tex-span\">(<i>x</i>',\u2009<i>y</i>')</span> belongs to the line number <span class=\"tex-span\"><i>i</i></span>; </li><li> <span class=\"tex-span\"><i>y</i>'\u2009=\u2009<i>k</i><sub class=\"lower-index\"><i>j</i></sub>\u2009*\u2009<i>x</i>'\u2009+\u2009<i>b</i><sub class=\"lower-index\"><i>j</i></sub></span>, that is, point <span class=\"tex-span\">(<i>x</i>',\u2009<i>y</i>')</span> belongs to the line number <span class=\"tex-span\"><i>j</i></span>; </li><li> <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>x</i>'\u2009&lt;\u2009<i>x</i><sub class=\"lower-index\">2</sub></span>, that is, point <span class=\"tex-span\">(<i>x</i>',\u2009<i>y</i>')</span> lies inside the strip bounded by <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>x</i><sub class=\"lower-index\">2</sub></span>. </li></ul><p>You can't leave Anton in trouble, can you? Write a program that solves the given task.</p>",
+    "inputSpecification": "<p>The first line of the input contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>)\u00a0\u2014 the number of lines in the task given to Anton. The second line contains integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">2</sub></span> (<span class=\"tex-span\">\u2009-\u20091\u2009000\u2009000\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>x</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u20091\u2009000\u2009000</span>) defining the strip inside which you need to find a point of intersection of at least two lines.</p><p>The following <span class=\"tex-span\"><i>n</i></span> lines contain integers <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u20091\u2009000\u2009000\u2009\u2264\u2009<i>k</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091\u2009000\u2009000</span>)\u00a0\u2014 the descriptions of the lines. It is guaranteed that all lines are pairwise distinct, that is, for any two <span class=\"tex-span\"><i>i</i>\u2009\u2260\u2009<i>j</i></span> it is true that either <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>k</i><sub class=\"lower-index\"><i>j</i></sub></span>, or <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>b</i><sub class=\"lower-index\"><i>j</i></sub></span>.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">Yes</span>\" (without quotes), if there is at least one intersection of two distinct lines, located strictly inside the strip. Otherwise print \"<span class=\"tex-font-style-tt\">No</span>\" (without quotes).</p>",
+    "samples": [
+        {
+            "input": "4<br/>1 2<br/>1 2<br/>1 0<br/>0 1<br/>0 2<br/>",
+            "output": "NO"
+        },
+        {
+            "input": "2<br/>1 3<br/>1 0<br/>-1 3<br/>",
+            "output": "YES"
+        },
+        {
+            "input": "2<br/>1 3<br/>1 0<br/>0 2<br/>",
+            "output": "YES"
+        },
+        {
+            "input": "2<br/>1 3<br/>1 0<br/>0 3<br/>",
+            "output": "NO"
+        }
+    ],
+    "note": "<p>In the first sample there are intersections located on the border of the strip, but there are no intersections located strictly inside it.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/bce4b00e8484c4b8a0da4f7bc24c434646f679b2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 593,
+    "index": "B",
+    "name": "Anton and Lines",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "sortings"
+    ],
+    "solvedCount": 3950
+}

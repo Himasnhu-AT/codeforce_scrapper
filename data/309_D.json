@@ -1,0 +1,42 @@
+{
+    "title": "D. Tennis Rackets",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Professional sport is more than hard work. It also is the equipment, designed by top engineers. As an example, let's take tennis. Not only should you be in great shape, you also need an excellent racket! In this problem your task is to contribute to the development of tennis and to help to design a revolutionary new concept of a racket!</p><p>The concept is a triangular racket. Ant it should be not just any triangle, but a regular one. As soon as you've chosen the shape, you need to stretch the net. By the time you came the rocket had <span class=\"tex-span\"><i>n</i></span> holes drilled on each of its sides. The holes divide each side into equal <span class=\"tex-span\"><i>n</i>\u2009+\u20091</span> parts. At that, the <span class=\"tex-span\"><i>m</i></span> closest to each apex holes on each side are made for better ventilation only and you cannot stretch the net through them. The next revolutionary idea as to stretch the net as obtuse triangles through the holes, so that for each triangle all apexes lay on different sides. Moreover, you need the net to be stretched along every possible obtuse triangle. That's where we need your help \u2014 help us to count the number of triangles the net is going to consist of.</p><p>Two triangles are considered to be different if their pictures on the fixed at some position racket are different.</p>",
+    "inputSpecification": "<p>The first and the only input line contains two integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/ff6fdb9ee4f2a6a34549a4bd3b66a1bef3cedcf6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "3 0<br/>",
+            "output": "9<br/>"
+        },
+        {
+            "input": "4 0<br/>",
+            "output": "24<br/>"
+        },
+        {
+            "input": "10 1<br/>",
+            "output": "210<br/>"
+        },
+        {
+            "input": "8 4<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>For the following picture <span class=\"tex-span\"><i>n</i>\u2009=\u20098</span>, <span class=\"tex-span\"><i>m</i>\u2009=\u20092</span>. White circles are the holes for ventilation, red circles \u2014 holes for net stretching. One of the possible obtuse triangles is painted red. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/e12e5676934657555548f5b39af96858f9bfd341.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 309,
+    "index": "D",
+    "name": "Tennis Rackets",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "geometry"
+    ],
+    "solvedCount": 173
+}

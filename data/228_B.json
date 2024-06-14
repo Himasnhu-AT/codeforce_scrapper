@@ -1,0 +1,34 @@
+{
+    "title": "B. Two Tables",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've got two rectangular tables with sizes <span class=\"tex-span\"><i>n</i><sub class=\"lower-index\"><i>a</i></sub>\u2009\u00d7\u2009<i>m</i><sub class=\"lower-index\"><i>a</i></sub></span> and <span class=\"tex-span\"><i>n</i><sub class=\"lower-index\"><i>b</i></sub>\u2009\u00d7\u2009<i>m</i><sub class=\"lower-index\"><i>b</i></sub></span> cells. The tables consist of zeroes and ones. We will consider the rows and columns of both tables indexed starting from 1. Then we will define the element of the first table, located at the intersection of the <span class=\"tex-span\"><i>i</i></span>-th row and the <span class=\"tex-span\"><i>j</i></span>-th column, as <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span>; we will define the element of the second table, located at the intersection of the <span class=\"tex-span\"><i>i</i></span>-th row and the <span class=\"tex-span\"><i>j</i></span>-th column, as <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span>. </p><p>We will call the pair of integers <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> a <span class=\"tex-font-style-it\">shift</span> of the second table relative to the first one. We'll call the <span class=\"tex-font-style-it\">overlap factor</span> of the shift <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> value:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5c01e65c9334a9379fe6e6233743a129489fdb76.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>where the variables <span class=\"tex-span\"><i>i</i>,\u2009<i>j</i></span> take only such values, in which the expression <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub>\u00b7<i>b</i><sub class=\"lower-index\"><i>i</i>\u2009+\u2009<i>x</i>,\u2009<i>j</i>\u2009+\u2009<i>y</i></sub></span> makes sense. More formally, inequalities <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i><sub class=\"lower-index\"><i>a</i></sub>,\u20091\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>m</i><sub class=\"lower-index\"><i>a</i></sub>,\u20091\u2009\u2264\u2009<i>i</i>\u2009+\u2009<i>x</i>\u2009\u2264\u2009<i>n</i><sub class=\"lower-index\"><i>b</i></sub>,\u20091\u2009\u2264\u2009<i>j</i>\u2009+\u2009<i>y</i>\u2009\u2264\u2009<i>m</i><sub class=\"lower-index\"><i>b</i></sub></span> must hold. If there are no values of variables <span class=\"tex-span\"><i>i</i>,\u2009<i>j</i></span>, that satisfy the given inequalities, the value of the sum is considered equal to 0. </p><p>Your task is to find the shift with the maximum overlap factor among all possible shifts.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers <span class=\"tex-span\"><i>n</i><sub class=\"lower-index\"><i>a</i></sub>,\u2009<i>m</i><sub class=\"lower-index\"><i>a</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i><sub class=\"lower-index\"><i>a</i></sub>,\u2009<i>m</i><sub class=\"lower-index\"><i>a</i></sub>\u2009\u2264\u200950)</span> \u2014 the number of rows and columns in the first table. Then <span class=\"tex-span\"><i>n</i><sub class=\"lower-index\"><i>a</i></sub></span> lines contain <span class=\"tex-span\"><i>m</i><sub class=\"lower-index\"><i>a</i></sub></span> characters each \u2014 the elements of the first table. Each character is either a \"<span class=\"tex-font-style-tt\">0</span>\", or a \"<span class=\"tex-font-style-tt\">1</span>\".</p><p>The next line contains two space-separated integers <span class=\"tex-span\"><i>n</i><sub class=\"lower-index\"><i>b</i></sub>,\u2009<i>m</i><sub class=\"lower-index\"><i>b</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i><sub class=\"lower-index\"><i>b</i></sub>,\u2009<i>m</i><sub class=\"lower-index\"><i>b</i></sub>\u2009\u2264\u200950)</span> \u2014 the number of rows and columns in the second table. Then follow the elements of the second table in the format, similar to the first table.</p><p>It is guaranteed that the first table has at least one number \"<span class=\"tex-font-style-tt\">1</span>\". It is guaranteed that the second table has at least one number \"<span class=\"tex-font-style-tt\">1</span>\".</p>",
+    "outputSpecification": "<p>Print two space-separated integers <span class=\"tex-span\"><i>x</i>,\u2009<i>y</i></span> <span class=\"tex-span\">(|<i>x</i>|,\u2009|<i>y</i>|\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span> \u2014 a shift with maximum overlap factor. If there are multiple solutions, print any of them.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>01<br/>10<br/>00<br/>2 3<br/>001<br/>111<br/>",
+            "output": "0 1<br/>"
+        },
+        {
+            "input": "3 3<br/>000<br/>010<br/>000<br/>1 1<br/>1<br/>",
+            "output": "-1 -1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 228,
+    "index": "B",
+    "name": "Two Tables",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 3440
+}

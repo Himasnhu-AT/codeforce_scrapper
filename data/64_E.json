@@ -1,0 +1,36 @@
+{
+    "title": "E. Prime Segment",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Positive integer number <span class=\"tex-span\"><i>x</i></span> is called <span class=\"tex-font-style-underline\">prime</span>, if it has exactly two positive integer divisors. For example, 2, 3, 17, 97 are primes, but 1, 10, 120 are not.</p><p>You are given an integer number <span class=\"tex-span\"><i>n</i></span>, find the shortest segment [<span class=\"tex-span\"><i>a</i>,\u2009<i>b</i></span>], which contains <span class=\"tex-span\"><i>n</i></span> (i.e. <span class=\"tex-span\"><i>a</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009<i>b</i></span>) and <span class=\"tex-span\"><i>a</i>,\u2009<i>b</i></span> are primes.</p>",
+    "inputSpecification": "<p>The only given line contains an integer number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910000</span>).</p>",
+    "outputSpecification": "<p>Print the space separated pair of the required numbers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span>.</p>",
+    "samples": [
+        {
+            "input": "10<br/>",
+            "output": "7 11<br/>"
+        },
+        {
+            "input": "97<br/>",
+            "output": "97 97<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 64,
+    "index": "E",
+    "name": "Prime Segment",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "brute force",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 236
+}

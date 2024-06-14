@@ -1,0 +1,30 @@
+{
+    "title": "C. Alice, Bob and Chocolate",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Alice and Bob like games. And now they are ready to start a new game. They have placed <span class=\"tex-span\"><i>n</i></span> chocolate bars in a line. Alice starts to eat chocolate bars one by one from left to right, and Bob \u2014 from right to left. For each chocololate bar the time, needed for the player to consume it, is known (Alice and Bob eat them with equal speed). When the player consumes a chocolate bar, he immediately starts with another. It is not allowed to eat two chocolate bars at the same time, to leave the bar unfinished and to make pauses. If both players start to eat the same bar simultaneously, Bob leaves it to Alice as a true gentleman.</p><p>How many bars each of the players will consume?</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the amount of bars on the table. The second line contains a sequence <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>,\u2009<i>t</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>), where <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> is the time (in seconds) needed to consume the <span class=\"tex-span\"><i>i</i></span>-th bar (in the order from left to right).</p>",
+    "outputSpecification": "<p>Print two numbers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>, where <span class=\"tex-span\"><i>a</i></span> is the amount of bars consumed by Alice, and <span class=\"tex-span\"><i>b</i></span> is the amount of bars consumed by Bob.</p>",
+    "samples": [
+        {
+            "input": "5<br/>2 9 8 2 7<br/>",
+            "output": "2 3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 6,
+    "index": "C",
+    "name": "Alice, Bob and Chocolate",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "two pointers"
+    ],
+    "solvedCount": 13253
+}

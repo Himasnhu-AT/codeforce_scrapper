@@ -1,0 +1,35 @@
+{
+    "title": "A. Two Bags of Potatoes",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Valera had two bags of potatoes, the first of these bags contains <span class=\"tex-span\"><i>x</i></span> <span class=\"tex-span\">(<i>x</i>\u2009\u2265\u20091)</span> potatoes, and the second \u2014 <span class=\"tex-span\"><i>y</i></span> <span class=\"tex-span\">(<i>y</i>\u2009\u2265\u20091)</span> potatoes. Valera \u2014 very scattered boy, so the first bag of potatoes (it contains <span class=\"tex-span\"><i>x</i></span> potatoes) Valera lost. Valera remembers that the total amount of potatoes <span class=\"tex-span\">(<i>x</i>\u2009+\u2009<i>y</i>)</span> in the two bags, firstly, was not gerater than <span class=\"tex-span\"><i>n</i></span>, and, secondly, was divisible by <span class=\"tex-span\"><i>k</i></span>.</p><p>Help Valera to determine how many potatoes could be in the first bag. Print all such possible numbers in ascending order.</p>",
+    "inputSpecification": "<p>The first line of input contains three integers <span class=\"tex-span\"><i>y</i></span>, <span class=\"tex-span\"><i>k</i></span>, <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>y</i>,\u2009<i>k</i>,\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>;</span> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e8f8616e518b67af73332593c4c73ae9f207dc04.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-span\">\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p>",
+    "outputSpecification": "<p>Print the list of whitespace-separated integers \u2014 all possible values of <span class=\"tex-span\"><i>x</i></span> in ascending order. You should print each possible value of <span class=\"tex-span\"><i>x</i></span> exactly once.</p><p>If there are no such values of <span class=\"tex-span\"><i>x</i></span> print a single integer -1.</p>",
+    "samples": [
+        {
+            "input": "10 1 10<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "10 6 40<br/>",
+            "output": "2 8 14 20 26 <br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 239,
+    "index": "A",
+    "name": "Two Bags of Potatoes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 18290
+}

@@ -1,0 +1,38 @@
+{
+    "title": "G. New Year and Cake",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Limak is a little polar bear. According to some old traditions, his bear family prepared a New Year cake. And Limak likes cakes.</p><p>As you may know, a New Year cake is a strictly convex polygon with <span class=\"tex-span\"><i>n</i></span> vertices.</p><p>Parents won't allow Limak to eat more than half of a cake because he would get sick. After some thinking they decided to cut a cake along one of <span class=\"tex-span\"><i>n</i>\u00b7(<i>n</i>\u2009-\u20093)\u2009/\u20092</span> diagonals. Then Limak will get a non-greater piece.</p><p>Limak understands rules but he won't be happy if the second piece happens to be much bigger. Limak's disappointment will be equal to the difference between pieces' areas, multiplied by two. It can be proved that it will be integer for the given constraints.</p><p>There are <span class=\"tex-span\"><i>n</i>\u00b7(<i>n</i>\u2009-\u20093)\u2009/\u20092</span> possible scenarios. Consider them all and find the sum of values of Limak's disappointment, modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">4\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009500\u2009000</span>)\u00a0\u2014 the number of vertices in the polygon denoting the cake.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">|<i>x</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>y</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 coordinates of the <span class=\"tex-span\"><i>i</i></span>-th point.</p><p>It's guaranteed that all points are distinct, polygon is strictly convex and points are given in the clockwise order.</p>",
+    "outputSpecification": "<p>Print the sum of values of Limak's disappointment over all possible scenarios modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "5<br/>2 4<br/>2 7<br/>5 7<br/>5 4<br/>3 -2<br/>",
+            "output": "90<br/>"
+        },
+        {
+            "input": "4<br/>-1000000000 -5000000<br/>0 1234567<br/>1 1<br/>-5 -100000000<br/>",
+            "output": "525185196<br/>"
+        },
+        {
+            "input": "8<br/>-10 0<br/>-6 6<br/>0 10<br/>6 6<br/>10 0<br/>6 -6<br/>0 -10<br/>-6 -6<br/>",
+            "output": "5216<br/>"
+        }
+    ],
+    "note": "<p>In the first sample possible values of Limak's disappointment are <span class=\"tex-span\">0,\u200918,\u200918,\u200924,\u200930</span>.</p>",
+    "contestId": 611,
+    "index": "G",
+    "name": "New Year and Cake",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "two pointers"
+    ],
+    "solvedCount": 426
+}

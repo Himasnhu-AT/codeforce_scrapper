@@ -1,0 +1,38 @@
+{
+    "title": "D. Spongebob and Squares",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Spongebob is already tired trying to reason his weird actions and calculations, so he simply asked you to find all pairs of n and m, such that there are exactly <span class=\"tex-span\"><i>x</i></span> distinct squares in the table consisting of <span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>m</i></span> columns. For example, in a <span class=\"tex-span\">3\u2009\u00d7\u20095</span> table there are <span class=\"tex-span\">15</span> squares with side one, <span class=\"tex-span\">8</span> squares with side two and <span class=\"tex-span\">3</span> squares with side three. The total number of distinct squares in a <span class=\"tex-span\">3\u2009\u00d7\u20095</span> table is <span class=\"tex-span\">15\u2009+\u20098\u2009+\u20093\u2009=\u200926</span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>)\u00a0\u2014 the number of squares inside the tables Spongebob is interested in.</p>",
+    "outputSpecification": "<p>First print a single integer <span class=\"tex-span\"><i>k</i></span>\u00a0\u2014 the number of tables with exactly <span class=\"tex-span\"><i>x</i></span> distinct squares inside.</p><p>Then print <span class=\"tex-span\"><i>k</i></span> pairs of integers describing the tables. Print the pairs in the order of increasing <span class=\"tex-span\"><i>n</i></span>, and in case of equality\u00a0\u2014 in the order of increasing <span class=\"tex-span\"><i>m</i></span>.</p>",
+    "samples": [
+        {
+            "input": "26<br/>",
+            "output": "6<br/>1 26<br/>2 9<br/>3 5<br/>5 3<br/>9 2<br/>26 1<br/>"
+        },
+        {
+            "input": "2<br/>",
+            "output": "2<br/>1 2<br/>2 1<br/>"
+        },
+        {
+            "input": "8<br/>",
+            "output": "4<br/>1 8<br/>2 3<br/>3 2<br/>8 1<br/>"
+        }
+    ],
+    "note": "<p>In a <span class=\"tex-span\">1\u2009\u00d7\u20092</span> table there are <span class=\"tex-span\">2</span> <span class=\"tex-span\">1\u2009\u00d7\u20091</span> squares. So, <span class=\"tex-span\">2</span> distinct squares in total.</p><center> <img class=\"tex-graphics\" height=\"113px\" src=\"https://espresso.codeforces.com/2d076e572a6402fa7b98a19b8e95b88ed0c37b7a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"265px\"/> </center><p>In a <span class=\"tex-span\">2\u2009\u00d7\u20093</span> table there are <span class=\"tex-span\">6</span> <span class=\"tex-span\">1\u2009\u00d7\u20091</span> squares and <span class=\"tex-span\">2</span> <span class=\"tex-span\">2\u2009\u00d7\u20092</span> squares. That is equal to <span class=\"tex-span\">8</span> squares in total.</p><center> <img class=\"tex-graphics\" height=\"151px\" src=\"https://espresso.codeforces.com/d880c5473094a2c7047aefd3816bc472aa9ca026.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"378px\"/> </center>",
+    "contestId": 599,
+    "index": "D",
+    "name": "Spongebob and Squares",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "math"
+    ],
+    "solvedCount": 2533
+}

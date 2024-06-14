@@ -1,0 +1,39 @@
+{
+    "title": "B. Non-square Equation",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's consider equation:</p><center class=\"tex-equation\"><span class=\"tex-span\"><i>x</i><sup class=\"upper-index\">2</sup>\u2009+\u2009<i>s</i>(<i>x</i>)\u00b7<i>x</i>\u2009-\u2009<i>n</i>\u2009=\u20090,\u2009</span></center> <p>where <span class=\"tex-span\"><i>x</i>,\u2009<i>n</i></span> are positive integers, <span class=\"tex-span\"><i>s</i>(<i>x</i>)</span> is the function, equal to the sum of digits of number <span class=\"tex-span\"><i>x</i></span> in the decimal number system.</p><p>You are given an integer <span class=\"tex-span\"><i>n</i></span>, find the smallest positive integer root of equation <span class=\"tex-span\"><i>x</i></span>, or else determine that there are no such roots.</p>",
+    "inputSpecification": "<p>A single line contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup>)</span> \u2014 the equation parameter.</p><p>Please, do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier. </p>",
+    "outputSpecification": "<p>Print -1, if the equation doesn't have integer positive roots. Otherwise print such smallest integer <span class=\"tex-span\"><i>x</i></span> <span class=\"tex-span\">(<i>x</i>\u2009&gt;\u20090)</span>, that the equation given in the statement holds.</p>",
+    "samples": [
+        {
+            "input": "2<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "110<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "4<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first test case <span class=\"tex-span\"><i>x</i>\u2009=\u20091</span> is the minimum root. As <span class=\"tex-span\"><i>s</i>(1)\u2009=\u20091</span> and <span class=\"tex-span\">1<sup class=\"upper-index\">2</sup>\u2009+\u20091\u00b71\u2009-\u20092\u2009=\u20090</span>.</p><p>In the second test case <span class=\"tex-span\"><i>x</i>\u2009=\u200910</span> is the minimum root. As <span class=\"tex-span\"><i>s</i>(10)\u2009=\u20091\u2009+\u20090\u2009=\u20091</span> and <span class=\"tex-span\">10<sup class=\"upper-index\">2</sup>\u2009+\u20091\u00b710\u2009-\u2009110\u2009=\u20090</span>.</p><p>In the third test case the equation has no roots.</p>",
+    "contestId": 233,
+    "index": "B",
+    "name": "Non-square Equation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "math"
+    ],
+    "solvedCount": 7347
+}

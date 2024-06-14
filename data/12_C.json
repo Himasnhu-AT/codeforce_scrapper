@@ -1,0 +1,35 @@
+{
+    "title": "C. Fruits",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The spring is coming and it means that a lot of fruits appear on the counters. One sunny day little boy Valera decided to go shopping. He made a list of <span class=\"tex-span\"><i>m</i></span> fruits he wanted to buy. If Valera want to buy more than one fruit of some kind, he includes it into the list several times. </p><p>When he came to the fruit stall of Ashot, he saw that the seller hadn't distributed price tags to the goods, but put all price tags on the counter. Later Ashot will attach every price tag to some kind of fruits, and Valera will be able to count the total price of all fruits from his list. But Valera wants to know now what can be the smallest total price (in case of the most \u00ablucky\u00bb for him distribution of price tags) and the largest total price (in case of the most \u00abunlucky\u00bb for him distribution of price tags).</p>",
+    "inputSpecification": "<p>The first line of the input contains two integer number <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>) \u2014 the number of price tags (which is equal to the number of different kinds of fruits that Ashot sells) and the number of items in Valera's list. The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated positive integer numbers. Each of them doesn't exceed <span class=\"tex-span\">100</span> and stands for the price of one fruit of some kind. The following <span class=\"tex-span\"><i>m</i></span> lines contain names of the fruits from the list. Each name is a non-empty string of small Latin letters which length doesn't exceed 32. It is guaranteed that the number of distinct fruits from the list is less of equal to <span class=\"tex-span\"><i>n</i></span>. Also it is known that the seller has in stock all fruits that Valera wants to buy.</p>",
+    "outputSpecification": "<p>Print two numbers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\"><i>a</i>\u2009\u2264\u2009<i>b</i></span>) \u2014 the minimum and the maximum possible sum which Valera may need to buy all fruits from his list.</p>",
+    "samples": [
+        {
+            "input": "5 3<br/>4 2 1 10 5<br/>apple<br/>orange<br/>mango<br/>",
+            "output": "7 19<br/>"
+        },
+        {
+            "input": "6 5<br/>3 5 1 6 8 1<br/>peach<br/>grapefruit<br/>banana<br/>orange<br/>orange<br/>",
+            "output": "11 30<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 12,
+    "index": "C",
+    "name": "Fruits",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 5824
+}

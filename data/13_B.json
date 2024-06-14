@@ -1,0 +1,30 @@
+{
+    "title": "B. Letter A",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Petya learns how to write. The teacher gave pupils the task to write the letter <span class=\"tex-span\"><i>A</i></span> on the sheet of paper. It is required to check whether Petya really had written the letter <span class=\"tex-span\"><i>A</i></span>.</p><p>You are given three segments on the plane. They form the letter <span class=\"tex-span\"><i>A</i></span> if the following conditions hold:</p><ul> <li> Two segments have common endpoint (lets call these segments first and second), while the third segment connects two points on the different segments. </li><li> The angle between the first and the second segments is greater than <span class=\"tex-span\">0</span> and do not exceed <span class=\"tex-span\">90</span> degrees. </li><li> The third segment divides each of the first two segments in proportion not less than <span class=\"tex-span\">1\u2009/\u20094</span> (i.e. the ratio of the length of the shortest part to the length of the longest part is not less than <span class=\"tex-span\">1\u2009/\u20094</span>). </li></ul>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i>\u2009\u2264\u200910000</span>) \u2014 the number of test cases to solve. Each case consists of three lines. Each of these three lines contains four space-separated integers \u2014 coordinates of the endpoints of one of the segments. All coordinates do not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">8</sup></span> by absolute value. All segments have positive length.</p>",
+    "outputSpecification": "<p>Output one line for each test case. Print \u00ab<span class=\"tex-font-style-tt\">YES</span>\u00bb (without quotes), if the segments form the letter <span class=\"tex-span\"><i>A</i></span> and \u00ab<span class=\"tex-font-style-tt\">NO</span>\u00bb otherwise.</p>",
+    "samples": [
+        {
+            "input": "3<br/>4 4 6 0<br/>4 1 5 2<br/>4 0 4 4<br/>0 0 0 6<br/>0 6 2 -4<br/>1 1 0 1<br/>0 0 0 5<br/>0 5 2 -1<br/>1 2 0 1<br/>",
+            "output": "YES<br/>NO<br/>YES<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 13,
+    "index": "B",
+    "name": "Letter A",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "implementation"
+    ],
+    "solvedCount": 838
+}

@@ -1,0 +1,38 @@
+{
+    "title": "B. Borze",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Ternary numeric notation is quite popular in Berland. To telegraph the ternary number the Borze alphabet is used. Digit 0 is transmitted as <span class=\"tex-font-style-tt\">\u00ab.\u00bb</span>, 1 as <span class=\"tex-font-style-tt\">\u00ab-.\u00bb</span> and 2 as <span class=\"tex-font-style-tt\">\u00ab--\u00bb</span>. You are to decode the Borze code, i.e. to find out the ternary number given its representation in Borze alphabet.</p>",
+    "inputSpecification": "<p>The first line contains a number in Borze code. The length of the string is between 1 and 200 characters. It's guaranteed that the given string is a valid Borze code of some ternary number (this number can have leading zeroes).</p>",
+    "outputSpecification": "<p>Output the decoded ternary number. It can have leading zeroes.</p>",
+    "samples": [
+        {
+            "input": ".-.--<br/>",
+            "output": "012"
+        },
+        {
+            "input": "--.<br/>",
+            "output": "20"
+        },
+        {
+            "input": "-..-.--<br/>",
+            "output": "1012"
+        }
+    ],
+    "note": null,
+    "contestId": 32,
+    "index": "B",
+    "name": "Borze",
+    "type": "PROGRAMMING",
+    "tags": [
+        "expression parsing",
+        "implementation"
+    ],
+    "solvedCount": 59754
+}

@@ -1,0 +1,35 @@
+{
+    "title": "B. Undoubtedly Lucky Numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">Polycarpus loves lucky numbers. Everybody knows that lucky numbers are positive integers, whose decimal representation (without leading zeroes) contain only the lucky digits <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>. For example, if <span class=\"tex-span\"><i>x</i>\u2009=\u20094</span>, and <span class=\"tex-span\"><i>y</i>\u2009=\u20097</span>, then numbers 47, 744, 4 are lucky.</span></p><p>Let's call a positive integer <span class=\"tex-span\"><i>a</i></span> <span class=\"tex-font-style-it\">undoubtedly lucky</span>, if there are such digits <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u20099)</span>, that the decimal representation of number <span class=\"tex-span\"><i>a</i></span> (without leading zeroes) contains only digits <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>.</p><p>Polycarpus has integer <span class=\"tex-span\"><i>n</i></span>. He wants to know how many positive integers that do not exceed <span class=\"tex-span\"><i>n</i></span>, are undoubtedly lucky. Help him, count this number.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span> \u2014 Polycarpus's number.</p>",
+    "outputSpecification": "<p>Print a single integer that says, how many positive integers that do not exceed <span class=\"tex-span\"><i>n</i></span> are undoubtedly lucky.</p>",
+    "samples": [
+        {
+            "input": "10<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "123<br/>",
+            "output": "113<br/>"
+        }
+    ],
+    "note": "<p>In the first test sample all numbers that do not exceed <span class=\"tex-span\">10</span> are undoubtedly lucky.</p><p>In the second sample numbers 102, 103, 104, 105, 106, 107, 108, 109, 120, 123 are not undoubtedly lucky.</p>",
+    "contestId": 244,
+    "index": "B",
+    "name": "Undoubtedly Lucky Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dfs and similar"
+    ],
+    "solvedCount": 4401
+}

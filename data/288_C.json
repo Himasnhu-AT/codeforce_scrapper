@@ -1,0 +1,30 @@
+{
+    "title": "C. Polo the Penguin and XOR operation",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little penguin Polo likes permutations. But most of all he likes permutations of integers from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>n</i></span>, inclusive.</p><p>For permutation <span class=\"tex-span\"><i>p</i>\u2009=\u2009<i>p</i><sub class=\"lower-index\">0</sub>,\u2009<i>p</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>, Polo has defined its beauty \u2014 number <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0c51fe5d835015fdb8b8dbb056e9a83c439c83dc.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Expression <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b364f2e04c665b78b924ec10666327a4ef4635bc.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> means applying the operation of bitwise excluding \"OR\" to numbers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>. This operation exists in all modern programming languages, for example, in language <span class=\"tex-font-style-it\">C++</span> and <span class=\"tex-font-style-it\">Java</span> it is represented as \"<span class=\"tex-font-style-tt\">^</span>\" and in <span class=\"tex-font-style-it\">Pascal</span> \u2014 as \"<span class=\"tex-font-style-tt\">xor</span>\".</p><p>Help him find among all permutations of integers from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>n</i></span> the permutation with the maximum beauty.</p>",
+    "inputSpecification": "<p>The single line contains a positive integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>).</p>",
+    "outputSpecification": "<p>In the first line print integer <span class=\"tex-span\"><i>m</i></span> the maximum possible beauty. In the second line print any permutation of integers from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>n</i></span> with the beauty equal to <span class=\"tex-span\"><i>m</i></span>.</p><p>If there are several suitable permutations, you are allowed to print any of them.</p>",
+    "samples": [
+        {
+            "input": "4<br/>",
+            "output": "20<br/>0 2 1 4 3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 288,
+    "index": "C",
+    "name": "Polo the Penguin and XOR operation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 2244
+}

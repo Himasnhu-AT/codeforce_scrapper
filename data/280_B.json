@@ -1,0 +1,35 @@
+{
+    "title": "B. Maximum Xor Secondary",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Bike loves looking for the second maximum element in the sequence. The second maximum element in the sequence of distinct numbers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>k</i></sub></span> <span class=\"tex-span\">(<i>k</i>\u2009&gt;\u20091)</span> is such maximum element <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>j</i></sub></span>, that the following inequality holds: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/41e9a774451aa769280692592b29103e0a6ecf97.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>The lucky number of the sequence of distinct positive integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>k</i></sub></span> <span class=\"tex-span\">(<i>k</i>\u2009&gt;\u20091)</span> is the number that is equal to the bitwise excluding OR of the maximum element of the sequence and the second maximum element of the sequence.</p><p>You've got a sequence of distinct positive integers <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(<i>n</i>\u2009&gt;\u20091)</span>. Let's denote sequence <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>l</i></sub>,\u2009<i>s</i><sub class=\"lower-index\"><i>l</i>\u2009+\u20091</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>r</i></sub></span> as <span class=\"tex-span\"><i>s</i>[<i>l</i>..<i>r</i>]</span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i>\u2009&lt;\u2009<i>r</i>\u2009\u2264\u2009<i>n</i>)</span>. Your task is to find the maximum number among all lucky numbers of sequences <span class=\"tex-span\"><i>s</i>[<i>l</i>..<i>r</i>]</span>.</p><p>Note that as all numbers in sequence <span class=\"tex-span\"><i>s</i></span> are distinct, all the given definitions make sence.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009&lt;\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>. The second line contains <span class=\"tex-span\"><i>n</i></span> distinct integers <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the maximum lucky number among all lucky numbers of sequences <span class=\"tex-span\"><i>s</i>[<i>l</i>..<i>r</i>]</span>.</p>",
+    "samples": [
+        {
+            "input": "5<br/>5 2 1 4 3<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "5<br/>9 8 3 5 7<br/>",
+            "output": "15<br/>"
+        }
+    ],
+    "note": "<p>For the first sample you can choose <span class=\"tex-span\"><i>s</i>[4..5]\u2009=\u2009{4,\u20093}</span> and its lucky number is <span class=\"tex-span\">(4\u00a0<i>xor</i>\u00a03)\u2009=\u20097</span>. You can also choose <span class=\"tex-span\"><i>s</i>[1..2]</span>.</p><p>For the second sample you must choose <span class=\"tex-span\"><i>s</i>[2..5]\u2009=\u2009{8,\u20093,\u20095,\u20097}</span>.</p>",
+    "contestId": 280,
+    "index": "B",
+    "name": "Maximum Xor Secondary",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "implementation",
+        "two pointers"
+    ],
+    "solvedCount": 4428
+}

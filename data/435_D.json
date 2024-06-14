@@ -1,0 +1,39 @@
+{
+    "title": "D. Special Grid",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> grid, some of its nodes are black, the others are white. Moreover, it's not an ordinary grid \u2014 each unit square of the grid has painted diagonals.</p><p>The figure below is an example of such grid of size <span class=\"tex-span\">3\u2009\u00d7\u20095</span>. Four nodes of this grid are black, the other <span class=\"tex-span\">11</span> nodes are white.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/fae73819ac6362ea6b8cd54a33347b43741ce113.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Your task is to count the number of such triangles on the given grid that:</p><ul> <li> the corners match the white nodes, and the area is positive; </li><li> all sides go along the grid lines (horizontal, vertical or diagonal); </li><li> no side contains black nodes. </li></ul>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(2\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009400)</span>. Each of the following <span class=\"tex-span\"><i>n</i></span> lines contain <span class=\"tex-span\"><i>m</i></span> characters (zeros and ones) \u2014 the description of the grid. If the <span class=\"tex-span\"><i>j</i></span>-th character in the <span class=\"tex-span\"><i>i</i></span>-th line equals zero, then the node on the <span class=\"tex-span\"><i>i</i></span>-th horizontal line and on the <span class=\"tex-span\"><i>j</i></span>-th vertical line is painted white. Otherwise, the node is painted black.</p><p>The horizontal lines are numbered starting from one from top to bottom, the vertical lines are numbered starting from one from left to right. </p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number of required triangles.</p>",
+    "samples": [
+        {
+            "input": "3 5<br/>10000<br/>10010<br/>00001<br/>",
+            "output": "20<br/>"
+        },
+        {
+            "input": "2 2<br/>00<br/>00<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "2 2<br/>11<br/>11<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>The figure below shows red and blue triangles. They are the examples of the required triangles in the first sample. One of the invalid triangles is painted green. It is invalid because not all sides go along the grid lines.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/ec3b2fb230475dd3d9fa466b829b2b065154bab9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 435,
+    "index": "D",
+    "name": "Special Grid",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy"
+    ],
+    "solvedCount": 748
+}

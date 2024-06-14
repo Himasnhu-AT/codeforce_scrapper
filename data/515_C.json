@@ -1,0 +1,35 @@
+{
+    "title": "C. Drazil and Factorial",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Drazil is playing a math game with Varda.</p><p>Let's define <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7020b94c48be2ee5b8eeca05f379c8911bb0e7c4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> for positive integer <span class=\"tex-span\"><i>x</i></span> as a product of factorials of its digits. For example, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6784d861d9a724d0aeddefcb00b7d0c3442ae586.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>First, they choose a decimal number <span class=\"tex-span\"><i>a</i></span> consisting of <span class=\"tex-span\"><i>n</i></span> digits that contains at least one digit larger than <span class=\"tex-span\">1</span>. This number may possibly start with leading zeroes. Then they should find maximum positive number <span class=\"tex-span\"><i>x</i></span> satisfying following two conditions:</p><p>1. <span class=\"tex-span\"><i>x</i></span> doesn't contain neither digit <span class=\"tex-span\">0</span> nor digit <span class=\"tex-span\">1</span>.</p><p>2. <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7020b94c48be2ee5b8eeca05f379c8911bb0e7c4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> = <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/aa57e017a6c74d06b0a54bc47e3f6990e5af38c1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Help friends find such number.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200915</span>) \u2014 the number of digits in <span class=\"tex-span\"><i>a</i></span>.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> digits of <span class=\"tex-span\"><i>a</i></span>. There is at least one digit in <span class=\"tex-span\"><i>a</i></span> that is larger than <span class=\"tex-span\">1</span>. Number <span class=\"tex-span\"><i>a</i></span> may possibly contain leading zeroes.</p>",
+    "outputSpecification": "<p>Output a maximum possible integer satisfying the conditions above. There should be no zeroes and ones in this number decimal representation.</p>",
+    "samples": [
+        {
+            "input": "4<br/>1234<br/>",
+            "output": "33222<br/>"
+        },
+        {
+            "input": "3<br/>555<br/>",
+            "output": "555<br/>"
+        }
+    ],
+    "note": "<p>In the first case, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f5a4207f23215fddce977ab5ea9e9d2e7578fb52.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 515,
+    "index": "C",
+    "name": "Drazil and Factorial",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "math",
+        "sortings"
+    ],
+    "solvedCount": 25143
+}

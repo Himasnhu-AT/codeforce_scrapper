@@ -1,0 +1,35 @@
+{
+    "title": "B. Levko and Permutation",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Levko loves permutations very much. A permutation of length <span class=\"tex-span\"><i>n</i></span> is a sequence of distinct positive integers, each is at most <span class=\"tex-span\"><i>n</i></span>.</p><p>Let\u2019s assume that value <span class=\"tex-span\"><i>gcd</i>(<i>a</i>,\u2009<i>b</i>)</span> shows the greatest common divisor of numbers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>. Levko assumes that element <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> of permutation <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> is good if <span class=\"tex-span\"><i>gcd</i>(<i>i</i>,\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>)\u2009&gt;\u20091</span>. Levko considers a permutation <span class=\"tex-font-style-it\">beautiful</span>, if it has exactly <span class=\"tex-span\"><i>k</i></span> good elements. Unfortunately, he doesn\u2019t know any beautiful permutation. Your task is to help him to find at least one of them.</p>",
+    "inputSpecification": "<p>The single line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i></span>).</p>",
+    "outputSpecification": "<p>In a single line print either any beautiful permutation or -1, if such permutation doesn\u2019t exist.</p><p>If there are multiple suitable permutations, you are allowed to print any of them.</p>",
+    "samples": [
+        {
+            "input": "4 2<br/>",
+            "output": "2 4 3 1"
+        },
+        {
+            "input": "1 1<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample elements <span class=\"tex-span\">4</span> and <span class=\"tex-span\">3</span> are good because <span class=\"tex-span\"><i>gcd</i>(2,\u20094)\u2009=\u20092\u2009&gt;\u20091</span> and <span class=\"tex-span\"><i>gcd</i>(3,\u20093)\u2009=\u20093\u2009&gt;\u20091</span>. Elements <span class=\"tex-span\">2</span> and <span class=\"tex-span\">1</span> are not good because <span class=\"tex-span\"><i>gcd</i>(1,\u20092)\u2009=\u20091</span> and <span class=\"tex-span\"><i>gcd</i>(4,\u20091)\u2009=\u20091</span>. As there are exactly 2 good elements, the permutation is beautiful.</p><p>The second sample has no beautiful permutations.</p>",
+    "contestId": 361,
+    "index": "B",
+    "name": "Levko and Permutation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 7913
+}

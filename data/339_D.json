@@ -1,0 +1,30 @@
+{
+    "title": "D. Xenia and Bit Operations",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Xenia the beginner programmer has a sequence <span class=\"tex-span\"><i>a</i></span>, consisting of <span class=\"tex-span\">2<sup class=\"upper-index\"><i>n</i></sup></span> non-negative integers: <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\">2<sup class=\"upper-index\"><i>n</i></sup></sub></span>. Xenia is currently studying bit operations. To better understand how they work, Xenia decided to calculate some value <span class=\"tex-span\"><i>v</i></span> for <span class=\"tex-span\"><i>a</i></span>.</p><p>Namely, it takes several iterations to calculate value <span class=\"tex-span\"><i>v</i></span>. At the first iteration, Xenia writes a new sequence <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>\u00a0<i>or</i>\u00a0<i>a</i><sub class=\"lower-index\">2</sub>,\u2009<i>a</i><sub class=\"lower-index\">3</sub>\u00a0<i>or</i>\u00a0<i>a</i><sub class=\"lower-index\">4</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\">2<sup class=\"upper-index\"><i>n</i></sup>\u2009-\u20091</sub>\u00a0<i>or</i>\u00a0<i>a</i><sub class=\"lower-index\">2<sup class=\"upper-index\"><i>n</i></sup></sub></span>, consisting of <span class=\"tex-span\">2<sup class=\"upper-index\"><i>n</i>\u2009-\u20091</sup></span> elements. In other words, she writes down the bit-wise OR of adjacent elements of sequence <span class=\"tex-span\"><i>a</i></span>. At the second iteration, Xenia writes the bitwise <span class=\"tex-font-style-bf\">exclusive</span> OR of adjacent elements of the sequence obtained after the first iteration. At the third iteration Xenia writes the bitwise OR of the adjacent elements of the sequence obtained after the second iteration. And so on; the operations of bitwise exclusive OR and bitwise OR alternate. In the end, she obtains a sequence consisting of one element, and that element is <span class=\"tex-span\"><i>v</i></span>.</p><p>Let's consider an example. Suppose that sequence <span class=\"tex-span\"><i>a</i>\u2009=\u2009(1,\u20092,\u20093,\u20094)</span>. Then let's write down all the transformations <span class=\"tex-span\">(1,\u20092,\u20093,\u20094)</span> <span class=\"tex-span\">\u2009\u2192\u2009</span> <span class=\"tex-span\">(1\u00a0<i>or</i>\u00a02\u2009=\u20093,\u20093\u00a0<i>or</i>\u00a04\u2009=\u20097)</span> <span class=\"tex-span\">\u2009\u2192\u2009</span> <span class=\"tex-span\">(3\u00a0<i>xor</i>\u00a07\u2009=\u20094)</span>. The result is <span class=\"tex-span\"><i>v</i>\u2009=\u20094</span>.</p><p>You are given Xenia's initial sequence. But to calculate value <span class=\"tex-span\"><i>v</i></span> for a given sequence would be too easy, so you are given additional <span class=\"tex-span\"><i>m</i></span> queries. Each query is a pair of integers <span class=\"tex-span\"><i>p</i>,\u2009<i>b</i></span>. Query <span class=\"tex-span\"><i>p</i>,\u2009<i>b</i></span> means that you need to perform the assignment <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>p</i></sub>\u2009=\u2009<i>b</i></span>. After each query, you need to print the new value <span class=\"tex-span\"><i>v</i></span> for the new sequence <span class=\"tex-span\"><i>a</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200917,\u20091\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>. The next line contains <span class=\"tex-span\">2<sup class=\"upper-index\"><i>n</i></sup></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\">2<sup class=\"upper-index\"><i>n</i></sup></sub></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u20092<sup class=\"upper-index\">30</sup>)</span>. Each of the next <span class=\"tex-span\"><i>m</i></span> lines contains queries. The <span class=\"tex-span\"><i>i</i></span>-th line contains integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20092<sup class=\"upper-index\"><i>n</i></sup>,\u20090\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u20092<sup class=\"upper-index\">30</sup>)</span> \u2014 the <span class=\"tex-span\"><i>i</i></span>-th query.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>m</i></span> integers \u2014 the <span class=\"tex-span\"><i>i</i></span>-th integer denotes value <span class=\"tex-span\"><i>v</i></span> for sequence <span class=\"tex-span\"><i>a</i></span> after the <span class=\"tex-span\"><i>i</i></span>-th query.</p>",
+    "samples": [
+        {
+            "input": "2 4<br/>1 6 3 5<br/>1 4<br/>3 4<br/>1 2<br/>1 2<br/>",
+            "output": "1<br/>3<br/>3<br/>3<br/>"
+        }
+    ],
+    "note": "<p>For more information on the bit operations, you can follow this link: <span class=\"tex-font-style-tt\">http://en.wikipedia.org/wiki/Bitwise_operation</span></p>",
+    "contestId": 339,
+    "index": "D",
+    "name": "Xenia and Bit Operations",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "trees"
+    ],
+    "solvedCount": 24026
+}

@@ -1,0 +1,34 @@
+{
+    "title": "B. Trace",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One day, as Sherlock Holmes was tracking down one very important criminal, he found a wonderful painting on the wall. This wall could be represented as a plane. The painting had several concentric circles that divided the wall into several parts. Some parts were painted red and all the other were painted blue. Besides, any two neighboring parts were painted different colors, that is, the red and the blue color were alternating, i. e. followed one after the other. The outer area of the wall (the area that lied outside all circles) was painted blue. Help Sherlock Holmes determine the total area of red parts of the wall.</p><p><span class=\"tex-font-style-underline\">Let us remind you that two circles are called concentric if their centers coincide. Several circles are called concentric if any two of them are concentric.</span></p>",
+    "inputSpecification": "<p>The first line contains the single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>). The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>) \u2014 the circles' radii. It is guaranteed that all circles are different.</p>",
+    "outputSpecification": "<p>Print the single real number \u2014 total area of the part of the wall that is painted red. The answer is accepted if absolute or relative error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20094</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "1<br/>1<br/>",
+            "output": "3.1415926536<br/>"
+        },
+        {
+            "input": "3<br/>1 4 2<br/>",
+            "output": "40.8407044967<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the picture is just one circle of radius <span class=\"tex-span\">1</span>. Inner part of the circle is painted red. The area of the red part equals <span class=\"tex-span\">\u03c0\u2009\u00d7\u20091<sup class=\"upper-index\">2</sup>\u2009=\u2009\u03c0</span>.</p><p>In the second sample there are three circles of radii <span class=\"tex-span\">1</span>, <span class=\"tex-span\">4</span> and <span class=\"tex-span\">2</span>. Outside part of the second circle is painted blue. Part between the second and the third circles is painted red. Part between the first and the third is painted blue. And, finally, the inner part of the first circle is painted red. Overall there are two red parts: the ring between the second and the third circles and the inner part of the first circle. Total area of the red parts is equal <span class=\"tex-span\">(\u03c0\u2009\u00d7\u20094<sup class=\"upper-index\">2</sup>\u2009-\u2009\u03c0\u2009\u00d7\u20092<sup class=\"upper-index\">2</sup>)\u2009+\u2009\u03c0\u2009\u00d7\u20091<sup class=\"upper-index\">2</sup>\u2009=\u2009\u03c0\u2009\u00d7\u200912\u2009+\u2009\u03c0\u2009=\u200913\u03c0</span></p>",
+    "contestId": 157,
+    "index": "B",
+    "name": "Trace",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "sortings"
+    ],
+    "solvedCount": 12929
+}

@@ -1,0 +1,36 @@
+{
+    "title": "C. Insertion Sort",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Petya is a beginner programmer. He has already mastered the basics of the C++ language and moved on to learning algorithms. The first algorithm he encountered was insertion sort. Petya has already written the code that implements this algorithm and sorts the given integer zero-indexed array <span class=\"tex-span\"><i>a</i></span> of size <span class=\"tex-span\"><i>n</i></span> in the non-decreasing order. </p><pre class=\"verbatim\">for (int i = 1; i &lt; n; i = i + 1)<br/>{<br/>   int j = i; <br/>   while (j &gt; 0 &amp;&amp; a[j] &lt; a[j - 1])<br/>   {<br/>      swap(a[j], a[j - 1]); // swap elements a[j] and a[j - 1]<br/>      j = j - 1;<br/>   }<br/>}<br/></pre><p>Petya uses this algorithm only for sorting of arrays that are permutations of numbers from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span>. He has already chosen the permutation he wants to sort but he first decided to swap some two of its elements. Petya wants to choose these elements in such a way that the number of times the sorting executes function <span class=\"tex-font-style-tt\">swap</span>, was minimum. Help Petya find out the number of ways in which he can make the swap and fulfill this requirement.</p><p>It is guaranteed that it's always possible to swap two elements of the input permutation in such a way that the number of <span class=\"tex-font-style-tt\">swap</span> function calls decreases.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20095000</span>) \u2014 the length of the permutation. The second line contains <span class=\"tex-span\"><i>n</i></span> different integers from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span>, inclusive \u2014 the actual permutation.</p>",
+    "outputSpecification": "<p>Print two integers: the minimum number of times the <span class=\"tex-font-style-tt\">swap</span> function is executed and the number of such pairs <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> that swapping the elements of the input permutation with indexes <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span> leads to the minimum number of the executions.</p>",
+    "samples": [
+        {
+            "input": "for (int i = 1; i < n; i = i + 1)<br/>{<br/>   int j = i; <br/>   while (j > 0 && a[j] < a[j - 1])<br/>   {<br/>      swap(a[j], a[j - 1]); // swap elements a[j] and a[j - 1]<br/>      j = j - 1;<br/>   }<br/>}<br/>",
+            "output": "5<br/>4 0 3 1 2<br/>"
+        },
+        {
+            "input": "3 2<br/>",
+            "output": "5<br/>1 2 3 4 0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the appropriate pairs are <span class=\"tex-span\">(0,\u20093)</span> and <span class=\"tex-span\">(0,\u20094)</span>. </p><p>In the second sample the appropriate pairs are <span class=\"tex-span\">(0,\u20094)</span>, <span class=\"tex-span\">(1,\u20094)</span>, <span class=\"tex-span\">(2,\u20094)</span> and <span class=\"tex-span\">(3,\u20094)</span>.</p>",
+    "contestId": 362,
+    "index": "C",
+    "name": "Insertion Sort",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 1660
+}

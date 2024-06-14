@@ -1,0 +1,33 @@
+{
+    "title": "C. Watering Flowers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A flowerbed has many flowers and two fountains.</p><p>You can adjust the water pressure and set any values <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1</sub>(<i>r</i><sub class=\"lower-index\">1</sub>\u2009\u2265\u20090)</span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">2</sub>(<i>r</i><sub class=\"lower-index\">2</sub>\u2009\u2265\u20090)</span>, giving the distances at which the water is spread from the first and second fountain respectively. You have to set such <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">2</sub></span> that all the flowers are watered, that is, for each flower, the distance between the flower and the first fountain doesn't exceed <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1</sub></span>, or the distance to the second fountain doesn't exceed <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">2</sub></span>. It's OK if some flowers are watered by both fountains.</p><p>You need to decrease the amount of water you need, that is set such <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">2</sub></span> that all the flowers are watered and the <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1</sub><sup class=\"upper-index\">2</sup>\u2009+\u2009<i>r</i><sub class=\"lower-index\">2</sub><sup class=\"upper-index\">2</sup></span> is minimum possible. Find this minimum value.</p>",
+    "inputSpecification": "<p>The first line of the input contains integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">2</sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092000</span>, <span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">7</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u200910<sup class=\"upper-index\">7</sup></span>)\u00a0\u2014 the number of flowers, the coordinates of the first and the second fountain.</p><p>Next follow <span class=\"tex-span\"><i>n</i></span> lines. The <span class=\"tex-span\"><i>i</i></span>-th of these lines contains integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">7</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">7</sup></span>)\u00a0\u2014 the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th flower.</p><p>It is guaranteed that all <span class=\"tex-span\"><i>n</i>\u2009+\u20092</span> points in the input are distinct.</p>",
+    "outputSpecification": "<p>Print the minimum possible value <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1</sub><sup class=\"upper-index\">2</sup>\u2009+\u2009<i>r</i><sub class=\"lower-index\">2</sub><sup class=\"upper-index\">2</sup></span>. Note, that in this problem optimal answer is always integer.</p>",
+    "samples": [
+        {
+            "input": "2 -1 0 5 3<br/>0 2<br/>5 2<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "4 0 0 5 0<br/>9 4<br/>8 3<br/>-1 0<br/>1 4<br/>",
+            "output": "33<br/>"
+        }
+    ],
+    "note": "<p>The first sample is (<span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1</sub><sup class=\"upper-index\">2</sup>\u2009=\u20095</span>, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">2</sub><sup class=\"upper-index\">2</sup>\u2009=\u20091</span>): <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/15e780f508832a19b14698dd8eb54b4c0dd131bf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> The second sample is (<span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1</sub><sup class=\"upper-index\">2</sup>\u2009=\u20091</span>, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">2</sub><sup class=\"upper-index\">2</sup>\u2009=\u200932</span>): <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/da4dc31002cc9b37092d64035ab56ad8544c0d7b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 617,
+    "index": "C",
+    "name": "Watering Flowers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 4781
+}

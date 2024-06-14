@@ -1,0 +1,34 @@
+{
+    "title": "B. Petya and Staircases",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little boy Petya loves stairs very much. But he is bored from simple going up and down them \u2014 he loves jumping over several stairs at a time. As he stands on some stair, he can either jump to the next one or jump over one or two stairs at a time. But some stairs are too dirty and Petya doesn't want to step on them.</p><p>Now Petya is on the first stair of the staircase, consisting of <span class=\"tex-span\"><i>n</i></span> stairs. He also knows the numbers of the dirty stairs of this staircase. Help Petya find out if he can jump through the entire staircase and reach the last stair number <span class=\"tex-span\"><i>n</i></span> without touching a dirty stair once.</p><p>One has to note that anyway Petya should step on the first and last stairs, so if the first or the last stair is dirty, then Petya cannot choose a path with clean steps only.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20093000</span>) \u2014 the number of stairs in the staircase and the number of dirty stairs, correspondingly. The second line contains <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-font-style-bf\">different</span> space-separated integers <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\">1</sub>,\u2009<i>d</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>d</i><sub class=\"lower-index\"><i>m</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) \u2014 the numbers of the dirty stairs (in an arbitrary order).</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" if Petya can reach stair number <span class=\"tex-span\"><i>n</i></span>, stepping only on the clean stairs. Otherwise print \"<span class=\"tex-font-style-tt\">NO</span>\".</p>",
+    "samples": [
+        {
+            "input": "10 5<br/>2 4 8 3 6<br/>",
+            "output": "NO"
+        },
+        {
+            "input": "10 5<br/>2 4 5 7 9<br/>",
+            "output": "YES"
+        }
+    ],
+    "note": null,
+    "contestId": 362,
+    "index": "B",
+    "name": "Petya and Staircases",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 13563
+}

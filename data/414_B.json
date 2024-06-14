@@ -1,0 +1,39 @@
+{
+    "title": "B. Mashmokh and ACM",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">Mashmokh's boss, Bimokh, didn't like Mashmokh. So he fired him. Mashmokh decided to go to university and participate in ACM instead of finding a new job. He wants to become a member of Bamokh's team. In order to join he was given some programming tasks and one week to solve them. Mashmokh is not a very experienced programmer. Actually he is not a programmer at all. So he wasn't able to solve them. That's why he asked you to help him with these tasks. One of these tasks is the following.</span></p><p>A sequence of <span class=\"tex-span\"><i>l</i></span> integers <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>b</i><sub class=\"lower-index\"><i>l</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u2009...\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>l</i></sub>\u2009\u2264\u2009<i>n</i>)</span> is called <span class=\"tex-font-style-it\">good</span> if each number divides (without a remainder) by the next number in the sequence. More formally <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d70c60c547e2902d317d1b6b902e3ed28e695ae0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> for all <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>l</i>\u2009-\u20091)</span>.</p><p>Given <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> find the number of good sequences of length <span class=\"tex-span\"><i>k</i></span>. As the answer can be rather large print it modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "inputSpecification": "<p>The first line of input contains two space-separated integers <span class=\"tex-span\"><i>n</i>,\u2009<i>k</i>\u00a0(1\u2009\u2264\u2009<i>n</i>,\u2009<i>k</i>\u2009\u2264\u20092000)</span>.</p>",
+    "outputSpecification": "<p>Output a single integer \u2014 the number of good sequences of length <span class=\"tex-span\"><i>k</i></span> modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "6 4<br/>",
+            "output": "39<br/>"
+        },
+        {
+            "input": "2 1<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the good sequences are: <span class=\"tex-span\">[1,\u20091],\u2009[2,\u20092],\u2009[3,\u20093],\u2009[1,\u20092],\u2009[1,\u20093]</span>.</p>",
+    "contestId": 414,
+    "index": "B",
+    "name": "Mashmokh and ACM",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "number theory"
+    ],
+    "solvedCount": 21148
+}

@@ -1,0 +1,31 @@
+{
+    "title": "H. Queries for Number of Palindromes",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've got a string <span class=\"tex-span\"><i>s</i>\u2009=\u2009<i>s</i><sub class=\"lower-index\">1</sub><i>s</i><sub class=\"lower-index\">2</sub>... <i>s</i><sub class=\"lower-index\">|<i>s</i>|</sub></span> of length <span class=\"tex-span\">|<i>s</i>|</span>, consisting of lowercase English letters. There also are <span class=\"tex-span\"><i>q</i></span> queries, each query is described by two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009|<i>s</i>|)</span>. The answer to the query is the number of substrings of string <span class=\"tex-span\"><i>s</i>[<i>l</i><sub class=\"lower-index\"><i>i</i></sub>... <i>r</i><sub class=\"lower-index\"><i>i</i></sub>]</span>, which are palindromes.</p><p>String <span class=\"tex-span\"><i>s</i>[<i>l</i>... <i>r</i>]\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>l</i></sub><i>s</i><sub class=\"lower-index\"><i>l</i>\u2009+\u20091</sub>... <i>s</i><sub class=\"lower-index\"><i>r</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u2009|<i>s</i>|)</span> is a <span class=\"tex-font-style-it\">substring</span> of string <span class=\"tex-span\"><i>s</i>\u2009=\u2009<i>s</i><sub class=\"lower-index\">1</sub><i>s</i><sub class=\"lower-index\">2</sub>... <i>s</i><sub class=\"lower-index\">|<i>s</i>|</sub></span>.</p><p>String <span class=\"tex-span\"><i>t</i></span> is called a <span class=\"tex-font-style-it\">palindrome</span>, if it reads the same from left to right and from right to left. Formally, if <span class=\"tex-span\"><i>t</i>\u2009=\u2009<i>t</i><sub class=\"lower-index\">1</sub><i>t</i><sub class=\"lower-index\">2</sub>... <i>t</i><sub class=\"lower-index\">|<i>t</i>|</sub>\u2009=\u2009<i>t</i><sub class=\"lower-index\">|<i>t</i>|</sub><i>t</i><sub class=\"lower-index\">|<i>t</i>|\u2009-\u20091</sub>... <i>t</i><sub class=\"lower-index\">1</sub></span>.</p>",
+    "inputSpecification": "<p>The first line contains string <span class=\"tex-span\"><i>s</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u20095000)</span>. The second line contains a single integer <span class=\"tex-span\"><i>q</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>q</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>)</span> \u2014 the number of queries. Next <span class=\"tex-span\"><i>q</i></span> lines contain the queries. The <span class=\"tex-span\"><i>i</i></span>-th of these lines contains two space-separated integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009|<i>s</i>|)</span> \u2014 the description of the <span class=\"tex-span\"><i>i</i></span>-th query.</p><p>It is guaranteed that the given string consists only of lowercase English letters.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>q</i></span> integers \u2014 the answers to the queries. Print the answers in the order, in which the queries are given in the input. Separate the printed numbers by whitespaces.</p>",
+    "samples": [
+        {
+            "input": "caaaba<br/>5<br/>1 1<br/>1 4<br/>2 3<br/>4 6<br/>4 5<br/>",
+            "output": "1<br/>7<br/>3<br/>4<br/>2<br/>"
+        }
+    ],
+    "note": "<p>Consider the fourth query in the first test case. String <span class=\"tex-span\"><i>s</i>[4... 6]</span> = \u00ab<span class=\"tex-font-style-tt\">aba</span>\u00bb. Its palindrome substrings are: \u00ab<span class=\"tex-font-style-tt\">a</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">b</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">a</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">aba</span>\u00bb.</p>",
+    "contestId": 245,
+    "index": "H",
+    "name": "Queries for Number of Palindromes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "hashing",
+        "strings"
+    ],
+    "solvedCount": 6052
+}

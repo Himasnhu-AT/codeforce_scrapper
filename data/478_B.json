@@ -1,0 +1,40 @@
+{
+    "title": "B. Random Teams",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-span\"><i>n</i></span> participants of the competition were split into <span class=\"tex-span\"><i>m</i></span> teams in some manner so that each team has at least one participant. After the competition each pair of participants from the same team became friends.</p><p>Your task is to write a program that will find the minimum and the maximum number of pairs of friends that could have formed by the end of the competition.</p>",
+    "inputSpecification": "<p>The only line of input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span>, separated by a single space (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the number of participants and the number of teams respectively. </p>",
+    "outputSpecification": "<p>The only line of the output should contain two integers <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>min</i></sub></span> and <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>max</i></sub></span> \u2014 the minimum possible number of pairs of friends and the maximum possible number of pairs of friends respectively.</p>",
+    "samples": [
+        {
+            "input": "5 1<br/>",
+            "output": "10 10<br/>"
+        },
+        {
+            "input": "3 2<br/>",
+            "output": "1 1<br/>"
+        },
+        {
+            "input": "6 3<br/>",
+            "output": "3 6<br/>"
+        }
+    ],
+    "note": "<p>In the first sample all the participants get into one team, so there will be exactly ten pairs of friends.</p><p>In the second sample at any possible arrangement one team will always have two participants and the other team will always have one participant. Thus, the number of pairs of friends will always be equal to one.</p><p>In the third sample minimum number of newly formed friendships can be achieved if participants were split on teams consisting of <span class=\"tex-span\">2</span> people, maximum number can be achieved if participants were split on teams of <span class=\"tex-span\">1</span>, <span class=\"tex-span\">1</span> and <span class=\"tex-span\">4</span> people.</p>",
+    "contestId": 478,
+    "index": "B",
+    "name": "Random Teams",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 35552
+}

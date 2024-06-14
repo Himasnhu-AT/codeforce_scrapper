@@ -1,0 +1,34 @@
+{
+    "title": "D. The Union of k-Segments",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given <span class=\"tex-span\"><i>n</i></span> segments on the coordinate axis <span class=\"tex-font-style-tt\">Ox</span> and the number <span class=\"tex-span\"><i>k</i></span>. The point is <span class=\"tex-font-style-it\">satisfied</span> if it belongs to at least <span class=\"tex-span\"><i>k</i></span> segments. Find the smallest (by the number of segments) set of segments on the coordinate axis <span class=\"tex-font-style-tt\">Ox</span> which contains all <span class=\"tex-font-style-it\">satisfied</span> points and no others.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 the number of segments and the value of <span class=\"tex-span\"><i>k</i></span>.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) each \u2014 the endpoints of the <span class=\"tex-span\"><i>i</i></span>-th segment. The segments can degenerate and intersect each other. The segments are given in arbitrary order.</p>",
+    "outputSpecification": "<p>First line contains integer <span class=\"tex-span\"><i>m</i></span> \u2014 the smallest number of segments.</p><p>Next <span class=\"tex-span\"><i>m</i></span> lines contain two integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>j</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>j</i></sub></span> (<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>j</i></sub></span>) \u2014 the ends of <span class=\"tex-span\"><i>j</i></span>-th segment in the answer. The segments should be listed in the order from left to right.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>0 5<br/>-3 2<br/>3 8<br/>",
+            "output": "2<br/>0 2<br/>3 5<br/>"
+        },
+        {
+            "input": "3 2<br/>0 5<br/>-3 3<br/>3 8<br/>",
+            "output": "1<br/>0 5<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 612,
+    "index": "D",
+    "name": "The Union of k-Segments",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 3709
+}

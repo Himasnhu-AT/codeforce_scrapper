@@ -1,0 +1,37 @@
+{
+    "title": "D. Fibonacci-ish",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Yash has recently learnt about the Fibonacci sequence and is very excited about it. He calls a sequence Fibonacci-ish if </p><ol> <li> the sequence consists of at least two elements </li><li> <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">0</sub></span> and <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">1</sub></span> are arbitrary </li><li> <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>n</i>\u2009+\u20092</sub>\u2009=\u2009<i>f</i><sub class=\"lower-index\"><i>n</i>\u2009+\u20091</sub>\u2009+\u2009<i>f</i><sub class=\"lower-index\"><i>n</i></sub></span> for all <span class=\"tex-span\"><i>n</i>\u2009\u2265\u20090</span>. </li></ol><p>You are given some sequence of integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. Your task is rearrange elements of this sequence in such a way that its longest possible prefix is Fibonacci-ish sequence.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the length of the sequence <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">|<i>a</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print the length of the longest possible Fibonacci-ish prefix of the given sequence after rearrangement.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2 -1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "5<br/>28 35 7 14 21<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, if we rearrange elements of the sequence as <span class=\"tex-span\">\u2009-\u20091</span>, <span class=\"tex-span\">2</span>, <span class=\"tex-span\">1</span>, the whole sequence <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> would be Fibonacci-ish.</p><p>In the second sample, the optimal way to rearrange elements is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/16f1f7e35511b29cb1396890ca2fb7dfa4d428de.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4003973f16750522e492d7d79318d7e2f0ff99cd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/87b18fd9524b11e12faf154302fb14c1b55556fb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b8950ea952476baea26e03281fa2f7640b6241ef.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <span class=\"tex-span\">28</span>.</p>",
+    "contestId": 633,
+    "index": "D",
+    "name": "Fibonacci-ish",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "hashing",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 2574
+}

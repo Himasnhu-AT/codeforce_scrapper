@@ -1,0 +1,32 @@
+{
+    "title": "D. Gargari and Permutations",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Gargari got bored to play with the bishops and now, after solving the problem about them, he is trying to do math homework. In a math book he have found <span class=\"tex-span\"><i>k</i></span> permutations. Each of them consists of numbers <span class=\"tex-span\">1,\u20092,\u2009...,\u2009<i>n</i></span> in some order. Now he should find the length of the longest common subsequence of these permutations. Can you help Gargari?</p><p>You can read about longest common subsequence there: <span class=\"tex-font-style-tt\">https://en.wikipedia.org/wiki/Longest_common_subsequence_problem</span></p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000;\u00a02\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20095)</span>. Each of the next <span class=\"tex-span\"><i>k</i></span> lines contains integers <span class=\"tex-span\">1,\u20092,\u2009...,\u2009<i>n</i></span> in some order \u2014 description of the current permutation.</p>",
+    "outputSpecification": "<p>Print the length of the longest common subsequence.</p>",
+    "samples": [
+        {
+            "input": "4 3<br/>1 4 2 3<br/>4 1 2 3<br/>1 2 4 3<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>The answer for the first test sample is subsequence [1, 2, 3].</p>",
+    "contestId": 463,
+    "index": "D",
+    "name": "Gargari and Permutations",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "implementation"
+    ],
+    "solvedCount": 5988
+}

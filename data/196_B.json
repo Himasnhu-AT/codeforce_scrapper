@@ -1,0 +1,34 @@
+{
+    "title": "B. Infinite Maze",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>We've got a rectangular <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span>-cell maze. Each cell is either passable, or is a wall (impassable). A little boy found the maze and cyclically tiled a plane with it so that the plane became an infinite maze. Now on this plane cell <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> is a wall if and only if cell <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5820f73507b71bbab0564415ed80476b7cbd4b71.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is a wall.</p><p>In this problem <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6dd276f849101e7efda6cb8031d4056744d532a1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is a remainder of dividing number <span class=\"tex-span\"><i>a</i></span> by number <span class=\"tex-span\"><i>b</i></span>.</p><p>The little boy stood at some cell on the plane and he wondered whether he can walk infinitely far away from his starting position. From cell <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> he can go to one of the following cells: <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009-\u20091)</span>, <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009+\u20091)</span>, <span class=\"tex-span\">(<i>x</i>\u2009-\u20091,\u2009<i>y</i>)</span> and <span class=\"tex-span\">(<i>x</i>\u2009+\u20091,\u2009<i>y</i>)</span>, provided that the cell he goes to is not a wall.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091500</span>) \u2014 the height and the width of the maze that the boy used to cyclically tile the plane.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains <span class=\"tex-span\"><i>m</i></span> characters \u2014 the description of the labyrinth. Each character is either a \"<span class=\"tex-font-style-tt\">#</span>\", that marks a wall, a \"<span class=\"tex-font-style-tt\">.</span>\", that marks a passable cell, or an \"<span class=\"tex-font-style-tt\">S</span>\", that marks the little boy's starting point. </p><p>The starting point is a passable cell. It is guaranteed that character \"<span class=\"tex-font-style-tt\">S</span>\" occurs exactly once in the input.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">Yes</span>\" (without the quotes), if the little boy can walk infinitely far from the starting point. Otherwise, print \"<span class=\"tex-font-style-tt\">No</span>\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "5 4<br/>##.#<br/>##S#<br/>#..#<br/>#.##<br/>#..#<br/>",
+            "output": "Yes<br/>"
+        },
+        {
+            "input": "5 4<br/>##.#<br/>##S#<br/>#..#<br/>..#.<br/>#.##<br/>",
+            "output": "No<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the little boy can go up for infinitely long as there is a \"clear path\" that goes vertically. He just needs to repeat the following steps infinitely: up, up, left, up, up, right, up.</p><p>In the second sample the vertical path is blocked. The path to the left doesn't work, too \u2014 the next \"copy\" of the maze traps the boy.</p>",
+    "contestId": 196,
+    "index": "B",
+    "name": "Infinite Maze",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs"
+    ],
+    "solvedCount": 2134
+}

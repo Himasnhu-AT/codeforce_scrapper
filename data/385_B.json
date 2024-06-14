@@ -1,0 +1,37 @@
+{
+    "title": "B. Bear and Strings",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The bear has a string <span class=\"tex-span\"><i>s</i>\u2009=\u2009<i>s</i><sub class=\"lower-index\">1</sub><i>s</i><sub class=\"lower-index\">2</sub>... <i>s</i><sub class=\"lower-index\">|<i>s</i>|</sub></span> (record <span class=\"tex-span\">|<i>s</i>|</span> is the string's length), consisting of lowercase English letters. The bear wants to count the number of such pairs of indices <span class=\"tex-span\"><i>i</i>,\u2009<i>j</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009|<i>s</i>|)</span>, that string <span class=\"tex-span\"><i>x</i>(<i>i</i>,\u2009<i>j</i>)\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub><i>s</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub>... <i>s</i><sub class=\"lower-index\"><i>j</i></sub></span> contains at least one string \"<span class=\"tex-font-style-tt\">bear</span>\" as a substring.</p><p>String <span class=\"tex-span\"><i>x</i>(<i>i</i>,\u2009<i>j</i>)</span> contains string \"<span class=\"tex-font-style-tt\">bear</span>\", if there is such index <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(<i>i</i>\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>j</i>\u2009-\u20093)</span>, that <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>k</i></sub>\u2009=\u2009<i>b</i></span>, <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>k</i>\u2009+\u20091</sub>\u2009=\u2009<i>e</i></span>, <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>k</i>\u2009+\u20092</sub>\u2009=\u2009<i>a</i></span>, <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>k</i>\u2009+\u20093</sub>\u2009=\u2009<i>r</i></span>.</p><p>Help the bear cope with the given problem.</p>",
+    "inputSpecification": "<p>The first line contains a non-empty string <span class=\"tex-span\"><i>s</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u20095000)</span>. It is guaranteed that the string only consists of lowercase English letters.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "bearbtear<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "bearaabearc<br/>",
+            "output": "20<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, the following pairs <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> match: <span class=\"tex-span\">(1,\u20094),\u2009(1,\u20095),\u2009(1,\u20096),\u2009(1,\u20097),\u2009(1,\u20098),\u2009(1,\u20099)</span>.</p><p>In the second sample, the following pairs <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> match: <span class=\"tex-span\">(1,\u2009\u20094),\u2009(1,\u2009\u20095),\u2009(1,\u2009\u20096),\u2009(1,\u2009\u20097),\u2009(1,\u2009\u20098),\u2009(1,\u2009\u20099),\u2009(1,\u2009\u200910),\u2009(1,\u2009\u200911),\u2009(2,\u2009\u200910),\u2009(2,\u2009\u200911),\u2009(3,\u2009\u200910),\u2009(3,\u2009\u200911),\u2009(4,\u2009\u200910),\u2009(4,\u2009\u200911),\u2009(5,\u2009\u200910),\u2009(5,\u2009\u200911),\u2009(6,\u2009\u200910),\u2009(6,\u2009\u200911),\u2009(7,\u2009\u200910),\u2009(7,\u2009\u200911)</span>.</p>",
+    "contestId": 385,
+    "index": "B",
+    "name": "Bear and Strings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "math",
+        "strings"
+    ],
+    "solvedCount": 9583
+}

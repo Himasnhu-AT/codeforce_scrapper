@@ -1,0 +1,34 @@
+{
+    "title": "B. Chilly Willy",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Chilly Willy loves playing with numbers. He only knows prime numbers that are digits yet. These numbers are <span class=\"tex-span\">2</span>, <span class=\"tex-span\">3</span>, <span class=\"tex-span\">5</span> and <span class=\"tex-span\">7</span>. But Willy grew rather bored of such numbers, so he came up with a few games that were connected with them.</p><p>Chilly Willy wants to find the minimum number of length <span class=\"tex-span\"><i>n</i></span>, such that it is simultaneously divisible by all numbers Willy already knows (<span class=\"tex-span\">2</span>, <span class=\"tex-span\">3</span>, <span class=\"tex-span\">5</span> and <span class=\"tex-span\">7</span>). Help him with that.</p><p>A number's length is the number of digits in its decimal representation without leading zeros.</p>",
+    "inputSpecification": "<p>A single input line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the answer to the problem without leading zeroes, or \"<span class=\"tex-font-style-tt\">-1</span>\" (without the quotes), if the number that meet the problem condition does not exist.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "5<br/>",
+            "output": "10080"
+        }
+    ],
+    "note": null,
+    "contestId": 248,
+    "index": "B",
+    "name": "Chilly Willy",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 5214
+}

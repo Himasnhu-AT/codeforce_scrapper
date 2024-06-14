@@ -1,0 +1,40 @@
+{
+    "title": "E. Wavy numbers",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A <span class=\"tex-font-style-it\">wavy number</span> is such positive integer that for any digit of its decimal representation except for the first one and the last one following condition holds: the digit is either strictly larger than both its adjacent digits or strictly less than both its adjacent digits. For example, numbers <span class=\"tex-span\">35270</span>, <span class=\"tex-span\">102</span>, <span class=\"tex-span\">747</span>, <span class=\"tex-span\">20</span> and <span class=\"tex-span\">3</span> are <span class=\"tex-font-style-it\">wavy</span> and numbers <span class=\"tex-span\">123</span>, <span class=\"tex-span\">1000</span> and <span class=\"tex-span\">2212</span> are not.</p><p>The task is to find the <span class=\"tex-span\"><i>k</i></span>-th <span class=\"tex-font-style-bf\">smallest</span> <span class=\"tex-font-style-it\">wavy number</span> <span class=\"tex-span\"><i>r</i></span> that is divisible by <span class=\"tex-span\"><i>n</i></span> for the given integer values <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span>.</p><p>You are to write a program that will find the value of <span class=\"tex-span\"><i>r</i></span> if it doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">14</sup></span>.</p>",
+    "inputSpecification": "<p>The only line of input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span>, separated by a single space (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">14</sup></span>). </p>",
+    "outputSpecification": "<p>Your task is to output the only integer <span class=\"tex-span\"><i>r</i></span> \u2014 the answer to the given problem. If such number does not exist or it is larger than <span class=\"tex-span\">10<sup class=\"upper-index\">14</sup></span>, then print \"<span class=\"tex-font-style-tt\">-1</span>\" (minus one without the quotes) instead.</p>",
+    "samples": [
+        {
+            "input": "123 4<br/>",
+            "output": "1845<br/>"
+        },
+        {
+            "input": "100 1<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "97461 457<br/>",
+            "output": "1805270103<br/>"
+        }
+    ],
+    "note": "<p>The values of the first four <span class=\"tex-font-style-it\">wavy numbers</span> that are divisible by <span class=\"tex-span\"><i>n</i></span> for the first sample are: <span class=\"tex-span\">492</span>, <span class=\"tex-span\">615</span>, <span class=\"tex-span\">738</span> and <span class=\"tex-span\">1845</span>.</p>",
+    "contestId": 478,
+    "index": "E",
+    "name": "Wavy numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "meet-in-the-middle",
+        "sortings"
+    ],
+    "solvedCount": 207
+}

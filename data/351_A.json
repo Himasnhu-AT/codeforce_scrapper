@@ -1,0 +1,36 @@
+{
+    "title": "A. Jeff and Rounding",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Jeff got <span class=\"tex-span\">2<i>n</i></span> real numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\">2<i>n</i></sub></span> as a birthday present. The boy hates non-integer numbers, so he decided to slightly \"adjust\" the numbers he's got. Namely, Jeff consecutively executes <span class=\"tex-span\"><i>n</i></span> operations, each of them goes as follows:</p><ul> <li> choose indexes <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span> <span class=\"tex-span\">(<i>i</i>\u2009\u2260\u2009<i>j</i>)</span> that haven't been chosen yet; </li><li> round element <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> to the nearest integer that isn't more than <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (assign to <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>: <span class=\"tex-span\">\u230a <i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u00a0\u230b</span>); </li><li> round element <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>j</i></sub></span> to the nearest integer that isn't less than <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>j</i></sub></span> (assign to <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>j</i></sub></span>: <span class=\"tex-span\">\u2308 <i>a</i><sub class=\"lower-index\"><i>j</i></sub>\u00a0\u2309</span>). </li></ul><p>Nevertheless, Jeff doesn't want to hurt the feelings of the person who gave him the sequence. That's why the boy wants to perform the operations so as to make the absolute value of the difference between the sum of elements before performing the operations and the sum of elements after performing the operations as small as possible. Help Jeff find the minimum absolute value of the difference.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092000)</span>. The next line contains <span class=\"tex-span\">2<i>n</i></span> real numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\">...</span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2<i>n</i></sub></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910000)</span>, given with exactly three digits after the decimal point. The numbers are separated by spaces.</p>",
+    "outputSpecification": "<p>In a single line print a single real number \u2014 the required difference with <span class=\"tex-font-style-bf\">exactly three digits</span> after the decimal point.</p>",
+    "samples": [
+        {
+            "input": "3<br/>0.000 0.500 0.750 1.000 2.000 3.000<br/>",
+            "output": "0.250<br/>"
+        },
+        {
+            "input": "3<br/>4469.000 6526.000 4864.000 9356.383 7490.000 995.896<br/>",
+            "output": "0.279<br/>"
+        }
+    ],
+    "note": "<p>In the first test case you need to perform the operations as follows: <span class=\"tex-span\">(<i>i</i>\u2009=\u20091,\u2009<i>j</i>\u2009=\u20094)</span>, <span class=\"tex-span\">(<i>i</i>\u2009=\u20092,\u2009<i>j</i>\u2009=\u20093)</span>, <span class=\"tex-span\">(<i>i</i>\u2009=\u20095,\u2009<i>j</i>\u2009=\u20096)</span>. In this case, the difference will equal <span class=\"tex-span\">|(0\u2009+\u20090.5\u2009+\u20090.75\u2009+\u20091\u2009+\u20092\u2009+\u20093)\u2009-\u2009(0\u2009+\u20090\u2009+\u20091\u2009+\u20091\u2009+\u20092\u2009+\u20093)|\u2009=\u20090.25</span>. </p>",
+    "contestId": 351,
+    "index": "A",
+    "name": "Jeff and Rounding",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 2733
+}

@@ -1,0 +1,35 @@
+{
+    "title": "C. Marina and Vasya",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Marina loves strings of the same length and Vasya loves when there is a third string, different from them in exactly <span class=\"tex-span\"><i>t</i></span> characters. Help Vasya find at least one such string.</p><p>More formally, you are given two strings <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> of length <span class=\"tex-span\"><i>n</i></span> and number <span class=\"tex-span\"><i>t</i></span>. Let's denote as <span class=\"tex-span\"><i>f</i>(<i>a</i>,\u2009<i>b</i>)</span> the number of characters in which strings <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> are different. Then your task will be to find any string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">3</sub></span> of length <span class=\"tex-span\"><i>n</i></span>, such that <span class=\"tex-span\"><i>f</i>(<i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">3</sub>)\u2009=\u2009<i>f</i>(<i>s</i><sub class=\"lower-index\">2</sub>,\u2009<i>s</i><sub class=\"lower-index\">3</sub>)\u2009=\u2009<i>t</i></span>. If there is no such string, print <span class=\"tex-span\">\u2009-\u20091</span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>t</i>\u2009\u2264\u2009<i>n</i></span>).</p><p>The second line contains string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> of length <span class=\"tex-span\"><i>n</i></span>, consisting of lowercase English letters.</p><p>The third line contain string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> of length <span class=\"tex-span\"><i>n</i></span>, consisting of lowercase English letters.</p>",
+    "outputSpecification": "<p>Print a string of length <span class=\"tex-span\"><i>n</i></span>, differing from string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> and from <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> in exactly <span class=\"tex-span\"><i>t</i></span> characters. Your string should consist only from lowercase English letters. If such string doesn't exist, print -1.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>abc<br/>xyc<br/>",
+            "output": "ayd"
+        },
+        {
+            "input": "1 0<br/>c<br/>b<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 584,
+    "index": "C",
+    "name": "Marina and Vasya",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "strings"
+    ],
+    "solvedCount": 6082
+}

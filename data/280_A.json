@@ -1,0 +1,33 @@
+{
+    "title": "A. Rectangle Puzzle",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two rectangles on a plane. The centers of both rectangles are located in the origin of coordinates (meaning the center of the rectangle's symmetry). The first rectangle's sides are parallel to the coordinate axes: the length of the side that is parallel to the <span class=\"tex-span\"><i>Ox</i></span> axis, equals <span class=\"tex-span\"><i>w</i></span>, the length of the side that is parallel to the <span class=\"tex-span\"><i>Oy</i></span> axis, equals <span class=\"tex-span\"><i>h</i></span>. The second rectangle can be obtained by rotating the first rectangle relative to the origin of coordinates by angle <span class=\"tex-span\">\u03b1</span>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/b997a953b748780107b3f45c318ffd00eca6439a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Your task is to find the area of the region which belongs to both given rectangles. This region is shaded in the picture.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>w</i>,\u2009<i>h</i>,\u2009\u03b1</span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>w</i>,\u2009<i>h</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>;\u00a00\u2009\u2264\u2009\u03b1\u2009\u2264\u2009180)</span>. Angle <span class=\"tex-span\">\u03b1</span> is given in degrees.</p>",
+    "outputSpecification": "<p>In a single line print a real number \u2014 the area of the region which belongs to both given rectangles.</p><p>The answer will be considered correct if its relative or absolute error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "1 1 45<br/>",
+            "output": "0.828427125<br/>"
+        },
+        {
+            "input": "6 4 30<br/>",
+            "output": "19.668384925<br/>"
+        }
+    ],
+    "note": "<p>The second sample has been drawn on the picture above.</p>",
+    "contestId": 280,
+    "index": "A",
+    "name": "Rectangle Puzzle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 1447
+}

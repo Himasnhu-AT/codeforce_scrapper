@@ -1,0 +1,38 @@
+{
+    "title": "C. Email address",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Sometimes one has to spell email addresses over the phone. Then one usually pronounces a dot as <span class=\"tex-font-style-tt\">dot</span>, an at sign as <span class=\"tex-font-style-tt\">at</span>. As a result, we get something like <span class=\"tex-font-style-tt\">vasyaatgmaildotcom</span>. Your task is to transform it into a proper email address (<a class=\"__cf_email__\" data-cfemail=\"01776072786041666c60686d2f626e6c\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a>). </p><p>It is known that a proper email address contains only such symbols as <span class=\"tex-font-style-tt\">.</span> <span class=\"tex-font-style-tt\">@</span> and lower-case Latin letters, doesn't start with and doesn't end with a dot. Also, a proper email address doesn't start with and doesn't end with an at sign. Moreover, an email address contains exactly one such symbol as <span class=\"tex-font-style-tt\">@</span>, yet may contain any number (possible, zero) of dots. </p><p>You have to carry out a series of replacements so that the length of the result was as short as possible and it was a proper email address. If the lengths are equal, you should print the lexicographically minimal result. </p><p>Overall, two variants of replacement are possible: <span class=\"tex-font-style-tt\">dot</span> can be replaced by a dot, <span class=\"tex-font-style-tt\">at</span> can be replaced by an at. </p>",
+    "inputSpecification": "<p>The first line contains the email address description. It is guaranteed that that is a proper email address with all the dots replaced by <span class=\"tex-font-style-tt\">dot</span> an the at signs replaced by <span class=\"tex-font-style-tt\">at</span>. The line is not empty and its length does not exceed 100 symbols.</p>",
+    "outputSpecification": "<p>Print the shortest email address, from which the given line could be made by the described above replacements. If there are several solutions to that problem, print the lexicographically minimal one (the lexicographical comparison of the lines are implemented with an operator &lt; in modern programming languages).</p><p>In the ASCII table the symbols go in this order: <span class=\"tex-font-style-tt\">. @ ab</span>...<span class=\"tex-font-style-tt\">z</span></p>",
+    "samples": [
+        {
+            "input": "vasyaatgmaildotcom<br/>",
+            "output": "<a class=\"__cf_email__\" data-cfemail=\"5d2b3c2e243c1d3a303c3431733e3230\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a><br/>"
+        },
+        {
+            "input": "dotdotdotatdotdotat<br/>",
+            "output": "<a class=\"__cf_email__\" data-cfemail=\"23474c570d0d630d0d4257\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a><br/>"
+        },
+        {
+            "input": "aatt<br/>",
+            "output": "a@t<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 41,
+    "index": "C",
+    "name": "Email address",
+    "type": "PROGRAMMING",
+    "tags": [
+        "expression parsing",
+        "implementation"
+    ],
+    "solvedCount": 3657
+}

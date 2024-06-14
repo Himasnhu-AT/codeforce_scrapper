@@ -1,0 +1,34 @@
+{
+    "title": "A. Points and Segments (easy)",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Iahub isn't well prepared on geometry problems, but he heard that this year there will be a lot of geometry problems on the IOI selection camp. Scared, Iahub locked himself in the basement and started thinking of new problems of this kind. One of them is the following.</p><p>Iahub wants to draw <span class=\"tex-span\"><i>n</i></span> distinct points and <span class=\"tex-span\"><i>m</i></span> segments on the <span class=\"tex-span\"><i>OX</i></span> axis. He can draw each point with either red or blue. The drawing is good if and only if the following requirement is met: for each segment <span class=\"tex-span\">[<i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>]</span> consider all the red points belong to it (<span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> points), and all the blue points belong to it (<span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> points); each segment <span class=\"tex-span\"><i>i</i></span> should satisfy the inequality <span class=\"tex-span\">|<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009-\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u20091</span>.</p><p>Iahub thinks that point <span class=\"tex-span\"><i>x</i></span> belongs to segment <span class=\"tex-span\">[<i>l</i>,\u2009<i>r</i>]</span>, if inequality <span class=\"tex-span\"><i>l</i>\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>r</i></span> holds.</p><p>Iahub gives to you all coordinates of points and segments. Please, help him to find any good drawing.</p>",
+    "inputSpecification": "<p>The first line of input contains two integers: <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009100</span>). The next line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>) \u2014 the coordinates of the points. The following <span class=\"tex-span\"><i>m</i></span> lines contain the descriptions of the <span class=\"tex-span\"><i>m</i></span> segments. Each line contains two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>) \u2014 the borders of the <span class=\"tex-span\"><i>i</i></span>-th segment.</p><p>It's guaranteed that all the points are distinct.</p>",
+    "outputSpecification": "<p>If there is no good drawing for a given test, output a single integer -1. Otherwise output <span class=\"tex-span\"><i>n</i></span> integers, each integer must be 0 or 1. The <span class=\"tex-span\"><i>i</i></span>-th number denotes the color of the <span class=\"tex-span\"><i>i</i></span>-th point (0 is red, and 1 is blue).</p><p>If there are multiple good drawings you can output any of them.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>3 7 14<br/>1 5<br/>6 10<br/>11 15<br/>",
+            "output": "0 0 0"
+        },
+        {
+            "input": "3 4<br/>1 2 3<br/>1 2<br/>2 3<br/>5 6<br/>2 2<br/>",
+            "output": "1 0 1 "
+        }
+    ],
+    "note": null,
+    "contestId": 430,
+    "index": "A",
+    "name": "Points and Segments (easy)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "sortings"
+    ],
+    "solvedCount": 2224
+}

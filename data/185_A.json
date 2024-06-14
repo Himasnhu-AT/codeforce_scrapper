@@ -1,0 +1,33 @@
+{
+    "title": "A. Plant",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Dwarfs have planted a very interesting plant, which is a triangle directed \"upwards\". This plant has an amusing feature. After one year a triangle plant directed \"upwards\" divides into four triangle plants: three of them will point \"upwards\" and one will point \"downwards\". After another year, each triangle plant divides into four triangle plants: three of them will be directed in the same direction as the parent plant, and one of them will be directed in the opposite direction. Then each year the process repeats. The figure below illustrates this process.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/781313390f506f317fde3321e8793d02bc3b1dfc.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Help the dwarfs find out how many triangle plants that point \"upwards\" will be in <span class=\"tex-span\"><i>n</i></span> years.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup>)</span> \u2014 the number of full years when the plant grew.</p><p>Please do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the remainder of dividing the number of plants that will point \"upwards\" in <span class=\"tex-span\"><i>n</i></span> years by <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "2<br/>",
+            "output": "10<br/>"
+        }
+    ],
+    "note": "<p>The first test sample corresponds to the second triangle on the figure in the statement. The second test sample corresponds to the third one.</p>",
+    "contestId": 185,
+    "index": "A",
+    "name": "Plant",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 5735
+}

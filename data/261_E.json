@@ -1,0 +1,39 @@
+{
+    "title": "E. Maxim and Calculator",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Maxim has got a calculator. The calculator has two integer cells. Initially, the first cell contains number <span class=\"tex-span\">1</span>, and the second cell contains number <span class=\"tex-span\">0</span>. In one move you can perform one of the following operations:</p><ol> <li> Let's assume that at the current time the first cell contains number <span class=\"tex-span\"><i>a</i></span>, and the second cell contains number <span class=\"tex-span\"><i>b</i></span>. Write to the second cell number <span class=\"tex-span\"><i>b</i>\u2009+\u20091</span>; </li><li> Let's assume that at the current time the first cell contains number <span class=\"tex-span\"><i>a</i></span>, and the second cell contains number <span class=\"tex-span\"><i>b</i></span>. Write to the first cell number <span class=\"tex-span\"><i>a</i>\u00b7<i>b</i></span>. </li></ol><p>Maxim is wondering, how many integers <span class=\"tex-span\"><i>x</i></span> <span class=\"tex-span\">(<i>l</i>\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>r</i>)</span> are there, such that we can write the number <span class=\"tex-span\"><i>x</i></span> to the first cell of the calculator, having performed at most <span class=\"tex-span\"><i>p</i></span> moves.</p>",
+    "inputSpecification": "<p>The first line contains three integers: <span class=\"tex-span\"><i>l</i></span>, <span class=\"tex-span\"><i>r</i></span>, <span class=\"tex-span\"><i>p</i></span> <span class=\"tex-span\">(2\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>,\u20091\u2009\u2264\u2009<i>p</i>\u2009\u2264\u2009100)</span>. </p><p>The numbers in the line are separated by single spaces.</p>",
+    "outputSpecification": "<p>In a single line print a single integer \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "2 10 3<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 111 100<br/>",
+            "output": "106<br/>"
+        },
+        {
+            "input": "2 111 11<br/>",
+            "output": "47<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 261,
+    "index": "E",
+    "name": "Maxim and Calculator",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "two pointers"
+    ],
+    "solvedCount": 406
+}

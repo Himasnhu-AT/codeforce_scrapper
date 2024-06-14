@@ -1,0 +1,33 @@
+{
+    "title": "B. Phone numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Phone number in Berland is a sequence of <span class=\"tex-span\"><i>n</i></span> digits. Often, to make it easier to memorize the number, it is divided into groups of two or three digits. For example, the phone number <span class=\"tex-font-style-tt\">1198733</span> is easier to remember as <span class=\"tex-font-style-tt\">11-987-33</span>. Your task is to find for a given phone number any of its divisions into groups of two or three digits.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) \u2014 amount of digits in the phone number. The second line contains <span class=\"tex-span\"><i>n</i></span> digits \u2014 the phone number to divide into groups.</p>",
+    "outputSpecification": "<p>Output any of divisions of the given phone number into groups of two or three digits. Separate groups by single character <span class=\"tex-font-style-tt\">-</span>. If the answer is not unique, output any.</p>",
+    "samples": [
+        {
+            "input": "6<br/>549871<br/>",
+            "output": "54-98-71"
+        },
+        {
+            "input": "7<br/>1198733<br/>",
+            "output": "11-987-33<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 25,
+    "index": "B",
+    "name": "Phone numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 9385
+}

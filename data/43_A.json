@@ -1,0 +1,33 @@
+{
+    "title": "A. Football",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One day Vasya decided to have a look at the results of Berland 1910 Football Championship\u2019s finals. Unfortunately he didn't find the overall score of the match; however, he got hold of a profound description of the match's process. On the whole there are <span class=\"tex-span\"><i>n</i></span> lines in that description each of which described one goal. Every goal was marked with the name of the team that had scored it. Help Vasya, learn the name of the team that won the finals. It is guaranteed that the match did not end in a tie.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) \u2014 the number of lines in the description. Then follow <span class=\"tex-span\"><i>n</i></span> lines \u2014 for each goal the names of the teams that scored it. The names are non-empty lines consisting of uppercase Latin letters whose lengths do not exceed 10 symbols. It is guaranteed that the match did not end in a tie and the description contains no more than two different teams.</p>",
+    "outputSpecification": "<p>Print the name of the winning team. We remind you that in football the team that scores more goals is considered the winner.</p>",
+    "samples": [
+        {
+            "input": "1<br/>ABC<br/>",
+            "output": "ABC<br/>"
+        },
+        {
+            "input": "5<br/>A<br/>ABA<br/>ABA<br/>A<br/>A<br/>",
+            "output": "A<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 43,
+    "index": "A",
+    "name": "Football",
+    "type": "PROGRAMMING",
+    "tags": [
+        "strings"
+    ],
+    "solvedCount": 53049
+}

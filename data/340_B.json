@@ -1,0 +1,30 @@
+{
+    "title": "B. Maximal Area Quadrilateral",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Iahub has drawn a set of <span class=\"tex-span\"><i>n</i></span> points in the cartesian plane which he calls \"special points\". A quadrilateral is a simple polygon without self-intersections with four sides (also called edges) and four vertices (also called corners). Please note that a quadrilateral doesn't have to be convex. A special quadrilateral is one which has all four vertices in the set of special points. Given the set of special points, please calculate the maximal area of a special quadrilateral. </p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">4\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009300</span>). Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains two integers: <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(\u2009-\u20091000\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000)</span> \u2014 the cartesian coordinates of <span class=\"tex-span\"><i>i</i></span>th special point. It is guaranteed that no three points are on the same line. It is guaranteed that no two points coincide. </p>",
+    "outputSpecification": "<p>Output a single real number \u2014 the maximal area of a special quadrilateral. The answer will be considered correct if its absolute or relative error does't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20099</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "5<br/>0 0<br/>0 4<br/>4 0<br/>4 4<br/>2 3<br/>",
+            "output": "16.000000"
+        }
+    ],
+    "note": "<p>In the test example we can choose first <span class=\"tex-span\">4</span> points to be the vertices of the quadrilateral. They form a square by side <span class=\"tex-span\">4</span>, so the area is <span class=\"tex-span\">4\u00b74\u2009=\u200916</span>.</p>",
+    "contestId": 340,
+    "index": "B",
+    "name": "Maximal Area Quadrilateral",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "geometry"
+    ],
+    "solvedCount": 2030
+}

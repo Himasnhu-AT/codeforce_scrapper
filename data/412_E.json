@@ -1,0 +1,41 @@
+{
+    "title": "E. E-mail Addresses",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One of the most important products of the R1 company is a popular @r1.com mail service. The R1 mailboxes receive and send millions of emails every day.</p><p>Today, the online news thundered with terrible information. The R1 database crashed and almost no data could be saved except for one big string. The developers assume that the string contains the letters of some users of the R1 mail. Recovering letters is a tedious mostly manual work. So before you start this process, it was decided to estimate the difficulty of recovering. Namely, we need to calculate the number of different substrings of the saved string that form correct e-mail addresses.</p><p>We assume that valid addresses are only the e-mail addresses which meet the following criteria:</p><ul> <li> the address should begin with a non-empty sequence of letters, numbers, characters '<span class=\"tex-font-style-tt\">_</span>', starting with a letter; </li><li> then must go character '<span class=\"tex-font-style-tt\">@</span>'; </li><li> then must go a non-empty sequence of letters or numbers; </li><li> then must go character '<span class=\"tex-font-style-tt\">.</span>'; </li><li> the address must end with a non-empty sequence of letters. </li></ul><p>You got lucky again and the job was entrusted to you! Please note that the substring is several consecutive characters in a string. Two substrings, one consisting of the characters of the string with numbers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">1</sub>,\u2009<i>l</i><sub class=\"lower-index\">1</sub>\u2009+\u20091,\u2009<i>l</i><sub class=\"lower-index\">1</sub>\u2009+\u20092,\u2009...,\u2009<i>r</i><sub class=\"lower-index\">1</sub></span> and the other one consisting of the characters of the string with numbers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">2</sub>,\u2009<i>l</i><sub class=\"lower-index\">2</sub>\u2009+\u20091,\u2009<i>l</i><sub class=\"lower-index\">2</sub>\u2009+\u20092,\u2009...,\u2009<i>r</i><sub class=\"lower-index\">2</sub></span>, are considered distinct if <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">1</sub>\u2009\u2260\u2009<i>l</i><sub class=\"lower-index\">2</sub></span> or <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1</sub>\u2009\u2260\u2009<i>r</i><sub class=\"lower-index\">2</sub></span>.</p>",
+    "inputSpecification": "<p>The first and the only line contains the sequence of characters <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub><i>s</i><sub class=\"lower-index\">2</sub>... <i>s</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>)</span> \u2014 the saved string. It is guaranteed that the given string contains only small English letters, digits and characters '<span class=\"tex-font-style-tt\">.</span>', '<span class=\"tex-font-style-tt\">_</span>', '<span class=\"tex-font-style-tt\">@</span>'.</p>",
+    "outputSpecification": "<p>Print in a single line the number of substrings that are valid e-mail addresses.</p>",
+    "samples": [
+        {
+            "input": "<a class=\"__cf_email__\" data-cfemail=\"86e1e3f4e7eae2a8e7e1e7f6e9f0b7bfbfb7c6e1ebe7efeaa8e5e9eb\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a><br/>",
+            "output": "18<br/>"
+        },
+        {
+            "input": "<a class=\"__cf_email__\" data-cfemail=\"2a526a520452\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a>@<a class=\"__cf_email__\" data-cfemail=\"146c3a6c4b714b5466253a777b79\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a><br/>",
+            "output": "8<br/>"
+        },
+        {
+            "input": "<a class=\"__cf_email__\" data-cfemail=\"2f4e7070706f1e015d\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a><br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": ".asd123__..@<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first test case all the substrings that are correct e-mail addresses begin from one of the letters of the word agapov and end in one of the letters of the word com.</p><p>In the second test case note that the e-mail <a class=\"__cf_email__\" data-cfemail=\"235b635b0d5b\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a> is considered twice in the answer. Note that in this example the e-mail entries overlap inside the string.</p>",
+    "contestId": 412,
+    "index": "E",
+    "name": "E-mail Addresses",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 810
+}

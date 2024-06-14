@@ -1,0 +1,33 @@
+{
+    "title": "C. Diophantine equation",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an equation <span class=\"tex-span\"><i>A</i>\u2009*\u2009<i>X</i>\u2009+\u2009<i>B</i>\u2009*\u2009<i>Y</i>\u2009=\u2009<i>C</i></span>, <span class=\"tex-span\"><i>A</i>,\u2009<i>B</i>,\u2009<i>C</i></span> are positive integer coefficients, <span class=\"tex-span\"><i>X</i></span> and <span class=\"tex-span\"><i>Y</i></span> are variables which can have positive integer values only. Output the number of solutions of this equation and the solutions themselves.</p>",
+    "inputSpecification": "<p>The only line of input contains integers <span class=\"tex-span\"><i>A</i>,\u2009<i>B</i></span> and <span class=\"tex-span\"><i>C</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>A</i>,\u2009<i>B</i>,\u2009<i>C</i>\u2009\u2264\u20091000</span>), separated with spaces.</p>",
+    "outputSpecification": "<p>In the first line of the output print the number of the solutions <span class=\"tex-span\"><i>N</i></span>. In the next <span class=\"tex-span\"><i>N</i></span> lines print the solutions, formatted as \"<span class=\"tex-span\"><i>XY</i></span>\", sorted in ascending order of <span class=\"tex-span\"><i>X</i></span>, one solution per line.</p>",
+    "samples": [
+        {
+            "input": "3 5 35<br/>",
+            "output": "2<br/>5 4<br/>10 1<br/>"
+        },
+        {
+            "input": "3 35 5<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 530,
+    "index": "C",
+    "name": "Diophantine equation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 543
+}

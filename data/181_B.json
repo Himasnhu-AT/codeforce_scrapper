@@ -1,0 +1,34 @@
+{
+    "title": "B. Number of Triplets",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given <span class=\"tex-span\"><i>n</i></span> points on a plane. All points are different.</p><p>Find the number of different groups of three points <span class=\"tex-span\">(<i>A</i>,\u2009<i>B</i>,\u2009<i>C</i>)</span> such that point <span class=\"tex-span\"><i>B</i></span> is the middle of segment <span class=\"tex-span\"><i>AC</i></span>. </p><p>The groups of three points are considered unordered, that is, if point <span class=\"tex-span\"><i>B</i></span> is the middle of segment <span class=\"tex-span\"><i>AC</i></span>, then groups <span class=\"tex-span\">(<i>A</i>,\u2009<i>B</i>,\u2009<i>C</i>)</span> and <span class=\"tex-span\">(<i>C</i>,\u2009<i>B</i>,\u2009<i>A</i>)</span> are considered the same.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093000</span>) \u2014 the number of points. </p><p>Next <span class=\"tex-span\"><i>n</i></span> lines contain the points. The <span class=\"tex-span\"><i>i</i></span>-th line contains coordinates of the <span class=\"tex-span\"><i>i</i></span>-th point: two space-separated integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u20091000\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>).</p><p>It is guaranteed that all given points are different.</p>",
+    "outputSpecification": "<p>Print the single number \u2014 the answer to the problem. </p>",
+    "samples": [
+        {
+            "input": "3<br/>1 1<br/>2 2<br/>3 3<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3<br/>0 0<br/>-1 0<br/>0 1<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 181,
+    "index": "B",
+    "name": "Number of Triplets",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force"
+    ],
+    "solvedCount": 2910
+}

@@ -1,0 +1,37 @@
+{
+    "title": "D. Permutations",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A permutation is a sequence of integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> of length <span class=\"tex-span\"><i>n</i></span> containing each number exactly once. For example, <span class=\"tex-span\">(1)</span>, <span class=\"tex-span\">(4,\u20093,\u20095,\u20091,\u20092)</span>, <span class=\"tex-span\">(3,\u20092,\u20091)</span> are permutations, and <span class=\"tex-span\">(1,\u20091)</span>, <span class=\"tex-span\">(4,\u20093,\u20091)</span>, <span class=\"tex-span\">(2,\u20093,\u20094)</span> are not. </p><p>There are many tasks on permutations. Today you are going to solve one of them. Let\u2019s imagine that somebody took several permutations (perhaps, with a different number of elements), wrote them down consecutively as one array and then shuffled the resulting array. The task is to restore the initial permutations if it is possible.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>). The next line contains the mixed array of <span class=\"tex-span\"><i>n</i></span> integers, divided with a single space. The numbers in the array are from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">10<sup class=\"upper-index\">5</sup></span>.</p>",
+    "outputSpecification": "<p>If this array can be split into several permutations so that every element of the array belongs to exactly one permutation, print in the first line the number of permutations. The second line should contain <span class=\"tex-span\"><i>n</i></span> numbers, corresponding to the elements of the given array. If the <span class=\"tex-span\"><i>i</i></span>-th element belongs to the first permutation, the <span class=\"tex-span\"><i>i</i></span>-th number should be <span class=\"tex-span\">1</span>, if it belongs to the second one, then its number should be <span class=\"tex-span\">2</span> and so on. The order of the permutations\u2019 numbering is free.</p><p>If several solutions are possible, print any one of them. If there\u2019s no solution, print in the first line <span class=\"tex-span\">\u2009-\u20091</span>.</p>",
+    "samples": [
+        {
+            "input": "9<br/>1 2 3 1 2 1 4 2 5<br/>",
+            "output": "3<br/>3 1 2 1 2 2 2 3 2<br/>"
+        },
+        {
+            "input": "4<br/>4 3 2 1<br/>",
+            "output": "1<br/>1 1 1 1 "
+        },
+        {
+            "input": "4<br/>1 2 2 3<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample test the array is split into three permutations: <span class=\"tex-span\">(2,\u20091)</span>, <span class=\"tex-span\">(3,\u20092,\u20091,\u20094,\u20095)</span>, <span class=\"tex-span\">(1,\u20092)</span>. The first permutation is formed by the second and the fourth elements of the array, the second one \u2014 by the third, the fifth, the sixth, the seventh and the ninth elements, the third one \u2014 by the first and the eigth elements. Clearly, there are other splitting variants possible. </p>",
+    "contestId": 48,
+    "index": "D",
+    "name": "Permutations",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy"
+    ],
+    "solvedCount": 2422
+}

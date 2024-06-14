@@ -1,0 +1,32 @@
+{
+    "title": "E. Mike and Friends",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>What-The-Fatherland is a strange country! All phone numbers there are strings consisting of lowercase English letters. What is double strange that a phone number can be associated with several bears!</p><p>In that country there is a rock band called CF consisting of <span class=\"tex-span\"><i>n</i></span> bears (including Mike) numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/71af947454bc6fc4955437ea7446e2b783f9bd4c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Phone number of <span class=\"tex-span\"><i>i</i></span>-th member of CF is <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span>. May 17th is a holiday named Phone Calls day. In the last Phone Calls day, everyone called all the numbers that are substrings of his/her number (one may call some number several times). In particular, everyone called himself (that was really strange country).</p><p>Denote as <span class=\"tex-span\"><i>call</i>(<i>i</i>,\u2009<i>j</i>)</span> the number of times that <span class=\"tex-span\"><i>i</i></span>-th member of CF called the <span class=\"tex-span\"><i>j</i></span>-th member of CF. </p><p>The geek Mike has <span class=\"tex-span\"><i>q</i></span> questions that he wants to ask you. In each question he gives you numbers <span class=\"tex-span\"><i>l</i>,\u2009<i>r</i></span> and <span class=\"tex-span\"><i>k</i></span> and you should tell him the number </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5d88aa17404a169820d99e54b01b8ac2a9552067.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center>",
+    "inputSpecification": "<p>The first line of input contains integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u2009\u00d7\u200910<sup class=\"upper-index\">5</sup></span> and <span class=\"tex-span\">1\u2009\u2264\u2009<i>q</i>\u2009\u2264\u20095\u2009\u00d7\u200910<sup class=\"upper-index\">5</sup></span>).</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain the phone numbers, <span class=\"tex-span\"><i>i</i></span>-th line contains a string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span> consisting of lowercase English letters (<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b60bbd11dae7b5f43c55918a57e5e68833b6b60a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>).</p><p>The next <span class=\"tex-span\"><i>q</i></span> lines contain the information about the questions, each of them contains integers <span class=\"tex-span\"><i>l</i>,\u2009<i>r</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u2009<i>n</i></span> and <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i></span>).</p>",
+    "outputSpecification": "<p>Print the answer for each question in a separate line.</p>",
+    "samples": [
+        {
+            "input": "5 5<br/>a<br/>ab<br/>abab<br/>ababab<br/>b<br/>1 5 1<br/>3 5 1<br/>1 5 2<br/>1 5 3<br/>1 4 5<br/>",
+            "output": "7<br/>5<br/>6<br/>3<br/>6<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 547,
+    "index": "E",
+    "name": "Mike and Friends",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "string suffix structures",
+        "strings",
+        "trees"
+    ],
+    "solvedCount": 1955
+}

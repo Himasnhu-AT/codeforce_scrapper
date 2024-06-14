@@ -1,0 +1,33 @@
+{
+    "title": "E. Playing with String",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Two people play the following string game. Initially the players have got some string <span class=\"tex-span\"><i>s</i></span>. The players move in turns, the player who cannot make a move loses. </p><p>Before the game began, the string is written on a piece of paper, one letter per cell.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/30eedacd6c5d8874e37cce893bd26c8b97826c78.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-script\">An example of the initial situation at <span class=\"tex-span\"><i>s</i></span> = \"<span class=\"tex-font-style-tt\">abacaba</span>\"</span> </center><p>A player's move is the sequence of actions:</p><ol> <li> The player chooses one of the available pieces of paper with some string written on it. Let's denote it is <span class=\"tex-span\"><i>t</i></span>. Note that initially, only one piece of paper is available. </li><li> The player chooses in the string <span class=\"tex-span\"><i>t</i>\u2009=\u2009<i>t</i><sub class=\"lower-index\">1</sub><i>t</i><sub class=\"lower-index\">2</sub>... <i>t</i><sub class=\"lower-index\">|<i>t</i>|</sub></span> character in position <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009|<i>t</i>|)</span> such that for some positive integer <span class=\"tex-span\"><i>l</i></span> <span class=\"tex-span\">(0\u2009&lt;\u2009<i>i</i>\u2009-\u2009<i>l</i>;\u00a0<i>i</i>\u2009+\u2009<i>l</i>\u2009\u2264\u2009|<i>t</i>|)</span> the following equations hold: <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub>\u2009=\u2009<i>t</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span>, <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20092</sub>\u2009=\u2009<i>t</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20092</sub></span>, ..., <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i>\u2009-\u2009<i>l</i></sub>\u2009=\u2009<i>t</i><sub class=\"lower-index\"><i>i</i>\u2009+\u2009<i>l</i></sub></span>. </li><li> Player cuts the cell with the chosen character. As a result of the operation, he gets three new pieces of paper, the first one will contain string <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub><i>t</i><sub class=\"lower-index\">2</sub>... <i>t</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub></span>, the second one will contain a string consisting of a single character <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span>, the third one contains string <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub><i>t</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20092</sub>... <i>t</i><sub class=\"lower-index\">|<i>t</i>|</sub></span>. </li></ol><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/9b30f934d0acfc8cd1ac2868de5199010a07b33b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-script\">An example of making action <span class=\"tex-span\">(<i>i</i>\u2009=\u20094)</span> with string <span class=\"tex-span\"><i>s</i></span> = \u00ab<span class=\"tex-font-style-tt\">abacaba</span>\u00bb</span> </center><p>Your task is to determine the winner provided that both players play optimally well. If the first player wins, find the position of character that is optimal to cut in his first move. If there are multiple positions, print the minimal possible one.</p>",
+    "inputSpecification": "<p>The first line contains string <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u20095000</span>). It is guaranteed that string <span class=\"tex-span\"><i>s</i></span> only contains lowercase English letters.</p>",
+    "outputSpecification": "<p>If the second player wins, print in the single line \"<span class=\"tex-font-style-tt\">Second</span>\" (without the quotes). Otherwise, print in the first line \"<span class=\"tex-font-style-tt\">First</span>\" (without the quotes), and in the second line print the minimal possible winning move \u2014 integer <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009|<i>s</i>|)</span>.</p>",
+    "samples": [
+        {
+            "input": "abacaba<br/>",
+            "output": "First<br/>2<br/>"
+        },
+        {
+            "input": "abcde<br/>",
+            "output": "Second<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the first player has multiple winning moves. But the minimum one is to cut the character in position <span class=\"tex-span\">2</span>. </p><p>In the second sample the first player has no available moves.</p>",
+    "contestId": 305,
+    "index": "E",
+    "name": "Playing with String",
+    "type": "PROGRAMMING",
+    "tags": [
+        "games"
+    ],
+    "solvedCount": 607
+}

@@ -1,0 +1,33 @@
+{
+    "title": "C. Mike and Foam",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mike is a bartender at Rico's bar. At Rico's, they put beer glasses in a special shelf. There are <span class=\"tex-span\"><i>n</i></span> kinds of beer at Rico's numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. <span class=\"tex-span\"><i>i</i></span>-th kind of beer has <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> milliliters of foam on it.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/d681bc87990c5d9c37221c46bec208d0a9c6e4ef.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Maxim is Mike's boss. Today he told Mike to perform <span class=\"tex-span\"><i>q</i></span> queries. Initially the shelf is empty. In each request, Maxim gives him a number <span class=\"tex-span\"><i>x</i></span>. If beer number <span class=\"tex-span\"><i>x</i></span> is already in the shelf, then Mike should remove it from the shelf, otherwise he should put it in the shelf.</p><p>After each query, Mike should tell him the score of the shelf. Bears are geeks. So they think that the score of a shelf is the number of pairs <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> of glasses in the shelf such that <span class=\"tex-span\"><i>i</i>\u2009&lt;\u2009<i>j</i></span> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bd0cf5d5a7d4ecd9ec873d999a2370481c0fde9d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> where <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/47ab79f1c5210d5c6156290f6f8e9af1075ae896.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is the greatest common divisor of numbers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>.</p><p>Mike is tired. So he asked you to help him in performing these requests.</p>",
+    "inputSpecification": "<p>The first line of input contains numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>q</i>\u2009\u2264\u20092\u2009\u00d7\u200910<sup class=\"upper-index\">5</sup></span>), the number of different kinds of beer and number of queries.</p><p>The next line contains <span class=\"tex-span\"><i>n</i></span> space separated integers, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20095\u2009\u00d7\u200910<sup class=\"upper-index\">5</sup></span>), the height of foam in top of each kind of beer.</p><p>The next <span class=\"tex-span\"><i>q</i></span> lines contain the queries. Each query consists of a single integer integer <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>n</i></span>), the index of a beer that should be added or removed from the shelf.</p>",
+    "outputSpecification": "<p>For each query, print the answer for that query in one line.</p>",
+    "samples": [
+        {
+            "input": "5 6<br/>1 2 3 4 6<br/>1<br/>2<br/>3<br/>4<br/>5<br/>1<br/>",
+            "output": "0<br/>1<br/>3<br/>5<br/>6<br/>2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 547,
+    "index": "C",
+    "name": "Mike and Foam",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "dp",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 2732
+}

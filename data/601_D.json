@@ -1,0 +1,38 @@
+{
+    "title": "D. Acyclic Organic Compounds",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a tree <span class=\"tex-span\"><i>T</i></span> with <span class=\"tex-span\"><i>n</i></span> vertices (numbered <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>n</i></span>) and a letter in each vertex. The tree is rooted at vertex <span class=\"tex-span\">1</span>.</p><p>Let's look at the subtree <span class=\"tex-span\"><i>T</i><sub class=\"lower-index\"><i>v</i></sub></span> of some vertex <span class=\"tex-span\"><i>v</i></span>. It is possible to read a string along each simple path starting at <span class=\"tex-span\"><i>v</i></span> and ending at some vertex in <span class=\"tex-span\"><i>T</i><sub class=\"lower-index\"><i>v</i></sub></span> (possibly <span class=\"tex-span\"><i>v</i></span> itself). Let's denote the number of <span class=\"tex-font-style-bf\">distinct</span> strings which can be read this way as <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bd208c8f291ac26d2c1afe01926632d52a3b9c7f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. </p><p>Also, there's a number <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>v</i></sub></span> assigned to each vertex <span class=\"tex-span\"><i>v</i></span>. We are interested in vertices with the maximum value of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f502ea3f6cf16bce416fd43b9c9bb79980ffa382.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>You should compute two statistics: the maximum value of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f502ea3f6cf16bce416fd43b9c9bb79980ffa382.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and the number of vertices <span class=\"tex-span\"><i>v</i></span> with the maximum <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f502ea3f6cf16bce416fd43b9c9bb79980ffa382.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "inputSpecification": "<p>The first line of the input contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009300\u2009000</span>)\u00a0\u2014 the number of vertices of the tree.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p><p>The third line contains a string <span class=\"tex-span\"><i>s</i></span> consisting of <span class=\"tex-span\"><i>n</i></span> lowercase English letters\u00a0\u2014 the <span class=\"tex-span\"><i>i</i></span>-th character of this string is the letter in vertex <span class=\"tex-span\"><i>i</i></span>.</p><p>The following <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines describe the tree <span class=\"tex-span\"><i>T</i></span>. Each of them contains two space-separated integers <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i>,\u2009<i>v</i>\u2009\u2264\u2009<i>n</i></span>) indicating an edge between vertices <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span>.</p><p>It's guaranteed that the input will describe a tree.</p>",
+    "outputSpecification": "<p>Print two lines. </p><p>On the first line, print <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1ca61e8ad8b32ae7f5adbad10109a51bd42f3ab4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> over all <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>. </p><p>On the second line, print the number of vertices <span class=\"tex-span\"><i>v</i></span> for which <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6604043b6c7f1f01412e02c2d1b462b73786da81.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "10<br/>1 2 7 20 20 30 40 50 50 50<br/>cacabbcddd<br/>1 2<br/>6 8<br/>7 2<br/>6 2<br/>5 4<br/>5 9<br/>3 10<br/>2 5<br/>2 3<br/>",
+            "output": "51<br/>3<br/>"
+        },
+        {
+            "input": "6<br/>0 2 4 1 1 1<br/>raaaba<br/>1 2<br/>2 3<br/>2 4<br/>2 5<br/>3 6<br/>",
+            "output": "6<br/>2<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, the tree looks like this:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/e73c5960bdba5494ac0d005fdbeceb58e8011859.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The sets of strings that can be read from individual vertices are:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/cdd20e7ec866e6f991ca2f90e08792408c889db7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Finally, the values of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/14691bbbb07694ceb84c7c73aa24a29ecfcb9e6b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> are:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/984bc948f68a2c35f75db857f62c005dcf9206d7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second sample, the values of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/58314b06b4c754bc3d1eeee1a5f0140ed5645015.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> are <span class=\"tex-span\">(5,\u20094,\u20092,\u20091,\u20091,\u20091)</span>. The distinct strings read in <span class=\"tex-span\"><i>T</i><sub class=\"lower-index\">2</sub></span> are <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/072d38bb85cddb83248af087aadc065527254da5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>; note that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/439f442d1a281ff76510cd09766962dff9fdbd65.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> can be read down to vertices <span class=\"tex-span\">3</span> or <span class=\"tex-span\">4</span>.</p>",
+    "contestId": 601,
+    "index": "D",
+    "name": "Acyclic Organic Compounds",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "hashing",
+        "strings",
+        "trees"
+    ],
+    "solvedCount": 1095
+}

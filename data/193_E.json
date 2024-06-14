@@ -1,0 +1,35 @@
+{
+    "title": "E. Fibonacci Number",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>John Doe has a list of all Fibonacci numbers modulo <span class=\"tex-span\">10<sup class=\"upper-index\">13</sup></span>. This list is infinite, it starts with numbers <span class=\"tex-span\">0</span> and <span class=\"tex-span\">1</span>. Each number in the list, apart from the first two, is a sum of previous two modulo <span class=\"tex-span\">10<sup class=\"upper-index\">13</sup></span>. That is, John's list is made from the Fibonacci numbers' list by replacing each number there by the remainder when divided by <span class=\"tex-span\">10<sup class=\"upper-index\">13</sup></span>. </p><p>John got interested in number <span class=\"tex-span\"><i>f</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>f</i>\u2009&lt;\u200910<sup class=\"upper-index\">13</sup></span>) and now wants to find its first occurrence in the list given above. Help John and find the number of the first occurence of number <span class=\"tex-span\"><i>f</i></span> in the list or otherwise state that number <span class=\"tex-span\"><i>f</i></span> does not occur in the list. </p><p>The numeration in John's list starts from zero. There, the <span class=\"tex-span\">0</span>-th position is the number <span class=\"tex-span\">0</span>, the <span class=\"tex-span\">1</span>-st position is the number <span class=\"tex-span\">1</span>, the <span class=\"tex-span\">2</span>-nd position is the number <span class=\"tex-span\">1</span>, the <span class=\"tex-span\">3</span>-rd position is the number <span class=\"tex-span\">2</span>, the <span class=\"tex-span\">4</span>-th position is the number <span class=\"tex-span\">3</span> and so on. Thus, the beginning of the list looks like this: <span class=\"tex-span\">0,\u20091,\u20091,\u20092,\u20093,\u20095,\u20098,\u200913,\u200921,\u2009...</span></p>",
+    "inputSpecification": "<p>The first line contains the single integer <span class=\"tex-span\"><i>f</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>f</i>\u2009&lt;\u200910<sup class=\"upper-index\">13</sup></span>) \u2014 the number, which position in the list we should find.</p><p>Please, do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier. </p>",
+    "outputSpecification": "<p>Print a single number \u2014 the number of the first occurrence of the given number in John's list. If this number doesn't occur in John's list, print -1.</p>",
+    "samples": [
+        {
+            "input": "13<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "377<br/>",
+            "output": "14<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 193,
+    "index": "E",
+    "name": "Fibonacci Number",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "math",
+        "matrices"
+    ],
+    "solvedCount": 323
+}

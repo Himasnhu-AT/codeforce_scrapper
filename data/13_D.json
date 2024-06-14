@@ -1,0 +1,34 @@
+{
+    "title": "D. Triangles",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Petya likes to draw. He drew <span class=\"tex-span\"><i>N</i></span> red and <span class=\"tex-span\"><i>M</i></span> blue points on the plane in such a way that no three points lie on the same line. Now he wonders what is the number of distinct triangles with vertices in red points which do not contain any blue point inside.</p>",
+    "inputSpecification": "<p>The first line contains two non-negative integer numbers <span class=\"tex-span\"><i>N</i></span> and <span class=\"tex-span\"><i>M</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>N</i>\u2009\u2264\u2009500</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>M</i>\u2009\u2264\u2009500</span>) \u2014 the number of red and blue points respectively. The following <span class=\"tex-span\"><i>N</i></span> lines contain two integer numbers each \u2014 coordinates of red points. The following <span class=\"tex-span\"><i>M</i></span> lines contain two integer numbers each \u2014 coordinates of blue points. All coordinates do not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup></span> by absolute value.</p>",
+    "outputSpecification": "<p>Output one integer \u2014 the number of distinct triangles with vertices in red points which do not contain any blue point inside.</p>",
+    "samples": [
+        {
+            "input": "4 1<br/>0 0<br/>10 0<br/>10 10<br/>5 4<br/>2 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "5 5<br/>5 10<br/>6 1<br/>8 6<br/>-6 -7<br/>7 -1<br/>5 -1<br/>10 -4<br/>-10 -8<br/>-10 5<br/>-2 -8<br/>",
+            "output": "7<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 13,
+    "index": "D",
+    "name": "Triangles",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "geometry"
+    ],
+    "solvedCount": 601
+}

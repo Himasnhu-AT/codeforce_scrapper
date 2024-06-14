@@ -1,0 +1,35 @@
+{
+    "title": "A. Cows and Primitive Roots",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The cows have just learned what a primitive root is! Given a prime <span class=\"tex-span\"><i>p</i></span>, a primitive root <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f203bd9f1553a2d666452cec7d6f1f4f02a817fb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is an integer <span class=\"tex-span\"><i>x</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>x</i>\u2009&lt;\u2009<i>p</i>)</span> such that none of integers <span class=\"tex-span\"><i>x</i>\u2009-\u20091,\u2009<i>x</i><sup class=\"upper-index\">2</sup>\u2009-\u20091,\u2009...,\u2009<i>x</i><sup class=\"upper-index\"><i>p</i>\u2009-\u20092</sup>\u2009-\u20091</span> are divisible by <span class=\"tex-span\"><i>p</i></span>, but <span class=\"tex-span\"><i>x</i><sup class=\"upper-index\"><i>p</i>\u2009-\u20091</sup>\u2009-\u20091</span> is. </p><p>Unfortunately, computing primitive roots can be time consuming, so the cows need your help. Given a prime <span class=\"tex-span\"><i>p</i></span>, help the cows find the number of primitive roots <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f203bd9f1553a2d666452cec7d6f1f4f02a817fb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "inputSpecification": "<p>The input contains a single line containing an integer <span class=\"tex-span\"><i>p</i></span> <span class=\"tex-span\">(2\u2009\u2264\u2009<i>p</i>\u2009&lt;\u20092000)</span>. It is guaranteed that <span class=\"tex-span\"><i>p</i></span> is a prime.</p>",
+    "outputSpecification": "<p>Output on a single line the number of primitive roots <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f203bd9f1553a2d666452cec7d6f1f4f02a817fb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "5<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>The only primitive root <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3722298ba062e95b18705d1253eb4e5d31e3b2d1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is <span class=\"tex-span\">2.</span></p><p>The primitive roots <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1d85c6a17ef1c42b53cf94d00bc49a7ac458fd58.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> are <span class=\"tex-span\">2</span> and <span class=\"tex-span\">3.</span></p>",
+    "contestId": 284,
+    "index": "A",
+    "name": "Cows and Primitive Roots",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 6409
+}

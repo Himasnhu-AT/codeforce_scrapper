@@ -1,0 +1,38 @@
+{
+    "title": "B. Vika and Squares",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vika has <span class=\"tex-span\"><i>n</i></span> jars with paints of distinct colors. All the jars are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> and the <span class=\"tex-span\"><i>i</i></span>-th jar contains <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> liters of paint of color <span class=\"tex-span\"><i>i</i></span>.</p><p>Vika also has an infinitely long rectangular piece of paper of width <span class=\"tex-span\">1</span>, consisting of squares of size <span class=\"tex-span\">1\u2009\u00d7\u20091</span>. Squares are numbered <span class=\"tex-span\">1</span>, <span class=\"tex-span\">2</span>, <span class=\"tex-span\">3</span> and so on. Vika decided that she will start painting squares one by one from left to right, starting from the square number <span class=\"tex-span\">1</span> and some arbitrary color. If the square was painted in color <span class=\"tex-span\"><i>x</i></span>, then the next square will be painted in color <span class=\"tex-span\"><i>x</i>\u2009+\u20091</span>. In case of <span class=\"tex-span\"><i>x</i>\u2009=\u2009<i>n</i></span>, next square is painted in color <span class=\"tex-span\">1</span>. If there is no more paint of the color Vika wants to use now, then she stops.</p><p>Square is always painted in only one color, and it takes exactly <span class=\"tex-span\">1</span> liter of paint. Your task is to calculate the maximum number of squares that might be painted, if Vika chooses right color to paint the first square.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>)\u00a0\u2014 the number of jars with colors Vika has.</p><p>The second line of the input contains a sequence of integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is equal to the number of liters of paint in the <span class=\"tex-span\"><i>i</i></span>-th jar, i.e. the number of liters of color <span class=\"tex-span\"><i>i</i></span> that Vika has.</p>",
+    "outputSpecification": "<p>The only line of the output should contain a single integer\u00a0\u2014 the maximum number of squares that Vika can paint if she follows the rules described above.</p>",
+    "samples": [
+        {
+            "input": "5<br/>2 4 2 3 3<br/>",
+            "output": "12<br/>"
+        },
+        {
+            "input": "3<br/>5 5 5<br/>",
+            "output": "15<br/>"
+        },
+        {
+            "input": "6<br/>10 10 10 1 10 10<br/>",
+            "output": "11<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the best strategy is to start painting using color <span class=\"tex-span\">4</span>. Then the squares will be painted in the following colors (from left to right): 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5.</p><p>In the second sample Vika can start to paint using any color.</p><p>In the third sample Vika should start painting using color number <span class=\"tex-span\">5</span>.</p>",
+    "contestId": 610,
+    "index": "B",
+    "name": "Vika and Squares",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 7101
+}
