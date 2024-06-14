@@ -1,0 +1,33 @@
+{
+    "title": "A. On Segment's Own Points",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Our old friend Alexey has finally entered the University of City N \u2014 the Berland capital. Alexey expected his father to get him a place to live in but his father said it was high time for Alexey to practice some financial independence. So, Alexey is living in a dorm. </p><p>The dorm has exactly one straight dryer \u2014 a <span class=\"tex-span\">100</span> centimeter long rope to hang clothes on. The dryer has got a coordinate system installed: the leftmost end of the dryer has coordinate <span class=\"tex-span\">0</span>, and the opposite end has coordinate <span class=\"tex-span\">100</span>. Overall, the university has <span class=\"tex-span\"><i>n</i></span> students. Dean's office allows <span class=\"tex-span\"><i>i</i></span>-th student to use the segment <span class=\"tex-span\">(<i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>)</span> of the dryer. However, the dean's office actions are contradictory and now one part of the dryer can belong to multiple students!</p><p>Alexey don't like when someone touch his clothes. That's why he want make it impossible to someone clothes touch his ones. So Alexey wonders: what is the total length of the parts of the dryer that he may use in a such way that clothes of the others <span class=\"tex-span\">(<i>n</i>\u2009-\u20091)</span> students aren't drying there. Help him! Note that Alexey, as the most respected student, has number 1.</p>",
+    "inputSpecification": "<p>The first line contains a positive integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>). The <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span>-th line contains integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>) \u2014\u00a0the endpoints of the corresponding segment for the <span class=\"tex-span\"><i>i</i></span>-th student.</p>",
+    "outputSpecification": "<p>On a single line print a single number <span class=\"tex-span\"><i>k</i></span>, equal to the sum of lengths of the parts of the dryer which are inside Alexey's segment and are outside all other segments.</p>",
+    "samples": [
+        {
+            "input": "3<br/>0 5<br/>2 8<br/>1 6<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3<br/>0 10<br/>1 5<br/>7 15<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>Note that it's not important are clothes drying on the touching segments (e.g. <span class=\"tex-span\">(0,\u20091)</span> and <span class=\"tex-span\">(1,\u20092)</span>) considered to be touching or not because you need to find the length of segments.</p><p>In the first test sample Alexey may use the only segment <span class=\"tex-span\">(0,\u20091)</span>. In such case his clothes will not touch clothes on the segments <span class=\"tex-span\">(1,\u20096)</span> and <span class=\"tex-span\">(2,\u20098)</span>. The length of segment <span class=\"tex-span\">(0,\u20091)</span> is 1.</p><p>In the second test sample Alexey may dry his clothes on segments <span class=\"tex-span\">(0,\u20091)</span> and <span class=\"tex-span\">(5,\u20097)</span>. Overall length of these segments is 3.</p>",
+    "contestId": 397,
+    "index": "A",
+    "name": "On Segment's Own Points",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 2593
+}

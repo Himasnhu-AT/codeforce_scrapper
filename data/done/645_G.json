@@ -1,0 +1,34 @@
+{
+    "title": "G. Armistice Area Apportionment",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>After a drawn-out mooclear arms race, Farmer John and the Mischievous Mess Makers have finally agreed to establish peace. They plan to divide the territory of Bovinia with a line passing through at least two of the <span class=\"tex-span\"><i>n</i></span> outposts scattered throughout the land. These outposts, remnants of the conflict, are located at the points <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>),\u2009(<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>),\u2009...,\u2009(<i>x</i><sub class=\"lower-index\"><i>n</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>n</i></sub>)</span>.</p><p>In order to find the optimal dividing line, Farmer John and Elsie have plotted a map of Bovinia on the coordinate plane. Farmer John's farm and the Mischievous Mess Makers' base are located at the points <span class=\"tex-span\"><i>P</i>\u2009=\u2009(<i>a</i>,\u20090)</span> and <span class=\"tex-span\"><i>Q</i>\u2009=\u2009(\u2009-\u2009<i>a</i>,\u20090)</span>, respectively. Because they seek a lasting peace, Farmer John and Elsie would like to minimize the maximum difference between the distances from any point on the line to <span class=\"tex-span\"><i>P</i></span> and <span class=\"tex-span\"><i>Q</i></span>.</p><p>Formally, define the <span class=\"tex-font-style-bf\">difference</span> of a line <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c7c068229f25f741e2c902b657ba04a42feb0752.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> relative to two points <span class=\"tex-span\"><i>P</i></span> and <span class=\"tex-span\"><i>Q</i></span> as the smallest real number <span class=\"tex-span\"><i>d</i></span> so that for all points <span class=\"tex-span\"><i>X</i></span> on line <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c7c068229f25f741e2c902b657ba04a42feb0752.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <span class=\"tex-span\">|<i>PX</i>\u2009-\u2009<i>QX</i>|\u2009\u2264\u2009<i>d</i></span>. (It is guaranteed that <span class=\"tex-span\"><i>d</i></span> exists and is unique.) They wish to find the line <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c7c068229f25f741e2c902b657ba04a42feb0752.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> passing through two distinct outposts <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>)</span> and <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>j</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>j</i></sub>)</span> such that the difference of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c7c068229f25f741e2c902b657ba04a42feb0752.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> relative to <span class=\"tex-span\"><i>P</i></span> and <span class=\"tex-span\"><i>Q</i></span> is minimized.</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u200910\u2009000</span>)\u00a0\u2014 the number of outposts and the coordinates of the farm and the base, respectively.</p><p>The following <span class=\"tex-span\"><i>n</i></span> lines describe the locations of the outposts as pairs of integers <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>)</span> (<span class=\"tex-span\">|<i>x</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>y</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910\u2009000</span>). These points are distinct from each other as well as from <span class=\"tex-span\"><i>P</i></span> and <span class=\"tex-span\"><i>Q</i></span>.</p>",
+    "outputSpecification": "<p>Print a single real number\u2014the difference of the optimal dividing line. Your answer will be considered correct if its absolute or relative error does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>. </p><p>Namely: let's assume that your answer is <span class=\"tex-span\"><i>a</i></span>, and the answer of the jury is <span class=\"tex-span\"><i>b</i></span>. The checker program will consider your answer correct, if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c97ba2000ebfad962bff7ffd8d043594f5ae1086.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "2 5<br/>1 0<br/>2 1<br/>",
+            "output": "7.2111025509<br/>"
+        },
+        {
+            "input": "3 6<br/>0 1<br/>2 5<br/>0 -3<br/>",
+            "output": "0.0000000000<br/>"
+        }
+    ],
+    "note": "<p>In the first sample case, the only possible line <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c7c068229f25f741e2c902b657ba04a42feb0752.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is <span class=\"tex-span\"><i>y</i>\u2009=\u2009<i>x</i>\u2009-\u20091</span>. It can be shown that the point <span class=\"tex-span\"><i>X</i></span> which maximizes <span class=\"tex-span\">|<i>PX</i>\u2009-\u2009<i>QX</i>|</span> is <span class=\"tex-span\">(13,\u200912)</span>, with <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d4f8c9a4f500c322cb3725c981acd02ebf8d8b35.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, which is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f488f414e882e7593bfa43cb26e56aaa8072b748.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the second sample case, if we pick the points <span class=\"tex-span\">(0,\u20091)</span> and <span class=\"tex-span\">(0,\u2009\u2009-\u20093)</span>, we get <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c7c068229f25f741e2c902b657ba04a42feb0752.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> as <span class=\"tex-span\"><i>x</i>\u2009=\u20090</span>. Because <span class=\"tex-span\"><i>PX</i>\u2009=\u2009<i>QX</i></span> on this line, the minimum possible difference is <span class=\"tex-span\">0</span>.</p>",
+    "contestId": 645,
+    "index": "G",
+    "name": "Armistice Area Apportionment",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "geometry"
+    ],
+    "solvedCount": 112
+}

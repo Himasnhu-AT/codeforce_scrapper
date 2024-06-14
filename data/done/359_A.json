@@ -1,0 +1,35 @@
+{
+    "title": "A. Table",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Simon has a rectangular table consisting of <span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>m</i></span> columns. Simon numbered the rows of the table from top to bottom starting from one and the columns \u2014 from left to right starting from one. We'll represent the cell on the <span class=\"tex-span\"><i>x</i></span>-th row and the <span class=\"tex-span\"><i>y</i></span>-th column as a pair of numbers <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>. The table corners are cells: <span class=\"tex-span\">(1,\u20091)</span>, <span class=\"tex-span\">(<i>n</i>,\u20091)</span>, <span class=\"tex-span\">(1,\u2009<i>m</i>)</span>, <span class=\"tex-span\">(<i>n</i>,\u2009<i>m</i>)</span>.</p><p>Simon thinks that some cells in this table are <span class=\"tex-font-style-it\">good</span>. Besides, it's known that no good cell is the corner of the table. </p><p>Initially, all cells of the table are colorless. Simon wants to color all cells of his table. In one move, he can choose any good cell of table <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>)</span>, an arbitrary corner of the table <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>)</span> and color all cells of the table <span class=\"tex-span\">(<i>p</i>,\u2009<i>q</i>)</span>, which meet both inequations: <span class=\"tex-span\"><i>min</i>(<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>)\u2009\u2264\u2009<i>p</i>\u2009\u2264\u2009<i>max</i>(<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>)</span>, <span class=\"tex-span\"><i>min</i>(<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>)\u2009\u2264\u2009<i>q</i>\u2009\u2264\u2009<i>max</i>(<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>)</span>.</p><p>Help Simon! Find the minimum number of operations needed to color all cells of the table. Note that you can color one cell multiple times.</p>",
+    "inputSpecification": "<p>The first line contains exactly two integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200950</span>).</p><p>Next <span class=\"tex-span\"><i>n</i></span> lines contain the description of the table cells. Specifically, the <span class=\"tex-span\"><i>i</i></span>-th line contains <span class=\"tex-span\"><i>m</i></span> space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>1</sub>,\u2009<i>a</i><sub class=\"lower-index\"><i>i</i>2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>im</i></sub></span>. If <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>ij</i></sub></span> equals zero, then cell <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> isn't good. Otherwise <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>ij</i></sub></span> equals one. It is guaranteed that at least one cell is good. It is guaranteed that no good cell is a corner.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the minimum number of operations Simon needs to carry out his idea.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>0 0 0<br/>0 1 0<br/>0 0 0<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "4 3<br/>0 0 0<br/>0 0 1<br/>1 0 0<br/>0 0 0<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, the sequence of operations can be like this:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1e1d18f70b24b6b4e4787f9ad03f4c4efa1d2538.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><ul> <li> For the first time you need to choose cell <span class=\"tex-span\">(2,\u20092)</span> and corner <span class=\"tex-span\">(1,\u20091)</span>. </li><li> For the second time you need to choose cell <span class=\"tex-span\">(2,\u20092)</span> and corner <span class=\"tex-span\">(3,\u20093)</span>. </li><li> For the third time you need to choose cell <span class=\"tex-span\">(2,\u20092)</span> and corner <span class=\"tex-span\">(3,\u20091)</span>. </li><li> For the fourth time you need to choose cell <span class=\"tex-span\">(2,\u20092)</span> and corner <span class=\"tex-span\">(1,\u20093)</span>. </li></ul><p>In the second sample the sequence of operations can be like this:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/fe388f8558c16c5e62a402191fa1eef18ae452e0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><ul> <li> For the first time you need to choose cell <span class=\"tex-span\">(3,\u20091)</span> and corner <span class=\"tex-span\">(4,\u20093)</span>. </li><li> For the second time you need to choose cell <span class=\"tex-span\">(2,\u20093)</span> and corner <span class=\"tex-span\">(1,\u20091)</span>.  </li></ul>",
+    "contestId": 359,
+    "index": "A",
+    "name": "Table",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 8411
+}

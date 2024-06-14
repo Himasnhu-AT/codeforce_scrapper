@@ -1,0 +1,34 @@
+{
+    "title": "A. QAQ",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>\"QAQ\" is a word to denote an expression of crying. Imagine \"Q\" as eyes with tears and \"A\" as a mouth.</p><p>Now Diamond has given Bort a string consisting of only uppercase English letters of length <span class=\"tex-span\"><i>n</i></span>. There is a great number of \"QAQ\" in the string (Diamond is so cute!).</p><center> <img class=\"tex-graphics\" height=\"259px\" src=\"https://espresso.codeforces.com/02bc051150b1d326466331f618a8d94f47565a28.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"341px\"/> <span class=\"tex-font-size-tiny\">illustration by \u732b\u5c4b https://twitter.com/nekoyaliu</span> </center><p>Bort wants to know how many subsequences \"<span class=\"tex-font-style-tt\">QAQ</span>\" are in the string Diamond has given. Note that the letters \"<span class=\"tex-font-style-tt\">QAQ</span>\" don't have to be consecutive, but the order of letters should be exact.</p>",
+    "inputSpecification": "<p>The only line contains a string of length <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>). It's guaranteed that the string only contains uppercase English letters.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the number of subsequences \"<span class=\"tex-font-style-tt\">QAQ</span>\" in the string.</p>",
+    "samples": [
+        {
+            "input": "QAQAQYSYIOIWIN<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "QAQQQZZYNOIWIN<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>In the first example there are <span class=\"tex-span\">4</span> subsequences \"<span class=\"tex-font-style-tt\">QAQ</span>\": \"<span class=\"tex-font-style-tt\"><span class=\"tex-font-style-bf\">QAQ</span>AQYSYIOIWIN</span>\", \"<span class=\"tex-font-style-tt\"><span class=\"tex-font-style-bf\">QA</span>QA<span class=\"tex-font-style-bf\">Q</span>YSYIOIWIN</span>\", \"<span class=\"tex-font-style-tt\"><span class=\"tex-font-style-bf\">Q</span>AQ<span class=\"tex-font-style-bf\">AQ</span>YSYIOIWIN</span>\", \"<span class=\"tex-font-style-tt\">QA<span class=\"tex-font-style-bf\">QAQ</span>YSYIOIWIN</span>\".</p>",
+    "contestId": 894,
+    "index": "A",
+    "name": "QAQ",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp"
+    ],
+    "solvedCount": 33207
+}

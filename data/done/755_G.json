@@ -1,0 +1,42 @@
+{
+    "title": "G. PolandBall and Many Other Balls",
+    "timeLimit": {
+        "value": 6.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>PolandBall is standing in a row with Many Other Balls. More precisely, there are exactly <span class=\"tex-span\"><i>n</i></span> Balls. Balls are proud of their home land\u00a0\u2014 and they want to prove that it's strong.</p><p>The Balls decided to start with selecting exactly <span class=\"tex-span\"><i>m</i></span> groups of Balls, each consisting either of single Ball or two neighboring Balls. Each Ball can join no more than one group.</p><p>The Balls really want to impress their Enemies. They kindly asked you to calculate number of such divisions for all <span class=\"tex-span\"><i>m</i></span> where <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009<i>k</i></span>. Output all these values modulo <span class=\"tex-span\">998244353</span>, the Enemies will be impressed anyway.</p>",
+    "inputSpecification": "<p>There are exactly two numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009&lt;\u20092<sup class=\"upper-index\">15</sup></span>), denoting the number of Balls and the maximim number of groups, respectively.</p>",
+    "outputSpecification": "<p>You should output a sequence of <span class=\"tex-span\"><i>k</i></span> values. The <span class=\"tex-span\"><i>i</i></span>-th of them should represent the sought number of divisions into exactly <span class=\"tex-span\"><i>i</i></span> groups, according to PolandBall's rules.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>",
+            "output": "5 5 1 "
+        },
+        {
+            "input": "1 1<br/>",
+            "output": "1 "
+        },
+        {
+            "input": "5 10<br/>",
+            "output": "9 25 25 9 1 0 0 0 0 0 "
+        }
+    ],
+    "note": "<p>In the first sample case we can divide Balls into groups as follows: </p><p><span class=\"tex-span\">{1}</span>, <span class=\"tex-span\">{2}</span>, <span class=\"tex-span\">{3}</span>, <span class=\"tex-span\">{12}</span>, <span class=\"tex-span\">{23}</span>.</p><p><span class=\"tex-span\">{12}{3}</span>, <span class=\"tex-span\">{1}{23}</span>, <span class=\"tex-span\">{1}{2}</span>, <span class=\"tex-span\">{1}{3}</span>, <span class=\"tex-span\">{2}{3}</span>.</p><p><span class=\"tex-span\">{1}{2}{3}</span>.</p><p>Therefore, output is: <span class=\"tex-font-style-tt\">5 5 1</span>.</p>",
+    "contestId": 755,
+    "index": "G",
+    "name": "PolandBall and Many Other Balls",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "divide and conquer",
+        "dp",
+        "fft",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 873
+}

@@ -1,0 +1,34 @@
+{
+    "title": "A. Shifts",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a table consisting of <span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>m</i></span> columns. Each cell of the table contains a number, 0 or 1. In one move we can choose some row of the table and cyclically shift its values either one cell to the left, or one cell to the right.</p><p>To <span class=\"tex-font-style-underline\">cyclically shift</span> a table row one cell to the right means to move the value of each cell, except for the last one, to the right neighboring cell, and to move the value of the last cell to the first cell. A cyclical shift of a row to the left is performed similarly, but in the other direction. For example, if we cyclically shift a row \"<span class=\"tex-font-style-tt\">00110</span>\" one cell to the right, we get a row \"<span class=\"tex-font-style-tt\">00011</span>\", but if we shift a row \"<span class=\"tex-font-style-tt\">00110</span>\" one cell to the left, we get a row \"<span class=\"tex-font-style-tt\">01100</span>\".</p><p>Determine the minimum number of moves needed to make some table column consist only of numbers 1.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers: <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the number of rows in the table and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>)\u00a0\u2014 the number of columns in the table. Then <span class=\"tex-span\"><i>n</i></span> lines follow, each of them contains <span class=\"tex-span\"><i>m</i></span> characters \"<span class=\"tex-font-style-tt\">0</span>\" or \"<span class=\"tex-font-style-tt\">1</span>\": the <span class=\"tex-span\"><i>j</i></span>-th character of the <span class=\"tex-span\"><i>i</i></span>-th line describes the contents of the cell in the <span class=\"tex-span\"><i>i</i></span>-th row and in the <span class=\"tex-span\"><i>j</i></span>-th column of the table.</p><p>It is guaranteed that the description of the table contains no other characters besides \"<span class=\"tex-font-style-tt\">0</span>\" and \"<span class=\"tex-font-style-tt\">1</span>\".</p>",
+    "outputSpecification": "<p>Print a single number: the minimum number of moves needed to get only numbers 1 in some column of the table. If this is impossible, print -1.</p>",
+    "samples": [
+        {
+            "input": "3 6<br/>101010<br/>000100<br/>100000<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "2 3<br/>111<br/>000<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample one way to achieve the goal with the least number of moves is as follows: cyclically shift the second row to the right once, then shift the third row to the left twice. Then the table column before the last one will contain only 1s.</p><p>In the second sample one can't shift the rows to get a column containing only 1s.</p>",
+    "contestId": 229,
+    "index": "A",
+    "name": "Shifts",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "two pointers"
+    ],
+    "solvedCount": 3456
+}

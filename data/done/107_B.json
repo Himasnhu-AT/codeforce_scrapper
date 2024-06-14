@@ -1,0 +1,40 @@
+{
+    "title": "B. Basketball Team",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>As a German University in Cairo (GUC) student and a basketball player, Herr Wafa was delighted once he heard the news. GUC is finally participating in the Annual Basketball Competition (ABC). </p><p>A team is to be formed of <span class=\"tex-span\"><i>n</i></span> players, all of which are GUC students. However, the team might have players belonging to different departments. There are <span class=\"tex-span\"><i>m</i></span> departments in GUC, numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span>. Herr Wafa's department has number <span class=\"tex-span\"><i>h</i></span>. For each department <span class=\"tex-span\"><i>i</i></span>, Herr Wafa knows number <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span> \u2014 how many students who play basketball belong to this department.</p><p>Herr Wafa was also able to guarantee a spot on the team, using his special powers. But since he hates floating-point numbers, he needs your help at finding the probability that he will have at least one teammate belonging to his department. </p><p>Note that every possible team containing Herr Wafa is equally probable. Consider all the students different from each other.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>h</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100,\u20091\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20091000,\u20091\u2009\u2264\u2009<i>h</i>\u2009\u2264\u2009<i>m</i></span>) \u2014 the number of players on the team, the number of departments in GUC and Herr Wafa's department, correspondingly. </p><p>The second line contains a single-space-separated list of <span class=\"tex-span\"><i>m</i></span> integers <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>), denoting the number of students in the <span class=\"tex-span\"><i>i</i></span>-th department. Note that <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>h</i></sub></span> includes Herr Wafa.</p>",
+    "outputSpecification": "<p>Print the probability that Herr Wafa will have at least one teammate from his department. If there is not enough basketball players in GUC to participate in ABC, print -1. The answer will be accepted if it has absolute or relative error not exceeding <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "3 2 1<br/>2 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3 2 1<br/>1 1<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "3 2 1<br/>2 2<br/>",
+            "output": "0.666667<br/>"
+        }
+    ],
+    "note": "<p>In the first example all 3 players (2 from department 1 and 1 from department 2) must be chosen for the team. Both players from Wafa's departments will be chosen, so he's guaranteed to have a teammate from his department.</p><p>In the second example, there are not enough players.</p><p>In the third example, there are three possibilities to compose the team containing Herr Wafa. In two of them the other player from Herr Wafa's department is part of the team.</p>",
+    "contestId": 107,
+    "index": "B",
+    "name": "Basketball Team",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "probabilities"
+    ],
+    "solvedCount": 3307
+}

@@ -1,0 +1,45 @@
+{
+    "title": "B. Leha and another game about graph",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Leha plays a computer game, where is on each level is given a connected graph with <span class=\"tex-span\"><i>n</i></span> vertices and <span class=\"tex-span\"><i>m</i></span> edges. Graph can contain multiple edges, but can not contain self loops. Each vertex has an integer <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span>, which can be equal to <span class=\"tex-span\">0</span>, <span class=\"tex-span\">1</span> or <span class=\"tex-span\">\u2009-\u20091</span>. To pass the level, he needs to find a \u00abgood\u00bb subset of edges of the graph or say, that it doesn't exist. Subset is called \u00abgood\u00bb, if by by leaving only edges from this subset in the original graph, we obtain the following: for every vertex i, <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span>\u2009=\u2009\u2009-\u20091 or it's degree modulo 2 is equal to <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span>. Leha wants to pass the game as soon as possible and ask you to help him. In case of multiple correct answers, print any of them.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\"><i>n</i>\u2009-\u20091\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 number of vertices and edges.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\">1</sub>,\u2009<i>d</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>d</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u20091\u2009\u2264\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091</span>) \u2014 numbers on the vertices.</p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines contains two integers <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i>,\u2009<i>v</i>\u2009\u2264\u2009<i>n</i></span>) \u2014 edges. It's guaranteed, that graph in the input is connected.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\">\u2009-\u20091</span> in a single line, if solution doesn't exist. Otherwise in the first line <span class=\"tex-span\"><i>k</i></span> \u2014 number of edges in a subset. In the next <span class=\"tex-span\"><i>k</i></span> lines indexes of edges. Edges are numerated in order as they are given in the input, starting from <span class=\"tex-span\">1</span>.</p>",
+    "samples": [
+        {
+            "input": "1 0<br/>1<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "4 5<br/>0 0 0 -1<br/>1 2<br/>2 3<br/>3 4<br/>1 4<br/>2 4<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "2 1<br/>1 1<br/>1 2<br/>",
+            "output": "1<br/>1<br/>"
+        },
+        {
+            "input": "3 3<br/>0 -1 1<br/>1 2<br/>2 3<br/>1 3<br/>",
+            "output": "1<br/>2<br/>"
+        }
+    ],
+    "note": "<p>In the first sample we have single vertex without edges. It's degree is 0 and we can not get 1.</p>",
+    "contestId": 840,
+    "index": "B",
+    "name": "Leha and another game about graph",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "graphs"
+    ],
+    "solvedCount": 2297
+}

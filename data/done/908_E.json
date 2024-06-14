@@ -1,0 +1,36 @@
+{
+    "title": "E. New Year and Entity Enumeration",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an integer <span class=\"tex-span\"><i>m</i></span>.</p><p>Let <span class=\"tex-span\"><i>M</i>\u2009=\u20092<sup class=\"upper-index\"><i>m</i></sup>\u2009-\u20091</span>.</p><p>You are also given a set of <span class=\"tex-span\"><i>n</i></span> integers denoted as the set <span class=\"tex-span\"><i>T</i></span>. The integers will be provided in base 2 as <span class=\"tex-span\"><i>n</i></span> binary strings of length <span class=\"tex-span\"><i>m</i></span>.</p><p>A set of integers <span class=\"tex-span\"><i>S</i></span> is called \"good\" if the following hold. </p><ol> <li> If <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bdd92a4ea989f8b02242b10d20f3e6651768d36d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, then <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/2b05e10a1bcd048ade555b1e19b7601ab4b57e8f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. </li><li> If <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/2fedfcf521d51216800061f2361f0f6777c812d6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, then <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7a9c4a51c69b64343f8136f1f16fb82617af2211.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c9ceda490b02c44459a71f3fcf17855765b850f0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> All elements of <span class=\"tex-span\"><i>S</i></span> are less than or equal to <span class=\"tex-span\"><i>M</i></span>. </li></ol><p>Here, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/710f28a2927ce8a5a35e7f62fe8d16bc2c056701.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/cbf1449cb059fc2e0b4064ebe09922035532005c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> refer to the bitwise XOR and bitwise AND operators, respectively.</p><p>Count the number of good sets <span class=\"tex-span\"><i>S</i></span>, modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The first line will contain two integers <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20091\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009<i>min</i>(2<sup class=\"upper-index\"><i>m</i></sup>,\u200950)</span>).</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines will contain the elements of <span class=\"tex-span\"><i>T</i></span>. Each line will contain exactly <span class=\"tex-span\"><i>m</i></span> zeros and ones. Elements of <span class=\"tex-span\"><i>T</i></span> will be distinct.</p>",
+    "outputSpecification": "<p>Print a single integer, the number of good sets modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>. </p>",
+    "samples": [
+        {
+            "input": "5 3<br/>11010<br/>00101<br/>11000<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "30 2<br/>010101010101010010101010101010<br/>110110110110110011011011011011<br/>",
+            "output": "860616440<br/>"
+        }
+    ],
+    "note": "<p>An example of a valid set <span class=\"tex-span\"><i>S</i></span> is {00000, 00101, 00010, 00111, 11000, 11010, 11101, 11111}.</p>",
+    "contestId": 908,
+    "index": "E",
+    "name": "New Year and Entity Enumeration",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 738
+}

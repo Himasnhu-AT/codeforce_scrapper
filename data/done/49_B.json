@@ -1,0 +1,33 @@
+{
+    "title": "B. Sum",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya studies positional numeral systems. Unfortunately, he often forgets to write the base of notation in which the expression is written. Once he saw a note in his notebook saying <span class=\"tex-span\"><i>a</i>\u2009+\u2009<i>b</i>\u2009=\u2009?</span>, and that the base of the positional notation wasn\u2019t written anywhere. Now Vasya has to choose a base <span class=\"tex-span\"><i>p</i></span> and regard the expression as written in the base <span class=\"tex-span\"><i>p</i></span> positional notation. Vasya understood that he can get different results with different bases, and some bases are even invalid. For example, expression <span class=\"tex-span\">78\u2009+\u200987</span> in the base 16 positional notation is equal to <span class=\"tex-span\"><i>FF</i><sub class=\"lower-index\">16</sub></span>, in the base 15 positional notation it is equal to <span class=\"tex-span\">110<sub class=\"lower-index\">15</sub></span>, in the base 10 one \u2014 to <span class=\"tex-span\">165<sub class=\"lower-index\">10</sub></span>, in the base 9 one \u2014 to <span class=\"tex-span\">176<sub class=\"lower-index\">9</sub></span>, and in the base 8 or lesser-based positional notations the expression is invalid as all the numbers should be strictly less than the positional notation base. Vasya got interested in what is the length of the longest possible expression value. Help him to find this length.</p><p>The length of a number should be understood as the number of numeric characters in it. For example, the length of the longest answer for <span class=\"tex-span\">78\u2009+\u200987\u2009=\u2009?</span> is 3. It is calculated like that in the base 15 (<span class=\"tex-span\">110<sub class=\"lower-index\">15</sub></span>), base 10 (<span class=\"tex-span\">165<sub class=\"lower-index\">10</sub></span>), base 9 (<span class=\"tex-span\">176<sub class=\"lower-index\">9</sub></span>) positional notations, for example, and in some other ones.</p>",
+    "inputSpecification": "<p>The first letter contains two space-separated numbers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u20091000</span>) which represent the given summands.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the length of the longest answer.</p>",
+    "samples": [
+        {
+            "input": "78 87<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "1 1<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 49,
+    "index": "B",
+    "name": "Sum",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 2405
+}

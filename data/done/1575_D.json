@@ -1,0 +1,47 @@
+{
+    "title": "D. Divisible by Twenty-Five",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mr. Chanek has an integer represented by a string $$$s$$$. Zero or more digits have been erased and are denoted by the character <span class=\"tex-font-style-tt\">_</span>. There are also zero or more digits marked by the character <span class=\"tex-font-style-tt\">X</span>, meaning they're the same digit.</p><p>Mr. Chanek wants to count the number of possible integer $$$s$$$, where $$$s$$$ is divisible by $$$25$$$. Of course, $$$s$$$ must not contain any leading zero. He can replace the character <span class=\"tex-font-style-tt\">_</span> with any digit. He can also replace the character <span class=\"tex-font-style-tt\">X</span> with any digit, but it must be the same for every character <span class=\"tex-font-style-tt\">X</span>.</p><p>As a note, a leading zero is any <span class=\"tex-font-style-tt\">0</span> digit that comes before the first nonzero digit in a number string in positional notation. For example, <span class=\"tex-font-style-tt\">0025</span> has two leading zeroes. An exception is the integer zero, (<span class=\"tex-font-style-tt\">0</span> has no leading zero, but <span class=\"tex-font-style-tt\">0000</span> has three leading zeroes).</p>",
+    "inputSpecification": "<p>One line containing the string $$$s$$$ ($$$1 \\leq |s| \\leq 8$$$). The string $$$s$$$ consists of the characters <span class=\"tex-font-style-tt\">0</span>, <span class=\"tex-font-style-tt\">1</span>, <span class=\"tex-font-style-tt\">2</span>, <span class=\"tex-font-style-tt\">3</span>, <span class=\"tex-font-style-tt\">4</span>, <span class=\"tex-font-style-tt\">5</span>, <span class=\"tex-font-style-tt\">6</span>, <span class=\"tex-font-style-tt\">7</span>, <span class=\"tex-font-style-tt\">8</span>, <span class=\"tex-font-style-tt\">9</span>, <span class=\"tex-font-style-tt\">_</span>, and <span class=\"tex-font-style-tt\">X</span>.</p>",
+    "outputSpecification": "<p>Output an integer denoting the number of possible integer $$$s$$$.</p>",
+    "samples": [
+        {
+            "input": "\n25\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n_00\n",
+            "output": "\n9\n"
+        },
+        {
+            "input": "\n_XX\n",
+            "output": "\n9\n"
+        },
+        {
+            "input": "\n0\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n0_25\n",
+            "output": "\n0\n"
+        }
+    ],
+    "note": "<p>In the first example, the only possible $$$s$$$ is $$$25$$$.</p><p>In the second and third example, $$$s \\in \\{100, 200,300,400,500,600,700,800,900\\}$$$.</p><p>In the fifth example, all possible $$$s$$$ will have at least one leading zero.</p>",
+    "contestId": 1575,
+    "index": "D",
+    "name": "Divisible by Twenty-Five",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp"
+    ],
+    "solvedCount": 2432
+}

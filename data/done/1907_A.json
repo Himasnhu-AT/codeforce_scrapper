@@ -1,0 +1,29 @@
+{
+    "title": "A. Rook",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>As you probably know, chess is a game that is played on a board with 64 squares arranged in an $$$8\\times 8$$$ grid. Columns of this board are labeled with letters from <span class=\"tex-font-style-bf\">a</span> to <span class=\"tex-font-style-bf\">h</span>, and rows are labeled with digits from <span class=\"tex-font-style-bf\">1</span> to <span class=\"tex-font-style-bf\">8</span>. Each square is described by the row and column it belongs to.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1c4decab4bd3b54908882afbdc0546269ef03ded.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The rook is a piece in the game of chess. During its turn, it may move any non-zero number of squares horizontally or vertically. Your task is to find all possible moves for a rook on an empty chessboard.</p>",
+    "inputSpecification": "<p>The first line of input contains single integer $$$t$$$ ($$$1 \\le t \\le 64$$$)\u00a0\u2014 the number of test cases. The descriptions of test cases follow.</p><p>Each test case contains one string of two characters, description of the square where rook is positioned. The first character is a letter from <span class=\"tex-font-style-bf\">a</span> to <span class=\"tex-font-style-bf\">h</span>, the label of column, and the second character is a digit from <span class=\"tex-font-style-bf\">1</span> to <span class=\"tex-font-style-bf\">8</span>, the label of row. </p><p>The same position may occur in more than one test case.</p>",
+    "outputSpecification": "<p>For each test case, output descriptions of all squares where the rook can move, in the same format as in the input. </p><p>You can output squares in any order per test case.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">d5</div>",
+            "output": "\nd1\nd2\nb5\ng5\nh5\nd3\ne5\nf5\nd8\na5\nd6\nd7\nc5\nd4\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1907,
+    "index": "A",
+    "name": "Rook",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 34702
+}

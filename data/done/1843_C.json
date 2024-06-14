@@ -1,0 +1,32 @@
+{
+    "title": "C. Sum in Binary Tree",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vanya really likes math. One day when he was solving another math problem, he came up with an interesting tree. This tree is built as follows.</p><p>Initially, the tree has only one vertex with the number $$$1$$$\u00a0\u2014 the root of the tree. Then, Vanya adds two children to it, assigning them consecutive numbers\u00a0\u2014 $$$2$$$ and $$$3$$$, respectively. After that, he will add children to the vertices in increasing order of their numbers, starting from $$$2$$$, assigning their children the minimum unused indices. As a result, Vanya will have an infinite tree with the root in the vertex $$$1$$$, where each vertex will have exactly two children, and the vertex numbers will be arranged sequentially by layers.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/3fe851b2505ce276dabd4a63ad7472346f98f9a8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">Part of Vanya's tree.</span> </center><p>Vanya wondered what the sum of the vertex numbers on the path from the vertex with number $$$1$$$ to the vertex with number $$$n$$$ in such a tree is equal to. Since Vanya doesn't like counting, he asked you to help him find this sum.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of test cases.</p><p>This is followed by $$$t$$$ lines\u00a0\u2014 the description of the test cases. Each line contains one integer $$$n$$$ ($$$1 \\le n \\le 10^{16}$$$)\u00a0\u2014 the number of vertex for which Vanya wants to count the sum of vertex numbers on the path from the root to that vertex.</p>",
+    "outputSpecification": "<p>For each test case, print one integer\u00a0\u2014 the desired sum.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">37</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">10000000000000000</div><div class=\"test-example-line test-example-line-even test-example-line-6\">15</div>",
+            "output": "\n4\n18\n71\n1\n19999999999999980\n26\n"
+        }
+    ],
+    "note": "<p>In the first test case of example on the path from the root to the vertex $$$3$$$ there are two vertices $$$1$$$ and $$$3$$$, their sum equals $$$4$$$.</p><p>In the second test case of example on the path from the root to the vertex with number $$$10$$$ there are vertices $$$1$$$, $$$2$$$, $$$5$$$, $$$10$$$, sum of their numbers equals $$$1+2+5+10 = 18$$$. </p>",
+    "contestId": 1843,
+    "index": "C",
+    "name": "Sum in Binary Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "math",
+        "trees"
+    ],
+    "solvedCount": 31547
+}

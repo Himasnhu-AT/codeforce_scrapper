@@ -1,0 +1,33 @@
+{
+    "title": "F. Li Hua and Path",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Li Hua has a tree of $$$n$$$ vertices and $$$n-1$$$ edges. The vertices are numbered from $$$1$$$ to $$$n$$$.</p><p>A pair of vertices $$$(u,v)$$$ ($$$u &lt; v$$$) is considered <span class=\"tex-font-style-it\">cute</span> if <span class=\"tex-font-style-bf\">exactly one</span> of the following two statements is true:</p><ul> <li> $$$u$$$ is the vertex with the minimum index among all vertices on the path $$$(u,v)$$$. </li><li> $$$v$$$ is the vertex with the maximum index among all vertices on the path $$$(u,v)$$$.</li></ul><p>There will be $$$m$$$ operations. In each operation, he decides an integer $$$k_j$$$, then inserts a vertex numbered $$$n+j$$$ to the tree, connecting with the vertex numbered $$$k_j$$$.</p><p>He wants to calculate the number of <span class=\"tex-font-style-it\">cute</span> pairs before operations and after each operation.</p><p>Suppose you were Li Hua, please solve this problem.</p>",
+    "inputSpecification": "<p>The first line contains the single integer $$$n$$$ ($$$2\\le n\\le 2\\cdot 10^5$$$)\u00a0\u2014 the number of vertices in the tree.</p><p>Next $$$n-1$$$ lines contain the edges of the tree. The $$$i$$$-th line contains two integers $$$u_i$$$ and $$$v_i$$$ ($$$1\\le u_i,v_i\\le n$$$; $$$u_i\\ne v_i$$$)\u00a0\u2014 the corresponding edge. The given edges form a tree.</p><p>The next line contains the single integer $$$m$$$ ($$$1\\le m\\le 2\\cdot 10^5$$$)\u00a0\u2014 the number of operations.</p><p>Next $$$m$$$ lines contain operations\u00a0\u2014 one operation per line. The $$$j$$$-th operation contains one integer $$$k_j$$$ ($$$1\\le k_j &lt; n+j$$$)\u00a0\u2014 a vertex.</p>",
+    "outputSpecification": "<p>Print $$$m+1$$$ integers\u00a0\u2014 the number of <span class=\"tex-font-style-it\">cute</span> pairs before operations and after each operation.</p>",
+    "samples": [
+        {
+            "input": "\n7\n2 1\n1 3\n1 4\n4 6\n4 7\n6 5\n2\n5\n6\n",
+            "output": "\n11\n15\n19\n"
+        }
+    ],
+    "note": "<p>The initial tree is shown in the following picture:</p><center> <table class=\"tex-tabular\"><tbody><tr><td class=\"tex-tabular-text-align-center\"><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/948d664c2d1e9bb1fc0a850c483eee67301e7060.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></td></tr></tbody></table> </center><p>There are $$$11$$$ <span class=\"tex-font-style-it\">cute</span> pairs\u00a0\u2014 $$$(1,5),(2,3),(2,4),(2,6),(2,7),(3,4),(3,6),(3,7),(4,5),(5,7),(6,7)$$$.</p><p>Similarly, we can count the <span class=\"tex-font-style-it\">cute</span> pairs after each operation and the result is $$$15$$$ and $$$19$$$.</p>",
+    "contestId": 1797,
+    "index": "F",
+    "name": "Li Hua and Path",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "divide and conquer",
+        "dsu",
+        "trees"
+    ],
+    "solvedCount": 335
+}

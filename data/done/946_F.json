@@ -1,0 +1,35 @@
+{
+    "title": "F. Fibonacci String Subsequences",
+    "timeLimit": {
+        "value": 3.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a binary string <span class=\"tex-span\"><i>s</i></span> (each character of this string is either <span class=\"tex-font-style-tt\">0</span> or <span class=\"tex-font-style-tt\">1</span>).</p><p>Let's denote the cost of string <span class=\"tex-span\"><i>t</i></span> as the number of occurences of <span class=\"tex-span\"><i>s</i></span> in <span class=\"tex-span\"><i>t</i></span>. For example, if <span class=\"tex-span\"><i>s</i></span> is <span class=\"tex-font-style-tt\">11</span> and <span class=\"tex-span\"><i>t</i></span> is <span class=\"tex-font-style-tt\">111011</span>, then the cost of <span class=\"tex-span\"><i>t</i></span> is <span class=\"tex-span\">3</span>.</p><p>Let's also denote the Fibonacci strings sequence as follows:</p><ul><li> <span class=\"tex-span\"><i>F</i>(0)</span> is <span class=\"tex-font-style-tt\">0</span>;</li><li> <span class=\"tex-span\"><i>F</i>(1)</span> is <span class=\"tex-font-style-tt\">1</span>;</li><li> <span class=\"tex-span\"><i>F</i>(<i>i</i>)\u2009=\u2009<i>F</i>(<i>i</i>\u2009-\u20091)\u2009+\u2009<i>F</i>(<i>i</i>\u2009-\u20092)</span> if <span class=\"tex-span\"><i>i</i>\u2009&gt;\u20091</span>, where <span class=\"tex-span\">\u2009+\u2009</span> means the concatenation of two strings.</li></ul><p>Your task is to calculate the sum of costs of all subsequences of the string <span class=\"tex-span\"><i>F</i>(<i>x</i>)</span>. Since answer may be large, calculate it modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009100</span>) \u2014 the length of <span class=\"tex-span\"><i>s</i></span> and the index of a Fibonacci string you are interested in, respectively.</p><p>The second line contains <span class=\"tex-span\"><i>s</i></span> \u2014 a string consisting of <span class=\"tex-span\"><i>n</i></span> characters. Each of these characters is either <span class=\"tex-font-style-tt\">0</span> or <span class=\"tex-font-style-tt\">1</span>.</p>",
+    "outputSpecification": "<p>Print the only integer \u2014 the sum of costs of all subsequences of the string <span class=\"tex-span\"><i>F</i>(<i>x</i>)</span>, taken modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>. </p>",
+    "samples": [
+        {
+            "input": "2 4<br/>11<br/>",
+            "output": "14<br/>"
+        },
+        {
+            "input": "10 100<br/>1010101010<br/>",
+            "output": "553403224<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 946,
+    "index": "F",
+    "name": "Fibonacci String Subsequences",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "matrices"
+    ],
+    "solvedCount": 533
+}

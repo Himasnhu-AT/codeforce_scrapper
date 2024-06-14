@@ -1,0 +1,33 @@
+{
+    "title": "C. Choosing Balls",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are <span class=\"tex-span\"><i>n</i></span> balls. They are arranged in a row. Each ball has a color (for convenience an integer) and an integer value. The color of the <span class=\"tex-span\"><i>i</i></span>-th ball is <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> and the value of the <span class=\"tex-span\"><i>i</i></span>-th ball is <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>Squirrel Liss chooses some balls and makes a new sequence without changing the relative order of the balls. She wants to maximize the value of this sequence.</p><p>The value of the sequence is defined as the sum of following values for each ball (where <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> are given constants):</p><ul> <li> If the ball is not in the beginning of the sequence and the color of the ball is same as previous ball's color, add (the value of the ball) <span class=\"tex-span\">\u2009\u00d7\u2009</span> <span class=\"tex-span\"><i>a</i></span>. </li><li> Otherwise, add (the value of the ball) <span class=\"tex-span\">\u2009\u00d7\u2009</span> <span class=\"tex-span\"><i>b</i></span>. </li></ul><p>You are given <span class=\"tex-span\"><i>q</i></span> queries. Each query contains two integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>. For each query find the maximal value of the sequence she can make when <span class=\"tex-span\"><i>a</i>\u2009=\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i>\u2009=\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>Note that the new sequence can be <span class=\"tex-font-style-bf\">empty</span>, and the value of an empty sequence is defined as zero.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>;\u00a01\u2009\u2264\u2009<i>q</i>\u2009\u2264\u2009500</span>). The second line contains <span class=\"tex-span\"><i>n</i></span> integers: <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">1</sub>,\u2009<i>v</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>v</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">|<i>v</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>). The third line contains <span class=\"tex-span\"><i>n</i></span> integers: <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub>,\u2009<i>c</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>c</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>).</p><p>The following <span class=\"tex-span\"><i>q</i></span> lines contain the values of the constants <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> for queries. The <span class=\"tex-span\"><i>i</i></span>-th of these lines contains two integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">|<i>a</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>b</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p><p>In each line integers are separated by single spaces.</p>",
+    "outputSpecification": "<p>For each query, output a line containing an integer \u2014 the answer to the query. The <span class=\"tex-span\"><i>i</i></span>-th line contains the answer to the <span class=\"tex-span\"><i>i</i></span>-th query in the input order.</p><p>Please, do not write the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "6 3<br/>1 -2 3 4 0 -1<br/>1 2 1 2 1 1<br/>5 1<br/>-2 1<br/>1 0<br/>",
+            "output": "20<br/>9<br/>4<br/>"
+        },
+        {
+            "input": "4 1<br/>-3 6 -1 2<br/>1 2 3 1<br/>1 -1<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": "<p>In the first example, to achieve the maximal value:</p><ul> <li> In the first query, you should select 1st, 3rd, and 4th ball. </li><li> In the second query, you should select 3rd, 4th, 5th and 6th ball. </li><li> In the third query, you should select 2nd and 4th ball. </li></ul><p>Note that there may be other ways to achieve the maximal value.</p>",
+    "contestId": 264,
+    "index": "C",
+    "name": "Choosing Balls",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp"
+    ],
+    "solvedCount": 2779
+}

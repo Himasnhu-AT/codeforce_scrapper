@@ -1,0 +1,39 @@
+{
+    "title": "E. Opening Portals",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Pavel plays a famous computer game. A player is responsible for a whole country and he can travel there freely, complete quests and earn experience.</p><p>This country has <span class=\"tex-span\"><i>n</i></span> cities connected by <span class=\"tex-span\"><i>m</i></span> bidirectional roads of different lengths so that it is possible to get from any city to any other one. There are portals in <span class=\"tex-span\"><i>k</i></span> of these cities. At the beginning of the game all portals are closed. When a player visits a portal city, the portal opens. Strange as it is, one can teleport from an open portal to an open one. The teleportation takes no time and that enables the player to travel quickly between rather remote regions of the country.</p><p>At the beginning of the game Pavel is in city number <span class=\"tex-span\">1</span>. He wants to open all portals as quickly as possible. How much time will he need for that?</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) that show how many cities and roads are in the game.</p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines contains the description of a road as three space-separated integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the numbers of the cities connected by the <span class=\"tex-span\"><i>i</i></span>-th road and the time needed to go from one city to the other one by this road. Any two cities are connected by no more than one road. It is guaranteed that we can get from any city to any other one, moving along the roads of the country.</p><p>The next line contains integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i></span>) \u2014 the number of portals.</p><p>The next line contains <span class=\"tex-span\"><i>k</i></span> space-separated integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">2</sub></span>, ..., <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>k</i></sub></span> \u2014 numbers of the cities with installed portals. Each city has no more than one portal.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the minimum time a player needs to open all portals.</p><p>Please, do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in C++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>1 2 1<br/>1 3 1<br/>2 3 1<br/>3<br/>1 2 3<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "4 3<br/>1 2 1<br/>2 3 5<br/>2 4 10<br/>3<br/>2 3 4<br/>",
+            "output": "16<br/>"
+        },
+        {
+            "input": "4 3<br/>1 2 1000000000<br/>2 3 1000000000<br/>3 4 1000000000<br/>4<br/>1 2 3 4<br/>",
+            "output": "3000000000<br/>"
+        }
+    ],
+    "note": "<p>In the second sample the player has to come to city <span class=\"tex-span\">2</span>, open a portal there, then go to city <span class=\"tex-span\">3</span>, open a portal there, teleport back to city <span class=\"tex-span\">2</span> and finally finish the journey in city <span class=\"tex-span\">4</span>.</p>",
+    "contestId": 196,
+    "index": "E",
+    "name": "Opening Portals",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dsu",
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 835
+}

@@ -1,0 +1,29 @@
+{
+    "title": "C. Digits",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"input-specification\"><div class=\"section-title\">Input</div><p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 32$$$)\u00a0\u2014 the number of test cases.</p><p>Each test case contains $$$n$$$ lines. The $$$i$$$-th line contains an integer $$$a_i$$$ ($$$1 \\le a_i \\le 9$$$).</p><p>The sum of $$$n$$$ over all test cases doesn't exceed $$$155$$$.</p></div><div class=\"output-specification\"><div class=\"section-title\">Output</div><p>For each test case, print one integer\u00a0\u2014 the answer.</p></div><div class=\"sample-tests\"><div class=\"section-title\">Example</div><div class=\"sample-test\"><div class=\"input\"><div class=\"title\">Input</div><pre>\n3\n2\n1\n4\n7\n1\n2\n3\n5\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n8\n7\n30\n</pre></div></div></div>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 32$$$)\u00a0\u2014 the number of test cases.</p><p>Each test case contains $$$n$$$ lines. The $$$i$$$-th line contains an integer $$$a_i$$$ ($$$1 \\le a_i \\le 9$$$).</p><p>The sum of $$$n$$$ over all test cases doesn't exceed $$$155$$$.</p>",
+    "outputSpecification": "<p>For each test case, print one integer\u00a0\u2014 the answer.</p>",
+    "samples": [
+        {
+            "input": "\n3\n2\n1\n4\n7\n1\n2\n3\n5\n",
+            "output": "\n8\n7\n30\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1812,
+    "index": "C",
+    "name": "Digits",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 1235
+}

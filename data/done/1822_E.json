@@ -1,0 +1,31 @@
+{
+    "title": "E. Making Anti-Palindromes",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a string $$$s$$$, consisting of lowercase English letters. In one operation, you are allowed to swap any two characters of the string $$$s$$$.</p><p>A string $$$s$$$ of length $$$n$$$ is called an <span class=\"tex-font-style-it\">anti-palindrome</span>, if $$$s[i] \\ne s[n - i + 1]$$$ for every $$$i$$$ ($$$1 \\le i \\le n$$$). For example, the strings <span class=\"tex-font-style-tt\">\"codeforces\"</span>, <span class=\"tex-font-style-tt\">\"string\"</span> are <span class=\"tex-font-style-it\">anti-palindromes</span>, but the strings <span class=\"tex-font-style-tt\">\"abacaba\"</span>, <span class=\"tex-font-style-tt\">\"abc\"</span>, <span class=\"tex-font-style-tt\">\"test\"</span> are not.</p><p>Determine the minimum number of operations required to make the string $$$s$$$ an <span class=\"tex-font-style-it\">anti-palindrome</span>, or output $$$-1$$$, if this is not possible.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of test cases. The description of the test cases follows.</p><p>Each test case consists of two lines. The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the length of the string $$$s$$$.</p><p>The second line contains the string $$$s$$$, consisting of $$$n$$$ lowercase English letters.</p><p>The sum of $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer\u00a0\u2014 the minimum number of operations required to make the string $$$s$$$ an <span class=\"tex-font-style-it\">anti-palindrome</span>, or $$$-1$$$ if this is not possible.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">codeforces</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">abc</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">taarrrataa</div><div class=\"test-example-line test-example-line-even test-example-line-4\">10</div><div class=\"test-example-line test-example-line-even test-example-line-4\">dcbdbdcccc</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">wwww</div><div class=\"test-example-line test-example-line-even test-example-line-6\">12</div><div class=\"test-example-line test-example-line-even test-example-line-6\">cabbaccabaac</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">aadaaaaddc</div><div class=\"test-example-line test-example-line-even test-example-line-8\">14</div><div class=\"test-example-line test-example-line-even test-example-line-8\">aacdaaaacadcdc</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">abccba</div><div class=\"test-example-line test-example-line-even test-example-line-10\">12</div><div class=\"test-example-line test-example-line-even test-example-line-10\">dcbcaebacccd</div>",
+            "output": "\n0\n-1\n1\n1\n-1\n3\n-1\n2\n2\n2\n"
+        }
+    ],
+    "note": "<p>In the first test case, the string <span class=\"tex-font-style-tt\">\"codeforces\"</span> is already an <span class=\"tex-font-style-it\">anti-palindrome</span>, so the answer is $$$0$$$.</p><p>In the second test case, it can be shown that the string <span class=\"tex-font-style-tt\">\"abc\"</span> cannot be transformed into an <span class=\"tex-font-style-it\">anti-palindrome</span> by performing the allowed operations, so the answer is $$$-1$$$.</p><p>In the third test case, it is enough to swap the second and the fifth characters of the string <span class=\"tex-font-style-tt\">\"taarrrataa\"</span>, and the new string <span class=\"tex-font-style-tt\">\"trararataa\"</span> will be an <span class=\"tex-font-style-it\">anti-palindrome</span>, so the answer is $$$1$$$.</p>",
+    "contestId": 1822,
+    "index": "E",
+    "name": "Making Anti-Palindromes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "math",
+        "strings"
+    ],
+    "solvedCount": 9858
+}

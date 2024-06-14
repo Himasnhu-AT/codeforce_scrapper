@@ -1,0 +1,35 @@
+{
+    "title": "A. Jeff and Digits",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Jeff's got <span class=\"tex-span\"><i>n</i></span> cards, each card contains either digit 0, or digit 5. Jeff can choose several cards and put them in a line so that he gets some number. What is the largest possible number divisible by 90 Jeff can make from the cards he's got?</p><p>Jeff must make the number without leading zero. At that, we assume that number 0 doesn't contain any leading zeroes. Jeff doesn't have to use all the cards.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">3</sup>)</span>. The next line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\">...</span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u20090</span> or <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u20095</span>). Number <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> represents the digit that is written on the <span class=\"tex-span\"><i>i</i></span>-th card.</p>",
+    "outputSpecification": "<p>In a single line print the answer to the problem \u2014 the maximum number, divisible by 90. If you can't make any divisible by 90 number from the cards, print -1.</p>",
+    "samples": [
+        {
+            "input": "4<br/>5 0 5 0<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "11<br/>5 5 5 5 5 5 5 5 0 5 5<br/>",
+            "output": "5555555550<br/>"
+        }
+    ],
+    "note": "<p>In the first test you can make only one number that is a multiple of 90 \u2014 <span class=\"tex-span\">0</span>.</p><p>In the second test you can make number <span class=\"tex-span\">5555555550</span>, it is a multiple of <span class=\"tex-span\">90</span>.</p>",
+    "contestId": 352,
+    "index": "A",
+    "name": "Jeff and Digits",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 24832
+}

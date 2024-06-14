@@ -1,0 +1,30 @@
+{
+    "title": "D. Chocolate Bar",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A chocolate bar has a rectangular shape and consists of <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> slices. In other words, a bar consists of <span class=\"tex-span\"><i>n</i></span> rows with <span class=\"tex-span\"><i>m</i></span> slices of chocolate in each row.</p><p>Each slice of chocolate is known to weigh 1 gram. Your task is to determine for each of the <span class=\"tex-span\"><i>q</i></span> chocolate bars whether it is possible to obtain a piece weighing <span class=\"tex-span\"><i>p</i></span> grams by breaking the bar several (possibly zero) times. The final piece of the chocolate bar should be whole, and breaks are made along the line of slices' section for the whole length of the current piece.</p>",
+    "inputSpecification": "<p>The first line contains the positive integer <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>q</i>\u2009\u2264\u2009100</span>) \u2014 the number of chocolate bars. </p><p>Each of the following <span class=\"tex-span\"><i>q</i></span> lines contains three positive integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>p</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>,\u2009<i>p</i>\u2009\u2264\u20091000</span>) \u2014 the size of the chocolate bar, and the weight of the piece which should be obtained.</p>",
+    "outputSpecification": "<p>The output should contain <span class=\"tex-span\"><i>q</i></span> lines and the <span class=\"tex-span\"><i>i</i></span>-th line must contain \"<span class=\"tex-font-style-tt\">Yes</span>\" (without the quotes), if it is possible to perform the task for <span class=\"tex-span\"><i>i</i></span>-th chocolate bar, or \"<span class=\"tex-font-style-tt\">No</span>\" otherwise.</p>",
+    "samples": [
+        {
+            "input": "2<br/>3 3 4<br/>4 4 7<br/>",
+            "output": "Yes<br/>No<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 683,
+    "index": "D",
+    "name": "Chocolate Bar",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "math"
+    ],
+    "solvedCount": 319
+}

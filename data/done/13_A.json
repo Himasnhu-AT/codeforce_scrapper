@@ -1,0 +1,34 @@
+{
+    "title": "A. Numbers",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Petya likes numbers a lot. He found that number 123 in base 16 consists of two digits: the first is 7 and the second is 11. So the sum of digits of 123 in base 16 is equal to 18.</p><p>Now he wonders what is an average value of sum of digits of the number <span class=\"tex-span\"><i>A</i></span> written in all bases from <span class=\"tex-span\">2</span> to <span class=\"tex-span\"><i>A</i>\u2009-\u20091</span>.</p><p>Note that all computations should be done in base 10. You should find the result as an irreducible fraction, written in base 10.</p>",
+    "inputSpecification": "<p>Input contains one integer number <span class=\"tex-span\"><i>A</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>A</i>\u2009\u2264\u20091000</span>).</p>",
+    "outputSpecification": "<p>Output should contain required average value in format \u00ab<span class=\"tex-font-style-tt\">X/Y</span>\u00bb, where <span class=\"tex-font-style-tt\">X</span> is the numerator and <span class=\"tex-font-style-tt\">Y</span> is the denominator.</p>",
+    "samples": [
+        {
+            "input": "5<br/>",
+            "output": "7/3<br/>"
+        },
+        {
+            "input": "3<br/>",
+            "output": "2/1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample number 5 written in all bases from 2 to 4 looks so: 101, 12, 11. Sums of digits are 2, 3 and 2, respectively.</p>",
+    "contestId": 13,
+    "index": "A",
+    "name": "Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 7407
+}

@@ -1,0 +1,38 @@
+{
+    "title": "D. Police Stations",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Inzane finally found Zane with a lot of money to spare, so they together decided to establish a country of their own.</p><p>Ruling a country is not an easy job. Thieves and terrorists are always ready to ruin the country's peace. To fight back, Zane and Inzane have enacted a very effective law: from each city it must be possible to reach a police station by traveling at most <span class=\"tex-span\"><i>d</i></span> kilometers along the roads.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c82876b4f5e96da94359c56d23cad38290b5a0a2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>There are <span class=\"tex-span\"><i>n</i></span> cities in the country, numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, connected only by exactly <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> roads. All roads are <span class=\"tex-span\">1</span> kilometer long. It is initially possible to travel from a city to any other city using these roads. The country also has <span class=\"tex-span\"><i>k</i></span> police stations located in some cities. In particular, the city's structure satisfies the requirement enforced by the previously mentioned law. Also note that there can be multiple police stations in one city.</p><p>However, Zane feels like having as many as <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> roads is unnecessary. The country is having financial issues, so it wants to minimize the road maintenance cost by shutting down as many roads as possible.</p><p>Help Zane find the maximum number of roads that can be shut down without breaking the law. Also, help him determine such roads.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>k</i></span>, and <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>d</i>\u2009\u2264\u2009<i>n</i>\u2009-\u20091</span>)\u00a0\u2014 the number of cities, the number of police stations, and the distance limitation in kilometers, respectively.</p><p>The second line contains <span class=\"tex-span\"><i>k</i></span> integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>k</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 each denoting the city each police station is located in.</p><p>The <span class=\"tex-span\"><i>i</i></span>-th of the following <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contains two integers <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>)\u00a0\u2014 the cities directly connected by the road with index <span class=\"tex-span\"><i>i</i></span>.</p><p>It is guaranteed that it is possible to travel from one city to any other city using only the roads. Also, it is possible from any city to reach a police station within <span class=\"tex-span\"><i>d</i></span> kilometers.</p>",
+    "outputSpecification": "<p>In the first line, print one integer <span class=\"tex-span\"><i>s</i></span> that denotes the maximum number of roads that can be shut down.</p><p>In the second line, print <span class=\"tex-span\"><i>s</i></span> distinct integers, the indices of such roads, in any order.</p><p>If there are multiple answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "6 2 4<br/>1 6<br/>1 2<br/>2 3<br/>3 4<br/>4 5<br/>5 6<br/>",
+            "output": "1<br/>5<br/>"
+        },
+        {
+            "input": "6 3 2<br/>1 5 6<br/>1 2<br/>1 3<br/>1 4<br/>1 5<br/>5 6<br/>",
+            "output": "2<br/>4 5 "
+        }
+    ],
+    "note": "<p>In the first sample, if you shut down road <span class=\"tex-span\">5</span>, all cities can still reach a police station within <span class=\"tex-span\"><i>k</i>\u2009=\u20094</span> kilometers.</p><p>In the second sample, although this is the only largest valid set of roads that can be shut down, you can print either <span class=\"tex-font-style-tt\">4 5</span> or <span class=\"tex-font-style-tt\">5 4</span> in the second line.</p>",
+    "contestId": 796,
+    "index": "D",
+    "name": "Police Stations",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "shortest paths",
+        "trees"
+    ],
+    "solvedCount": 5247
+}

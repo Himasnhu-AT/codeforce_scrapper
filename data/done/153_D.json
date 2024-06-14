@@ -1,0 +1,41 @@
+{
+    "title": "D. Date Change",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a date in \"<span class=\"tex-font-style-tt\">DD.MM.YYYY</span>\" (\"day.month.year\") format and a number of days <span class=\"tex-span\"><i>shift</i></span> you have to add to this date. Output the resulting date.</p>",
+    "inputSpecification": "<p>The first line of input contains the date in \"<span class=\"tex-font-style-tt\">DD.MM.YYYY</span>\" format: two digits for day (with leading zero if needed), dot, two digits for month (with leading zero if needed), dot, four digits for year. The notation is guaranteed to give a valid date between 1980 and 2020, inclusive.</p><p>The second line contains an integer <span class=\"tex-span\"><i>shift</i></span> (<span class=\"tex-span\">\u2009-\u20091000\u2009\u2264\u2009<i>shift</i>\u2009\u2264\u20091000</span>).</p>",
+    "outputSpecification": "<p>Output a date equal to the given one + <span class=\"tex-span\"><i>shift</i></span> days, in the same format \"<span class=\"tex-font-style-tt\">DD.MM.YYYY</span>\".</p>",
+    "samples": [
+        {
+            "input": "10.02.2012<br/>12<br/>",
+            "output": "22.02.2012<br/>"
+        },
+        {
+            "input": "01.02.2010<br/>-40<br/>",
+            "output": "23.12.2009<br/>"
+        },
+        {
+            "input": "01.01.2000<br/>365<br/>",
+            "output": "31.12.2000<br/>"
+        },
+        {
+            "input": "13.08.1990<br/>-609<br/>",
+            "output": "12.12.1988<br/>"
+        }
+    ],
+    "note": "<p>When manipulating the dates, take into account leap years; don't care about time zones/daylight saving time.</p>",
+    "contestId": 153,
+    "index": "D",
+    "name": "Date Change",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 82
+}

@@ -1,0 +1,30 @@
+{
+    "title": "C. Subsequences",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>For the given sequence with <span class=\"tex-span\"><i>n</i></span> different elements find the number of increasing subsequences with <span class=\"tex-span\"><i>k</i>\u2009+\u20091</span> elements. It is guaranteed that the answer is not greater than <span class=\"tex-span\">8\u00b710<sup class=\"upper-index\">18</sup></span>.</p>",
+    "inputSpecification": "<p>First line contain two integer values <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20090\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910)</span> \u2014 the length of sequence and the number of elements in increasing subsequences.</p><p>Next <span class=\"tex-span\"><i>n</i></span> lines contains one integer <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) each \u2014 elements of sequence. All values <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> are different.</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "5 2<br/>1<br/>2<br/>3<br/>5<br/>4<br/>",
+            "output": "7<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 597,
+    "index": "C",
+    "name": "Subsequences",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp"
+    ],
+    "solvedCount": 4606
+}

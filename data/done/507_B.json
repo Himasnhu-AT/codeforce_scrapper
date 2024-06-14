@@ -1,0 +1,38 @@
+{
+    "title": "B. Amr and Pins",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Amr loves Geometry. One day he came up with a very interesting problem.</p><p>Amr has a circle of radius <span class=\"tex-span\"><i>r</i></span> and center in point <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>. He wants the circle center to be in new position <span class=\"tex-span\">(<i>x</i>',\u2009<i>y</i>')</span>.</p><p>In one step Amr can put a pin to the border of the circle in a certain point, then rotate the circle around that pin by any angle and finally remove the pin.</p><p>Help Amr to achieve his goal in minimum number of steps.</p>",
+    "inputSpecification": "<p>Input consists of 5 space-separated integers <span class=\"tex-span\"><i>r</i></span>, <span class=\"tex-span\"><i>x</i></span>, <span class=\"tex-span\"><i>y</i></span>, <span class=\"tex-span\"><i>x</i>'</span> <span class=\"tex-span\"><i>y</i>'</span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>r</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">5</sup>\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>,\u2009<i>x</i>',\u2009<i>y</i>'\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>), circle radius, coordinates of original center of the circle and coordinates of destination center of the circle respectively.</p>",
+    "outputSpecification": "<p>Output a single integer \u2014 minimum number of steps required to move the center of the circle to the destination point.</p>",
+    "samples": [
+        {
+            "input": "2 0 0 0 4<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "1 1 1 4 4<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "4 5 6 5 6<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample test the optimal way is to put a pin at point <span class=\"tex-span\">(0,\u20092)</span> and rotate the circle by <span class=\"tex-span\">180</span> degrees counter-clockwise (or clockwise, no matter).</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/4e40fd4cc24a2050a0488aa131e6244369328039.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 507,
+    "index": "B",
+    "name": "Amr and Pins",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "math"
+    ],
+    "solvedCount": 23991
+}

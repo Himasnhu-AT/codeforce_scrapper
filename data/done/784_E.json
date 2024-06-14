@@ -1,0 +1,31 @@
+{
+    "title": "E. Twisted Circuit",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/ace238143541ee1aa82cc105f7ee236a511359f8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The input consists of four lines, each line containing a single digit 0 or 1.</p>",
+    "outputSpecification": "<p>Output a single digit, 0 or 1.</p>",
+    "samples": [
+        {
+            "input": "0<br/>1<br/>1<br/>0<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 784,
+    "index": "E",
+    "name": "Twisted Circuit",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 1893
+}

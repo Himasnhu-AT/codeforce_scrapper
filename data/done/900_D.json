@@ -1,0 +1,37 @@
+{
+    "title": "D. Unusual Sequences",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Count the number of distinct sequences <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>) consisting of positive integers such that <span class=\"tex-span\"><i>gcd</i>(<i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub>)\u2009=\u2009<i>x</i></span> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/46c27063cc7fdd1f6d4a4022b2ece8a902dd4879.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. As this number could be large, print the answer modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p><p><span class=\"tex-span\"><i>gcd</i></span> here means the <a href=\"https://en.wikipedia.org/wiki/Greatest_common_divisor\">greatest common divisor</a>.</p>",
+    "inputSpecification": "<p>The only line contains two positive integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print the number of such sequences modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "3 9<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "5 8<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>There are three suitable sequences in the first test: <span class=\"tex-span\">(3,\u20093,\u20093)</span>, <span class=\"tex-span\">(3,\u20096)</span>, <span class=\"tex-span\">(6,\u20093)</span>.</p><p>There are no suitable sequences in the second test.</p>",
+    "contestId": 900,
+    "index": "D",
+    "name": "Unusual Sequences",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "dp",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 3019
+}

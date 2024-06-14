@@ -1,0 +1,27 @@
+{
+    "title": "F. Expected Earnings",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are playing a game with a bag of red and black balls. Initially, you are told that the bag has <span class=\"tex-span\"><i>n</i></span> balls total. In addition, you are also told that the bag has probability <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009/\u200910<sup class=\"upper-index\">6</sup></span> of containing exactly <span class=\"tex-span\"><i>i</i></span> red balls.</p><p>You now would like to buy balls from this bag. You really like the color red, so red balls are worth a unit of <span class=\"tex-span\">1</span>, while black balls are worth nothing. To buy a ball, if there are still balls in the bag, you pay a cost <span class=\"tex-span\"><i>c</i></span> with <span class=\"tex-span\">0\u2009\u2264\u2009<i>c</i>\u2009\u2264\u20091</span>, and draw a ball randomly from the bag. You can choose to stop buying at any point (and you can even choose to not buy anything at all).</p><p>Given that you buy optimally to maximize the expected profit (i.e. # red balls - cost needed to obtain them), print the maximum expected profit.</p>",
+    "inputSpecification": "<p>The first line of input will contain two integers <span class=\"tex-span\"><i>n</i>,\u2009<i>X</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910\u2009000</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>X</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>).</p><p>The next line of input will contain <span class=\"tex-span\"><i>n</i>\u2009+\u20091</span> integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">0</sub>,\u2009<i>p</i><sub class=\"lower-index\">1</sub>,\u2009... <i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6210c2461d50e5ce40c1d3fd9e1ec97646e407f6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>)</p><p>The value of <span class=\"tex-span\"><i>c</i></span> can be computed as <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fcfdfb54ed7d543ab1428e780439cb4c068066a4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "outputSpecification": "<p>Print a single floating point number representing the optimal expected value.</p><p>Your answer will be accepted if it has absolute or relative error at most <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20099</sup></span>. More specifically, if your answer is <span class=\"tex-span\"><i>a</i></span> and the jury answer is <span class=\"tex-span\"><i>b</i></span>, your answer will be accepted if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c5e2d5f952bf0600d65151cbd23c801f49c2c594.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "3 200000<br/>250000 250000 250000 250000<br/>",
+            "output": "0.9000000000<br/>"
+        }
+    ],
+    "note": "<p>Here, there is equal probability for the bag to contain 0,1,2,3 red balls. Also, it costs 0.2 to draw a ball from the bag.</p>",
+    "contestId": 838,
+    "index": "F",
+    "name": "Expected Earnings",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 94
+}

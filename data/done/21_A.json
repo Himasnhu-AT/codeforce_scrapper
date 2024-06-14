@@ -1,0 +1,34 @@
+{
+    "title": "A. Jabber ID",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Jabber ID on the national Berland service \u00abBabber\u00bb has a form <span class=\"tex-font-style-tt\">&lt;username&gt;@&lt;hostname&gt;[/resource]</span>, where </p><ul> <li> <span class=\"tex-font-style-tt\">&lt;username&gt;</span> \u2014 is a sequence of Latin letters (lowercase or uppercase), digits or underscores characters \u00ab<span class=\"tex-font-style-tt\">_</span>\u00bb, the length of <span class=\"tex-font-style-tt\">&lt;username&gt;</span> is between 1 and 16, inclusive. </li><li> <span class=\"tex-font-style-tt\">&lt;hostname&gt;</span> \u2014 is a sequence of word separated by periods (characters \u00ab<span class=\"tex-font-style-tt\">.</span>\u00bb), where each word should contain only characters allowed for <span class=\"tex-font-style-tt\">&lt;username&gt;</span>, the length of each word is between 1 and 16, inclusive. The length of <span class=\"tex-font-style-tt\">&lt;hostname&gt;</span> is between 1 and 32, inclusive. </li><li> <span class=\"tex-font-style-tt\">&lt;resource&gt;</span> \u2014 is a sequence of Latin letters (lowercase or uppercase), digits or underscores characters \u00ab<span class=\"tex-font-style-tt\">_</span>\u00bb, the length of <span class=\"tex-font-style-tt\">&lt;resource&gt;</span> is between 1 and 16, inclusive. </li></ul><p>The content of square brackets is optional \u2014 it can be present or can be absent.</p><p>There are the samples of correct Jabber IDs: <span class=\"tex-font-style-tt\"><a class=\"__cf_email__\" data-cfemail=\"86ebefede3c6e5e9e2e3e0e9f4e5e3f5a8e5e9eb\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a></span>, <span class=\"tex-font-style-tt\"><a class=\"__cf_email__\" data-cfemail=\"5666666116333878353932333039243533257835393b\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a>/contest</span>.</p><p>Your task is to write program which checks if given string is a correct Jabber ID.</p>",
+    "inputSpecification": "<p>The input contains of a single line. The line has the length between 1 and 100 characters, inclusive. Each characters has ASCII-code between 33 and 127, inclusive.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-font-style-tt\">YES</span> or <span class=\"tex-font-style-tt\">NO</span>.</p>",
+    "samples": [
+        {
+            "input": "<a class=\"__cf_email__\" data-cfemail=\"482521232d082b272c2d2e273a2b2d3b662b2725\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a><br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "<a class=\"__cf_email__\" data-cfemail=\"c1abaea9afefb2aca8b5a981a2aea5a4a7aeb3a2a4b2efb3b4\" href=\"/cdn-cgi/l/email-protection\">[email\u00a0protected]</a>/contest.icpc/12<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 21,
+    "index": "A",
+    "name": "Jabber ID",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 1792
+}

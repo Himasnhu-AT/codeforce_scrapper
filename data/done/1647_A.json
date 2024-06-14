@@ -1,0 +1,30 @@
+{
+    "title": "A. Madoka and Math Dad",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Madoka finally found the administrator password for her computer. Her father is a well-known popularizer of mathematics, so the password is the answer to the following problem.</p><p>Find the maximum decimal number without zeroes and with no equal digits in a row, such that the sum of its digits is $$$n$$$.</p><p>Madoka is too tired of math to solve it herself, so help her to solve this problem!</p>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$)\u00a0\u2014 the number of test cases. Description of the test cases follows.</p><p>The only line of each test case contains an integer $$$n$$$ ($$$1 \\le n \\le 1000$$$)\u00a0\u2014 the required sum of the digits.</p>",
+    "outputSpecification": "<p>For each test case print the maximum number you can obtain.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3</div><div class=\"test-example-line test-example-line-even test-example-line-4\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">5</div>",
+            "output": "\n1\n2\n21\n121\n212\n"
+        }
+    ],
+    "note": "<p>The only numbers with the sum of digits equal to $$$2$$$ without zeros are $$$2$$$ and $$$11$$$. But the last one has two ones in a row, so it's not valid. That's why the answer is $$$2$$$.</p><p>The only numbers with the sum of digits equal to $$$3$$$ without zeros are $$$111$$$, $$$12$$$, $$$21$$$, and $$$3$$$. The first one has $$$2$$$ ones in a row, so it's not valid. So the maximum valid number is $$$21$$$.</p><p>The only numbers with the sum of digits equals to $$$4$$$ without zeros are $$$1111$$$, $$$211$$$, $$$121$$$, $$$112$$$, $$$13$$$, $$$31$$$, $$$22$$$, and $$$4$$$. Numbers $$$1111$$$, $$$211$$$, $$$112$$$, $$$22$$$ aren't valid, because they have some identical digits in a row. So the maximum valid number is $$$121$$$.</p>",
+    "contestId": 1647,
+    "index": "A",
+    "name": "Madoka and Math Dad",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 22552
+}

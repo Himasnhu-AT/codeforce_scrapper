@@ -1,0 +1,33 @@
+{
+    "title": "A. Little C Loves 3 I",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little C loves number \u00ab<span class=\"tex-font-style-tt\">3</span>\u00bb very much. He loves all things about it.</p><p>Now he has a positive integer $$$n$$$. He wants to split $$$n$$$ into $$$3$$$ positive integers $$$a,b,c$$$, such that $$$a+b+c=n$$$ and none of the $$$3$$$ integers is a multiple of $$$3$$$. Help him to find a solution.</p>",
+    "inputSpecification": "<p>A single line containing one integer $$$n$$$ ($$$3 \\leq n \\leq 10^9$$$) \u2014 the integer Little C has.</p>",
+    "outputSpecification": "<p>Print $$$3$$$ positive integers $$$a,b,c$$$ in a single line, such that $$$a+b+c=n$$$ and none of them is a multiple of $$$3$$$.</p><p>It can be proved that there is at least one solution. If there are multiple solutions, print any of them.</p>",
+    "samples": [
+        {
+            "input": "3<br/>",
+            "output": "1 1 1"
+        },
+        {
+            "input": "233",
+            "output": "77 77 79<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 1047,
+    "index": "A",
+    "name": "Little C Loves 3 I",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 19627
+}

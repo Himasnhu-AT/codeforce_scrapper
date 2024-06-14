@@ -1,0 +1,33 @@
+{
+    "title": "A. Crazy Town",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Crazy Town is a plane on which there are <span class=\"tex-span\"><i>n</i></span> infinite line roads. Each road is defined by the equation <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub><i>x</i>\u2009+\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub><i>y</i>\u2009+\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u20090</span>, where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> are not both equal to the zero. The roads divide the plane into connected regions, possibly of infinite space. Let's call each such region a block. We define an intersection as the point where at least two different roads intersect.</p><p>Your home is located in one of the blocks. Today you need to get to the University, also located in some block. In one step you can move from one block to another, if the length of their common border is nonzero (in particular, this means that if the blocks are adjacent to one intersection, but have no shared nonzero boundary segment, then it are not allowed to move from one to another one in one step).</p><p>Determine what is the minimum number of steps you have to perform to get to the block containing the university. It is guaranteed that neither your home nor the university is located on the road.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">1</sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">6</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 the coordinates of your home.</p><p>The second line contains two integers separated by a space <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">2</sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">6</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 the coordinates of the university you are studying at.</p><p>The third line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009300</span>) \u2014 the number of roads in the city. The following <span class=\"tex-span\"><i>n</i></span> lines contain 3 space-separated integers (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">6</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>; <span class=\"tex-span\">|<i>a</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009+\u2009|<i>b</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009&gt;\u20090</span>) \u2014 the coefficients of the line <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub><i>x</i>\u2009+\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub><i>y</i>\u2009+\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u20090</span>, defining the <span class=\"tex-span\"><i>i</i></span>-th road. It is guaranteed that no two roads are the same. In addition, neither your home nor the university lie on the road (i.e. they do not belong to any one of the lines).</p>",
+    "outputSpecification": "<p>Output the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>-1 -1<br/>2<br/>0 1 0<br/>1 0 0<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "1 1<br/>-1 -1<br/>3<br/>1 0 0<br/>0 1 0<br/>1 1 -3<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>Pictures to the samples are presented below (A is the point representing the house; B is the point representing the university, different blocks are filled with different colors):</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c4a263d8925adb85060bf2cd6b230ac85d56efbe.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1d182772986890d17bc128873de4eed7e672942a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 498,
+    "index": "A",
+    "name": "Crazy Town",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 6357
+}

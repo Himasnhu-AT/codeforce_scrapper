@@ -1,0 +1,41 @@
+{
+    "title": "C. Heidi and Library (hard)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The good times at Heidi's library are over. Marmots finally got their internet connections and stopped coming to the library altogether. Not only that, but the bookstore has begun charging extortionate prices for some books. Namely, whereas in the previous versions each book could be bought for 1 CHF, now the price of book <span class=\"tex-span\"><i>i</i></span> is <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> CHF.</p>",
+    "inputSpecification": "<p>The first line of input will contain two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1fcb9de4700dce1c302f6e6f7941707f942bc3ff.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>). The second line will contain <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) \u2013 the sequence of book requests. The third line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub>,\u2009<i>c</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>c</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2013 the costs of the books.</p>",
+    "outputSpecification": "<p>On a single line print the minimum cost of buying books at the store so as to satisfy all requests.</p>",
+    "samples": [
+        {
+            "input": "4 80<br/>1 2 2 1<br/>1 1 1 1<br/>",
+            "output": "2"
+        },
+        {
+            "input": "4 1<br/>1 2 2 1<br/>1 1 1 1<br/>",
+            "output": "3"
+        },
+        {
+            "input": "4 2<br/>1 2 3 1<br/>1 1 1 1<br/>",
+            "output": "3"
+        },
+        {
+            "input": "7 2<br/>1 2 3 1 1 1 2<br/>1 10 1 0 0 0 0<br/>",
+            "output": "13"
+        }
+    ],
+    "note": "<p>The first three sample cases are repeated, but the fourth one is new.</p><p>In the fourth test case, when buying book <span class=\"tex-span\">3</span>, Heidi should discard either book <span class=\"tex-span\">1</span> or <span class=\"tex-span\">2</span>. Even though book <span class=\"tex-span\">2</span> will be requested later than book <span class=\"tex-span\">1</span>, she should keep it, because it is so expensive to buy again.</p>",
+    "contestId": 802,
+    "index": "C",
+    "name": "Heidi and Library (hard)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "flows"
+    ],
+    "solvedCount": 536
+}

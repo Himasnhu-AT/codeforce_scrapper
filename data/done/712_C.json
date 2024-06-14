@@ -1,0 +1,38 @@
+{
+    "title": "C. Memory and De-Evolution",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Memory is now interested in the de-evolution of objects, specifically triangles. He starts with an equilateral triangle of side length <span class=\"tex-span\"><i>x</i></span>, and he wishes to perform operations to obtain an equilateral triangle of side length <span class=\"tex-span\"><i>y</i></span>.</p><p>In a single second, he can modify the length of a single side of the current triangle such that it remains a non-degenerate triangle (triangle of positive area). At any moment of time, the length of each side should be integer.</p><p>What is the minimum number of seconds required for Memory to obtain the equilateral triangle of side length <span class=\"tex-span\"><i>y</i></span>?</p>",
+    "inputSpecification": "<p>The first and only line contains two integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>y</i>\u2009&lt;\u2009<i>x</i>\u2009\u2264\u2009100\u2009000</span>)\u00a0\u2014 the starting and ending equilateral triangle side lengths respectively.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the minimum number of seconds required for Memory to obtain the equilateral triangle of side length <span class=\"tex-span\"><i>y</i></span> if he starts with the equilateral triangle of side length <span class=\"tex-span\"><i>x</i></span>.</p>",
+    "samples": [
+        {
+            "input": "6 3<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "8 5<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "22 4<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": "<p>In the first sample test, Memory starts with an equilateral triangle of side length <span class=\"tex-span\">6</span> and wants one of side length <span class=\"tex-span\">3</span>. Denote a triangle with sides <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span>, and <span class=\"tex-span\"><i>c</i></span> as <span class=\"tex-span\">(<i>a</i>,\u2009<i>b</i>,\u2009<i>c</i>)</span>. Then, Memory can do <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/18af21f738bad490df83097a90e1f2879a4b21c6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the second sample test, Memory can do <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bcfd51d1b2d764a1cf5fbc255cc02e6f5aaed3b1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the third sample test, Memory can do: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0969b7d413854c1e7528991d926bef1f7ffba008.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/63e9e66b882c03e4c73e93ad92204dc255329309.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 712,
+    "index": "C",
+    "name": "Memory and De-Evolution",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 5587
+}

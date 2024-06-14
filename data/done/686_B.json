@@ -1,0 +1,39 @@
+{
+    "title": "B. Little Robber Girl's Zoo",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Robber Girl likes to scare animals in her zoo for fun. She decided to arrange the animals in a row in the order of non-decreasing height. However, the animals were so scared that they couldn't stay in the right places.</p><p>The robber girl was angry at first, but then she decided to arrange the animals herself. She repeatedly names numbers <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span> such that <span class=\"tex-span\"><i>r</i>\u2009-\u2009<i>l</i>\u2009+\u20091</span> is even. After that animals that occupy positions between <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span> inclusively are rearranged as follows: the animal at position <span class=\"tex-span\"><i>l</i></span> swaps places with the animal at position <span class=\"tex-span\"><i>l</i>\u2009+\u20091</span>, the animal <span class=\"tex-span\"><i>l</i>\u2009+\u20092</span> swaps with the animal <span class=\"tex-span\"><i>l</i>\u2009+\u20093</span>, ..., finally, the animal at position <span class=\"tex-span\"><i>r</i>\u2009-\u20091</span> swaps with the animal <span class=\"tex-span\"><i>r</i></span>.</p><p>Help the robber girl to arrange the animals in the order of non-decreasing height. You should name at most <span class=\"tex-span\">20\u2009000</span> segments, since otherwise the robber girl will become bored and will start scaring the animals again.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 number of animals in the robber girl's zoo.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is the height of the animal occupying the <span class=\"tex-span\"><i>i</i></span>-th place.</p>",
+    "outputSpecification": "<p>Print the sequence of operations that will rearrange the animals by non-decreasing height.</p><p>The output should contain several lines, <span class=\"tex-span\"><i>i</i></span>-th of the lines should contain two space-separated integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 descriptions of segments the robber girl should name. The segments should be described in the order the operations are performed.</p><p>The number of operations should not exceed <span class=\"tex-span\">20\u2009000</span>.</p><p>If the animals are arranged correctly from the start, you are allowed to output nothing.</p>",
+    "samples": [
+        {
+            "input": "4<br/>2 1 4 3<br/>",
+            "output": "1 4<br/>"
+        },
+        {
+            "input": "7<br/>36 28 57 39 66 69 68<br/>",
+            "output": "1 4<br/>6 7<br/>"
+        },
+        {
+            "input": "5<br/>1 2 1 2 1<br/>",
+            "output": "2 5<br/>3 4<br/>1 4<br/>1 4<br/>"
+        }
+    ],
+    "note": "<p>Note that you don't have to minimize the number of operations. Any solution that performs at most <span class=\"tex-span\">20\u2009000</span> operations is allowed.</p>",
+    "contestId": 686,
+    "index": "B",
+    "name": "Little Robber Girl's Zoo",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 7726
+}

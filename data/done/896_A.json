@@ -1,0 +1,38 @@
+{
+    "title": "A. Nephren gives a riddle",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"epigraph\"><div class=\"epigraph-text\"><span class=\"tex-font-style-it\">What are you doing at the end of the world? Are you busy? Will you save us?</span></div></div><center><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/cd0fa302880a9dbb8a66fb9784f9121e198fdef3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p></center><p>Nephren is playing a game with little leprechauns.</p><p>She gives them an infinite array of strings, <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">0... \u221e</sub></span>.</p><p><span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">0</sub></span> is \"<span class=\"tex-font-style-tt\">What are you doing at the end of the world? Are you busy? Will you save us?</span>\".</p><p>She wants to let more people know about it, so she defines <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009</span> \"<span class=\"tex-font-style-tt\">What are you doing while sending \"</span><span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub></span><span class=\"tex-font-style-tt\">\"? Are you busy? Will you send \"</span><span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub></span><span class=\"tex-font-style-tt\">\"?</span>\" for all <span class=\"tex-span\"><i>i</i>\u2009\u2265\u20091</span>.</p><p>For example, <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">1</sub></span> is</p><p>\"<span class=\"tex-font-style-tt\">What are you doing while sending \"What are you doing at the end of the world? Are you busy? Will you save us?\"? Are you busy? Will you send \"What are you doing at the end of the world? Are you busy? Will you save us?\"?</span>\". Note that the quotes in the very beginning and in the very end are for clarity and are not a part of <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">1</sub></span>.</p><p>It can be seen that the characters in <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>i</i></sub></span> are letters, question marks, (possibly) quotation marks and spaces.</p><p>Nephren will ask the little leprechauns <span class=\"tex-span\"><i>q</i></span> times. Each time she will let them find the <span class=\"tex-span\"><i>k</i></span>-th character of <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>n</i></sub></span>. The characters are indexed starting from <span class=\"tex-span\">1</span>. If <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>n</i></sub></span> consists of less than <span class=\"tex-span\"><i>k</i></span> characters, output '<span class=\"tex-font-style-tt\">.</span>' (without quotes).</p><p>Can you answer her queries?</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>q</i>\u2009\u2264\u200910</span>)\u00a0\u2014 the number of Nephren's questions.</p><p>Each of the next <span class=\"tex-span\"><i>q</i></span> lines describes Nephren's question and contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>).</p>",
+    "outputSpecification": "<p>One line containing <span class=\"tex-span\"><i>q</i></span> characters. The <span class=\"tex-span\"><i>i</i></span>-th character in it should be the answer for the <span class=\"tex-span\"><i>i</i></span>-th query.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 1<br/>1 2<br/>1 111111111111<br/>",
+            "output": "Wh."
+        },
+        {
+            "input": "5<br/>0 69<br/>1 194<br/>1 139<br/>0 47<br/>1 66<br/>",
+            "output": "abdef"
+        },
+        {
+            "input": "10<br/>4 1825<br/>3 75<br/>3 530<br/>4 1829<br/>4 1651<br/>3 187<br/>4 584<br/>4 255<br/>4 774<br/>2 474<br/>",
+            "output": "Areyoubusy"
+        }
+    ],
+    "note": "<p>For the first two examples, refer to <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">0</sub></span> and <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">1</sub></span> given in the legend.</p>",
+    "contestId": 896,
+    "index": "A",
+    "name": "Nephren gives a riddle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "dfs and similar"
+    ],
+    "solvedCount": 3342
+}

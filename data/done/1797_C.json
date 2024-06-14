@@ -1,0 +1,31 @@
+{
+    "title": "C. Li Hua and Chess",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is an interactive problem.</span></p><p>Li Ming and Li Hua are playing a game. Li Hua has a chessboard of size $$$n\\times m$$$. Denote $$$(r, c)$$$ ($$$1\\le r\\le n, 1\\le c\\le m$$$) as the cell on the $$$r$$$-th row from the top and on the $$$c$$$-th column from the left. Li Ming put a king on the chessboard and Li Hua needs to guess its position.</p><p>Li Hua can ask Li Ming <span class=\"tex-font-style-bf\">no more than $$$3$$$</span> questions. In each question, he can choose a cell and ask the minimum steps needed to move the king to the chosen cell. Each question is independent, which means the king doesn't actually move.</p><p>A king can move from $$$(x,y)$$$ to $$$(x',y')$$$ if and only if $$$\\max\\{|x-x'|,|y-y'|\\}=1$$$ (shown in the following picture).</p><center> <table class=\"tex-tabular\"><tbody><tr><td class=\"tex-tabular-text-align-center\"><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/96355adb5bcd155439cc98ccec46ff5acbff491c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></td></tr></tbody></table> </center><p>The position of the king is chosen <span class=\"tex-font-style-bf\">before</span> the interaction.</p><p>Suppose you were Li Hua, please solve this problem.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n2\n3 4\n\n1\n\n2\n\n5 3\n\n3\n\n1\n\n2",
+            "output": "\n\n\n? 2 3\n\n? 2 4\n\n! 2 2\n\n? 2 2\n\n? 5 2\n\n? 5 3\n\n! 5 1"
+        }
+    ],
+    "note": "<p>In test case 1, the king is at $$$(2,2)$$$. It takes $$$1$$$ step to move to $$$(2,3)$$$ and $$$2$$$ steps to move to $$$(2,4)$$$.</p><center> <table class=\"tex-tabular\"><tbody><tr><td class=\"tex-tabular-text-align-center\"><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/ef28231e7c1f33f3a68977a4ed11e34b91dd3309.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></td></tr></tbody></table> </center><p>Note that the questions may not seem sensible. They are just a sample of questions you may ask.</p>",
+    "contestId": 1797,
+    "index": "C",
+    "name": "Li Hua and Chess",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "interactive"
+    ],
+    "solvedCount": 7324
+}

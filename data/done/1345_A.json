@@ -1,0 +1,29 @@
+{
+    "title": "A. Puzzle Pieces",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a special jigsaw puzzle consisting of $$$n\\cdot m$$$ identical pieces. Every piece has three tabs and one blank, as pictured below.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/12bd9722a46824150283fab59ae3dad3c2926ed9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The jigsaw puzzle is considered solved if the following conditions hold:</p><ol> <li> The pieces are arranged into a grid with $$$n$$$ rows and $$$m$$$ columns. </li><li> For any two pieces that share an edge in the grid, a tab of one piece fits perfectly into a blank of the other piece. </li></ol><p>Through rotation and translation of the pieces, determine if it is possible to solve the jigsaw puzzle.</p>",
+    "inputSpecification": "<p>The test consists of multiple test cases. The first line contains a single integer $$$t$$$ ($$$1\\le t\\le 1000$$$)\u00a0\u2014 the number of test cases. Next $$$t$$$ lines contain descriptions of test cases.</p><p>Each test case contains two integers $$$n$$$ and $$$m$$$ ($$$1 \\le n,m \\le 10^5$$$).</p>",
+    "outputSpecification": "<p>For each test case output a single line containing \"<span class=\"tex-font-style-tt\">YES</span>\" if it is possible to solve the jigsaw puzzle, or \"<span class=\"tex-font-style-tt\">NO</span>\" otherwise. You can print each letter in any case (upper or lower).</p>",
+    "samples": [
+        {
+            "input": "\n3\n1 3\n100000 100000\n2 2\n",
+            "output": "\nYES\nNO\nYES\n"
+        }
+    ],
+    "note": "<p>For the first test case, this is an example solution: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/03f246790d1b31b27745f0ae94fc105e94373d46.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>For the second test case, we can show that no solution exists.</p><p>For the third test case, this is an example solution:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/b09e8310c88f18ac6bfa5ec4b17f92aa50d890bb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1345,
+    "index": "A",
+    "name": "Puzzle Pieces",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 23892
+}

@@ -1,0 +1,39 @@
+{
+    "title": "B. Kolya and Tandem Repeat",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Kolya got string <span class=\"tex-span\"><i>s</i></span> for his birthday, the string consists of small English letters. He immediately added <span class=\"tex-span\"><i>k</i></span> more characters to the right of the string.</p><p>Then Borya came and said that the new string contained a <span class=\"tex-font-style-it\">tandem repeat</span> of length <span class=\"tex-span\"><i>l</i></span> as a substring. How large could <span class=\"tex-span\"><i>l</i></span> be?</p><p>See notes for definition of a <span class=\"tex-font-style-it\">tandem repeat</span>.</p>",
+    "inputSpecification": "<p>The first line contains <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u2009200</span>). This string contains only small English letters. The second line contains number <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009200</span>) \u2014 the number of the added characters.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the maximum length of the tandem repeat that could have occurred in the new string.</p>",
+    "samples": [
+        {
+            "input": "aaba<br/>2<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "aaabbbb<br/>2<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "abracadabra<br/>10<br/>",
+            "output": "20<br/>"
+        }
+    ],
+    "note": "<p>A tandem repeat of length <span class=\"tex-span\">2<i>n</i></span> is string <span class=\"tex-span\"><i>s</i></span>, where for any position <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>) the following condition fulfills: <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>i</i>\u2009+\u2009<i>n</i></sub></span>.</p><p>In the first sample Kolya could obtain a string <span class=\"tex-font-style-tt\">aabaab</span>, in the second \u2014 <span class=\"tex-font-style-tt\">aaabbbbbb</span>, in the third \u2014 <span class=\"tex-font-style-bf\">abracadabrabracadabra</span>.</p>",
+    "contestId": 443,
+    "index": "B",
+    "name": "Kolya and Tandem Repeat",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 3993
+}

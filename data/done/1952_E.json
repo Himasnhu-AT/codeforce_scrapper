@@ -1,0 +1,39 @@
+{
+    "title": "E. Sweep Line",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"epigraph\"><div class=\"epigraph-text\"><span class=\"tex-font-style-it\">Be careful not to make a mistake. You might have to start all over again.</span></div><div class=\"epigraph-source\">\u2014 Someone, probably</div></div>",
+    "inputSpecification": "<p>The first line contains one integer $$$n$$$ ($$$1 \\leq n \\leq 10^5$$$) \u2014 the length of the array $$$a$$$.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\ldots, a_n$$$ ($$$0 \\leq a_i \\leq 2$$$) \u2014 the array $$$a$$$.</p>",
+    "outputSpecification": "<p>Output a single integer\u00a0\u2014 the number of solutions, modulo $$$20240401$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">7</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 1 2 1 1 2 0</div>",
+            "output": "\n1"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">7</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 1 2 1 1 1 0</div>",
+            "output": "\n2"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">7</div><div class=\"test-example-line test-example-line-even test-example-line-0\">0 1 2 1 1 1 0</div>",
+            "output": "\n0"
+        }
+    ],
+    "note": "<p>In the first sample, the array looks like this:</p><p><table class=\"tex-tabular\"><tbody><tr><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{darkgreen}{2} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{darkgreen}{2} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{gray}{0} $$$</td></tr></tbody></table></p><p>Obviously, the answer here is $$$1 \\pmod{20240401}$$$.</p><p>In the second sample, the array looks like this:</p><p><table class=\"tex-tabular\"><tbody><tr><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{darkgreen}{2} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{gray}{0} $$$</td></tr></tbody></table></p><p>I do not know why the answer here is $$$2 \\pmod{20240401}$$$, I had to take a guess.</p><p>In the third sample, the array looks like this:</p><p><table class=\"tex-tabular\"><tbody><tr><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{gray}{0} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{darkgreen}{2} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{blue}{1} $$$</td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\">$$$ \\color{gray}{0} $$$</td></tr></tbody></table></p><p>If the answer here is not $$$0 \\pmod{20240401}$$$, I am literally going to explode.</p>",
+    "contestId": 1952,
+    "index": "E",
+    "name": "Sweep Line",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "games",
+        "math"
+    ],
+    "solvedCount": 217
+}

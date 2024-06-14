@@ -1,0 +1,36 @@
+{
+    "title": "F. Mark and the Online Exam",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mark is administering an online exam consisting of $$$n$$$ true-false questions. However, he has lost all answer keys. He needs a way to retrieve the answers before his client gets infuriated.</p><p>Fortunately, he has access to the grading system. Thus, for each query, you can input the answers to all $$$n$$$ questions, and the grading system will output how many of them are correct.</p><p>He doesn't have much time, so he can use the grading system at most $$$675$$$ times. Help Mark determine the answer keys.</p><p>Note that answer keys are fixed in advance and will not change depending on your queries.</p>",
+    "inputSpecification": "<p>The first line of the input consists of an integer $$$n$$$ ($$$1\\leq n\\leq 1000$$$) \u2014 the number of questions.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n3\n\n1\n\n3",
+            "output": "\n\nFTT\n\nTTF\n"
+        },
+        {
+            "input": "\n4\n\n0\n\n3\n\n4\n",
+            "output": "\n\nFTFF\n\nTTTT\n\nTFTT\n"
+        }
+    ],
+    "note": "<p>The empty lines in the example are just for you to better understand the interaction process. <span class=\"tex-font-style-bf\">You're not required to print them.</span></p><p>In the first example, there are $$$3$$$ questions, and the answer to each question is '<span class=\"tex-font-style-tt\">true</span>', '<span class=\"tex-font-style-tt\">true</span>', and '<span class=\"tex-font-style-tt\">false</span>', respectively. </p><ul> <li> The first query, guessing the answers to be '<span class=\"tex-font-style-tt\">false</span>', '<span class=\"tex-font-style-tt\">true</span>', and '<span class=\"tex-font-style-tt\">true</span>', respectively, guesses only one question \u2014 the $$$2$$$-nd question \u2014 correctly. </li><li> Then, in the second query, the program correctly guesses the answer key. The interaction ends here. </li></ul><p>In the second example, there are $$$4$$$ questions, and the answer to each question is '<span class=\"tex-font-style-tt\">true</span>', '<span class=\"tex-font-style-tt\">false</span>', '<span class=\"tex-font-style-tt\">true</span>', and '<span class=\"tex-font-style-tt\">true</span>', respectively. </p><ul> <li> The first query guessed none of the questions correctly, resulting in the answer $$$0$$$. </li><li> The second query guessed the $$$1$$$-st, $$$3$$$-rd, and $$$4$$$-th question correctly, resulting in the answer $$$3$$$. </li><li> In the third query, the program correctly guesses the answer key. Then, the interaction ends. </li></ul>",
+    "contestId": 1705,
+    "index": "F",
+    "name": "Mark and the Online Exam",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "interactive",
+        "probabilities"
+    ],
+    "solvedCount": 584
+}

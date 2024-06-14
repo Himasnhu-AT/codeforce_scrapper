@@ -1,0 +1,38 @@
+{
+    "title": "C. Two Seals",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One very important person has a piece of paper in the form of a rectangle <span class=\"tex-span\"><i>a</i>\u2009\u00d7\u2009<i>b</i></span>.</p><p>Also, he has <span class=\"tex-span\"><i>n</i></span> seals. Each seal leaves an impression on the paper in the form of a rectangle of the size <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u00d7\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>. Each impression must be parallel to the sides of the piece of paper (but seal can be rotated by 90 degrees).</p><p>A very important person wants to choose two different seals and put them two impressions. Each of the selected seals puts exactly one impression. Impressions should not overlap (but they can touch sides), and the total area occupied by them should be the largest possible. What is the largest area that can be occupied by two seals?</p>",
+    "inputSpecification": "<p>The first line contains three integer numbers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u2009100</span>).</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contain two numbers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>).</p>",
+    "outputSpecification": "<p>Print the largest total area that can be occupied by two seals. If you can not select two seals, print <span class=\"tex-font-style-tt\">0</span>.</p>",
+    "samples": [
+        {
+            "input": "2 2 2<br/>1 2<br/>2 1<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "4 10 9<br/>2 3<br/>1 1<br/>5 10<br/>9 11<br/>",
+            "output": "56<br/>"
+        },
+        {
+            "input": "3 10 10<br/>6 6<br/>7 7<br/>20 5<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first example you can rotate the second seal by 90 degrees. Then put impression of it right under the impression of the first seal. This will occupy all the piece of paper.</p><p>In the second example you can't choose the last seal because it doesn't fit. By choosing the first and the third seals you occupy the largest area.</p><p>In the third example there is no such pair of seals that they both can fit on a piece of paper.</p>",
+    "contestId": 837,
+    "index": "C",
+    "name": "Two Seals",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 3946
+}

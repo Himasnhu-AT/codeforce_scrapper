@@ -1,0 +1,38 @@
+{
+    "title": "D. Calendar",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>BerOilGasDiamondBank has branches in <span class=\"tex-span\"><i>n</i></span> cities, at that <span class=\"tex-span\"><i>n</i></span> is an even number. The bank management wants to publish a calendar with the names of all those cities written in two columns: the calendar should consist of exactly <span class=\"tex-span\"><i>n</i>\u2009/\u20092</span> lines of strictly equal length, each of which contains exactly two names and exactly one separator character between them. The name of every city should be used in the calendar exactly once. For historical reasons the symbol <span class=\"tex-span\"><i>d</i></span> is used as the separator of words in the calendar. </p><p>The BerOilGasDiamondBank management wants to show that all its branches are equally important to it, that's why the order of their appearance in the calendar should be following: if we \"glue\"(concatinate) all the <span class=\"tex-span\"><i>n</i>\u2009/\u20092</span> calendar lines (from top to bottom) to make a single line, then the lexicographically minimal line is obtained. No separator character will be used to separate calendar lines. For example, if the lines are \"bertown!berville\", \"newberville!bera\", then the resulting line is \"bertown!bervillenewberville!bera\". In some sense one has to find the lexicographically minimal calendar, where the comparison of calendars happens line by line.</p><p>Help BerOilGasDiamondBank and construct the required calendar.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>, <span class=\"tex-span\"><i>n</i></span> is even) which is the number of branches. Then follow <span class=\"tex-span\"><i>n</i></span> lines which are the names of the cities. All the names consist of lowercase Latin letters; their lengths are no less than 1 and no more than 10 symbols. The next line contains a single symbol <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\"><i>d</i></span> has an ASCII-code from 33 to 126 inclusively, excluding lowercase Latin letters) which is the separator between words in the calendar lines. It is guaranteed that the calendar is possible to be constructed and all the names are different.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i>\u2009/\u20092</span> lines of similar length which are the required calendar. Every line should contain exactly two words and exactly one separator between them. If there are several solutions, print the lexicographically minimal one. The lexicographical comparison of lines is realized by the \"<span class=\"tex-font-style-tt\">&lt;</span>\" operator in the modern programming languages.</p>",
+    "samples": [
+        {
+            "input": "4<br/>b<br/>aa<br/>hg<br/>c<br/>.<br/>",
+            "output": "aa.b<br/>c.hg<br/>"
+        },
+        {
+            "input": "2<br/>aa<br/>a<br/>!<br/>",
+            "output": "a!aa<br/>"
+        },
+        {
+            "input": "2<br/>aa<br/>a<br/>|<br/>",
+            "output": "aa|a<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 58,
+    "index": "D",
+    "name": "Calendar",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "strings"
+    ],
+    "solvedCount": 715
+}

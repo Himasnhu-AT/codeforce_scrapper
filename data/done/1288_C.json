@@ -1,0 +1,38 @@
+{
+    "title": "C. Two Arrays",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two integers $$$n$$$ and $$$m$$$. Calculate the number of pairs of arrays $$$(a, b)$$$ such that:</p><ul> <li> the length of both arrays is equal to $$$m$$$; </li><li> each element of each array is an integer between $$$1$$$ and $$$n$$$ (inclusive); </li><li> $$$a_i \\le b_i$$$ for any index $$$i$$$ from $$$1$$$ to $$$m$$$; </li><li> array $$$a$$$ is sorted in non-descending order; </li><li> array $$$b$$$ is sorted in non-ascending order. </li></ul><p>As the result can be very large, you should print it modulo $$$10^9+7$$$.</p>",
+    "inputSpecification": "<p>The only line contains two integers $$$n$$$ and $$$m$$$ ($$$1 \\le n \\le 1000$$$, $$$1 \\le m \\le 10$$$).</p>",
+    "outputSpecification": "<p>Print one integer \u2013 the number of arrays $$$a$$$ and $$$b$$$ satisfying the conditions described above modulo $$$10^9+7$$$.</p>",
+    "samples": [
+        {
+            "input": "\n2 2\n",
+            "output": "\n5\n"
+        },
+        {
+            "input": "\n10 1\n",
+            "output": "\n55\n"
+        },
+        {
+            "input": "\n723 9\n",
+            "output": "\n157557417\n"
+        }
+    ],
+    "note": "<p>In the first test there are $$$5$$$ suitable arrays: </p><ul> <li> $$$a = [1, 1], b = [2, 2]$$$; </li><li> $$$a = [1, 2], b = [2, 2]$$$; </li><li> $$$a = [2, 2], b = [2, 2]$$$; </li><li> $$$a = [1, 1], b = [2, 1]$$$; </li><li> $$$a = [1, 1], b = [1, 1]$$$. </li></ul>",
+    "contestId": 1288,
+    "index": "C",
+    "name": "Two Arrays",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp"
+    ],
+    "solvedCount": 12513
+}

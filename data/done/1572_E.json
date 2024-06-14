@@ -1,0 +1,35 @@
+{
+    "title": "E. Polygon",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a strictly convex polygon with $$$n$$$ vertices.</p><p>You will make $$$k$$$ cuts that meet the following conditions: </p><ul> <li> each cut is a segment that connects two different nonadjacent vertices; </li><li> two cuts can intersect only at vertices of the polygon. </li></ul><p>Your task is to maximize the area of the smallest region that will be formed by the polygon and those $$$k$$$ cuts.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$, $$$k$$$ ($$$3 \\le n \\le 200$$$, $$$0 \\le k \\le n-3$$$).</p><p>The following $$$n$$$ lines describe vertices of the polygon in anticlockwise direction. The $$$i$$$-th line contains two integers $$$x_i$$$, $$$y_i$$$ ($$$|x_i|, |y_i| \\le 10^8$$$) \u2014 the coordinates of the $$$i$$$-th vertex.</p><p>It is guaranteed that the polygon is convex and that no two adjacent sides are parallel.</p>",
+    "outputSpecification": "<p>Print one integer: the maximum possible area of the smallest region after making $$$k$$$ cuts <span class=\"tex-font-style-bf\">multiplied by</span> $$$2$$$.</p>",
+    "samples": [
+        {
+            "input": "\n8 4\n-2 -4\n2 -2\n4 2\n1 5\n0 5\n-4 4\n-5 0\n-5 -1\n",
+            "output": "\n11\n"
+        },
+        {
+            "input": "\n6 3\n2 -2\n2 -1\n1 2\n0 2\n-2 1\n-1 0\n",
+            "output": "\n3\n"
+        }
+    ],
+    "note": "<p>In the first example, it's optimal to make cuts between the following pairs of vertices: </p><ul> <li> $$$(-2, -4)$$$ and $$$(4, 2)$$$, </li><li> $$$(-2, -4)$$$ and $$$(1, 5)$$$, </li><li> $$$(-5, -1)$$$ and $$$(1, 5)$$$, </li><li> $$$(-5, 0)$$$ and $$$(0, 5)$$$. </li></ul> <center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/62d7b714b5b5c1465f6fc48cbf31f5c8eb8f0e17.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> Points $$$(-5, -1)$$$, $$$(1, 5)$$$, $$$(0, 5)$$$, $$$(-5, 0)$$$ determine the smallest region with double area of $$$11$$$. </center><p>In the second example, it's optimal to make cuts between the following pairs of vertices: </p><ul> <li> $$$(2, -1)$$$ and $$$(0, 2)$$$, </li><li> $$$(2, -1)$$$ and $$$(1, 0)$$$, </li><li> $$$(-1, 0)$$$ and $$$(0, 2)$$$. </li></ul> <center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/00092a6d5f094f909ee724f8f44227d8cfd7d659.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> Points $$$(2, -2)$$$, $$$(2, -1)$$$, $$$(-1, 0)$$$ determine one of the smallest regions with double area of $$$3$$$. </center>",
+    "contestId": 1572,
+    "index": "E",
+    "name": "Polygon",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "dp",
+        "geometry"
+    ],
+    "solvedCount": 281
+}

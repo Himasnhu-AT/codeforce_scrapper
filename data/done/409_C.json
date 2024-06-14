@@ -1,0 +1,29 @@
+{
+    "title": "C. Magnum Opus",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Salve, mi amice.</p><p>Et tu quidem de lapis philosophorum. Barba non facit philosophum. Labor omnia vincit. Non potest creatio ex nihilo. Necesse est partibus.</p><p>Rp:</p><p>\u00a0\u00a0\u00a0\u00a0I Aqua Fortis</p><p>\u00a0\u00a0\u00a0\u00a0I Aqua Regia</p><p>\u00a0\u00a0\u00a0\u00a0II Amalgama</p><p>\u00a0\u00a0\u00a0\u00a0VII Minium</p><p>\u00a0\u00a0\u00a0\u00a0IV Vitriol</p><p>Misce in vitro et \u00e6stus, et nil admirari. Festina lente, et nulla tenaci invia est via.</p><p>Fac et spera,</p><p>Vale,</p><p>Nicolas Flamel</p>",
+    "inputSpecification": "<p>The first line of input contains several space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>).</p>",
+    "outputSpecification": "<p>Print a single integer.</p>",
+    "samples": [
+        {
+            "input": "2 4 6 8 10<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 409,
+    "index": "C",
+    "name": "Magnum Opus",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 1948
+}

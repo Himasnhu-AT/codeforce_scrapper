@@ -1,0 +1,30 @@
+{
+    "title": "F. Math",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6c5613adc71f63dd8f58754dd1351e0a4a8309e1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/863a3d380b9f4328d252c3b4e781205b1811bf3d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>*The two images are equivalent, feel free to use either one.</p>",
+    "inputSpecification": "<p>The input contains a single integer $$$a$$$ ($$$-100 \\le a \\le 100$$$).</p>",
+    "outputSpecification": "<p>Output the result \u2013 an integer number.</p>",
+    "samples": [
+        {
+            "input": "\n1\n",
+            "output": "\n1\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1505,
+    "index": "F",
+    "name": "Math",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "math"
+    ],
+    "solvedCount": 1478
+}

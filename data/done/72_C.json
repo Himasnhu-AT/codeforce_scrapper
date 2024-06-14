@@ -1,0 +1,34 @@
+{
+    "title": "C. Extraordinarily Nice Numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The positive integer <span class=\"tex-span\"><i>a</i></span> is a divisor of the positive integer <span class=\"tex-span\"><i>b</i></span> if and only if there exists a positive integer <span class=\"tex-span\"><i>c</i></span> such that <span class=\"tex-span\"><i>a</i>\u2009\u00d7\u2009<i>c</i>\u2009=\u2009<i>b</i></span>. </p><p>King Astyages thinks a positive integer <span class=\"tex-span\"><i>x</i></span> is <span class=\"tex-font-style-underline\">extraordinarily nice</span> if the number of its even divisors is equal to the number of its odd divisors.</p><p>For example <span class=\"tex-span\">3</span> has two positive divisors <span class=\"tex-span\">3</span> and <span class=\"tex-span\">1</span>, both of which are odd, so <span class=\"tex-span\">3</span> is not extraordinarily nice. On the other hand <span class=\"tex-span\">2</span> is only divisible by <span class=\"tex-span\">2</span> and <span class=\"tex-span\">1</span>, so it has one odd and one even divisor. Therefore <span class=\"tex-span\">2</span> is extraordinarily nice.</p><p>Given a positive integer <span class=\"tex-span\"><i>x</i></span> determine whether it's extraordinarily nice.</p>",
+    "inputSpecification": "<p>The input contains only a single integer <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">3</sup></span>).</p>",
+    "outputSpecification": "<p>Write a single <span class=\"tex-font-style-tt\">yes</span> or <span class=\"tex-font-style-tt\">no</span>. Write <span class=\"tex-font-style-tt\">yes</span> if the number is extraordinarily nice and <span class=\"tex-font-style-tt\">no</span> otherwise.</p><p>You don't need to care about capital or small letters. The output is case-insensitive.</p>",
+    "samples": [
+        {
+            "input": "2<br/>",
+            "output": "yes<br/>"
+        },
+        {
+            "input": "3<br/>",
+            "output": "no<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 72,
+    "index": "C",
+    "name": "Extraordinarily Nice Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "math"
+    ],
+    "solvedCount": 907
+}

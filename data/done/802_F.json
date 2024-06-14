@@ -1,0 +1,25 @@
+{
+    "title": "F. Marmots (hard)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Your task is the exact same as for the <span class=\"tex-font-style-it\">easy</span> version. But this time, the marmots subtract the village's population <span class=\"tex-span\"><i>P</i></span> from their random number before responding to Heidi's request.</p><p>Also, there are now villages with as few as a single inhabitant, meaning that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bf7241381f0b584c267cdf93e7f9ed4911278437.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Can you help Heidi find out whether a village follows a Poisson or a uniform distribution?</p>",
+    "inputSpecification": "<p>Same as for the easy and medium versions. But remember that now <span class=\"tex-span\">1\u2009\u2264\u2009<i>P</i>\u2009\u2264\u20091000</span> and that the marmots may provide positive as well as negative integers.</p>",
+    "outputSpecification": "<p>Output one line per village, in the same order as provided in the input. The village's line shall state <span class=\"tex-font-style-it\">poisson</span> if the village's distribution is of the Poisson type, and <span class=\"tex-font-style-it\">uniform</span> if the answers came from a uniform distribution.</p>",
+    "samples": [],
+    "note": null,
+    "contestId": 802,
+    "index": "F",
+    "name": "Marmots (hard)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "probabilities"
+    ],
+    "solvedCount": 121
+}

@@ -1,0 +1,36 @@
+{
+    "title": "E. Points, Lines and Ready-made Titles",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given <span class=\"tex-span\"><i>n</i></span> distinct points on a plane with integral coordinates. For each point you can either draw a vertical line through it, draw a horizontal line through it, or do nothing.</p><p>You consider several coinciding straight lines as a single one. How many distinct pictures you can get? Print the answer modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the number of points.</p><p><span class=\"tex-span\"><i>n</i></span> lines follow. The (<span class=\"tex-span\"><i>i</i>\u2009+\u20091</span>)-th of these lines contains two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 coordinates of the <span class=\"tex-span\"><i>i</i></span>-th point.</p><p>It is guaranteed that all points are distinct.</p>",
+    "outputSpecification": "<p>Print the number of possible distinct pictures modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "4<br/>1 1<br/>1 2<br/>2 1<br/>2 2<br/>",
+            "output": "16<br/>"
+        },
+        {
+            "input": "2<br/>-1 -1<br/>0 1<br/>",
+            "output": "9<br/>"
+        }
+    ],
+    "note": "<p>In the first example there are two vertical and two horizontal lines passing through the points. You can get pictures with any subset of these lines. For example, you can get the picture containing all four lines in two ways (each segment represents a line containing it).</p><center> The first way:   <img class=\"tex-graphics\" height=\"151px\" src=\"https://espresso.codeforces.com/1bebdefc4f0b4225686b35c1a2b08c57b2e4753d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"189px\"/>   The second way:   <img class=\"tex-graphics\" height=\"151px\" src=\"https://espresso.codeforces.com/4029076ae7d7f36a6d0b6f444752c609385b0457.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"189px\"/> </center><p>In the second example you can work with two points independently. The number of pictures is <span class=\"tex-span\">3<sup class=\"upper-index\">2</sup>\u2009=\u20099</span>.</p>",
+    "contestId": 870,
+    "index": "E",
+    "name": "Points, Lines and Ready-made Titles",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 988
+}

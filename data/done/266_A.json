@@ -1,0 +1,37 @@
+{
+    "title": "A. Stones on the Table",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are <span class=\"tex-span\"><i>n</i></span> stones on the table in a row, each of them can be red, green or blue. Count the minimum number of stones to take from the table so that any two neighboring stones had different colors. Stones in a row are considered neighboring if there are no other stones between them.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950)</span> \u2014 the number of stones on the table. </p><p>The next line contains string <span class=\"tex-span\"><i>s</i></span>, which represents the colors of the stones. We'll consider the stones in the row numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> from left to right. Then the <span class=\"tex-span\"><i>i</i></span>-th character <span class=\"tex-span\"><i>s</i></span> equals \"<span class=\"tex-font-style-tt\">R</span>\", if the <span class=\"tex-span\"><i>i</i></span>-th stone is red, \"<span class=\"tex-font-style-tt\">G</span>\", if it's green and \"<span class=\"tex-font-style-tt\">B</span>\", if it's blue.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "3<br/>RRG<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "5<br/>RRRRR<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "4<br/>BRBG<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 266,
+    "index": "A",
+    "name": "Stones on the Table",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 180417
+}

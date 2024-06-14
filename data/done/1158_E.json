@@ -1,0 +1,32 @@
+{
+    "title": "E. Strange device",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">It is an interactive problem.</span></p><p>Vasya enjoys solving quizzes. He found a strange device and wants to know how it works.</p><p>This device encrypted with the tree (connected undirected graph without cycles) with $$$n$$$ vertices, numbered with integers from $$$1$$$ to $$$n$$$. To solve this quiz you should guess this tree.</p><p>Fortunately, this device can make one operation, using which you should guess the cipher. You can give the device an array $$$d_1, d_2, \\ldots, d_n$$$ of non-negative integers. On the device, there are $$$n$$$ lamps, $$$i$$$-th of them is connected with $$$i$$$-th vertex of the tree. For all $$$i$$$ the light will turn on the $$$i$$$-th lamp, if there exist such vertex of the tree with number $$$j \\neq i$$$ that $$$dist(i, j) \\leq d_j$$$. Let's define $$$dist(i, j)$$$ as the distance between vertices $$$i$$$ and $$$j$$$ in tree or number of edges on the simple path between vertices $$$i$$$ and $$$j$$$.</p><p>Vasya wants to solve this quiz using $$$\\leq 80$$$ operations with the device and guess the tree. Help him! </p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n5\n00000\n11011\n11100\n10010\n",
+            "output": "\n? 0 0 0 0 0\n? 1 1 2 0 2\n? 0 0 0 1 0\n? 0 1 0 0 1\n!\n4 2\n1 5\n3 4\n4 1\n"
+        }
+    ],
+    "note": "<p>It is a picture of the tree which encrypt the device from the first test:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1dc4531527b158b99b5e3d06c9fa3256a0a87bca.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>It is a table of pairwise distances between vertices in this tree:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/83592cfb57350593c1207cd472a798b19b01b48a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><ul> <li> If you make operation where $$$d = [0, 0, 0, 0, 0]$$$, no lamp will switch on, because $$$dist(i, j) &gt; 0$$$ for all $$$i \\neq j$$$. </li><li> If you make operation where $$$d = [1, 1, 2, 0, 2]$$$, all lamps except the lamp connected with the $$$3$$$-rd vertex will switch on. For example, lamp connected with the $$$1$$$-st vertex will switch on, because $$$dist(1, 5) = 1 \\leq 2 = d_5$$$. </li><li> If you make operation where $$$d = [0, 0, 0, 1, 0]$$$, all lamps except lamps connected with the $$$4$$$-th and $$$5$$$-th vertices will switch on. </li><li> If you make operation where $$$d = [0, 1, 0, 0, 1]$$$, only lamps connected with the $$$1$$$-st and $$$4$$$-th vertices will switch on. </li></ul>",
+    "contestId": 1158,
+    "index": "E",
+    "name": "Strange device",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "interactive",
+        "math",
+        "trees"
+    ],
+    "solvedCount": 148
+}

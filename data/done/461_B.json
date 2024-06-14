@@ -1,0 +1,39 @@
+{
+    "title": "B. Appleman and Tree",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Appleman has a tree with <span class=\"tex-span\"><i>n</i></span> vertices. Some of the vertices (at least one) are colored black and other vertices are colored white.</p><p>Consider a set consisting of <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>k</i>\u2009&lt;\u2009<i>n</i>)</span> edges of Appleman's tree. If Appleman deletes these edges from the tree, then it will split into <span class=\"tex-span\">(<i>k</i>\u2009+\u20091)</span> parts. Note, that each part will be a tree with colored vertices.</p><p>Now Appleman wonders, what is the number of sets splitting the tree in such a way that each resulting part will have exactly one black vertex? Find this number modulo <span class=\"tex-span\">1000000007</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>).</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of tree vertices. </p><p>The second line contains the description of the tree: <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">0</sub>,\u2009<i>p</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20092</sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>i</i></span>). Where <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> means that there is an edge connecting vertex <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span> of the tree and vertex <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>. Consider tree vertices are numbered from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span>.</p><p>The third line contains the description of the colors of the vertices: <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">0</sub>,\u2009<i>x</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20091</sub></span> (<span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> is either <span class=\"tex-span\">0</span> or <span class=\"tex-span\">1</span>). If <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> is equal to <span class=\"tex-span\">1</span>, vertex <span class=\"tex-span\"><i>i</i></span> is colored black. Otherwise, vertex <span class=\"tex-span\"><i>i</i></span> is colored white.</p>",
+    "outputSpecification": "<p>Output a single integer \u2014 the number of ways to split the tree modulo <span class=\"tex-span\">1000000007</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>).</p>",
+    "samples": [
+        {
+            "input": "3<br/>0 0<br/>0 1 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "6<br/>0 1 1 0 4<br/>1 1 0 0 1 0<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "10<br/>0 1 2 1 4 4 4 0 8<br/>0 0 0 1 0 1 1 0 0 1<br/>",
+            "output": "27<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 461,
+    "index": "B",
+    "name": "Appleman and Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "trees"
+    ],
+    "solvedCount": 5366
+}

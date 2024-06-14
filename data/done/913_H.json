@@ -1,0 +1,42 @@
+{
+    "title": "H. Don't Exceed",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You generate real numbers <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>n</i></sub></span> as follows: </p><ul> <li> <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">0</sub>\u2009=\u20090</span>; </li><li> <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub>\u2009+\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub></span>, where <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> is a real number chosen independently uniformly at random between 0 and 1, inclusive. </li></ul><p>You are given real numbers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span>. You are interested in the probability that <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> is true for all <span class=\"tex-span\"><i>i</i></span> simultaneously.</p><p>It can be shown that this can be represented as <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b795551c4ba5b501281e7063ac11feb87c7f234f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <span class=\"tex-span\"><i>P</i></span> and <span class=\"tex-span\"><i>Q</i></span> are coprime integers, and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/06b2d2761bfb42e45841d5e19be707daeed570d8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Print the value of <span class=\"tex-span\"><i>P</i>\u00b7<i>Q</i><sup class=\"upper-index\">\u2009-\u20091</sup></span> modulo <span class=\"tex-span\">998244353</span>.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200930</span>).</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain real numbers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span>, given with at most six digits after the decimal point (<span class=\"tex-span\">0\u2009&lt;\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>).</p>",
+    "outputSpecification": "<p>Print a single integer, the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "4<br/>1.00<br/>2<br/>3.000000<br/>4.0<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "1<br/>0.50216<br/>",
+            "output": "342677322<br/>"
+        },
+        {
+            "input": "2<br/>0.5<br/>1.0<br/>",
+            "output": "623902721<br/>"
+        },
+        {
+            "input": "6<br/>0.77<br/>1.234567<br/>2.1<br/>1.890<br/>2.9999<br/>3.77<br/>",
+            "output": "859831967<br/>"
+        }
+    ],
+    "note": "<p>In the first example, the sought probability is 1 since the sum of <span class=\"tex-span\"><i>i</i></span> real numbers which don't exceed 1 doesn't exceed <span class=\"tex-span\"><i>i</i></span>.</p><p>In the second example, the probability is <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub></span> itself.</p><p>In the third example, the sought probability is <span class=\"tex-span\">3\u2009/\u20098</span>.</p>",
+    "contestId": 913,
+    "index": "H",
+    "name": "Don't Exceed",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "probabilities"
+    ],
+    "solvedCount": 124
+}

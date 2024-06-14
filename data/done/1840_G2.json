@@ -1,0 +1,33 @@
+{
+    "title": "G2. In Search of Truth (Hard Version)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">The only difference between easy and hard versions is the maximum number of queries. In this version, you are allowed to ask at most $$$1000$$$ queries.</span></p><p><span class=\"tex-font-style-it\">This is an interactive problem.</span></p><p>You are playing a game. The circle is divided into $$$n$$$ sectors, sectors are numbered from $$$1$$$ to $$$n$$$ in some order. You are in the adjacent room and do not know either the number of sectors or their numbers. There is also an arrow that initially points to some sector. Initially, the host tells you the number of the sector to which the arrow points. After that, you can ask the host to move the arrow $$$k$$$ sectors counterclockwise or clockwise at most $$$1000$$$ times. And each time you are told the number of the sector to which the arrow points.</p><p>Your task is to determine the integer $$$n$$$\u00a0\u2014 the number of sectors in at most $$$1000$$$ queries.</p><p>It is guaranteed that $$$1 \\le n \\le 10^6$$$.</p>",
+    "inputSpecification": "<p>The input consists of a single integer $$$x$$$ ($$$1 \\le x \\le n$$$)\u00a0\u2014 the number of the initial sector.</p>",
+    "outputSpecification": "<p>After you determine the integer $$$n$$$\u00a0\u2014 the number of sectors, you should output \"! n\" ($$$1 \\le n \\le 10^6$$$). After that the program should immediately terminate.</p><p>Note that, printing the answer does not count as a query.</p><p>It is guaranteed that the integer $$$n$$$ and the numbers of the sectors are fixed initially and will not be changed by the jury program depending on the queries.</p>",
+    "samples": [
+        {
+            "input": "\n1\n\n5\n\n6\n\n7\n\n2\n\n10\n\n9\n\n8\n\n4\n\n3\n\n1",
+            "output": "\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n! 10"
+        }
+    ],
+    "note": "<p><span class=\"tex-font-style-bf\">Hacks</span></p><p>To hack, use the following test format.</p><p>In the first line, output a single integer $$$n$$$ ($$$1 \\le n \\le 10^6$$$)\u00a0\u2014 the number of sectors.</p><p>In the second line, output $$$n$$$ different integers $$$1 \\le a_1, a_2, \\dots, a_n \\le n$$$\u00a0\u2014 the numbers of the sectors in clockwise order, the arrow initially points to the sector with the number $$$a_1$$$.</p>",
+    "contestId": 1840,
+    "index": "G2",
+    "name": "In Search of Truth (Hard Version)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "interactive",
+        "math",
+        "meet-in-the-middle",
+        "probabilities"
+    ],
+    "solvedCount": 906
+}

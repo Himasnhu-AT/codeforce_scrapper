@@ -1,0 +1,36 @@
+{
+    "title": "F. New Year and Finding Roots",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is an interactive problem. In the interaction section below you will find the information about flushing the output.</span></p><p>The New Year tree of height <span class=\"tex-span\"><i>h</i></span> is a perfect binary tree with vertices numbered <span class=\"tex-span\">1</span> through <span class=\"tex-span\">2<sup class=\"upper-index\"><i>h</i></sup>\u2009-\u20091</span> in some order. In this problem we assume that <span class=\"tex-span\"><i>h</i></span> is at least <span class=\"tex-span\">2</span>. The drawing below shows one example New Year tree of height <span class=\"tex-span\">3</span>:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/cf3d6f10e64c6f16261ac7a39a532d09821fc235.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Polar bears love decorating the New Year tree and Limak is no exception. To decorate the tree, he must first find its root, i.e. a vertex with exactly two neighbours (assuming that <span class=\"tex-span\"><i>h</i>\u2009\u2265\u20092</span>). It won't be easy because Limak is a little bear and he doesn't even see the whole tree. Can you help him?</p><p>There are <span class=\"tex-span\"><i>t</i></span> testcases. In each testcase, you should first read <span class=\"tex-span\"><i>h</i></span> from the input. Then you can ask at most <span class=\"tex-span\">16</span> questions of format \"<span class=\"tex-font-style-tt\">? x</span>\" (without quotes), where <span class=\"tex-span\"><i>x</i></span> is an integer between <span class=\"tex-span\">1</span> and <span class=\"tex-span\">2<sup class=\"upper-index\"><i>h</i></sup>\u2009-\u20091</span>, inclusive. As a reply you will get the list of neighbours of vertex <span class=\"tex-span\"><i>x</i></span> (more details in the \"Interaction\" section below). For example, for a tree on the drawing above after asking \"<span class=\"tex-font-style-tt\">? 1</span>\" you would get a response with <span class=\"tex-span\">3</span> neighbours: <span class=\"tex-span\">4</span>, <span class=\"tex-span\">5</span> and <span class=\"tex-span\">7</span>. Your goal is to find the index of the root <span class=\"tex-span\"><i>y</i></span> and print it in the format \"<span class=\"tex-font-style-tt\">! y</span>\". You will be able to read <span class=\"tex-span\"><i>h</i></span> for a next testcase only after printing the answer in a previous testcase and flushing the output.</p><p>Each tree is fixed from the beginning and it doesn't change during your questions.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i>\u2009\u2264\u2009500</span>)\u00a0\u2014 the number of testcases.</p><p>At the beginning of each testcase you should read from the input a single integer <span class=\"tex-span\"><i>h</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>h</i>\u2009\u2264\u20097</span>)\u00a0\u2014 the height of the tree. You can't read the value of <span class=\"tex-span\"><i>h</i></span> in a next testcase until you answer a previous testcase.</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "1<br/>3<br/>3<br/>4 5 7<br/>2<br/>1 2<br/>1<br/>2<br/>",
+            "output": "? 1<br/>? 5<br/>? 6<br/>! 5<br/>"
+        },
+        {
+            "input": "2<br/>2<br/>1<br/>3<br/>2<br/>1 2<br/>2<br/>1 2<br/>4<br/>3<br/>3 12 13<br/>",
+            "output": "? 1<br/>? 3<br/>? 3<br/>! 3<br/>? 6<br/>! 1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, a tree corresponds to the drawing from the statement.</p><p>In the second sample, there are two two testcases. A tree in the first testcase has height <span class=\"tex-span\">2</span> and thus <span class=\"tex-span\">3</span> vertices. A tree in the second testcase has height <span class=\"tex-span\">4</span> and thus <span class=\"tex-span\">15</span> vertices. You can see both trees on the drawing below.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/9db3581501e9c1bf651760cf0a6824c0ac95dc52.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 750,
+    "index": "F",
+    "name": "New Year and Finding Roots",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "interactive",
+        "trees"
+    ],
+    "solvedCount": 478
+}

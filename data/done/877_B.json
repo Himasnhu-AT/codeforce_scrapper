@@ -1,0 +1,34 @@
+{
+    "title": "B. Nikita and string",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One day Nikita found the string containing letters \"<span class=\"tex-font-style-tt\">a</span>\" and \"<span class=\"tex-font-style-tt\">b</span>\" only. </p><p>Nikita thinks that string is beautiful if it can be cut into <span class=\"tex-span\">3</span> strings (possibly empty) without changing the order of the letters, where the <span class=\"tex-span\">1</span>-st and the <span class=\"tex-span\">3</span>-rd one contain only letters \"<span class=\"tex-font-style-tt\">a</span>\" and the <span class=\"tex-span\">2</span>-nd contains only letters \"<span class=\"tex-font-style-tt\">b</span>\".</p><p>Nikita wants to make the string beautiful by removing some (possibly none) of its characters, but without changing their order. What is the maximum length of the string he can get?</p>",
+    "inputSpecification": "<p>The first line contains a non-empty string of length not greater than <span class=\"tex-span\">5\u2009000</span> containing only lowercase English letters \"<span class=\"tex-font-style-tt\">a</span>\" and \"<span class=\"tex-font-style-tt\">b</span>\". </p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the maximum possible size of beautiful string Nikita can get.</p>",
+    "samples": [
+        {
+            "input": "abba<br/>",
+            "output": "4"
+        },
+        {
+            "input": "bab<br/>",
+            "output": "2"
+        }
+    ],
+    "note": "<p>It the first sample the string is already beautiful.</p><p>In the second sample he needs to delete one of \"<span class=\"tex-font-style-tt\">b</span>\" to make it beautiful.</p>",
+    "contestId": 877,
+    "index": "B",
+    "name": "Nikita and string",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp"
+    ],
+    "solvedCount": 10054
+}

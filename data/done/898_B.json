@@ -1,0 +1,43 @@
+{
+    "title": "B. Proper Nutrition",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya has <span class=\"tex-span\"><i>n</i></span> burles. One bottle of Ber-Cola costs <span class=\"tex-span\"><i>a</i></span> burles and one Bars bar costs <span class=\"tex-span\"><i>b</i></span> burles. He can buy any non-negative integer number of bottles of Ber-Cola and any non-negative integer number of Bars bars.</p><p>Find out if it's possible to buy some amount of bottles of Ber-Cola and Bars bars and spend <span class=\"tex-font-style-bf\">exactly</span> <span class=\"tex-span\"><i>n</i></span> burles.</p><p>In other words, you should find two non-negative integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> such that Vasya can buy <span class=\"tex-span\"><i>x</i></span> bottles of Ber-Cola and <span class=\"tex-span\"><i>y</i></span> Bars bars and <span class=\"tex-span\"><i>x</i>\u00b7<i>a</i>\u2009+\u2009<i>y</i>\u00b7<i>b</i>\u2009=\u2009<i>n</i></span> or tell that it's impossible.</p>",
+    "inputSpecification": "<p>First line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910\u2009000\u2009000</span>)\u00a0\u2014 amount of money, that Vasya has.</p><p>Second line contains single integer <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u200910\u2009000\u2009000</span>)\u00a0\u2014 cost of one bottle of Ber-Cola.</p><p>Third line contains single integer <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i>\u2009\u2264\u200910\u2009000\u2009000</span>)\u00a0\u2014 cost of one Bars bar.</p>",
+    "outputSpecification": "<p>If Vasya can't buy Bars and Ber-Cola in such a way to spend exactly <span class=\"tex-span\"><i>n</i></span> burles print \u00ab<span class=\"tex-font-style-tt\">NO</span>\u00bb (without quotes).</p><p>Otherwise in first line print \u00ab<span class=\"tex-font-style-tt\">YES</span>\u00bb (without quotes). In second line print two non-negative integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>\u00a0\u2014 number of bottles of Ber-Cola and number of Bars bars Vasya should buy in order to spend exactly <span class=\"tex-span\"><i>n</i></span> burles, i.e. <span class=\"tex-span\"><i>x</i>\u00b7<i>a</i>\u2009+\u2009<i>y</i>\u00b7<i>b</i>\u2009=\u2009<i>n</i></span>. If there are multiple answers print any of them.</p><p>Any of numbers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> can be equal <span class=\"tex-span\">0</span>.</p>",
+    "samples": [
+        {
+            "input": "7<br/>2<br/>3<br/>",
+            "output": "YES<br/>2 1<br/>"
+        },
+        {
+            "input": "100<br/>25<br/>10<br/>",
+            "output": "YES<br/>0 10<br/>"
+        },
+        {
+            "input": "15<br/>4<br/>8<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "9960594<br/>2551<br/>2557<br/>",
+            "output": "YES<br/>1951 1949<br/>"
+        }
+    ],
+    "note": "<p>In first example Vasya can buy two bottles of Ber-Cola and one Bars bar. He will spend exactly <span class=\"tex-span\">2\u00b72\u2009+\u20091\u00b73\u2009=\u20097</span> burles.</p><p>In second example Vasya can spend exactly <span class=\"tex-span\"><i>n</i></span> burles multiple ways: </p><ul> <li> buy two bottles of Ber-Cola and five Bars bars; </li><li> buy four bottles of Ber-Cola and don't buy Bars bars; </li><li> don't buy Ber-Cola and buy <span class=\"tex-span\">10</span> Bars bars. </li></ul><p>In third example it's impossible to but Ber-Cola and Bars bars in order to spend exactly <span class=\"tex-span\"><i>n</i></span> burles.</p>",
+    "contestId": 898,
+    "index": "B",
+    "name": "Proper Nutrition",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "number theory"
+    ],
+    "solvedCount": 9341
+}

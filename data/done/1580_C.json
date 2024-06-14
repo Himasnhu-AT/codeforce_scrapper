@@ -1,0 +1,35 @@
+{
+    "title": "C. Train Maintenance",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Kawasiro Nitori is excellent in engineering. Thus she has been appointed to help maintain trains.</p><p>There are $$$n$$$ models of trains, and Nitori's department will only have at most one train of each model at any moment. In the beginning, there are no trains, at each of the following $$$m$$$ days, one train will be added, or one train will be removed. When a train of model $$$i$$$ is added at day $$$t$$$, it works for $$$x_i$$$ days (day $$$t$$$ inclusive), then it is in maintenance for $$$y_i$$$ days, then in work for $$$x_i$$$ days again, and so on until it is removed.</p><p>In order to make management easier, Nitori wants you to help her calculate how many trains are in maintenance in each day.</p><p><span class=\"tex-font-style-bf\">On a day a train is removed, it is not counted as in maintenance.</span></p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$, $$$m$$$ ($$$1 \\le n,m \\le 2 \\cdot 10^5$$$).</p><p>The $$$i$$$-th of the next $$$n$$$ lines contains two integers $$$x_i,y_i$$$ ($$$1 \\le x_i,y_i \\le 10^9$$$).</p><p>Each of the next $$$m$$$ lines contains two integers $$$op$$$, $$$k$$$ ($$$1 \\le k \\le n$$$, $$$op = 1$$$ or $$$op = 2$$$). If $$$op=1$$$, it means this day's a train of model $$$k$$$ is added, otherwise the train of model $$$k$$$ is removed. It is guaranteed that when a train of model $$$x$$$ is added, there is no train of the same model in the department, and when a train of model $$$x$$$ is removed, there is such a train in the department.</p>",
+    "outputSpecification": "<p>Print $$$m$$$ lines, The $$$i$$$-th of these lines contains one integers, denoting the number of trains in maintenance in the $$$i$$$-th day.</p>",
+    "samples": [
+        {
+            "input": "\n3 4\n10 15\n12 10\n1 1\n1 3\n1 1\n2 1\n2 3\n",
+            "output": "\n0\n1\n0\n0\n"
+        },
+        {
+            "input": "\n5 4\n1 1\n10000000 100000000\n998244353 1\n2 1\n1 2\n1 5\n2 5\n1 5\n1 1\n",
+            "output": "\n0\n0\n0\n1\n"
+        }
+    ],
+    "note": "<p>Consider the first example:</p><p>The first day: Nitori adds a train of model $$$3$$$. Only a train of model $$$3$$$ is running and no train is in maintenance.</p><p>The second day: Nitori adds a train of model $$$1$$$. A train of model $$$1$$$ is running and a train of model $$$3$$$ is in maintenance.</p><p>The third day: Nitori removes a train of model $$$1$$$. The situation is the same as the first day.</p><p>The fourth day: Nitori removes a train of model $$$3$$$. There are no trains at all.</p>",
+    "contestId": 1580,
+    "index": "C",
+    "name": "Train Maintenance",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation"
+    ],
+    "solvedCount": 1692
+}

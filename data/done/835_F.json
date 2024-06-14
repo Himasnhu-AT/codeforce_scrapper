@@ -1,0 +1,36 @@
+{
+    "title": "F. Roads in the Kingdom",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In the Kingdom K., there are <span class=\"tex-span\"><i>n</i></span> towns numbered with integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. The towns are connected by <span class=\"tex-span\"><i>n</i></span> bi-directional roads numbered with integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. The <span class=\"tex-span\"><i>i</i></span>-th road connects the towns <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> and its length is <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span>. There is no more than one road between two towns. Also, there are no roads that connect the towns with itself.</p><p>Let's call the inconvenience of the roads the maximum of the shortest distances between all pairs of towns.</p><p>Because of lack of money, it was decided to close down one of the roads so that after its removal it is still possible to reach any town from any other. You have to find the minimum possible inconvenience of the roads after closing down one of the roads.</p>",
+    "inputSpecification": "<p>The first line contains the integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the number of towns and roads.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain the roads description. The <span class=\"tex-span\"><i>i</i></span>-th from these lines contains three integers <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the numbers of towns connected by the <span class=\"tex-span\"><i>i</i></span>-th road and the length of the <span class=\"tex-span\"><i>i</i></span>-th road. No road connects a town to itself, no two roads connect the same towns.</p><p><span class=\"tex-font-style-it\">It's guaranteed that it's always possible to close down one of the roads so that all the towns are still reachable from each other.</span></p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the minimum possible inconvenience of the roads after the refusal from one of the roads.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2 4<br/>2 3 5<br/>1 3 1<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "5<br/>2 3 7<br/>3 1 9<br/>4 1 8<br/>3 5 4<br/>4 5 5<br/>",
+            "output": "18<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 835,
+    "index": "F",
+    "name": "Roads in the Kingdom",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 1014
+}

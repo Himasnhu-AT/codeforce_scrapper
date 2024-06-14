@@ -1,0 +1,39 @@
+{
+    "title": "E. Maximum Element",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One day Petya was solving a very interesting problem. But although he used many optimization techniques, his solution still got Time limit exceeded verdict. Petya conducted a thorough analysis of his program and found out that his function for finding maximum element in an array of <span class=\"tex-span\"><i>n</i></span> positive integers was too slow. Desperate, Petya decided to use a somewhat unexpected optimization using parameter <span class=\"tex-span\"><i>k</i></span>, so now his function contains the following code:</p><pre class=\"verbatim\"><br/>int fast_max(int n, int a[]) { <br/>    int ans = 0;<br/>    int offset = 0;<br/>    for (int i = 0; i &lt; n; ++i)<br/>        if (ans &lt; a[i]) {<br/>            ans = a[i];<br/>            offset = 0;<br/>        } else {<br/>            offset = offset + 1;<br/>            if (offset == k)<br/>                return ans;<br/>        }<br/>    return ans;<br/>}<br/></pre><p>That way the function iteratively checks array elements, storing the intermediate maximum, and if after <span class=\"tex-span\"><i>k</i></span> consecutive iterations that maximum has not changed, it is returned as the answer.</p><p>Now Petya is interested in fault rate of his function. He asked you to find the number of permutations of integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> such that the return value of his function on those permutations is not equal to <span class=\"tex-span\"><i>n</i></span>. Since this number could be very big, output the answer modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The only line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>), separated by a space\u00a0\u2014 the length of the permutations and the parameter <span class=\"tex-span\"><i>k</i></span>.</p>",
+    "outputSpecification": "<p>Output the answer to the problem modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "<br/>int fast_max(int n, int a[]) { <br/>    int ans = 0;<br/>    int offset = 0;<br/>    for (int i = 0; i < n; ++i)<br/>        if (ans < a[i]) {<br/>            ans = a[i];<br/>            offset = 0;<br/>        } else {<br/>            offset = offset + 1;<br/>            if (offset == k)<br/>                return ans;<br/>        }<br/>    return ans;<br/>}<br/>",
+            "output": "5 2<br/>"
+        },
+        {
+            "input": "22<br/>",
+            "output": "5 3<br/>"
+        },
+        {
+            "input": "6<br/>",
+            "output": "6 3<br/>"
+        }
+    ],
+    "note": "<p>Permutations from second example: </p><p><span class=\"tex-span\">[4,\u20091,\u20092,\u20093,\u20095]</span>, <span class=\"tex-span\">[4,\u20091,\u20093,\u20092,\u20095]</span>, <span class=\"tex-span\">[4,\u20092,\u20091,\u20093,\u20095]</span>, <span class=\"tex-span\">[4,\u20092,\u20093,\u20091,\u20095]</span>, <span class=\"tex-span\">[4,\u20093,\u20091,\u20092,\u20095]</span>, <span class=\"tex-span\">[4,\u20093,\u20092,\u20091,\u20095]</span>.</p>",
+    "contestId": 886,
+    "index": "E",
+    "name": "Maximum Element",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 980
+}

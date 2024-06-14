@@ -1,0 +1,34 @@
+{
+    "title": "B. Correct Solution?",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One cold winter evening Alice and her older brother Bob was sitting at home near the fireplace and giving each other interesting problems to solve. When it was Alice's turn, she told the number <span class=\"tex-span\"><i>n</i></span> to Bob and said:</p><p>\u2014Shuffle the digits in this number in order to obtain the smallest possible number without leading zeroes.</p><p>\u2014No problem! \u2014 said Bob and immediately gave her an answer.</p><p>Alice said a random number, so she doesn't know whether Bob's answer is correct. Help her to find this out, because impatient brother is waiting for the verdict.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) without leading zeroes. The second lines contains one integer <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 Bob's answer, possibly with leading zeroes.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-font-style-tt\">OK</span> if Bob's answer is correct and <span class=\"tex-font-style-tt\">WRONG_ANSWER</span> otherwise.</p>",
+    "samples": [
+        {
+            "input": "3310<br/>1033<br/>",
+            "output": "OK<br/>"
+        },
+        {
+            "input": "4<br/>5<br/>",
+            "output": "WRONG_ANSWER<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 12,
+    "index": "B",
+    "name": "Correct Solution?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 8124
+}

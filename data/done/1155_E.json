@@ -1,0 +1,35 @@
+{
+    "title": "E. Guess the Root",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Jury picked a polynomial $$$f(x) = a_0 + a_1 \\cdot x + a_2 \\cdot x^2 + \\dots + a_k \\cdot x^k$$$. $$$k \\le 10$$$ and all $$$a_i$$$ are integer numbers and $$$0 \\le a_i &lt; 10^6 + 3$$$. It's guaranteed that there is at least one $$$i$$$ such that $$$a_i &gt; 0$$$.</p><p>Now jury wants you to find such an integer $$$x_0$$$ that $$$f(x_0) \\equiv 0 \\mod (10^6 + 3)$$$ or report that there is not such $$$x_0$$$.</p><p>You can ask no more than $$$50$$$ queries: you ask value $$$x_q$$$ and jury tells you value $$$f(x_q) \\mod (10^6 + 3)$$$.</p><p>Note that printing the answer doesn't count as a query.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n \n1000002\n\n0\n",
+            "output": "\n? 0\n\n? 1\n\n! 1"
+        },
+        {
+            "input": "\n \n5\n\n2\n\n1\n\n",
+            "output": "\n? 2\n\n? 1\n\n? 0\n\n! -1"
+        }
+    ],
+    "note": "<p>The polynomial in the first sample is $$$1000002 + x^2$$$.</p><p>The polynomial in the second sample is $$$1 + x^2$$$.</p>",
+    "contestId": 1155,
+    "index": "E",
+    "name": "Guess the Root",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "interactive",
+        "math"
+    ],
+    "solvedCount": 1396
+}

@@ -1,0 +1,22 @@
+{
+    "title": "E1. Bernstein-Vazirani algorithm",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a quantum oracle - an operation on <span class=\"tex-span\"><i>N</i>\u2009+\u20091</span> qubits which implements a function <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/ca923da5e61e139eb5596a3b9e34cc7ef42d1433.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. You are guaranteed that the function <span class=\"tex-span\"><i>f</i></span> implemented by the oracle is scalar product function (oracle from problem D1): </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/2b31a0d1ff4af2d7c1af23391f540a01218c8fa7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>Here <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b27ec8b8056386de828da0df174348afa7d29512.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> (an array of <span class=\"tex-span\"><i>N</i></span> integers, each of which can be 0 or 1). </p><p>Your task is to reconstruct the array <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/71fa108edb785ca9f729fa3cd5ad18556dd682e4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Your code is allowed to call the given oracle only once.</p><p>You have to implement an operation which takes the following inputs:</p><ul><li> an integer <span class=\"tex-span\"><i>N</i></span> - the number of qubits in the oracle input (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u20098</span>),</li><li> an oracle <span class=\"tex-span\"><i>Uf</i></span>, implemented as an operation with signature <span class=\"tex-font-style-tt\">((Qubit[], Qubit) =&gt; ())</span>, i.e., an operation which takes as input an array of qubits and an output qubit and has no output.</li></ul><p>The return of your operation is an array of integers of length <span class=\"tex-span\"><i>N</i></span>, each of them 0 or 1.</p><p>Your code should have the following signature:</p><pre class=\"verbatim\">namespace Solution {<br/>    open Microsoft.Quantum.Primitive;<br/>    open Microsoft.Quantum.Canon;<br/><br/>    operation Solve (N : Int, Uf : ((Qubit[], Qubit) =&gt; ())) : Int[]<br/>    {<br/>        body<br/>        {<br/>            // your code here<br/>        }<br/>    }<br/>}</pre>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1002,
+    "index": "E1",
+    "name": "Bernstein-Vazirani algorithm",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 319
+}

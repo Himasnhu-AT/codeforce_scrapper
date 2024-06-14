@@ -1,0 +1,30 @@
+{
+    "title": "B. Prefiquence",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two binary strings $$$a$$$ and $$$b$$$. A binary string is a string consisting of the characters '<span class=\"tex-font-style-tt\">0</span>' and '<span class=\"tex-font-style-tt\">1</span>'.</p><p>Your task is to determine the maximum possible number $$$k$$$ such that a prefix of string $$$a$$$ of length $$$k$$$ is a subsequence of string $$$b$$$.</p><p>A sequence $$$a$$$ is a subsequence of a sequence $$$b$$$ if $$$a$$$ can be obtained from $$$b$$$ by the deletion of several (possibly, zero or all) elements.</p>",
+    "inputSpecification": "<p>The first line consists of a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains two integers $$$n$$$ and $$$m$$$ ($$$1\\le n,m \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the length of string $$$a$$$ and the length of string $$$b$$$, respectively.</p><p>The second line of each test case contains a binary string $$$a$$$ of length $$$n$$$.</p><p>The third line of each test case contains a binary string $$$b$$$ of length $$$m$$$.</p><p>It is guaranteed that the sum of values $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$. Similarly, the sum of values $$$m$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single number \u2014 the maximum $$$k$$$, such that the first $$$k$$$ characters of $$$a$$$ form a subsequence of $$$b$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">5 4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">10011</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1110</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">100</div><div class=\"test-example-line test-example-line-even test-example-line-2\">110</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">111</div><div class=\"test-example-line test-example-line-even test-example-line-4\">4 4</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1011</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1111</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">3 5</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">100</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">11010</div><div class=\"test-example-line test-example-line-even test-example-line-6\">3 1</div><div class=\"test-example-line test-example-line-even test-example-line-6\">100</div><div class=\"test-example-line test-example-line-even test-example-line-6\">0</div>",
+            "output": "\n2\n2\n1\n1\n3\n0\n"
+        }
+    ],
+    "note": "<p>In the first example, the string '$$$10$$$' is a subsequence of '$$$1\\color{red}11\\color{red}0$$$' but the string '$$$100$$$' is not. So the answer is $$$2$$$.</p><p>In the fifth example, $$$a$$$='$$$100$$$', $$$b$$$='$$$1\\color{red}{10}1\\color{red}0$$$', whole string $$$a$$$ is a subsequence of string $$$b$$$. So the answer is $$$3$$$.</p><p>In the sixth example, string $$$b$$$ does not contain '$$$1$$$' so the answer is $$$0$$$.</p>",
+    "contestId": 1968,
+    "index": "B",
+    "name": "Prefiquence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "two pointers"
+    ],
+    "solvedCount": 25082
+}

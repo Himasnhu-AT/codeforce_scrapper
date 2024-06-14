@@ -1,0 +1,35 @@
+{
+    "title": "B. Restoring Painting",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya works as a watchman in the gallery. Unfortunately, one of the most expensive paintings was stolen while he was on duty. He doesn't want to be fired, so he has to quickly restore the painting. He remembers some facts about it.</p><ul> <li> The painting is a square <span class=\"tex-span\">3\u2009\u00d7\u20093</span>, each cell contains a single integer from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, and different cells may contain either different or equal integers. </li><li> The sum of integers in each of four squares <span class=\"tex-span\">2\u2009\u00d7\u20092</span> is equal to the sum of integers in the top left square <span class=\"tex-span\">2\u2009\u00d7\u20092</span>. </li><li> Four elements <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span>, <span class=\"tex-span\"><i>c</i></span> and <span class=\"tex-span\"><i>d</i></span> are known and are located as shown on the picture below. </li></ul><center><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/f8d85b32daa63482cff27d57913b93181fcadda8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>Help Vasya find out the number of distinct squares the satisfy all the conditions above. Note, that this number may be equal to <span class=\"tex-span\">0</span>, meaning Vasya remembers something wrong.</p><p>Two squares are considered to be different, if there exists a cell that contains two different integers in different squares.</p>",
+    "inputSpecification": "<p>The first line of the input contains five integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span>, <span class=\"tex-span\"><i>c</i></span> and <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>,\u2009<i>c</i>,\u2009<i>d</i>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 maximum possible value of an integer in the cell and four integers that Vasya remembers.</p>",
+    "outputSpecification": "<p>Print one integer\u00a0\u2014 the number of distinct valid squares.</p>",
+    "samples": [
+        {
+            "input": "2 1 1 1 2<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3 3 1 2 3<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": "<p>Below are all the possible paintings for the first sample. <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c4c53d4e7b6814d8aad7b72604b6089d61dadb48.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/46a6ad6a5d3db202f3779b045b9dc77fc2348cf1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>In the second sample, only paintings displayed below satisfy all the rules. <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/776f231305f8ce7c33e79e887722ce46aa8b6e61.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2fce9e9a31e70f1e46ea26f11d7305b3414e9b6b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/be084a4d1f7e475be1183f7dff10e9c89eb175ef.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/96afdb4a35ac14f595d29bea2282f621098902f4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/79ca8d720334a74910514f017ecf1d0166009a03.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/ad3c37e950bf5702d54f05756db35c831da59ad9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 675,
+    "index": "B",
+    "name": "Restoring Painting",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 7311
+}

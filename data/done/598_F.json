@@ -1,0 +1,29 @@
+{
+    "title": "F. Cut Length",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Given simple (without self-intersections) <span class=\"tex-span\"><i>n</i></span>-gon. It is not necessary convex. Also you are given <span class=\"tex-span\"><i>m</i></span> lines. For each line find the length of common part of the line and the <span class=\"tex-span\"><i>n</i></span>-gon.</p><p>The boundary of <span class=\"tex-span\"><i>n</i></span>-gon belongs to polygon. It is possible that <span class=\"tex-span\"><i>n</i></span>-gon contains 180-degree angles.</p>",
+    "inputSpecification": "<p>The first line contains integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000;1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009100</span>). The following <span class=\"tex-span\"><i>n</i></span> lines contain coordinates of polygon vertices (in clockwise or counterclockwise direction). All vertices are distinct.</p><p>The following <span class=\"tex-span\"><i>m</i></span> lines contain line descriptions. Each of them contains two distict points of a line by their coordinates.</p><p>All given in the input coordinates are real numbers, given with at most two digits after decimal point. They do not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">5</sup></span> by absolute values.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>m</i></span> lines, the <span class=\"tex-span\"><i>i</i></span>-th line should contain the length of common part of the given <span class=\"tex-span\"><i>n</i></span>-gon and the <span class=\"tex-span\"><i>i</i></span>-th line. The answer will be considered correct if the absolute or relative error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "4 3<br/>0 0<br/>1 0<br/>1 1<br/>0 1<br/>0 0 1 1<br/>0 0 0 1<br/>0 0 1 -1<br/>",
+            "output": "1.41421356237309514547<br/>1.00000000000000000000<br/>0.00000000000000000000<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 598,
+    "index": "F",
+    "name": "Cut Length",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 362
+}

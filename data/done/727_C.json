@@ -1,0 +1,31 @@
+{
+    "title": "C. Guess the Array",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">This is an interactive problem. You should use <span class=\"tex-font-style-tt\">flush</span> operation after each printed line. For example, in C++ you should use <span class=\"tex-font-style-tt\">fflush(stdout)</span>, in Java you should use <span class=\"tex-font-style-tt\">System.out.flush()</span>, and in Pascal\u00a0\u2014 <span class=\"tex-font-style-tt\">flush(output)</span>.</span></p><p>In this problem you should guess an array <span class=\"tex-span\"><i>a</i></span> which is unknown for you. The only information you have initially is the length <span class=\"tex-span\"><i>n</i></span> of the array <span class=\"tex-span\"><i>a</i></span>.</p><p>The only allowed action is to ask the sum of two elements by their indices. Formally, you can print two indices <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span> (the indices should be <span class=\"tex-font-style-bf\">distinct</span>). Then your program should read the response: the single integer equals to <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>j</i></sub></span>.</p><p>It is easy to prove that it is always possible to guess the array using at most <span class=\"tex-span\"><i>n</i></span> requests.</p><p>Write a program that will guess the array <span class=\"tex-span\"><i>a</i></span> by making at most <span class=\"tex-span\"><i>n</i></span> requests.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "5<br/>\u00a0<br/>9<br/>\u00a0<br/>7<br/>\u00a0<br/>9<br/>\u00a0<br/>11<br/>\u00a0<br/>6<br/>\u00a0",
+            "output": "\u00a0<br/>? 1 5<br/>\u00a0<br/>? 2 3<br/>\u00a0<br/>? 4 1<br/>\u00a0<br/>? 5 2<br/>\u00a0<br/>? 3 4<br/>\u00a0<br/>! 4 6 1 5 5"
+        }
+    ],
+    "note": "<p>The format of a test to make a hack is:</p><ul> <li> The first line contains an integer number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20095000</span>)\u00a0\u2014 the length of the array.</li><li> The second line contains <span class=\"tex-span\"><i>n</i></span> numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the elements of the array to guess. </li></ul>",
+    "contestId": 727,
+    "index": "C",
+    "name": "Guess the Array",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "interactive",
+        "math"
+    ],
+    "solvedCount": 6983
+}

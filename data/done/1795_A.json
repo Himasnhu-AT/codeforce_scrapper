@@ -1,0 +1,31 @@
+{
+    "title": "A. Two Towers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are two towers consisting of blocks of two colors: red and blue. Both towers are represented by strings of characters <span class=\"tex-font-style-tt\">B</span> and/or <span class=\"tex-font-style-tt\">R</span> denoting the order of blocks in them <span class=\"tex-font-style-bf\">from the bottom to the top</span>, where <span class=\"tex-font-style-tt\">B</span> corresponds to a blue block, and <span class=\"tex-font-style-tt\">R</span> corresponds to a red block.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/ca3bc5b805f5b767905202c5ac882b2e8e2f7ead.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">These two towers are represented by strings <span class=\"tex-font-style-tt\">BRBB</span> and <span class=\"tex-font-style-tt\">RBR</span>.</span> </center><p>You can perform the following operation any number of times: choose a tower with <span class=\"tex-font-style-bf\">at least two blocks</span>, and move its <span class=\"tex-font-style-bf\">top</span> block to the <span class=\"tex-font-style-bf\">top</span> of the other tower.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/e2c2ac5f9c3bf8a08a98d36ef0e398d67bf174fd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1aef55eab166519c5e6d5a5c4f508f43e9cfdd6d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The pair of towers is <span class=\"tex-font-style-it\">beautiful</span> if no pair of touching blocks has the same color; i.\u2009e. no red block stands on top of another red block, and no blue block stands on top of another blue block.</p><p>You have to check if it is possible to perform any number of operations (possibly zero) to make the pair of towers beautiful.</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$t$$$ ($$$1 \\le t \\le 1000$$$)\u00a0\u2014 the number of test cases.</p><p>Each test case consists of three lines:</p><ul> <li> the first line contains two integers $$$n$$$ and $$$m$$$ ($$$1 \\le n, m \\le 20$$$)\u00a0\u2014 the number of blocks in the first tower and the number of blocks in the second tower, respectively; </li><li> the second line contains $$$s$$$\u00a0\u2014 a string of exactly $$$n$$$ characters <span class=\"tex-font-style-tt\">B</span> and/or <span class=\"tex-font-style-tt\">R</span>, denoting the first tower; </li><li> the third line contains $$$t$$$\u00a0\u2014 a string of exactly $$$m$$$ characters <span class=\"tex-font-style-tt\">B</span> and/or <span class=\"tex-font-style-tt\">R</span>, denoting the second tower. </li></ul>",
+    "outputSpecification": "<p>For each test case, print <span class=\"tex-font-style-tt\">YES</span> if it is possible to perform several (possibly zero) operations in such a way that the pair of towers becomes beautiful; otherwise print <span class=\"tex-font-style-tt\">NO</span>.</p><p>You may print each letter in any case (<span class=\"tex-font-style-tt\">YES</span>, <span class=\"tex-font-style-tt\">yes</span>, <span class=\"tex-font-style-tt\">Yes</span> will all be recognized as positive answer, <span class=\"tex-font-style-tt\">NO</span>, <span class=\"tex-font-style-tt\">no</span> and <span class=\"tex-font-style-tt\">nO</span> will all be recognized as negative answer).</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4 3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">BRBB</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">RBR</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 7</div><div class=\"test-example-line test-example-line-even test-example-line-2\">BRBR</div><div class=\"test-example-line test-example-line-even test-example-line-2\">RRBRBRB</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">RBR</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">BRBR</div><div class=\"test-example-line test-example-line-even test-example-line-4\">5 4</div><div class=\"test-example-line test-example-line-even test-example-line-4\">BRBRR</div><div class=\"test-example-line test-example-line-even test-example-line-4\">BRBR</div>",
+            "output": "\nYES\nYES\nYES\nNO\n"
+        }
+    ],
+    "note": "<p>In the first test case, you can move the top block from the first tower to the second tower (see the third picture).</p><p>In the second test case, you can move the top block from the second tower to the first tower $$$6$$$ times.</p><p>In the third test case, the pair of towers is already beautiful.</p>",
+    "contestId": 1795,
+    "index": "A",
+    "name": "Two Towers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 23339
+}

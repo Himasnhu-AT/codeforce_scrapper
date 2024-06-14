@@ -1,0 +1,38 @@
+{
+    "title": "A. You're Given a String...",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You're given a string of lower-case Latin letters. Your task is to find the length of its longest substring that can be met in the string at least twice. These occurrences can overlap (see sample test 2).</p>",
+    "inputSpecification": "<p>The first input line contains the string. It's guaranteed, that the string is non-empty, consists of lower-case Latin letters, and its length doesn't exceed 100.</p>",
+    "outputSpecification": "<p>Output one number \u2014 length of the longest substring that can be met in the string at least twice.</p>",
+    "samples": [
+        {
+            "input": "abcd<br/>",
+            "output": "0"
+        },
+        {
+            "input": "ababa<br/>",
+            "output": "3"
+        },
+        {
+            "input": "zzz<br/>",
+            "output": "2"
+        }
+    ],
+    "note": null,
+    "contestId": 23,
+    "index": "A",
+    "name": "You're Given a String...",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "greedy"
+    ],
+    "solvedCount": 5112
+}

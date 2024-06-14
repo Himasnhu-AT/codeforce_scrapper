@@ -1,0 +1,41 @@
+{
+    "title": "A. Juicer",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Kolya is going to make fresh orange juice. He has <span class=\"tex-span\"><i>n</i></span> oranges of sizes <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. Kolya will put them in the juicer in the fixed order, starting with orange of size <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>, then orange of size <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span> and so on. To be put in the juicer the orange must have size not exceeding <span class=\"tex-span\"><i>b</i></span>, so if Kolya sees an orange that is strictly greater he throws it away and continues with the next one.</p><p>The juicer has a special section to collect waste. It overflows if Kolya squeezes oranges of the total size strictly greater than <span class=\"tex-span\"><i>d</i></span>. When it happens Kolya empties the waste section (even if there are no more oranges) and continues to squeeze the juice. How many times will he have to empty the waste section?</p>",
+    "inputSpecification": "<p>The first line of the input contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>b</i></span> and <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i>\u2009\u2264\u2009<i>d</i>\u2009\u2264\u20091\u2009000\u2009000</span>)\u00a0\u2014 the number of oranges, the maximum size of the orange that fits in the juicer and the value <span class=\"tex-span\"><i>d</i></span>, which determines the condition when the waste section should be emptied.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091\u2009000\u2009000</span>)\u00a0\u2014 sizes of the oranges listed in the order Kolya is going to try to put them in the juicer.</p>",
+    "outputSpecification": "<p>Print one integer\u00a0\u2014 the number of times Kolya will have to empty the waste section.</p>",
+    "samples": [
+        {
+            "input": "2 7 10<br/>5 6<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "1 5 10<br/>7<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "3 10 10<br/>5 7 7<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "1 1 1<br/>1<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, Kolya will squeeze the juice from two oranges and empty the waste section afterwards.</p><p>In the second sample, the orange won't fit in the juicer so Kolya will have no juice at all.</p>",
+    "contestId": 709,
+    "index": "A",
+    "name": "Juicer",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 30412
+}

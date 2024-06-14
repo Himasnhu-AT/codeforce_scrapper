@@ -1,0 +1,38 @@
+{
+    "title": "D. Mission Impassable",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Market stalls now have the long-awaited game The Colder Scrools V: Nvodsk. The game turned out to be difficult as hell and most students can't complete the last quest (\"We don't go to Nvodsk...\"). That threatened winter exams. The rector already started to wonder whether he should postpone the winter exams till April (in fact, he wanted to complete the quest himself). But all of a sudden a stranger appeared at the door of his office. \"Good afternoon. My name is Chuck and I solve any problems\" \u2014 he said.</p><p>And here they are sitting side by side but still they can't complete the mission. The thing is, to kill the final boss one should prove one's perfect skills in the art of managing letters. One should be a real magician to do that. And can you imagine what happens when magicians start competing... </p><p>But let's put it more formally: you are given a string and a set of integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>. You are allowed to choose any substring that is a palindrome and delete it. At that we receive some number of points equal to <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>k</i></sub></span>, where <span class=\"tex-span\"><i>k</i></span> is the length of the deleted palindrome. For some <span class=\"tex-span\"><i>k</i></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>k</i></sub>\u2009=\u2009</span>-1, which means that deleting palindrome strings of such length is <span class=\"tex-font-style-bf\">forbidden</span>. After a substring is deleted, the remaining part \"shifts together\", that is, at no moment of time the string has gaps. The process is repeated while the string has at least one palindrome substring that can be deleted. All gained points are summed up.</p><p>Determine what maximum number of points can be earned.</p><p>\"Oh\" \u2014 said Chuck, raising from the chair, \u2014 \"I used to love deleting palindromes, just like you, but one day I took an arrow in the Knee\".</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>l</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009150</span>) \u2014 the length of the string.</p><p>The second line contains exactly <span class=\"tex-span\"><i>l</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>k</i></sub></span> (<span class=\"tex-span\">\u2009-\u20091\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>k</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the points a player gains for deleting.</p><p>The third line contains exactly <span class=\"tex-span\"><i>l</i></span> lowercase Latin letters \u2014 the original string from which a player can delete palindromes. The line contains no other characters apart from the newline character at the end of the string.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the maximum number of points one can gain if he plays on the given string.</p>",
+    "samples": [
+        {
+            "input": "7<br/>-1 -1 -1 -1 -1 -1 -1<br/>abacaba<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "7<br/>1 -1 -1 -1 -1 -1 -1<br/>abacaba<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "7<br/>1 5 -1 -1 -1 -1 10<br/>abacaba<br/>",
+            "output": "16<br/>"
+        }
+    ],
+    "note": "<p>In the first sample we cannot delete any substring, so the best result is <span class=\"tex-span\">0</span>. In the second sample we are allowed to delete only those palindromes whose length equals <span class=\"tex-span\">1</span>, thus, if we delete the whole string, we get <span class=\"tex-span\">7</span> points. In the third sample the optimal strategy is: first we delete character <span class=\"tex-font-style-tt\">c</span>, then string <span class=\"tex-font-style-tt\">aa</span>, then <span class=\"tex-font-style-tt\">bb</span>, and the last one <span class=\"tex-font-style-tt\">aa</span>. At that we get <span class=\"tex-span\">1\u2009+\u20093\u2009*\u20095\u2009=\u200916</span> points.</p>",
+    "contestId": 150,
+    "index": "D",
+    "name": "Mission Impassable",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "strings"
+    ],
+    "solvedCount": 589
+}

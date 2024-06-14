@@ -1,0 +1,39 @@
+{
+    "title": "A. USB Flash Drives",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Sean is trying to save a large file to a USB flash drive. He has <span class=\"tex-span\"><i>n</i></span> USB flash drives with capacities equal to <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> megabytes. The file size is equal to <span class=\"tex-span\"><i>m</i></span> megabytes. </p><p>Find the minimum number of USB flash drives needed to write Sean's file, if he can split the file between drives.</p>",
+    "inputSpecification": "<p>The first line contains positive integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) \u2014 the number of USB flash drives.</p><p>The second line contains positive integer <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the size of Sean's file.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains positive integer <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>) \u2014 the sizes of USB flash drives in megabytes.</p><p>It is guaranteed that the answer exists, i. e. the sum of all <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is not less than <span class=\"tex-span\"><i>m</i></span>.</p>",
+    "outputSpecification": "<p>Print the minimum number of USB flash drives to write Sean's file, if he can split the file between drives.</p>",
+    "samples": [
+        {
+            "input": "3<br/>5<br/>2<br/>1<br/>3<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3<br/>6<br/>2<br/>3<br/>2<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "2<br/>5<br/>5<br/>10<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the first example Sean needs only two USB flash drives \u2014 the first and the third.</p><p>In the second example Sean needs all three USB flash drives.</p><p>In the third example Sean needs only one USB flash drive and he can use any available USB flash drive \u2014 the first or the second.</p>",
+    "contestId": 609,
+    "index": "A",
+    "name": "USB Flash Drives",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 16879
+}

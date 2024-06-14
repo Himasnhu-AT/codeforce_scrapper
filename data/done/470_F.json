@@ -1,0 +1,33 @@
+{
+    "title": "F. Pairwise Sums",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array of <span class=\"tex-span\"><i>n</i></span> integers. For each element output the sum of itself and the previous element. For the first element, output the sum of the first and the last elements of the array.</p>",
+    "inputSpecification": "<p>The input consists of a single line of space-separated integers. The first number is <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>) \u2014 the size of the array. The following <span class=\"tex-span\"><i>n</i></span> numbers are the elements of the array (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>).</p>",
+    "outputSpecification": "<p>Output the sums <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub>\u2009+\u2009<i>a</i><sub class=\"lower-index\">1</sub></span>, ..., <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>n</i></sub>\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20091</sub></span>, separated with spaces.</p>",
+    "samples": [
+        {
+            "input": "4 1 2 3 4<br/>",
+            "output": "5 3 5 7 "
+        },
+        {
+            "input": "5 5 46 372 81 9<br/>",
+            "output": "14 51 418 453 90 "
+        }
+    ],
+    "note": null,
+    "contestId": 470,
+    "index": "F",
+    "name": "Pairwise Sums",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 99
+}

@@ -1,0 +1,35 @@
+{
+    "title": "A. Save Energy!",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Julia is going to cook a chicken in the kitchen of her dormitory. To save energy, the stove in the kitchen automatically turns off after <span class=\"tex-span\"><i>k</i></span> minutes after turning on.</p><p>During cooking, Julia goes to the kitchen every <span class=\"tex-span\"><i>d</i></span> minutes and turns on the stove if it is turned off. While the cooker is turned off, it stays warm. The stove switches on and off instantly.</p><p>It is known that the chicken needs <span class=\"tex-span\"><i>t</i></span> minutes to be cooked on the stove, if it is turned on, and <span class=\"tex-span\">2<i>t</i></span> minutes, if it is turned off. You need to find out, how much time will Julia have to cook the chicken, if it is considered that the chicken is cooked evenly, with constant speed when the stove is turned on and at a constant speed when it is turned off.</p>",
+    "inputSpecification": "<p>The single line contains three integers <span class=\"tex-span\"><i>k</i></span>, <span class=\"tex-span\"><i>d</i></span> and <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>,\u2009<i>d</i>,\u2009<i>t</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>).</p>",
+    "outputSpecification": "<p>Print a single number, the total time of cooking in minutes. The relative or absolute error must not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20099</sup></span>.</p><p>Namely, let's assume that your answer is <span class=\"tex-span\"><i>x</i></span> and the answer of the jury is <span class=\"tex-span\"><i>y</i></span>. The checker program will consider your answer correct if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/2f8a2579030cb3dd486cf891669979cfd6c0cd65.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "3 2 6<br/>",
+            "output": "6.5<br/>"
+        },
+        {
+            "input": "4 2 20<br/>",
+            "output": "20.0<br/>"
+        }
+    ],
+    "note": "<p>In the first example, the chicken will be cooked for 3 minutes on the turned on stove, after this it will be cooked for <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/cce5d3f2f46552034d5ae5d487725705429ec7a5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Then the chicken will be cooked for one minute on a turned off stove, it will be cooked for <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a10fa55d1324328f9ba60c9343ed0ecb0506d678.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Thus, after four minutes the chicken will be cooked for <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6fcc8bd6c2188b260d9d18e7b6c9e3908848df71.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Before the fifth minute Julia will turn on the stove and after <span class=\"tex-span\">2.5</span> minutes the chicken will be ready <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/87a86c8e9632089279245fff912c077126c4e704.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the second example, when the stove is turned off, Julia will immediately turn it on, so the stove will always be turned on and the chicken will be cooked in 20 minutes.</p>",
+    "contestId": 936,
+    "index": "A",
+    "name": "Save Energy!",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 4325
+}

@@ -1,0 +1,34 @@
+{
+    "title": "C. Bowls",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Once Petya was in such a good mood that he decided to help his mum with the washing-up. There were <span class=\"tex-span\"><i>n</i></span> dirty bowls in the sink. From the geometrical point of view each bowl looks like a blunted cone. We can disregard the width of the walls and bottom. Petya puts the clean bowls one on another naturally, i. e. so that their vertical axes coincide (see the picture). You will be given the order in which Petya washes the bowls. Determine the height of the construction, i.e. the distance from the bottom of the lowest bowl to the top of the highest one. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/ade4ca2e5b2b3327efb038896a20fd4868a08702.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The first input line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093000</span>). Each of the following <span class=\"tex-span\"><i>n</i></span> lines contains 3 integers <span class=\"tex-span\"><i>h</i></span>, <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>R</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>h</i>\u2009\u2264\u200910000,\u20091\u2009\u2264\u2009<i>r</i>\u2009&lt;\u2009<i>R</i>\u2009\u2264\u200910000</span>). They are the height of a bowl, the radius of its bottom and the radius of its top. The plates are given in the order Petya puts them on the table.</p>",
+    "outputSpecification": "<p>Output the height of the plate pile accurate to at least <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "2<br/>40 10 50<br/>60 20 30<br/>",
+            "output": "70.00000000<br/>"
+        },
+        {
+            "input": "3<br/>50 30 80<br/>35 25 70<br/>40 10 90<br/>",
+            "output": "55.00000000<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 36,
+    "index": "C",
+    "name": "Bowls",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "implementation"
+    ],
+    "solvedCount": 330
+}

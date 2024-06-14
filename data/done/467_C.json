@@ -1,0 +1,34 @@
+{
+    "title": "C. George and Job",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The new ITone 6 has been released recently and George got really keen to buy it. Unfortunately, he didn't have enough money, so George was going to work as a programmer. Now he faced the following problem at the work.</p><p>Given a sequence of <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>. You are to choose <span class=\"tex-span\"><i>k</i></span> pairs of integers:</p><p> </p><center class=\"tex-equation\"><span class=\"tex-span\">[<i>l</i><sub class=\"lower-index\">1</sub>,\u2009<i>r</i><sub class=\"lower-index\">1</sub>],\u2009[<i>l</i><sub class=\"lower-index\">2</sub>,\u2009<i>r</i><sub class=\"lower-index\">2</sub>],\u2009...,\u2009[<i>l</i><sub class=\"lower-index\"><i>k</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>k</i></sub>]\u00a0(1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>l</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\">2</sub>\u2009&lt;\u2009...\u2009&lt;\u2009<i>l</i><sub class=\"lower-index\"><i>k</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>k</i></sub>\u2009\u2264\u2009<i>n</i>;\u00a0<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009-\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009+\u20091\u2009=\u2009<i>m</i>),\u2009</span></center><p>in such a way that the value of sum <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/56a872d240fd0705aaee49aa3763026a40df8f6c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is maximal possible. Help George to cope with the task.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009(<i>m</i>\u2009\u00d7\u2009<i>k</i>)\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20095000)</span>. The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>.</p>",
+    "outputSpecification": "<p>Print an integer in a single line \u2014 the maximum possible value of sum.</p>",
+    "samples": [
+        {
+            "input": "5 2 1<br/>1 2 3 4 5<br/>",
+            "output": "9<br/>"
+        },
+        {
+            "input": "7 1 3<br/>2 10 7 18 5 33 0<br/>",
+            "output": "61<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 467,
+    "index": "C",
+    "name": "George and Job",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "implementation"
+    ],
+    "solvedCount": 14199
+}

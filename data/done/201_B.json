@@ -1,0 +1,34 @@
+{
+    "title": "B. Guess That Car!",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A widely known among some people Belarusian sport programmer Yura possesses lots of information about cars. That is why he has been invited to participate in a game show called \"Guess That Car!\".</p><p>The game show takes place on a giant parking lot, which is <span class=\"tex-span\">4<i>n</i></span> meters long from north to south and <span class=\"tex-span\">4<i>m</i></span> meters wide from west to east. The lot has <span class=\"tex-span\"><i>n</i>\u2009+\u20091</span> dividing lines drawn from west to east and <span class=\"tex-span\"><i>m</i>\u2009+\u20091</span> dividing lines drawn from north to south, which divide the parking lot into <span class=\"tex-span\"><i>n</i>\u00b7<i>m</i></span> <span class=\"tex-span\">4</span> by <span class=\"tex-span\">4</span> meter squares. There is a car parked strictly inside each square. The dividing lines are numbered from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>n</i></span> from north to south and from <span class=\"tex-span\">0</span> to <span class=\"tex-span\"><i>m</i></span> from west to east. Each square has coordinates <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> so that the square in the north-west corner has coordinates <span class=\"tex-span\">(1,\u20091)</span> and the square in the south-east corner has coordinates <span class=\"tex-span\">(<i>n</i>,\u2009<i>m</i>)</span>. See the picture in the notes for clarifications.</p><p>Before the game show the organizers offer Yura to occupy any of the <span class=\"tex-span\">(<i>n</i>\u2009+\u20091)\u00b7(<i>m</i>\u2009+\u20091)</span> intersection points of the dividing lines. After that he can start guessing the cars. After Yura chooses a point, he will be prohibited to move along the parking lot before the end of the game show. As Yura is a car expert, he will always guess all cars he is offered, it's just a matter of time. Yura knows that to guess each car he needs to spend time equal to the square of the euclidean distance between his point and the center of the square with this car, multiplied by some coefficient characterizing the machine's \"rarity\" (the rarer the car is, the harder it is to guess it). More formally, guessing a car with \"rarity\" <span class=\"tex-span\"><i>c</i></span> placed in a square whose center is at distance <span class=\"tex-span\"><i>d</i></span> from Yura takes <span class=\"tex-span\"><i>c</i>\u00b7<i>d</i><sup class=\"upper-index\">2</sup></span> seconds. The time Yura spends on turning his head can be neglected.</p><p>It just so happened that Yura knows the \"rarity\" of each car on the parking lot in advance. Help him choose his point so that the total time of guessing all cars is the smallest possible.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000)</span> \u2014 the sizes of the parking lot. Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains <span class=\"tex-span\"><i>m</i></span> integers: the <span class=\"tex-span\"><i>j</i></span>-th number in the <span class=\"tex-span\"><i>i</i></span>-th line describes the \"rarity\" <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>ij</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>ij</i></sub>\u2009\u2264\u2009100000</span>) of the car that is located in the square with coordinates <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span>.</p>",
+    "outputSpecification": "<p>In the first line print the minimum total time Yura needs to guess all offered cars. In the second line print two numbers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>j</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>,\u20090\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u2009<i>m</i></span>) \u2014 the numbers of dividing lines that form a junction that Yura should choose to stand on at the beginning of the game show. If there are multiple optimal starting points, print the point with smaller <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span>. If there are still multiple such points, print the point with smaller <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>j</i></sub></span>.</p><p>Please do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "2 3<br/>3 4 5<br/>3 9 1<br/>",
+            "output": "392<br/>1 1<br/>"
+        },
+        {
+            "input": "3 4<br/>1 0 0 0<br/>0 0 3 0<br/>0 0 5 5<br/>",
+            "output": "240<br/>2 3<br/>"
+        }
+    ],
+    "note": "<p>In the first test case the total time of guessing all cars is equal to 3\u00b78\u2009+\u20093\u00b78\u2009+\u20094\u00b78\u2009+\u20099\u00b78\u2009+\u20095\u00b740\u2009+\u20091\u00b740\u2009=\u2009392.</p><p>The coordinate system of the field: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8c19136945e0febce3e1e97e201988608e53a8fd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 201,
+    "index": "B",
+    "name": "Guess That Car!",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "ternary search"
+    ],
+    "solvedCount": 1254
+}

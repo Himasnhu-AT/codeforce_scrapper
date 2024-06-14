@@ -1,0 +1,36 @@
+{
+    "title": "C. Minimum Modular",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have been given <span class=\"tex-span\"><i>n</i></span> distinct integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. You can remove at most <span class=\"tex-span\"><i>k</i></span> of them. Find the minimum modular <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(<i>m</i>\u2009&gt;\u20090)</span>, so that for every pair of the remaining integers <span class=\"tex-span\">(<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>a</i><sub class=\"lower-index\"><i>j</i></sub>)</span>, the following unequality holds: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/99207b6fd2ae3166568533e27b232fe26273b32c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2009\u2264\u2009<i>n</i>\u2009\u2009\u2264\u20095000,\u20090\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20094</span>), which we have mentioned above. </p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> distinct integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>)</span>.</p>",
+    "outputSpecification": "<p>Print a single positive integer \u2014 the minimum <span class=\"tex-span\"><i>m</i></span>.</p>",
+    "samples": [
+        {
+            "input": "7 0<br/>0 2 3 6 7 12 18<br/>",
+            "output": "13<br/>"
+        },
+        {
+            "input": "7 1<br/>0 2 3 6 7 12 18<br/>",
+            "output": "7<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 303,
+    "index": "C",
+    "name": "Minimum Modular",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "graphs",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 859
+}

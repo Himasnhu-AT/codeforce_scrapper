@@ -1,0 +1,42 @@
+{
+    "title": "F. Passports",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Gleb is a famous competitive programming teacher from Innopolis. He is planning a trip to <span class=\"tex-span\"><i>N</i></span> programming camps in the nearest future. Each camp will be held in a different country. For each of them, Gleb needs to apply for a visa. </p><p>For each of these trips Gleb knows three integers: the number of the first day of the trip <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span>, the length of the trip in days <span class=\"tex-span\"><i>len</i><sub class=\"lower-index\"><i>i</i></sub></span>, and the number of days <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> this country's consulate will take to process a visa application and stick a visa in a passport. Gleb has <span class=\"tex-span\"><i>P</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>P</i>\u2009\u2264\u20092</span>) valid passports and is able to decide which visa he wants to put in which passport.</p><p>For each trip, Gleb will have a flight to that country early in the morning of the day <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span> and will return back late in the evening of the day <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009+\u2009<i>len</i><sub class=\"lower-index\"><i>i</i></sub>\u2009-\u20091</span>.</p><p>To apply for a visa on the day <span class=\"tex-span\"><i>d</i></span>, Gleb needs to be in Innopolis in the middle of this day. So he can't apply for a visa while he is on a trip, including the first and the last days. If a trip starts the next day after the end of the other one, Gleb can't apply for a visa between them as well. The earliest Gleb can apply for a visa is day 1.</p><p>After applying for a visa of country <span class=\"tex-span\"><i>i</i></span> on day <span class=\"tex-span\"><i>d</i></span>, Gleb will get his passport back in the middle of the day <span class=\"tex-span\"><i>d</i>\u2009+\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub></span>. Consulates use delivery services, so Gleb can get his passport back even if he is not in Innopolis on this day. Gleb can apply for another visa on the same day he received his passport back, if he is in Innopolis this day. </p><p>Gleb will not be able to start his trip on day <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span> if he doesn't has a passport with a visa for the corresponding country in the morning of day <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span>. In particular, the passport should not be in another country's consulate for visa processing.</p><p>Help Gleb to decide which visas he needs to receive in which passport, and when he should apply for each visa. </p>",
+    "inputSpecification": "<p>In the first line of the input there are two integers <span class=\"tex-span\"><i>N</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u200922</span>) and <span class=\"tex-span\"><i>P</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>P</i>\u2009\u2264\u20092</span>)\u2014the number of trips and the number of passports Gleb has, respectively.</p><p>The next <span class=\"tex-span\"><i>N</i></span> lines describe Gleb's trips. Each line contains three positive integers <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>len</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>len</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u2014the first day of the trip, the length of the trip and number of days the consulate of this country needs to process a visa application. It is guaranteed that no two trips intersect.</p>",
+    "outputSpecification": "<p>If it is impossible to get all visas on time, just print \"NO\" (quotes for clarity). Otherwise, print \"YES\" and <span class=\"tex-span\"><i>N</i></span> lines describing trips. For each trip, first print number of the passport Gleb should put this country's visa in, and then print number of the day he should apply for it. Print trips in the same order as they appear in the input. Days are numbered from 1, starting with tomorrow\u2014the first day you can apply for a visa. Passports are numbered from 1 to <span class=\"tex-span\"><i>P</i></span>.</p><p>If there are several possible answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "2 1<br/>3 1 1<br/>6 1 1<br/>",
+            "output": "YES<br/>1 1<br/>1 4<br/>"
+        },
+        {
+            "input": "3 1<br/>13 2 2<br/>7 3 1<br/>19 3 4<br/>",
+            "output": "YES<br/>1 10<br/>1 1<br/>1 2<br/>"
+        },
+        {
+            "input": "7 2<br/>15 1 1<br/>14 1 1<br/>18 1 1<br/>21 1 1<br/>9 4 6<br/>22 2 5<br/>5 4 3<br/>",
+            "output": "YES<br/>2 13<br/>1 1<br/>1 16<br/>1 19<br/>1 2<br/>2 16<br/>2 1<br/>"
+        },
+        {
+            "input": "3 1<br/>7 3 1<br/>13 2 3<br/>19 3 4<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>Examples with answer \"YES\" are depicted below.</p><p>Each cell of the stripe represents a single day. Rectangles represent trips, each trip starts in the morning and ends in the evening. Rectangles with angled corners represent visa applications. Each application starts in the middle of a day and ends <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> days after. The trip and the visa application for the same country have the same color.</p><p>In examples with two passports, visa applications and trips depicted above the time stripe are made using the first passport, visa applications and trips depicted below the time stripe are made using the second passport.</p><p><span class=\"tex-font-style-bf\">Example 1</span>: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/271eb32425258afcdcf4142cd1fc0797bf10c666.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p><span class=\"tex-font-style-bf\">Example 2</span>: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/4d9eecfe23e2cdfe6decd127ca2dd68cf3e7e739.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p><span class=\"tex-font-style-bf\">Example 3</span>: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/77b7940f26740d9319136e78b5ef2a1c807cb340.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1012,
+    "index": "F",
+    "name": "Passports",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "implementation"
+    ],
+    "solvedCount": 153
+}

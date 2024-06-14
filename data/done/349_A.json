@@ -1,0 +1,38 @@
+{
+    "title": "A. Cinema Line",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The new \"Die Hard\" movie has just been released! There are <span class=\"tex-span\"><i>n</i></span> people at the cinema box office standing in a huge line. Each of them has a single <span class=\"tex-span\">100</span>, <span class=\"tex-span\">50</span> or <span class=\"tex-span\">25</span> ruble bill. A \"Die Hard\" ticket costs <span class=\"tex-span\">25</span> rubles. Can the booking clerk sell a ticket to each person and give the change if he initially has no money and sells the tickets strictly in the order people follow in the line?</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> \u2014 the number of people in the line. The next line contains <span class=\"tex-span\"><i>n</i></span> integers, each of them equals <span class=\"tex-span\">25</span>, <span class=\"tex-span\">50</span> or <span class=\"tex-span\">100</span> \u2014 the values of the bills the people have. The numbers are given in the order from the beginning of the line (at the box office) to the end of the line.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" (without the quotes) if the booking clerk can sell a ticket to each person and give the change. Otherwise print \"<span class=\"tex-font-style-tt\">NO</span>\".</p>",
+    "samples": [
+        {
+            "input": "4<br/>25 25 50 50<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "2<br/>25 100<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "4<br/>50 50 25 25<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 349,
+    "index": "A",
+    "name": "Cinema Line",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 28954
+}

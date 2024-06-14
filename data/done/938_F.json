@@ -1,0 +1,35 @@
+{
+    "title": "F. Erasing Substrings",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a string <span class=\"tex-span\"><i>s</i></span>, initially consisting of <span class=\"tex-span\"><i>n</i></span> lowercase Latin letters. After that, you perform <span class=\"tex-span\"><i>k</i></span> operations with it, where <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c9622f3cdf5f8480656b83e566988d23d6c716b5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. During <span class=\"tex-span\"><i>i</i></span>-th operation you <span class=\"tex-font-style-bf\">must</span> erase some substring of length exactly <span class=\"tex-span\">2<sup class=\"upper-index\"><i>i</i>\u2009-\u20091</sup></span> from <span class=\"tex-span\"><i>s</i></span>.</p><p>Print the lexicographically minimal string you may obtain after performing <span class=\"tex-span\"><i>k</i></span> such operations.</p>",
+    "inputSpecification": "<p>The only line contains one string <span class=\"tex-span\"><i>s</i></span> consisting of <span class=\"tex-span\"><i>n</i></span> lowercase Latin letters (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20095000</span>).</p>",
+    "outputSpecification": "<p>Print the lexicographically minimal string you may obtain after performing <span class=\"tex-span\"><i>k</i></span> operations.</p>",
+    "samples": [
+        {
+            "input": "adcbca<br/>",
+            "output": "aba<br/>"
+        },
+        {
+            "input": "abacabadabacaba<br/>",
+            "output": "aabacaba<br/>"
+        }
+    ],
+    "note": "<p>Possible operations in examples:</p><ol> <li> adcb<span class=\"tex-font-style-bf\">c</span>a <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> a<span class=\"tex-font-style-bf\">dc</span>ba <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> aba; </li><li> ab<span class=\"tex-font-style-bf\">a</span>cabadabacaba <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> a<span class=\"tex-font-style-bf\">bc</span>abadabacaba <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> aaba<span class=\"tex-font-style-bf\">daba</span>caba <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> aabacaba. </li></ol>",
+    "contestId": 938,
+    "index": "F",
+    "name": "Erasing Substrings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "greedy"
+    ],
+    "solvedCount": 472
+}

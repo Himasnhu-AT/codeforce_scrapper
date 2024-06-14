@@ -1,0 +1,39 @@
+{
+    "title": "A. Spyke Talks",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarpus is the director of a large corporation. There are <span class=\"tex-span\"><i>n</i></span> secretaries working for the corporation, each of them corresponds via the famous Spyke VoIP system during the day. We know that when two people call each other via Spyke, the Spyke network assigns a unique ID to this call, a positive integer session number.</p><p>One day Polycarpus wondered which secretaries are talking via the Spyke and which are not. For each secretary, he wrote out either the session number of his call or a 0 if this secretary wasn't talking via Spyke at that moment.</p><p>Help Polycarpus analyze these data and find out the number of pairs of secretaries that are talking. If Polycarpus has made a mistake in the data and the described situation could not have taken place, say so.</p><p>Note that the secretaries can correspond via Spyke not only with each other, but also with the people from other places. Also, Spyke conferences aren't permitted \u2014 that is, one call connects exactly two people.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">3</sup>)</span> \u2014 the number of secretaries in Polycarpus's corporation. The next line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers: <span class=\"tex-span\"><i>id</i><sub class=\"lower-index\">1</sub>,\u2009<i>id</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>id</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>id</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>. Number <span class=\"tex-span\"><i>id</i><sub class=\"lower-index\"><i>i</i></sub></span> equals the number of the call session of the <span class=\"tex-span\"><i>i</i></span>-th secretary, if the secretary is talking via Spyke, or zero otherwise.</p><p>Consider the secretaries indexed from 1 to <span class=\"tex-span\"><i>n</i></span> in some way.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number of pairs of chatting secretaries, or <span class=\"tex-font-style-tt\">-1</span> if Polycarpus's got a mistake in his records and the described situation could not have taken place.</p>",
+    "samples": [
+        {
+            "input": "6<br/>0 1 7 1 7 10<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3<br/>1 1 1<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "1<br/>0<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first test sample there are two Spyke calls between secretaries: secretary 2 and secretary 4, secretary 3 and secretary 5.</p><p>In the second test sample the described situation is impossible as conferences aren't allowed.</p>",
+    "contestId": 291,
+    "index": "A",
+    "name": "Spyke Talks",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 6007
+}

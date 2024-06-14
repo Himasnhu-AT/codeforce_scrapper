@@ -1,0 +1,39 @@
+{
+    "title": "F. Interacdive Problem",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This problem is interactive.</span></p><p>We decided to play a game with you and guess the number $$$x$$$ ($$$1 \\le x &lt; n$$$), where you know the number $$$n$$$.</p><p>You can make queries like this:</p><ul><li> <span class=\"tex-font-style-tt\">+ c</span>: this command assigns $$$x = x + c$$$ ($$$1 \\le c &lt; n$$$) and then returns you the value $$$\\lfloor\\frac{x}{n}\\rfloor$$$ ($$$x$$$ divide by $$$n$$$ and round down).</li></ul><p>You win if you guess the current number with no more than $$$10$$$ queries.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n3\n\n1",
+            "output": "\n+ 1\n\n! 3"
+        },
+        {
+            "input": "\n5\n\n0\n\n0\n\n1\n",
+            "output": "\n+ 1\n\n+ 1\n\n+ 1\n\n! 5\n"
+        },
+        {
+            "input": "\n10\n\n0\n\n0\n\n1\n\n2",
+            "output": "\n\n+ 2\n\n+ 2\n\n+ 3\n\n+ 8\n\n! 20"
+        }
+    ],
+    "note": "<p>In the first sample initially $$$x = 2$$$. After the first query $$$x = 3$$$, $$$\\lfloor\\frac{x}{n}\\rfloor = 1$$$.</p><p>In the second sample also initially $$$x = 2$$$. After the first query $$$x = 3$$$, $$$\\lfloor\\frac{x}{n}\\rfloor = 0$$$. After the second query $$$x = 4$$$, $$$\\lfloor\\frac{x}{n}\\rfloor = 0$$$. After the third query $$$x=5$$$, $$$\\lfloor\\frac{x}{n}\\rfloor = 1$$$.</p>",
+    "contestId": 1624,
+    "index": "F",
+    "name": "Interacdive Problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "interactive"
+    ],
+    "solvedCount": 3206
+}

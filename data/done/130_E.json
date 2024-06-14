@@ -1,0 +1,33 @@
+{
+    "title": "E. Tribonacci numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Tribonacci numbers are a sequence of numbers, defined as follows:</p><ul><li> <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">0</sub>\u2009=\u2009<i>t</i><sub class=\"lower-index\">1</sub>\u2009=\u20090</span>,</li><li> <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">2</sub>\u2009=\u20091</span>,</li><li> <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>t</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub>\u2009+\u2009<i>t</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20092</sub>\u2009+\u2009<i>t</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20093</sub></span>.</li></ul><p>You are given <span class=\"tex-span\"><i>n</i></span>; calculate <span class=\"tex-span\"><i>n</i></span>-th tribonacci number modulo <span class=\"tex-span\">26</span>.</p>",
+    "inputSpecification": "<p>The only line of input contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>).</p>",
+    "outputSpecification": "<p>Output <span class=\"tex-span\"><i>n</i></span>-th tribonacci number modulo <span class=\"tex-span\">26</span>.</p>",
+    "samples": [
+        {
+            "input": "4<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "9<br/>",
+            "output": "18<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 130,
+    "index": "E",
+    "name": "Tribonacci numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 294
+}

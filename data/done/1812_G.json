@@ -1,0 +1,30 @@
+{
+    "title": "G. Colour Vision",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/321b0a3d748b9cec44e8ba17b154fc5632724370.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">R</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">R</div>",
+            "output": "\nYES\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1812,
+    "index": "G",
+    "name": "Colour Vision",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "solvedCount": 532
+}

@@ -1,0 +1,32 @@
+{
+    "title": "B. Berland Crossword",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Berland crossword is a puzzle that is solved on a square grid with $$$n$$$ rows and $$$n$$$ columns. Initially all the cells are white.</p><p>To solve the puzzle one has to color some cells on the border of the grid black in such a way that: </p><ul> <li> exactly $$$U$$$ cells in the top row are black; </li><li> exactly $$$R$$$ cells in the rightmost column are black; </li><li> exactly $$$D$$$ cells in the bottom row are black; </li><li> exactly $$$L$$$ cells in the leftmost column are black. </li></ul><p>Note that you can color zero cells black and leave every cell white.</p><p>Your task is to check if there exists a solution to the given puzzle.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$)\u00a0\u2014 the number of testcases.</p><p>Then the descriptions of $$$t$$$ testcases follow.</p><p>The only line of each testcase contains $$$5$$$ integers $$$n, U, R, D, L$$$ ($$$2 \\le n \\le 100$$$; $$$0 \\le U, R, D, L \\le n$$$).</p>",
+    "outputSpecification": "<p>For each testcase print \"<span class=\"tex-font-style-tt\">YES</span>\" if the solution exists and \"<span class=\"tex-font-style-tt\">NO</span>\" otherwise.</p><p>You may print every letter in any case you want (so, for example, the strings <span class=\"tex-font-style-tt\">yEs</span>, <span class=\"tex-font-style-tt\">yes</span>, <span class=\"tex-font-style-tt\">Yes</span> and <span class=\"tex-font-style-tt\">YES</span> are all recognized as positive answer).</p>",
+    "samples": [
+        {
+            "input": "\n4\n5 2 5 3 1\n3 0 0 0 0\n4 4 1 4 0\n2 1 1 1 1\n",
+            "output": "\nYES\nYES\nNO\nYES\n"
+        }
+    ],
+    "note": "<p>Here are possible solutions to testcases $$$1$$$, $$$2$$$ and $$$4$$$: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/5ed45239b0d422b7e319b2343c35d69c8785d7c8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1494,
+    "index": "B",
+    "name": "Berland Crossword",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 14041
+}

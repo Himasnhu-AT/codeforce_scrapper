@@ -1,0 +1,33 @@
+{
+    "title": "J. Date calculation",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In Gregorian calendar a typical year consists of <span class=\"tex-span\">365</span> days and <span class=\"tex-span\">12</span> months. The numbers of days in the months are: <span class=\"tex-span\">31,\u200928,\u200931,\u200930,\u200931,\u200930,\u200931,\u200931,\u200930,\u200931,\u200930,\u200931</span>. If year index is divisible by <span class=\"tex-span\">400</span>, or divisible by <span class=\"tex-span\">4</span> but not by <span class=\"tex-span\">100</span>, the year becomes leap year, with one extra day in the second month (the one which typically has <span class=\"tex-span\">28</span> days).</p><p>You are given the index of the year and the index of the day in the year. Find out the date of this day (day and month it will fall upon).</p>",
+    "inputSpecification": "<p>The first line of input contains the year index, between <span class=\"tex-span\">1600</span> and <span class=\"tex-span\">2400</span>, inclusive. The second line contains the day index, between <span class=\"tex-span\">1</span> and <span class=\"tex-span\">366</span>, inclusive. It is guaranteed that the day index will be valid for this year, i.e., day <span class=\"tex-span\">366</span> will occur only in a leap year.</p>",
+    "outputSpecification": "<p>Output the index of the day and the index of the month, separated with a space.</p>",
+    "samples": [
+        {
+            "input": "2011<br/>324<br/>",
+            "output": "20 11<br/>"
+        },
+        {
+            "input": "2012<br/>274<br/>",
+            "output": "30 9<br/>"
+        }
+    ],
+    "note": "<p>All indexes are <span class=\"tex-span\">1</span>-based.</p>",
+    "contestId": 130,
+    "index": "J",
+    "name": "Date calculation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 325
+}

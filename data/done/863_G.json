@@ -1,0 +1,35 @@
+{
+    "title": "G. Graphic Settings",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Recently Ivan bought a new computer. Excited, he unpacked it and installed his favourite game. With his old computer Ivan had to choose the worst possible graphic settings (because otherwise the framerate would be really low), but now he wants to check, maybe his new computer can perform well even with the best possible graphics?</p><p>There are <span class=\"tex-span\"><i>m</i></span> graphics parameters in the game. <span class=\"tex-span\"><i>i</i></span>-th parameter can be set to any positive integer from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, and initially is set to <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>). So there are <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d17cddb5b1a0e3249ccc45df1ee5a6d7b87bbca4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> different combinations of parameters. Ivan can increase or decrease any of these parameters by <span class=\"tex-span\">1</span>; after that the game will be restarted with new parameters (and Ivan will have the opportunity to check chosen combination of parameters).</p><p>Ivan wants to try all <span class=\"tex-span\"><i>p</i></span> possible combinations. Also he wants to return to the initial settings after trying all combinations, because he thinks that initial settings can be somehow best suited for his hardware. But Ivan doesn't really want to make a lot of restarts.</p><p>So he wants you to tell the following:</p><ul> <li> If there exists a way to make exactly <span class=\"tex-span\"><i>p</i></span> changes (each change either decreases or increases some parameter by <span class=\"tex-span\">1</span>) to try all possible combinations and return to initial combination, then Ivan wants to know this way. </li><li> Otherwise, if there exists a way to make exactly <span class=\"tex-span\"><i>p</i>\u2009-\u20091</span> changes to try all possible combinations (including the initial one), then Ivan wants to know this way. </li></ul><p>Help Ivan by showing him the way to change parameters!</p>",
+    "inputSpecification": "<p>The first line of input contains one integer number <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20096</span>).</p><p>The second line contains <span class=\"tex-span\"><i>m</i></span> integer numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>m</i></sub></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>). It is guaranteed that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0ada6082392fb845829961539792ec286cdb5a27.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>The third line contains <span class=\"tex-span\"><i>m</i></span> integer numbers <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>b</i><sub class=\"lower-index\"><i>m</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>).</p>",
+    "outputSpecification": "<p>If there is a way to make exactly <span class=\"tex-span\"><i>p</i></span> changes (each change either decreases or increases some parameter by <span class=\"tex-span\">1</span>) to try all possible combinations and return to initial combination, then output <span class=\"tex-font-style-tt\">Cycle</span> in the first line. Then <span class=\"tex-span\"><i>p</i></span> lines must follow, each desribing a change. The line must be either <span class=\"tex-font-style-tt\">inc x</span> (increase parameter <span class=\"tex-span\"><i>x</i></span> by <span class=\"tex-span\">1</span>) or <span class=\"tex-font-style-tt\">dec x</span> (decrease it).</p><p>Otherwise, if there is a way to make exactly <span class=\"tex-span\"><i>p</i>\u2009-\u20091</span> changes to try all possible combinations (including the initial one), then output <span class=\"tex-font-style-tt\">Path</span> in the first line. Then <span class=\"tex-span\"><i>p</i>\u2009-\u20091</span> lines must follow, each describing the change the same way as mentioned above.</p><p>Otherwise, output <span class=\"tex-font-style-tt\">No</span>.</p>",
+    "samples": [
+        {
+            "input": "1<br/>3<br/>1<br/>",
+            "output": "Path<br/>inc 1<br/>inc 1<br/>"
+        },
+        {
+            "input": "1<br/>3<br/>2<br/>",
+            "output": "No<br/>"
+        },
+        {
+            "input": "2<br/>3 2<br/>1 1<br/>",
+            "output": "Cycle<br/>inc 1<br/>inc 1<br/>inc 2<br/>dec 1<br/>dec 1<br/>dec 2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 863,
+    "index": "G",
+    "name": "Graphic Settings",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 54
+}

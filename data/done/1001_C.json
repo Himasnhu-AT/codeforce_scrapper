@@ -1,0 +1,24 @@
+{
+    "title": "C. Generate GHZ state",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given <span class=\"tex-span\"><i>N</i></span> qubits (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u20098</span>) in zero state <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8bb67080da7081bfb802ca6ecc5abc4f4c5ca190.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Your task is to create Greenberger\u2013Horne\u2013Zeilinger (GHZ) state on them:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/acb08ce15c611d90dc85f731accccd9bbfac8fd3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>Note that for <span class=\"tex-span\"><i>N</i>\u2009=\u20091</span> and <span class=\"tex-span\"><i>N</i>\u2009=\u20092</span> GHZ state becomes states <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/891b1e75c93e44f237b7fde497062f8e85c1d952.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/aec27febc80bfeb882cb96d33386f048ce011703.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> from the previous tasks, respectively.</p>",
+    "inputSpecification": "<p>You have to implement an operation which takes an array of <span class=\"tex-span\"><i>N</i></span> qubits as an input and has no output. The \"output\" of your solution is the state in which it left the input qubits.</p><p>Your code should have the following signature:</p><pre class=\"verbatim\">namespace Solution {<br/>    open Microsoft.Quantum.Primitive;<br/>    open Microsoft.Quantum.Canon;<br/><br/>    operation Solve (qs : Qubit[]) : ()<br/>    {<br/>        body<br/>        {<br/>            // your code here<br/>        }<br/>    }<br/>}</pre>",
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1001,
+    "index": "C",
+    "name": "Generate GHZ state",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 648
+}

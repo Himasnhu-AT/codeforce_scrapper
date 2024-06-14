@@ -1,0 +1,43 @@
+{
+    "title": "B. Mike and strings",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mike has <span class=\"tex-span\"><i>n</i></span> strings <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>n</i></sub></span> each consisting of lowercase English letters. In one move he can choose a string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span>, erase the first character and append it to the end of the string. For example, if he has the string \"<span class=\"tex-font-style-tt\">coolmike</span>\", in one move he can transform it into the string \"<span class=\"tex-font-style-tt\">oolmikec</span>\".</p><p>Now Mike asks himself: what is minimal number of moves that he needs to do in order to make all the strings equal?</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>) \u2014 the number of strings.</p><p>This is followed by <span class=\"tex-span\"><i>n</i></span> lines which contain a string each. The <span class=\"tex-span\"><i>i</i></span>-th line corresponding to string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span>. Lengths of strings are equal. Lengths of each string is positive and don't exceed <span class=\"tex-span\">50</span>.</p>",
+    "outputSpecification": "<p>Print the minimal number of moves Mike needs in order to make all the strings equal or print <span class=\"tex-span\">\u2009-\u20091</span> if there is no solution.</p>",
+    "samples": [
+        {
+            "input": "4<br/>xzzwo<br/>zwoxz<br/>zzwox<br/>xzzwo<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "2<br/>molzv<br/>lzvmo<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3<br/>kc<br/>kc<br/>kc<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "3<br/>aa<br/>aa<br/>ab<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample testcase the optimal scenario is to perform operations in such a way as to transform all strings into \"<span class=\"tex-font-style-tt\">zwoxz</span>\".</p>",
+    "contestId": 798,
+    "index": "B",
+    "name": "Mike and strings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "strings"
+    ],
+    "solvedCount": 8287
+}

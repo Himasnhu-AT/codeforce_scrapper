@@ -1,0 +1,41 @@
+{
+    "title": "A. Linova and Kingdom",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Writing light novels is the most important thing in Linova's life. Last night, Linova dreamed about a fantastic kingdom. She began to write a light novel for the kingdom as soon as she woke up, and of course, she is the queen of it.</p><center><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/df63f4ac458c231c1258e895434dcb4c2f090f09.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center>\u00a0<p>There are $$$n$$$ cities and $$$n-1$$$ two-way roads connecting pairs of cities in the kingdom. From any city, you can reach any other city by walking through some roads. The cities are numbered from $$$1$$$ to $$$n$$$, and the city $$$1$$$ is the capital of the kingdom. So, the kingdom has a tree structure.</p><p>As the queen, Linova plans to choose <span class=\"tex-font-style-bf\">exactly</span> $$$k$$$ cities developing industry, while the other cities will develop tourism. The capital also can be either industrial or tourism city.</p><p>A meeting is held in the capital once a year. To attend the meeting, each <span class=\"tex-font-style-bf\">industry city</span> sends an envoy. All envoys will follow the shortest path from the departure city to the capital (which is unique).</p><p>Traveling in tourism cities is pleasant. For each envoy, his <span class=\"tex-font-style-it\">happiness</span> is equal to the number of <span class=\"tex-font-style-bf\">tourism cities</span> on his path.</p><p>In order to be a queen loved by people, Linova wants to choose $$$k$$$ cities which can maximize the sum of <span class=\"tex-font-style-it\">happinesses</span> of all envoys. Can you calculate the maximum sum for her?</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$k$$$ ($$$2\\le n\\le 2 \\cdot 10^5$$$, $$$1\\le k&lt; n$$$) \u00a0\u2014 the number of cities and industry cities respectively.</p><p>Each of the next $$$n-1$$$ lines contains two integers $$$u$$$ and $$$v$$$ ($$$1\\le u,v\\le n$$$), denoting there is a road connecting city $$$u$$$ and city $$$v$$$.</p><p>It is guaranteed that from any city, you can reach any other city by the roads.</p>",
+    "outputSpecification": "<p>Print the only line containing a single integer \u00a0\u2014 the maximum possible sum of <span class=\"tex-font-style-it\">happinesses</span> of all envoys.</p>",
+    "samples": [
+        {
+            "input": "\n7 4\n1 2\n1 3\n1 4\n3 5\n3 6\n4 7\n",
+            "output": "\n7"
+        },
+        {
+            "input": "\n4 1\n1 2\n1 3\n2 4\n",
+            "output": "\n2"
+        },
+        {
+            "input": "\n8 5\n7 5\n1 7\n6 1\n3 7\n8 3\n2 1\n4 5\n",
+            "output": "\n9"
+        }
+    ],
+    "note": "<p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/d811810ac8e2c43cb201a3388ae50f1b3e17a687.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>In the first example, Linova can choose cities $$$2$$$, $$$5$$$, $$$6$$$, $$$7$$$ to develop industry, then the <span class=\"tex-font-style-it\">happiness</span> of the envoy from city $$$2$$$ is $$$1$$$, the <span class=\"tex-font-style-it\">happiness</span> of envoys from cities $$$5$$$, $$$6$$$, $$$7$$$ is $$$2$$$. The sum of <span class=\"tex-font-style-it\">happinesses</span> is $$$7$$$, and it can be proved to be the maximum one.</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/3ffb39c877eca7565234f5b27836c176c6a85f3f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>In the second example, choosing cities $$$3$$$, $$$4$$$ developing industry can reach a sum of $$$3$$$, but remember that Linova plans to choose <span class=\"tex-font-style-bf\">exactly</span> $$$k$$$ cities developing industry, then the maximum sum is $$$2$$$.</p>",
+    "contestId": 1336,
+    "index": "A",
+    "name": "Linova and Kingdom",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "sortings",
+        "trees"
+    ],
+    "solvedCount": 19544
+}

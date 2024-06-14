@@ -1,0 +1,38 @@
+{
+    "title": "C. Xenia and Weights",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Xenia has a set of weights and pan scales. Each weight has an integer weight from 1 to 10 kilos. Xenia is going to play with scales and weights a little. For this, she puts weights on the scalepans, one by one. The first weight goes on the left scalepan, the second weight goes on the right scalepan, the third one goes on the left scalepan, the fourth one goes on the right scalepan and so on. Xenia wants to put the total of <span class=\"tex-span\"><i>m</i></span> weights on the scalepans.</p><p>Simply putting weights on the scales is not interesting, so Xenia has set some rules. First, she does not put on the scales two consecutive weights of the same weight. That is, the weight that goes <span class=\"tex-span\"><i>i</i></span>-th should be different from the <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span>-th weight for any <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>m</i>)</span>. Second, every time Xenia puts a weight on some scalepan, she wants this scalepan to outweigh the other one. That is, the sum of the weights on the corresponding scalepan must be strictly greater than the sum on the other pan.</p><p>You are given all types of weights available for Xenia. You can assume that the girl has an infinite number of weights of each specified type. Your task is to help Xenia lay <span class=\"tex-span\"><i>m</i></span> weights on \u200b\u200bthe scales or to say that it can't be done.</p>",
+    "inputSpecification": "<p>The first line contains a string consisting of exactly ten zeroes and ones: the <span class=\"tex-span\"><i>i</i></span>-th <span class=\"tex-span\">(<i>i</i>\u2009\u2265\u20091)</span> character in the line equals \"<span class=\"tex-font-style-tt\">1</span>\" if Xenia has <span class=\"tex-span\"><i>i</i></span> kilo weights, otherwise the character equals \"<span class=\"tex-font-style-tt\">0</span>\". The second line contains integer <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20091000)</span>.</p>",
+    "outputSpecification": "<p>In the first line print \"<span class=\"tex-font-style-tt\">YES</span>\", if there is a way to put <span class=\"tex-span\"><i>m</i></span> weights on the scales by all rules. Otherwise, print in the first line \"<span class=\"tex-font-style-tt\">NO</span>\". If you can put <span class=\"tex-span\"><i>m</i></span> weights on the scales, then print in the next line <span class=\"tex-span\"><i>m</i></span> integers \u2014 the weights' weights in the order you put them on the scales.</p><p>If there are multiple solutions, you can print any of them.</p>",
+    "samples": [
+        {
+            "input": "0000000101<br/>3<br/>",
+            "output": "YES<br/>8 10 8<br/>"
+        },
+        {
+            "input": "1000000000<br/>2<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 339,
+    "index": "C",
+    "name": "Xenia and Weights",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "greedy",
+        "shortest paths"
+    ],
+    "solvedCount": 8174
+}

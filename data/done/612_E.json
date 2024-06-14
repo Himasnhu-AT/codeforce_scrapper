@@ -1,0 +1,41 @@
+{
+    "title": "E. Square Root of Permutation",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A <span class=\"tex-font-style-it\">permutation</span> of length <span class=\"tex-span\"><i>n</i></span> is an array containing each integer from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> exactly once. For example, <span class=\"tex-span\"><i>q</i>\u2009=\u2009[4,\u20095,\u20091,\u20092,\u20093]</span> is a permutation. For the permutation <span class=\"tex-span\"><i>q</i></span> the square of permutation is the permutation <span class=\"tex-span\"><i>p</i></span> that <span class=\"tex-span\"><i>p</i>[<i>i</i>]\u2009=\u2009<i>q</i>[<i>q</i>[<i>i</i>]]</span> for each <span class=\"tex-span\"><i>i</i>\u2009=\u20091... <i>n</i></span>. For example, the square of <span class=\"tex-span\"><i>q</i>\u2009=\u2009[4,\u20095,\u20091,\u20092,\u20093]</span> is <span class=\"tex-span\"><i>p</i>\u2009=\u2009<i>q</i><sup class=\"upper-index\">2</sup>\u2009=\u2009[2,\u20093,\u20094,\u20095,\u20091]</span>.</p><p>This problem is about the inverse operation: given the permutation <span class=\"tex-span\"><i>p</i></span> you task is to find such permutation <span class=\"tex-span\"><i>q</i></span> that <span class=\"tex-span\"><i>q</i><sup class=\"upper-index\">2</sup>\u2009=\u2009<i>p</i></span>. If there are several such <span class=\"tex-span\"><i>q</i></span> find any of them.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 the number of elements in permutation <span class=\"tex-span\"><i>p</i></span>.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> distinct integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) \u2014 the elements of permutation <span class=\"tex-span\"><i>p</i></span>.</p>",
+    "outputSpecification": "<p>If there is no permutation <span class=\"tex-span\"><i>q</i></span> such that <span class=\"tex-span\"><i>q</i><sup class=\"upper-index\">2</sup>\u2009=\u2009<i>p</i></span> print the number \"<span class=\"tex-font-style-tt\">-1</span>\".</p><p>If the answer exists print it. The only line should contain <span class=\"tex-span\"><i>n</i></span> different integers <span class=\"tex-span\"><i>q</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>q</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) \u2014 the elements of the permutation <span class=\"tex-span\"><i>q</i></span>. If there are several solutions print any of them.</p>",
+    "samples": [
+        {
+            "input": "4<br/>2 1 4 3<br/>",
+            "output": "3 4 2 1<br/>"
+        },
+        {
+            "input": "4<br/>2 1 3 4<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "5<br/>2 3 4 5 1<br/>",
+            "output": "4 5 1 2 3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 612,
+    "index": "E",
+    "name": "Square Root of Permutation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "math"
+    ],
+    "solvedCount": 1589
+}

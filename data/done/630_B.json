@@ -1,0 +1,29 @@
+{
+    "title": "B. Moore's Law",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The city administration of IT City decided to fix up a symbol of scientific and technical progress in the city's main square, namely an indicator board that shows the effect of Moore's law in real time.</p><p>Moore's law is the observation that the number of transistors in a dense integrated circuit doubles approximately every <span class=\"tex-span\">24</span> months. The implication of Moore's law is that computer performance as function of time increases exponentially as well.</p><p>You are to prepare information that will change every second to display on the indicator board. Let's assume that every second the number of transistors increases exactly <span class=\"tex-span\">1.000000011</span> times.</p>",
+    "inputSpecification": "<p>The only line of the input contains a pair of integers <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1000\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910\u00a0000</span>) and <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>t</i>\u2009\u2264\u20092\u00a0000\u00a0000\u00a0000</span>)\u00a0\u2014 the number of transistors in the initial time and the number of seconds passed since the initial time.</p>",
+    "outputSpecification": "<p>Output one number \u2014 the estimate of the number of transistors in a dence integrated circuit in <span class=\"tex-span\"><i>t</i></span> seconds since the initial time. The relative error of your answer should not be greater than <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "1000 1000000<br/>",
+            "output": "1011.060722383550382782399454922040<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 630,
+    "index": "B",
+    "name": "Moore's Law",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 7143
+}

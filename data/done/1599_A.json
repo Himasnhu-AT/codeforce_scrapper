@@ -1,0 +1,31 @@
+{
+    "title": "A. Weights",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array $$$A$$$ of length $$$N$$$ weights of masses $$$A_1$$$, $$$A_2$$$...$$$A_N$$$.\u202fNo two weights have the same mass. You can put every weight on one side of the balance (left or right).\u202fYou\u202fdon't have to put\u202fweights\u202fin order $$$A_1$$$,...,$$$A_N$$$.\u202fThere is also a\u202fstring $$$S$$$\u202fconsisting of characters \"L\" and \"R\",\u202fmeaning that after putting the\u202f$$$i-th$$$\u202fweight (not $$$A_i$$$, but\u202f$$$i-th$$$\u202fweight of your choice) left or right side of the balance should be heavier. Find the order of putting the weights on the balance such that rules of string $$$S$$$ are satisfied.\u202f</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$N$$$ ($$$1 \\leq N \\leq 2*10^5$$$) - the length of the array $$$A$$$ The second line contains $$$N$$$ distinct integers: $$$A_1$$$, $$$A_2$$$,...,$$$A_N$$$ ($$$1 \\leq A_i \\leq 10^9$$$) - the weights given The\u202fthird\u202fline\u202fcontains\u202fstring\u202f$$$S$$$\u202fof\u202flength\u202f$$$N$$$\u202fconsisting\u202fonly\u202fof\u202fletters\u202f\"L\"\u202fand\u202f\"R\"\u202f- string determining which side of the balance should be heavier after putting the $$$i-th$$$ weight of your choice</p>",
+    "outputSpecification": "<p>The output contains $$$N$$$ lines. In every line, you should print one integer and one letter - integer representing the weight you are putting on the balance in that move and the letter representing the side of the balance where you are putting the weight. If there is no solution, print\u202f$$$-1$$$.</p>",
+    "samples": [
+        {
+            "input": "\n5\n3 8 2 13 7\nLLRLL\n",
+            "output": "\n3 L\n2 R\n8 R\n13 L\n7 L\n"
+        }
+    ],
+    "note": "<p>Explanation for the test case:\u202f </p><p>after\u202fthe 1st weight: 3 L\u202f(left\u202fside is heavier)</p><p>after the 2nd weight: 2 R (left\u202fside is heavier)</p><p>after the 3rd weight: 8 R (right\u202fside is heavier)</p><p>after the 4th weight: 13 L (left\u202fside is heavier)</p><p>after the 5th weight: 7 L (left\u202fside is heavier)</p><p>So, the rules given by string\u202f$$$S$$$\u202fare fulfilled and our order of putting the weights is correct.</p>",
+    "contestId": 1599,
+    "index": "A",
+    "name": "Weights",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "two pointers"
+    ],
+    "solvedCount": 635
+}

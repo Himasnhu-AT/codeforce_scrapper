@@ -1,0 +1,42 @@
+{
+    "title": "A. Display Size",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A big company decided to launch a new series of rectangular displays, and decided that the display must have exactly <span class=\"tex-span\"><i>n</i></span> pixels. </p><p>Your task is to determine the size of the rectangular display \u2014 the number of lines (rows) of pixels <span class=\"tex-span\"><i>a</i></span> and the number of columns of pixels <span class=\"tex-span\"><i>b</i></span>, so that:</p><ul> <li> there are exactly <span class=\"tex-span\"><i>n</i></span> pixels on the display; </li><li> the number of rows does not exceed the number of columns, it means <span class=\"tex-span\"><i>a</i>\u2009\u2264\u2009<i>b</i></span>; </li><li> the difference <span class=\"tex-span\"><i>b</i>\u2009-\u2009<i>a</i></span> is as small as possible. </li></ul>",
+    "inputSpecification": "<p>The first line contains the positive integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>)\u00a0\u2014 the number of pixels display should have.</p>",
+    "outputSpecification": "<p>Print two integers\u00a0\u2014 the number of rows and columns on the display. </p>",
+    "samples": [
+        {
+            "input": "8<br/>",
+            "output": "2 4<br/>"
+        },
+        {
+            "input": "64<br/>",
+            "output": "8 8<br/>"
+        },
+        {
+            "input": "5<br/>",
+            "output": "1 5<br/>"
+        },
+        {
+            "input": "999999<br/>",
+            "output": "999 1001<br/>"
+        }
+    ],
+    "note": "<p>In the first example the minimum possible difference equals 2, so on the display should be 2 rows of 4 pixels.</p><p>In the second example the minimum possible difference equals 0, so on the display should be 8 rows of 8 pixels.</p><p>In the third example the minimum possible difference equals 4, so on the display should be 1 row of 5 pixels.</p>",
+    "contestId": 747,
+    "index": "A",
+    "name": "Display Size",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "math"
+    ],
+    "solvedCount": 10064
+}

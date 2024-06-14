@@ -1,0 +1,33 @@
+{
+    "title": "B. Volatile Kite",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a convex polygon <span class=\"tex-span\"><i>P</i></span> with <span class=\"tex-span\"><i>n</i></span> distinct vertices <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>. Vertex <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> has coordinates <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>)</span> in the 2D plane. These vertices are listed in clockwise order.</p><p>You can choose a real number <span class=\"tex-span\"><i>D</i></span> and move each vertex of the polygon a distance of at most <span class=\"tex-span\"><i>D</i></span> from their original positions.</p><p>Find the maximum value of <span class=\"tex-span\"><i>D</i></span> such that no matter how you move the vertices, the polygon does not intersect itself and stays convex.</p>",
+    "inputSpecification": "<p>The first line has one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">4\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091\u2009000</span>)\u00a0\u2014 the number of vertices.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain the coordinates of the vertices. Line <span class=\"tex-span\"><i>i</i></span> contains two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th vertex. These points are guaranteed to be given in clockwise order, and will form a strictly convex polygon (in particular, no three consecutive points lie on the same straight line).</p>",
+    "outputSpecification": "<p>Print one real number <span class=\"tex-span\"><i>D</i></span>, which is the maximum real number such that no matter how you move the vertices, the polygon stays convex.</p><p>Your answer will be considered correct if its absolute or relative error does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p><p>Namely, let's assume that your answer is <span class=\"tex-span\"><i>a</i></span> and the answer of the jury is <span class=\"tex-span\"><i>b</i></span>. The checker program will consider your answer correct if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c97ba2000ebfad962bff7ffd8d043594f5ae1086.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "4<br/>0 0<br/>0 1<br/>1 1<br/>1 0<br/>",
+            "output": "0.3535533906<br/>"
+        },
+        {
+            "input": "6<br/>5 0<br/>10 0<br/>12 -4<br/>10 -8<br/>5 -8<br/>3 -4<br/>",
+            "output": "1.0000000000<br/>"
+        }
+    ],
+    "note": "<p>Here is a picture of the first sample</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/f83aa076d2f437f9bb785cae769c3ae310eff351.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>Here is an example of making the polygon non-convex.</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/fbadb81630251ca642bd4ddf9088876ade761630.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>This is not an optimal solution, since the maximum distance we moved one point is <span class=\"tex-span\">\u2009\u2248\u20090.4242640687</span>, whereas we can make it non-convex by only moving each point a distance of at most <span class=\"tex-span\">\u2009\u2248\u20090.3535533906</span>.</p>",
+    "contestId": 772,
+    "index": "B",
+    "name": "Volatile Kite",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 3101
+}

@@ -1,0 +1,33 @@
+{
+    "title": "B. The Meeting Place Cannot Be Changed",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The main road in Bytecity is a straight line from south to north. Conveniently, there are coordinates measured in meters from the southernmost building in north direction.</p><p>At some points on the road there are <span class=\"tex-span\"><i>n</i></span> friends, and <span class=\"tex-span\"><i>i</i></span>-th of them is standing at the point <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> meters and can move with any speed no greater than <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> meters per second in any of the two directions along the road: south or north.</p><p>You are to compute the minimum time needed to gather all the <span class=\"tex-span\"><i>n</i></span> friends at some point on the road. Note that the point they meet at doesn't need to have integer coordinate. </p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200960\u2009000</span>)\u00a0\u2014 the number of friends.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the current coordinates of the friends, in meters.</p><p>The third line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">1</sub>,\u2009<i>v</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>v</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the maximum speeds of the friends, in meters per second.</p>",
+    "outputSpecification": "<p>Print the minimum time (in seconds) needed for all the <span class=\"tex-span\"><i>n</i></span> friends to meet at some point on the road. </p><p>Your answer will be considered correct, if its absolute or relative error isn't greater than <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>. Formally, let your answer be <span class=\"tex-span\"><i>a</i></span>, while jury's answer be <span class=\"tex-span\"><i>b</i></span>. Your answer will be considered correct if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/354edc27fee211170922d7a154f57d15b2eb8afb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> holds.</p>",
+    "samples": [
+        {
+            "input": "3<br/>7 1 3<br/>1 2 1<br/>",
+            "output": "2.000000000000<br/>"
+        },
+        {
+            "input": "4<br/>5 10 3 2<br/>2 3 2 4<br/>",
+            "output": "1.400000000000<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, all friends can gather at the point <span class=\"tex-span\">5</span> within <span class=\"tex-span\">2</span> seconds. In order to achieve this, the first friend should go south all the time at his maximum speed, while the second and the third friends should go north at their maximum speeds.</p>",
+    "contestId": 780,
+    "index": "B",
+    "name": "The Meeting Place Cannot Be Changed",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search"
+    ],
+    "solvedCount": 9090
+}

@@ -1,0 +1,35 @@
+{
+    "title": "H. New Year and Forgotten Tree",
+    "timeLimit": {
+        "value": 7.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A <span class=\"tex-font-style-it\">tree</span> is a connected undirected graph with <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> edges, where <span class=\"tex-span\"><i>n</i></span> denotes the number of vertices. Vertices are numbered <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>n</i></span>.</p><p>Limak is a little polar bear. His bear family prepares a New Year tree every year. One year ago their tree was more awesome than usually. Thus, they decided to prepare the same tree in the next year. Limak was responsible for remembering that tree.</p><p>It would be hard to remember a whole tree. Limak decided to describe it in his notebook instead. He took a pen and wrote <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines, each with two integers\u00a0\u2014 indices of two vertices connected by an edge.</p><p>Now, the New Year is just around the corner and Limak is asked to reconstruct that tree. Of course, there is a problem. He was a very little bear a year ago, and he didn't know digits and the alphabet, so he just replaced each digit with a question mark\u00a0\u2014 the only character he knew. That means, for any vertex index in his notes he knows only the number of digits in it. At least he knows there were no leading zeroes.</p><p>Limak doesn't want to disappoint everyone. Please, take his notes and reconstruct a New Year tree. Find any tree matching Limak's records and print its edges in any order. It's also possible that Limak made a mistake and there is no suitable tree\u00a0\u2013 in this case print \"<span class=\"tex-font-style-tt\">-1</span>\" (without the quotes).</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>)\u00a0\u2014 the number of vertices.</p><p>Each of the next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contains two space-separated non-empty strings, both consisting of questions marks only. No string has more characters than the number of digits in <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "outputSpecification": "<p>If there is no tree matching Limak's records, print the only line with \"<span class=\"tex-font-style-tt\">-1</span>\" (without the quotes).</p><p>Otherwise, describe any tree matching Limak's notes. Print <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines, each with two space-separated integers\u00a0\u2013 indices of vertices connected by an edge. You can print edges in any order.</p>",
+    "samples": [
+        {
+            "input": "12<br/>? ?<br/>? ?<br/>? ?<br/>? ??<br/>?? ?<br/>?? ??<br/>? ??<br/>? ?<br/>? ?<br/>? ?<br/>? ?<br/>",
+            "output": "3 1<br/>1 6<br/>9 1<br/>2 10<br/>1 7<br/>8 1<br/>1 4<br/>1 10<br/>5 1<br/>10 11<br/>12 1<br/>"
+        },
+        {
+            "input": "12<br/>?? ??<br/>? ?<br/>? ?<br/>? ??<br/>?? ?<br/>?? ??<br/>? ??<br/>? ?<br/>? ?<br/>?? ??<br/>? ?<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 611,
+    "index": "H",
+    "name": "New Year  and Forgotten Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "flows",
+        "graphs"
+    ],
+    "solvedCount": 579
+}

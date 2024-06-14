@@ -1,0 +1,32 @@
+{
+    "title": "A. Digit Minimization",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There is an integer $$$n$$$ <span class=\"tex-font-style-bf\">without zeros</span> in its decimal representation. Alice and Bob are playing a game with this integer. Alice starts first. They play the game in turns.</p><p>On her turn, Alice <span class=\"tex-font-style-bf\">must</span> swap any two digits of the integer that are on different positions. Bob on his turn always removes the last digit of the integer. The game ends when there is only one digit left.</p><p>You have to find the smallest integer Alice can get in the end, if she plays optimally.</p>",
+    "inputSpecification": "<p>The input consists of multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of test cases. Description of the test cases follows.</p><p>The first and the only line of each test case contains the integer $$$n$$$ ($$$10 \\le n \\le 10^9$$$) \u2014 the integer for the game. $$$n$$$ does not have zeros in its decimal representation.</p>",
+    "outputSpecification": "<p>For each test case output a single integer \u2014 the smallest integer Alice can get in the end of the game.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">12</div><div class=\"test-example-line test-example-line-even test-example-line-2\">132</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">487456398</div>",
+            "output": "\n2\n1\n3\n"
+        }
+    ],
+    "note": "<p>In the first test case Alice has to swap $$$1$$$ and $$$2$$$. After that Bob removes the last digit, $$$1$$$, so the answer is $$$2$$$.</p><p>In the second test case Alice can swap $$$3$$$ and $$$1$$$: $$$312$$$. After that Bob deletes the last digit: $$$31$$$. Then Alice swaps $$$3$$$ and $$$1$$$: $$$13$$$ and Bob deletes $$$3$$$, so the answer is $$$1$$$.</p>",
+    "contestId": 1684,
+    "index": "A",
+    "name": "Digit Minimization",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "math",
+        "strings"
+    ],
+    "solvedCount": 23569
+}

@@ -1,0 +1,38 @@
+{
+    "title": "F. Bear and Fair Set",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Limak is a grizzly bear. He is big and dreadful. You were chilling in the forest when you suddenly met him. It's very unfortunate for you. He will eat all your cookies unless you can demonstrate your mathematical skills. To test you, Limak is going to give you a puzzle to solve.</p><p>It's a well-known fact that Limak, as every bear, owns a set of numbers. You know some information about the set:</p><ul> <li> The elements of the set are distinct positive integers. </li><li> The number of elements in the set is <span class=\"tex-span\"><i>n</i></span>. The number <span class=\"tex-span\"><i>n</i></span> is divisible by <span class=\"tex-span\">5</span>. </li><li> All elements are between <span class=\"tex-span\">1</span> and <span class=\"tex-span\"><i>b</i></span>, inclusive: bears don't know numbers greater than <span class=\"tex-span\"><i>b</i></span>. </li><li> For each <span class=\"tex-span\"><i>r</i></span> in <span class=\"tex-span\">{0,\u20091,\u20092,\u20093,\u20094}</span>, the set contains exactly <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/43442cbfe432682b89a440ef8f3a585940e247f9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> elements that give remainder <span class=\"tex-span\"><i>r</i></span> when divided by <span class=\"tex-span\">5</span>. (That is, there are <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/43442cbfe432682b89a440ef8f3a585940e247f9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> elements divisible by <span class=\"tex-span\">5</span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/43442cbfe432682b89a440ef8f3a585940e247f9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> elements of the form <span class=\"tex-span\">5<i>k</i>\u2009+\u20091</span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/43442cbfe432682b89a440ef8f3a585940e247f9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> elements of the form <span class=\"tex-span\">5<i>k</i>\u2009+\u20092</span>, and so on.) </li></ul><p>Limak smiles mysteriously and gives you <span class=\"tex-span\"><i>q</i></span> hints about his set. The <span class=\"tex-span\"><i>i</i></span>-th hint is the following sentence: \"If you only look at elements that are between <span class=\"tex-span\">1</span> and <span class=\"tex-span\"><i>upTo</i><sub class=\"lower-index\"><i>i</i></sub></span>, inclusive, you will find exactly <span class=\"tex-span\"><i>quantity</i><sub class=\"lower-index\"><i>i</i></sub></span> such elements in my set.\"</p><p>In a moment Limak will tell you the actual puzzle, but something doesn't seem right... That smile was very strange. You start to think about a possible reason. Maybe Limak cheated you? Or is he a fair grizzly bear?</p><p>Given <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>b</i></span>, <span class=\"tex-span\"><i>q</i></span> and hints, check whether Limak can be fair, i.e. there exists at least one set satisfying the given conditions. If it's possible then print ''<span class=\"tex-font-style-tt\">fair</span>\". Otherwise, print ''<span class=\"tex-font-style-tt\">unfair</span>\".</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>b</i></span> and <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">5\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>q</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>, <span class=\"tex-span\"><i>n</i></span> divisible by <span class=\"tex-span\">5</span>) \u2014 the size of the set, the upper limit for numbers in the set and the number of hints.</p><p>The next <span class=\"tex-span\"><i>q</i></span> lines describe the hints. The <span class=\"tex-span\"><i>i</i></span>-th of them contains two integers <span class=\"tex-span\"><i>upTo</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>quantity</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>upTo</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>b</i></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>quantity</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>).</p>",
+    "outputSpecification": "<p>Print ''<span class=\"tex-font-style-tt\">fair</span>\" if there exists at least one set that has all the required properties and matches all the given hints. Otherwise, print ''<span class=\"tex-font-style-tt\">unfair</span>\".</p>",
+    "samples": [
+        {
+            "input": "10 20 1<br/>10 10<br/>",
+            "output": "fair<br/>"
+        },
+        {
+            "input": "10 20 3<br/>15 10<br/>5 0<br/>10 5<br/>",
+            "output": "fair<br/>"
+        },
+        {
+            "input": "10 20 2<br/>15 3<br/>20 10<br/>",
+            "output": "unfair<br/>"
+        }
+    ],
+    "note": "<p>In the first example there is only one set satisfying all conditions: {1,\u20092,\u20093,\u20094,\u20095,\u20096,\u20097,\u20098,\u20099,\u200910}.</p><p>In the second example also there is only one set satisfying all conditions: {6,\u20097,\u20098,\u20099,\u200910,\u200911,\u200912,\u200913,\u200914,\u200915}.</p><p>Easy to see that there is no set satisfying all conditions from the third example. So Limak lied to you :-(</p>",
+    "contestId": 628,
+    "index": "F",
+    "name": "Bear and Fair Set",
+    "type": "PROGRAMMING",
+    "tags": [
+        "flows",
+        "graphs"
+    ],
+    "solvedCount": 744
+}

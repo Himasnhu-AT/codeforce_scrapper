@@ -1,0 +1,32 @@
+{
+    "title": "C. RationalLee",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">Lee just became Master in Codeforces, and so, he went out to buy some gifts for his friends. He bought $$$n$$$ integers, now it's time to distribute them between his friends rationally...</span></p><p>Lee has $$$n$$$ integers $$$a_1, a_2, \\ldots, a_n$$$ in his backpack and he has $$$k$$$ friends. Lee would like to distribute <span class=\"tex-font-style-bf\">all</span> integers in his backpack between his friends, such that the $$$i$$$-th friend will get exactly $$$w_i$$$ integers and each integer will be handed over to exactly one friend.</p><p>Let's define the <span class=\"tex-font-style-it\">happiness</span> of a friend as the sum of the maximum and the minimum integer he'll get.</p><p>Lee would like to make his friends as happy as possible, in other words, he'd like to maximize the sum of friends' happiness. Now he asks you to calculate the maximum sum of friends' happiness.</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of test cases.</p><p>Next $$$3t$$$ lines contain test cases\u00a0\u2014 one per three lines.</p><p>The first line of each test case contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\le n \\le 2 \\cdot 10^5$$$; $$$1 \\le k \\le n$$$)\u00a0\u2014 the number of integers Lee has and the number of Lee's friends.</p><p>The second line of each test case contains $$$n$$$ integers $$$a_1, a_2, \\ldots, a_n$$$ ($$$-10^9 \\le a_i \\le 10^9$$$)\u00a0\u2014 the integers Lee has.</p><p>The third line contains $$$k$$$ integers $$$w_1, w_2, \\ldots, w_k$$$ ($$$1 \\le w_i \\le n$$$; $$$w_1 + w_2 + \\ldots + w_k = n$$$)\u00a0\u2014 the number of integers Lee wants to give to each friend. </p><p>It's guaranteed that the sum of $$$n$$$ over test cases is less than or equal to $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, print a single integer\u00a0\u2014 the maximum sum of happiness Lee can achieve.</p>",
+    "samples": [
+        {
+            "input": "\n3\n4 2\n1 13 7 17\n1 3\n6 2\n10 10 10 10 11 11\n3 3\n4 4\n1000000000 1000000000 1000000000 1000000000\n1 1 1 1\n",
+            "output": "\n48\n42\n8000000000\n"
+        }
+    ],
+    "note": "<p>In the first test case, Lee should give the greatest integer to the first friend (his happiness will be $$$17 + 17$$$) and remaining integers to the second friend (his happiness will be $$$13 + 1$$$).</p><p>In the second test case, Lee should give $$$\\{10, 10, 11\\}$$$ to the first friend and to the second friend, so the total happiness will be equal to $$$(11 + 10) + (11 + 10)$$$</p><p>In the third test case, Lee has four friends and four integers, it doesn't matter how he distributes the integers between his friends.</p>",
+    "contestId": 1369,
+    "index": "C",
+    "name": "RationalLee",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "math",
+        "sortings",
+        "two pointers"
+    ],
+    "solvedCount": 19134
+}

@@ -1,0 +1,38 @@
+{
+    "title": "A. Tavas and Nafas",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Today Tavas got his test result as an integer score and he wants to share it with his girlfriend, Nafas.</p><p>His phone operating system is Tavdroid, and its keyboard doesn't have any digits! He wants to share his score with Nafas via text, so he has no choice but to send this number using words.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/ef5dff85ac80f311a539793ee257c3eae70d8516.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>He ate coffee mix without water again, so right now he's really messed up and can't think.</p><p>Your task is to help him by telling him what to type.</p>",
+    "inputSpecification": "<p>The first and only line of input contains an integer <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>s</i>\u2009\u2264\u200999</span>), Tavas's score. </p>",
+    "outputSpecification": "<p>In the first and only line of output, print a single string consisting only from English lowercase letters and hyphens ('<span class=\"tex-font-style-tt\">-</span>'). Do not use spaces.</p>",
+    "samples": [
+        {
+            "input": "6<br/>",
+            "output": "six<br/>"
+        },
+        {
+            "input": "99<br/>",
+            "output": "ninety-nine<br/>"
+        },
+        {
+            "input": "20<br/>",
+            "output": "twenty<br/>"
+        }
+    ],
+    "note": "<p>You can find all you need to know about English numerals in <a href=\"https://en.wikipedia.org/wiki/English_numerals\">http://en.wikipedia.org/wiki/English_numerals</a> .</p>",
+    "contestId": 535,
+    "index": "A",
+    "name": "Tavas and Nafas",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 11927
+}

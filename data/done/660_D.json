@@ -1,0 +1,29 @@
+{
+    "title": "D. Number of Parallelograms",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given <span class=\"tex-span\"><i>n</i></span> points on a plane. All the points are distinct and no three of them lie on the same line. Find the number of parallelograms with the vertices at the given points.</p>",
+    "inputSpecification": "<p>The first line of the input contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092000</span>) \u2014 the number of points.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains two integers <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>)</span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th point.</p>",
+    "outputSpecification": "<p>Print the only integer <span class=\"tex-span\"><i>c</i></span> \u2014 the number of parallelograms with the vertices at the given points.</p>",
+    "samples": [
+        {
+            "input": "4<br/>0 1<br/>1 0<br/>1 1<br/>2 0<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 660,
+    "index": "D",
+    "name": "Number of Parallelograms",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 3877
+}

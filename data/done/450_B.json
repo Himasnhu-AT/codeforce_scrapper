@@ -1,0 +1,34 @@
+{
+    "title": "B. Jzzhu and Sequences",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Jzzhu has invented a kind of sequences, they meet the following property:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c84e959b7fd00c2ebce39e2b33db6bdb624ba8f3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>You are given <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>, please calculate <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>n</i></sub></span> modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> <span class=\"tex-span\">(|<i>x</i>|,\u2009|<i>y</i>|\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>. The second line contains a single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">9</sup>)</span>.</p>",
+    "outputSpecification": "<p>Output a single integer representing <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>n</i></sub></span> modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "2 3<br/>3<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "0 -1<br/>2<br/>",
+            "output": "1000000006<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">2</sub>\u2009=\u2009<i>f</i><sub class=\"lower-index\">1</sub>\u2009+\u2009<i>f</i><sub class=\"lower-index\">3</sub></span>, <span class=\"tex-span\">3\u2009=\u20092\u2009+\u2009<i>f</i><sub class=\"lower-index\">3</sub></span>, <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">3</sub>\u2009=\u20091</span>.</p><p>In the second sample, <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">2</sub>\u2009=\u2009\u2009-\u20091</span>; <span class=\"tex-span\">\u2009-\u20091</span> modulo <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span> equals <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20096)</span>.</p>",
+    "contestId": 450,
+    "index": "B",
+    "name": "Jzzhu and Sequences",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 25539
+}

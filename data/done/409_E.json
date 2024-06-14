@@ -1,0 +1,37 @@
+{
+    "title": "E. Dome",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/f4f49cdb0c512fb7712ee3e80388e75694cc7c73.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The input contains a single floating-point number <span class=\"tex-span\"><i>x</i></span> with exactly 6 decimal places (<span class=\"tex-span\">0\u2009&lt;\u2009<i>x</i>\u2009&lt;\u20095</span>).</p>",
+    "outputSpecification": "<p>Output two integers separated by a single space. Each integer should be between 1 and 10, inclusive. If several solutions exist, output any of them. Solution will exist for all tests.</p>",
+    "samples": [
+        {
+            "input": "1.200000<br/>",
+            "output": "3 2<br/>"
+        },
+        {
+            "input": "2.572479<br/>",
+            "output": "10 3<br/>"
+        },
+        {
+            "input": "4.024922<br/>",
+            "output": "9 9<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 409,
+    "index": "E",
+    "name": "Dome",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 563
+}

@@ -1,0 +1,29 @@
+{
+    "title": "A. Prefix and Suffix Array",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Marcos loves strings a lot, so he has a favorite string $$$s$$$ consisting of lowercase English letters. For this string, he wrote down all its non-empty prefixes and suffixes (except for $$$s$$$) on a piece of paper in arbitrary order. You see all these strings and wonder if Marcos' favorite string is a palindrome or not. So, your task is to decide whether $$$s$$$ is a palindrome by just looking at the piece of paper.</p><p>A string $$$a$$$ is a prefix of a string $$$b$$$ if $$$a$$$ can be obtained from $$$b$$$ by deletion of several (possibly, zero or all) characters from the end.</p><p>A string $$$a$$$ is a suffix of a string $$$b$$$ if $$$a$$$ can be obtained from $$$b$$$ by deletion of several (possibly, zero or all) characters from the beginning.</p><p>A palindrome is a string that reads the same backward as forward, for example, strings \"<span class=\"tex-font-style-tt\">gg</span>\", \"<span class=\"tex-font-style-tt\">ioi</span>\", \"<span class=\"tex-font-style-tt\">abba</span>\", \"<span class=\"tex-font-style-tt\">icpci</span>\" are palindromes, but strings \"<span class=\"tex-font-style-tt\">codeforces</span>\", \"<span class=\"tex-font-style-tt\">abcd</span>\", \"<span class=\"tex-font-style-tt\">alt</span>\" are not.</p>",
+    "inputSpecification": "<p>Each test consists of multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 120$$$)\u00a0\u2014 the number of test cases. The description of test cases follows.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$2\\le n \\le 20$$$)\u00a0\u2014 the length of the string $$$s$$$.</p><p>The second line of each test case contains $$$2n-2$$$ strings $$$a_1, a_2, \\cdots, a_{2n-2}$$$\u00a0\u2014 all non-empty prefixes and suffixes of $$$s$$$, not including itself, in arbitrary order.</p><p>It is guaranteed that these strings are all the non-empty prefixes and suffixes of some string consisting of lowercase English letters.</p>",
+    "outputSpecification": "<p>For each test case, output \"<span class=\"tex-font-style-tt\">YES</span>\" if $$$s$$$ is a palindrome, and \"<span class=\"tex-font-style-tt\">NO</span>\" otherwise.</p><p>You can output the answer in any case (upper or lower). For example, the strings \"<span class=\"tex-font-style-tt\">yEs</span>\", \"<span class=\"tex-font-style-tt\">yes</span>\", \"<span class=\"tex-font-style-tt\">Yes</span>\", and \"<span class=\"tex-font-style-tt\">YES</span>\" will be recognized as positive responses.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">bcd cd a d abc ab</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">i io i oi</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">g g</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3</div><div class=\"test-example-line test-example-line-even test-example-line-4\">t al lt a</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">bba a ab a abb ba</div>",
+            "output": "\nNO\nYES\nYES\nNO\nYES\n"
+        }
+    ],
+    "note": "<p>In the first test case, $$$s$$$ is \"<span class=\"tex-font-style-tt\">abcd</span>\". Its prefixes are \"<span class=\"tex-font-style-tt\">a</span>\", \"<span class=\"tex-font-style-tt\">ab</span>\" and \"<span class=\"tex-font-style-tt\">abc</span>\", and its suffixes are \"<span class=\"tex-font-style-tt\">d</span>\", \"<span class=\"tex-font-style-tt\">cd</span>\" and \"<span class=\"tex-font-style-tt\">bcd</span>\". As the string \"<span class=\"tex-font-style-tt\">abcd</span>\" is not a palindrome, the answer is <span class=\"tex-font-style-tt\">NO</span>.</p><p>In the second test case, $$$s$$$ is \"<span class=\"tex-font-style-tt\">ioi</span>\". Its prefixes are \"<span class=\"tex-font-style-tt\">i</span>\" and \"<span class=\"tex-font-style-tt\">io</span>\", and its suffixes are \"<span class=\"tex-font-style-tt\">i</span>\" and \"<span class=\"tex-font-style-tt\">oi</span>\". As the string \"<span class=\"tex-font-style-tt\">ioi</span>\" is a palindrome, the answer is <span class=\"tex-font-style-tt\">YES</span>.</p><p>In the third test case, $$$s$$$ is \"<span class=\"tex-font-style-tt\">gg</span>\" which is a palindrome.</p><p>In the fourth test case, $$$s$$$ is \"<span class=\"tex-font-style-tt\">alt</span>\" which is not a palindrome.</p>",
+    "contestId": 1794,
+    "index": "A",
+    "name": "Prefix and Suffix Array",
+    "type": "PROGRAMMING",
+    "tags": [
+        "strings"
+    ],
+    "solvedCount": 16734
+}

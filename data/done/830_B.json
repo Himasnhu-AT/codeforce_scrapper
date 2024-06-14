@@ -1,0 +1,39 @@
+{
+    "title": "B. Cards Sorting",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasily has a deck of cards consisting of <span class=\"tex-span\"><i>n</i></span> cards. There is an integer on each of the cards, this integer is between <span class=\"tex-span\">1</span> and <span class=\"tex-span\">100\u2009000</span>, inclusive. It is possible that some cards have the same integers on them.</p><p>Vasily decided to sort the cards. To do this, he repeatedly takes the top card from the deck, and if the number on it equals the minimum number written on the cards in the deck, then he places the card away. Otherwise, he puts it under the deck and takes the next card from the top, and so on. The process ends as soon as there are no cards in the deck. You can assume that Vasily always knows the minimum number written on some card in the remaining deck, but doesn't know where this card (or these cards) is.</p><p>You are to determine the total number of times Vasily takes the top card from the deck.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>) \u2014 the number of cards in the deck.</p><p>The second line contains a sequence of <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100\u2009000</span>), where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is the number written on the <span class=\"tex-span\"><i>i</i></span>-th from top card in the deck.</p>",
+    "outputSpecification": "<p>Print the total number of times Vasily takes the top card from the deck.</p>",
+    "samples": [
+        {
+            "input": "4<br/>6 3 1 2<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "1<br/>1000<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "7<br/>3 3 3 3 3 3 3<br/>",
+            "output": "7<br/>"
+        }
+    ],
+    "note": "<p>In the first example Vasily at first looks at the card with number <span class=\"tex-span\">6</span> on it, puts it under the deck, then on the card with number <span class=\"tex-span\">3</span>, puts it under the deck, and then on the card with number <span class=\"tex-span\">1</span>. He places away the card with <span class=\"tex-span\">1</span>, because the number written on it is the minimum among the remaining cards. After that the cards from top to bottom are <span class=\"tex-span\">[2,\u20096,\u20093]</span>. Then Vasily looks at the top card with number <span class=\"tex-span\">2</span> and puts it away. After that the cards from top to bottom are <span class=\"tex-span\">[6,\u20093]</span>. Then Vasily looks at card <span class=\"tex-span\">6</span>, puts it under the deck, then at card <span class=\"tex-span\">3</span> and puts it away. Then there is only one card with number <span class=\"tex-span\">6</span> on it, and Vasily looks at it and puts it away. Thus, in total Vasily looks at <span class=\"tex-span\">7</span> cards.</p>",
+    "contestId": 830,
+    "index": "B",
+    "name": "Cards Sorting",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 2804
+}

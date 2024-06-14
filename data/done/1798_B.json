@@ -1,0 +1,32 @@
+{
+    "title": "B. Three Sevens",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Lottery \"Three Sevens\" was held for $$$m$$$ days. On day $$$i$$$, $$$n_i$$$ people with the numbers $$$a_{i, 1}, \\ldots, a_{i, n_i}$$$ participated in the lottery.</p><p>It is known that in each of the $$$m$$$ days, only one winner was selected from the lottery participants. The lottery winner on day $$$i$$$ was not allowed to participate in the lottery in the days from $$$i+1$$$ to $$$m$$$.</p><p>Unfortunately, the information about the lottery winners has been lost. You need to find any possible list of lottery winners on days from $$$1$$$ to $$$m$$$ or determine that no solution exists.</p>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \\le t \\le 50\\,000$$$). The description of the test cases follows.</p><p>The first line of each test case contains a single integer $$$m$$$ ($$$1 \\le m \\le 50\\,000$$$)\u00a0\u2014 the number of days in which the lottery was held.</p><p>Next, for each $$$i$$$ from $$$1$$$ to $$$m$$$, follows a two-line block of data.</p><p>The first line of each block contains a single integer $$$n_i$$$ ($$$1 \\le n_i \\le 50\\,000$$$)\u00a0\u2014 the number of lottery participants on day $$$i$$$.</p><p>The second line of the block contains integers $$$a_{i, 1}, \\ldots, a_{i, n_i}$$$ ($$$1 \\le a_{i, j} \\le 50\\,000$$$)\u00a0\u2014 lottery participants on day $$$i$$$. It is guaranteed that all the numbers $$$a_{i, 1}, \\ldots, a_{i, n_i}$$$ are pairwise distinct.</p><p>It is guaranteed that the sum of $$$n_i$$$ over all blocks of all test cases does not exceed $$$50\\,000$$$.</p>",
+    "outputSpecification": "<p>For each test case, if there is no solution, print a single integer $$$-1$$$.</p><p>Otherwise, print $$$m$$$ integers $$$p_1, p_2, \\ldots, p_m$$$ ($$$1 \\le p_i \\le 50\\,000$$$)\u00a0\u2014 lottery winners on days from $$$1$$$ to $$$m$$$. If there are multiple solutions, print any of them.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2 4 8</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 9 1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 2 3 4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3</div>",
+            "output": "\n8 2 1 \n-1\n2 1 4 3 \n"
+        }
+    ],
+    "note": "<p>In the first test case, one of the answers is $$$[8, 2, 1]$$$ since the participant with the number $$$8$$$ participated on day $$$1$$$, but did not participate on days $$$2$$$ and $$$3$$$; the participant with the number $$$2$$$ participated on day $$$2$$$, but did not participate on day $$$3$$$; and the participant with the number $$$1$$$ participated on day $$$3$$$. Note that this is not the only possible answer, for example, $$$[8, 9, 4]$$$ is also a correct answer.</p><p>In the second test case, both lottery participants participated on both days, so any possible lottery winner on the day $$$1$$$ must have participated on the day $$$2$$$, which is not allowed. Thus, there is no correct answer.</p><p>In the third test case, only one participant participated on days $$$2$$$, $$$3$$$, $$$4$$$, and on day $$$1$$$ there is only one participant who did not participate in the lottery on days $$$2, 3, 4$$$\u00a0\u2014 participant $$$2$$$, which means $$$[2, 1, 4, 3]$$$ is the only correct answer to this test case.</p>",
+    "contestId": 1798,
+    "index": "B",
+    "name": "Three Sevens",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "data structures",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 16042
+}

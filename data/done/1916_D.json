@@ -1,0 +1,32 @@
+{
+    "title": "D. Mathematical Problem",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The mathematicians of the 31st lyceum were given the following task:</p><p>You are given an <span class=\"tex-font-style-bf\">odd</span> number $$$n$$$, and you need to find $$$n$$$ different numbers that are squares of integers. But it's not that simple. Each number should have a length of $$$n$$$ (and should not have leading zeros), and the multiset of digits of all the numbers should be the same. For example, for $$$\\mathtt{234}$$$ and $$$\\mathtt{432}$$$, and $$$\\mathtt{11223}$$$ and $$$\\mathtt{32211}$$$, the multisets of digits are the same, but for $$$\\mathtt{123}$$$ and $$$\\mathtt{112233}$$$, they are not.</p><p>The mathematicians couldn't solve this problem. Can you?</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1 \\leq t \\leq 100$$$)\u00a0\u2014 the number of test cases.</p><p>The following $$$t$$$ lines contain one <span class=\"tex-font-style-bf\">odd</span> integer $$$n$$$ ($$$1 \\leq n \\leq 99$$$)\u00a0\u2014 the number of numbers to be found and their length.</p><p>It is guaranteed that the solution exists within the given constraints.</p><p>It is guaranteed that the sum of $$$n^2$$$ does not exceed $$$10^5$$$.</p><p>The numbers can be output in any order.</p>",
+    "outputSpecification": "<p>For each test case, you need to output $$$n$$$ numbers of length $$$n$$$\u00a0\u2014 the answer to the problem.</p><p>If there are several answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5</div>",
+            "output": "\n1\n169\n196\n961\n16384\n31684\n36481\n38416\n43681\n"
+        }
+    ],
+    "note": "<p>Below are the squares of the numbers that are the answers for the second test case:</p><p>$$$\\mathtt{169}$$$ = $$$\\mathtt{13}^2$$$</p><p>$$$\\mathtt{196}$$$ = $$$\\mathtt{14}^2$$$</p><p>$$$\\mathtt{961}$$$ = $$$\\mathtt{31}^2$$$</p><p>Below are the squares of the numbers that are the answers for the third test case:</p><p>$$$\\mathtt{16384}$$$ = $$$\\mathtt{128}^2$$$</p><p>$$$\\mathtt{31684}$$$ = $$$\\mathtt{178}^2$$$</p><p>$$$\\mathtt{36481}$$$ = $$$\\mathtt{191}^2$$$</p><p>$$$\\mathtt{38416}$$$ = $$$\\mathtt{196}^2$$$</p><p>$$$\\mathtt{43681}$$$ = $$$\\mathtt{209}^2$$$</p>",
+    "contestId": 1916,
+    "index": "D",
+    "name": "Mathematical Problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "geometry",
+        "math"
+    ],
+    "solvedCount": 8021
+}

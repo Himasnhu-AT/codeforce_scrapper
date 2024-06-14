@@ -1,0 +1,33 @@
+{
+    "title": "G. Hamming Distance",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Hamming distance between two strings of equal length is the number of positions at which the corresponding symbols are different. You are given two strings; calculate the distance between them.</p>",
+    "inputSpecification": "<p>The input consists of two lines. Each line contains a string of characters '<span class=\"tex-font-style-tt\">A</span>'-'<span class=\"tex-font-style-tt\">Z</span>' between 1 and 100 characters, inclusive. The strings have equal length.</p>",
+    "outputSpecification": "<p>Output Hamming distance between the strings.</p>",
+    "samples": [
+        {
+            "input": "CODECHEF<br/>TOPCODER<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "HAMMING<br/>DISTANC<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 470,
+    "index": "G",
+    "name": "Hamming Distance",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 93
+}

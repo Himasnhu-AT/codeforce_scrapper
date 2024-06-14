@@ -1,0 +1,31 @@
+{
+    "title": "B. Tokitsukaze and Meeting",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Tokitsukaze is arranging a meeting. There are $$$n$$$ rows and $$$m$$$ columns of seats in the meeting hall.</p><p>There are exactly $$$n \\cdot m$$$ students attending the meeting, including several naughty students and several serious students. The students are numerated from $$$1$$$ to $$$n\\cdot m$$$. The students will enter the meeting hall in order. When the $$$i$$$-th student enters the meeting hall, he will sit in the $$$1$$$-st column of the $$$1$$$-st row, and the students who are already seated will move back one seat. Specifically, the student sitting in the $$$j$$$-th ($$$1\\leq j \\leq m-1$$$) column of the $$$i$$$-th row will move to the $$$(j+1)$$$-th column of the $$$i$$$-th row, and the student sitting in $$$m$$$-th column of the $$$i$$$-th row will move to the $$$1$$$-st column of the $$$(i+1)$$$-th row.</p><p>For example, there is a meeting hall with $$$2$$$ rows and $$$2$$$ columns of seats shown as below:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/71fbef301db6ce11000b1d81b932ef15edcc4d8c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>There will be $$$4$$$ students entering the meeting hall in order, represented as a binary string \"<span class=\"tex-font-style-tt\">1100</span>\", of which '<span class=\"tex-font-style-tt\">0</span>' represents naughty students and '<span class=\"tex-font-style-tt\">1</span>' represents serious students. The changes of seats in the meeting hall are as follows:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6adf53c6760706e7188b39c11a0473a15cb0ae60.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Denote a row or a column good if and only if there is at least one serious student in this row or column. Please predict the number of good rows and columns just after the $$$i$$$-th student enters the meeting hall, for all $$$i$$$.</p>",
+    "inputSpecification": "<p>The first contains a single positive integer $$$t$$$ ($$$1 \\leq t \\leq 10\\,000$$$)\u00a0\u2014 the number of test cases.</p><p>For each test case, the first line contains two integers $$$n$$$, $$$m$$$ ($$$1 \\leq n,m \\leq 10^6$$$; $$$1 \\leq n \\cdot m \\leq 10^6$$$), denoting there are $$$n$$$ rows and $$$m$$$ columns of seats in the meeting hall.</p><p>The second line contains a binary string $$$s$$$ of length $$$n \\cdot m$$$, consisting only of zeros and ones. If $$$s_i$$$ equal to '<span class=\"tex-font-style-tt\">0</span>' represents the $$$i$$$-th student is a naughty student, and $$$s_i$$$ equal to '<span class=\"tex-font-style-tt\">1</span>' represents the $$$i$$$-th student is a serious student.</p><p>It is guaranteed that the sum of $$$n \\cdot m$$$ over all test cases does not exceed $$$10^6$$$.</p>",
+    "outputSpecification": "<p>For each test case, print a single line with $$$n \\cdot m$$$ integers\u00a0\u2014 the number of good rows and columns just after the $$$i$$$-th student enters the meeting hall.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1100</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">11001101</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">11001101</div>",
+            "output": "\n2 3 4 3\n2 3 4 3 5 4 6 5\n2 3 3 3 4 4 4 5\n"
+        }
+    ],
+    "note": "<p>The first test case is shown in the statement.</p><p>After the $$$1$$$-st student enters the meeting hall, there are $$$2$$$ good rows and columns: the $$$1$$$-st row and the $$$1$$$-st column.</p><p>After the $$$2$$$-nd student enters the meeting hall, there are $$$3$$$ good rows and columns: the $$$1$$$-st row, the $$$1$$$-st column and the $$$2$$$-nd column.</p><p>After the $$$3$$$-rd student enters the meeting hall, the $$$4$$$ rows and columns are all good.</p><p>After the $$$4$$$-th student enters the meeting hall, there are $$$3$$$ good rows and columns: the $$$2$$$-nd row, the $$$1$$$-st column and the $$$2$$$-nd column.</p>",
+    "contestId": 1677,
+    "index": "B",
+    "name": "Tokitsukaze and Meeting",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 4074
+}

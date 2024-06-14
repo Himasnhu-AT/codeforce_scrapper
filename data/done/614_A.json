@@ -1,0 +1,34 @@
+{
+    "title": "A. Link/Cut Tree",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Programmer Rostislav got seriously interested in the Link/Cut Tree data structure, which is based on Splay trees. Specifically, he is now studying the <span class=\"tex-span\"><i>expose</i></span> procedure.</p><p>Unfortunately, Rostislav is unable to understand the definition of this procedure, so he decided to ask programmer Serezha to help him. Serezha agreed to help if Rostislav solves a simple task (and if he doesn't, then why would he need Splay trees anyway?)</p><p>Given integers <span class=\"tex-span\"><i>l</i></span>, <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>k</i></span>, you need to print all powers of number <span class=\"tex-span\"><i>k</i></span> within range from <span class=\"tex-span\"><i>l</i></span> to <span class=\"tex-span\"><i>r</i></span> <span class=\"tex-font-style-bf\">inclusive</span>. However, Rostislav doesn't want to spent time doing this, as he got interested in playing a network game called Agar with Gleb. Help him!</p>",
+    "inputSpecification": "<p>The first line of the input contains three space-separated integers <span class=\"tex-span\"><i>l</i></span>, <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>, <span class=\"tex-span\">2\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print all powers of number <span class=\"tex-span\"><i>k</i></span>, that lie within range from <span class=\"tex-span\"><i>l</i></span> to <span class=\"tex-span\"><i>r</i></span> in the increasing order. If there are no such numbers, print \"<span class=\"tex-font-style-tt\">-1</span>\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "1 10 2<br/>",
+            "output": "1 2 4 8 "
+        },
+        {
+            "input": "2 4 5<br/>",
+            "output": "-1"
+        }
+    ],
+    "note": "<p>Note to the first sample: numbers <span class=\"tex-span\">2<sup class=\"upper-index\">0</sup>\u2009=\u20091</span>, <span class=\"tex-span\">2<sup class=\"upper-index\">1</sup>\u2009=\u20092</span>, <span class=\"tex-span\">2<sup class=\"upper-index\">2</sup>\u2009=\u20094</span>, <span class=\"tex-span\">2<sup class=\"upper-index\">3</sup>\u2009=\u20098</span> lie within the specified range. The number <span class=\"tex-span\">2<sup class=\"upper-index\">4</sup>\u2009=\u200916</span> is greater then <span class=\"tex-span\">10</span>, thus it shouldn't be printed.</p>",
+    "contestId": 614,
+    "index": "A",
+    "name": "Link/Cut Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 7413
+}

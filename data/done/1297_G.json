@@ -1,0 +1,43 @@
+{
+    "title": "G. M-numbers",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>For a given positive integer $$$m$$$, a positive number is called a $$$m$$$-number if the product of its digits is $$$m$$$. For example, the beginning of a series of $$$24$$$-numbers are as follows: $$$38$$$, $$$46$$$, $$$64$$$, $$$83$$$, $$$138$$$, $$$146$$$, $$$164$$$, $$$183$$$, $$$226$$$ ...</p><p>You are given a positive integer $$$m$$$ and $$$k$$$. Print $$$k$$$-th among $$$m$$$-numbers if all $$$m$$$-numbers are sorted in ascending order.</p>",
+    "inputSpecification": "<p>A single line of input contains two integers $$$m$$$ and $$$k$$$ ($$$2 \\le m \\le 10^9$$$, $$$1 \\le k \\le 10^9$$$).</p>",
+    "outputSpecification": "<p>Print the desired number\u00a0\u2014 $$$k$$$-th among all $$$m$$$-numbers if $$$m$$$-numbers are sorted in ascending order. If the answer does not exist, print <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "samples": [
+        {
+            "input": "\n24 9\n",
+            "output": "\n226\n"
+        },
+        {
+            "input": "\n24 1\n",
+            "output": "\n38\n"
+        },
+        {
+            "input": "\n5040 1000000000\n",
+            "output": "\n111121111315213227111\n"
+        },
+        {
+            "input": "\n2020 2020\n",
+            "output": "\n-1\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1297,
+    "index": "G",
+    "name": "M-numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 66
+}

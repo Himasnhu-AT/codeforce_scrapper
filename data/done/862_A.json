@@ -1,0 +1,38 @@
+{
+    "title": "A. Mahmoud and Ehab and the MEX",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Dr. Evil kidnapped Mahmoud and Ehab in the evil land because of their performance in the Evil Olympiad in Informatics (EOI). He decided to give them some problems to let them go.</p><p>Dr. Evil is interested in sets, He has a set of <span class=\"tex-span\"><i>n</i></span> integers. Dr. Evil calls a set of integers <span class=\"tex-font-style-it\">evil</span> if the <span class=\"tex-font-style-it\">MEX</span> of it is exactly <span class=\"tex-span\"><i>x</i></span>. the <span class=\"tex-font-style-it\">MEX</span> of a set of integers is the minimum non-negative integer that doesn't exist in it. For example, the <span class=\"tex-font-style-it\">MEX</span> of the set <span class=\"tex-span\">{0,\u20092,\u20094}</span> is <span class=\"tex-span\">1</span> and the <span class=\"tex-font-style-it\">MEX</span> of the set <span class=\"tex-span\">{1,\u20092,\u20093}</span> is <span class=\"tex-span\">0</span> .</p><p>Dr. Evil is going to make his set <span class=\"tex-font-style-it\">evil</span>. To do this he can perform some operations. During each operation he can add some non-negative integer to his set or erase some element from it. What is the minimal number of operations Dr. Evil has to perform to make his set <span class=\"tex-font-style-it\">evil</span>?</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the size of the set Dr. Evil owns, and the desired <span class=\"tex-font-style-it\">MEX</span>.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> distinct non-negative integers not exceeding <span class=\"tex-span\">100</span> that represent the set.</p>",
+    "outputSpecification": "<p>The only line should contain one integer\u00a0\u2014 the minimal number of operations Dr. Evil should perform.</p>",
+    "samples": [
+        {
+            "input": "5 3<br/>0 4 5 6 7<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "1 0<br/>0<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "5 0<br/>1 2 3 4 5<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>For the first test case Dr. Evil should add <span class=\"tex-span\">1</span> and <span class=\"tex-span\">2</span> to the set performing <span class=\"tex-span\">2</span> operations.</p><p>For the second test case Dr. Evil should erase <span class=\"tex-span\">0</span> from the set. After that, the set becomes empty, so the <span class=\"tex-font-style-it\">MEX</span> of it is <span class=\"tex-span\">0</span>.</p><p>In the third test case the set is already <span class=\"tex-font-style-it\">evil</span>.</p>",
+    "contestId": 862,
+    "index": "A",
+    "name": "Mahmoud and Ehab and the MEX",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 9387
+}

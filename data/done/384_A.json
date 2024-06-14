@@ -1,0 +1,29 @@
+{
+    "title": "A. Coder",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Iahub likes chess very much. He even invented a new chess piece named Coder. A Coder can move (and attack) one square horizontally or vertically. More precisely, if the Coder is located at position <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>, he can move to (or attack) positions <span class=\"tex-span\">(<i>x</i>\u2009+\u20091,\u2009<i>y</i>)</span>, <span class=\"tex-span\">(<i>x</i>\u20131,\u2009<i>y</i>)</span>, <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009+\u20091)</span> and <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u20131)</span>.</p><p>Iahub wants to know how many Coders can be placed on an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>n</i></span> chessboard, so that no Coder attacks any other Coder.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000)</span>.</p>",
+    "outputSpecification": "<p>On the first line print an integer, the maximum number of Coders that can be placed on the chessboard.</p><p>On each of the next <span class=\"tex-span\"><i>n</i></span> lines print <span class=\"tex-span\"><i>n</i></span> characters, describing the configuration of the Coders. For an empty cell print an '<span class=\"tex-font-style-tt\">.</span>', and for a Coder print a '<span class=\"tex-font-style-tt\">C</span>'.</p><p>If there are multiple correct answers, you can print any.</p>",
+    "samples": [
+        {
+            "input": "2<br/>",
+            "output": "2<br/>C.<br/>.C<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 384,
+    "index": "A",
+    "name": "Coder",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 15936
+}

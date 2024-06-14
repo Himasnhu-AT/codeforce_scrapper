@@ -1,0 +1,30 @@
+{
+    "title": "B. Star",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8ce473ddd18e215183f1260dae324064a2e43610.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The input contains a single integer <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u200918257</span>).</p>",
+    "outputSpecification": "<p>Print a single integer <span class=\"tex-span\"><i>output</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>output</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">9</sup>)</span>.</p>",
+    "samples": [
+        {
+            "input": "2<br/>",
+            "output": "13"
+        }
+    ],
+    "note": null,
+    "contestId": 171,
+    "index": "B",
+    "name": "Star",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "combinatorics"
+    ],
+    "solvedCount": 3964
+}

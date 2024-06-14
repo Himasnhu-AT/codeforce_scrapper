@@ -1,0 +1,39 @@
+{
+    "title": "F. LIS?",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 1024.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Entering senior high school life, Tom is attracted by LIS problems, not only the Longest Increasing Subsequence problem, but also the Largest Interval Sum problem. Now he gets a really interesting problem from his friend Daniel. However, it seems too hard for him to solve it, so he asks you for help.</p><p>Given an array $$$a$$$ consisting of $$$n$$$ integers.</p><p>In one operation, you do the following: </p><ul> <li> Select an interval $$$[l,r]$$$ ($$$1\\le l\\le r\\le n$$$), such that the sum of the interval is the largest among <span class=\"tex-font-style-bf\">all intervals</span> in the array $$$a$$$. More formally, $$$\\displaystyle\\sum_{i=l}^r a_i=\\max_{1\\le l'\\le r'\\le n}\\sum_{i=l'}^{r'} a_i$$$.</li><li> Then subtract $$$1$$$ from all elements $$$a_l,a_{l+1},\\ldots,a_r$$$. </li></ul><p>Find the minimum number of operations you need to perform to make $$$a_i&lt;0$$$ for every $$$1\\le i\\le n$$$.</p>",
+    "inputSpecification": "<p>The first line of input contains a single integer $$$n$$$ ($$$1 \\le n \\le 5 \\cdot 10^5$$$) \u2014 the length of the array $$$a$$$.</p><p>The second line contains $$$n$$$ integers $$$a_1,a_2,\\ldots,a_n$$$ ($$$-10^6\\le a_i\\le 10^6$$$) \u2014 the elements of the array $$$a$$$.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the minimum number of operations.</p>",
+    "samples": [
+        {
+            "input": "\n5\n1 2 3 4 5\n",
+            "output": "\n6\n"
+        },
+        {
+            "input": "\n6\n-1 -5 -4 -1 -4 -7\n",
+            "output": "\n0\n"
+        },
+        {
+            "input": "\n11\n0 1000000 1 -50000 2 998353 3 -100007 4 200943 0\n",
+            "output": "\n1936973\n"
+        }
+    ],
+    "note": "<p>In the first example, you can do operations on intervals $$$[1,5],[1,5],[2,5],[3,5],[4,5],[5,5]$$$ in such order. You may also do operations on intervals $$$[1,5],[2,5],[3,5],[4,5],[5,5],[1,5]$$$ in such order.</p><p>In the second example, it's already satisfied that $$$a_i&lt;0$$$ for every $$$1\\le i\\le n$$$. So you do not need to perform any operations.</p>",
+    "contestId": 1868,
+    "index": "F",
+    "name": "LIS?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 70
+}

@@ -1,0 +1,38 @@
+{
+    "title": "D. Multiplication Table",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Bizon the Champion isn't just charming, he also is very smart.</p><p>While some of us were learning the multiplication table, Bizon the Champion had fun in his own manner. Bizon the Champion painted an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> multiplication table, where the element on the intersection of the <span class=\"tex-span\"><i>i</i></span>-th row and <span class=\"tex-span\"><i>j</i></span>-th column equals <span class=\"tex-span\"><i>i</i>\u00b7<i>j</i></span> (the rows and columns of the table are numbered starting from 1). Then he was asked: what number in the table is the <span class=\"tex-span\"><i>k</i></span>-th largest number? Bizon the Champion always answered correctly and immediately. Can you repeat his success?</p><p>Consider the given multiplication table. If you write out all <span class=\"tex-span\"><i>n</i>\u00b7<i>m</i></span> numbers from the table in the non-decreasing order, then the <span class=\"tex-span\"><i>k</i></span>-th number you write out is called the <span class=\"tex-span\"><i>k</i></span>-th largest number.</p>",
+    "inputSpecification": "<p>The single line contains integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20095\u00b710<sup class=\"upper-index\">5</sup>;\u00a01\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u00b7<i>m</i>)</span>.</p>",
+    "outputSpecification": "<p>Print the <span class=\"tex-span\"><i>k</i></span>-th largest number in a <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> multiplication table.</p>",
+    "samples": [
+        {
+            "input": "2 2 2<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "2 3 4<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "1 10 5<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": "<p>A <span class=\"tex-span\">2\u2009\u00d7\u20093</span> multiplication table looks like this:</p><pre class=\"verbatim\"><br/>1 2 3<br/>2 4 6<br/><br/></pre>",
+    "contestId": 448,
+    "index": "D",
+    "name": "Multiplication Table",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force"
+    ],
+    "solvedCount": 13422
+}

@@ -1,0 +1,34 @@
+{
+    "title": "A. Vanya and Cards",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vanya loves playing. He even has a special set of cards to play with. Each card has a single integer. The number on the card can be positive, negative and can even be equal to zero. The only limit is, the number on each card doesn't exceed <span class=\"tex-span\"><i>x</i></span> in the absolute value.</p><p>Natasha doesn't like when Vanya spends a long time playing, so she hid all of his cards. Vanya became sad and started looking for the cards but he only found <span class=\"tex-span\"><i>n</i></span> of them. Vanya loves the balance, so he wants the sum of all numbers on found cards equal to zero. On the other hand, he got very tired of looking for cards. Help the boy and say what is the minimum number of cards does he need to find to make the sum equal to zero?</p><p>You can assume that initially Vanya had infinitely many cards with each integer number from <span class=\"tex-span\">\u2009-\u2009<i>x</i></span> to <span class=\"tex-span\"><i>x</i></span>.</p><p> </p>",
+    "inputSpecification": "<p>The first line contains two integers: <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000)</span> \u2014 the number of found cards and <span class=\"tex-span\"><i>x</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u20091000)</span> \u2014 the maximum absolute value of the number on a card. The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers \u2014 the numbers on found cards. It is guaranteed that the numbers do not exceed <span class=\"tex-span\"><i>x</i></span> in their absolute value.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>-1 1 2<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 3<br/>-2 -2<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, Vanya needs to find a single card with number -2.</p><p>In the second sample, Vanya needs to find two cards with number 2. He can't find a single card with the required number as the numbers on the lost cards do not exceed 3 in their absolute value.</p>",
+    "contestId": 401,
+    "index": "A",
+    "name": "Vanya and Cards",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 15913
+}

@@ -1,0 +1,34 @@
+{
+    "title": "C. Name Quest",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A Martian boy is named <span class=\"tex-span\"><i>s</i></span> \u2014 he has got this name quite recently from his parents for his coming of age birthday. Now he enjoys looking for his name everywhere. If he sees that he can obtain his name from some string by removing zero or more letters (at that, the remaining letters remain in the same order), he gets happy. For example, if <span class=\"tex-span\"><i>s</i></span>=\u00ab<span class=\"tex-font-style-tt\">aba</span>\u00bb, then strings \u00ab<span class=\"tex-font-style-tt\">baobab</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">aabbaa</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">helloabahello</span>\u00bb make him very happy and strings \u00ab<span class=\"tex-font-style-tt\">aab</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">baaa</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">helloabhello</span>\u00bb do not.</p><p>However rather than being happy once, he loves twice as much being happy twice! So, when he got string <span class=\"tex-span\"><i>t</i></span> as a present, he wanted to cut it in two parts (the left part and the right part) so that each part made him happy.</p><p>Help <span class=\"tex-span\"><i>s</i></span> determine the number of distinct ways to cut the given string <span class=\"tex-span\"><i>t</i></span> into two parts in the required manner.</p>",
+    "inputSpecification": "<p>The first line contains string <span class=\"tex-span\"><i>s</i></span>, consisting of lowercase English letters. The length of string <span class=\"tex-span\"><i>s</i></span> is from 1 to 1000 letters.</p><p>The second line contains string <span class=\"tex-span\"><i>t</i></span>, that also consists of lowercase English letters. The length of string <span class=\"tex-span\"><i>t</i></span> is from 1 to <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span> letters.</p>",
+    "outputSpecification": "<p>Print the sought number of ways to cut string <span class=\"tex-span\"><i>t</i></span> in two so that each part made <span class=\"tex-span\"><i>s</i></span> happy. </p>",
+    "samples": [
+        {
+            "input": "aba<br/>baobababbah<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "mars<br/>sunvenusearthmarsjupitersaturnuranusneptune<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 523,
+    "index": "C",
+    "name": "Name Quest",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "greedy"
+    ],
+    "solvedCount": 2469
+}

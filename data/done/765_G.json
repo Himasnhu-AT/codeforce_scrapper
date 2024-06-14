@@ -1,0 +1,41 @@
+{
+    "title": "G. Math, math everywhere",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">If you have gone that far, you'll probably skip unnecessary legends anyway...</span></p><p>You are given a binary string <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b867005672a53a90079685a121443181793694d7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and an integer <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/be942ae2800fe456a9cd1c9c63aa053db9c70c46.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Find the number of integers <span class=\"tex-span\"><i>k</i></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009&lt;\u2009<i>N</i></span>, such that for all <span class=\"tex-span\"><i>i</i>\u2009=\u20090</span>, <span class=\"tex-span\">1</span>, ..., <span class=\"tex-span\"><i>m</i>\u2009-\u20091</span> </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/ada0566abcbcd6a3f78b0d17aecbd2f9f26a8ec8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center> Print the answer modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.",
+    "inputSpecification": "<p>In the first line of input there is a string <span class=\"tex-span\"><i>s</i></span> consisting of <span class=\"tex-span\">0</span>'s and <span class=\"tex-span\">1</span>'s (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u200940</span>).</p><p>In the next line of input there is an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20095\u00b710<sup class=\"upper-index\">5</sup></span>).</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains two space-separated integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\">\u03b1<sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009\u03b1<sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> is prime). All <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> are distinct.</p>",
+    "outputSpecification": "<p>A single integer\u00a0\u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "1<br/>2<br/>2 1<br/>3 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "01<br/>2<br/>3 2<br/>5 1<br/>",
+            "output": "15<br/>"
+        },
+        {
+            "input": "1011<br/>1<br/>3 1000000000<br/>",
+            "output": "411979884<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 765,
+    "index": "G",
+    "name": "Math, math everywhere",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "math",
+        "meet-in-the-middle",
+        "number theory"
+    ],
+    "solvedCount": 82
+}

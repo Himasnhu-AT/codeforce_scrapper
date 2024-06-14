@@ -1,0 +1,42 @@
+{
+    "title": "C. Another Problem on Strings",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A string is <span class=\"tex-font-style-underline\">binary</span>, if it consists only of characters \"<span class=\"tex-font-style-tt\">0</span>\" and \"<span class=\"tex-font-style-tt\">1</span>\".</p><p>String <span class=\"tex-span\"><i>v</i></span> is a <span class=\"tex-font-style-it\">substring</span> of string <span class=\"tex-span\"><i>w</i></span> if it has a non-zero length and can be read starting from some position in string <span class=\"tex-span\"><i>w</i></span>. For example, string \"<span class=\"tex-font-style-tt\">010</span>\" has six substrings: \"<span class=\"tex-font-style-tt\">0</span>\", \"<span class=\"tex-font-style-tt\">1</span>\", \"<span class=\"tex-font-style-tt\">0</span>\", \"<span class=\"tex-font-style-tt\">01</span>\", \"<span class=\"tex-font-style-tt\">10</span>\", \"<span class=\"tex-font-style-tt\">010</span>\". Two substrings are considered different if their positions of occurrence are different. So, if some string occurs multiple times, we should consider it the number of times it occurs.</p><p>You are given a binary string <span class=\"tex-span\"><i>s</i></span>. Your task is to find the number of its substrings, containing exactly <span class=\"tex-span\"><i>k</i></span> characters \"<span class=\"tex-font-style-tt\">1</span>\".</p>",
+    "inputSpecification": "<p>The first line contains the single integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>). The second line contains a non-empty binary string <span class=\"tex-span\"><i>s</i></span>. The length of <span class=\"tex-span\"><i>s</i></span> does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span> characters.</p>",
+    "outputSpecification": "<p>Print the single number \u2014 the number of substrings of the given string, containing exactly <span class=\"tex-span\"><i>k</i></span> characters \"<span class=\"tex-font-style-tt\">1</span>\".</p><p>Please do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "1<br/>1010<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "2<br/>01010<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "100<br/>01010<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the sought substrings are: \"<span class=\"tex-font-style-tt\">1</span>\", \"<span class=\"tex-font-style-tt\">1</span>\", \"<span class=\"tex-font-style-tt\">10</span>\", \"<span class=\"tex-font-style-tt\">01</span>\", \"<span class=\"tex-font-style-tt\">10</span>\", \"<span class=\"tex-font-style-tt\">010</span>\".</p><p>In the second sample the sought substrings are: \"<span class=\"tex-font-style-tt\">101</span>\", \"<span class=\"tex-font-style-tt\">0101</span>\", \"<span class=\"tex-font-style-tt\">1010</span>\", \"<span class=\"tex-font-style-tt\">01010</span>\".</p>",
+    "contestId": 165,
+    "index": "C",
+    "name": "Another Problem on Strings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dp",
+        "math",
+        "strings",
+        "two pointers"
+    ],
+    "solvedCount": 11942
+}

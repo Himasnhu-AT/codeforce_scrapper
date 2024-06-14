@@ -1,0 +1,33 @@
+{
+    "title": "A. Marks",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya, or Mr. Vasily Petrov is a dean of a department in a local university. After the winter exams he got his hands on a group's gradebook.</p><p>Overall the group has <span class=\"tex-span\"><i>n</i></span> students. They received marks for <span class=\"tex-span\"><i>m</i></span> subjects. Each student got a mark from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">9</span> (inclusive) for each subject.</p><p>Let's consider a student the <span class=\"tex-font-style-it\">best at some subject</span>, if there is no student who got a higher mark for this subject. Let's consider a student <span class=\"tex-font-style-it\">successful</span>, if there exists a subject he is the <span class=\"tex-font-style-it\">best at</span>.</p><p>Your task is to find the number of <span class=\"tex-font-style-it\">successful</span> students in the group.</p>",
+    "inputSpecification": "<p>The first input line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>) \u2014 the number of students and the number of subjects, correspondingly. Next <span class=\"tex-span\"><i>n</i></span> lines each containing <span class=\"tex-span\"><i>m</i></span> characters describe the gradebook. Each character in the gradebook is a number from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">9</span>. Note that the marks in a rows are not sepatated by spaces.</p>",
+    "outputSpecification": "<p>Print the single number \u2014 the number of <span class=\"tex-font-style-it\">successful</span> students in the given group.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>223<br/>232<br/>112<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3 5<br/>91728<br/>11828<br/>11111<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>In the first sample test the student number <span class=\"tex-span\">1</span> is the best at subjects <span class=\"tex-span\">1</span> and <span class=\"tex-span\">3</span>, student <span class=\"tex-span\">2</span> is the best at subjects <span class=\"tex-span\">1</span> and <span class=\"tex-span\">2</span>, but student <span class=\"tex-span\">3</span> isn't the best at any subject.</p><p>In the second sample test each student is the best at at least one subject.</p>",
+    "contestId": 152,
+    "index": "A",
+    "name": "Marks",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 16311
+}

@@ -1,0 +1,31 @@
+{
+    "title": "B. Customising the Track",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Highway 201 is the most busy street in Rockport. Traffic cars cause a lot of hindrances to races, especially when there are a lot of them. The track which passes through this highway can be divided into $$$n$$$ sub-tracks. You are given an array $$$a$$$ where $$$a_i$$$ represents the number of traffic cars in the $$$i$$$-th sub-track. You define the inconvenience of the track as $$$\\sum\\limits_{i=1}^{n} \\sum\\limits_{j=i+1}^{n} \\lvert a_i-a_j\\rvert$$$, where $$$|x|$$$ is the absolute value of $$$x$$$. </p><p>You can perform the following operation any (possibly zero) number of times: choose a traffic car and move it from its current sub-track to any other sub-track.</p><p>Find the minimum inconvenience you can achieve.</p>",
+    "inputSpecification": "<p>The first line of input contains a single integer $$$t$$$ ($$$1\\leq t\\leq 10\\,000$$$) \u2014 the number of test cases.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$1\\leq n\\leq 2\\cdot 10^5$$$).</p><p>The second line of each test case contains $$$n$$$ integers $$$a_1, a_2, \\ldots, a_n$$$ ($$$0\\leq a_i\\leq 10^9$$$).</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$2\\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, print a single line containing a single integer: the minimum inconvenience you can achieve by applying the given operation any (possibly zero) number of times.</p>",
+    "samples": [
+        {
+            "input": "\n3\n3\n1 2 3\n4\n0 1 1 0\n10\n8 3 6 11 5 2 1 7 10 4\n",
+            "output": "\n0\n4\n21\n"
+        }
+    ],
+    "note": "<p>For the first test case, you can move a car from the $$$3$$$-rd sub-track to the $$$1$$$-st sub-track to obtain $$$0$$$ inconvenience.</p><p>For the second test case, moving any car won't decrease the inconvenience of the track.</p>",
+    "contestId": 1543,
+    "index": "B",
+    "name": "Customising the Track",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 22760
+}

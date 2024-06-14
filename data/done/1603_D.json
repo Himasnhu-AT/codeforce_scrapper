@@ -1,0 +1,31 @@
+{
+    "title": "D. Artistic Partition",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 1024.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>For two positive integers $$$l$$$ and $$$r$$$ ($$$l \\le r$$$) let $$$c(l, r)$$$ denote the number of integer pairs $$$(i, j)$$$ such that $$$l \\le i \\le j \\le r$$$ and $$$\\operatorname{gcd}(i, j) \\ge l$$$. Here, $$$\\operatorname{gcd}(i, j)$$$ is the <a href=\"https://en.wikipedia.org/wiki/Greatest_common_divisor\">greatest common divisor (GCD)</a> of integers $$$i$$$ and $$$j$$$.</p><p>YouKn0wWho has two integers $$$n$$$ and $$$k$$$ where $$$1 \\le k \\le n$$$. Let $$$f(n, k)$$$ denote the minimum of $$$\\sum\\limits_{i=1}^{k}{c(x_i+1,x_{i+1})}$$$ over all integer sequences $$$0=x_1 \\lt x_2 \\lt \\ldots \\lt x_{k} \\lt x_{k+1}=n$$$.</p><p>Help YouKn0wWho find $$$f(n, k)$$$. </p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 3 \\cdot 10^5$$$)\u00a0\u2014 the number of test cases.</p><p>The first and only line of each test case contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\le k \\le n \\le 10^5$$$). </p>",
+    "outputSpecification": "<p>For each test case, print a single integer\u00a0\u2014 $$$f(n, k)$$$.</p>",
+    "samples": [
+        {
+            "input": "\n4\n6 2\n4 4\n3 1\n10 3\n",
+            "output": "\n8\n4\n6\n11\n"
+        }
+    ],
+    "note": "<p>In the first test case, YouKn0wWho can select the sequence $$$[0, 2, 6]$$$. So $$$f(6, 2) = c(1, 2) + c(3, 6) = 3 + 5 = 8$$$ which is the minimum possible.</p>",
+    "contestId": 1603,
+    "index": "D",
+    "name": "Artistic Partition",
+    "type": "PROGRAMMING",
+    "tags": [
+        "divide and conquer",
+        "dp",
+        "number theory"
+    ],
+    "solvedCount": 622
+}

@@ -1,0 +1,38 @@
+{
+    "title": "C. Games with Rectangle",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In this task Anna and Maria play the following game. Initially they have a checkered piece of paper with a painted <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> rectangle (only the border, no filling). Anna and Maria move in turns and Anna starts. During each move one should paint inside the last-painted rectangle a new lesser rectangle (along the grid lines). The new rectangle should have no common points with the previous one. Note that when we paint a rectangle, we always paint only the border, the rectangles aren't filled.</p><p>Nobody wins the game \u2014 Anna and Maria simply play until they have done <span class=\"tex-span\"><i>k</i></span> moves in total. Count the number of different ways to play this game.</p>",
+    "inputSpecification": "<p>The first and only line contains three integers: <span class=\"tex-span\"><i>n</i>,\u2009<i>m</i>,\u2009<i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>,\u2009<i>k</i>\u2009\u2264\u20091000</span>).</p>",
+    "outputSpecification": "<p>Print the single number \u2014 the number of the ways to play the game. As this number can be very big, print the value modulo <span class=\"tex-span\">1000000007</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>).</p>",
+    "samples": [
+        {
+            "input": "3 3 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "4 4 1<br/>",
+            "output": "9<br/>"
+        },
+        {
+            "input": "6 7 2<br/>",
+            "output": "75<br/>"
+        }
+    ],
+    "note": "<p>Two ways to play the game are considered different if the final pictures are different. In other words, if one way contains a rectangle that is not contained in the other way.</p><p>In the first sample Anna, who performs her first and only move, has only one possible action plan \u2014 insert a <span class=\"tex-span\">1\u2009\u00d7\u20091</span> square inside the given <span class=\"tex-span\">3\u2009\u00d7\u20093</span> square.</p><p>In the second sample Anna has as much as 9 variants: 4 ways to paint a <span class=\"tex-span\">1\u2009\u00d7\u20091</span> square, 2 ways to insert a <span class=\"tex-span\">1\u2009\u00d7\u20092</span> rectangle vertically, 2 more ways to insert it horizontally and one more way is to insert a <span class=\"tex-span\">2\u2009\u00d7\u20092</span> square.</p>",
+    "contestId": 128,
+    "index": "C",
+    "name": "Games with Rectangle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp"
+    ],
+    "solvedCount": 2717
+}

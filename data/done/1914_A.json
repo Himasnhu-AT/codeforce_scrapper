@@ -1,0 +1,30 @@
+{
+    "title": "A. Problemsolving Log",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Monocarp is participating in a programming contest, which features $$$26$$$ problems, named from '<span class=\"tex-font-style-tt\">A</span>' to '<span class=\"tex-font-style-tt\">Z</span>'. The problems are sorted by difficulty. Moreover, it's known that Monocarp can solve problem '<span class=\"tex-font-style-tt\">A</span>' in $$$1$$$ minute, problem '<span class=\"tex-font-style-tt\">B</span>' in $$$2$$$ minutes, ..., problem '<span class=\"tex-font-style-tt\">Z</span>' in $$$26$$$ minutes.</p><p>After the contest, you discovered his contest log\u00a0\u2014 a string, consisting of uppercase Latin letters, such that the $$$i$$$-th letter tells which problem Monocarp was solving during the $$$i$$$-th minute of the contest. If Monocarp had spent enough time in total on a problem to solve it, he solved it. Note that Monocarp could have been thinking about a problem after solving it.</p><p>Given Monocarp's contest log, calculate the number of problems he solved during the contest.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 100$$$)\u00a0\u2014 the number of testcases.</p><p>The first line of each testcase contains a single integer $$$n$$$ ($$$1 \\le n \\le 500$$$)\u00a0\u2014 the duration of the contest, in minutes.</p><p>The second line contains a string of length exactly $$$n$$$, consisting only of uppercase Latin letters,\u00a0\u2014 Monocarp's contest log.</p>",
+    "outputSpecification": "<p>For each testcase, print a single integer\u00a0\u2014 the number of problems Monocarp solved during the contest.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">ACBCBC</div><div class=\"test-example-line test-example-line-even test-example-line-2\">7</div><div class=\"test-example-line test-example-line-even test-example-line-2\">AAAAFPC</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">22</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">FEADBBDFFEDFFFDHHHADCC</div>",
+            "output": "\n3\n1\n4\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1914,
+    "index": "A",
+    "name": "Problemsolving Log",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 30200
+}

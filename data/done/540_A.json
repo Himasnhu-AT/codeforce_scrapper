@@ -1,0 +1,29 @@
+{
+    "title": "A. Combination Lock",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Scrooge McDuck keeps his most treasured savings in a home safe with a combination lock. Each time he wants to put there the treasures that he's earned fair and square, he has to open the lock.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/dc2704e81c8190f9f874191bab54953fd880559a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The combination lock is represented by <span class=\"tex-span\"><i>n</i></span> rotating disks with digits from 0 to 9 written on them. Scrooge McDuck has to turn some disks so that the combination of digits on the disks forms a secret combination. In one move, he can rotate one disk one digit forwards or backwards. In particular, in one move he can go from digit 0 to digit 9 and vice versa. What minimum number of actions does he need for that?</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of disks on the combination lock.</p><p>The second line contains a string of <span class=\"tex-span\"><i>n</i></span> digits\u00a0\u2014 the original state of the disks.</p><p>The third line contains a string of <span class=\"tex-span\"><i>n</i></span> digits\u00a0\u2014 Scrooge McDuck's combination that opens the lock.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the minimum number of moves Scrooge McDuck needs to open the lock.</p>",
+    "samples": [
+        {
+            "input": "5<br/>82195<br/>64723<br/>",
+            "output": "13<br/>"
+        }
+    ],
+    "note": "<p>In the sample he needs 13 moves:</p><ul> <li> 1 disk: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b8967f65a723782358b93eff9ce69f336817cf70.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> 2 disk: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/07fa58573ece0d32c4d555e498d2b24d2f70f36a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> 3 disk: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/cc2275d9252aae35a6867c6a5b4ba7596e9a7626.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> 4 disk: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b100aea470fcaaab4e9529b234ba0d7875943c10.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> 5 disk: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/eb2cbe4324cebca65b85816262a85e473cd65967.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li></ul>",
+    "contestId": 540,
+    "index": "A",
+    "name": "Combination Lock",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 31760
+}

@@ -1,0 +1,36 @@
+{
+    "title": "A. Far Relative\u2019s Birthday Cake",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Door's family is going celebrate Famil Doors's birthday party. They love Famil Door so they are planning to make his birthday cake weird!</p><p>The cake is a <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>n</i></span> square consisting of equal squares with side length <span class=\"tex-span\">1</span>. Each square is either empty or consists of a single chocolate. They bought the cake and randomly started to put the chocolates on the cake. The value of Famil Door's happiness will be equal to the number of pairs of cells with chocolates that are in the same row or in the same column of the cake. Famil Doors's family is wondering what is the amount of happiness of Famil going to be?</p><p>Please, note that any pair can be counted no more than once, as two different cells can't share both the same row and the same column.</p>",
+    "inputSpecification": "<p>In the first line of the input, you are given a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the length of the side of the cake.</p><p>Then follow <span class=\"tex-span\"><i>n</i></span> lines, each containing <span class=\"tex-span\"><i>n</i></span> characters. Empty cells are denoted with '<span class=\"tex-font-style-tt\">.</span>', while cells that contain chocolates are denoted by '<span class=\"tex-font-style-tt\">C</span>'.</p>",
+    "outputSpecification": "<p>Print the value of Famil Door's happiness, i.e. the number of pairs of chocolate pieces that share the same row or the same column.</p>",
+    "samples": [
+        {
+            "input": "3<br/>.CC<br/>C..<br/>C.C<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "4<br/>CC..<br/>C..C<br/>.CC.<br/>.CC.<br/>",
+            "output": "9<br/>"
+        }
+    ],
+    "note": "<p>If we number rows from top to bottom and columns from left to right, then, pieces that share the same row in the first sample are: </p><ol> <li> <span class=\"tex-span\">(1,\u20092)</span> and <span class=\"tex-span\">(1,\u20093)</span> </li><li> <span class=\"tex-span\">(3,\u20091)</span> and <span class=\"tex-span\">(3,\u20093)</span> </li></ol> Pieces that share the same column are: <ol> <li> <span class=\"tex-span\">(2,\u20091)</span> and <span class=\"tex-span\">(3,\u20091)</span> </li><li> <span class=\"tex-span\">(1,\u20093)</span> and <span class=\"tex-span\">(3,\u20093)</span> </li></ol>",
+    "contestId": 629,
+    "index": "A",
+    "name": "Far Relative\u2019s Birthday Cake",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 13168
+}

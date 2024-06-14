@@ -1,0 +1,29 @@
+{
+    "title": "D. Cube Snake",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've got an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>n</i>\u2009\u00d7\u2009<i>n</i></span> cube, split into unit cubes. Your task is to number all unit cubes in this cube with positive integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i><sup class=\"upper-index\">3</sup></span> so that: </p><ul> <li> each number was used as a cube's number exactly once; </li><li> for each <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>n</i><sup class=\"upper-index\">3</sup></span>, unit cubes with numbers <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>i</i>\u2009+\u20091</span> were neighbouring (that is, shared a side); </li><li> for each <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>n</i></span> there were at least two different subcubes with sizes <span class=\"tex-span\"><i>i</i>\u2009\u00d7\u2009<i>i</i>\u2009\u00d7\u2009<i>i</i></span>, made from unit cubes, which are numbered with consecutive numbers. That is, there are such two numbers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>, that the unit cubes of the first subcube are numbered by numbers <span class=\"tex-span\"><i>x</i></span>, <span class=\"tex-span\"><i>x</i>\u2009+\u20091</span>, <span class=\"tex-span\">...</span>, <span class=\"tex-span\"><i>x</i>\u2009+\u2009<i>i</i><sup class=\"upper-index\">3</sup>\u2009-\u20091</span>, and the unit cubes of the second subcube are numbered by numbers <span class=\"tex-span\"><i>y</i></span>, <span class=\"tex-span\"><i>y</i>\u2009+\u20091</span>, <span class=\"tex-span\">...</span>, <span class=\"tex-span\"><i>y</i>\u2009+\u2009<i>i</i><sup class=\"upper-index\">3</sup>\u2009-\u20091</span>. </li></ul><p>Find and print the required numeration of unit cubes of the cube.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>) \u2014 the size of the cube, whose unit cubes need to be numbered.</p>",
+    "outputSpecification": "<p>Print all layers of the cube as <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>n</i></span> matrices. Separate them with new lines. Print the layers in the order in which they follow in the cube. See the samples for clarifications. </p><p>It is guaranteed that there always is a solution that meets the conditions given in the problem statement.</p>",
+    "samples": [
+        {
+            "input": "3<br/>",
+            "output": "1 4 17 <br/>2 3 18 <br/>27 26 19 <br/><br/>8 5 16 <br/>7 6 15 <br/>24 25 20 <br/><br/>9 12 13 <br/>10 11 14 <br/>23 22 21 <br/><br/>"
+        }
+    ],
+    "note": "<p>In the sample the cubes with sizes <span class=\"tex-span\">2\u2009\u00d7\u20092\u2009\u00d7\u20092</span> are numbered with integers <span class=\"tex-span\">1,\u2009...,\u20098</span> and <span class=\"tex-span\">5,\u2009...,\u200912</span>.</p>",
+    "contestId": 198,
+    "index": "D",
+    "name": "Cube Snake",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms"
+    ],
+    "solvedCount": 105
+}

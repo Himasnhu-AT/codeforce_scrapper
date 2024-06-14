@@ -1,0 +1,33 @@
+{
+    "title": "C. Boxes Packing",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mishka has got <span class=\"tex-span\"><i>n</i></span> empty boxes. For every <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>), <span class=\"tex-span\"><i>i</i></span>-th box is a cube with side length <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>Mishka can put a box <span class=\"tex-span\"><i>i</i></span> into another box <span class=\"tex-span\"><i>j</i></span> if the following conditions are met:</p><ul> <li> <span class=\"tex-span\"><i>i</i></span>-th box is not put into another box; </li><li> <span class=\"tex-span\"><i>j</i></span>-th box doesn't contain any other boxes; </li><li> box <span class=\"tex-span\"><i>i</i></span> is smaller than box <span class=\"tex-span\"><i>j</i></span> (<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>a</i><sub class=\"lower-index\"><i>j</i></sub></span>). </li></ul><p>Mishka can put boxes into each other an arbitrary number of times. He wants to minimize the number of <span class=\"tex-font-style-it\">visible</span> boxes. A box is called <span class=\"tex-font-style-it\">visible</span> iff it is not put into some another box.</p><p>Help Mishka to determine the minimum possible number of <span class=\"tex-font-style-it\">visible</span> boxes!</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20095000</span>) \u2014 the number of boxes Mishka has got.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>, ..., <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is the side length of <span class=\"tex-span\"><i>i</i></span>-th box.</p>",
+    "outputSpecification": "<p>Print the minimum possible number of <span class=\"tex-font-style-it\">visible</span> boxes.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2 3<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "4<br/>4 2 4 3<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In the first example it is possible to put box <span class=\"tex-span\">1</span> into box <span class=\"tex-span\">2</span>, and <span class=\"tex-span\">2</span> into <span class=\"tex-span\">3</span>.</p><p>In the second example Mishka can put box <span class=\"tex-span\">2</span> into box <span class=\"tex-span\">3</span>, and box <span class=\"tex-span\">4</span> into box <span class=\"tex-span\">1</span>.</p>",
+    "contestId": 903,
+    "index": "C",
+    "name": "Boxes Packing",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy"
+    ],
+    "solvedCount": 16580
+}

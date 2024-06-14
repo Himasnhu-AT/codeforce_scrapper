@@ -1,0 +1,39 @@
+{
+    "title": "G. Mathematician Takeover",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A mathematician grabbed my computer as I was preparing this problem, deleted the statement, and changed the samples to fit his liking. The model solution and input/output format are still correct, but the samples are wrong. </p><p>I've partially fixed the problem so that when you submit, it will be tested against the correct version of the problem. However, I can't fix the samples below. As a computer scientist, can you solve the correct problem?</p>",
+    "inputSpecification": "<p>The only line of input contains a real number $$$x$$$ ($$$1 \\leq x \\leq 100$$$), given to exactly three decimal places.</p>",
+    "outputSpecification": "<p>Output one real number\u00a0\u2014 the answer. Your answer is considered correct if its absolute or relative error does not exceed $$$10^{-4}$$$. Formally, let your answer be $$$a$$$, and the jury's answer be $$$b$$$. Your answer is accepted if and only if $$$\\frac{|a-b|}{\\max(1,|b|)} \\le 10^{-4}$$$.</p>",
+    "samples": [
+        {
+            "input": "\n1.234\n",
+            "output": "\n0.21026"
+        },
+        {
+            "input": "\n4.113\n",
+            "output": "\n1.41415"
+        },
+        {
+            "input": "\n99.000\n",
+            "output": "\n4.59512"
+        }
+    ],
+    "note": null,
+    "contestId": 1952,
+    "index": "G",
+    "name": "Mathematician Takeover",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "dfs and similar",
+        "math"
+    ],
+    "solvedCount": 961
+}

@@ -1,0 +1,40 @@
+{
+    "title": "A. Escape from Stones",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Squirrel Liss lived in a forest peacefully, but unexpected trouble happens. Stones fall from a mountain. Initially Squirrel Liss occupies an interval <span class=\"tex-span\">[0,\u20091]</span>. Next, <span class=\"tex-span\"><i>n</i></span> stones will fall and Liss will escape from the stones. The stones are numbered from 1 to <span class=\"tex-span\"><i>n</i></span> in order.</p><p>The stones always fall to the center of Liss's interval. When Liss occupies the interval <span class=\"tex-span\">[<i>k</i>\u2009-\u2009<i>d</i>,\u2009<i>k</i>\u2009+\u2009<i>d</i>]</span> and a stone falls to <span class=\"tex-span\"><i>k</i></span>, she will escape to the left or to the right. If she escapes to the left, her new interval will be <span class=\"tex-span\">[<i>k</i>\u2009-\u2009<i>d</i>,\u2009<i>k</i>]</span>. If she escapes to the right, her new interval will be <span class=\"tex-span\">[<i>k</i>,\u2009<i>k</i>\u2009+\u2009<i>d</i>]</span>.</p><p>You are given a string <span class=\"tex-span\"><i>s</i></span> of length <span class=\"tex-span\"><i>n</i></span>. If the <span class=\"tex-span\"><i>i</i></span>-th character of <span class=\"tex-span\"><i>s</i></span> is \"<span class=\"tex-font-style-tt\">l</span>\" or \"<span class=\"tex-font-style-tt\">r</span>\", when the <span class=\"tex-span\"><i>i</i></span>-th stone falls Liss will escape to the left or to the right, respectively. Find the sequence of stones' numbers from left to right after all the <span class=\"tex-span\"><i>n</i></span> stones falls.</p>",
+    "inputSpecification": "<p>The input consists of only one line. The only line contains the string <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>). Each character in <span class=\"tex-span\"><i>s</i></span> will be either \"<span class=\"tex-font-style-tt\">l</span>\" or \"<span class=\"tex-font-style-tt\">r</span>\".</p>",
+    "outputSpecification": "<p>Output <span class=\"tex-span\"><i>n</i></span> lines \u2014 on the <span class=\"tex-span\"><i>i</i></span>-th line you should print the <span class=\"tex-span\"><i>i</i></span>-th stone's number from the left.</p>",
+    "samples": [
+        {
+            "input": "llrlr<br/>",
+            "output": "3<br/>5<br/>4<br/>2<br/>1<br/>"
+        },
+        {
+            "input": "rrlll<br/>",
+            "output": "1<br/>2<br/>5<br/>4<br/>3<br/>"
+        },
+        {
+            "input": "lrlrr<br/>",
+            "output": "2<br/>4<br/>5<br/>3<br/>1<br/>"
+        }
+    ],
+    "note": "<p>In the first example, the positions of stones 1, 2, 3, 4, 5 will be <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/58fdb5684df807bfcb705a9da9ce175613362b7d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, respectively. So you should print the sequence: 3, 5, 4, 2, 1.</p>",
+    "contestId": 264,
+    "index": "A",
+    "name": "Escape from Stones",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "implementation",
+        "two pointers"
+    ],
+    "solvedCount": 10644
+}

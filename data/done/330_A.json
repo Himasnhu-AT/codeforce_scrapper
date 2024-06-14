@@ -1,0 +1,30 @@
+{
+    "title": "A. Cakeminator",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a rectangular cake, represented as an <span class=\"tex-span\"><i>r</i>\u2009\u00d7\u2009<i>c</i></span> grid. Each cell either has an evil strawberry, or is empty. For example, a <span class=\"tex-span\">3\u2009\u00d7\u20094</span> cake may look as follows:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/dafcd7d176a06863c0552db8f292beed4b770cd8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The cakeminator is going to eat the cake! Each time he eats, he chooses a row or a column that does not contain any evil strawberries and contains at least one cake cell that has not been eaten before, and eats all the cake cells there. He may decide to eat any number of times.</p><p>Please output the maximum number of cake cells that the cakeminator can eat.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>c</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>r</i>,\u2009<i>c</i>\u2009\u2264\u200910</span>), denoting the number of rows and the number of columns of the cake. The next <span class=\"tex-span\"><i>r</i></span> lines each contains <span class=\"tex-span\"><i>c</i></span> characters \u2014 the <span class=\"tex-span\"><i>j</i></span>-th character of the <span class=\"tex-span\"><i>i</i></span>-th line denotes the content of the cell at row <span class=\"tex-span\"><i>i</i></span> and column <span class=\"tex-span\"><i>j</i></span>, and is either one of these: </p><ul> <li> '<span class=\"tex-font-style-tt\">.</span>' character denotes a cake cell with no evil strawberry; </li><li> '<span class=\"tex-font-style-tt\">S</span>' character denotes a cake cell with an evil strawberry. </li></ul>",
+    "outputSpecification": "<p>Output the maximum number of cake cells that the cakeminator can eat.</p>",
+    "samples": [
+        {
+            "input": "3 4<br/>S...<br/>....<br/>..S.<br/>",
+            "output": "8<br/>"
+        }
+    ],
+    "note": "<p>For the first example, one possible way to eat the maximum number of cake cells is as follows (perform 3 eats).</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/d6e31a0cb182c1eea7f69ad1ee7af42f3c4f20ea.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/28fede4822e96dbf08dd31eee30dfb66720dce0f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/5b3920457ca63d4cbd54c851fb3918d7622d11a9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 330,
+    "index": "A",
+    "name": "Cakeminator",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 27625
+}

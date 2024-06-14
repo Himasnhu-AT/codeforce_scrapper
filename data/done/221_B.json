@@ -1,0 +1,33 @@
+{
+    "title": "B. Little Elephant and Numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The Little Elephant loves numbers. </p><p>He has a positive integer <span class=\"tex-span\"><i>x</i></span>. The Little Elephant wants to find the number of positive integers <span class=\"tex-span\"><i>d</i></span>, such that <span class=\"tex-span\"><i>d</i></span> is the divisor of <span class=\"tex-span\"><i>x</i></span>, and <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>d</i></span> have at least one common (the same) digit in their decimal representations. </p><p>Help the Little Elephant to find the described number.</p>",
+    "inputSpecification": "<p>A single line contains a single integer <span class=\"tex-span\"><i>x</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>.</p>",
+    "outputSpecification": "<p>In a single line print an integer \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "10<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 221,
+    "index": "B",
+    "name": "Little Elephant and Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 4515
+}

@@ -1,0 +1,37 @@
+{
+    "title": "D. Geometrical problem",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp loves geometric progressions \u2014 he collects them. However, as such progressions occur very rarely, he also loves the sequences of numbers where it is enough to delete a single element to get a geometric progression.</p><p>In this task we shall define geometric progressions as finite sequences of numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>k</i></sub></span>, where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>c</i>\u00b7<i>b</i><sup class=\"upper-index\"><i>i</i>\u2009-\u20091</sup></span> for some real numbers <span class=\"tex-span\"><i>c</i></span> and <span class=\"tex-span\"><i>b</i></span>. For example, the sequences [2, -4, 8], [0, 0, 0, 0], [199] are geometric progressions and [0, 1, 2, 3] is not.</p><p>Recently Polycarp has found a sequence and he can't classify it. Help him to do it. Determine whether it is a geometric progression. If it is not, check if it can become a geometric progression if an element is deleted from it.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of elements in the given sequence. The second line contains the given sequence. The numbers are space-separated. All the elements of the given sequence are integers and their absolute value does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">4</sup></span>.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-font-style-tt\">0</span>, if the given sequence is a geometric progression. Otherwise, check if it is possible to make the sequence a geometric progression by deleting a single element. If it is possible, print <span class=\"tex-font-style-tt\">1</span>. If it is impossible, print <span class=\"tex-font-style-tt\">2</span>.</p>",
+    "samples": [
+        {
+            "input": "4<br/>3 6 12 24<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "4<br/>-8 -16 24 -32<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "4<br/>0 1 2 3<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 51,
+    "index": "D",
+    "name": "Geometrical problem",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 419
+}

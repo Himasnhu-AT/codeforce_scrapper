@@ -1,0 +1,35 @@
+{
+    "title": "A2. Collective Mindsets (medium)",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Way to go! Heidi now knows how many brains there must be for her to get one. But throwing herself in the midst of a clutch of hungry zombies is quite a risky endeavor. Hence Heidi wonders: what is the smallest number of brains that must be in the chest for her to get out at all (possibly empty-handed, but alive)?</p><p>The brain dinner night will evolve just as in the previous subtask: the same crowd is present, the <span class=\"tex-span\"><i>N</i>\u2009-\u20091</span> zombies have the exact same mindset as before and Heidi is to make the first proposal, which must be accepted by at least half of the attendees for her to survive.</p>",
+    "inputSpecification": "<p>The only line of input contains one integer: <span class=\"tex-span\"><i>N</i></span>, the number of attendees (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>.</p>",
+    "outputSpecification": "<p>Output one integer: the smallest number of brains in the chest which allows Heidi to merely survive.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "3<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "99<br/>",
+            "output": "49<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 690,
+    "index": "A2",
+    "name": "Collective Mindsets (medium)",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 689
+}

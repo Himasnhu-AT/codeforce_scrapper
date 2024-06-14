@@ -1,0 +1,34 @@
+{
+    "title": "E. Polycarpus the Safecracker",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarpus has <span class=\"tex-span\"><i>t</i></span> safes. The password for each safe is a square matrix consisting of decimal digits '<span class=\"tex-font-style-tt\">0</span>' ... '<span class=\"tex-font-style-tt\">9</span>' (the sizes of passwords to the safes may vary). Alas, Polycarpus has forgotten all passwords, so now he has to restore them.</p><p>Polycarpus enjoys prime numbers, so when he chose the matrix passwords, he wrote a prime number in each row of each matrix. To his surprise, he found that all the matrices turned out to be symmetrical (that is, they remain the same after transposition). Now, years later, Polycarp was irritated to find out that he remembers only the prime numbers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>, written in the first lines of the password matrices.</p><p>For each safe find the number of matrices which can be passwords to it.</p><p>The number of digits in <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> determines the number of rows and columns of the <span class=\"tex-span\"><i>i</i></span>-th matrix. One prime number can occur in several rows of the password matrix or in several matrices. The prime numbers that are written not in the first row of the matrix may have leading zeros.</p>",
+    "inputSpecification": "<p>The first line of the input contains an integer <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i>\u2009\u2264\u200930</span>) \u2014 the number of safes. Next <span class=\"tex-span\"><i>t</i></span> lines contain integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">10\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200999999</span>), <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> is a prime number written in the first row of the password matrix for the <span class=\"tex-span\"><i>i</i></span>-th safe. All <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>'s are written without leading zeros.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>t</i></span> numbers, the <span class=\"tex-span\"><i>i</i></span>-th of them should be the number of matrices that can be a password to the <span class=\"tex-span\"><i>i</i></span>-th safe. Print the numbers on separate lines.</p>",
+    "samples": [
+        {
+            "input": "4<br/>11<br/>239<br/>401<br/>9001<br/>",
+            "output": "4<br/>28<br/>61<br/>2834<br/>"
+        },
+        {
+            "input": "<br/>239<br/>307<br/>977<br/>",
+            "output": "<br/>9001<br/>0002<br/>0002<br/>1223 <br/>"
+        }
+    ],
+    "note": "<p>Here is a possible password matrix for the second safe: </p><pre class=\"verbatim\"><br/>239<br/>307<br/>977<br/></pre><p>Here is a possible password matrix for the fourth safe: </p><pre class=\"verbatim\"><br/>9001<br/>0002<br/>0002<br/>1223 <br/></pre>",
+    "contestId": 161,
+    "index": "E",
+    "name": "Polycarpus the Safecracker",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp"
+    ],
+    "solvedCount": 463
+}

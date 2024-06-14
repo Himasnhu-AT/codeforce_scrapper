@@ -1,0 +1,34 @@
+{
+    "title": "D. Asterisks",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a number <span class=\"tex-span\"><i>n</i></span>. Print <span class=\"tex-span\"><i>n</i></span> lines, <span class=\"tex-span\"><i>i</i></span>-th line should consist of <span class=\"tex-span\"><i>i</i></span> characters \"<span class=\"tex-font-style-tt\">*</span>\". Lines' indices are 1-based.</p>",
+    "inputSpecification": "<p>The only line of input contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>).</p>",
+    "outputSpecification": "<p>Output the described pattern.</p>",
+    "samples": [
+        {
+            "input": "3<br/>",
+            "output": "*<br/>**<br/>***<br/>"
+        },
+        {
+            "input": "6<br/>",
+            "output": "*<br/>**<br/>***<br/>****<br/>*****<br/>******<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 188,
+    "index": "D",
+    "name": "Asterisks",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "solvedCount": 660
+}

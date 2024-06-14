@@ -1,0 +1,35 @@
+{
+    "title": "A. Five Dimensional Points",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given set of <span class=\"tex-span\"><i>n</i></span> points in 5-dimensional space. The points are labeled from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. No two points coincide.</p><p>We will call point <span class=\"tex-span\"><i>a</i></span> <span class=\"tex-font-style-it\">bad</span> if there are different points <span class=\"tex-span\"><i>b</i></span> and <span class=\"tex-span\"><i>c</i></span>, not equal to <span class=\"tex-span\"><i>a</i></span>, from the given set such that angle between vectors <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bc6e3d5e5515bb66791ca9a052249e959af2a9a6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d2b2e44b4b49d4da671b9d05dd70bf58772fc6a6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is acute (i.e. strictly less than <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/362ac8c7a7496dffc06cd0c843287cd822be63c3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>). Otherwise, the point is called <span class=\"tex-font-style-it\">good</span>.</p><p>The angle between vectors <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f8914399eadbd8be3c3196100658870e03c61fee.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/453598e99a6c6151192723fb952c1caf35bfa782.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> in 5-dimensional space is defined as <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/73dfa232ec919ce1de408d890c24b9d49969d069.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/707f1153862986f1b7f8d6ea585c4674982e3bab.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is the scalar product and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1ac438acfe8cbf49b733409b450a909ac2b06085.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is length of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f8914399eadbd8be3c3196100658870e03c61fee.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Given the list of points, print the indices of the good points in ascending order.</p>",
+    "inputSpecification": "<p>The first line of input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">3</sup></span>)\u00a0\u2014 the number of points.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines of input contain five integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>e</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">|<i>a</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>b</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>c</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>d</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>e</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">3</sup></span>) \u00a0\u2014 the coordinates of the i-th point. All points are distinct.</p>",
+    "outputSpecification": "<p>First, print a single integer <span class=\"tex-span\"><i>k</i></span>\u00a0\u2014 the number of good points.</p><p>Then, print <span class=\"tex-span\"><i>k</i></span> integers, each on their own line\u00a0\u2014 the indices of the good points in ascending order.</p>",
+    "samples": [
+        {
+            "input": "6<br/>0 0 0 0 0<br/>1 0 0 0 0<br/>0 1 0 0 0<br/>0 0 1 0 0<br/>0 0 0 1 0<br/>0 0 0 0 1<br/>",
+            "output": "1<br/>1<br/>"
+        },
+        {
+            "input": "3<br/>0 0 1 2 0<br/>0 0 9 2 0<br/>0 0 5 9 0<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, the first point forms exactly a <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/362ac8c7a7496dffc06cd0c843287cd822be63c3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> angle with all other pairs of points, so it is good.</p><p>In the second sample, along the cd plane, we can see the points look as follows:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/982219f7eb73ea120de10dd91baa59317fe7af64.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>We can see that all angles here are acute, so no points are good.</p>",
+    "contestId": 850,
+    "index": "A",
+    "name": "Five Dimensional Points",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "geometry",
+        "math"
+    ],
+    "solvedCount": 3001
+}

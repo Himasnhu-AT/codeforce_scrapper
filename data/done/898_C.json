@@ -1,0 +1,38 @@
+{
+    "title": "C. Phone Numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya has several phone books, in which he recorded the telephone numbers of his friends. Each of his friends can have one or several phone numbers.</p><p>Vasya decided to organize information about the phone numbers of friends. You will be given <span class=\"tex-span\"><i>n</i></span> strings \u2014 all entries from Vasya's phone books. Each entry starts with a friend's name. Then follows the number of phone numbers in the current entry, and then the phone numbers themselves. It is possible that several identical phones are recorded in the same record.</p><p>Vasya also believes that if the phone number <span class=\"tex-span\"><i>a</i></span> is a suffix of the phone number <span class=\"tex-span\"><i>b</i></span> (that is, the number <span class=\"tex-span\"><i>b</i></span> ends up with <span class=\"tex-span\"><i>a</i></span>), and both numbers are written by Vasya as the phone numbers of the same person, then <span class=\"tex-span\"><i>a</i></span> is recorded without the city code and it should not be taken into account.</p><p>The task is to print organized information about the phone numbers of Vasya's friends. It is possible that two different people have the same number. If one person has two numbers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>, and <span class=\"tex-span\"><i>x</i></span> is a suffix of <span class=\"tex-span\"><i>y</i></span> (that is, <span class=\"tex-span\"><i>y</i></span> ends in <span class=\"tex-span\"><i>x</i></span>), then you shouldn't print number <span class=\"tex-span\"><i>x</i></span>. If the number of a friend in the Vasya's phone books is recorded several times in the same format, it is necessary to take it into account exactly once.</p><p>Read the examples to understand statement and format of the output better.</p>",
+    "inputSpecification": "<p>First line contains the integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200920</span>)\u00a0\u2014 number of entries in Vasya's phone books. </p><p>The following <span class=\"tex-span\"><i>n</i></span> lines are followed by descriptions of the records in the format described in statement. Names of Vasya's friends are non-empty strings whose length does not exceed <span class=\"tex-span\">10</span>. They consists only of lowercase English letters. Number of phone numbers in one entry is not less than <span class=\"tex-span\">1</span> is not more than <span class=\"tex-span\">10</span>. The telephone numbers consist of digits only. If you represent a phone number as a string, then its length will be in range from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">10</span>. Phone numbers can contain leading zeros.</p>",
+    "outputSpecification": "<p>Print out the ordered information about the phone numbers of Vasya's friends. First output <span class=\"tex-span\"><i>m</i></span>\u00a0\u2014 number of friends that are found in Vasya's phone books.</p><p>The following <span class=\"tex-span\"><i>m</i></span> lines must contain entries in the following format \"<span class=\"tex-font-style-tt\">name number_of_phone_numbers phone_numbers</span>\". Phone numbers should be separated by a space. Each record must contain all the phone numbers of current friend.</p><p>Entries can be displayed in arbitrary order, phone numbers for one record can also be printed in arbitrary order.</p>",
+    "samples": [
+        {
+            "input": "2<br/>ivan 1 00123<br/>masha 1 00123<br/>",
+            "output": "2<br/>masha 1 00123 <br/>ivan 1 00123 <br/>"
+        },
+        {
+            "input": "3<br/>karl 2 612 12<br/>petr 1 12<br/>katya 1 612<br/>",
+            "output": "3<br/>katya 1 612 <br/>petr 1 12 <br/>karl 1 612 <br/>"
+        },
+        {
+            "input": "4<br/>ivan 3 123 123 456<br/>ivan 2 456 456<br/>ivan 8 789 3 23 6 56 9 89 2<br/>dasha 2 23 789<br/>",
+            "output": "2<br/>dasha 2 23 789 <br/>ivan 4 789 123 2 456 <br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 898,
+    "index": "C",
+    "name": "Phone Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 5184
+}

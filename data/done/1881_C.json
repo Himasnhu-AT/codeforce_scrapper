@@ -1,0 +1,30 @@
+{
+    "title": "C. Perfect Square",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Kristina has a matrix of size $$$n$$$ by $$$n$$$, filled with lowercase Latin letters. The value of $$$n$$$ is <span class=\"tex-font-style-bf\">even</span>.</p><p>She wants to change some characters so that her matrix becomes a <span class=\"tex-font-style-it\">perfect square</span>. A matrix is called a <span class=\"tex-font-style-it\">perfect square</span> if it remains unchanged when rotated $$$90^\\circ$$$ clockwise <span class=\"tex-font-style-bf\">once</span>.</p><p>Here is an example of rotating a matrix by $$$90^\\circ$$$:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/f31ca811677514ff724a6af677d2e4a129b8fcfb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In one operation, Kristina can choose any cell and replace its value with the next character in the alphabet. If the character is equal to \"<span class=\"tex-font-style-tt\">z</span>\", its value <span class=\"tex-font-style-bf\">does not change</span>.</p><p>Find the <span class=\"tex-font-style-bf\">minimum</span> number of operations required to make the matrix a <span class=\"tex-font-style-it\">perfect square</span>.</p><p>For example, if the $$$4$$$ by $$$4$$$ matrix looks like this:</p><p>$$$$$$\\matrix{ a &amp; b &amp; b &amp; a \\cr b &amp; c &amp; \\textbf{b} &amp; b \\cr b &amp; c &amp; c &amp; b\\cr a &amp; b &amp; b &amp; a \\cr }$$$$$$</p><p>then it is enough to apply $$$1$$$ operation to the letter <span class=\"tex-font-style-bf\">b</span>, highlighted in bold.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^2$$$)\u00a0\u2014 the number of test cases.</p><p>Then follows the description of each test case.</p><p>The first line of each test case contains a single <span class=\"tex-font-style-bf\">even</span> integer $$$n$$$ ($$$2 \\le n \\le 10^3$$$)\u00a0\u2014 the number of rows and columns in the matrix.</p><p>Then follows $$$n$$$ lines, each containing exactly $$$n$$$ lowercase Latin letters.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$10^3$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single number on a separate line: the <span class=\"tex-font-style-bf\">minimum</span> number of operations required for Kristina to obtain a <span class=\"tex-font-style-it\">perfect square</span>.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">abba</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">bcbb</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">bccb</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">abba</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">ab</div><div class=\"test-example-line test-example-line-even test-example-line-2\">ba</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">codefo</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">rcesco</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">deforc</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">escode</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">forces</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">codefo</div><div class=\"test-example-line test-example-line-even test-example-line-4\">4</div><div class=\"test-example-line test-example-line-even test-example-line-4\">baaa</div><div class=\"test-example-line test-example-line-even test-example-line-4\">abba</div><div class=\"test-example-line test-example-line-even test-example-line-4\">baba</div><div class=\"test-example-line test-example-line-even test-example-line-4\">baab</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">bbaa</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">abba</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">aaba</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">abba</div>",
+            "output": "\n1\n2\n181\n5\n9\n"
+        }
+    ],
+    "note": "<p>The first test case is explained in the problem statement.</p>",
+    "contestId": 1881,
+    "index": "C",
+    "name": "Perfect Square",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 16148
+}

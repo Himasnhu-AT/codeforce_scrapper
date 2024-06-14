@@ -1,0 +1,29 @@
+{
+    "title": "A. Hard Way",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Sam lives in Awesomeburg, its downtown has a triangular shape. Also, the following is true about the triangle:</p><ul> <li> its vertices have integer coordinates, </li><li> the coordinates of vertices are non-negative, and </li><li> its vertices are not on a single line. </li></ul><p>He calls a point on the downtown's border (that is the border of the triangle) <span class=\"tex-font-style-it\">safe</span> if he can reach this point from <span class=\"tex-font-style-bf\">at least one point</span> of the line $$$y = 0$$$ walking along some <span class=\"tex-font-style-bf\">straight line</span>, without crossing the interior of the triangle.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/3af75fe0f0ad2ea085c6b65778931d20cfda14ec.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">In the picture the downtown is marked with grey color. The first path is invalid because it does not go along a straight line. The second path is invalid because it intersects with the interior of the downtown. The third and fourth paths are correct.</span> </center><p>Find the total length of the unsafe parts of the downtown border. It can be proven that these parts are segments and their number is finite.</p>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$) \u2014 the number of test cases. Description of the test cases follows.</p><p>Each test case contains three lines, each of them contains two integers $$$x_i$$$, $$$y_i$$$ ($$$0 \\le x_i, y_i \\le 10^9$$$)\u00a0\u2014 coordinates of the vertices of the downtown's border.</p>",
+    "outputSpecification": "<p>For each test case print a single number\u00a0\u2014 the answer to the problem.</p><p>Your answer will be considered correct if its absolute or relative error does not exceed $$$10^{-9}$$$. Formally let your answer be $$$a$$$, jury answer be $$$b$$$. Your answer will be considered correct if $$$\\frac{|a - b|}{\\max{(1, |b|)}} \\le 10^{-9}$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">8 10</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">10 4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">6 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 6</div><div class=\"test-example-line test-example-line-even test-example-line-2\">0 1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">14 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">11 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">13 2</div><div class=\"test-example-line test-example-line-even test-example-line-4\">0 0</div><div class=\"test-example-line test-example-line-even test-example-line-4\">4 0</div><div class=\"test-example-line test-example-line-even test-example-line-4\">2 4</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0 1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1 1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0 0</div>",
+            "output": "\n0.0000000\n0\n2.0000\n0.00\n1\n"
+        }
+    ],
+    "note": "<p>In the picture, the downtowns of the first three test cases are illustrated. Triangles are enumerated according to the indices of test cases they belong to.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/f442c59b568984d466e5f29561428d3889903e9f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the first two test cases, all points on the borders of the downtowns are safe, thus the answers are $$$0$$$.</p><p>In the following picture unsafe points for the third test case are marked with black color:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/e97888b309d46976dc1a9e03f5a8a012090ba8e9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the fourth test case, all points on the border of the downtown are safe.</p>",
+    "contestId": 1642,
+    "index": "A",
+    "name": "Hard Way",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 16028
+}

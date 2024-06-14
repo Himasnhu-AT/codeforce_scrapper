@@ -1,0 +1,32 @@
+{
+    "title": "F. Rudolf and Imbalance",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Rudolf has prepared a set of $$$n$$$ problems with complexities $$$a_1 &lt; a_2 &lt; a_3 &lt; \\dots &lt; a_n$$$. He is not entirely satisfied with the balance, so he wants to add <span class=\"tex-font-style-bf\">at most one</span> problem to fix it.</p><p>For this, Rudolf came up with $$$m$$$ models of problems and $$$k$$$ functions. The complexity of the $$$i$$$-th model is $$$d_i$$$, and the complexity of the $$$j$$$-th function is $$$f_j$$$. To create a problem, he selects values $$$i$$$ and $$$j$$$ ($$$1 \\le i \\le m$$$, $$$1 \\le j \\le k$$$) and by combining the $$$i$$$-th model with the $$$j$$$-th function, he obtains a new problem with complexity $$$d_i + f_j$$$ (a new element is inserted into the array $$$a$$$).</p><p>To determine the <span class=\"tex-font-style-it\">imbalance</span> of the set, Rudolf sorts the complexities of the problems in ascending order and finds the largest value of $$$a_i - a_{i - 1}$$$ ($$$i &gt; 1$$$).</p><p>What is the minimum value of <span class=\"tex-font-style-it\">imbalance</span> that Rudolf can achieve by adding at most one problem, created according to the described rules?</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of testcases.</p><p>The first line of each test case contains three integers $$$n$$$, $$$m$$$, and $$$k$$$ ($$$2 \\le n \\le 10^5$$$, $$$1 \\le m, k \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the number of prepared problems, the number of models, and the number of functions, respectively.</p><p>The second line of each test case contains $$$n$$$ integers $$$a_1, a_2, a_3, \\dots a_n$$$ ($$$1 \\le a_i \\le 2 \\cdot 10^9$$$, $$$a_i &lt; a_{i+1}$$$)\u00a0\u2014 the complexities of the prepared problems.</p><p>The third line of each test case contains $$$m$$$ integers $$$d_1, d_2, d_3, \\dots d_m$$$ ($$$1 \\le d_i \\le 10^9$$$)\u00a0\u2014 the complexities of the models.</p><p>The fourth line of each test case contains $$$k$$$ integers $$$f_1, f_2, f_3, \\dots f_k$$$ ($$$1 \\le f_i \\le 10^9$$$)\u00a0\u2014 the complexities of the functions.</p><p>It is guaranteed that the sum of $$$n$$$ over all testcases does not exceed $$$10^5$$$.</p><p>It is guaranteed that the sum of $$$m$$$ over all testcases does not exceed $$$2 \\cdot 10^5$$$.</p><p>It is guaranteed that the sum of $$$k$$$ over all testcases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each testcase, output a single number\u00a0\u2014 the minimum <span class=\"tex-font-style-it\">imbalance</span> that Rudolf can achieve.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">7</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">5 5 5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">5 10 15 20 26</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">11 14 16 13 8</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">16 4 5 3 1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">7 6 5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 4 7 10 18 21 22</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 3 5 7 4 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">6 8 9 3 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">7 6 5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 4 7 10 18 21 22</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 3 5 7 4 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">6 8 13 3 2</div><div class=\"test-example-line test-example-line-even test-example-line-4\">5 6 3</div><div class=\"test-example-line test-example-line-even test-example-line-4\">2 10 13 20 25</div><div class=\"test-example-line test-example-line-even test-example-line-4\">11 6 10 16 14 5</div><div class=\"test-example-line test-example-line-even test-example-line-4\">6 17 15</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">4 2 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">11 12 14 15</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">19 14</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">10 6</div><div class=\"test-example-line test-example-line-even test-example-line-6\">8 4 2</div><div class=\"test-example-line test-example-line-even test-example-line-6\">3 10 16 18 21 22 29 30</div><div class=\"test-example-line test-example-line-even test-example-line-6\">9 13 16 15</div><div class=\"test-example-line test-example-line-even test-example-line-6\">4 2</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">2 4 7</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">4 21</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">4 15 14 5</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">20 1 15 1 12 5 11</div>",
+            "output": "\n5\n4\n5\n8\n2\n7\n11\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1941,
+    "index": "F",
+    "name": "Rudolf and Imbalance",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "greedy",
+        "sortings",
+        "two pointers"
+    ],
+    "solvedCount": 5386
+}

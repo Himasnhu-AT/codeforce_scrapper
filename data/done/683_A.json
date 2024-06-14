@@ -1,0 +1,38 @@
+{
+    "title": "A. The Check of the Point",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>On the coordinate plane there is a square with sides parallel to the coordinate axes. The length of the square side is equal to <span class=\"tex-span\"><i>a</i></span>. The lower left corner of the square coincides with the point (<span class=\"tex-span\">0,\u20090</span>) (the point of the origin). The upper right corner of the square has positive coordinates.</p><p>You are given a point with coordinates (<span class=\"tex-span\"><i>x</i></span>, <span class=\"tex-span\"><i>y</i></span>). Your task is to determine whether this point is located strictly inside the square, on its side, or strictly outside the square.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">\u2009-\u20091000\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u20091000</span>) \u2014 the length of the square side and the coordinates of the point which should be checked.</p>",
+    "outputSpecification": "<p>Print one integer:</p><ul> <li> 0, if the point is located strictly inside the square; </li><li> 1, if the point is located on the side of the square; </li><li> 2, if the point is located strictly outside the square. </li></ul>",
+    "samples": [
+        {
+            "input": "2 1 1<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "4 4 4<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "10 5 -4<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 683,
+    "index": "A",
+    "name": "The Check of the Point",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "geometry"
+    ],
+    "solvedCount": 787
+}

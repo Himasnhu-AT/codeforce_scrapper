@@ -1,0 +1,31 @@
+{
+    "title": "B. Almost Ternary Matrix",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two <span class=\"tex-font-style-bf\">even</span> integers $$$n$$$ and $$$m$$$. Your task is to find <span class=\"tex-font-style-bf\">any</span> binary matrix $$$a$$$ with $$$n$$$ rows and $$$m$$$ columns where every cell $$$(i,j)$$$ has <span class=\"tex-font-style-bf\">exactly</span> two neighbours with a different value than $$$a_{i,j}$$$.</p><p>Two cells in the matrix are considered neighbours if and only if they share a side. More formally, the neighbours of cell $$$(x,y)$$$ are: $$$(x-1,y)$$$, $$$(x,y+1)$$$, $$$(x+1,y)$$$ and $$$(x,y-1)$$$.</p><p>It can be proven that under the given constraints, an answer always exists.</p>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line of input contains a single integer $$$t$$$ ($$$1 \\le t \\le 100$$$)\u00a0\u2014 the number of test cases. The following lines contain the descriptions of the test cases.</p><p>The only line of each test case contains two <span class=\"tex-font-style-bf\">even</span> integers $$$n$$$ and $$$m$$$ ($$$2 \\le n,m \\le 50$$$)\u00a0\u2014 the height and width of the binary matrix, respectively.</p>",
+    "outputSpecification": "<p>For each test case, print $$$n$$$ lines, each of which contains $$$m$$$ numbers, equal to $$$0$$$ or $$$1$$$\u00a0\u2014 any binary matrix which satisfies the constraints described in the statement.</p><p>It can be proven that under the given constraints, an answer always exists.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">4 4</div>",
+            "output": "\n1 0 0 1\n0 1 1 0\n1 0\n0 1\n1 0 1 0\n0 0 1 1\n1 1 0 0\n0 1 0 1"
+        }
+    ],
+    "note": "<p>White means $$$0$$$, black means $$$1$$$.</p><center> <table class=\"tex-tabular\"><tbody><tr><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\"><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2a65057959cfbafbb5653118470a1f39c3cbba3e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\"><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/55bb62b69d291bd5be2ea1dfe3ab1fa505e2412d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\"><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/50b8c59e668f692565380ff36a3a5f07605b67e2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></td></tr><tr><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\"><span class=\"tex-font-size-small\">The binary matrix from the first test case</span></td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\"><span class=\"tex-font-size-small\">The binary matrix from the second test case</span></td><td class=\"tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom\"><span class=\"tex-font-size-small\">The binary matrix from the third test case</span></td></tr></tbody></table> </center>",
+    "contestId": 1699,
+    "index": "B",
+    "name": "Almost Ternary Matrix",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "matrices"
+    ],
+    "solvedCount": 19281
+}

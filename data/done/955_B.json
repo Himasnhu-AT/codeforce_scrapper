@@ -1,0 +1,37 @@
+{
+    "title": "B. Not simply beatiful strings",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's call a string <span class=\"tex-font-style-it\">adorable</span> if its letters can be realigned in such a way that they form two consequent groups of equal symbols (note that different groups must contain different symbols). For example, <span class=\"tex-font-style-it\">ababa</span> is <span class=\"tex-font-style-it\">adorable</span> (you can transform it to <span class=\"tex-font-style-it\">aaabb</span>, where the first three letters form a group of <span class=\"tex-span\"><i>a</i></span>-s and others \u2014 a group of <span class=\"tex-span\"><i>b</i></span>-s), but <span class=\"tex-font-style-it\">cccc</span> is not since in each possible consequent partition letters in these two groups coincide.</p><p>You're given a string <span class=\"tex-span\"><i>s</i></span>. Check whether it can be split into two non-empty subsequences such that the strings formed by these subsequences are <span class=\"tex-font-style-it\">adorable</span>. Here a subsequence is an arbitrary set of indexes of the string.</p>",
+    "inputSpecification": "<p>The only line contains <span class=\"tex-span\"><i>s</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> consisting of lowercase latin letters.</p>",
+    "outputSpecification": "<p>Print \u00ab<span class=\"tex-font-style-tt\">Yes</span>\u00bb if the string can be split according to the criteria above or \u00ab<span class=\"tex-font-style-tt\">No</span>\u00bb otherwise.</p><p>Each letter can be printed in arbitrary case.</p>",
+    "samples": [
+        {
+            "input": "ababa<br/>",
+            "output": "Yes<br/>"
+        },
+        {
+            "input": "zzcxx<br/>",
+            "output": "Yes<br/>"
+        },
+        {
+            "input": "yeee<br/>",
+            "output": "No<br/>"
+        }
+    ],
+    "note": "<p>In sample case two <span class=\"tex-font-style-it\">zzcxx</span> can be split into subsequences <span class=\"tex-font-style-it\">zc</span> and <span class=\"tex-font-style-it\">zxx</span> each of which is <span class=\"tex-font-style-it\">adorable</span>.</p><p>There's no suitable partition in sample case three.</p>",
+    "contestId": 955,
+    "index": "B",
+    "name": "Not simply beatiful strings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 4751
+}

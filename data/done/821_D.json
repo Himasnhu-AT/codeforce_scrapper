@@ -1,0 +1,43 @@
+{
+    "title": "D. Okabe and City",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Okabe likes to be able to walk through his city on a path lit by street lamps. That way, he doesn't get beaten up by schoolchildren.</p><p>Okabe's city is represented by a 2D grid of cells. Rows are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> from top to bottom, and columns are numbered <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span> from left to right. Exactly <span class=\"tex-span\"><i>k</i></span> cells in the city are lit by a street lamp. It's guaranteed that the top-left cell is lit.</p><p>Okabe starts his walk from the top-left cell, and wants to reach the bottom-right cell. Of course, Okabe will only walk on lit cells, and he can only move to adjacent cells in the up, down, left, and right directions. However, Okabe can also temporarily light all the cells in any single row or column at a time if he pays <span class=\"tex-span\">1</span> coin, allowing him to walk through some cells not lit initially. </p><p>Note that Okabe can only light a single row or column at a time, and has to pay a coin every time he lights a new row or column. To change the row or column that is temporarily lit, he must stand at a cell that is lit initially. Also, once he removes his temporary light from a row or column, all cells in that row/column not initially lit are now not lit.</p><p>Help Okabe find the minimum number of coins he needs to pay to complete his walk!</p>",
+    "inputSpecification": "<p>The first line of input contains three space-separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span>, and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>,\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>).</p><p>Each of the next <span class=\"tex-span\"><i>k</i></span> lines contains two space-separated integers <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>m</i></span>)\u00a0\u2014 the row and the column of the <span class=\"tex-span\"><i>i</i></span>-th lit cell.</p><p>It is guaranteed that all <span class=\"tex-span\"><i>k</i></span> lit cells are distinct. It is guaranteed that the top-left cell is lit.</p>",
+    "outputSpecification": "<p>Print the minimum number of coins Okabe needs to pay to complete his walk, or <span class=\"tex-font-style-tt\">-1</span> if it's not possible.</p>",
+    "samples": [
+        {
+            "input": "4 4 5<br/>1 1<br/>2 1<br/>2 3<br/>3 3<br/>4 3<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "5 5 4<br/>1 1<br/>2 1<br/>3 1<br/>3 2<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "2 2 4<br/>1 1<br/>1 2<br/>2 1<br/>2 2<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "5 5 4<br/>1 1<br/>2 2<br/>3 3<br/>4 4<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>In the first sample test, Okabe can take the path <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fd8d0b719801e9cfe8f6be340d76a554f6ffb66b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, paying only when moving to <span class=\"tex-span\">(2,\u20093)</span> and <span class=\"tex-span\">(4,\u20094)</span>.</p><p>In the fourth sample, Okabe can take the path <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a91fe94734a09a4ba86d66070aa8cbeacdb2279f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/2ee6688fe94ce8e9a746b8e479e906fe25ff4d86.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, paying when moving to <span class=\"tex-span\">(1,\u20092)</span>, <span class=\"tex-span\">(3,\u20094)</span>, and <span class=\"tex-span\">(5,\u20094)</span>.</p>",
+    "contestId": 821,
+    "index": "D",
+    "name": "Okabe and City",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 1355
+}

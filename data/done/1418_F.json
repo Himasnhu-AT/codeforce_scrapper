@@ -1,0 +1,40 @@
+{
+    "title": "F. Equal Product",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given four integers $$$n$$$, $$$m$$$, $$$l$$$ and $$$r$$$.</p><p>Let's name a tuple $$$(x_1, y_1, x_2, y_2)$$$ as <span class=\"tex-font-style-it\">good</span> if: </p><ol> <li> $$$1 \\le x_1 &lt; x_2 \\le n$$$; </li><li> $$$1 \\le y_2 &lt; y_1 \\le m$$$; </li><li> $$$x_1 \\cdot y_1 = x_2 \\cdot y_2$$$; </li><li> $$$l \\le x_1 \\cdot y_1 \\le r$$$. </li></ol><p>Find any good tuple <span class=\"tex-font-style-bf\">for each $$$x_1$$$ from $$$1$$$ to $$$n$$$ inclusive</span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$m$$$ ($$$1 \\le n, m \\le 2 \\cdot 10^5$$$).</p><p>The second line contains two integers $$$l$$$ and $$$r$$$ ($$$1 \\le l \\le r \\le nm$$$).</p>",
+    "outputSpecification": "<p>For each $$$x_1$$$ from $$$1$$$ to $$$n$$$ inclusive: </p><ul> <li> if there are no such four integers, print $$$-1$$$; </li><li> otherwise, print four integers $$$x_1$$$, $$$y_1$$$, $$$x_2$$$ and $$$y_2$$$. If there are multiple answers, print any of them. </li></ul>",
+    "samples": [
+        {
+            "input": "\n8 20\n91 100\n",
+            "output": "\n-1\n-1\n-1\n-1\n-1\n6 16 8 12\n-1\n-1\n"
+        },
+        {
+            "input": "\n4 5\n1 10\n",
+            "output": "\n1 2 2 1\n2 3 3 2\n-1\n-1\n"
+        },
+        {
+            "input": "\n5 12\n16 60\n",
+            "output": "\n-1\n2 9 3 6\n3 8 4 6\n4 5 5 4\n-1\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1418,
+    "index": "F",
+    "name": "Equal Product",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "math",
+        "number theory",
+        "two pointers"
+    ],
+    "solvedCount": 358
+}

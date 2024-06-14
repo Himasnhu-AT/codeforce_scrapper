@@ -1,0 +1,37 @@
+{
+    "title": "C. Pie or die",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Volodya and Vlad play the following game. There are <span class=\"tex-span\"><i>k</i></span> pies at the cells of <span class=\"tex-span\"><i>n</i>\u2009\u2009\u00d7\u2009\u2009<i>m</i></span> board. Each turn Volodya moves one pie to the neighbouring (by side) cell. If the pie lies at the border of the board then Volodya can move it outside the board, get the pie and win. After Volodya's move, Vlad bans some edge at the border of the board of length 1 (between two knots of the board) so that Volodya is not able to move the pie outside the board through this edge anymore. The question is: will Volodya win this game? We suppose both players follow the optimal strategy.</p><center><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1878febc6260322dfe8bbc217a4ebbafa22eb482.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center>",
+    "inputSpecification": "<p>First line contains 3 integers, separated by space: <span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span> \u2014 dimensions of the board and <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009100</span> \u2014 the number of pies. Each of the next <span class=\"tex-span\"><i>k</i></span> lines contains 2 integers, separated by space: <span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>y</i>\u2009\u2264\u2009<i>m</i></span> \u2014 coordinates of the corresponding pie. There could be more than one pie at a cell. </p>",
+    "outputSpecification": "<p>Output only one word: \"<span class=\"tex-font-style-tt\">YES</span>\" \u2014 if Volodya wins, \"<span class=\"tex-font-style-tt\">NO</span>\" \u2014 otherwise.</p>",
+    "samples": [
+        {
+            "input": "2 2 1<br/>1 2<br/>",
+            "output": "YES"
+        },
+        {
+            "input": "3 4 0<br/>",
+            "output": "NO"
+        },
+        {
+            "input": "100 50 2<br/>50 25<br/>50 25<br/>",
+            "output": "NO"
+        }
+    ],
+    "note": null,
+    "contestId": 55,
+    "index": "C",
+    "name": "Pie or die",
+    "type": "PROGRAMMING",
+    "tags": [
+        "games"
+    ],
+    "solvedCount": 1600
+}

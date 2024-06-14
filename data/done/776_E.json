@@ -1,0 +1,34 @@
+{
+    "title": "E. The Holmes Children",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The Holmes children are fighting over who amongst them is the cleverest.</p><p>Mycroft asked Sherlock and Eurus to find value of <span class=\"tex-span\"><i>f</i>(<i>n</i>)</span>, where <span class=\"tex-span\"><i>f</i>(1)\u2009=\u20091</span> and for <span class=\"tex-span\"><i>n</i>\u2009\u2265\u20092</span>, <span class=\"tex-span\"><i>f</i>(<i>n</i>)</span> is the number of distinct ordered positive integer pairs <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> that satisfy <span class=\"tex-span\"><i>x</i>\u2009+\u2009<i>y</i>\u2009=\u2009<i>n</i></span> and <span class=\"tex-span\"><i>gcd</i>(<i>x</i>,\u2009<i>y</i>)\u2009=\u20091</span>. The integer <span class=\"tex-span\"><i>gcd</i>(<i>a</i>,\u2009<i>b</i>)</span> is the greatest common divisor of <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>.</p><p>Sherlock said that solving this was child's play and asked Mycroft to instead get the value of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/34a7c72e29da69c2e168f310f70ea1fa704b0c40.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Summation is done over all positive integers <span class=\"tex-span\"><i>d</i></span> that divide <span class=\"tex-span\"><i>n</i></span>.</p><p>Eurus was quietly observing all this and finally came up with her problem to astonish both Sherlock and Mycroft.</p><p>She defined a <span class=\"tex-span\"><i>k</i></span>-composite function <span class=\"tex-span\"><i>F</i><sub class=\"lower-index\"><i>k</i></sub>(<i>n</i>)</span> recursively as follows:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/18423e2a1ceef2effb2b057f62af8a7ae8303ecc.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>She wants them to tell the value of <span class=\"tex-span\"><i>F</i><sub class=\"lower-index\"><i>k</i></sub>(<i>n</i>)</span> modulo <span class=\"tex-span\">1000000007</span>.</p>",
+    "inputSpecification": "<p>A single line of input contains two space separated integers <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">12</sup></span>) and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">12</sup></span>) indicating that Eurus asks Sherlock and Mycroft to find the value of <span class=\"tex-span\"><i>F</i><sub class=\"lower-index\"><i>k</i></sub>(<i>n</i>)</span> modulo <span class=\"tex-span\">1000000007</span>.</p>",
+    "outputSpecification": "<p>Output a single integer\u00a0\u2014 the value of <span class=\"tex-span\"><i>F</i><sub class=\"lower-index\"><i>k</i></sub>(<i>n</i>)</span> modulo <span class=\"tex-span\">1000000007</span>.</p>",
+    "samples": [
+        {
+            "input": "7 1<br/>",
+            "output": "6"
+        },
+        {
+            "input": "10 2<br/>",
+            "output": "4"
+        }
+    ],
+    "note": "<p>In the first case, there are <span class=\"tex-span\">6</span> distinct ordered pairs <span class=\"tex-span\">(1,\u20096)</span>, <span class=\"tex-span\">(2,\u20095)</span>, <span class=\"tex-span\">(3,\u20094)</span>, <span class=\"tex-span\">(4,\u20093)</span>, <span class=\"tex-span\">(5,\u20092)</span> and <span class=\"tex-span\">(6,\u20091)</span> satisfying <span class=\"tex-span\"><i>x</i>\u2009+\u2009<i>y</i>\u2009=\u20097</span> and <span class=\"tex-span\"><i>gcd</i>(<i>x</i>,\u2009<i>y</i>)\u2009=\u20091</span>. Hence, <span class=\"tex-span\"><i>f</i>(7)\u2009=\u20096</span>. So, <span class=\"tex-span\"><i>F</i><sub class=\"lower-index\">1</sub>(7)\u2009=\u2009<i>f</i>(<i>g</i>(7))\u2009=\u2009<i>f</i>(<i>f</i>(7)\u2009+\u2009<i>f</i>(1))\u2009=\u2009<i>f</i>(6\u2009+\u20091)\u2009=\u2009<i>f</i>(7)\u2009=\u20096</span>.</p>",
+    "contestId": 776,
+    "index": "E",
+    "name": "The Holmes Children",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 2109
+}

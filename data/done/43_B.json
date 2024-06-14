@@ -1,0 +1,42 @@
+{
+    "title": "B. Letter",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya decided to write an anonymous letter cutting the letters out of a newspaper heading. He knows heading <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> and text <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> that he wants to send. Vasya can use every single heading letter no more than once. Vasya doesn't have to cut the spaces out of the heading \u2014 he just leaves some blank space to mark them. Help him; find out if he will manage to compose the needed text.</p>",
+    "inputSpecification": "<p>The first line contains a newspaper heading <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span>. The second line contains the letter text <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span>. <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> \u0438 <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> are non-empty lines consisting of spaces, uppercase and lowercase Latin letters, whose lengths do not exceed 200 symbols. The uppercase and lowercase letters should be differentiated. Vasya does not cut spaces out of the heading.</p>",
+    "outputSpecification": "<p>If Vasya can write the given anonymous letter, print <span class=\"tex-font-style-tt\">YES</span>, otherwise print <span class=\"tex-font-style-tt\">NO</span></p>",
+    "samples": [
+        {
+            "input": "Instead of dogging Your footsteps it disappears but you dont notice anything<br/>where is your dog<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "Instead of dogging Your footsteps it disappears but you dont notice anything<br/>Your dog is upstears<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "Instead of dogging your footsteps it disappears but you dont notice anything<br/>Your dog is upstears<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "abcdefg hijk<br/>k j i h g f e d c b a<br/>",
+            "output": "YES<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 43,
+    "index": "B",
+    "name": "Letter",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 15875
+}

@@ -1,0 +1,35 @@
+{
+    "title": "C. Playlist",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have a playlist consisting of $$$n$$$ songs. The $$$i$$$-th song is characterized by two numbers $$$t_i$$$ and $$$b_i$$$ \u2014 its length and beauty respectively. The pleasure of listening to set of songs is equal to the total length of the songs in the set multiplied by the minimum beauty among them. For example, the pleasure of listening to a set of $$$3$$$ songs having lengths $$$[5, 7, 4]$$$ and beauty values $$$[11, 14, 6]$$$ is equal to $$$(5 + 7 + 4) \\cdot 6 = 96$$$.</p><p>You need to choose <span class=\"tex-font-style-bf\">at most</span> $$$k$$$ songs from your playlist, so the pleasure of listening to the set of these songs them is maximum possible.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\le k \\le n \\le 3 \\cdot 10^5$$$) \u2013 the number of songs in the playlist and the maximum number of songs you can choose, respectively.</p><p>Each of the next $$$n$$$ lines contains two integers $$$t_i$$$ and $$$b_i$$$ ($$$1 \\le t_i, b_i \\le 10^6$$$) \u2014 the length and beauty of $$$i$$$-th song.</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the maximum pleasure you can get.</p>",
+    "samples": [
+        {
+            "input": "\n4 3\n4 7\n15 1\n3 6\n6 8\n",
+            "output": "\n78\n"
+        },
+        {
+            "input": "\n5 3\n12 31\n112 4\n100 100\n13 55\n55 50\n",
+            "output": "\n10000\n"
+        }
+    ],
+    "note": "<p>In the first test case we can choose songs $$${1, 3, 4}$$$, so the total pleasure is $$$(4 + 3 + 6) \\cdot 6 = 78$$$.</p><p>In the second test case we can choose song $$$3$$$. The total pleasure will be equal to $$$100 \\cdot 100 = 10000$$$.</p>",
+    "contestId": 1140,
+    "index": "C",
+    "name": "Playlist",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "data structures",
+        "sortings"
+    ],
+    "solvedCount": 9313
+}

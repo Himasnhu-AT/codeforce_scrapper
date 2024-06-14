@@ -1,0 +1,41 @@
+{
+    "title": "B. Fix a Tree",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A tree is an undirected connected graph without cycles.</p><p>Let's consider a rooted undirected tree with <span class=\"tex-span\"><i>n</i></span> vertices, numbered <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>n</i></span>. There are many ways to represent such a tree. One way is to create an array with <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>, where <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> denotes a parent of vertex <span class=\"tex-span\"><i>i</i></span> (here, for convenience a root is considered its own parent).</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/42cfcc633fdaddb6fceee58f309420382919d52a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">For this rooted tree the array <span class=\"tex-span\"><i>p</i></span> is <span class=\"tex-span\">[2,\u20093,\u20093,\u20092]</span>.</span> </center><p>Given a sequence <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>, one is able to restore a tree:</p><ol> <li> There must be exactly one index <span class=\"tex-span\"><i>r</i></span> that <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>r</i></sub>\u2009=\u2009<i>r</i></span>. A vertex <span class=\"tex-span\"><i>r</i></span> is a root of the tree. </li><li> For all other <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> vertices <span class=\"tex-span\"><i>i</i></span>, there is an edge between vertex <span class=\"tex-span\"><i>i</i></span> and vertex <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>. </li></ol><p>A sequence <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> is called valid if the described procedure generates some (any) rooted tree. For example, for <span class=\"tex-span\"><i>n</i>\u2009=\u20093</span> sequences <span class=\"tex-font-style-tt\">(1,2,2)</span>, <span class=\"tex-font-style-tt\">(2,3,1)</span> and <span class=\"tex-font-style-tt\">(2,1,3)</span> <span class=\"tex-font-style-bf\">are not</span> valid.</p><p>You are given a sequence <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>, not necessarily valid. Your task is to change the minimum number of elements, in order to get a valid sequence. Print the minimum number of changes and an example of a valid sequence after that number of changes. If there are many valid sequences achievable in the minimum number of changes, print any of them.</p>",
+    "inputSpecification": "<p>The first line of the input contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>)\u00a0\u2014 the number of vertices in the tree.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>).</p>",
+    "outputSpecification": "<p>In the first line print the minimum number of elements to change, in order to get a valid sequence.</p><p>In the second line, print any valid sequence possible to get from <span class=\"tex-span\">(<i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub>)</span> in the minimum number of changes. If there are many such sequences, any of them will be accepted.</p>",
+    "samples": [
+        {
+            "input": "4<br/>2 3 3 4<br/>",
+            "output": "1<br/>2 3 4 4 <br/>"
+        },
+        {
+            "input": "5<br/>3 2 2 5 3<br/>",
+            "output": "0<br/>3 2 2 5 3 <br/>"
+        },
+        {
+            "input": "8<br/>2 3 5 4 1 6 6 7<br/>",
+            "output": "2<br/>2 3 7 8 1 6 6 7<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, it's enough to change one element. In the provided output, a sequence represents a tree rooted in a vertex <span class=\"tex-span\">4</span> (because <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">4</sub>\u2009=\u20094</span>), which you can see on the left drawing below. One of other correct solutions would be a sequence <span class=\"tex-font-style-tt\">2 3 3 2</span>, representing a tree rooted in vertex <span class=\"tex-span\">3</span> (right drawing below). On both drawings, roots are painted red.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/f3e146fc8bc370d17728ff1c7be0372102a92134.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second sample, the given sequence is already valid.</p>",
+    "contestId": 698,
+    "index": "B",
+    "name": "Fix a Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 5637
+}

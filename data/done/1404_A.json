@@ -1,0 +1,30 @@
+{
+    "title": "A. Balanced Bitstring",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A bitstring is a string consisting only of the characters <span class=\"tex-font-style-tt\">0</span> and <span class=\"tex-font-style-tt\">1</span>. A bitstring is called $$$k$$$-<span class=\"tex-font-style-bf\">balanced</span> if every substring of size $$$k$$$ of this bitstring has an equal amount of <span class=\"tex-font-style-tt\">0</span> and <span class=\"tex-font-style-tt\">1</span> characters ($$$\\frac{k}{2}$$$ of each).</p><p>You are given an integer $$$k$$$ and a string $$$s$$$ which is composed only of characters <span class=\"tex-font-style-tt\">0</span>, <span class=\"tex-font-style-tt\">1</span>, and <span class=\"tex-font-style-tt\">?</span>. You need to determine whether you can make a $$$k$$$-balanced bitstring by replacing every <span class=\"tex-font-style-tt\">?</span> characters in $$$s$$$ with either <span class=\"tex-font-style-tt\">0</span> or <span class=\"tex-font-style-tt\">1</span>.</p><p>A string $$$a$$$ is a substring of a string $$$b$$$ if $$$a$$$ can be obtained from $$$b$$$ by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.</p>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \\le t \\le 10^4$$$). Description of the test cases follows.</p><p>The first line of each test case contains two integers $$$n$$$ and $$$k$$$ ($$$2 \\le k \\le n \\le 3 \\cdot 10^5$$$, $$$k$$$ is even) \u00a0\u2014 the length of the string and the parameter for a balanced bitstring.</p><p>The next line contains the string $$$s$$$ ($$$|s| = n$$$). It is given that $$$s$$$ consists of only <span class=\"tex-font-style-tt\">0</span>, <span class=\"tex-font-style-tt\">1</span>, and <span class=\"tex-font-style-tt\">?</span>.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$3 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, print <span class=\"tex-font-style-tt\">YES</span> if we can replace every <span class=\"tex-font-style-tt\">?</span> in $$$s$$$ with <span class=\"tex-font-style-tt\">0</span> or <span class=\"tex-font-style-tt\">1</span> such that the resulting bitstring is $$$k$$$-balanced, or <span class=\"tex-font-style-tt\">NO</span> if it is not possible.</p>",
+    "samples": [
+        {
+            "input": "\n9\n6 4\n100110\n3 2\n1?1\n3 2\n1?0\n4 4\n????\n7 4\n1?0??1?\n10 10\n11??11??11\n4 2\n1??1\n4 4\n?0?0\n6 2\n????00\n",
+            "output": "\nYES\nYES\nNO\nYES\nYES\nNO\nNO\nYES\nNO\n"
+        }
+    ],
+    "note": "<p>For the first test case, the string is already a $$$4$$$-balanced bitstring.</p><p>For the second test case, the string can be transformed into <span class=\"tex-font-style-tt\">101</span>.</p><p>For the fourth test case, the string can be transformed into <span class=\"tex-font-style-tt\">0110</span>.</p><p>For the fifth test case, the string can be transformed into <span class=\"tex-font-style-tt\">1100110</span>.</p>",
+    "contestId": 1404,
+    "index": "A",
+    "name": "Balanced Bitstring",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 14909
+}

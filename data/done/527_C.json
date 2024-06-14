@@ -1,0 +1,35 @@
+{
+    "title": "C. Glass Carving",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Leonid wants to become a glass carver (the person who creates beautiful artworks by cutting the glass). He already has a rectangular <span class=\"tex-span\"><i>w</i></span> mm <span class=\"tex-span\">\u2009\u00d7\u2009</span> <span class=\"tex-span\"><i>h</i></span> mm sheet of glass, a diamond glass cutter and lots of enthusiasm. What he lacks is understanding of what to carve and how.</p><p>In order not to waste time, he decided to practice the technique of carving. To do this, he makes vertical and horizontal cuts through the entire sheet. This process results in making smaller rectangular fragments of glass. Leonid does not move the newly made glass fragments. In particular, a cut divides each fragment of glass that it goes through into smaller fragments.</p><p>After each cut Leonid tries to determine what area the largest of the currently available glass fragments has. Since there appear more and more fragments, this question takes him more and more time and distracts him from the fascinating process.</p><p>Leonid offers to divide the labor \u2014 he will cut glass, and you will calculate the area of the maximum fragment after each cut. Do you agree?</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>w</i>,\u2009<i>h</i>,\u2009<i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>w</i>,\u2009<i>h</i>\u2009\u2264\u2009200\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>).</p><p>Next <span class=\"tex-span\"><i>n</i></span> lines contain the descriptions of the cuts. Each description has the form <span class=\"tex-span\"><i>H</i>\u00a0<i>y</i></span> or <span class=\"tex-span\"><i>V</i>\u00a0<i>x</i></span>. In the first case Leonid makes the horizontal cut at the distance <span class=\"tex-span\"><i>y</i></span> millimeters (<span class=\"tex-span\">1\u2009\u2264\u2009<i>y</i>\u2009\u2264\u2009<i>h</i>\u2009-\u20091</span>) from the lower edge of the original sheet of glass. In the second case Leonid makes a vertical cut at distance <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>w</i>\u2009-\u20091</span>) millimeters from the left edge of the original sheet of glass. It is guaranteed that Leonid won't make two identical cuts.</p>",
+    "outputSpecification": "<p>After each cut print on a single line the area of the maximum available glass fragment in mm<span class=\"tex-span\"><sup class=\"upper-index\">2</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "4 3 4<br/>H 2<br/>V 2<br/>V 3<br/>V 1<br/>",
+            "output": "8<br/>4<br/>4<br/>2<br/>"
+        },
+        {
+            "input": "7 6 5<br/>H 4<br/>V 3<br/>V 5<br/>H 2<br/>V 1<br/>",
+            "output": "28<br/>16<br/>12<br/>6<br/>4<br/>"
+        }
+    ],
+    "note": "<p>Picture for the first sample test: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/357324961464c49c9a309a3d48f6a660b64b1522.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> Picture for the second sample test: <center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c8483b396b150f751303889eca8d83f5a23e4bc6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 527,
+    "index": "C",
+    "name": "Glass Carving",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "implementation"
+    ],
+    "solvedCount": 6688
+}

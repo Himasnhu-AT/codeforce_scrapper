@@ -1,0 +1,30 @@
+{
+    "title": "E. Mishka and Divisors",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>After playing with her beautiful array, Mishka decided to learn some math. After learning how to multiply, divide and what is divisibility, she is now interested in solving the following problem.</p><p>You are given integer <span class=\"tex-span\"><i>k</i></span> and array <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> of <span class=\"tex-span\"><i>n</i></span> integers. You are to find <span class=\"tex-font-style-bf\">non-empty</span> subsequence of array elements such that the product of its elements is divisible by <span class=\"tex-span\"><i>k</i></span> and it contains minimum possible number of elements.</p><p>Formally, you are to find a sequence of indices <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>i</i><sub class=\"lower-index\">2</sub>\u2009&lt;\u2009...\u2009&lt;\u2009<i>i</i><sub class=\"lower-index\"><i>m</i></sub>\u2009\u2264\u2009<i>n</i></span> such that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/aa500f5ad6a5aaa6f9fb4d61a026e28715f9865e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is divisible by <span class=\"tex-span\"><i>k</i></span> while <span class=\"tex-span\"><i>m</i></span> is minimum possible among all such variants.</p><p>If there are more than one such subsequences, you should choose one among them, such that sum of its elements is <span class=\"tex-font-style-bf\">minimum possible</span>.</p><p>Mishka quickly solved this problem. Will you do so?</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">12</sup></span>).</p><p>The second line of the input contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">12</sup></span>)\u00a0\u2014 array elements.</p>",
+    "outputSpecification": "<p>Print single positive integer <span class=\"tex-span\"><i>m</i></span> in the first line\u00a0\u2014 the number of elements in desired sequence.</p><p>In the second line print <span class=\"tex-span\"><i>m</i></span> distinct integers\u00a0\u2014 the sequence of indices of given array elements, which should be taken into the desired sequence. </p><p>If there are more than one such subsequence (e.g. subsequence of minimum possible number of elements and with minimum possible sum of elements), you can print any of them.</p><p>If there are no such subsequences, print <span class=\"tex-span\">\u2009-\u20091</span> in the only line.</p>",
+    "samples": [
+        {
+            "input": "5 60<br/>2 4 6 5 2<br/>",
+            "output": "3<br/>4 3 1 "
+        }
+    ],
+    "note": null,
+    "contestId": 703,
+    "index": "E",
+    "name": "Mishka and Divisors",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "number theory"
+    ],
+    "solvedCount": 590
+}

@@ -1,0 +1,37 @@
+{
+    "title": "D. Fishes",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>While Grisha was celebrating New Year with Ded Moroz, Misha gifted Sasha a small rectangular pond of size <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span>, divided into cells of size <span class=\"tex-span\">1\u2009\u00d7\u20091</span>, inhabited by tiny evil fishes (no more than one fish per cell, otherwise they'll strife!).</p><p>The gift bundle also includes a square scoop of size <span class=\"tex-span\"><i>r</i>\u2009\u00d7\u2009<i>r</i></span>, designed for fishing. If the lower-left corner of the scoop-net is located at cell <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>, all fishes inside the square <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)...(<i>x</i>\u2009+\u2009<i>r</i>\u2009-\u20091,\u2009<i>y</i>\u2009+\u2009<i>r</i>\u2009-\u20091)</span> get caught. Note that the scoop-net should lie completely inside the pond when used.</p><p>Unfortunately, Sasha is not that skilled in fishing and hence throws the scoop randomly. In order to not frustrate Sasha, Misha decided to release <span class=\"tex-span\"><i>k</i></span> fishes into the empty pond in such a way that the expected value of the number of caught fishes is as high as possible. Help Misha! In other words, put <span class=\"tex-span\"><i>k</i></span> fishes in the pond into distinct cells in such a way that when the scoop-net is placed into a random position among <span class=\"tex-span\">(<i>n</i>\u2009-\u2009<i>r</i>\u2009+\u20091)\u00b7(<i>m</i>\u2009-\u2009<i>r</i>\u2009+\u20091)</span> possible positions, the average number of caught fishes is as high as possible.</p>",
+    "inputSpecification": "<p>The only line contains four integers <span class=\"tex-span\"><i>n</i>,\u2009<i>m</i>,\u2009<i>r</i>,\u2009<i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>r</i>\u2009\u2264\u2009<i>min</i>(<i>n</i>,\u2009<i>m</i>)</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>min</i>(<i>n</i>\u00b7<i>m</i>,\u200910<sup class=\"upper-index\">5</sup>)</span>).</p>",
+    "outputSpecification": "<p>Print a single number\u00a0\u2014 the maximum possible expected number of caught fishes.</p><p>You answer is considered correct, is its absolute or relative error does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20099</sup></span>. Namely, let your answer be <span class=\"tex-span\"><i>a</i></span>, and the jury's answer be <span class=\"tex-span\"><i>b</i></span>. Your answer is considered correct, if <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70655c3293cb3fc998c4b6a9baf73f2894b413de.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "3 3 2 3<br/>",
+            "output": "2.0000000000<br/>"
+        },
+        {
+            "input": "12 17 9 40<br/>",
+            "output": "32.8333333333<br/>"
+        }
+    ],
+    "note": "<p>In the first example you can put the fishes in cells <span class=\"tex-span\">(2,\u20091)</span>, <span class=\"tex-span\">(2,\u20092)</span>, <span class=\"tex-span\">(2,\u20093)</span>. In this case, for any of four possible positions of the scoop-net (highlighted with light green), the number of fishes inside is equal to two, and so is the expected value.</p><center> <img class=\"tex-graphics\" height=\"125px\" src=\"https://espresso.codeforces.com/2a12a65325f667fcdce20e253e14873a007c8704.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"567px\"/> </center>",
+    "contestId": 912,
+    "index": "D",
+    "name": "Fishes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "graphs",
+        "greedy",
+        "probabilities",
+        "shortest paths"
+    ],
+    "solvedCount": 1964
+}

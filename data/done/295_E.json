@@ -1,0 +1,29 @@
+{
+    "title": "E. Yaroslav and Points",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Yaroslav has <span class=\"tex-span\"><i>n</i></span> points that lie on the <span class=\"tex-span\"><i>Ox</i></span> axis. The coordinate of the first point is <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub></span>, the coordinate of the second point is <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">2</sub></span>, ..., the coordinate of the <span class=\"tex-span\"><i>n</i></span>-th point is \u2014 <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>n</i></sub></span>. Now Yaroslav wants to execute <span class=\"tex-span\"><i>m</i></span> queries, each of them is of one of the two following types:</p><ol> <li> Move the <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>j</i></sub></span>-th point from position <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>p</i><sub class=\"lower-index\"><i>j</i></sub></sub></span> to position <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>p</i><sub class=\"lower-index\"><i>j</i></sub></sub>\u2009+\u2009<i>d</i><sub class=\"lower-index\"><i>j</i></sub></span>. At that, it is guaranteed that after executing such query all coordinates of the points will be distinct. </li><li> Count the sum of distances between all pairs of points that lie on the segment <span class=\"tex-span\">[<i>l</i><sub class=\"lower-index\"><i>j</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>j</i></sub>]</span> <span class=\"tex-span\">(<i>l</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>j</i></sub>)</span>. In other words, you should count the sum of: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/527e5edcdc280c214fb887eba0a0b8b2f47c2602.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. </li></ol><p>Help Yaroslav.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> \u2014 the number of points <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>. The second line contains distinct integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span> \u2014 the coordinates of points <span class=\"tex-span\">(|<i>x</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>.</p><p>The third line contains integer <span class=\"tex-span\"><i>m</i></span> \u2014 the number of queries <span class=\"tex-span\">(1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>. The next <span class=\"tex-span\"><i>m</i></span> lines contain the queries. The <span class=\"tex-span\"><i>j</i></span>-th line first contains integer <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>j</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u20092)</span> \u2014 the query type. If <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>j</i></sub>\u2009=\u20091</span>, then it is followed by two integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>j</i></sub></span> and <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>j</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u2009<i>n</i>,\u2009|<i>d</i><sub class=\"lower-index\"><i>j</i></sub>|\u2009\u2264\u20091000)</span>. If <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>j</i></sub>\u2009=\u20092</span>, then it is followed by two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>j</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>j</i></sub></span> <span class=\"tex-span\">(\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>.</p><p>It is guaranteed that at any moment all the points have distinct coordinates.</p>",
+    "outputSpecification": "<p>For each type 2 query print the answer on a single line. Print the answers in the order, in which the queries follow in the input.</p><p>Please, do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in <span class=\"tex-font-style-it\">C++</span>. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams of the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "8<br/>36 50 28 -75 40 -60 -95 -48<br/>20<br/>2 -61 29<br/>1 5 -53<br/>1 1 429<br/>1 5 130<br/>2 -101 -71<br/>2 -69 53<br/>1 1 404<br/>1 5 518<br/>2 -101 53<br/>2 50 872<br/>1 1 -207<br/>2 -99 -40<br/>1 7 -389<br/>1 6 -171<br/>1 2 464<br/>1 7 -707<br/>1 1 -730<br/>1 1 560<br/>2 635 644<br/>1 7 -677<br/>",
+            "output": "176<br/>20<br/>406<br/>1046<br/>1638<br/>156<br/>0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 295,
+    "index": "E",
+    "name": "Yaroslav and Points",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures"
+    ],
+    "solvedCount": 655
+}

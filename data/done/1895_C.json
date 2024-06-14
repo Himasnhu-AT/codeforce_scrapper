@@ -1,0 +1,41 @@
+{
+    "title": "C. Torn Lucky Ticket",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A ticket is a non-empty string of digits from $$$1$$$ to $$$9$$$.</p><p>A <span class=\"tex-font-style-it\">lucky</span> ticket is such a ticket that: </p><ul> <li> it has an even length; </li><li> the sum of digits in the first half is equal to the sum of digits in the second half. </li></ul><p>You are given $$$n$$$ ticket pieces $$$s_1, s_2, \\dots, s_n$$$. How many pairs $$$(i, j)$$$ (for $$$1 \\le i, j \\le n$$$) are there such that $$$s_i + s_j$$$ is a <span class=\"tex-font-style-it\">lucky</span> ticket? Note that it's possible that $$$i=j$$$.</p><p>Here, the <span class=\"tex-font-style-tt\">+</span> operator denotes the concatenation of the two strings. For example, if $$$s_i$$$ is <span class=\"tex-font-style-tt\">13</span>, and $$$s_j$$$ is <span class=\"tex-font-style-tt\">37</span>, then $$$s_i + s_j$$$ is <span class=\"tex-font-style-tt\">1337</span>.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the number of ticket pieces.</p><p>The second line contains $$$n$$$ non-empty strings $$$s_1, s_2, \\dots, s_n$$$, each of length at most $$$5$$$ and consisting only of digits from $$$1$$$ to $$$9$$$.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the number of pairs $$$(i, j)$$$ (for $$$1 \\le i, j \\le n$$$) such that $$$s_i + s_j$$$ is a <span class=\"tex-font-style-it\">lucky</span> ticket.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">10</div><div class=\"test-example-line test-example-line-even test-example-line-0\">5 93746 59 3746 593 746 5937 46 59374 6</div>",
+            "output": "\n20\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2 22 222 2222 22222</div>",
+            "output": "\n13\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 1 1</div>",
+            "output": "\n9\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1895,
+    "index": "C",
+    "name": "Torn Lucky Ticket",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "hashing",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 10311
+}

@@ -1,0 +1,29 @@
+{
+    "title": "A. Dislike of Threes",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp doesn't like integers that are divisible by $$$3$$$ or end with the digit $$$3$$$ in their decimal representation. Integers that meet both conditions are disliked by Polycarp, too.</p><p>Polycarp starts to write out the positive (greater than $$$0$$$) integers which he likes: $$$1, 2, 4, 5, 7, 8, 10, 11, 14, 16, \\dots$$$. Output the $$$k$$$-th element of this sequence (the elements are numbered from $$$1$$$).</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$t$$$ ($$$1 \\le t \\le 100$$$) \u2014 the number of test cases. Then $$$t$$$ test cases follow.</p><p>Each test case consists of one line containing one integer $$$k$$$ ($$$1 \\le k \\le 1000$$$).</p>",
+    "outputSpecification": "<p>For each test case, output in a separate line one integer $$$x$$$ \u2014 the $$$k$$$-th element of the sequence that was written out by Polycarp.</p>",
+    "samples": [
+        {
+            "input": "\n10\n1\n2\n3\n4\n5\n6\n7\n8\n9\n1000\n",
+            "output": "\n1\n2\n4\n5\n7\n8\n10\n11\n14\n1666\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1560,
+    "index": "A",
+    "name": "Dislike of Threes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 56643
+}

@@ -1,0 +1,34 @@
+{
+    "title": "E. Fire",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp is in really serious trouble \u2014 his house is on fire! It's time to save the most valuable items. Polycarp estimated that it would take <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> seconds to save <span class=\"tex-span\"><i>i</i></span>-th item. In addition, for each item, he estimated the value of <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> \u2014 the moment after which the item <span class=\"tex-span\"><i>i</i></span> will be completely burned and will no longer be valuable for him at all. In particular, if <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2265\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub></span>, then <span class=\"tex-span\"><i>i</i></span>-th item cannot be saved.</p><p>Given the values <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> for each of the items, find a set of items that Polycarp can save such that the total value of this items is maximum possible. Polycarp saves the items one after another. For example, if he takes item <span class=\"tex-span\"><i>a</i></span> first, and then item <span class=\"tex-span\"><i>b</i></span>, then the item <span class=\"tex-span\"><i>a</i></span> will be saved in <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>a</i></sub></span> seconds, and the item <span class=\"tex-span\"><i>b</i></span> \u2014 in <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>a</i></sub>\u2009+\u2009<i>t</i><sub class=\"lower-index\"><i>b</i></sub></span> seconds after fire started.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) \u2014 the number of items in Polycarp's house.</p><p>Each of the following <span class=\"tex-span\"><i>n</i></span> lines contains three integers <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200920</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20092\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200920</span>) \u2014 the time needed to save the item <span class=\"tex-span\"><i>i</i></span>, the time after which the item <span class=\"tex-span\"><i>i</i></span> will burn completely and the value of item <span class=\"tex-span\"><i>i</i></span>.</p>",
+    "outputSpecification": "<p>In the first line print the maximum possible total value of the set of saved items. In the second line print one integer <span class=\"tex-span\"><i>m</i></span> \u2014 the number of items in the desired set. In the third line print <span class=\"tex-span\"><i>m</i></span> distinct integers \u2014 numbers of the saved items <span class=\"tex-font-style-it\">in the order Polycarp saves them</span>. Items are 1-indexed in the same order in which they appear in the input. If there are several answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "3<br/>3 7 4<br/>2 6 5<br/>3 7 6<br/>",
+            "output": "11<br/>2<br/>2 3 <br/>"
+        },
+        {
+            "input": "2<br/>5 6 1<br/>3 3 5<br/>",
+            "output": "1<br/>1<br/>1 <br/>"
+        }
+    ],
+    "note": "<p>In the first example Polycarp will have time to save any two items, but in order to maximize the total value of the saved items, he must save the second and the third item. For example, he can firstly save the third item in <span class=\"tex-span\">3</span> seconds, and then save the second item in another <span class=\"tex-span\">2</span> seconds. Thus, the total value of the saved items will be <span class=\"tex-span\">6\u2009+\u20095\u2009=\u200911</span>.</p><p>In the second example Polycarp can save only the first item, since even if he immediately starts saving the second item, he can save it in <span class=\"tex-span\">3</span> seconds, but this item will already be completely burned by this time.</p>",
+    "contestId": 864,
+    "index": "E",
+    "name": "Fire",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "sortings"
+    ],
+    "solvedCount": 4150
+}

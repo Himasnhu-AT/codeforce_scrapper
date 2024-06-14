@@ -1,0 +1,40 @@
+{
+    "title": "E. Beautiful Decomposition",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Valera considers a number <span class=\"tex-font-style-it\">beautiful</span>, if it equals <span class=\"tex-span\">2<sup class=\"upper-index\"><i>k</i></sup></span> or -<span class=\"tex-span\">2<sup class=\"upper-index\"><i>k</i></sup></span> for some integer <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(<i>k</i>\u2009\u2265\u20090)</span>. Recently, the math teacher asked Valera to represent number <span class=\"tex-span\"><i>n</i></span> as the sum of beautiful numbers. As Valera is really greedy, he wants to complete the task using as few beautiful numbers as possible. </p><p>Help Valera and find, how many numbers he is going to need. In other words, if you look at all decompositions of the number <span class=\"tex-span\"><i>n</i></span> into beautiful summands, you need to find the size of the decomposition which has the fewest summands.</p>",
+    "inputSpecification": "<p>The first line contains string <span class=\"tex-span\"><i>s</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>)</span>, that is the binary representation of number <span class=\"tex-span\"><i>n</i></span> without leading zeroes <span class=\"tex-span\">(<i>n</i>\u2009&gt;\u20090)</span>.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the minimum amount of beautiful numbers that give a total of <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "samples": [
+        {
+            "input": "10<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "111<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "1101101<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>In the first sample <span class=\"tex-span\"><i>n</i>\u2009=\u20092</span> is a beautiful number.</p><p>In the second sample <span class=\"tex-span\"><i>n</i>\u2009=\u20097</span> and Valera can decompose it into sum <span class=\"tex-span\">2<sup class=\"upper-index\">3</sup>\u2009+\u2009(\u2009-\u20092<sup class=\"upper-index\">0</sup>)</span>.</p><p>In the third sample <span class=\"tex-span\"><i>n</i>\u2009=\u2009109</span> can be decomposed into the sum of four summands as follows: <span class=\"tex-span\">2<sup class=\"upper-index\">7</sup>\u2009+\u2009(\u2009-\u20092<sup class=\"upper-index\">4</sup>)\u2009+\u2009(\u2009-\u20092<sup class=\"upper-index\">2</sup>)\u2009+\u20092<sup class=\"upper-index\">0</sup></span>.</p>",
+    "contestId": 279,
+    "index": "E",
+    "name": "Beautiful Decomposition",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "games",
+        "greedy",
+        "number theory"
+    ],
+    "solvedCount": 1416
+}

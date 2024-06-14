@@ -1,0 +1,38 @@
+{
+    "title": "A. Petr and a calendar",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Petr wants to make a calendar for current month. For this purpose he draws a table in which columns correspond to weeks (a week is seven consequent days from Monday to Sunday), rows correspond to weekdays, and cells contain dates. For example, a calendar for January 2017 should look like on the picture:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c20b20c789cb0552b5b98756a67466159ecfcc86.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Petr wants to know how many columns his table should have given the month and the weekday of the first date of that month? Assume that the year is non-leap.</p>",
+    "inputSpecification": "<p>The only line contain two integers <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200912</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>d</i>\u2009\u2264\u20097</span>)\u00a0\u2014 the number of month (January is the first month, December is the twelfth) and the weekday of the first date of this month (<span class=\"tex-span\">1</span> is Monday, <span class=\"tex-span\">7</span> is Sunday).</p>",
+    "outputSpecification": "<p>Print single integer: the number of columns the table should have.</p>",
+    "samples": [
+        {
+            "input": "1 7<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "1 1<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "11 6<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": "<p>The first example corresponds to the January 2017 shown on the picture in the statements.</p><p>In the second example <span class=\"tex-span\">1</span>-st January is Monday, so the whole month fits into <span class=\"tex-span\">5</span> columns.</p><p>In the third example <span class=\"tex-span\">1</span>-st November is Saturday and <span class=\"tex-span\">5</span> columns is enough.</p>",
+    "contestId": 760,
+    "index": "A",
+    "name": "Petr and a calendar",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 7753
+}

@@ -1,0 +1,40 @@
+{
+    "title": "E. The Child and Binary Tree",
+    "timeLimit": {
+        "value": 7.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Our child likes computer science very much, especially he likes binary trees.</p><p>Consider the sequence of <span class=\"tex-span\"><i>n</i></span> distinct positive integers: <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub>,\u2009<i>c</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>c</i><sub class=\"lower-index\"><i>n</i></sub></span>. The child calls a vertex-weighted rooted binary tree <span class=\"tex-font-style-it\">good</span> if and only if for every vertex <span class=\"tex-span\"><i>v</i></span>, the weight of <span class=\"tex-span\"><i>v</i></span> is in the set <span class=\"tex-span\">{<i>c</i><sub class=\"lower-index\">1</sub>,\u2009<i>c</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>c</i><sub class=\"lower-index\"><i>n</i></sub>}</span>. Also our child thinks that the <span class=\"tex-font-style-it\">weight</span> of a vertex-weighted tree is the sum of all vertices' weights.</p><p>Given an integer <span class=\"tex-span\"><i>m</i></span>, can you for all <span class=\"tex-span\"><i>s</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>s</i>\u2009\u2264\u2009<i>m</i>)</span> calculate the number of good vertex-weighted rooted binary trees with weight <span class=\"tex-span\"><i>s</i></span>? Please, check the samples for better understanding what trees are considered different.</p><p>We only want to know the answer modulo <span class=\"tex-span\">998244353</span> (<span class=\"tex-span\">7\u2009\u00d7\u200917\u2009\u00d7\u20092<sup class=\"upper-index\">23</sup>\u2009+\u20091</span>, a prime number).</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i>,\u2009<i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>;\u00a01\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>. The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated pairwise distinct integers <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub>,\u2009<i>c</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>c</i><sub class=\"lower-index\"><i>n</i></sub></span>. <span class=\"tex-span\">(1\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>m</i></span> lines, each line containing a single integer. The <span class=\"tex-span\"><i>i</i></span>-th line must contain the number of good vertex-weighted rooted binary trees whose weight exactly equal to <span class=\"tex-span\"><i>i</i></span>. Print the answers modulo <span class=\"tex-span\">998244353</span> (<span class=\"tex-span\">7\u2009\u00d7\u200917\u2009\u00d7\u20092<sup class=\"upper-index\">23</sup>\u2009+\u20091</span>, a prime number).</p>",
+    "samples": [
+        {
+            "input": "2 3<br/>1 2<br/>",
+            "output": "1<br/>3<br/>9<br/>"
+        },
+        {
+            "input": "3 10<br/>9 4 3<br/>",
+            "output": "0<br/>0<br/>1<br/>1<br/>0<br/>2<br/>4<br/>2<br/>6<br/>15<br/>"
+        },
+        {
+            "input": "5 10<br/>13 10 6 4 15<br/>",
+            "output": "0<br/>0<br/>0<br/>1<br/>0<br/>1<br/>0<br/>2<br/>0<br/>5<br/>"
+        }
+    ],
+    "note": "<p>In the first example, there are <span class=\"tex-span\">9</span> good vertex-weighted rooted binary trees whose weight exactly equal to <span class=\"tex-span\">3</span>:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c26711298f19d57f9ef181d49471d34e23d27343.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 438,
+    "index": "E",
+    "name": "The Child and Binary Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "divide and conquer",
+        "fft",
+        "number theory"
+    ],
+    "solvedCount": 1804
+}

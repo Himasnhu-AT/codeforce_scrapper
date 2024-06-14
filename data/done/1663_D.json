@@ -1,0 +1,27 @@
+{
+    "title": "D. Is it rated - 3",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"input-specification\"><div class=\"section-title\">Input</div><p>The first line contains a string $$$S$$$.</p><p>The second line contains an integer $$$X$$$.</p><p><span class=\"tex-font-style-bf\">Constraints</span> </p><ul> <li> $$$|S|=3$$$ </li><li> $$$0 \\le X \\le 10^9$$$ </li><li> The input is guaranteed to be valid. </li></ul></div>",
+    "inputSpecification": "<p>The first line contains a string $$$S$$$.</p><p>The second line contains an integer $$$X$$$.</p><p><span class=\"tex-font-style-bf\">Constraints</span> </p><ul> <li> $$$|S|=3$$$ </li><li> $$$0 \\le X \\le 10^9$$$ </li><li> The input is guaranteed to be valid. </li></ul>",
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1663,
+    "index": "D",
+    "name": "Is it rated - 3",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "combinatorics",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 1393
+}

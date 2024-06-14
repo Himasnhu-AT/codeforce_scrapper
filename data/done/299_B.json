@@ -1,0 +1,38 @@
+{
+    "title": "B. Ksusha the Squirrel",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Ksusha the Squirrel is standing at the beginning of a straight road, divided into <span class=\"tex-span\"><i>n</i></span> sectors. The sectors are numbered 1 to <span class=\"tex-span\"><i>n</i></span>, from left to right. Initially, Ksusha stands in sector 1. </p><p>Ksusha wants to walk to the end of the road, that is, get to sector <span class=\"tex-span\"><i>n</i></span>. Unfortunately, there are some rocks on the road. We know that Ksusha hates rocks, so she doesn't want to stand in sectors that have rocks.</p><p>Ksusha the squirrel keeps fit. She can jump from sector <span class=\"tex-span\"><i>i</i></span> to any of the sectors <span class=\"tex-span\"><i>i</i>\u2009+\u20091,\u2009<i>i</i>\u2009+\u20092,\u2009...,\u2009<i>i</i>\u2009+\u2009<i>k</i></span>. </p><p>Help Ksusha! Given the road description, say if she can reach the end of the road (note, she cannot stand on a rock)?</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup>,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup>)</span>. The next line contains <span class=\"tex-span\"><i>n</i></span> characters \u2014 the description of the road: the <span class=\"tex-span\"><i>i</i></span>-th character equals \"<span class=\"tex-font-style-tt\">.</span>\", if the <span class=\"tex-span\"><i>i</i></span>-th sector contains no rocks. Otherwise, it equals \"<span class=\"tex-font-style-tt\">#</span>\".</p><p>It is guaranteed that the first and the last characters equal \"<span class=\"tex-font-style-tt\">.</span>\".</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" (without the quotes) if Ksusha can reach the end of the road, otherwise print \"<span class=\"tex-font-style-tt\">NO</span>\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "2 1<br/>..<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "5 2<br/>.#.#.<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "7 3<br/>.#.###.<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 299,
+    "index": "B",
+    "name": "Ksusha the Squirrel",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 5159
+}

@@ -1,0 +1,31 @@
+{
+    "title": "D. Balanced Subsequences",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A sequence of brackets is called balanced if one can turn it into a valid math expression by adding characters <span class=\"tex-font-style-tt\">'+'</span> and <span class=\"tex-font-style-tt\">'1'</span>. For example, sequences <span class=\"tex-font-style-tt\">'(())()', '()',</span> and <span class=\"tex-font-style-tt\">'(()(()))'</span> are balanced, while <span class=\"tex-font-style-tt\">')(', '(()',</span> and <span class=\"tex-font-style-tt\">'(()))('</span> are not.</p><p>A subsequence is a sequence that can be derived from the given sequence by deleting zero or more elements without changing the order of the remaining elements.</p><p>You are given three integers $$$n$$$, $$$m$$$ and $$$k$$$. Find the number of sequences consisting of $$$n$$$ <span class=\"tex-font-style-tt\">'('</span> and $$$m$$$ <span class=\"tex-font-style-tt\">')'</span>, such that the longest balanced subsequence is of length $$$2 \\cdot k$$$. Since the answer can be large calculate it modulo $$$1\\,000\\,000\\,007$$$ ($$$10^9 + 7$$$).</p>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \\le t \\le 3 \\cdot 10^3$$$). Description of the test cases follows.</p><p>The first line of each test case contains three integers $$$n$$$, $$$m$$$ and $$$k$$$ ($$$1 \\le n, m, k \\le 2 \\cdot 10^3$$$)</p>",
+    "outputSpecification": "<p>For each test case, print one integer \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 2 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 2 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 2 1</div>",
+            "output": "\n2\n0\n4\n"
+        }
+    ],
+    "note": "<p>For the first test case <span class=\"tex-font-style-tt\">\"()()\", \"(())\"</span> are the $$$2$$$ sequences</p><p>For the second test case no sequence is possible.</p><p>For the third test case <span class=\"tex-font-style-tt\">\")((()\", \")(()(\", \")()((\", \"())((\"</span> are the $$$4$$$ sequences.</p>",
+    "contestId": 1924,
+    "index": "D",
+    "name": "Balanced Subsequences",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 794
+}

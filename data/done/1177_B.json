@@ -1,0 +1,35 @@
+{
+    "title": "B. Digits Sequence (Hard Edition)",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's write all the positive integer numbers one after another from $$$1$$$ without any delimiters (i.e. as a single string). It will be the infinite sequence starting with <span class=\"tex-font-style-tt\">123456789101112131415161718192021222324252627282930313233343536...</span></p><p>Your task is to print the $$$k$$$-th digit of this sequence.</p>",
+    "inputSpecification": "<p>The first and only line contains integer $$$k$$$ ($$$1 \\le k \\le 10^{12}$$$) \u2014 the position to process ($$$1$$$-based index).</p>",
+    "outputSpecification": "<p>Print the $$$k$$$-th digit of the resulting infinite sequence.</p>",
+    "samples": [
+        {
+            "input": "\n7\n",
+            "output": "\n7\n"
+        },
+        {
+            "input": "\n21\n",
+            "output": "\n5\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1177,
+    "index": "B",
+    "name": "Digits Sequence (Hard Edition)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "divide and conquer",
+        "implementation"
+    ],
+    "solvedCount": 2415
+}

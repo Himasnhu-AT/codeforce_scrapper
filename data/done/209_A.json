@@ -1,0 +1,34 @@
+{
+    "title": "A. Multicolored Marbles",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarpus plays with red and blue marbles. He put <span class=\"tex-span\"><i>n</i></span> marbles from the left to the right in a row. As it turned out, the marbles form a <span class=\"tex-font-style-it\">zebroid</span>.</p><p>A non-empty sequence of red and blue marbles is a <span class=\"tex-font-style-it\">zebroid</span>, if the colors of the marbles in this sequence alternate. For example, sequences (<span class=\"tex-font-style-tt\">red; blue; red</span>) and (<span class=\"tex-font-style-tt\">blue</span>) are zebroids and sequence (<span class=\"tex-font-style-tt\">red; red</span>) is not a zebroid.</p><p>Now Polycarpus wonders, how many ways there are to pick a zebroid <span class=\"tex-font-style-bf\">subsequence</span> from this sequence. Help him solve the problem, find the number of ways modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup>)</span> \u2014 the number of marbles in Polycarpus's sequence.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the answer to the problem modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "4<br/>",
+            "output": "11<br/>"
+        }
+    ],
+    "note": "<p>Let's consider the first test sample. Let's assume that Polycarpus initially had sequence (<span class=\"tex-font-style-tt\">red; blue; red</span>), so there are six ways to pick a zebroid: </p><ul> <li> pick the first marble; </li><li> pick the second marble; </li><li> pick the third marble; </li><li> pick the first and second marbles; </li><li> pick the second and third marbles; </li><li> pick the first, second and third marbles. </li></ul><p>It can be proven that if Polycarpus picks (<span class=\"tex-font-style-tt\">blue; red; blue</span>) as the initial sequence, the number of ways won't change.</p>",
+    "contestId": 209,
+    "index": "A",
+    "name": "Multicolored Marbles",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "math"
+    ],
+    "solvedCount": 2263
+}

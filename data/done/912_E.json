@@ -1,0 +1,38 @@
+{
+    "title": "E. Prime Gift",
+    "timeLimit": {
+        "value": 3.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Opposite to Grisha's nice behavior, Oleg, though he has an entire year at his disposal, didn't manage to learn how to solve number theory problems in the past year. That's why instead of Ded Moroz he was visited by his teammate Andrew, who solemnly presented him with a set of <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-font-style-bf\">distinct prime</span> numbers alongside with a simple task: Oleg is to find the <span class=\"tex-span\"><i>k</i></span>-th smallest integer, such that <span class=\"tex-font-style-bf\">all</span> its prime divisors are in this set. </p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200916</span>).</p><p>The next line lists <span class=\"tex-span\"><i>n</i></span> distinct prime numbers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>) in ascending order.</p><p>The last line gives a single integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i></span>). It is guaranteed that the <span class=\"tex-span\"><i>k</i></span>-th smallest integer such that all its prime divisors are in this set does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">18</sup></span>.</p>",
+    "outputSpecification": "<p>Print a single line featuring the <span class=\"tex-span\"><i>k</i></span>-th smallest integer. It's guaranteed that the answer doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">18</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>2 3 5<br/>7<br/>",
+            "output": "8<br/>"
+        },
+        {
+            "input": "5<br/>3 7 11 13 31<br/>17<br/>",
+            "output": "93<br/>"
+        }
+    ],
+    "note": "<p>The list of numbers with all prime divisors inside <span class=\"tex-span\">{2,\u20093,\u20095}</span> begins as follows:</p><p><span class=\"tex-span\">(1,\u20092,\u20093,\u20094,\u20095,\u20096,\u20098,\u2009...)</span></p><p>The seventh number in this list (<span class=\"tex-span\">1</span>-indexed) is eight.</p>",
+    "contestId": 912,
+    "index": "E",
+    "name": "Prime Gift",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "dfs and similar",
+        "math",
+        "meet-in-the-middle",
+        "number theory",
+        "two pointers"
+    ],
+    "solvedCount": 1496
+}

@@ -1,0 +1,38 @@
+{
+    "title": "E. Dima and Game",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Dima and Anya love playing different games. Now Dima has imagined a new game that he wants to play with Anya.</p><p>Dima writes <span class=\"tex-span\"><i>n</i></span> pairs of integers on a piece of paper <span class=\"tex-span\">(<i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>)</span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>p</i>)</span>. Then players take turns. On his turn the player can do the following actions:</p><ol> <li> choose the number of the pair <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i>)</span>, such that <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009-\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&gt;\u20092</span>; </li><li> replace pair number <span class=\"tex-span\"><i>i</i></span> by pair <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/165e2666291c061e90369a86105632c3b551f237.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> or by pair <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4756eda794b8f0bf8cf2cc9f6f2cc19c194b35b7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Notation <span class=\"tex-span\">\u230a<i>x</i>\u230b</span> means rounding down to the closest integer. </li></ol><p>The player who can't make a move loses.</p><p>Of course, Dima wants Anya, who will move first, to win. That's why Dima should write out such <span class=\"tex-span\"><i>n</i></span> pairs of integers <span class=\"tex-span\">(<i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>)</span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>p</i>)</span>, that if both players play optimally well, the first one wins. Count the number of ways in which Dima can do it. Print the remainder after dividing the answer by number <span class=\"tex-span\">1000000007\u00a0(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p><p>Two ways are considered distinct, if the <span class=\"tex-font-style-bf\">ordered</span> sequences of the written pairs are distinct.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>p</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000,\u20091\u2009\u2264\u2009<i>p</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>. The numbers are separated by a single space.</p>",
+    "outputSpecification": "<p>In a single line print the remainder after dividing the answer to the problem by number <span class=\"tex-span\">1000000007\u00a0(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "2 2<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "4 4<br/>",
+            "output": "520<br/>"
+        },
+        {
+            "input": "100 1000<br/>",
+            "output": "269568947<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 273,
+    "index": "E",
+    "name": "Dima and Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "games"
+    ],
+    "solvedCount": 363
+}

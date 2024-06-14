@@ -1,0 +1,33 @@
+{
+    "title": "E. Berland collider",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Recently the construction of Berland collider has been completed. Collider can be represented as a long narrow tunnel that contains <span class=\"tex-span\"><i>n</i></span> particles. We associate with collider 1-dimensional coordinate system, going from left to right. For each particle we know its coordinate and velocity at the moment of start of the collider. The velocities of the particles don't change after the launch of the collider. Berland scientists think that the big bang will happen at the first collision of particles, whose velocities differs in directions. Help them to determine how much time elapses after the launch of the collider before the big bang happens.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20095\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 amount of particles in the collider. Next <span class=\"tex-span\"><i>n</i></span> lines contain description of particles. Each particle is described by two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u20090</span>) \u2014 coordinate and velocity respectively. All the coordinates are distinct. The particles are listed in order of increasing of coordinates. All the coordinates are in meters, and all the velocities \u2014 in meters per second. The negative velocity means that after the start of collider the particle will move to the left, and the positive \u2014 that the particle will move to the right.</p>",
+    "outputSpecification": "<p>If there will be no big bang, output <span class=\"tex-font-style-tt\">-1</span>. Otherwise output one number \u2014 how much time in seconds elapses after the launch of the collider before the big bang happens. Your answer must have a relative or absolute error less than <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20099</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>-5 9<br/>0 1<br/>5 -1<br/>",
+            "output": "1.00000000000000000000<br/>"
+        },
+        {
+            "input": "6<br/>1 3<br/>2 3<br/>3 3<br/>4 -3<br/>5 -1<br/>6 -100<br/>",
+            "output": "0.02912621359223301065<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 24,
+    "index": "E",
+    "name": "Berland collider",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search"
+    ],
+    "solvedCount": 868
+}

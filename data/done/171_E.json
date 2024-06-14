@@ -1,0 +1,24 @@
+{
+    "title": "E. MYSTERIOUS LANGUAGE",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a mysterious language (codenamed \"Secret\") available in \"Custom Test\" tab. Find out what this language is and write a program which outputs its name. Note that the program must be written in this language.</p>",
+    "inputSpecification": "<p>This program has only one test, and it's empty (it doesn't give your program anything to read).</p>",
+    "outputSpecification": "<p>Output the name of the mysterious language.</p>",
+    "samples": [],
+    "note": null,
+    "contestId": 171,
+    "index": "E",
+    "name": "MYSTERIOUS LANGUAGE",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 1408
+}

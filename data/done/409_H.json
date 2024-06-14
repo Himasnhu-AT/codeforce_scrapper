@@ -1,0 +1,37 @@
+{
+    "title": "H. A + B Strikes Back",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A + B is often used as an example of the easiest problem possible to show some contest platform. However, some scientists have observed that sometimes this problem is not so easy to get accepted. Want to try?</p>",
+    "inputSpecification": "<p>The input contains two integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">3</sup></span>), separated by a single space.</p>",
+    "outputSpecification": "<p>Output the sum of the given integers.</p>",
+    "samples": [
+        {
+            "input": "5 14<br/>",
+            "output": "19<br/>"
+        },
+        {
+            "input": "381 492<br/>",
+            "output": "873<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 409,
+    "index": "H",
+    "name": "A + B Strikes Back",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "brute force",
+        "constructive algorithms",
+        "dsu",
+        "implementation"
+    ],
+    "solvedCount": 8719
+}

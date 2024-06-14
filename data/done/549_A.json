@@ -1,0 +1,42 @@
+{
+    "title": "A. Face Detection",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The developers of Looksery have to write an efficient algorithm that detects faces on a picture. Unfortunately, they are currently busy preparing a contest for you, so you will have to do it for them. </p><p>In this problem an image is a rectangular table that consists of lowercase Latin letters. A face on the image is a <span class=\"tex-span\">2\u2009\u00d7\u20092</span> square, such that from the four letters of this square you can make word \"<span class=\"tex-font-style-tt\">face</span>\". </p><p>You need to write a program that determines the number of faces on the image. The squares that correspond to the faces can overlap.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers, <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200950</span>) \u2014 the height and the width of the image, respectively.</p><p>Next <span class=\"tex-span\"><i>n</i></span> lines define the image. Each line contains <span class=\"tex-span\"><i>m</i></span> lowercase Latin letters.</p>",
+    "outputSpecification": "<p>In the single line print the number of faces on the image.</p>",
+    "samples": [
+        {
+            "input": "4 4<br/>xxxx<br/>xfax<br/>xcex<br/>xxxx<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "4 2<br/>xx<br/>cf<br/>ae<br/>xx<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 3<br/>fac<br/>cef<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "1 4<br/>face<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the image contains a single face, located in a square with the upper left corner at the second line and the second column: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/389339ab40469c15eda985e7363cef977bb0c0ac.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second sample the image also contains exactly one face, its upper left corner is at the second row and the first column.</p><p>In the third sample two faces are shown: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/cffbbe0a04d157424c5d7426f0caf7f3f1e87974.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the fourth sample the image has no faces on it.</p>",
+    "contestId": 549,
+    "index": "A",
+    "name": "Face Detection",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 9369
+}

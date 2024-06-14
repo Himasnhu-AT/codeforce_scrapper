@@ -1,0 +1,39 @@
+{
+    "title": "H. Guess the Perimeter",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let us call a point of the plane <span class=\"tex-font-style-it\">admissible</span> if its coordinates are positive integers less than or equal to $$$200$$$.</p><p>There is an invisible rectangle such that: </p><ul> <li> its vertices are all admissible; </li><li> its sides are parallel to the coordinate axes; </li><li> its area is strictly positive. </li></ul> Your task is to guess the perimeter of this rectangle.<p>In order to guess it, you may ask at most $$$4$$$ queries. </p><p>In each query, you choose a nonempty subset of the admissible points and you are told how many of the chosen points are inside or on the boundary of the invisible rectangle.</p>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n13 5 123 80\n",
+            "output": "\n"
+        },
+        {
+            "input": "\n2 2 4 4\n",
+            "output": "\n"
+        },
+        {
+            "input": "\n1 1 200 200\n",
+            "output": "\n"
+        }
+    ],
+    "note": "<p>The following is an example of interaction for the <span class=\"tex-font-style-bf\">first sample</span> intended to show the format of the queries. $$$$$$ \\begin{array}{l|l|l} \\text{Query (contestant program)} &amp; \\text{Answer (interactor)} &amp; \\text{Explanation} \\\\ \\hline \\mathtt{?\\ 4} &amp; &amp; \\text{We choose the $4$ vertices of} \\\\ \\mathtt{13\\ 5\\ 13\\ 80\\ 123\\ 5\\ 123\\ 80} &amp; \\mathtt{4} &amp;\\text{the hidden rectangle.}\\\\ \\hline \\mathtt{?\\ 5} &amp; &amp; \\text{We choose $4$ points just outside the hidden}\\\\ \\mathtt{100\\ 4\\ 100\\ 81\\ 12\\ 40\\ 124\\ 40\\ 50\\ 50} &amp; \\mathtt{1}&amp; \\text{rectangle and also the point $(50,50)$.}\\\\ \\hline \\mathtt{?\\ 2} &amp; &amp; \\text{We choose the points $(1, 1)$} \\\\ \\mathtt{200\\ 200\\ 1\\ 1} &amp; \\mathtt{0} &amp; \\text{and $(200,200)$.}\\\\ \\hline \\mathtt{!\\ 370} &amp; &amp; \\text{This is the correct perimeter.} \\end{array} $$$$$$</p><p>For the <span class=\"tex-font-style-bf\">second sample</span>, a possible interaction is the following. $$$$$$ \\begin{array}{l|l|l} \\text{Query (contestant program)} &amp; \\text{Answer (interactor)} &amp; \\text{Explanation} \\\\ \\hline \\mathtt{?\\ 4} &amp; &amp; \\text{We choose the points $(3, 2)$, $(4, 1)$,} \\\\ \\mathtt{3\\ 2\\ 4\\ 1\\ 5\\ 2\\ 4\\ 3} &amp; 2 &amp; \\text{$(5, 2)$ and $(4, 3)$.} \\\\ \\hline \\mathtt{?\\ 7} &amp; &amp; \\text{We choose the points $(1, 4)$, $(2, 4)$,} \\\\ \\mathtt{1\\ 4\\ 2\\ 4\\ 1\\ 5\\ 2\\ 5\\ 5\\ 5\\ 5\\ 6\\ 6\\ 5} &amp; 1 &amp; \\text{$(1, 5)$, $(2, 5)$, $(5, 5)$, $(5, 6)$ and $(6, 5)$.} \\\\ \\hline \\mathtt{!\\ 8} &amp; &amp; \\text{This is the correct perimeter.} \\end{array} $$$$$$ The situation is shown in the following picture:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1dc337771e562ff5ecc4668df3c3c2a6bd0cda22.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The green points are the ones belonging to the first query, while the orange points are the ones belonging to the second query. One can see that there are exactly two rectangles consistent with the interactor's answers: </p><ul> <li> the rectangle of vertices $$$(2, 2)$$$ and $$$(4, 4)$$$, shown in red; </li><li> the rectangle of vertices $$$(4, 2)$$$ and $$$(5, 5)$$$, shown in blue. </li></ul> Since both of these rectangles have perimeter $$$8$$$, this is the final answer.",
+    "contestId": 1552,
+    "index": "H",
+    "name": "Guess the Perimeter",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "interactive",
+        "number theory"
+    ],
+    "solvedCount": 326
+}

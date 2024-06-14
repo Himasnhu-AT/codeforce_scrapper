@@ -1,0 +1,39 @@
+{
+    "title": "A. k-Factorization",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Given a positive integer <span class=\"tex-span\"><i>n</i></span>, find <span class=\"tex-span\"><i>k</i></span> integers (not necessary distinct) such that all these integers are strictly greater than <span class=\"tex-span\">1</span>, and their product is equal to <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200920</span>).</p>",
+    "outputSpecification": "<p>If it's impossible to find the representation of <span class=\"tex-span\"><i>n</i></span> as a product of <span class=\"tex-span\"><i>k</i></span> numbers, print <span class=\"tex-font-style-tt\">-1</span>.</p><p>Otherwise, print <span class=\"tex-span\"><i>k</i></span> integers in any order. Their product must be equal to <span class=\"tex-span\"><i>n</i></span>. If there are multiple answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "100000 2<br/>",
+            "output": "2 50000 <br/>"
+        },
+        {
+            "input": "100000 20<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "1024 5<br/>",
+            "output": "2 64 2 2 2 <br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 797,
+    "index": "A",
+    "name": "k-Factorization",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 14325
+}

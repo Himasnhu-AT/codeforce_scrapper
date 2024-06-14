@@ -1,0 +1,32 @@
+{
+    "title": "E. Verifying Kingdom",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is an interactive problem.</span></p><p>The judge has a hidden rooted full binary tree with <span class=\"tex-span\"><i>n</i></span> leaves. A full binary tree is one where every node has either <span class=\"tex-span\">0</span> or <span class=\"tex-span\">2</span> children. The nodes with <span class=\"tex-span\">0</span> children are called the leaves of the tree. Since this is a full binary tree, there are exactly <span class=\"tex-span\">2<i>n</i>\u2009-\u20091</span> nodes in the tree. The leaves of the judge's tree has labels from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. You would like to reconstruct a tree that is isomorphic to the judge's tree. To do this, you can ask some questions.</p><p>A question consists of printing the label of three distinct leaves <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009<i>a</i><sub class=\"lower-index\">3</sub></span>. Let the <span class=\"tex-font-style-it\">depth</span> of a node be the shortest distance from the node to the root of the tree. Let <span class=\"tex-span\"><i>LCA</i>(<i>a</i>,\u2009<i>b</i>)</span> denote the node with maximum depth that is a common ancestor of the nodes <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>.</p><p>Consider <span class=\"tex-span\"><i>X</i>\u2009=\u2009<i>LCA</i>(<i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>),\u2009<i>Y</i>\u2009=\u2009<i>LCA</i>(<i>a</i><sub class=\"lower-index\">2</sub>,\u2009<i>a</i><sub class=\"lower-index\">3</sub>),\u2009<i>Z</i>\u2009=\u2009<i>LCA</i>(<i>a</i><sub class=\"lower-index\">3</sub>,\u2009<i>a</i><sub class=\"lower-index\">1</sub>)</span>. The judge will tell you which one of <span class=\"tex-span\"><i>X</i>,\u2009<i>Y</i>,\u2009<i>Z</i></span> has the maximum depth. Note, this pair is uniquely determined since the tree is a binary tree; there can't be any ties. </p><p>More specifically, if <span class=\"tex-span\"><i>X</i></span> (or <span class=\"tex-span\"><i>Y</i></span>, <span class=\"tex-span\"><i>Z</i></span> respectively) maximizes the depth, the judge will respond with the string \"<span class=\"tex-font-style-tt\">X</span>\" (or \"<span class=\"tex-font-style-tt\">Y</span>\", \"<span class=\"tex-font-style-tt\">Z</span>\" respectively). </p><p>You may only ask at most <span class=\"tex-span\">10\u00b7<i>n</i></span> questions.</p>",
+    "inputSpecification": "<p>The first line of input will contain a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091\u2009000</span>)\u00a0\u2014 the number of leaves in the tree.</p>",
+    "outputSpecification": "<p>To print the final answer, print out the string \"<span class=\"tex-font-style-tt\">-1</span>\" on its own line. Then, the next line should contain <span class=\"tex-span\">2<i>n</i>\u2009-\u20091</span> integers. The <span class=\"tex-span\"><i>i</i></span>-th integer should be the parent of the <span class=\"tex-span\"><i>i</i></span>-th node, or -1, if it is the root.</p><p>Your answer will be judged correct if your output is isomorphic to the judge's tree. In particular, the labels of the leaves do not need to be labeled from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. Here, isomorphic means that there exists a permutation <span class=\"tex-span\">\u03c0</span> such that node <span class=\"tex-span\"><i>i</i></span> is the parent of node <span class=\"tex-span\"><i>j</i></span> in the judge tree if and only node <span class=\"tex-span\">\u03c0(<i>i</i>)</span> is the parent of node <span class=\"tex-span\">\u03c0(<i>j</i>)</span> in your tree.</p>",
+    "samples": [
+        {
+            "input": "<br/>n<br/>p_1 p_2 ... p_{2n-1}<br/>",
+            "output": "5<br/>X<br/>Z<br/>Y<br/>Y<br/>X<span class=\"tex-font-style-tt\"></span><br/>"
+        }
+    ],
+    "note": "<p>For the first sample, the judge has the hidden tree:</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2c9cae7de194cc1bc508ea7243ff4d0d509d34bd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>Here is a more readable format of the interaction: </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1cfb86747dfd0278bc848ef24aa3a158e4ce0220.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center> The last line can also be <span class=\"tex-font-style-tt\">8 6 9 8 9 7 -1 6 7</span>. ",
+    "contestId": 772,
+    "index": "E",
+    "name": "Verifying Kingdom",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "divide and conquer",
+        "interactive",
+        "trees"
+    ],
+    "solvedCount": 123
+}

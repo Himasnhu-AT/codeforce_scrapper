@@ -1,0 +1,35 @@
+{
+    "title": "F. Restore a Number",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasya decided to pass a very large integer <span class=\"tex-span\"><i>n</i></span> to Kate. First, he wrote that number as a string, then he appended to the right integer <span class=\"tex-span\"><i>k</i></span>\u00a0\u2014 the number of digits in <span class=\"tex-span\"><i>n</i></span>. </p><p>Magically, all the numbers were shuffled in arbitrary order while this note was passed to Kate. The only thing that Vasya remembers, is a non-empty substring of <span class=\"tex-span\"><i>n</i></span> (a substring of <span class=\"tex-span\"><i>n</i></span> is a sequence of consecutive digits of the number <span class=\"tex-span\"><i>n</i></span>).</p><p>Vasya knows that there may be more than one way to restore the number <span class=\"tex-span\"><i>n</i></span>. Your task is to find the smallest possible initial integer <span class=\"tex-span\"><i>n</i></span>. Note that decimal representation of number <span class=\"tex-span\"><i>n</i></span> contained no leading zeroes, except the case the integer <span class=\"tex-span\"><i>n</i></span> was equal to zero itself (in this case a single digit <span class=\"tex-font-style-tt\">0</span> was used).</p>",
+    "inputSpecification": "<p>The first line of the input contains the string received by Kate. The number of digits in this string does not exceed <span class=\"tex-span\">1\u2009000\u2009000</span>.</p><p>The second line contains the substring of <span class=\"tex-span\"><i>n</i></span> which Vasya remembers. This string can contain leading zeroes. </p><p>It is guaranteed that the input data is correct, and the answer always exists.</p>",
+    "outputSpecification": "<p>Print the smalles integer <span class=\"tex-span\"><i>n</i></span> which Vasya could pass to Kate.</p>",
+    "samples": [
+        {
+            "input": "003512<br/>021<br/>",
+            "output": "30021<br/>"
+        },
+        {
+            "input": "199966633300<br/>63<br/>",
+            "output": "3036366999<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 670,
+    "index": "F",
+    "name": "Restore a Number",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "strings"
+    ],
+    "solvedCount": 848
+}

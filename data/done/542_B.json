@@ -1,0 +1,33 @@
+{
+    "title": "B. Duck Hunt",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A duck hunter is doing his favorite thing, hunting. He lives in a two dimensional world and is located at point <span class=\"tex-span\">(0,\u20090)</span>. As he doesn't like walking for his prey, he prefers to shoot only vertically up (because in this case, the ducks fall straight into his hands). The hunter doesn't reload the gun immediately \u2014 <span class=\"tex-span\"><i>r</i></span> or more seconds must pass between the shots. When the hunter shoots up, the bullet immediately hits all the ducks who are directly above the hunter.</p><p>In a two dimensional world each duck is a horizontal segment that moves horizontally in the negative direction of the <span class=\"tex-span\"><i>Ox</i></span> axis at the speed <span class=\"tex-span\">1</span> length unit per second. For each duck we know the values <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> \u2014 the <span class=\"tex-span\"><i>x</i></span>-coordinates of its head (the left end of the segment) and its tail (the right end of the segment) at time <span class=\"tex-span\">0</span>. The height where the duck is flying isn't important as the gun shoots vertically up to the infinite height and hits all the ducks on its way. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/cec68395ece9f7fabee67a21e04448f5a312beea.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">The figure to the first sample.</span> </center><p>What maximum number of ducks can the hunter shoot? The duck is considered shot by the hunter if at the moment of the shot at least one of its point intersects the <span class=\"tex-span\"><i>Oy</i></span> axis. After the hunter shoots the duck, it falls and it can't be shot anymore. The hunter cannot make shots before the moment of time 0.</p>",
+    "inputSpecification": "<p>The first line of the input contains integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>r</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>r</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the number of ducks and the minimum time in seconds between the shots. </p><p>Then <span class=\"tex-span\"><i>n</i></span> lines follow, each of them contains two integers <span class=\"tex-span\"><i>h</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>h</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the <span class=\"tex-span\"><i>x</i></span>-coordinate of the head and tail of the <span class=\"tex-span\"><i>i</i></span>-th duck at the moment <span class=\"tex-span\">0</span>.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the maximum number of ducks that can be shot by the hunter.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>-3 0<br/>1 3<br/>-1 2<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "4 5<br/>-1 1<br/>2 4<br/>5 9<br/>6 8<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the hunter must shoot at time 0, this shot kills ducks 1 and 3. Then the hunter needs to reload the gun and shoot again at time 3. His second shot hits the tail of duck 2.</p><p>In the second sample the hunter can make shots at times 0 and 6 to hit three ducks.</p>",
+    "contestId": 542,
+    "index": "B",
+    "name": "Duck Hunt",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures"
+    ],
+    "solvedCount": 190
+}

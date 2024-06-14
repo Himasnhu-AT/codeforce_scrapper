@@ -1,0 +1,39 @@
+{
+    "title": "A. Ilya and Diplomas",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Soon a school Olympiad in Informatics will be held in Berland, <span class=\"tex-span\"><i>n</i></span> schoolchildren will participate there.</p><p>At a meeting of the jury of the Olympiad it was decided that <span class=\"tex-font-style-it\">each</span> of the <span class=\"tex-span\"><i>n</i></span> participants, depending on the results, will get a diploma of the first, second or third degree. Thus, each student will receive exactly one diploma.</p><p>They also decided that there must be given at least <span class=\"tex-span\"><i>min</i><sub class=\"lower-index\">1</sub></span> and at most <span class=\"tex-span\"><i>max</i><sub class=\"lower-index\">1</sub></span> diplomas of the first degree, at least <span class=\"tex-span\"><i>min</i><sub class=\"lower-index\">2</sub></span> and at most <span class=\"tex-span\"><i>max</i><sub class=\"lower-index\">2</sub></span> diplomas of the second degree, and at least <span class=\"tex-span\"><i>min</i><sub class=\"lower-index\">3</sub></span> and at most <span class=\"tex-span\"><i>max</i><sub class=\"lower-index\">3</sub></span> diplomas of the third degree.</p><p>After some discussion it was decided to choose from all the options of distributing diplomas satisfying these limitations the one that maximizes the number of participants who receive diplomas of the first degree. Of all these options they select the one which maximizes the number of the participants who receive diplomas of the second degree. If there are multiple of these options, they select the option that maximizes the number of diplomas of the third degree.</p><p>Choosing the best option of distributing certificates was entrusted to Ilya, one of the best programmers of Berland. However, he found more important things to do, so it is your task now to choose the best option of distributing of diplomas, based on the described limitations.</p><p>It is guaranteed that the described limitations are such that there is a way to choose such an option of distributing diplomas that all <span class=\"tex-span\"><i>n</i></span> participants of the Olympiad will receive a diploma of some degree.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">6</sup></span>)\u00a0\u2014\u00a0the number of schoolchildren who will participate in the Olympiad.</p><p>The next line of the input contains two integers <span class=\"tex-span\"><i>min</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>max</i><sub class=\"lower-index\">1</sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>min</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>max</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>)\u00a0\u2014\u00a0the minimum and maximum limits on the number of diplomas of the first degree that can be distributed.</p><p>The third line of the input contains two integers <span class=\"tex-span\"><i>min</i><sub class=\"lower-index\">2</sub></span> and <span class=\"tex-span\"><i>max</i><sub class=\"lower-index\">2</sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>min</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u2009<i>max</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>)\u00a0\u2014\u00a0the minimum and maximum limits on the number of diplomas of the second degree that can be distributed. </p><p>The next line of the input contains two integers <span class=\"tex-span\"><i>min</i><sub class=\"lower-index\">3</sub></span> and <span class=\"tex-span\"><i>max</i><sub class=\"lower-index\">3</sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>min</i><sub class=\"lower-index\">3</sub>\u2009\u2264\u2009<i>max</i><sub class=\"lower-index\">3</sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>)\u00a0\u2014\u00a0the minimum and maximum limits on the number of diplomas of the third degree that can be distributed. </p><p>It is guaranteed that <span class=\"tex-span\"><i>min</i><sub class=\"lower-index\">1</sub>\u2009+\u2009<i>min</i><sub class=\"lower-index\">2</sub>\u2009+\u2009<i>min</i><sub class=\"lower-index\">3</sub>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009<i>max</i><sub class=\"lower-index\">1</sub>\u2009+\u2009<i>max</i><sub class=\"lower-index\">2</sub>\u2009+\u2009<i>max</i><sub class=\"lower-index\">3</sub></span>.</p>",
+    "outputSpecification": "<p>In the first line of the output print three numbers, showing how many diplomas of the first, second and third degree will be given to students in the optimal variant of distributing diplomas.</p><p>The optimal variant of distributing diplomas is the one that maximizes the number of students who receive diplomas of the first degree. Of all the suitable options, the best one is the one which maximizes the number of participants who receive diplomas of the second degree. If there are several of these options, the best one is the one that maximizes the number of diplomas of the third degree.</p>",
+    "samples": [
+        {
+            "input": "6<br/>1 5<br/>2 6<br/>3 7<br/>",
+            "output": "1 2 3 <br/>"
+        },
+        {
+            "input": "10<br/>1 2<br/>1 3<br/>1 5<br/>",
+            "output": "2 3 5 <br/>"
+        },
+        {
+            "input": "6<br/>1 3<br/>2 2<br/>2 2<br/>",
+            "output": "2 2 2 <br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 557,
+    "index": "A",
+    "name": "Ilya and Diplomas",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 8211
+}

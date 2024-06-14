@@ -1,0 +1,33 @@
+{
+    "title": "D. Exponentiation",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span> and <span class=\"tex-span\"><i>c</i></span>. Calculate <span class=\"tex-span\"><i>a</i><sup class=\"upper-index\"><i>b</i></sup></span> modulo <span class=\"tex-span\"><i>c</i></span>.</p>",
+    "inputSpecification": "<p>Input data contains numbers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span> and <span class=\"tex-span\"><i>c</i></span>, one number per line. Each number is an integer between <span class=\"tex-span\">1</span> and <span class=\"tex-span\">100</span>, inclusive.</p>",
+    "outputSpecification": "<p>Output <span class=\"tex-span\"><i>a</i><sup class=\"upper-index\"><i>b</i></sup></span> mod <span class=\"tex-span\"><i>c</i></span>.</p>",
+    "samples": [
+        {
+            "input": "2<br/>5<br/>40<br/>",
+            "output": "32<br/>"
+        },
+        {
+            "input": "2<br/>5<br/>26<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 130,
+    "index": "D",
+    "name": "Exponentiation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 384
+}

@@ -1,0 +1,39 @@
+{
+    "title": "E. Mod Mod Mod",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a sequence of integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. Let <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8767bb4afef7bf6fc8660faf93bd6c301ca33b64.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fee957ce3bd2c5eda97de1361a029a3ce8188743.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> for <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>n</i></span>. Here, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f52a9a86d828a54c4bc7e70dc407e45e8e5464a6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> denotes the modulus operation. Find the maximum value of <span class=\"tex-span\"><i>f</i>(<i>x</i>,\u20091)</span> over all nonnegative integers <span class=\"tex-span\"><i>x</i></span>. </p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200000</span>)\u00a0\u2014 the length of the sequence.</p><p>The second lines contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">13</sup></span>)\u00a0\u2014 the elements of the sequence.</p>",
+    "outputSpecification": "<p>Output a single integer\u00a0\u2014 the maximum value of <span class=\"tex-span\"><i>f</i>(<i>x</i>,\u20091)</span> over all nonnegative integers <span class=\"tex-span\"><i>x</i></span>.</p>",
+    "samples": [
+        {
+            "input": "2<br/>10 5<br/>",
+            "output": "13<br/>"
+        },
+        {
+            "input": "5<br/>5 4 3 2 1<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "4<br/>5 10 5 10<br/>",
+            "output": "16<br/>"
+        }
+    ],
+    "note": "<p>In the first example you can choose, for example, <span class=\"tex-span\"><i>x</i>\u2009=\u200919</span>.</p><p>In the second example you can choose, for example, <span class=\"tex-span\"><i>x</i>\u2009=\u20093</span> or <span class=\"tex-span\"><i>x</i>\u2009=\u20092</span>.</p>",
+    "contestId": 889,
+    "index": "E",
+    "name": "Mod Mod Mod",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 519
+}

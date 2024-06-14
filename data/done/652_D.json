@@ -1,0 +1,34 @@
+{
+    "title": "D. Nested Segments",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given <span class=\"tex-span\"><i>n</i></span> segments on a line. There are no ends of some segments that coincide. For each segment find the number of segments it contains.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 the number of segments on a line.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the coordinates of the left and the right ends of the <span class=\"tex-span\"><i>i</i></span>-th segment. It is guaranteed that there are no ends of some segments that coincide.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> lines. The <span class=\"tex-span\"><i>j</i></span>-th of them should contain the only integer <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>j</i></sub></span> \u2014 the number of segments contained in the <span class=\"tex-span\"><i>j</i></span>-th segment.</p>",
+    "samples": [
+        {
+            "input": "4<br/>1 8<br/>2 3<br/>4 7<br/>5 6<br/>",
+            "output": "3<br/>0<br/>1<br/>0<br/>"
+        },
+        {
+            "input": "3<br/>3 4<br/>1 5<br/>2 6<br/>",
+            "output": "0<br/>1<br/>1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 652,
+    "index": "D",
+    "name": "Nested Segments",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "sortings"
+    ],
+    "solvedCount": 3844
+}

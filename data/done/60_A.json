@@ -1,0 +1,42 @@
+{
+    "title": "A. Where Are My Flakes?",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/d1498b1262e9be4d39048f1d8d3113d0d81e77f4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>One morning the Cereal Guy found out that all his cereal flakes were gone. He found a note instead of them. It turned out that his smart roommate hid the flakes in one of <span class=\"tex-span\"><i>n</i></span> boxes. The boxes stand in one row, they are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> from the left to the right. The roommate left hints like \"Hidden to the left of the <span class=\"tex-span\"><i>i</i></span>-th box\" (\"<span class=\"tex-font-style-tt\">To the left of <span class=\"tex-span\"><i>i</i></span></span>\"), \"Hidden to the right of the <span class=\"tex-span\"><i>i</i></span>-th box\" (\"<span class=\"tex-font-style-tt\">To the right of <span class=\"tex-span\"><i>i</i></span></span>\"). Such hints mean that there are no flakes in the <span class=\"tex-span\"><i>i</i></span>-th box as well. The Cereal Guy wants to know the minimal number of boxes he necessarily needs to check to find the flakes considering all the hints. Or he wants to find out that the hints are contradictory and the roommate lied to him, that is, no box has the flakes.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000,\u20090\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20091000</span>) which represent the number of boxes and the number of hints correspondingly. Next <span class=\"tex-span\"><i>m</i></span> lines contain hints like \"<span class=\"tex-font-style-tt\">To the left of <span class=\"tex-span\"><i>i</i></span></span>\" and \"<span class=\"tex-font-style-tt\">To the right of <span class=\"tex-span\"><i>i</i></span></span>\", where <span class=\"tex-span\"><i>i</i></span> is integer (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>). The hints may coincide.</p>",
+    "outputSpecification": "<p>The answer should contain exactly one integer \u2014 the number of boxes that should necessarily be checked or \"<span class=\"tex-font-style-tt\">-1</span>\" if the hints are contradictory.</p>",
+    "samples": [
+        {
+            "input": "2 1<br/>To the left of 2<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3 2<br/>To the right of 1<br/>To the right of 2<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3 1<br/>To the left of 3<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3 2<br/>To the left of 2<br/>To the right of 1<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 60,
+    "index": "A",
+    "name": "Where Are My Flakes?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "two pointers"
+    ],
+    "solvedCount": 3541
+}

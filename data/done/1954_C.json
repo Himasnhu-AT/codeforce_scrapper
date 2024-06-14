@@ -1,0 +1,31 @@
+{
+    "title": "C. Long Multiplication",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two integers $$$x$$$ and $$$y$$$ of the same length, consisting of digits from $$$1$$$ to $$$9$$$.</p><p>You can perform the following operation any number of times (possibly zero): swap the $$$i$$$-th digit in $$$x$$$ and the $$$i$$$-th digit in $$$y$$$.</p><p>For example, if $$$x=73$$$ and $$$y=31$$$, you can swap the $$$2$$$-nd digits and get $$$x=71$$$ and $$$y=33$$$.</p><p>Your task is to maximize the product of $$$x$$$ and $$$y$$$ using the aforementioned operation any number of times. If there are multiple answers, print any of them.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains a single integer $$$x$$$ ($$$1 \\le x &lt; 10^{100}$$$).</p><p>The second line of each test case contains a single integer $$$y$$$ ($$$1 \\le y &lt; 10^{100}$$$).</p><p>Additional constraint on input: the integers $$$x$$$ and $$$y$$$ consist only of digits from $$$1$$$ to $$$9$$$.</p>",
+    "outputSpecification": "<p>For each test case, print two lines\u00a0\u2014 the first line should contain the number $$$x$$$ after performing the operations; similarly, the second line should contain the number $$$y$$$ after performing the operations. If there are multiple answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">73</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">31</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3516</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3982</div>",
+            "output": "\n71\n33\n5\n2\n3912\n3586\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1954,
+    "index": "C",
+    "name": "Long Multiplication",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 17037
+}

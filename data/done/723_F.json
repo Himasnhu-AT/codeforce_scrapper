@@ -1,0 +1,36 @@
+{
+    "title": "F. st-Spanning Tree",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an undirected connected graph consisting of <span class=\"tex-span\"><i>n</i></span> vertices and <span class=\"tex-span\"><i>m</i></span> edges. There are no loops and no multiple edges in the graph.</p><p>You are also given two distinct vertices <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span>, and two values <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>s</i></sub></span> and <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>t</i></sub></span>. Your task is to build any spanning tree of the given graph (note that the graph is not weighted), such that the degree of the vertex <span class=\"tex-span\"><i>s</i></span> doesn't exceed <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>s</i></sub></span>, and the degree of the vertex <span class=\"tex-span\"><i>t</i></span> doesn't exceed <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>t</i></sub></span>, or determine, that there is no such spanning tree.</p><p>The <span class=\"tex-font-style-it\">spanning tree</span> of the graph <span class=\"tex-span\"><i>G</i></span> is a subgraph which is a tree and contains all vertices of the graph <span class=\"tex-span\"><i>G</i></span>. In other words, it is a connected graph which contains <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> edges and can be obtained by removing some of the edges from <span class=\"tex-span\"><i>G</i></span>.</p><p>The degree of a vertex is the number of edges incident to this vertex.</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009<i>min</i>(400\u2009000,\u2009<i>n</i>\u00b7(<i>n</i>\u2009-\u20091)\u2009/\u20092)</span>)\u00a0\u2014 the number of vertices and the number of edges in the graph. </p><p>The next <span class=\"tex-span\"><i>m</i></span> lines contain the descriptions of the graph's edges. Each of the lines contains two integers <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i>,\u2009<i>v</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>u</i>\u2009\u2260\u2009<i>v</i></span>)\u00a0\u2014 the ends of the corresponding edge. It is guaranteed that the graph contains no loops and no multiple edges and that it is connected.</p><p>The last line contains four integers <span class=\"tex-span\"><i>s</i></span>, <span class=\"tex-span\"><i>t</i></span>, <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>s</i></sub></span>, <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>t</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>s</i>,\u2009<i>t</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>s</i>\u2009\u2260\u2009<i>t</i></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>d</i><sub class=\"lower-index\"><i>s</i></sub>,\u2009<i>d</i><sub class=\"lower-index\"><i>t</i></sub>\u2009\u2264\u2009<i>n</i>\u2009-\u20091</span>).</p>",
+    "outputSpecification": "<p>If the answer doesn't exist print \"<span class=\"tex-font-style-tt\">No</span>\" (without quotes) in the only line of the output. </p><p>Otherwise, in the first line print \"<span class=\"tex-font-style-tt\">Yes</span>\" (without quotes). In the each of the next <span class=\"tex-span\">(<i>n</i>\u2009-\u20091)</span> lines print two integers \u2014 the description of the edges of the spanning tree. Each of the edges of the spanning tree must be printed exactly once.</p><p>You can output edges in any order. You can output the ends of each edge in any order.</p><p>If there are several solutions, print any of them.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>1 2<br/>2 3<br/>3 1<br/>1 2 1 1<br/>",
+            "output": "Yes<br/>3 2<br/>1 3<br/>"
+        },
+        {
+            "input": "7 8<br/>7 4<br/>1 3<br/>5 4<br/>5 7<br/>3 2<br/>2 4<br/>6 1<br/>1 2<br/>6 4 1 4<br/>",
+            "output": "Yes<br/>1 3<br/>5 7<br/>3 2<br/>7 4<br/>2 4<br/>6 1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 723,
+    "index": "F",
+    "name": "st-Spanning Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dsu",
+        "graphs",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 1441
+}

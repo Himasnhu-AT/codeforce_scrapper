@@ -1,0 +1,31 @@
+{
+    "title": "C. One-Based Arithmetic",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Prof. Vasechkin wants to represent positive integer <span class=\"tex-span\"><i>n</i></span> as a sum of addends, where each addends is an integer number containing only <span class=\"tex-font-style-tt\">1</span>s. For example, he can represent 121 as 121=111+11+\u20131. Help him to find the least number of digits <span class=\"tex-font-style-tt\">1</span> in such sum.</p>",
+    "inputSpecification": "<p>The first line of the input contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009&lt;\u200910<sup class=\"upper-index\">15</sup></span>).</p>",
+    "outputSpecification": "<p>Print expected minimal number of digits <span class=\"tex-font-style-tt\">1</span>.</p>",
+    "samples": [
+        {
+            "input": "121<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 440,
+    "index": "C",
+    "name": "One-Based Arithmetic",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "divide and conquer"
+    ],
+    "solvedCount": 895
+}

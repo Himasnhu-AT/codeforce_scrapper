@@ -1,0 +1,36 @@
+{
+    "title": "E. Clear the Multiset",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have a multiset containing several integers. Initially, it contains $$$a_1$$$ elements equal to $$$1$$$, $$$a_2$$$ elements equal to $$$2$$$, ..., $$$a_n$$$ elements equal to $$$n$$$.</p><p>You may apply two types of operations:</p><ul> <li> choose two integers $$$l$$$ and $$$r$$$ ($$$l \\le r$$$), then remove one occurrence of $$$l$$$, one occurrence of $$$l + 1$$$, ..., one occurrence of $$$r$$$ from the multiset. This operation can be applied only if each number from $$$l$$$ to $$$r$$$ occurs at least once in the multiset; </li><li> choose two integers $$$i$$$ and $$$x$$$ ($$$x \\ge 1$$$), then remove $$$x$$$ occurrences of $$$i$$$ from the multiset. This operation can be applied only if the multiset contains at least $$$x$$$ occurrences of $$$i$$$. </li></ul><p>What is the minimum number of operations required to delete all elements from the multiset?</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$n$$$ ($$$1 \\le n \\le 5000$$$).</p><p>The second line contains $$$n$$$ integers $$$a_1$$$, $$$a_2$$$, ..., $$$a_n$$$ ($$$0 \\le a_i \\le 10^9$$$).</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the minimum number of operations required to delete all elements from the multiset.</p>",
+    "samples": [
+        {
+            "input": "\n4\n1 4 1 1\n",
+            "output": "\n2\n"
+        },
+        {
+            "input": "\n5\n1 0 1 0 1\n",
+            "output": "\n3\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1400,
+    "index": "E",
+    "name": "Clear the Multiset",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "greedy"
+    ],
+    "solvedCount": 5045
+}

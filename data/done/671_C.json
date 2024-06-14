@@ -1,0 +1,30 @@
+{
+    "title": "C. Ultimate Weirdness of an Array",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Yasin has an array <span class=\"tex-span\"><i>a</i></span> containing <span class=\"tex-span\"><i>n</i></span> integers. Yasin is a 5 year old, so he loves ultimate weird things.</p><p>Yasin denotes <span class=\"tex-font-style-it\">weirdness</span> of an array as maximum <span class=\"tex-span\"><i>gcd</i>(<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009\u2009<i>a</i><sub class=\"lower-index\"><i>j</i></sub>)</span> value among all <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>j</i>\u2009\u2264\u2009<i>n</i></span>. For <span class=\"tex-span\"><i>n</i>\u2009\u2264\u20091</span> weirdness is equal to <span class=\"tex-span\">0</span>, <span class=\"tex-span\"><i>gcd</i>(<i>x</i>,\u2009\u2009<i>y</i>)</span> is the greatest common divisor of integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>.</p><p>He also defines the <span class=\"tex-font-style-it\">ultimate weirdness</span> of an array. Ultimate weirdness is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6ef04f31fc88d23b93e68a317d597db92d1375da.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> where <span class=\"tex-span\"><i>f</i>(<i>i</i>,\u2009\u2009<i>j</i>)</span> is weirdness of the new array <span class=\"tex-span\"><i>a</i></span> obtained by removing all elements between <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span> inclusive, so new array is <span class=\"tex-span\">[<i>a</i><sub class=\"lower-index\">1</sub>... <i>a</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub>,\u2009<i>a</i><sub class=\"lower-index\"><i>j</i>\u2009+\u20091</sub>... <i>a</i><sub class=\"lower-index\"><i>n</i></sub>]</span>.</p><p>Since 5 year old boys can't code, Yasin asks for your help to find the value of ultimate weirdness of the given array <span class=\"tex-span\"><i>a</i></span>!</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>)\u00a0\u2014 the number of elements in <span class=\"tex-span\"><i>a</i></span>.</p><p>The next line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009200\u2009000</span>), where the <span class=\"tex-span\"><i>i</i></span>-th number is equal to the <span class=\"tex-span\"><i>i</i></span>-th element of the array <span class=\"tex-span\"><i>a</i></span>. It is guaranteed that all <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> are distinct.</p>",
+    "outputSpecification": "<p>Print a single line containing the value of ultimate weirdness of the array <span class=\"tex-span\"><i>a</i></span>. </p>",
+    "samples": [
+        {
+            "input": "3<br/>2 6 3<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": "<p>Consider the first sample.</p><ul> <li> <span class=\"tex-span\"><i>f</i>(1,\u2009\u20091)</span> is equal to <span class=\"tex-span\">3</span>. </li><li> <span class=\"tex-span\"><i>f</i>(2,\u2009\u20092)</span> is equal to <span class=\"tex-span\">1</span>. </li><li> <span class=\"tex-span\"><i>f</i>(3,\u2009\u20093)</span> is equal to <span class=\"tex-span\">2</span>. </li><li> <span class=\"tex-span\"><i>f</i>(1,\u2009\u20092)</span>, <span class=\"tex-span\"><i>f</i>(1,\u2009\u20093)</span> and <span class=\"tex-span\"><i>f</i>(2,\u2009\u20093)</span> are equal to <span class=\"tex-span\">0</span>. </li></ul> Thus the answer is <span class=\"tex-span\">3\u2009+\u20090\u2009+\u20090\u2009+\u20091\u2009+\u20090\u2009+\u20092\u2009=\u20096</span>.",
+    "contestId": 671,
+    "index": "C",
+    "name": "Ultimate Weirdness of an Array",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "number theory"
+    ],
+    "solvedCount": 665
+}

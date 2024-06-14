@@ -1,0 +1,30 @@
+{
+    "title": "B. Archer",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>SmallR is an archer. SmallR is taking a match of archer with Zanoes. They try to shoot in the target in turns, and SmallR shoots first. The probability of shooting the target each time is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a7487d7e62f90136b78ae3fbf0a008396f146e13.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> for SmallR while <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c443c7703e51f03d0eece0b96b9e84e425878209.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> for Zanoes. The one who shoots in the target first should be the winner.</p><p>Output the probability that SmallR will win the match.</p>",
+    "inputSpecification": "<p>A single line contains four integers <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/488158367221f441ba94b9475c03436069df2a7e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "outputSpecification": "<p>Print a single real number, the probability that SmallR will win the match.</p><p>The answer will be considered correct if the absolute or relative error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "1 2 1 2<br/>",
+            "output": "0.666666666667"
+        }
+    ],
+    "note": null,
+    "contestId": 312,
+    "index": "B",
+    "name": "Archer",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "probabilities"
+    ],
+    "solvedCount": 11168
+}

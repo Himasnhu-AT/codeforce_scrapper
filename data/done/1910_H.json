@@ -1,0 +1,35 @@
+{
+    "title": "H. Sum of Digits of Sums",
+    "timeLimit": {
+        "value": 6.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array $$$[a_1, a_2, \\dots, a_n]$$$, consisting of positive integers.</p><p>For every $$$i$$$ from $$$1$$$ to $$$n$$$, calculate $$$\\sum \\limits_{j=1}^{n} F(a_i + a_j)$$$, where $$$F(x)$$$ is the sum of digits of $$$x$$$.</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$n$$$ ($$$2 \\le n \\le 2 \\cdot 10^5$$$).</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i &lt; 10^9$$$).</p>",
+    "outputSpecification": "<p>Print $$$n$$$ integers. The $$$i$$$-th of them should be equal to $$$\\sum \\limits_{j=1}^{n} F(a_i + a_j)$$$.</p>",
+    "samples": [
+        {
+            "input": "\n4\n1 3 3 7\n",
+            "output": "\n18 17 17 15 \n"
+        },
+        {
+            "input": "\n3\n42 1337 999\n",
+            "output": "\n38 53 47 \n"
+        }
+    ],
+    "note": null,
+    "contestId": 1910,
+    "index": "H",
+    "name": "Sum of Digits of Sums",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "binary search",
+        "data structures"
+    ],
+    "solvedCount": 82
+}

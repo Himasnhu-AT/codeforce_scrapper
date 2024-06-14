@@ -1,0 +1,31 @@
+{
+    "title": "B. Three matrices",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Chubby Yang is studying linear equations right now. He came up with a nice problem. In the problem you are given an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>n</i></span> matrix <span class=\"tex-span\"><i>W</i></span>, consisting of integers, and you should find two <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>n</i></span> matrices <span class=\"tex-span\"><i>A</i></span> and <span class=\"tex-span\"><i>B</i></span>, all the following conditions must hold: </p><ul> <li> <span class=\"tex-span\"><i>A</i><sub class=\"lower-index\"><i>ij</i></sub>\u2009=\u2009<i>A</i><sub class=\"lower-index\"><i>ji</i></sub></span>, for all <span class=\"tex-span\"><i>i</i>,\u2009<i>j</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>,\u2009<i>j</i>\u2009\u2264\u2009<i>n</i>)</span>; </li><li> <span class=\"tex-span\"><i>B</i><sub class=\"lower-index\"><i>ij</i></sub>\u2009=\u2009\u2009-\u2009<i>B</i><sub class=\"lower-index\"><i>ji</i></sub></span>, for all <span class=\"tex-span\"><i>i</i>,\u2009<i>j</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>,\u2009<i>j</i>\u2009\u2264\u2009<i>n</i>)</span>; </li><li> <span class=\"tex-span\"><i>W</i><sub class=\"lower-index\"><i>ij</i></sub>\u2009=\u2009<i>A</i><sub class=\"lower-index\"><i>ij</i></sub>\u2009+\u2009<i>B</i><sub class=\"lower-index\"><i>ij</i></sub></span>, for all <span class=\"tex-span\"><i>i</i>,\u2009<i>j</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>,\u2009<i>j</i>\u2009\u2264\u2009<i>n</i>)</span>. </li></ul><p>Can you solve the problem?</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009170)</span>. Each of the following <span class=\"tex-span\"><i>n</i></span> lines contains <span class=\"tex-span\"><i>n</i></span> integers. The <span class=\"tex-span\"><i>j</i></span>-th integer in the <span class=\"tex-span\"><i>i</i></span>-th line is <span class=\"tex-span\"><i>W</i><sub class=\"lower-index\"><i>ij</i></sub></span> <span class=\"tex-span\">(0\u2009\u2264\u2009|<i>W</i><sub class=\"lower-index\"><i>ij</i></sub>|\u2009&lt;\u20091717)</span>.</p>",
+    "outputSpecification": "<p>The first <span class=\"tex-span\"><i>n</i></span> lines must contain matrix <span class=\"tex-span\"><i>A</i></span>. The next <span class=\"tex-span\"><i>n</i></span> lines must contain matrix <span class=\"tex-span\"><i>B</i></span>. Print the matrices in the format equal to format of matrix <span class=\"tex-span\"><i>W</i></span> in input. It is guaranteed that the answer exists. If there are multiple answers, you are allowed to print any of them.</p><p>The answer will be considered correct if the absolute or relative error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20094</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "2<br/>1 4<br/>3 2<br/>",
+            "output": "1.00000000 3.50000000<br/>3.50000000 2.00000000<br/>0.00000000 0.50000000<br/>-0.50000000 0.00000000<br/>"
+        },
+        {
+            "input": "3<br/>1 2 3<br/>4 5 6<br/>7 8 9<br/>",
+            "output": "1.00000000 3.00000000 5.00000000<br/>3.00000000 5.00000000 7.00000000<br/>5.00000000 7.00000000 9.00000000<br/>0.00000000 -1.00000000 -2.00000000<br/>1.00000000 0.00000000 -1.00000000<br/>2.00000000 1.00000000 0.00000000<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 393,
+    "index": "B",
+    "name": "Three matrices",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 1941
+}

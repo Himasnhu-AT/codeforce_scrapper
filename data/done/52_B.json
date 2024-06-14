@@ -1,0 +1,33 @@
+{
+    "title": "B. Right Triangles",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> field consisting only of periods (<span class=\"tex-font-style-tt\">'.'</span>) and asterisks (<span class=\"tex-font-style-tt\">'*'</span>). Your task is to count all right triangles with two sides parallel to the square sides, whose vertices are in the centers of <span class=\"tex-font-style-tt\">'*'</span>-cells. A right triangle is a triangle in which one angle is a right angle (that is, a 90 degree angle).</p>",
+    "inputSpecification": "<p>The first line contains two positive integer numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000</span>). The following <span class=\"tex-span\"><i>n</i></span> lines consist of <span class=\"tex-span\"><i>m</i></span> characters each, describing the field. Only <span class=\"tex-font-style-tt\">'.'</span> and <span class=\"tex-font-style-tt\">'*'</span> are allowed.</p>",
+    "outputSpecification": "<p>Output a single number \u2014 total number of square triangles in the field. Please, do not use <span class=\"tex-font-style-tt\">%lld</span> specificator to read or write 64-bit integers in C++. It is preffered to use <span class=\"tex-font-style-tt\">cout</span> (also you may use <span class=\"tex-font-style-tt\">%I64d</span>).</p>",
+    "samples": [
+        {
+            "input": "2 2<br/>**<br/>*.<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3 4<br/>*..*<br/>.**.<br/>*.**<br/>",
+            "output": "9<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 52,
+    "index": "B",
+    "name": "Right Triangles",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics"
+    ],
+    "solvedCount": 1993
+}

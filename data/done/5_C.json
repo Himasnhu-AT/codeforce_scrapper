@@ -1,0 +1,38 @@
+{
+    "title": "C. Longest Regular Bracket Sequence",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>This is yet another problem dealing with regular bracket sequences.</p><p>We should remind you that a bracket sequence is called regular, if by inserting \u00ab<span class=\"tex-font-style-tt\">+</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">1</span>\u00bb into it we can get a correct mathematical expression. For example, sequences \u00ab<span class=\"tex-font-style-tt\">(())()</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">()</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">(()(()))</span>\u00bb are regular, while \u00ab<span class=\"tex-font-style-tt\">)(</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">(()</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">(()))(</span>\u00bb are not. </p><p>You are given a string of \u00ab<span class=\"tex-font-style-tt\">(</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">)</span>\u00bb characters. You are to find its longest substring that is a regular bracket sequence. You are to find the number of such substrings as well.</p>",
+    "inputSpecification": "<p>The first line of the input file contains a non-empty string, consisting of \u00ab<span class=\"tex-font-style-tt\">(</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">)</span>\u00bb characters. Its length does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span>.</p>",
+    "outputSpecification": "<p>Print the length of the longest substring that is a regular bracket sequence, and the number of such substrings. If there are no such substrings, write the only line containing \"<span class=\"tex-font-style-tt\">0 1</span>\".</p>",
+    "samples": [
+        {
+            "input": ")((())))(()())<br/>",
+            "output": "6 2<br/>"
+        },
+        {
+            "input": "))(<br/>",
+            "output": "0 1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 5,
+    "index": "C",
+    "name": "Longest Regular Bracket Sequence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "dp",
+        "greedy",
+        "sortings",
+        "strings"
+    ],
+    "solvedCount": 12980
+}

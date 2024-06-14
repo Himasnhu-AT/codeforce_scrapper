@@ -1,0 +1,38 @@
+{
+    "title": "D. Polyline",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are three points marked on the coordinate plane. The goal is to make a simple polyline, without self-intersections and self-touches, such that it passes through all these points. Also, the polyline must consist of only segments parallel to the coordinate axes. You are to find the minimum number of segments this polyline may consist of.</p>",
+    "inputSpecification": "<p>Each of the three lines of the input contains two integers. The <span class=\"tex-span\"><i>i</i></span>-th line contains integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th point. It is guaranteed that all points are distinct.</p>",
+    "outputSpecification": "<p>Print a single number\u00a0\u2014 the minimum possible number of segments of the polyline.</p>",
+    "samples": [
+        {
+            "input": "1 -1<br/>1 1<br/>1 2<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "-1 -1<br/>-1 3<br/>4 3<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "1 1<br/>2 3<br/>3 2<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>The variant of the polyline in the first sample: <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/b41b4dad8437bd7a69f6ab01eaedf010b82ba7b8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> The variant of the polyline in the second sample: <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/7410d2247b3381e5b27422609f90ff027e071812.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> The variant of the polyline in the third sample: <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/3a5018422eb982f0a2a9bd7f1fd7ab23777a0813.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 617,
+    "index": "D",
+    "name": "Polyline",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 4166
+}

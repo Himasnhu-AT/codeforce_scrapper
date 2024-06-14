@@ -1,0 +1,43 @@
+{
+    "title": "D. Cycle",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Petya very much likes rectangular tables that consist of characters \"0\" and \"1\". Recently he has received one such table as a gift from his mother. The table contained <span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>m</i></span> columns. The rows are numbered from top to bottom from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, the columns are numbered from the left to the right from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span>. Petya immediately decided to find the longest cool cycle whatever it takes.</p><p>A cycle is a sequence of pairwise distinct cells where each two consecutive cells have a common side; besides, the first cell has a common side with the last cell. A cycle is called cool if it fulfills all the following conditions simultaneously: </p><ul> <li> The cycle entirely consists of the cells that contain \"1\". </li><li> Each cell that belongs to the cycle, has a common side with exactly two other cells that belong to the cycle. </li><li> Each cell of the table that contains \"1\" either belongs to the cycle or is positioned outside of it (see definition below). </li></ul><p>To define the notion of \"outside\" formally, let's draw a cycle on a plane. Let each cell of the cycle <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> (<span class=\"tex-span\"><i>i</i></span> is the row number, <span class=\"tex-span\"><i>j</i></span> is the column number) correspond to the point <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> on the coordinate plane. Let a straight line segment join each pair of points that correspond to the cells belonging to the cycle and sharing a side. Thus, we will get a closed polyline that has no self-intersections and self-touches. The polyline divides the plane into two connected parts: the part of an infinite area and the part of a finite area. It is considered that cell <span class=\"tex-span\">(<i>r</i>,\u2009<i>c</i>)</span> lies outside of the cycle if it does not belong to the cycle and the corresponding point on the plane with coordinates <span class=\"tex-span\">(<i>r</i>,\u2009<i>c</i>)</span> lies in the part with the infinite area.</p><p>Help Petya to find the length of the longest cool cycle in the table. The cycle length is defined as the number of cells that belong to the cycle.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000</span>) \u2014 the number of rows and columns in the table, respectively. Each of the following <span class=\"tex-span\"><i>n</i></span> lines contains <span class=\"tex-span\"><i>m</i></span> characters. Each character can be either \"0\" or \"1\".</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the length of the longest cool cycle in the table. If such cycles do not exist, print 0.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>111<br/>101<br/>111<br/>",
+            "output": "8<br/>"
+        },
+        {
+            "input": "5 5<br/>01010<br/>10101<br/>01010<br/>10101<br/>01010<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "7 7<br/>1111111<br/>1000101<br/>1000101<br/>1000101<br/>1000111<br/>1000001<br/>1111111<br/>",
+            "output": "24<br/>"
+        },
+        {
+            "input": "5 5<br/>11111<br/>10001<br/>10101<br/>10001<br/>11111<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first example there's only one cycle and it is cool.</p><p>In the second sample there's no cycle at all.</p><p>In the third sample there are two cool cycles: their lengths are 12 and 24.</p><p>In the fourth sample there also is only one cycle but it isn't cool as there's a cell containing \"1\" inside this cycle.</p>",
+    "contestId": 135,
+    "index": "D",
+    "name": "Cycle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "implementation"
+    ],
+    "solvedCount": 294
+}

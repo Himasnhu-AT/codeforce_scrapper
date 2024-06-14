@@ -1,0 +1,37 @@
+{
+    "title": "E. Subordinates",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are <span class=\"tex-span\"><i>n</i></span> workers in a company, each of them has a unique id from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. <span class=\"tex-font-style-bf\">Exaclty</span> one of them is a chief, his id is <span class=\"tex-span\"><i>s</i></span>. Each worker except the chief has exactly one immediate superior.</p><p>There was a request to each of the workers to tell how how many superiors (not only immediate). Worker's superiors are his immediate superior, the immediate superior of the his immediate superior, and so on. For example, if there are three workers in the company, from which the first is the chief, the second worker's immediate superior is the first, the third worker's immediate superior is the second, then the third worker has two superiors, one of them is immediate and one not immediate. The chief is a superior to all the workers except himself.</p><p>Some of the workers were in a hurry and made a mistake. You are to find the minimum number of workers that could make a mistake.</p>",
+    "inputSpecification": "<p>The first line contains two positive integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>s</i>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the number of workers and the id of the chief.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>\u2009-\u20091</span>), where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is the number of superiors (not only immediate) the worker with id <span class=\"tex-span\"><i>i</i></span> reported about.</p>",
+    "outputSpecification": "<p>Print the minimum number of workers that could make a mistake.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>2 0 2<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "5 3<br/>1 0 0 4 1<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In the first example it is possible that only the first worker made a mistake. Then: </p><ul> <li> the immediate superior of the first worker is the second worker, </li><li> the immediate superior of the third worker is the first worker, </li><li> the second worker is the chief. </li></ul>",
+    "contestId": 729,
+    "index": "E",
+    "name": "Subordinates",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "graphs",
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 2157
+}

@@ -1,0 +1,33 @@
+{
+    "title": "A. Polycarp's Pockets",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp has $$$n$$$ coins, the value of the $$$i$$$-th coin is $$$a_i$$$. Polycarp wants to distribute all the coins between his pockets, but he cannot put two coins with the same value into the same pocket.</p><p>For example, if Polycarp has got six coins represented as an array $$$a = [1, 2, 4, 3, 3, 2]$$$, he can distribute the coins into two pockets as follows: $$$[1, 2, 3], [2, 3, 4]$$$.</p><p>Polycarp wants to distribute all the coins with the minimum number of used pockets. Help him to do that.</p>",
+    "inputSpecification": "<p>The first line of the input contains one integer $$$n$$$ ($$$1 \\le n \\le 100$$$) \u2014 the number of coins.</p><p>The second line of the input contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i \\le 100$$$) \u2014 values of coins.</p>",
+    "outputSpecification": "<p>Print only one integer \u2014 the minimum number of pockets Polycarp needs to distribute all the coins so no two coins with the same value are put into the same pocket.</p>",
+    "samples": [
+        {
+            "input": "6<br/>1 2 4 3 3 2<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "1<br/>100<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 1003,
+    "index": "A",
+    "name": "Polycarp's Pockets",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 26592
+}

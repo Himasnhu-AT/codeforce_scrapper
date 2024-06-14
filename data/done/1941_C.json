@@ -1,0 +1,31 @@
+{
+    "title": "C. Rudolf and the Ugly String",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Rudolf has a string $$$s$$$ of length $$$n$$$. Rudolf considers the string $$$s$$$ to be ugly if it contains the substring$$$^\\dagger$$$ \"<span class=\"tex-font-style-tt\">pie</span>\" or the substring \"<span class=\"tex-font-style-tt\">map</span>\", otherwise the string $$$s$$$ will be considered beautiful.</p><p>For example, \"<span class=\"tex-font-style-tt\">ppiee</span>\", \"<span class=\"tex-font-style-tt\">mmap</span>\", \"<span class=\"tex-font-style-tt\">dfpiefghmap</span>\" are ugly strings, while \"<span class=\"tex-font-style-tt\">mathp</span>\", \"<span class=\"tex-font-style-tt\">ppiiee</span>\" are beautiful strings.</p><p>Rudolf wants to shorten the string $$$s$$$ by removing some characters to make it beautiful.</p><p>The main character doesn't like to strain, so he asks you to make the string beautiful by removing the minimum number of characters. He can remove characters from <span class=\"tex-font-style-bf\">any</span> positions in the string (not just from the beginning or end of the string).</p><p>$$$^\\dagger$$$ String $$$a$$$ is a substring of $$$b$$$ if there exists a <span class=\"tex-font-style-bf\">consecutive</span> segment of characters in string $$$b$$$ equal to $$$a$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of test cases. The descriptions of the test cases follow.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$1 \\le n \\le 10^6$$$) \u2014 the length of the string $$$s$$$.</p><p>The next line of each test case contains the string $$$s$$$ of length $$$n$$$. The string $$$s$$$ consists of lowercase Latin letters.</p><p>The sum of $$$n$$$ over all test cases does not exceed $$$10^6$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer \u2014 the minimum number of characters that need to be deleted to make the string $$$s$$$ beautiful. If the string is initially beautiful, then output $$$0$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">9</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">mmapnapie</div><div class=\"test-example-line test-example-line-even test-example-line-2\">9</div><div class=\"test-example-line test-example-line-even test-example-line-2\">azabazapi</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">8</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">mappppie</div><div class=\"test-example-line test-example-line-even test-example-line-4\">18</div><div class=\"test-example-line test-example-line-even test-example-line-4\">mapmapmapmapmapmap</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">p</div><div class=\"test-example-line test-example-line-even test-example-line-6\">11</div><div class=\"test-example-line test-example-line-even test-example-line-6\">pppiepieeee</div>",
+            "output": "\n2\n0\n2\n6\n0\n2\n"
+        }
+    ],
+    "note": "<p>In the first test case, for example, you can delete the $$$4$$$th and $$$9$$$th characters to make the string beautiful.</p><p>In the second test case, the string is already beautiful.</p>",
+    "contestId": 1941,
+    "index": "C",
+    "name": "Rudolf and the Ugly String",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "strings"
+    ],
+    "solvedCount": 30609
+}

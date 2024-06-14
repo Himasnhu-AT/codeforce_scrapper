@@ -1,0 +1,33 @@
+{
+    "title": "A. Okabe and Future Gadget Laboratory",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Okabe needs to renovate the <span class=\"tex-font-style-it\">Future Gadget Laboratory</span> after he tried doing some crazy experiments! The lab is represented as an <span class=\"tex-span\"><i>n</i></span> by <span class=\"tex-span\"><i>n</i></span> square grid of integers. A <span class=\"tex-font-style-it\">good</span> lab is defined as a lab in which every number not equal to <span class=\"tex-span\">1</span> can be expressed as the sum of a number in the same row and a number in the same column. In other words, for every <span class=\"tex-span\"><i>x</i>,\u2009<i>y</i></span> such that <span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u2009<i>n</i></span> and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>x</i>,\u2009<i>y</i></sub>\u2009\u2260\u20091</span>, there should exist two indices <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> so that <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>x</i>,\u2009<i>y</i></sub>\u2009=\u2009<i>a</i><sub class=\"lower-index\"><i>x</i>,\u2009<i>s</i></sub>\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>t</i>,\u2009<i>y</i></sub></span>, where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span> denotes the integer in <span class=\"tex-span\"><i>i</i></span>-th row and <span class=\"tex-span\"><i>j</i></span>-th column.</p><p>Help Okabe determine whether a given lab is <span class=\"tex-font-style-it\">good</span>!</p>",
+    "inputSpecification": "<p>The first line of input contains the integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>)\u00a0\u2014 the size of the lab. </p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain <span class=\"tex-span\"><i>n</i></span> space-separated integers denoting a row of the grid. The <span class=\"tex-span\"><i>j</i></span>-th integer in the <span class=\"tex-span\"><i>i</i></span>-th row is <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">Yes</span>\" if the given lab is <span class=\"tex-font-style-it\">good</span> and \"<span class=\"tex-font-style-tt\">No</span>\" otherwise.</p><p>You can output each letter in upper or lower case.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 1 2<br/>2 3 1<br/>6 4 1<br/>",
+            "output": "Yes<br/>"
+        },
+        {
+            "input": "3<br/>1 5 2<br/>1 1 1<br/>1 2 3<br/>",
+            "output": "No<br/>"
+        }
+    ],
+    "note": "<p>In the first sample test, the <span class=\"tex-span\">6</span> in the bottom left corner is valid because it is the sum of the <span class=\"tex-span\">2</span> above it and the <span class=\"tex-span\">4</span> on the right. The same holds for every number not equal to <span class=\"tex-span\">1</span> in this table, so the answer is \"<span class=\"tex-font-style-tt\">Yes</span>\".</p><p>In the second sample test, the <span class=\"tex-span\">5</span> cannot be formed as the sum of an integer in the same row and an integer in the same column. Thus the answer is \"<span class=\"tex-font-style-tt\">No</span>\".</p>",
+    "contestId": 821,
+    "index": "A",
+    "name": "Okabe and Future Gadget Laboratory",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 7947
+}

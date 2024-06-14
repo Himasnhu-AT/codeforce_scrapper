@@ -1,0 +1,37 @@
+{
+    "title": "B2. Maximum Control (medium)",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The Resistance is trying to take control over as many planets of a particular solar system as possible. Princess Heidi is in charge of the fleet, and she must send ships to some planets in order to maximize the number of controlled planets.</p><p>The Galaxy contains <span class=\"tex-span\"><i>N</i></span> planets, connected by bidirectional hyperspace tunnels in such a way that there is a unique path between every pair of the planets.</p><p>A planet is controlled by the Resistance if there is a Resistance ship in its orbit, or if the planet lies on the shortest path between some two planets that have Resistance ships in their orbits.</p><p>Heidi has not yet made up her mind as to how many ships to use. Therefore, she is asking you to compute, for every <span class=\"tex-span\"><i>K</i>\u2009=\u20091,\u20092,\u20093,\u2009...,\u2009<i>N</i></span>, the maximum number of planets that can be controlled with a fleet consisting of <span class=\"tex-span\"><i>K</i></span> ships.</p>",
+    "inputSpecification": "<p>The first line of the input contains an integer <span class=\"tex-span\"><i>N</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2013 the number of planets in the galaxy.</p><p>The next <span class=\"tex-span\"><i>N</i>\u2009-\u20091</span> lines describe the hyperspace tunnels between the planets. Each of the <span class=\"tex-span\"><i>N</i>\u2009-\u20091</span> lines contains two space-separated integers <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i>,\u2009<i>v</i>\u2009\u2264\u2009<i>N</i></span>) indicating that there is a bidirectional hyperspace tunnel between the planets <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span>. It is guaranteed that every two planets are connected by a path of tunnels, and that each tunnel connects a different pair of planets.</p>",
+    "outputSpecification": "<p>On a single line, print <span class=\"tex-span\"><i>N</i></span> space-separated integers. The <span class=\"tex-span\"><i>K</i></span>-th number should correspond to the maximum number of planets that can be controlled by the Resistance using a fleet of <span class=\"tex-span\"><i>K</i></span> ships.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2<br/>2 3<br/>",
+            "output": "1 3 3 "
+        },
+        {
+            "input": "4<br/>1 2<br/>3 2<br/>4 2<br/>",
+            "output": "1 3 4 4 "
+        }
+    ],
+    "note": "<p>Consider the first example. If <span class=\"tex-span\"><i>K</i>\u2009=\u20091</span>, then Heidi can only send one ship to some planet and control it. However, for <span class=\"tex-span\"><i>K</i>\u2009\u2265\u20092</span>, sending ships to planets 1 and 3 will allow the Resistance to control all planets.</p>",
+    "contestId": 958,
+    "index": "B2",
+    "name": "Maximum Control (medium)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "trees"
+    ],
+    "solvedCount": 619
+}

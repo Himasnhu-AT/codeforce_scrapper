@@ -1,0 +1,38 @@
+{
+    "title": "G. List Of Integers",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's denote as <span class=\"tex-span\"><i>L</i>(<i>x</i>,\u2009<i>p</i>)</span> an infinite sequence of integers <span class=\"tex-span\"><i>y</i></span> such that <span class=\"tex-span\"><i>gcd</i>(<i>p</i>,\u2009<i>y</i>)\u2009=\u20091</span> and <span class=\"tex-span\"><i>y</i>\u2009&gt;\u2009<i>x</i></span> (where <span class=\"tex-span\"><i>gcd</i></span> is the greatest common divisor of two integer numbers), sorted in ascending order. The elements of <span class=\"tex-span\"><i>L</i>(<i>x</i>,\u2009<i>p</i>)</span> are <span class=\"tex-span\">1</span>-indexed; for example, <span class=\"tex-span\">9</span>, <span class=\"tex-span\">13</span> and <span class=\"tex-span\">15</span> are the first, the second and the third elements of <span class=\"tex-span\"><i>L</i>(7,\u200922)</span>, respectively.</p><p>You have to process <span class=\"tex-span\"><i>t</i></span> queries. Each query is denoted by three integers <span class=\"tex-span\"><i>x</i></span>, <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\"><i>k</i></span>, and the answer to this query is <span class=\"tex-span\"><i>k</i></span>-th element of <span class=\"tex-span\"><i>L</i>(<i>x</i>,\u2009<i>p</i>)</span>.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i>\u2009\u2264\u200930000</span>) \u2014 the number of queries to process.</p><p>Then <span class=\"tex-span\"><i>t</i></span> lines follow. <span class=\"tex-span\"><i>i</i></span>-th line contains three integers <span class=\"tex-span\"><i>x</i></span>, <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\"><i>k</i></span> for <span class=\"tex-span\"><i>i</i></span>-th query (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>,\u2009<i>p</i>,\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>).</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>t</i></span> integers, where <span class=\"tex-span\"><i>i</i></span>-th integer is the answer to <span class=\"tex-span\"><i>i</i></span>-th query.</p>",
+    "samples": [
+        {
+            "input": "3<br/>7 22 1<br/>7 22 2<br/>7 22 3<br/>",
+            "output": "9<br/>13<br/>15<br/>"
+        },
+        {
+            "input": "5<br/>42 42 42<br/>43 43 43<br/>44 44 44<br/>45 45 45<br/>46 46 46<br/>",
+            "output": "187<br/>87<br/>139<br/>128<br/>141<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 920,
+    "index": "G",
+    "name": "List Of Integers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "combinatorics",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 1685
+}

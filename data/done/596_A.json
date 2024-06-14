@@ -1,0 +1,34 @@
+{
+    "title": "A. Wilbur and Swimming Pool",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>After making bad dives into swimming pools, Wilbur wants to build a swimming pool in the shape of a rectangle in his backyard. He has set up coordinate axes, and he wants the sides of the rectangle to be parallel to them. Of course, the area of the rectangle must be positive. Wilbur had all four vertices of the planned pool written on a paper, until his friend came along and erased some of the vertices.</p><p>Now Wilbur is wondering, if the remaining <span class=\"tex-span\"><i>n</i></span> vertices of the initial rectangle give enough information to restore the area of the planned swimming pool.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20094</span>)\u00a0\u2014 the number of vertices that were <span class=\"tex-font-style-bf\">not</span> erased by Wilbur's friend.</p><p>Each of the following <span class=\"tex-span\"><i>n</i></span> lines contains two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u20091000\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>)\u00a0\u2014the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th vertex that remains. Vertices are given in an arbitrary order.</p><p>It's guaranteed that these points are distinct vertices of some rectangle, that has positive area and which sides are parallel to the coordinate axes.</p>",
+    "outputSpecification": "<p>Print the area of the initial rectangle if it could be uniquely determined by the points remaining. Otherwise, print <span class=\"tex-span\">\u2009-\u20091</span>. </p>",
+    "samples": [
+        {
+            "input": "2<br/>0 0<br/>1 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "1<br/>1 1<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, two opposite corners of the initial rectangle are given, and that gives enough information to say that the rectangle is actually a unit square.</p><p>In the second sample there is only one vertex left and this is definitely not enough to uniquely define the area.</p>",
+    "contestId": 596,
+    "index": "A",
+    "name": "Wilbur and Swimming Pool",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "implementation"
+    ],
+    "solvedCount": 7634
+}

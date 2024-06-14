@@ -1,0 +1,35 @@
+{
+    "title": "D. Ciel and Flipboard",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Fox Ciel has a board with <span class=\"tex-span\"><i>n</i></span> rows and <span class=\"tex-span\"><i>n</i></span> columns, there is one integer in each cell.</p><p>It's known that <span class=\"tex-span\"><i>n</i></span> is an odd number, so let's introduce <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/00f1e92778ee154f68d059723ad02e792391754b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Fox Ciel can do the following operation many times: she choose a sub-board with size <span class=\"tex-span\"><i>x</i></span> rows and <span class=\"tex-span\"><i>x</i></span> columns, then all numbers in it will be multiplied by -1.</p><p>Return the maximal sum of numbers in the board that she can get by these operations.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span>, (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200933</span>, and <span class=\"tex-span\"><i>n</i></span> is an odd integer) \u2014 the size of the board.</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains <span class=\"tex-span\"><i>n</i></span> integers \u2014 the numbers in the board. Each number doesn't exceed <span class=\"tex-span\">1000</span> by its absolute value.</p>",
+    "outputSpecification": "<p>Output a single integer: the maximal sum of numbers in the board that can be accomplished.</p>",
+    "samples": [
+        {
+            "input": "3<br/>-1 -1 1<br/>-1 1 -1<br/>1 -1 -1<br/>",
+            "output": "9<br/>"
+        },
+        {
+            "input": "5<br/>-2 0 0 0 -2<br/>0 -2 0 -2 0<br/>0 0 -2 0 0<br/>0 -2 0 -2 0<br/>-2 0 0 0 -2<br/>",
+            "output": "18<br/>"
+        }
+    ],
+    "note": "<p>In the first test, we can apply this operation twice: first on the top left <span class=\"tex-span\">2\u2009\u00d7\u20092</span> sub-board, then on the bottom right <span class=\"tex-span\">2\u2009\u00d7\u20092</span> sub-board. Then all numbers will become positive.</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c3426b4faf54a7f3b8dfc0e18e955f907760fe71.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 321,
+    "index": "D",
+    "name": "Ciel and Flipboard",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 528
+}

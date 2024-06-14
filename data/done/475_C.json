@@ -1,0 +1,39 @@
+{
+    "title": "C. Kamal-ol-molk's Painting",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Rumors say that one of Kamal-ol-molk's paintings has been altered. A rectangular brush has been moved right and down on the painting.</p><p>Consider the painting as a <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> rectangular grid. At the beginning an <span class=\"tex-span\"><i>x</i>\u2009\u00d7\u2009<i>y</i></span> rectangular brush is placed somewhere in the frame, with edges parallel to the frame, (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>n</i>,\u20091\u2009\u2264\u2009<i>y</i>\u2009\u2264\u2009<i>m</i></span>). Then the brush is moved several times. Each time the brush is moved one unit right or down. The brush has been strictly inside the frame during the painting. The brush alters every cell it has covered at some moment.</p><p>You have found one of the old Kamal-ol-molk's paintings. You want to know if it's possible that it has been altered in described manner. If yes, you also want to know minimum possible area of the brush. </p>",
+    "inputSpecification": "<p>The first line of input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span>, (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000</span>), denoting the height and width of the painting.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain the painting. Each line has <span class=\"tex-span\"><i>m</i></span> characters. Character '<span class=\"tex-font-style-tt\">X</span>' denotes an altered cell, otherwise it's showed by '<span class=\"tex-font-style-tt\">.</span>'. There will be at least one altered cell in the painting.</p>",
+    "outputSpecification": "<p>Print the minimum area of the brush in a line, if the painting is possibly altered, otherwise print <span class=\"tex-span\">\u2009-\u20091</span>.</p>",
+    "samples": [
+        {
+            "input": "4 4<br/>XX..<br/>XX..<br/>XXXX<br/>XXXX<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "4 4<br/>....<br/>.XXX<br/>.XXX<br/>....<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "4 5<br/>XXXX.<br/>XXXX.<br/>.XX..<br/>.XX..<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 475,
+    "index": "C",
+    "name": "Kamal-ol-molk's Painting",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy"
+    ],
+    "solvedCount": 778
+}

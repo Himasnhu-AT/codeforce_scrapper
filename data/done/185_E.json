@@ -1,0 +1,34 @@
+{
+    "title": "E. Soap Time! - 2",
+    "timeLimit": {
+        "value": 6.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Imagine the Cartesian coordinate system. There are <span class=\"tex-span\"><i>k</i></span> different points containing subway stations. One can get from any subway station to any one instantly. That is, the duration of the transfer between any two subway stations can be considered equal to zero. You are allowed to travel only between subway stations, that is, you are not allowed to leave the subway somewhere in the middle of your path, in-between the stations. </p><p>There are <span class=\"tex-span\"><i>n</i></span> dwarves, they are represented by their coordinates on the plane. The dwarves want to come together and watch a soap opera at some integer point on the plane. For that, they choose the gathering point and start moving towards it simultaneously. In one second a dwarf can move from point <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> to one of the following points: <span class=\"tex-span\">(<i>x</i>\u2009-\u20091,\u2009<i>y</i>)</span>, <span class=\"tex-span\">(<i>x</i>\u2009+\u20091,\u2009<i>y</i>)</span>, <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009-\u20091)</span>, <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009+\u20091)</span>. Besides, the dwarves can use the subway as many times as they want (the subway transfers the dwarves instantly). The dwarves do not interfere with each other as they move (that is, the dwarves move simultaneously and independently from each other). </p><p>Help the dwarves and find the minimum time they need to gather at one point.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>;\u00a00\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> \u2014 the number of dwarves and the number of subway stations, correspondingly.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain the coordinates of the dwarves. The <span class=\"tex-span\"><i>i</i></span>-th line contains two space-separated integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">|<i>x</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>y</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">8</sup></span>) \u2014 the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th dwarf. It is guaranteed that all dwarves are located at different points.</p><p>The next <span class=\"tex-span\"><i>k</i></span> lines contain the coordinates of the subway stations. The <span class=\"tex-span\"><i>t</i></span>-th line contains two space-separated integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>t</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>t</i></sub></span> (<span class=\"tex-span\">|<i>x</i><sub class=\"lower-index\"><i>t</i></sub>|,\u2009|<i>y</i><sub class=\"lower-index\"><i>t</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">8</sup></span>) \u2014 the coordinates of the <span class=\"tex-span\"><i>t</i></span>-th subway station. It is guaranteed that all subway stations are located at different points.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the minimum time, in which all dwarves can gather together at one point to watch the soap.</p>",
+    "samples": [
+        {
+            "input": "1 0<br/>2 -2<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "2 2<br/>5 -3<br/>-4 -5<br/>-4 0<br/>-3 -2<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 185,
+    "index": "E",
+    "name": "Soap Time! - 2",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures"
+    ],
+    "solvedCount": 104
+}

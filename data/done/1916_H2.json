@@ -1,0 +1,37 @@
+{
+    "title": "H2. Matrix Rank (Hard Version)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is the hard version of the problem. The only differences between the two versions of this problem are the constraints on $$$k$$$. You can make hacks only if all versions of the problem are solved.</span></p><p>You are given integers $$$n$$$, $$$p$$$ and $$$k$$$. $$$p$$$ is guaranteed to be a prime number. </p><p>For each $$$r$$$ from $$$0$$$ to $$$k$$$, find the number of $$$n \\times n$$$ matrices $$$A$$$ of the field$$$^\\dagger$$$ of integers modulo $$$p$$$ such that the rank$$$^\\ddagger$$$ of $$$A$$$ is exactly $$$r$$$. Since these values are big, you are only required to output them modulo $$$998\\,244\\,353$$$.</p><p>$$$^\\dagger$$$ <a href=\"https://en.wikipedia.org/wiki/Field_(mathematics)\">https://en.wikipedia.org/wiki/Field_(mathematics)</a></p><p>$$$^\\ddagger$$$ <a href=\"https://en.wikipedia.org/wiki/Rank_(linear_algebra)\">https://en.wikipedia.org/wiki/Rank_(linear_algebra)</a></p>",
+    "inputSpecification": "<p>The first line of input contains three integers $$$n$$$, $$$p$$$ and $$$k$$$ ($$$1 \\leq n \\leq 10^{18}$$$, $$$2 \\leq p &lt; 998\\,244\\,353$$$, $$$0 \\leq k \\leq 5 \\cdot 10^5$$$).</p><p>It is guaranteed that $$$p$$$ is a prime number.</p>",
+    "outputSpecification": "<p>Output $$$k+1$$$ integers, the answers for each $$$r$$$ from $$$0$$$ to $$$k$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3 2 3</div>",
+            "output": "\n1 49 294 168 "
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">1 51549919 2</div>",
+            "output": "\n1 51549918 0 "
+        }
+    ],
+    "note": null,
+    "contestId": 1916,
+    "index": "H2",
+    "name": "Matrix Rank (Hard Version)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "matrices",
+        "string suffix structures"
+    ],
+    "solvedCount": 508
+}

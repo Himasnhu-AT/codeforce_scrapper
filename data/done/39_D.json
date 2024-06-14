@@ -1,0 +1,37 @@
+{
+    "title": "D. Cubical Planet",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You can find anything whatsoever in our Galaxy! A cubical planet goes round an icosahedral star. Let us introduce a system of axes so that the edges of the cubical planet are parallel to the coordinate axes and two opposite vertices lay in the points <span class=\"tex-span\">(0,\u20090,\u20090)</span> and <span class=\"tex-span\">(1,\u20091,\u20091)</span>. Two flies live on the planet. At the moment they are sitting on two different vertices of the cubical planet. Your task is to determine whether they see each other or not. The flies see each other when the vertices they occupy lie on the same face of the cube.</p>",
+    "inputSpecification": "<p>The first line contains three space-separated integers (<span class=\"tex-span\">0</span> or <span class=\"tex-span\">1</span>) \u2014 the coordinates of the first fly, the second line analogously contains the coordinates of the second fly.</p>",
+    "outputSpecification": "<p>Output \"YES\" (without quotes) if the flies see each other. Otherwise, output \"NO\".</p>",
+    "samples": [
+        {
+            "input": "0 0 0<br/>0 1 0<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "1 1 0<br/>0 1 0<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "0 0 0<br/>1 1 1<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 39,
+    "index": "D",
+    "name": "Cubical Planet",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 3782
+}

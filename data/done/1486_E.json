@@ -1,0 +1,39 @@
+{
+    "title": "E. Paired Payment",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are $$$n$$$ cities and $$$m$$$ bidirectional roads in the country. The roads in the country form an undirected weighted graph. The graph <span class=\"tex-font-style-bf\">is not guaranteed to be connected</span>. Each road has it's own parameter $$$w$$$. You can travel through the roads, but the government made a new law: you can only go through two roads at a time (go from city $$$a$$$ to city $$$b$$$ and then from city $$$b$$$ to city $$$c$$$) and you will have to pay $$$(w_{ab} + w_{bc})^2$$$ money to go through those roads. Find out whether it is possible to travel from city $$$1$$$ to every other city $$$t$$$ and what's the minimum amount of money you need to get from $$$1$$$ to $$$t$$$.</p>",
+    "inputSpecification": "<p>First line contains two integers $$$n$$$, $$$m$$$ ($$$2 \\leq n \\leq 10^5$$$, $$$1 \\leq m \\leq min(\\frac{n \\cdot (n - 1)}{2}, 2 \\cdot 10^5)$$$).</p><p>Next $$$m$$$ lines each contain three integers $$$v_i$$$, $$$u_i$$$, $$$w_i$$$ ($$$1 \\leq v_i, u_i \\leq n$$$, $$$1 \\leq w_i \\leq 50$$$, $$$u_i \\neq v_i$$$). It's guaranteed that there are no multiple edges, i.e. for any edge $$$(u_i, v_i)$$$ there are no other edges $$$(u_i, v_i)$$$ or $$$(v_i, u_i)$$$.</p>",
+    "outputSpecification": "<p>For every city $$$t$$$ print one integer. If there is no correct path between $$$1$$$ and $$$t$$$ output $$$-1$$$. Otherwise print out the minimum amount of money needed to travel from $$$1$$$ to $$$t$$$.</p>",
+    "samples": [
+        {
+            "input": "\n5 6\n1 2 3\n2 3 4\n3 4 5\n4 5 6\n1 5 1\n2 4 2\n",
+            "output": "\n0 98 49 25 114 "
+        },
+        {
+            "input": "\n3 2\n1 2 1\n2 3 2\n",
+            "output": "\n0 -1 9 "
+        }
+    ],
+    "note": "<p>The graph in the first example looks like this.</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/ee9afbdf87383bfd6a37352dd18c36458922ff15.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>In the second example the path from $$$1$$$ to $$$3$$$ goes through $$$2$$$, so the resulting payment is $$$(1 + 2)^2 = 9$$$.</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/a6a2951b0d3554e0d37080491d99b412e75c6eeb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 1486,
+    "index": "E",
+    "name": "Paired Payment",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "constructive algorithms",
+        "dp",
+        "flows",
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 2816
+}

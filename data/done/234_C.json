@@ -1,0 +1,34 @@
+{
+    "title": "C. Weather",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Scientists say a lot about the problems of global warming and cooling of the Earth. Indeed, such natural phenomena strongly influence all life on our planet.</p><p>Our hero Vasya is quite concerned about the problems. He decided to try a little experiment and observe how outside daily temperature changes. He hung out a thermometer on the balcony every morning and recorded the temperature. He had been measuring the temperature for the last <span class=\"tex-span\"><i>n</i></span> days. Thus, he got a sequence of numbers <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>,\u2009<i>t</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>n</i></sub></span>, where the <span class=\"tex-span\"><i>i</i></span>-th number is the temperature on the <span class=\"tex-span\"><i>i</i></span>-th day.</p><p>Vasya analyzed the temperature statistics in other cities, and came to the conclusion that the city has no environmental problems, if first the temperature outside is negative for some non-zero number of days, and then the temperature is positive for some non-zero number of days. More formally, there must be a positive integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i>\u2009-\u20091</span>) such that <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u20090,\u2009<i>t</i><sub class=\"lower-index\">2</sub>\u2009&lt;\u20090,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>k</i></sub>\u2009&lt;\u20090</span> and <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>k</i>\u2009+\u20091</sub>\u2009&gt;\u20090,\u2009<i>t</i><sub class=\"lower-index\"><i>k</i>\u2009+\u20092</sub>\u2009&gt;\u20090,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>n</i></sub>\u2009&gt;\u20090</span>. In particular, the temperature should never be zero. If this condition is not met, Vasya decides that his city has environmental problems, and gets upset.</p><p>You do not want to upset Vasya. Therefore, you want to select multiple values of temperature and modify them to satisfy Vasya's condition. You need to know what the least number of temperature values needs to be changed for that.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of days for which Vasya has been measuring the temperature. </p><p>The second line contains a sequence of <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>,\u2009<i>t</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(|<i>t</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span> \u2014 the sequence of temperature values. Numbers <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> are separated by single spaces.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the answer to the given task.</p>",
+    "samples": [
+        {
+            "input": "4<br/>-1 1 -2 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "5<br/>0 -1 1 2 -5<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>Note to the first sample: there are two ways to change exactly one number so that the sequence met Vasya's condition. You can either replace the first number <span class=\"tex-font-style-tt\">1</span> by any negative number or replace the number <span class=\"tex-font-style-tt\">-2</span> by any positive number.</p>",
+    "contestId": 234,
+    "index": "C",
+    "name": "Weather",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "implementation"
+    ],
+    "solvedCount": 5355
+}

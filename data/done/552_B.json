@@ -1,0 +1,34 @@
+{
+    "title": "B. Vanya and Books",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vanya got an important task \u2014 he should enumerate books in the library and label each book with its number. Each of the <span class=\"tex-span\"><i>n</i></span> books should be assigned with a number from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. Naturally, distinct books should be assigned distinct numbers.</p><p>Vanya wants to know how many digits he will have to write down as he labels the books.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the number of books in the library.</p>",
+    "outputSpecification": "<p>Print the number of digits needed to number all the books.</p>",
+    "samples": [
+        {
+            "input": "13<br/>",
+            "output": "17<br/>"
+        },
+        {
+            "input": "4<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>Note to the first test. The books get numbers <span class=\"tex-span\">1,\u20092,\u20093,\u20094,\u20095,\u20096,\u20097,\u20098,\u20099,\u200910,\u200911,\u200912,\u200913</span>, which totals to <span class=\"tex-span\">17</span> digits.</p><p>Note to the second sample. The books get numbers <span class=\"tex-span\">1,\u20092,\u20093,\u20094</span>, which totals to 4 digits.</p>",
+    "contestId": 552,
+    "index": "B",
+    "name": "Vanya and Books",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 15256
+}

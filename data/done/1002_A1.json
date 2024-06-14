@@ -1,0 +1,22 @@
+{
+    "title": "A1. Generate superposition of all basis states",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given <span class=\"tex-span\"><i>N</i></span> qubits (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u20098</span>) in zero state <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8bb67080da7081bfb802ca6ecc5abc4f4c5ca190.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. </p><p>Your task is to generate an equal superposition of all <span class=\"tex-span\">2<sup class=\"upper-index\"><i>N</i></sup></span> basis vectors on <span class=\"tex-span\"><i>N</i></span> qubits:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3ce44b5f49a946ba7ddef181f4073d7d0aa6c397.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>For example,</p><ul><li> for <span class=\"tex-span\"><i>N</i>\u2009=\u20091</span>, the required state is simply <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d8efee248abd35b37efa370723867c58ea1636d2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>,</li><li> for <span class=\"tex-span\"><i>N</i>\u2009=\u20092</span>, the required state is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8b4f33cacad0676abac975b3e9fcad5dfd2fd065.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. </li></ul><p>You have to implement an operation which takes an array of <span class=\"tex-span\"><i>N</i></span> qubits as an input and has no output. The \"output\" of the operation is the state in which it leaves the qubits.</p><p>Your code should have the following signature:</p><pre class=\"verbatim\">namespace Solution {<br/>    open Microsoft.Quantum.Primitive;<br/>    open Microsoft.Quantum.Canon;<br/><br/>    operation Solve (qs : Qubit[]) : ()<br/>    {<br/>        body<br/>        {<br/>            // your code here<br/>        }<br/>    }<br/>}</pre>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1002,
+    "index": "A1",
+    "name": "Generate superposition of all basis states",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 825
+}

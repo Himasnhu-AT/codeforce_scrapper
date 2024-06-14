@@ -1,0 +1,38 @@
+{
+    "title": "A. Johny Likes Numbers",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Johny likes numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> very much. Now Johny wants to find the smallest integer <span class=\"tex-span\"><i>x</i></span> greater than <span class=\"tex-span\"><i>n</i></span>, so it is divisible by the number <span class=\"tex-span\"><i>k</i></span>.</p>",
+    "inputSpecification": "<p>The only line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print the smallest integer <span class=\"tex-span\"><i>x</i>\u2009&gt;\u2009<i>n</i></span>, so it is divisible by the number <span class=\"tex-span\"><i>k</i></span>.</p>",
+    "samples": [
+        {
+            "input": "5 3<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "25 13<br/>",
+            "output": "26<br/>"
+        },
+        {
+            "input": "26 13<br/>",
+            "output": "39<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 678,
+    "index": "A",
+    "name": "Johny Likes Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 12632
+}

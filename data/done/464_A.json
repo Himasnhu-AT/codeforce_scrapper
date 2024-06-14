@@ -1,0 +1,38 @@
+{
+    "title": "A. No to Palindromes!",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Paul <span class=\"tex-font-style-underline\">hates</span> palindromes. He assumes that string <span class=\"tex-span\"><i>s</i></span> is <span class=\"tex-font-style-underline\">tolerable</span> if each its character is one of the first <span class=\"tex-span\"><i>p</i></span> letters of the English alphabet and <span class=\"tex-span\"><i>s</i></span> doesn't contain any palindrome contiguous substring of length 2 or more.</p><p>Paul has found a tolerable string <span class=\"tex-span\"><i>s</i></span> of length <span class=\"tex-span\"><i>n</i></span>. Help him find the lexicographically next tolerable string of the same length or else state that such string does not exist.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers: <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>p</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>; <span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i>\u2009\u2264\u200926</span>). The second line contains string <span class=\"tex-span\"><i>s</i></span>, consisting of <span class=\"tex-span\"><i>n</i></span> small English letters. It is guaranteed that the string is tolerable (according to the above definition).</p>",
+    "outputSpecification": "<p>If the lexicographically next tolerable string of the same length exists, print it. Otherwise, print \"<span class=\"tex-font-style-tt\">NO</span>\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>cba<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "3 4<br/>cba<br/>",
+            "output": "cbd<br/>"
+        },
+        {
+            "input": "4 4<br/>abcd<br/>",
+            "output": "abda<br/>"
+        }
+    ],
+    "note": "<p>String <span class=\"tex-span\"><i>s</i></span> is <span class=\"tex-font-style-underline\">lexicographically larger</span> (or simply <span class=\"tex-font-style-underline\">larger</span>) than string <span class=\"tex-span\"><i>t</i></span> with the same length, if there is number <span class=\"tex-span\"><i>i</i></span>, such that <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>\u2009=\u2009<i>t</i><sub class=\"lower-index\">1</sub></span>, ..., <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub>\u2009&gt;\u2009<i>t</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span>.</p><p>The lexicographically next tolerable string is the lexicographically minimum tolerable string which is larger than the given one.</p><p>A palindrome is a string that reads the same forward or reversed.</p>",
+    "contestId": 464,
+    "index": "A",
+    "name": "No to Palindromes!",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "strings"
+    ],
+    "solvedCount": 5831
+}

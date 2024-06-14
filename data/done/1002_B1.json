@@ -1,0 +1,22 @@
+{
+    "title": "B1. Distinguish zero state and W state",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given <span class=\"tex-span\"><i>N</i></span> qubits (<span class=\"tex-span\">2\u2009\u2264\u2009<i>N</i>\u2009\u2264\u20098</span>) which are guaranteed to be in one of the two states:</p><ul> <li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8bb67080da7081bfb802ca6ecc5abc4f4c5ca190.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> state, or</li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6c9f6af141e015f20a73dd1c0e8749da68f71ba6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> state. <p>Your task is to perform necessary operations and measurements to figure out which state it was and to return 0 if it was <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/98f5a3251cafe82f85c52d61d5fabda714cbe4ac.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> state or 1 if it was W state. The state of the qubits after the operations does not matter.</p><p>You have to implement an operation which takes an array of <span class=\"tex-span\"><i>N</i></span> qubits as an input and returns an integer. </p><p>Your code should have the following signature:</p><pre class=\"verbatim\">namespace Solution {<br/>    open Microsoft.Quantum.Primitive;<br/>    open Microsoft.Quantum.Canon;<br/><br/>    operation Solve (qs : Qubit[]) : Int<br/>    {<br/>        body<br/>        {<br/>            // your code here<br/>        }<br/>    }<br/>}</pre></li></ul>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1002,
+    "index": "B1",
+    "name": "Distinguish zero state and W state",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 473
+}

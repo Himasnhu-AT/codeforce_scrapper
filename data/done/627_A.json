@@ -1,0 +1,38 @@
+{
+    "title": "A. XOR Equation",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Two <span class=\"tex-font-style-bf\">positive</span> integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> have a sum of <span class=\"tex-span\"><i>s</i></span> and a bitwise XOR of <span class=\"tex-span\"><i>x</i></span>. How many possible values are there for the ordered pair <span class=\"tex-span\">(<i>a</i>,\u2009<i>b</i>)</span>?</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>s</i>\u2009\u2264\u200910<sup class=\"upper-index\">12</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">12</sup></span>), the sum and bitwise xor of the pair of positive integers, respectively.</p>",
+    "outputSpecification": "<p>Print a single integer, the number of solutions to the given conditions. If no solutions exist, print <span class=\"tex-span\">0</span>.</p>",
+    "samples": [
+        {
+            "input": "9 5<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "3 3<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "5 2<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, we have the following solutions: <span class=\"tex-span\">(2,\u20097)</span>, <span class=\"tex-span\">(3,\u20096)</span>, <span class=\"tex-span\">(6,\u20093)</span>, <span class=\"tex-span\">(7,\u20092)</span>.</p><p>In the second sample, the only solutions are <span class=\"tex-span\">(1,\u20092)</span> and <span class=\"tex-span\">(2,\u20091)</span>.</p>",
+    "contestId": 627,
+    "index": "A",
+    "name": "XOR Equation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "math"
+    ],
+    "solvedCount": 3984
+}

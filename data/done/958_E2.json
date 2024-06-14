@@ -1,0 +1,40 @@
+{
+    "title": "E2. Guard Duty (medium)",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Princess Heidi decided to give orders to all her <span class=\"tex-span\"><i>K</i></span> Rebel ship commanders in person. Unfortunately, she is currently travelling through hyperspace, and will leave it only at <span class=\"tex-span\"><i>N</i></span> specific moments <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>,\u2009<i>t</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>N</i></sub></span>. The meetings with commanders must therefore start and stop at those times. Namely, each commander will board her ship at some time <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> and disembark at some later time <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>j</i></sub></span>. Of course, Heidi needs to meet with all commanders, and no two meetings can be held during the same time. Two commanders cannot even meet at the beginnings/endings of the hyperspace jumps, because too many ships in one position could give out their coordinates to the enemy. </p><p>Your task is to find minimum time that Princess Heidi has to spend on meetings, with her schedule satisfying the conditions above. </p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>K</i></span>, <span class=\"tex-span\"><i>N</i></span> (<span class=\"tex-span\">2\u2009\u2264\u20092<i>K</i>\u2009\u2264\u2009<i>N</i>\u2009\u2264\u2009500000</span>, <span class=\"tex-span\"><i>K</i>\u2009\u2264\u20095000</span>). The second line contains <span class=\"tex-span\"><i>N</i></span> distinct integers <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>,\u2009<i>t</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>N</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) representing the times when Heidi leaves hyperspace.</p>",
+    "outputSpecification": "<p>Output only one integer: the minimum time spent on meetings. </p>",
+    "samples": [
+        {
+            "input": "2 5<br/>1 4 6 7 12<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "3 6<br/>6 3 4 2 5 1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "4 12<br/>15 7 4 19 3 30 14 1 5 23 17 25<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": "<p>In the first example, there are five valid schedules: <span class=\"tex-span\">[1,\u20094],\u2009[6,\u20097]</span> with total time 4, <span class=\"tex-span\">[1,\u20094],\u2009[6,\u200912]</span> with total time 9, <span class=\"tex-span\">[1,\u20094],\u2009[7,\u200912]</span> with total time 8, <span class=\"tex-span\">[1,\u20096],\u2009[7,\u200912]</span> with total time 10, and <span class=\"tex-span\">[4,\u20096],\u2009[7,\u200912]</span> with total time 7. So the answer is 4.</p><p>In the second example, there is only 1 valid schedule: <span class=\"tex-span\">[1,\u20092],\u2009[3,\u20094],\u2009[5,\u20096]</span>.</p><p>For the third example, one possible schedule with total time 6 is: <span class=\"tex-span\">[1,\u20093],\u2009[4,\u20095],\u2009[14,\u200915],\u2009[23,\u200925]</span>.</p>",
+    "contestId": 958,
+    "index": "E2",
+    "name": "Guard Duty (medium)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "dp",
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 909
+}

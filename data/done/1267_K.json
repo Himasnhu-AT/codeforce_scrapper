@@ -1,0 +1,30 @@
+{
+    "title": "K. Key Storage",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Karl is developing a key storage service. Each user has a positive integer key.</p><p>Karl knows that storing keys in plain text is bad practice. So, instead of storing a key, he decided to store a fingerprint of a key. However, using some existing fingerprint algorithm looked too boring to him, so he invented his own one.</p><p>Karl's fingerprint is calculated by the following process: divide the given integer by 2, then divide the\u00a0result by 3, then divide the result by 4, and so on, until we get a result that equals zero (we are speaking about integer division each time). The fingerprint is defined as the multiset of the remainders of these divisions. </p><p>For example, this is how Karl's fingerprint algorithm is applied to the key 11: 11 divided by 2 has remainder\u00a01 and result\u00a05, then 5 divided by 3 has remainder 2 and result 1, and 1 divided by 4 has remainder\u00a01 and result\u00a00. Thus, the key 11 produces the sequence of remainders $$$[1, 2, 1]$$$ and has the fingerprint multiset $$$\\{1, 1, 2\\}$$$.</p><p>Ksenia wants to prove that Karl's fingerprint algorithm is not very good. For example, she found that both keys 178800 and 123456 produce the fingerprint of $$$\\{0, 0, 0, 0, 2, 3, 3, 4\\}$$$. Thus, users are at risk of fingerprint collision with some commonly used and easy to guess keys like 123456.</p><p>Ksenia wants to make her words more persuasive. She wants to calculate the number of other keys that have the same fingerprint as the keys in the given list of some commonly used keys. Your task is to help\u00a0her.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1 \\le t \\le 50\\,000$$$)\u00a0\u2014 the number of commonly used keys to\u00a0examine. Each of the next $$$t$$$ lines contains one integer $$$k_i$$$ ($$$1 \\le k_i \\le 10^{18}$$$)\u00a0\u2014 the key itself. </p>",
+    "outputSpecification": "<p>For each of the keys print one integer\u00a0\u2014 the number of other keys that have the same fingerprint. </p>",
+    "samples": [
+        {
+            "input": "\n3\n1\n11\n123456\n",
+            "output": "\n0\n1\n127\n"
+        }
+    ],
+    "note": "<p>The other key with the same fingerprint as 11 is 15. 15 produces a sequence of remainders $$$[1, 1, 2]$$$. So\u00a0both numbers have the fingerprint multiset $$$\\{1, 1, 2\\}$$$.</p>",
+    "contestId": 1267,
+    "index": "K",
+    "name": "Key Storage",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "math"
+    ],
+    "solvedCount": 1875
+}

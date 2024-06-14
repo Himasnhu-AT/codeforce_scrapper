@@ -1,0 +1,37 @@
+{
+    "title": "E. Common ancestor",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The DNA sequence for every living creature in Berland can be represented as a non-empty line consisting of lowercase Latin letters. Berland scientists found out that all the creatures evolve by stages. During one stage exactly one symbol of the DNA line is replaced by exactly two other ones. At that overall there are <span class=\"tex-span\"><i>n</i></span> permissible substitutions. The substitution <span class=\"tex-font-style-tt\"><span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>-&gt;<span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span></span> means that any <span class=\"tex-font-style-bf\">one</span> symbol <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> can be replaced with two symbols <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span>. Every substitution could happen an unlimited number of times.</p><p>They say that two creatures with DNA sequences <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> can have a common ancestor if there exists such a DNA sequence <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">3</sub></span> that throughout evolution it can result in <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span>, perhaps after a different number of stages. Your task is to find out by the given <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> whether the creatures possessing such DNA sequences can have a common ancestor. If the answer is positive, you have to find the length of the shortest sequence of the common ancestor\u2019s DNA.</p>",
+    "inputSpecification": "<p>The first line contains a non-empty DNA sequence <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span>, the second line contains a non-empty DNA sequence <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span>. The lengths of these lines do not exceed 50, the lines contain only lowercase Latin letters. The third line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>) \u2014 the number of permissible substitutions. Then follow <span class=\"tex-span\"><i>n</i></span> lines each of which describes a substitution in the format <span class=\"tex-font-style-tt\"><span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>-&gt;<span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span></span>. The characters <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>, and <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> are lowercase Latin letters. Lines <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> can coincide, the list of substitutions can contain similar substitutions.</p>",
+    "outputSpecification": "<p>If <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> cannot have a common ancestor, print -1. Otherwise print the length of the shortest sequence <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">3</sub></span>, from which <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> could have evolved.</p>",
+    "samples": [
+        {
+            "input": "ababa<br/>aba<br/>2<br/>c->ba<br/>c->cc<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "ababa<br/>aba<br/>7<br/>c->ba<br/>c->cc<br/>e->ab<br/>z->ea<br/>b->ba<br/>d->dd<br/>d->ab<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "ababa<br/>aba<br/>1<br/>c->ba<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 49,
+    "index": "E",
+    "name": "Common ancestor",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp"
+    ],
+    "solvedCount": 651
+}

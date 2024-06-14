@@ -1,0 +1,33 @@
+{
+    "title": "F. Factorial zeros",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a positive integer <span class=\"tex-span\"><i>n</i></span>. Output the number of trailing zeros in <span class=\"tex-span\"><i>n</i>!</span> (<span class=\"tex-span\"><i>n</i>!</span> denotes a product of integers between 1 and <span class=\"tex-span\"><i>n</i></span>, inclusive).</p>",
+    "inputSpecification": "<p>The only line of input contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000000</span>).</p>",
+    "outputSpecification": "<p>Output the number of trailing zeros in <span class=\"tex-span\"><i>n</i>!</span>.</p>",
+    "samples": [
+        {
+            "input": "6<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "24<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>In the first sample <span class=\"tex-span\">6!\u2009=\u2009720</span>.</p><p>In the second sample <span class=\"tex-span\">24!\u2009=\u2009620448401733239439360000</span>.</p>",
+    "contestId": 162,
+    "index": "F",
+    "name": "Factorial zeros",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 196
+}

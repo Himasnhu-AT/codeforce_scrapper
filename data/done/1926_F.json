@@ -1,0 +1,33 @@
+{
+    "title": "F. Vlad and Avoiding X",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vladislav has a grid of size $$$7 \\times 7$$$, where each cell is colored black or white. In one operation, he can choose any cell and change its color (black $$$\\leftrightarrow$$$ white).</p><p>Find the minimum number of operations required to ensure that there are no black cells with four diagonal neighbors also being black.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/fae62207ed4efe912c901cf52f73c3194f7e6402.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/><p><span class=\"tex-font-size-small\">The left image shows that initially there are two black cells violating the condition. By flipping one cell, the grid will work.</span> </p></center>",
+    "inputSpecification": "<p>The first line of input contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 200$$$)\u00a0\u2014 the number of test cases. Then follows the description of the test cases.</p><p>Each test case consists of $$$7$$$ lines, each containing $$$7$$$ characters. Each of these characters is either $$$\\texttt{W}$$$ or $$$\\texttt{B}$$$, denoting a white or black cell, respectively.</p>",
+    "outputSpecification": "<p>For each test case, output a single integer\u00a0\u2014 the minimum number of operations required to ensure that there are no black cells with all four diagonal neighbors also being black.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">WWWWWWW</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">WWWWBBB</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">WWWWWBW</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">WWBBBBB</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">WWWBWWW</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">WWBBBWW</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">WWWWWWW</div><div class=\"test-example-line test-example-line-even test-example-line-2\">WWWWWWW</div><div class=\"test-example-line test-example-line-even test-example-line-2\">WWWWWWW</div><div class=\"test-example-line test-example-line-even test-example-line-2\">WBBBBBW</div><div class=\"test-example-line test-example-line-even test-example-line-2\">WBBBBBW</div><div class=\"test-example-line test-example-line-even test-example-line-2\">WBBBBBW</div><div class=\"test-example-line test-example-line-even test-example-line-2\">WWWWWWW</div><div class=\"test-example-line test-example-line-even test-example-line-2\">WWWWWWW</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">WWWWWWW</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">WWWWWWW</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">WWWWWWW</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">WWWWWWW</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">WWWWWWW</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">WWWWWWW</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">WWWWWWW</div><div class=\"test-example-line test-example-line-even test-example-line-4\">WBBBBBW</div><div class=\"test-example-line test-example-line-even test-example-line-4\">BBBBBBB</div><div class=\"test-example-line test-example-line-even test-example-line-4\">BBBBBBB</div><div class=\"test-example-line test-example-line-even test-example-line-4\">WWWWWWW</div><div class=\"test-example-line test-example-line-even test-example-line-4\">BBBBBBB</div><div class=\"test-example-line test-example-line-even test-example-line-4\">BBBBBBB</div><div class=\"test-example-line test-example-line-even test-example-line-4\">BBBBBBB</div>",
+            "output": "\n1\n2\n0\n5\n"
+        }
+    ],
+    "note": "<p>The first test case is illustrated in the statement.</p><p>The second test case is illustrated below: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/12c315b71825a3a31f29c16752119bf5e4cd3c36.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the third test case, the grid already satisfies the condition.</p>",
+    "contestId": 1926,
+    "index": "F",
+    "name": "Vlad and Avoiding X",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "implementation"
+    ],
+    "solvedCount": 1545
+}

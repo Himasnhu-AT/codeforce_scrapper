@@ -1,0 +1,30 @@
+{
+    "title": "F. Selection of Personnel",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One company of IT City decided to create a group of innovative developments consisting from <span class=\"tex-span\">5</span> to <span class=\"tex-span\">7</span> people and hire new employees for it. After placing an advertisment the company received <span class=\"tex-span\"><i>n</i></span> resumes. Now the HR department has to evaluate each possible group composition and select one of them. Your task is to count the number of variants of group composition to evaluate.</p>",
+    "inputSpecification": "<p>The only line of the input contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">7\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009777</span>) \u2014 the number of potential employees that sent resumes.</p>",
+    "outputSpecification": "<p>Output one integer \u2014 the number of different variants of group composition.</p>",
+    "samples": [
+        {
+            "input": "7<br/>",
+            "output": "29"
+        }
+    ],
+    "note": null,
+    "contestId": 630,
+    "index": "F",
+    "name": "Selection of Personnel",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "math"
+    ],
+    "solvedCount": 6628
+}

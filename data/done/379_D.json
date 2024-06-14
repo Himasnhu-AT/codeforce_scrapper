@@ -1,0 +1,47 @@
+{
+    "title": "D. New Year Letter",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Many countries have such a New Year or Christmas tradition as writing a letter to Santa including a wish list for presents. Vasya is an ordinary programmer boy. Like all ordinary boys, he is going to write the letter to Santa on the New Year Eve (we Russians actually expect Santa for the New Year, not for Christmas). </p><p>Vasya has come up with an algorithm he will follow while writing a letter. First he chooses two strings, <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> anf <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span>, consisting of uppercase English letters. Then the boy makes string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>k</i></sub></span>, using a recurrent equation <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>n</i></sub>\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20092</sub>\u2009+\u2009<i>s</i><sub class=\"lower-index\"><i>n</i>\u2009-\u20091</sub></span>, operation '<span class=\"tex-font-style-tt\">+</span>' means a concatenation (that is, the sequential record) of strings in the given order. Then Vasya writes down string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>k</i></sub></span> on a piece of paper, puts it in the envelope and sends in to Santa. </p><p>Vasya is absolutely sure that Santa will bring him the best present if the resulting string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>k</i></sub></span> has exactly <span class=\"tex-span\"><i>x</i></span> occurrences of substring <span class=\"tex-font-style-tt\">AC</span> (the short-cut reminds him \u043ef accepted problems). Besides, Vasya decided that string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> should have length <span class=\"tex-span\"><i>n</i></span>, and string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> should have length <span class=\"tex-span\"><i>m</i></span>. Vasya hasn't decided anything else.</p><p>At the moment Vasya's got urgent New Year business, so he asks you to choose two strings for him, <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span> in the required manner. Help Vasya.</p>",
+    "inputSpecification": "<p>The first line contains four integers <span class=\"tex-span\"><i>k</i>,\u2009<i>x</i>,\u2009<i>n</i>,\u2009<i>m</i></span> <span class=\"tex-span\">(3\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200950;\u00a00\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>;\u00a01\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100)</span>.</p>",
+    "outputSpecification": "<p>In the first line print string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub></span>, consisting of <span class=\"tex-span\"><i>n</i></span> uppercase English letters. In the second line print string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub></span>, consisting of <span class=\"tex-span\"><i>m</i></span> uppercase English letters. If there are multiple valid strings, print any of them.</p><p>If the required pair of strings doesn't exist, print \"<span class=\"tex-font-style-tt\">Happy new year!</span>\" without the quotes.</p>",
+    "samples": [
+        {
+            "input": "3 2 2 2<br/>",
+            "output": "AC<br/>AC<br/>"
+        },
+        {
+            "input": "3 3 2 2<br/>",
+            "output": "Happy new year!<br/>"
+        },
+        {
+            "input": "3 0 2 2<br/>",
+            "output": "AA<br/>AA<br/>"
+        },
+        {
+            "input": "4 3 2 1<br/>",
+            "output": "Happy new year!<br/>"
+        },
+        {
+            "input": "4 2 2 1<br/>",
+            "output": "Happy new year!<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 379,
+    "index": "D",
+    "name": "New Year Letter",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp"
+    ],
+    "solvedCount": 1485
+}

@@ -1,0 +1,44 @@
+{
+    "title": "G. Bandit Blues",
+    "timeLimit": {
+        "value": 3.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Japate, while traveling through the forest of Mala, saw <span class=\"tex-span\"><i>N</i></span> bags of gold lying in a row. Each bag has some <span class=\"tex-font-style-bf\">distinct</span> weight of gold between <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>N</i></span>. Japate can carry only one bag of gold with him, so he uses the following strategy to choose a bag.</p><p>Initially, he starts with an empty bag (zero weight). He considers the bags in some order. If the current bag has a higher weight than the bag in his hand, he picks the current bag.</p><p>Japate put the bags in some order. Japate realizes that he will pick <span class=\"tex-span\"><i>A</i></span> bags, if he starts picking bags from the front, and will pick <span class=\"tex-span\"><i>B</i></span> bags, if he starts picking bags from the back. By picking we mean replacing the bag in his hand with the current one.</p><p>Now he wonders how many permutations of bags are possible, in which he picks <span class=\"tex-span\"><i>A</i></span> bags from the front and <span class=\"tex-span\"><i>B</i></span> bags from back using the above strategy.</p><p>Since the answer can be very large, output it modulo <span class=\"tex-span\">998244353</span>.</p>",
+    "inputSpecification": "<p>The only line of input contains three space separated integers <span class=\"tex-span\"><i>N</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>), <span class=\"tex-span\"><i>A</i></span> and <span class=\"tex-span\"><i>B</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>A</i>,\u2009<i>B</i>\u2009\u2264\u2009<i>N</i></span>).</p>",
+    "outputSpecification": "<p>Output a single integer \u2014 the number of valid permutations modulo <span class=\"tex-span\">998244353</span>.</p>",
+    "samples": [
+        {
+            "input": "1 1 1<br/>",
+            "output": "1"
+        },
+        {
+            "input": "2 1 1<br/>",
+            "output": "0"
+        },
+        {
+            "input": "2 2 1<br/>",
+            "output": "1"
+        },
+        {
+            "input": "5 2 2<br/>",
+            "output": "22"
+        }
+    ],
+    "note": "<p>In sample case <span class=\"tex-span\">1</span>, the only possible permutation is <span class=\"tex-span\">[1]</span></p><p>In sample cases <span class=\"tex-span\">2</span> and <span class=\"tex-span\">3</span>, only two permutations of size <span class=\"tex-span\">2</span> are possible:<span class=\"tex-span\">{[1,\u20092],\u2009[2,\u20091]}</span>. The values of <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> for first permutation is <span class=\"tex-span\">2</span> and <span class=\"tex-span\">1</span>, and for the second permutation these values are <span class=\"tex-span\">1</span> and <span class=\"tex-span\">2</span>. </p><p>In sample case <span class=\"tex-span\">4</span>, out of 120 permutations of <span class=\"tex-span\">[1,\u20092,\u20093,\u20094,\u20095]</span> possible, only 22 satisfy the given constraints of <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>.</p>",
+    "contestId": 960,
+    "index": "G",
+    "name": "Bandit Blues",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "fft",
+        "math"
+    ],
+    "solvedCount": 1042
+}

@@ -1,0 +1,34 @@
+{
+    "title": "B. Fedya and Maths",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Fedya studies in a gymnasium. Fedya's maths hometask is to calculate the following expression:</p><center class=\"tex-equation\"><span class=\"tex-span\">(1<sup class=\"upper-index\"><i>n</i></sup>\u2009+\u20092<sup class=\"upper-index\"><i>n</i></sup>\u2009+\u20093<sup class=\"upper-index\"><i>n</i></sup>\u2009+\u20094<sup class=\"upper-index\"><i>n</i></sup>)\u00a0<i>mod</i>\u00a05</span></center><p>for given value of <span class=\"tex-span\"><i>n</i></span>. Fedya managed to complete the task. Can you? Note that given number <span class=\"tex-span\"><i>n</i></span> can be extremely large (e.g. it can exceed any integer type of your programming language).</p>",
+    "inputSpecification": "<p>The single line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">10<sup class=\"upper-index\">5</sup></sup></span>). The number doesn't contain any leading zeroes.</p>",
+    "outputSpecification": "<p>Print the value of the expression without leading zeros.</p>",
+    "samples": [
+        {
+            "input": "4<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "124356983594583453458888889<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>Operation <span class=\"tex-span\"><i>x</i>\u00a0<i>mod</i>\u00a0<i>y</i></span> means taking remainder after division <span class=\"tex-span\"><i>x</i></span> by <span class=\"tex-span\"><i>y</i></span>.</p><p>Note to the first sample:</p><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/825f244180bb10323db01645118c3cfdb312fa89.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 456,
+    "index": "B",
+    "name": "Fedya and Maths",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 16148
+}

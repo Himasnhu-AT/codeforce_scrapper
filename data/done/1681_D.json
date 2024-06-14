@@ -1,0 +1,41 @@
+{
+    "title": "D. Required Length",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two integer numbers, $$$n$$$ and $$$x$$$. You may perform several operations with the integer $$$x$$$.</p><p>Each operation you perform is the following one: choose any digit $$$y$$$ that occurs in the decimal representation of $$$x$$$ at least once, and replace $$$x$$$ by $$$x \\cdot y$$$.</p><p>You want to make the length of decimal representation of $$$x$$$ (without leading zeroes) equal to $$$n$$$. What is the minimum number of operations required to do that?</p>",
+    "inputSpecification": "<p>The only line of the input contains two integers $$$n$$$ and $$$x$$$ ($$$2 \\le n \\le 19$$$; $$$1 \\le x &lt; 10^{n-1}$$$).</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the minimum number of operations required to make the length of decimal representation of $$$x$$$ (without leading zeroes) equal to $$$n$$$, or $$$-1$$$ if it is impossible.</p>",
+    "samples": [
+        {
+            "input": "\n2 1\n",
+            "output": "\n-1\n"
+        },
+        {
+            "input": "\n3 2\n",
+            "output": "\n4\n"
+        },
+        {
+            "input": "\n13 42\n",
+            "output": "\n12\n"
+        }
+    ],
+    "note": "<p>In the second example, the following sequence of operations achieves the goal:</p><ol> <li> multiply $$$x$$$ by $$$2$$$, so $$$x = 2 \\cdot 2 = 4$$$; </li><li> multiply $$$x$$$ by $$$4$$$, so $$$x = 4 \\cdot 4 = 16$$$; </li><li> multiply $$$x$$$ by $$$6$$$, so $$$x = 16 \\cdot 6 = 96$$$; </li><li> multiply $$$x$$$ by $$$9$$$, so $$$x = 96 \\cdot 9 = 864$$$. </li></ol>",
+    "contestId": 1681,
+    "index": "D",
+    "name": "Required Length",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "hashing",
+        "shortest paths"
+    ],
+    "solvedCount": 9348
+}

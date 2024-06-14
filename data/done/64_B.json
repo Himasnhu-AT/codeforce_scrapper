@@ -1,0 +1,30 @@
+{
+    "title": "B. Expression",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a line \u00ab<span class=\"tex-font-style-tt\">n#m</span>\u00bb, where \u00ab<span class=\"tex-font-style-tt\">n</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">m</span>\u00bb are digits, and \u00ab<span class=\"tex-font-style-tt\">#</span>\u00bb is a sign \u00ab<span class=\"tex-font-style-tt\">+</span>\u00bb or \u00ab<span class=\"tex-font-style-tt\">-</span>\u00bb. Print the value of the given expression.</p>",
+    "inputSpecification": "<p>The only given line has a string in form \u00ab<span class=\"tex-font-style-tt\">n#m</span>\u00bb, where \u00ab<span class=\"tex-font-style-tt\">n</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">m</span>\u00bb are digits (from 0 to 9), and \u00ab<span class=\"tex-font-style-tt\">#</span>\u00bb is a sign \u00ab<span class=\"tex-font-style-tt\">+</span>\u00bb or \u00ab<span class=\"tex-font-style-tt\">-</span>\u00bb.</p>",
+    "outputSpecification": "<p>Print the value of the given expression.</p>",
+    "samples": [
+        {
+            "input": "1-5<br/>",
+            "output": "-4<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 64,
+    "index": "B",
+    "name": "Expression",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "expression parsing"
+    ],
+    "solvedCount": 1000
+}

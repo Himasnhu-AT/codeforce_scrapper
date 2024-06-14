@@ -1,0 +1,34 @@
+{
+    "title": "B. Little Pigs and Wolves",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Once upon a time there were several little pigs and several wolves on a two-dimensional grid of size <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span>. Each cell in this grid was either empty, containing one little pig, or containing one wolf.</p><p>A little pig and a wolf are adjacent if the cells that they are located at share a side. The little pigs are afraid of wolves, so there will be at most one wolf adjacent to each little pig. But each wolf may be adjacent to any number of little pigs.</p><p>They have been living peacefully for several years. But today the wolves got hungry. One by one, each wolf will choose one of the little pigs adjacent to it (if any), and eats the poor little pig. This process is not repeated. That is, each wolf will get to eat at most one little pig. Once a little pig gets eaten, it disappears and cannot be eaten by any other wolf.</p><p>What is the maximum number of little pigs that may be eaten by the wolves?</p>",
+    "inputSpecification": "<p>The first line contains integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200910</span>) which denotes the number of rows and columns in our two-dimensional grid, respectively. Then follow <span class=\"tex-span\"><i>n</i></span> lines containing <span class=\"tex-span\"><i>m</i></span> characters each \u2014 that is the grid description. \"<span class=\"tex-font-style-tt\">.</span>\" means that this cell is empty. \"<span class=\"tex-font-style-tt\">P</span>\" means that this cell contains a little pig. \"<span class=\"tex-font-style-tt\">W</span>\" means that this cell contains a wolf. </p><p>It is guaranteed that there will be at most one wolf adjacent to any little pig.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the maximal number of little pigs that may be eaten by the wolves.</p>",
+    "samples": [
+        {
+            "input": "2 3<br/>PPW<br/>W.P<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3 3<br/>P.W<br/>.P.<br/>W.P<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first example, one possible scenario in which two little pigs get eaten by the wolves is as follows. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8b2d8a71336740ed4c66ef13db59d065aaacdb99.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 116,
+    "index": "B",
+    "name": "Little Pigs and Wolves",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 13484
+}

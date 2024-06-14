@@ -1,0 +1,32 @@
+{
+    "title": "B. Table",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>John Doe has an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> table. John Doe can paint points in some table cells, not more than one point in one table cell. John Doe wants to use such operations to make each square subtable of size <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>n</i></span> have exactly <span class=\"tex-span\"><i>k</i></span> points.</p><p>John Doe wondered, how many distinct ways to fill the table with points are there, provided that the condition must hold. As this number can be rather large, John Doe asks to find its remainder after dividing by <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p><p>You should assume that John always paints a point exactly in the center of some cell. Two ways to fill a table are considered distinct, if there exists a table cell, that has a point in one way and doesn't have it in the other.</p>",
+    "inputSpecification": "<p>A single line contains space-separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span>, <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100;\u00a0<i>n</i>\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup>;\u00a00\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i><sup class=\"upper-index\">2</sup></span>) \u2014 the number of rows of the table, the number of columns of the table and the number of points each square must contain.</p><p>Please, do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier. </p>",
+    "outputSpecification": "<p>In a single line print a single integer \u2014 the remainder from dividing the described number of ways by <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "5 6 1<br/>",
+            "output": "45"
+        }
+    ],
+    "note": "<p>Let's consider the first test case:  </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/25daac3ceaf172a48105d7830883b500f84037ed.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> The gray area belongs to both <span class=\"tex-span\">5\u2009\u00d7\u20095</span> squares. So, if it has one point, then there shouldn't be points in any other place. If one of the white areas has a point, then the other one also must have a point. Thus, there are about <span class=\"tex-span\">20</span> variants, where the point lies in the gray area and <span class=\"tex-span\">25</span> variants, where each of the white areas contains a point. Overall there are <span class=\"tex-span\">45</span> variants.",
+    "contestId": 232,
+    "index": "B",
+    "name": "Table",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 1392
+}

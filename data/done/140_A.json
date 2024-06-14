@@ -1,0 +1,38 @@
+{
+    "title": "A. New Year Table",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Gerald is setting the New Year table. The table has the form of a circle; its radius equals <span class=\"tex-span\"><i>R</i></span>. Gerald invited many guests and is concerned whether the table has enough space for plates for all those guests. Consider all plates to be round and have the same radii that equal <span class=\"tex-span\"><i>r</i></span>. Each plate must be completely inside the table and must touch the edge of the table. Of course, the plates must not intersect, but they can touch each other. Help Gerald determine whether the table is large enough for <span class=\"tex-span\"><i>n</i></span> plates.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>R</i></span> and <span class=\"tex-span\"><i>r</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>r</i>,\u2009<i>R</i>\u2009\u2264\u20091000</span>) \u2014 the number of plates, the radius of the table and the plates' radius.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" (without the quotes) if it is possible to place <span class=\"tex-span\"><i>n</i></span> plates on the table by the rules given above. If it is impossible, print \"<span class=\"tex-font-style-tt\">NO</span>\".</p><p>Remember, that each plate must touch the edge of the table. </p>",
+    "samples": [
+        {
+            "input": "4 10 4<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "5 10 4<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "1 10 10<br/>",
+            "output": "YES<br/>"
+        }
+    ],
+    "note": "<p>The possible arrangement of the plates for the first sample is: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/bd13b9ff40460309ba582ac4038d56a0729c2ec1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 140,
+    "index": "A",
+    "name": "New Year Table",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "math"
+    ],
+    "solvedCount": 4095
+}

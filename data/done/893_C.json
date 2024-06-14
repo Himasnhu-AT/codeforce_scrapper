@@ -1,0 +1,39 @@
+{
+    "title": "C. Rumor",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vova promised himself that he would never play computer games... But recently Firestorm \u2014 a well-known game developing company \u2014 published their newest game, World of Farcraft, and it became really popular. Of course, Vova started playing it.</p><p>Now he tries to solve a quest. The task is to come to a settlement named Overcity and spread a rumor in it.</p><p>Vova knows that there are <span class=\"tex-span\"><i>n</i></span> characters in Overcity. Some characters are friends to each other, and they share information they got. Also Vova knows that he can bribe each character so he or she starts spreading the rumor; <span class=\"tex-span\"><i>i</i></span>-th character wants <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> gold in exchange for spreading the rumor. When a character hears the rumor, he tells it to all his friends, and they start spreading the rumor to their friends (for free), and so on.</p><p>The quest is finished when all <span class=\"tex-span\"><i>n</i></span> characters know the rumor. What is the minimum amount of gold Vova needs to spend in order to finish the quest?</p><p>Take a look at the notes if you think you haven't understood the problem completely.</p>",
+    "inputSpecification": "<p>The first line contains two integer numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20090\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of characters in Overcity and the number of pairs of friends.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integer numbers <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the amount of gold <span class=\"tex-span\"><i>i</i></span>-th character asks to start spreading the rumor.</p><p>Then <span class=\"tex-span\"><i>m</i></span> lines follow, each containing a pair of numbers (<span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>) which represent that characters <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> are friends (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>). It is guaranteed that each pair is listed at most once.</p>",
+    "outputSpecification": "<p>Print one number \u2014 the minimum amount of gold Vova has to spend in order to finish the quest.</p>",
+    "samples": [
+        {
+            "input": "5 2<br/>2 5 3 4 8<br/>1 4<br/>4 5<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "10 0<br/>1 2 3 4 5 6 7 8 9 10<br/>",
+            "output": "55<br/>"
+        },
+        {
+            "input": "10 5<br/>1 6 2 7 3 8 4 9 5 10<br/>1 2<br/>3 4<br/>5 6<br/>7 8<br/>9 10<br/>",
+            "output": "15<br/>"
+        }
+    ],
+    "note": "<p>In the first example the best decision is to bribe the first character (he will spread the rumor to fourth character, and the fourth one will spread it to fifth). Also Vova has to bribe the second and the third characters, so they know the rumor.</p><p>In the second example Vova has to bribe everyone.</p><p>In the third example the optimal decision is to bribe the first, the third, the fifth, the seventh and the ninth characters.</p>",
+    "contestId": 893,
+    "index": "C",
+    "name": "Rumor",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "greedy"
+    ],
+    "solvedCount": 21959
+}

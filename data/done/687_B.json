@@ -1,0 +1,35 @@
+{
+    "title": "B. Remainders Game",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Today Pari and Arya are playing a game called Remainders.</p><p>Pari chooses two positive integer <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>k</i></span>, and tells Arya <span class=\"tex-span\"><i>k</i></span> but not <span class=\"tex-span\"><i>x</i></span>. Arya have to find the value <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fddd3bb34fa9f786754485afa55927f021d74d15.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. There are <span class=\"tex-span\"><i>n</i></span> ancient numbers <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub>,\u2009<i>c</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>c</i><sub class=\"lower-index\"><i>n</i></sub></span> and Pari has to tell Arya <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fbb55ab61f79d427b1a3d23470b55aa433de55e7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> if Arya wants. Given <span class=\"tex-span\"><i>k</i></span> and the ancient values, tell us if Arya has a winning strategy independent of value of <span class=\"tex-span\"><i>x</i></span> or not. Formally, is it true that Arya can understand the value <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/fddd3bb34fa9f786754485afa55927f021d74d15.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> for any positive integer <span class=\"tex-span\"><i>x</i></span>?</p><p>Note, that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f58f159973d4609d919286c1821e69cd34d81118.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> means the remainder of <span class=\"tex-span\"><i>x</i></span> after dividing it by <span class=\"tex-span\"><i>y</i></span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009 <i>k</i>\u2009\u2264\u20091\u2009000\u2009000</span>)\u00a0\u2014 the number of ancient integers and value <span class=\"tex-span\"><i>k</i></span> that is chosen by Pari.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\">1</sub>,\u2009<i>c</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>c</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091\u2009000\u2009000</span>).</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">Yes</span>\" (without quotes) if Arya has a winning strategy independent of value of <span class=\"tex-span\"><i>x</i></span>, or \"<span class=\"tex-font-style-tt\">No</span>\" (without quotes) otherwise.</p>",
+    "samples": [
+        {
+            "input": "4 5<br/>2 3 5 12<br/>",
+            "output": "Yes<br/>"
+        },
+        {
+            "input": "2 7<br/>2 3<br/>",
+            "output": "No<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, Arya can understand <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d170efffcde0907ee6bcf32de21051bce0677a2c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> because <span class=\"tex-span\">5</span> is one of the ancient numbers.</p><p>In the second sample, Arya can't be sure what <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/57b5f6a96f5db073270dd3ed4266c69299ec701d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is. For example <span class=\"tex-span\">1</span> and <span class=\"tex-span\">7</span> have the same remainders after dividing by <span class=\"tex-span\">2</span> and <span class=\"tex-span\">3</span>, but they differ in remainders after dividing by <span class=\"tex-span\">7</span>.</p>",
+    "contestId": 687,
+    "index": "B",
+    "name": "Remainders Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "chinese remainder theorem",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 5624
+}

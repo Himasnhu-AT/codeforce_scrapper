@@ -1,0 +1,46 @@
+{
+    "title": "C. Santa Claus and Robot",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Santa Claus has Robot which lives on the infinite grid and can move <span class=\"tex-font-style-bf\">along its lines</span>. He can also, having a sequence of <span class=\"tex-span\"><i>m</i></span> points <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>m</i></sub></span> with integer coordinates, do the following: denote its initial location by <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">0</sub></span>. First, the robot will move from <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">0</sub></span> to <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub></span> along one of the shortest paths between them (please notice that since the robot moves only along the grid lines, there can be several shortest paths). Then, after it reaches <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub></span>, it'll move to <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">2</sub></span>, again, choosing one of the shortest ways, then to <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">3</sub></span>, and so on, until he has visited all points in the given order. Some of the points in the sequence may coincide, in that case Robot will visit that point several times according to the sequence order.</p><p>While Santa was away, someone gave a sequence of points to Robot. This sequence is now lost, but Robot saved the protocol of its unit movements. Please, find the minimum possible length of the sequence.</p>",
+    "inputSpecification": "<p>The first line of input contains the only positive integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>) which equals the number of unit segments the robot traveled. The second line contains the movements protocol, which consists of <span class=\"tex-span\"><i>n</i></span> letters, each being equal either <span class=\"tex-font-style-tt\">L</span>, or <span class=\"tex-font-style-tt\">R</span>, or <span class=\"tex-font-style-tt\">U</span>, or <span class=\"tex-font-style-tt\">D</span>. <span class=\"tex-span\"><i>k</i></span>-th letter stands for the direction which Robot traveled the <span class=\"tex-span\"><i>k</i></span>-th unit segment in: <span class=\"tex-font-style-tt\">L</span> means that it moved to the left, <span class=\"tex-font-style-tt\">R</span>\u00a0\u2014 to the right, <span class=\"tex-font-style-tt\">U</span>\u00a0\u2014 to the top and <span class=\"tex-font-style-tt\">D</span>\u00a0\u2014 to the bottom. Have a look at the illustrations for better explanation.</p>",
+    "outputSpecification": "<p>The only line of input should contain the minimum possible length of the sequence.</p>",
+    "samples": [
+        {
+            "input": "4<br/>RURD<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "6<br/>RRULDD<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "26<br/>RRRULURURUULULLLDLDDRDRDLD<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "3<br/>RLL<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "4<br/>LRLR<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>The illustrations to the first three tests are given below.</p><p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/832fb8f97a482be815e0f87edde26c9791a0d330.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/119a8ba68772b2c2bf76f2acdc58027f6c5cde1f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c7b4534f24cbad48148bcba24bc44f37bf7a2dbf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>The last example illustrates that each point in the sequence should be counted as many times as it is presented in the sequence.</p>",
+    "contestId": 748,
+    "index": "C",
+    "name": "Santa Claus and Robot",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 4548
+}

@@ -1,0 +1,29 @@
+{
+    "title": "E. A rectangle",
+    "timeLimit": {
+        "value": 0.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Developing tools for creation of locations maps for turn-based fights in a new game, Petya faced the following problem.</p><p>A field map consists of hexagonal cells. Since locations sizes are going to be big, a game designer wants to have a tool for quick filling of a field part with identical enemy units. This action will look like following: a game designer will select a rectangular area on the map, and each cell whose center belongs to the selected rectangle will be filled with the enemy unit.</p><p>More formally, if a game designer selected cells having coordinates <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>)</span> and <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub>)</span>, where <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">2</sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>y</i><sub class=\"lower-index\">2</sub></span>, then all cells having center coordinates <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> such that <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">2</sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>y</i>\u2009\u2264\u2009<i>y</i><sub class=\"lower-index\">2</sub></span> will be filled. Orthogonal coordinates system is set up so that one of cell sides is parallel to <span class=\"tex-span\"><i>OX</i></span> axis, all hexagon centers have integer coordinates and for each integer <span class=\"tex-span\"><i>x</i></span> there are cells having center with such <span class=\"tex-span\"><i>x</i></span> coordinate and for each integer <span class=\"tex-span\"><i>y</i></span> there are cells having center with such <span class=\"tex-span\"><i>y</i></span> coordinate. It is guaranteed that difference <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">2</sub>\u2009-\u2009<i>x</i><sub class=\"lower-index\">1</sub></span> is divisible by <span class=\"tex-span\">2</span>.</p><p>Working on the problem Petya decided that before painting selected units he wants to output number of units that will be painted on the map.</p><p>Help him implement counting of these units before painting.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1fb126f489c1c5387457312ee23f680e5a55fedb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The only line of input contains four integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009<i>y</i><sub class=\"lower-index\">2</sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>,\u2009\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>y</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>y</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the coordinates of the centers of two cells.</p>",
+    "outputSpecification": "<p>Output one integer \u2014 the number of cells to be filled.</p>",
+    "samples": [
+        {
+            "input": "1 1 5 5<br/>",
+            "output": "13"
+        }
+    ],
+    "note": null,
+    "contestId": 630,
+    "index": "E",
+    "name": "A rectangle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 2267
+}

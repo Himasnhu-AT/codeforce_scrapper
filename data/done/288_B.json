@@ -1,0 +1,33 @@
+{
+    "title": "B. Polo the Penguin and Houses ",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little penguin Polo loves his home village. The village has <span class=\"tex-span\"><i>n</i></span> houses, indexed by integers from 1 to <span class=\"tex-span\"><i>n</i></span>. Each house has a plaque containing an integer, the <span class=\"tex-span\"><i>i</i></span>-th house has a plaque containing integer <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>).</p><p>Little penguin Polo loves walking around this village. The walk looks like that. First he stands by a house number <span class=\"tex-span\"><i>x</i></span>. Then he goes to the house whose number is written on the plaque of house <span class=\"tex-span\"><i>x</i></span> (that is, to house <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>x</i></sub></span>), then he goes to the house whose number is written on the plaque of house <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>x</i></sub></span> (that is, to house <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>p</i><sub class=\"lower-index\"><i>x</i></sub></sub></span>), and so on.</p><p>We know that:</p><ol> <li> When the penguin starts walking from any house indexed from 1 to <span class=\"tex-span\"><i>k</i></span>, inclusive, he can walk to house number 1. </li><li> When the penguin starts walking from any house indexed from <span class=\"tex-span\"><i>k</i>\u2009+\u20091</span> to <span class=\"tex-span\"><i>n</i></span>, inclusive, he definitely cannot walk to house number 1. </li><li> When the penguin starts walking from house number 1, he can get back to house number 1 after some non-zero number of walks from a house to a house. </li></ol><p>You need to find the number of ways you may write the numbers on the houses' plaques so as to fulfill the three above described conditions. Print the remainder after dividing this number by <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "inputSpecification": "<p>The single line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>min</i>(8,\u2009<i>n</i>)</span>) \u2014 the number of the houses and the number <span class=\"tex-span\"><i>k</i></span> from the statement.</p>",
+    "outputSpecification": "<p>In a single line print a single integer \u2014 the answer to the problem modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "5 2<br/>",
+            "output": "54<br/>"
+        },
+        {
+            "input": "7 4<br/>",
+            "output": "1728<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 288,
+    "index": "B",
+    "name": "Polo the Penguin and Houses ",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics"
+    ],
+    "solvedCount": 2858
+}

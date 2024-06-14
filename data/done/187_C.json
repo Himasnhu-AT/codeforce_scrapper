@@ -1,0 +1,34 @@
+{
+    "title": "C. Weak Memory",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-underline\">Zart PMP</span> is qualified for ICPC World Finals in Harbin, China. After team excursion to Sun Island Park for snow sculpture art exposition, PMP should get back to buses before they leave. But the park is really big and he does not know how to find them.</p><p>The park has <span class=\"tex-span\"><i>n</i></span> intersections numbered <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>n</i></span>. There are <span class=\"tex-span\"><i>m</i></span> bidirectional roads that connect some pairs of these intersections. At <span class=\"tex-span\"><i>k</i></span> intersections, ICPC volunteers are helping the teams and showing them the way to their destinations. Locations of volunteers are fixed and distinct.</p><p>When PMP asks a volunteer the way to bus station, he/she can tell him the whole path. But the park is fully covered with ice and snow and everywhere looks almost the same. So PMP can only memorize at most <span class=\"tex-span\"><i>q</i></span> intersections after each question (excluding the intersection they are currently standing). He always tells volunteers about his weak memory and if there is no direct path of length (in number of roads) at most <span class=\"tex-span\"><i>q</i></span> that leads to bus station, the volunteer will guide PMP to another volunteer (who is at most <span class=\"tex-span\"><i>q</i></span> intersections away, of course). ICPC volunteers know the area very well and always tell PMP the best way. So if there exists a way to bus stations, PMP will definitely find it.</p><p>PMP's initial location is intersection <span class=\"tex-span\"><i>s</i></span> and the buses are at intersection <span class=\"tex-span\"><i>t</i></span>. There will always be a volunteer at intersection <span class=\"tex-span\"><i>s</i></span>. Your job is to find out the minimum <span class=\"tex-span\"><i>q</i></span> which guarantees that PMP can find the buses.</p>",
+    "inputSpecification": "<p>The first line contains three space-separated integers <span class=\"tex-span\"><i>n</i>,\u2009<i>m</i>,\u2009<i>k</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20090\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup>,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i></span>) \u2014 the number of intersections, roads and volunteers, respectively. Next line contains <span class=\"tex-span\"><i>k</i></span> distinct space-separated integers between <span class=\"tex-span\">1</span> and <span class=\"tex-span\"><i>n</i></span> inclusive \u2014 the numbers of cities where volunteers are located.</p><p>Next <span class=\"tex-span\"><i>m</i></span> lines describe the roads. The <span class=\"tex-span\"><i>i</i></span>-th of these lines contains two space-separated integers <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>,\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>) \u2014 two intersections that <span class=\"tex-span\"><i>i</i></span>-th road connects. There will be at most one road between any two intersections.</p><p>Last line of input contains two space-separated integers <span class=\"tex-span\"><i>s</i>,\u2009<i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>s</i>,\u2009<i>t</i>\u2009\u2264\u2009<i>n</i>,\u2009<i>s</i>\u2009\u2260\u2009<i>t</i></span>) \u2014 the initial location of PMP and the location of the buses. It might not always be possible to reach <span class=\"tex-span\"><i>t</i></span> from <span class=\"tex-span\"><i>s</i></span>.</p><p>It is guaranteed that there is always a volunteer at intersection <span class=\"tex-span\"><i>s</i></span>. </p>",
+    "outputSpecification": "<p>Print on the only line the answer to the problem \u2014 the minimum value of <span class=\"tex-span\"><i>q</i></span> which guarantees that PMP can find the buses. If PMP cannot reach the buses at all, output -1 instead.</p>",
+    "samples": [
+        {
+            "input": "6 6 3<br/>1 3 6<br/>1 2<br/>2 3<br/>4 2<br/>5 6<br/>4 5<br/>3 4<br/>1 6<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "6 5 3<br/>1 5 6<br/>1 2<br/>2 3<br/>3 4<br/>4 5<br/>6 3<br/>1 5<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>The first sample is illustrated below. Blue intersections are where volunteers are located. If PMP goes in the path of dashed line, it can reach the buses with <span class=\"tex-span\"><i>q</i>\u2009=\u20093</span>:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/a1f626be4f756a007133181452aa752498ded077.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second sample, PMP uses intersection 6 as an intermediate intersection, thus the answer is 3.</p>",
+    "contestId": 187,
+    "index": "C",
+    "name": "Weak Memory",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dsu"
+    ],
+    "solvedCount": 1301
+}

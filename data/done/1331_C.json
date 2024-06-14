@@ -1,0 +1,38 @@
+{
+    "title": "C. ...And after happily lived ever they",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"input-specification\"><div class=\"section-title\">Input</div><p>The input contains a single integer $$$a$$$ ($$$0 \\le a \\le 63$$$).</p></div><div class=\"output-specification\"><div class=\"section-title\">Output</div><p>Output a single number.</p></div><div class=\"sample-tests\"><div class=\"section-title\">Examples</div><div class=\"sample-test\"><div class=\"input\"><div class=\"title\">Input</div><pre>\n2\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n2\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\n5\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n24\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\n35\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\n50\n</pre></div></div></div>",
+    "inputSpecification": "<p>The input contains a single integer $$$a$$$ ($$$0 \\le a \\le 63$$$).</p>",
+    "outputSpecification": "<p>Output a single number.</p>",
+    "samples": [
+        {
+            "input": "\n2\n",
+            "output": "\n2\n"
+        },
+        {
+            "input": "\n5\n",
+            "output": "\n24\n"
+        },
+        {
+            "input": "\n35\n",
+            "output": "\n50\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1331,
+    "index": "C",
+    "name": "...And after happily lived ever they",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "bitmasks"
+    ],
+    "solvedCount": 3139
+}

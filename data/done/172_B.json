@@ -1,0 +1,39 @@
+{
+    "title": "B. Pseudorandom Sequence Period",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarpus has recently got interested in sequences of pseudorandom numbers. He learned that many programming languages generate such sequences in a similar way: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1505a2bb013efb7ab20b04ab4c345c19fef97ccb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> (for <span class=\"tex-span\"><i>i</i>\u2009\u2265\u20091</span>). Here <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span>, <span class=\"tex-span\"><i>m</i></span> are constants, fixed for the given realization of the pseudorandom numbers generator, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">0</sub></span> is the so-called <span class=\"tex-span\"><i>randseed</i></span> (this value can be set from the program using functions like <span class=\"tex-font-style-tt\">RandSeed(r)</span> or <span class=\"tex-font-style-tt\">srand(n)</span>), and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e91a39ad64cd7a33e8f1b67cd60e5b40257de950.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> denotes the operation of taking the remainder of division.</p><p>For example, if <span class=\"tex-span\"><i>a</i>\u2009=\u20092,\u2009<i>b</i>\u2009=\u20096,\u2009<i>m</i>\u2009=\u200912,\u2009<i>r</i><sub class=\"lower-index\">0</sub>\u2009=\u200911</span>, the generated sequence will be: <span class=\"tex-span\">4,\u20092,\u200910,\u20092,\u200910,\u20092,\u200910,\u20092,\u200910,\u20092,\u200910,\u2009...</span>.</p><p>Polycarpus realized that any such sequence will sooner or later form a cycle, but the cycle may occur not in the beginning, so there exist a preperiod and a period. The example above shows a preperiod equal to 1 and a period equal to 2.</p><p>Your task is to find the period of a sequence defined by the given values of <span class=\"tex-span\"><i>a</i>,\u2009<i>b</i>,\u2009<i>m</i></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">0</sub></span>. Formally, you have to find such minimum positive integer <span class=\"tex-span\"><i>t</i></span>, for which exists such positive integer <span class=\"tex-span\"><i>k</i></span>, that for any <span class=\"tex-span\"><i>i</i>\u2009\u2265\u2009<i>k</i></span>: <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>r</i><sub class=\"lower-index\"><i>i</i>\u2009+\u2009<i>t</i></sub></span>.</p>",
+    "inputSpecification": "<p>The single line of the input contains four integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">0</sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20090\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u20091000,\u20090\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\">0</sub>\u2009&lt;\u2009<i>m</i></span>), separated by single spaces.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the period of the sequence.</p>",
+    "samples": [
+        {
+            "input": "2 6 12 11<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "2 3 5 1<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "3 6 81 9<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>The first sample is described above. </p><p>In the second sample the sequence is (starting from the first element): <span class=\"tex-span\">0,\u20093,\u20094,\u20091,\u20090,\u20093,\u20094,\u20091,\u20090,\u2009...</span></p><p>In the third sample the sequence is (starting from the first element): <span class=\"tex-span\">33,\u200924,\u200978,\u200978,\u200978,\u200978,\u2009...</span></p>",
+    "contestId": 172,
+    "index": "B",
+    "name": "Pseudorandom Sequence Period",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation",
+        "number theory"
+    ],
+    "solvedCount": 2693
+}

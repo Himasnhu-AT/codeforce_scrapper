@@ -1,0 +1,32 @@
+{
+    "title": "B. Mike's Sequence",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You won't find this sequence on OEIS.</p>",
+    "inputSpecification": "<p>One integer $$$r$$$ ($$$-45 \\le r \\le 2999$$$).</p>",
+    "outputSpecification": "<p>One integer.</p>",
+    "samples": [
+        {
+            "input": "\n2999\n",
+            "output": "\n3000\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1663,
+    "index": "B",
+    "name": "Mike's Sequence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "divide and conquer",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 3366
+}

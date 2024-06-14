@@ -1,0 +1,30 @@
+{
+    "title": "A. Odd One Out",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given three digits $$$a$$$, $$$b$$$, $$$c$$$. Two of them are equal, but the third one is different from the other two. </p><p>Find the value that occurs exactly once.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 270$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains three digits $$$a$$$, $$$b$$$, $$$c$$$ ($$$0 \\leq a$$$, $$$b$$$, $$$c \\leq 9$$$). Two of the digits are equal, but the third one is different from the other two.</p>",
+    "outputSpecification": "<p>For each test case, output the value that occurs exactly once.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 3 4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5 5 6</div><div class=\"test-example-line test-example-line-even test-example-line-4\">7 8 8</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">9 0 9</div><div class=\"test-example-line test-example-line-even test-example-line-6\">3 6 3</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">2 8 2</div><div class=\"test-example-line test-example-line-even test-example-line-8\">5 7 7</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">7 7 5</div><div class=\"test-example-line test-example-line-even test-example-line-10\">5 7 5</div>",
+            "output": "\n1\n3\n6\n7\n0\n6\n8\n5\n5\n7\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1915,
+    "index": "A",
+    "name": "Odd One Out",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "implementation"
+    ],
+    "solvedCount": 51364
+}

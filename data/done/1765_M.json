@@ -1,0 +1,30 @@
+{
+    "title": "M. Minimum LCM",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an integer $$$n$$$.</p><p>Your task is to find two positive (greater than $$$0$$$) integers $$$a$$$ and $$$b$$$ such that $$$a+b=n$$$ and the least common multiple (LCM) of $$$a$$$ and $$$b$$$ is the minimum among all possible values of $$$a$$$ and $$$b$$$. If there are multiple answers, you can print any of them.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 100$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$2 \\le n \\le 10^9$$$).</p>",
+    "outputSpecification": "<p>For each test case, print two positive integers $$$a$$$ and $$$b$$$\u00a0\u2014 the answer to the problem. If there are multiple answers, you can print any of them.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">9</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5</div><div class=\"test-example-line test-example-line-even test-example-line-4\">10</div>",
+            "output": "\n1 1\n3 6\n1 4\n5 5\n"
+        }
+    ],
+    "note": "<p>In the second example, there are $$$8$$$ possible pairs of $$$a$$$ and $$$b$$$:</p><ul> <li> $$$a = 1$$$, $$$b = 8$$$, $$$LCM(1, 8) = 8$$$; </li><li> $$$a = 2$$$, $$$b = 7$$$, $$$LCM(2, 7) = 14$$$; </li><li> $$$a = 3$$$, $$$b = 6$$$, $$$LCM(3, 6) = 6$$$; </li><li> $$$a = 4$$$, $$$b = 5$$$, $$$LCM(4, 5) = 20$$$; </li><li> $$$a = 5$$$, $$$b = 4$$$, $$$LCM(5, 4) = 20$$$; </li><li> $$$a = 6$$$, $$$b = 3$$$, $$$LCM(6, 3) = 6$$$; </li><li> $$$a = 7$$$, $$$b = 2$$$, $$$LCM(7, 2) = 14$$$; </li><li> $$$a = 8$$$, $$$b = 1$$$, $$$LCM(8, 1) = 8$$$. </li></ul><p>In the third example, there are $$$5$$$ possible pairs of $$$a$$$ and $$$b$$$:</p><ul> <li> $$$a = 1$$$, $$$b = 4$$$, $$$LCM(1, 4) = 4$$$; </li><li> $$$a = 2$$$, $$$b = 3$$$, $$$LCM(2, 3) = 6$$$; </li><li> $$$a = 3$$$, $$$b = 2$$$, $$$LCM(3, 2) = 6$$$; </li><li> $$$a = 4$$$, $$$b = 1$$$, $$$LCM(4, 1) = 4$$$. </li></ul>",
+    "contestId": 1765,
+    "index": "M",
+    "name": "Minimum LCM",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 13263
+}

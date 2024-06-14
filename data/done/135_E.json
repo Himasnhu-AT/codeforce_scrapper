@@ -1,0 +1,37 @@
+{
+    "title": "E. Weak Subsequence",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Petya very much likes strings. Recently he has received a voucher to purchase a string as a gift from his mother. The string can be bought in the local shop. One can consider that the shop has all sorts of strings over the alphabet of fixed size. The size of the alphabet is equal to <span class=\"tex-span\"><i>k</i></span>. However, the voucher has a string type limitation: specifically, the voucher can be used to purchase string <span class=\"tex-span\"><i>s</i></span> if the length of string's longest substring that is also its weak subsequence (see the definition given below) equals <span class=\"tex-span\"><i>w</i></span>.</p><p>String <span class=\"tex-span\"><i>a</i></span> with the length of <span class=\"tex-span\"><i>n</i></span> is considered the weak subsequence of the string <span class=\"tex-span\"><i>s</i></span> with the length of <span class=\"tex-span\"><i>m</i></span>, if there exists such a set of indexes <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>i</i><sub class=\"lower-index\">2</sub>\u2009&lt;\u2009...\u2009&lt;\u2009<i>i</i><sub class=\"lower-index\"><i>n</i></sub>\u2009\u2264\u2009<i>m</i></span>, that has the following two properties: </p><ul> <li> <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>k</i></sub>\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>i</i><sub class=\"lower-index\"><i>k</i></sub></sub></span> for all <span class=\"tex-span\"><i>k</i></span> from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>; </li><li> there exists at least one such <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009&lt;\u2009<i>n</i></span>), for which <span class=\"tex-span\"><i>i</i><sub class=\"lower-index\"><i>k</i>\u2009+\u20091</sub>\u2009\u2013\u2009<i>i</i><sub class=\"lower-index\"><i>k</i></sub>\u2009&gt;\u20091</span>. </li></ul><p>Petya got interested how many different strings are available for him to purchase in the shop. As the number of strings can be very large, please find it modulo <span class=\"tex-span\">1000000007</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>). If there are infinitely many such strings, print \"-1\".</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) and <span class=\"tex-span\"><i>w</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>w</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the alphabet size and the required length of the maximum substring that also is the weak subsequence, correspondingly.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the number of strings Petya can buy using the voucher, modulo <span class=\"tex-span\">1000000007</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>). If there are infinitely many such strings, print \"-1\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "2 2<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "3 5<br/>",
+            "output": "1593<br/>"
+        },
+        {
+            "input": "2 139<br/>",
+            "output": "717248223<br/>"
+        }
+    ],
+    "note": "<p>In the first sample Petya can buy the following strings: aaa, aab, abab, abb, abba, baa, baab, baba, bba, bbb.</p>",
+    "contestId": 135,
+    "index": "E",
+    "name": "Weak Subsequence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics"
+    ],
+    "solvedCount": 267
+}

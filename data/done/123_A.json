@@ -1,0 +1,39 @@
+{
+    "title": "A. Prime Permutation",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a string <span class=\"tex-span\"><i>s</i></span>, consisting of small Latin letters. Let's denote the length of the string as <span class=\"tex-span\">|<i>s</i>|</span>. The characters in the string are numbered starting from <span class=\"tex-span\">1</span>. </p><p>Your task is to find out if it is possible to rearrange characters in string <span class=\"tex-span\"><i>s</i></span> so that for any prime number <span class=\"tex-span\"><i>p</i>\u2009\u2264\u2009|<i>s</i>|</span> and for any integer <span class=\"tex-span\"><i>i</i></span> ranging from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">|<i>s</i>|\u2009/\u2009<i>p</i></span> (inclusive) the following condition was fulfilled <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>p</i></sub>\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>p</i>\u2009\u00d7\u2009<i>i</i></sub></span>. If the answer is positive, find one way to rearrange the characters.</p>",
+    "inputSpecification": "<p>The only line contains the initial string <span class=\"tex-span\"><i>s</i></span>, consisting of small Latin letters (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u20091000</span>).</p>",
+    "outputSpecification": "<p>If it is possible to rearrange the characters in the string so that the above-mentioned conditions were fulfilled, then print in the first line \"<span class=\"tex-font-style-tt\">YES</span>\" (without the quotes) and print on the second line one of the possible resulting strings. If such permutation is impossible to perform, then print the single string \"<span class=\"tex-font-style-tt\">NO</span>\".</p>",
+    "samples": [
+        {
+            "input": "abc<br/>",
+            "output": "YES<br/>abc<br/>"
+        },
+        {
+            "input": "abcd<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "xxxyxxx<br/>",
+            "output": "YES<br/>xxxxxxy<br/>"
+        }
+    ],
+    "note": "<p>In the first sample any of the six possible strings will do: \"abc\", \"acb\", \"bac\", \"bca\", \"cab\" or \"cba\".</p><p>In the second sample no letter permutation will satisfy the condition at <span class=\"tex-span\"><i>p</i>\u2009=\u20092</span> (<span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">2</sub>\u2009=\u2009<i>s</i><sub class=\"lower-index\">4</sub></span>).</p><p>In the third test any string where character \"y\" doesn't occupy positions 2, 3, 4, 6 will be valid.</p>",
+    "contestId": 123,
+    "index": "A",
+    "name": "Prime Permutation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "number theory",
+        "strings"
+    ],
+    "solvedCount": 3530
+}

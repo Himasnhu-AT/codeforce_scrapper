@@ -1,0 +1,38 @@
+{
+    "title": "B. Segment Occurrences",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two strings $$$s$$$ and $$$t$$$, both consisting only of lowercase Latin letters.</p><p>The substring $$$s[l..r]$$$ is the string which is obtained by taking characters $$$s_l, s_{l + 1}, \\dots, s_r$$$ without changing the order.</p><p>Each of the occurrences of string $$$a$$$ in a string $$$b$$$ is a position $$$i$$$ ($$$1 \\le i \\le |b| - |a| + 1$$$) such that $$$b[i..i + |a| - 1] = a$$$ ($$$|a|$$$ is the length of string $$$a$$$).</p><p>You are asked $$$q$$$ queries: for the $$$i$$$-th query you are required to calculate the number of occurrences of string $$$t$$$ in a substring $$$s[l_i..r_i]$$$.</p>",
+    "inputSpecification": "<p>The first line contains three integer numbers $$$n$$$, $$$m$$$ and $$$q$$$ ($$$1 \\le n, m \\le 10^3$$$, $$$1 \\le q \\le 10^5$$$) \u2014 the length of string $$$s$$$, the length of string $$$t$$$ and the number of queries, respectively.</p><p>The second line is a string $$$s$$$ ($$$|s| = n$$$), consisting only of lowercase Latin letters.</p><p>The third line is a string $$$t$$$ ($$$|t| = m$$$), consisting only of lowercase Latin letters.</p><p>Each of the next $$$q$$$ lines contains two integer numbers $$$l_i$$$ and $$$r_i$$$ ($$$1 \\le l_i \\le r_i \\le n$$$) \u2014 the arguments for the $$$i$$$-th query.</p>",
+    "outputSpecification": "<p>Print $$$q$$$ lines \u2014 the $$$i$$$-th line should contain the answer to the $$$i$$$-th query, that is the number of occurrences of string $$$t$$$ in a substring $$$s[l_i..r_i]$$$.</p>",
+    "samples": [
+        {
+            "input": "10 3 4<br/>codeforces<br/>for<br/>1 3<br/>3 10<br/>5 6<br/>5 7<br/>",
+            "output": "0<br/>1<br/>0<br/>1<br/>"
+        },
+        {
+            "input": "15 2 3<br/>abacabadabacaba<br/>ba<br/>1 15<br/>3 4<br/>2 14<br/>",
+            "output": "4<br/>0<br/>3<br/>"
+        },
+        {
+            "input": "3 5 2<br/>aaa<br/>baaab<br/>1 3<br/>1 1<br/>",
+            "output": "0<br/>0<br/>"
+        }
+    ],
+    "note": "<p>In the first example the queries are substrings: \"<span class=\"tex-font-style-tt\">cod</span>\", \"<span class=\"tex-font-style-tt\">deforces</span>\", \"<span class=\"tex-font-style-tt\">fo</span>\" and \"<span class=\"tex-font-style-tt\">for</span>\", respectively.</p>",
+    "contestId": 1016,
+    "index": "B",
+    "name": "Segment Occurrences",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 9287
+}

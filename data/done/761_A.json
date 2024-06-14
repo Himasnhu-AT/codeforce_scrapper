@@ -1,0 +1,36 @@
+{
+    "title": "A. Dasha and Stairs",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>On her way to programming school tiger Dasha faced her first test \u2014 a huge staircase!</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/31ae258b18250cd0831c18db6108441e9b673117.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The steps were numbered from one to infinity. As we know, tigers are very fond of all striped things, it is possible that it has something to do with their color. So on some interval of her way she calculated two values \u2014 the number of steps with even and odd numbers. </p><p>You need to check whether there is an interval of steps from the <span class=\"tex-span\"><i>l</i></span>-th to the <span class=\"tex-span\"><i>r</i></span>-th <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>)</span>, for which values that Dasha has found are correct.</p>",
+    "inputSpecification": "<p>In the only line you are given two integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u2009100)</span> \u2014 the number of even and odd steps, accordingly.</p>",
+    "outputSpecification": "<p>In the only line print \"<span class=\"tex-font-style-tt\">YES</span>\", if the interval of steps described above exists, and \"<span class=\"tex-font-style-tt\">NO</span>\" otherwise.</p>",
+    "samples": [
+        {
+            "input": "2 3<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "3 1<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>In the first example one of suitable intervals is from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">5</span>. The interval contains two even steps\u00a0\u2014 <span class=\"tex-span\">2</span> and <span class=\"tex-span\">4</span>, and three odd: <span class=\"tex-span\">1</span>, <span class=\"tex-span\">3</span> and <span class=\"tex-span\">5</span>.</p>",
+    "contestId": 761,
+    "index": "A",
+    "name": "Dasha and Stairs",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 14364
+}

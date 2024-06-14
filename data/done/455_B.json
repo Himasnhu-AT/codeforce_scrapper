@@ -1,0 +1,42 @@
+{
+    "title": "B. A Lot of Games",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Andrew, Fedor and Alex are inventive guys. Now they invent the game with strings for two players.</p><p>Given a group of <span class=\"tex-span\"><i>n</i></span> non-empty strings. During the game two players build the word together, initially the word is empty. The players move in turns. On his step player must add a single letter in the end of the word, the resulting word must be prefix of at least one string from the group. A player loses if he cannot move.</p><p>Andrew and Alex decided to play this game <span class=\"tex-span\"><i>k</i></span> times. The player who is the loser of the <span class=\"tex-span\"><i>i</i></span>-th game makes the first move in the <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span>-th game. Guys decided that the winner of all games is the player who wins the last (<span class=\"tex-span\"><i>k</i></span>-th) game. Andrew and Alex already started the game. Fedor wants to know who wins the game if both players will play optimally. Help him.</p>",
+    "inputSpecification": "<p>The first line contains two integers, <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>; <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p><p>Each of the next <span class=\"tex-span\"><i>n</i></span> lines contains a single non-empty string from the given group. The total length of all strings from the group doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">5</sup></span>. Each string of the group consists only of lowercase English letters.</p>",
+    "outputSpecification": "<p>If the player who moves first wins, print \"<span class=\"tex-font-style-tt\">First</span>\", otherwise print \"<span class=\"tex-font-style-tt\">Second</span>\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "2 3<br/>a<br/>b<br/>",
+            "output": "First<br/>"
+        },
+        {
+            "input": "3 1<br/>a<br/>b<br/>c<br/>",
+            "output": "First<br/>"
+        },
+        {
+            "input": "1 2<br/>ab<br/>",
+            "output": "Second<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 455,
+    "index": "B",
+    "name": "A Lot of Games",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "games",
+        "implementation",
+        "strings",
+        "trees"
+    ],
+    "solvedCount": 5729
+}

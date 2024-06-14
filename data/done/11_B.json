@@ -1,0 +1,37 @@
+{
+    "title": "B. Jumping Jack",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Jack is working on his jumping skills recently. Currently he's located at point zero of the number line. He would like to get to the point <span class=\"tex-span\"><i>x</i></span>. In order to train, he has decided that he'll first jump by only one unit, and each subsequent jump will be exactly one longer than the previous one. He can go either left or right with each jump. He wonders how many jumps he needs to reach <span class=\"tex-span\"><i>x</i></span>.</p>",
+    "inputSpecification": "<p>The input data consists of only one integer <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Output the minimal number of jumps that Jack requires to reach <span class=\"tex-span\"><i>x</i></span>.</p>",
+    "samples": [
+        {
+            "input": "2<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "6<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "0<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 11,
+    "index": "B",
+    "name": "Jumping Jack",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 4374
+}

@@ -1,0 +1,33 @@
+{
+    "title": "B. A Determined Cleanup",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">In order to put away old things and welcome a fresh new year, a thorough cleaning of the house is a must.</span></p><p>Little Tommy finds an old polynomial and cleaned it up by taking it modulo another. But now he regrets doing this...</p><p>Given two integers <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\"><i>k</i></span>, find a polynomial <span class=\"tex-span\"><i>f</i>(<i>x</i>)</span> with non-negative integer coefficients strictly less than <span class=\"tex-span\"><i>k</i></span>, whose remainder is <span class=\"tex-span\"><i>p</i></span> when divided by <span class=\"tex-span\">(<i>x</i>\u2009+\u2009<i>k</i>)</span>. That is, <span class=\"tex-span\"><i>f</i>(<i>x</i>)\u2009=\u2009<i>q</i>(<i>x</i>)\u00b7(<i>x</i>\u2009+\u2009<i>k</i>)\u2009+\u2009<i>p</i></span>, where <span class=\"tex-span\"><i>q</i>(<i>x</i>)</span> is a polynomial (not necessarily with integer coefficients).</p>",
+    "inputSpecification": "<p>The only line of input contains two space-separated integers <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>, <span class=\"tex-span\">2\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20092\u2009000</span>).</p>",
+    "outputSpecification": "<p>If the polynomial does not exist, print a single integer <span class=\"tex-font-style-tt\">-1</span>, or output two lines otherwise.</p><p>In the first line print a non-negative integer <span class=\"tex-span\"><i>d</i></span> \u2014 the number of coefficients in the polynomial.</p><p>In the second line print <span class=\"tex-span\"><i>d</i></span> space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">0</sub>,\u2009<i>a</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>d</i>\u2009-\u20091</sub></span>, describing a polynomial <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a5f6af096681926571d65acbf8bd8ff1c00654e6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> fulfilling the given requirements. Your output should satisfy <span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>k</i></span> for all <span class=\"tex-span\">0\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>d</i>\u2009-\u20091</span>, and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>d</i>\u2009-\u20091</sub>\u2009\u2260\u20090</span>.</p><p>If there are many possible solutions, print any of them.</p>",
+    "samples": [
+        {
+            "input": "46 2<br/>",
+            "output": "7<br/>0 1 0 0 1 1 1<br/>"
+        },
+        {
+            "input": "2018 214<br/>",
+            "output": "3<br/>92 205 1<br/>"
+        }
+    ],
+    "note": "<p>In the first example, <span class=\"tex-span\"><i>f</i>(<i>x</i>)\u2009=\u2009<i>x</i><sup class=\"upper-index\">6</sup>\u2009+\u2009<i>x</i><sup class=\"upper-index\">5</sup>\u2009+\u2009<i>x</i><sup class=\"upper-index\">4</sup>\u2009+\u2009<i>x</i>\u2009=\u2009(<i>x</i><sup class=\"upper-index\">5</sup>\u2009-\u2009<i>x</i><sup class=\"upper-index\">4</sup>\u2009+\u20093<i>x</i><sup class=\"upper-index\">3</sup>\u2009-\u20096<i>x</i><sup class=\"upper-index\">2</sup>\u2009+\u200912<i>x</i>\u2009-\u200923)\u00b7(<i>x</i>\u2009+\u20092)\u2009+\u200946</span>.</p><p>In the second example, <span class=\"tex-span\"><i>f</i>(<i>x</i>)\u2009=\u2009<i>x</i><sup class=\"upper-index\">2</sup>\u2009+\u2009205<i>x</i>\u2009+\u200992\u2009=\u2009(<i>x</i>\u2009-\u20099)\u00b7(<i>x</i>\u2009+\u2009214)\u2009+\u20092018</span>.</p>",
+    "contestId": 933,
+    "index": "B",
+    "name": "A Determined Cleanup",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 1880
+}

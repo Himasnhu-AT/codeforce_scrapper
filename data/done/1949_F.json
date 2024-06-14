@@ -1,0 +1,35 @@
+{
+    "title": "F. Dating",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are the developer of a dating app which ignores gender completely. The app has $$$n$$$ users, indexed from $$$1$$$ to $$$n$$$. Each user's profile features a list of the activities they enjoy doing. There are $$$m$$$ possible activities, indexed from $$$1$$$ to $$$m$$$.</p><p>A match between two users is good if they share at least one activity and, at the same time, both of them like at least one activity that the other user does not like.</p><p>Find a good match if it exists.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$m$$$ ($$$2 \\leq n \\leq 200\\,000$$$, $$$1 \\leq m \\leq 10^6$$$) \u2014 the number of users and the number of activities.</p><p>Each of the following $$$n$$$ lines contains a number $$$k_i$$$ ($$$0 \\leq k_i \\leq m$$$) \u2014 the number of activities that user $$$i$$$ likes \u2014 followed by $$$k_i$$$ distinct integers from $$$1$$$ to $$$m$$$ \u2014 the activities user $$$i$$$ likes. </p><p>It is guaranteed that $$$k_1+k_2+\\cdots+k_n$$$ does not exceed $$$10^6$$$.</p>",
+    "outputSpecification": "<p>Print $$$\\texttt{YES}$$$ if a good match exists. Otherwise, print $$$\\texttt{NO}$$$.</p><p>If a good match exists, on the next line print two integers\u00a0\u2014 the indexes of two users that make a match.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3 5</div><div class=\"test-example-line test-example-line-even test-example-line-0\">3 1 2 4</div><div class=\"test-example-line test-example-line-even test-example-line-0\">5 1 2 3 4 5</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2 1 5</div>",
+            "output": "\nYES\n3 1\n"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3 3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 1</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">3 2 3 1</div>",
+            "output": "\nNO\n"
+        }
+    ],
+    "note": "<p>In the <span class=\"tex-font-style-bf\">first sample</span>, users $$$1$$$ and $$$3$$$ form a match, because they share activity $$$1$$$, and, furthermore, user $$$3$$$ likes activity $$$5$$$ (which user $$$1$$$ does not like) and user $$$1$$$ likes activity $$$4$$$ (which user $$$3$$$ does not like). Note that users $$$1$$$ and $$$2$$$, as well as users $$$2$$$ and $$$3$$$, do not form a match, as there is no activity that users $$$1$$$ or $$$3$$$ like, and user $$$2$$$ doesn't like.</p>",
+    "contestId": 1949,
+    "index": "F",
+    "name": "Dating",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "sortings",
+        "trees"
+    ],
+    "solvedCount": 811
+}

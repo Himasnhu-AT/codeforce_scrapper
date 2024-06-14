@@ -1,0 +1,32 @@
+{
+    "title": "B. GCD Partition",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>While at Kira's house, Josuke saw a piece of paper on the table with a task written on it.</p><p>The task sounded as follows. There is an array $$$a$$$ of length $$$n$$$. On this array, do the following:</p><ul> <li> select an integer $$$k &gt; 1$$$; </li><li> split the array into $$$k$$$ subsegments $$$^\\dagger$$$; </li><li> calculate the sum in each of $$$k$$$ subsegments and write these sums to another array $$$b$$$ (where the sum of the subsegment $$$(l, r)$$$ is $$${\\sum_{j = l}^{r}a_j}$$$); </li><li> the final score of such a split will be $$$\\gcd(b_1, b_2, \\ldots, b_k)^\\ddagger$$$. </li></ul><p>The task is to find such a partition that the score is <span class=\"tex-font-style-bf\">maximum possible</span>. Josuke is interested in this task but is not strong in computer science. Help him to find the maximum possible score.</p><p>$$$^\\dagger$$$ A division of an array into $$$k$$$ subsegments is $$$k$$$ pairs of numbers $$$(l_1, r_1), (l_2, r_2), \\ldots, (l_k, r_k)$$$ such that $$$l_i \\le r_i$$$ and for every $$$1 \\le j \\le k - 1$$$ $$$l_{j + 1} = r_j + 1$$$, also $$$l_1 = 1$$$ and $$$r_k = n$$$. These pairs represent the subsegments.</p><p>$$$^\\ddagger$$$ $$$\\gcd(b_1, b_2, \\ldots, b_k)$$$ stands for the <a href=\"https://en.wikipedia.org/wiki/Greatest_common_divisor\">greatest common divisor (GCD)</a> of the array $$$b$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single number $$$t$$$ ($$$1 \\le t \\le 10^4$$$) \u2014 the number of test cases.</p><p>For each test case, the first line contains one integer $$$n$$$ ($$$2 \\le n \\le 2 \\cdot 10^5$$$) \u2014 the length of the array $$$a$$$.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, a_3, \\ldots, a_n$$$ ($$$1 \\le a_i \\le 10^9 $$$) \u2014 the array $$$a$$$ itself.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case print a single integer \u2014 the maximum score for the optimal partition.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 2 1 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 4 5</div><div class=\"test-example-line test-example-line-even test-example-line-4\">6</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 2 1 1 1 3</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">12 30 37 88 12 78 89 17 2 12</div><div class=\"test-example-line test-example-line-even test-example-line-6\">6</div><div class=\"test-example-line test-example-line-even test-example-line-6\">7 7 7 7 7 7</div>",
+            "output": "\n4\n1\n5\n3\n1\n21\n"
+        }
+    ],
+    "note": "<p>In the first test case, you can choose $$$k = 2$$$ and split the array into subsegments $$$(1, 2)$$$ and $$$(3, 4)$$$.</p><p>Then the score of such a partition will be equal to $$$\\gcd(a_1 + a_2, a_3 + a_4) = \\gcd(2 + 2, 1 + 3) = \\gcd(4, 4) = 4$$$.</p><p>In the fourth test case, you can choose $$$k = 3$$$ and split the array into subsegments $$$(1, 2), (3, 5), (6, 6)$$$.</p><p>The split score is $$$\\gcd(1 + 2, 1 + 1 + 1, 3) = 3$$$.</p>",
+    "contestId": 1780,
+    "index": "B",
+    "name": "GCD Partition",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 16893
+}

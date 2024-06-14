@@ -1,0 +1,35 @@
+{
+    "title": "E. A Simple Task",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>This task is very simple. Given a string <span class=\"tex-span\"><i>S</i></span> of length <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>q</i></span> queries each query is on the format <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-span\"><i>j</i></span> <span class=\"tex-span\"><i>k</i></span> which means sort the substring consisting of the characters from <span class=\"tex-span\"><i>i</i></span> to <span class=\"tex-span\"><i>j</i></span> in non-decreasing order if <span class=\"tex-span\"><i>k</i>\u2009=\u20091</span> or in non-increasing order if <span class=\"tex-span\"><i>k</i>\u2009=\u20090</span>.</p><p>Output the final string after applying the queries.</p>",
+    "inputSpecification": "<p>The first line will contain two integers <span class=\"tex-span\"><i>n</i>,\u2009<i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>q</i>\u2009\u2264\u200950\u2009000</span>), the length of the string and the number of queries respectively. </p><p><span class=\"tex-font-style-bf\">Next line contains a string <span class=\"tex-span\"><i>S</i></span> itself. It contains only lowercase English letters.</span></p><p>Next <span class=\"tex-span\"><i>q</i></span> lines will contain three integers each <span class=\"tex-span\"><i>i</i>,\u2009<i>j</i>,\u2009<i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>n</i></span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/187c38b0d200dfc5b5249f93c000f8dee9c1180d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>).</p>",
+    "outputSpecification": "<p>Output one line, the string <span class=\"tex-span\"><i>S</i></span> after applying the queries.</p>",
+    "samples": [
+        {
+            "input": "10 5<br/>abacdabcda<br/>7 10 0<br/>5 8 1<br/>1 4 0<br/>3 6 0<br/>7 10 1<br/>",
+            "output": "cbcaaaabdd"
+        },
+        {
+            "input": "10 1<br/>agjucbvdfk<br/>1 10 1<br/>",
+            "output": "abcdfgjkuv"
+        }
+    ],
+    "note": "<p>First sample test explanation:</p><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3ac4e8cc7e335675a4a2b7b4758bfb3865377cea.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a90b5b03cf59288d8861f0142ecbdf6b12f69e5c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1f482a91a275b6bce07eaed85312eac0cfcc6ccf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/33b1a4a924f4bd562551ba4e40309f180dbe22e0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bddc77fd5b02858eb2ff29819cd16a93dbd241e6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 558,
+    "index": "E",
+    "name": "A Simple Task",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "sortings",
+        "strings"
+    ],
+    "solvedCount": 5702
+}

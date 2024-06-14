@@ -1,0 +1,39 @@
+{
+    "title": "C. K-Dominant Character",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a string <span class=\"tex-span\"><i>s</i></span> consisting of lowercase Latin letters. Character <span class=\"tex-span\"><i>c</i></span> is called <span class=\"tex-span\"><i>k</i></span>-dominant iff each substring of <span class=\"tex-span\"><i>s</i></span> with length at least <span class=\"tex-span\"><i>k</i></span> contains this character <span class=\"tex-span\"><i>c</i></span>.</p><p>You have to find minimum <span class=\"tex-span\"><i>k</i></span> such that there exists at least one <span class=\"tex-span\"><i>k</i></span>-dominant character.</p>",
+    "inputSpecification": "<p>The first line contains string <span class=\"tex-span\"><i>s</i></span> consisting of lowercase Latin letters (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u2009100000</span>).</p>",
+    "outputSpecification": "<p>Print one number \u2014 the minimum value of <span class=\"tex-span\"><i>k</i></span> such that there exists at least one <span class=\"tex-span\"><i>k</i></span>-dominant character.</p>",
+    "samples": [
+        {
+            "input": "abacaba<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "zzzzz<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "abcde<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 888,
+    "index": "C",
+    "name": "K-Dominant Character",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "implementation",
+        "two pointers"
+    ],
+    "solvedCount": 8118
+}

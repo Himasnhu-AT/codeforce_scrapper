@@ -1,0 +1,34 @@
+{
+    "title": "B. Position in Fraction",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have a fraction <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a7487d7e62f90136b78ae3fbf0a008396f146e13.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. You need to find the first occurrence of digit <span class=\"tex-span\"><i>c</i></span> into decimal notation of the fraction after decimal point.</p>",
+    "inputSpecification": "<p>The first contains three single positive integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span>, <span class=\"tex-span\"><i>c</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009&lt;\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>c</i>\u2009\u2264\u20099</span>).</p>",
+    "outputSpecification": "<p>Print position of the first occurrence of digit <span class=\"tex-span\"><i>c</i></span> into the fraction. Positions are numbered from <span class=\"tex-span\">1</span> after decimal point. It there is no such position, print <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "samples": [
+        {
+            "input": "1 2 0<br/>",
+            "output": "2"
+        },
+        {
+            "input": "2 3 7<br/>",
+            "output": "-1"
+        }
+    ],
+    "note": "<p>The fraction in the first example has the following decimal notation: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/896357459a466614a0542f34c9cfb0cef1afc9ed.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. The first zero stands on second position.</p><p>The fraction in the second example has the following decimal notation: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/130ba579a8276fc53a1917606eee9db58817f28d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. There is no digit <span class=\"tex-span\">7</span> in decimal notation of the fraction. </p>",
+    "contestId": 900,
+    "index": "B",
+    "name": "Position in Fraction",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 7678
+}

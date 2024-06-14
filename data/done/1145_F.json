@@ -1,0 +1,51 @@
+{
+    "title": "F. Neat Words",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"input-specification\"><div class=\"section-title\">Input</div><p>The input consists of a single string of uppercase letters A-Z. The length of the string is between 1 and 10 characters, inclusive.</p></div><div class=\"output-specification\"><div class=\"section-title\">Output</div><p>Output \"YES\" or \"NO\".</p></div><div class=\"sample-tests\"><div class=\"section-title\">Examples</div><div class=\"sample-test\"><div class=\"input\"><div class=\"title\">Input</div><pre>\nNEAT\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nYES\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\nWORD\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nNO\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\nCODER\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nNO\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\nAPRILFOOL\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nNO\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\nAI\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nYES\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\nJUROR\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nYES\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\nYES\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nNO\n</pre></div></div></div>",
+    "inputSpecification": "<p>The input consists of a single string of uppercase letters A-Z. The length of the string is between 1 and 10 characters, inclusive.</p>",
+    "outputSpecification": "<p>Output \"YES\" or \"NO\".</p>",
+    "samples": [
+        {
+            "input": "\nNEAT\n",
+            "output": "\nYES\n"
+        },
+        {
+            "input": "\nWORD\n",
+            "output": "\nNO\n"
+        },
+        {
+            "input": "\nCODER\n",
+            "output": "\nNO\n"
+        },
+        {
+            "input": "\nAPRILFOOL\n",
+            "output": "\nNO\n"
+        },
+        {
+            "input": "\nAI\n",
+            "output": "\nYES\n"
+        },
+        {
+            "input": "\nJUROR\n",
+            "output": "\nYES\n"
+        },
+        {
+            "input": "\nYES\n",
+            "output": "\nNO\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1145,
+    "index": "F",
+    "name": "Neat Words",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 500
+}

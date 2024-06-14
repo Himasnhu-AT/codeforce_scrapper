@@ -1,0 +1,31 @@
+{
+    "title": "G. Little Artem and Graph",
+    "timeLimit": {
+        "value": 12.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Artem is given a graph, constructed as follows: start with some <span class=\"tex-span\"><i>k</i></span>-clique, then add new vertices one by one, connecting them to <span class=\"tex-span\"><i>k</i></span> already existing vertices that form a <span class=\"tex-span\"><i>k</i></span>-clique.</p><p>Artem wants to count the number of spanning trees in this graph modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>First line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>min</i>(<i>n</i>,\u20095)</span>)\u00a0\u2014 the total size of the graph and the size of the initial clique, respectively.</p><p>Next <span class=\"tex-span\"><i>n</i>\u2009-\u2009<i>k</i></span> lines describe <span class=\"tex-span\"><i>k</i>\u2009+\u20091</span>-th, <span class=\"tex-span\"><i>k</i>\u2009+\u20092</span>-th, ..., <span class=\"tex-span\"><i>i</i></span>-th, ..., <span class=\"tex-span\"><i>n</i></span>-th vertices by listing <span class=\"tex-span\"><i>k</i></span> distinct vertex indices <span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>ij</i></sub>\u2009&lt;\u2009<i>i</i></span> it is connected to. It is guaranteed that those vertices form a k-clique.</p>",
+    "outputSpecification": "<p>Output a single integer\u00a0\u2014 the number of spanning trees in the given graph modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>1 2<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "4 3<br/>1 2 3<br/>",
+            "output": "16<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 641,
+    "index": "G",
+    "name": "Little Artem and Graph",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 89
+}

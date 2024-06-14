@@ -1,0 +1,39 @@
+{
+    "title": "B. Limericks",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<pre class=\"verbatim\">There was once young lass called Mary,  <br/>Whose jokes were occasionally scary.  <br/>On this April's Fool  <br/>Fixed limerick rules  <br/>Allowed her to trip the unwary.<br/><br/>Can she fill all the lines<br/>To work at all times?<br/>On juggling the words<br/>Right around two-thirds<br/>She nearly ran out of rhymes.<br/></pre>",
+    "inputSpecification": "<p>The input contains a single integer $$$a$$$ ($$$4 \\le a \\le 998$$$). Not every integer in the range is a valid input for the problem; you are guaranteed that the input will be a valid integer.</p>",
+    "outputSpecification": "<p>Output a single number.</p>",
+    "samples": [
+        {
+            "input": "There was once young lass called Mary,  <br/>Whose jokes were occasionally scary.  <br/>On this April's Fool  <br/>Fixed limerick rules  <br/>Allowed her to trip the unwary.<br/><br/>Can she fill all the lines<br/>To work at all times?<br/>On juggling the words<br/>Right around two-thirds<br/>She nearly ran out of rhymes.<br/>",
+            "output": "\n35\n"
+        },
+        {
+            "input": "\n57\n",
+            "output": "\n57\n"
+        },
+        {
+            "input": "\n319\n",
+            "output": "\n391\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1331,
+    "index": "B",
+    "name": "Limericks",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 6984
+}

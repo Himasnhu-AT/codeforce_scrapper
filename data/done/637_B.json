@@ -1,0 +1,37 @@
+{
+    "title": "B. Chat Order",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp is a big lover of killing time in social networks. A page with a chatlist in his favourite network is made so that when a message is sent to some friend, his friend's chat rises to the very top of the page. The relative order of the other chats doesn't change. If there was no chat with this friend before, then a new chat is simply inserted to the top of the list.</p><p>Assuming that the chat list is initially empty, given the sequence of Polycaprus' messages make a list of chats after all of his messages are processed. Assume that no friend wrote any message to Polycarpus.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>)\u00a0\u2014 the number of Polycarpus' messages. Next <span class=\"tex-span\"><i>n</i></span> lines enlist the message recipients in the order in which the messages were sent. The name of each participant is a non-empty sequence of lowercase English letters of length at most <span class=\"tex-span\">10</span>.</p>",
+    "outputSpecification": "<p>Print all the recipients to who Polycarp talked to in the order of chats with them, from top to bottom.</p>",
+    "samples": [
+        {
+            "input": "4<br/>alex<br/>ivan<br/>roman<br/>ivan<br/>",
+            "output": "ivan<br/>roman<br/>alex<br/>"
+        },
+        {
+            "input": "8<br/>alina<br/>maria<br/>ekaterina<br/>darya<br/>darya<br/>ekaterina<br/>maria<br/>alina<br/>",
+            "output": "alina<br/>maria<br/>ekaterina<br/>darya<br/>"
+        }
+    ],
+    "note": "<p>In the first test case Polycarpus first writes to friend by name \"<span class=\"tex-font-style-tt\">alex</span>\", and the list looks as follows: </p><ol> <li> <span class=\"tex-font-style-tt\">alex</span> </li></ol><p>Then Polycarpus writes to friend by name \"<span class=\"tex-font-style-tt\">ivan</span>\" and the list looks as follows:</p><ol> <li> <span class=\"tex-font-style-tt\">ivan</span> </li><li> <span class=\"tex-font-style-tt\">alex</span> </li></ol><p>Polycarpus writes the third message to friend by name \"<span class=\"tex-font-style-tt\">roman</span>\" and the list looks as follows:</p><ol> <li> <span class=\"tex-font-style-tt\">roman</span> </li><li> <span class=\"tex-font-style-tt\">ivan</span> </li><li> <span class=\"tex-font-style-tt\">alex</span> </li></ol><p>Polycarpus writes the fourth message to friend by name \"<span class=\"tex-font-style-tt\">ivan</span>\", to who he has already sent a message, so the list of chats changes as follows:</p><ol> <li> <span class=\"tex-font-style-tt\">ivan</span> </li><li> <span class=\"tex-font-style-tt\">roman</span> </li><li> <span class=\"tex-font-style-tt\">alex</span> </li></ol>",
+    "contestId": 637,
+    "index": "B",
+    "name": "Chat Order",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "binary search",
+        "constructive algorithms",
+        "data structures",
+        "sortings"
+    ],
+    "solvedCount": 15201
+}

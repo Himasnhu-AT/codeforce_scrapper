@@ -1,0 +1,34 @@
+{
+    "title": "A. Xenia and Divisors",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Xenia the mathematician has a sequence consisting of <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\"><i>n</i></span> is divisible by 3) positive integers, each of them is at most 7. She wants to split the sequence into groups of three so that for each group of three <span class=\"tex-span\"><i>a</i>,\u2009<i>b</i>,\u2009<i>c</i></span> the following conditions held:</p><ul> <li> <span class=\"tex-span\"><i>a</i>\u2009&lt;\u2009<i>b</i>\u2009&lt;\u2009<i>c</i></span>; </li><li> <span class=\"tex-span\"><i>a</i></span> divides <span class=\"tex-span\"><i>b</i></span>, <span class=\"tex-span\"><i>b</i></span> divides <span class=\"tex-span\"><i>c</i></span>. </li></ul><p>Naturally, Xenia wants each element of the sequence to belong to exactly one group of three. Thus, if the required partition exists, then it has <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4de0f387b35d0865b1f96d528b2f1b06fb6f1903.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> groups of three.</p><p>Help Xenia, find the required partition or else say that it doesn't exist.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200999999)</span> \u2014 the number of elements in the sequence. The next line contains <span class=\"tex-span\"><i>n</i></span> positive integers, each of them is at most 7.</p><p>It is guaranteed that <span class=\"tex-span\"><i>n</i></span> is divisible by 3.</p>",
+    "outputSpecification": "<p>If the required partition exists, print <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4de0f387b35d0865b1f96d528b2f1b06fb6f1903.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> groups of three. Print each group as values of the elements it contains. You should print values in increasing order. Separate the groups and integers in groups by whitespaces. If there are multiple solutions, you can print any of them.</p><p>If there is no solution, print -1.</p>",
+    "samples": [
+        {
+            "input": "6<br/>1 1 1 2 2 2<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "6<br/>2 2 1 1 4 6<br/>",
+            "output": "1 2 4<br/>1 2 6<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 342,
+    "index": "A",
+    "name": "Xenia and Divisors",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 12203
+}

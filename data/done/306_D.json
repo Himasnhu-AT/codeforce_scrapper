@@ -1,0 +1,30 @@
+{
+    "title": "D. Polygon",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarpus loves convex polygons, especially if all their angles are the same and all their sides are different. Draw for him any such polygon with the given number of vertexes.</p>",
+    "inputSpecification": "<p>The input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) \u2014 the number of the polygon vertexes.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> lines, containing the coordinates of the vertexes of the <span class=\"tex-span\"><i>n</i></span>-gon \"<span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span>\" in the counter clockwise order. The coordinates of the vertexes shouldn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span> in their absolute value. The side lengths should fit within limits <span class=\"tex-span\">[1,\u20091000]</span> (not necessarily integer). Mutual comparing sides and angles of your polygon during the test will go with precision of <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20093</sup></span>.</p><p>If there is no solution, print \"No solution\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "8<br/>",
+            "output": "1.000 0.000<br/>7.000 0.000<br/>9.000 2.000<br/>9.000 3.000<br/>5.000 7.000<br/>3.000 7.000<br/>0.000 4.000<br/>0.000 1.000<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 306,
+    "index": "D",
+    "name": "Polygon",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "geometry"
+    ],
+    "solvedCount": 263
+}

@@ -1,0 +1,30 @@
+{
+    "title": "E. Largest Beautiful Number",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">Yes, that's another problem with definition of \"beautiful\" numbers</span>.</p><p>Let's call a positive integer <span class=\"tex-span\"><i>x</i></span> <span class=\"tex-font-style-it\">beautiful</span> if its decimal representation without leading zeroes contains even number of digits, and there exists a permutation of this representation which is palindromic. For example, <span class=\"tex-span\">4242</span> is a beautiful number, since it contains <span class=\"tex-span\">4</span> digits, and there exists a palindromic permutation <span class=\"tex-span\">2442</span>.</p><p>Given a positive integer <span class=\"tex-span\"><i>s</i></span>, find the largest beautiful number which is less than <span class=\"tex-span\"><i>s</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of testcases you have to solve.</p><p>Then <span class=\"tex-span\"><i>t</i></span> lines follow, each representing one testcase and containing one string which is the decimal representation of number <span class=\"tex-span\"><i>s</i></span>. It is guaranteed that this string has even length, contains no leading zeroes, and there exists at least one beautiful number less than <span class=\"tex-span\"><i>s</i></span>.</p><p>The sum of lengths of <span class=\"tex-span\"><i>s</i></span> over all testcases doesn't exceed <span class=\"tex-span\">2\u00b710<sup class=\"upper-index\">5</sup></span>.</p>",
+    "outputSpecification": "<p>For each testcase print one line containing the largest beautiful number which is less than <span class=\"tex-span\"><i>s</i></span> (it is guaranteed that the answer exists).</p>",
+    "samples": [
+        {
+            "input": "4<br/>89<br/>88<br/>1000<br/>28923845<br/>",
+            "output": "88<br/>77<br/>99<br/>28923839<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 946,
+    "index": "E",
+    "name": "Largest Beautiful Number",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 1079
+}

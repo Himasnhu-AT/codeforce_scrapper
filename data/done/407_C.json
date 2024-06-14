@@ -1,0 +1,36 @@
+{
+    "title": "C. Curious Array",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've got an array consisting of <span class=\"tex-span\"><i>n</i></span> integers: <span class=\"tex-span\"><i>a</i>[1],\u2009<i>a</i>[2],\u2009...,\u2009<i>a</i>[<i>n</i>]</span>. Moreover, there are <span class=\"tex-span\"><i>m</i></span> queries, each query can be described by three integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>k</i><sub class=\"lower-index\"><i>i</i></sub></span>. Query <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>k</i><sub class=\"lower-index\"><i>i</i></sub></span> means that we should add <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8f3ef957f9a1ec49b3350880600f501fb3c21130.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> to each element <span class=\"tex-span\"><i>a</i>[<i>j</i>]</span>, where <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>Record <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d91fc7a27ef531ef9ddb1523f8c0a6c252cb7fd9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> means the binomial coefficient, or the number of combinations from <span class=\"tex-span\"><i>y</i></span> elements into groups of <span class=\"tex-span\"><i>x</i></span> elements.</p><p>You need to fulfil consecutively all queries and then print the final array.</p>",
+    "inputSpecification": "<p>The first line contains integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i>[1],\u2009<i>a</i>[2],\u2009...,\u2009<i>a</i>[<i>n</i>]</span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the initial array.</p><p>Next <span class=\"tex-span\"><i>m</i></span> lines contain queries in the format <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>k</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00a0\u2014 to all elements of the segment <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>... <i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> add number <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8f3ef957f9a1ec49b3350880600f501fb3c21130.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>; <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009100</span>).</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> integers: the <span class=\"tex-span\"><i>i</i></span>-th number is the value of element <span class=\"tex-span\"><i>a</i>[<i>i</i>]</span> after all the queries. As the values can be rather large, print them modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "5 1<br/>0 0 0 0 0<br/>1 5 0<br/>",
+            "output": "1 1 1 1 1<br/>"
+        },
+        {
+            "input": "10 2<br/>1 2 3 4 5 0 0 0 0 0<br/>1 6 1<br/>6 10 2<br/>",
+            "output": "2 4 6 8 10 7 3 6 10 15<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 407,
+    "index": "C",
+    "name": "Curious Array",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 959
+}

@@ -1,0 +1,33 @@
+{
+    "title": "E. Misha and LCP on Tree",
+    "timeLimit": {
+        "value": 8.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Misha has a tree with characters written on the vertices. He can choose two vertices <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> of this tree and write down characters of vertices lying on a path from <span class=\"tex-span\"><i>s</i></span> to <span class=\"tex-span\"><i>t</i></span>. We'll say that such string corresponds to pair <span class=\"tex-span\">(<i>s</i>,\u2009<i>t</i>)</span>.</p><p>Misha has <span class=\"tex-span\"><i>m</i></span> queries of type: you are given <span class=\"tex-span\">4</span> vertices <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span>, <span class=\"tex-span\"><i>c</i></span>, <span class=\"tex-span\"><i>d</i></span>; you need to find the largest common prefix of the strings that correspond to pairs <span class=\"tex-span\">(<i>a</i>,\u2009<i>b</i>)</span> and <span class=\"tex-span\">(<i>c</i>,\u2009<i>d</i>)</span>. Your task is to help him.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009300\u2009000</span>) \u2014 the number of vertices in the tree.</p><p>Next follows a line consisting of <span class=\"tex-span\"><i>n</i></span> small English letters. The <span class=\"tex-span\"><i>i</i></span>-th character of the string corresponds to the character written on the <span class=\"tex-span\"><i>i</i></span>-th vertex. </p><p>Next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contain information about edges. An edge is defined by a pair of integers <span class=\"tex-span\"><i>u</i></span>, <span class=\"tex-span\"><i>v</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i>,\u2009<i>v</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>u</i>\u2009\u2260\u2009<i>v</i></span>), separated by spaces.</p><p>The next line contains integer <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20091\u2009000\u2009000</span>) \u2014 the number of queries.</p><p>Next <span class=\"tex-span\"><i>m</i></span> lines contain information about queries. A query is defined by four integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span>, <span class=\"tex-span\"><i>c</i></span>, <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>,\u2009<i>c</i>,\u2009<i>d</i>\u2009\u2264\u2009<i>n</i></span>), separated by spaces.</p>",
+    "outputSpecification": "<p>For each query print the length of the largest common prefix on a separate line.</p>",
+    "samples": [
+        {
+            "input": "6<br/>bbbabb<br/>2 1<br/>3 2<br/>4 3<br/>5 2<br/>6 5<br/>6<br/>2 5 3 1<br/>1 5 2 3<br/>5 6 5 6<br/>6 3 4 1<br/>6 2 3 4<br/>2 2 4 5<br/>",
+            "output": "2<br/>2<br/>2<br/>0<br/>1<br/>0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 504,
+    "index": "E",
+    "name": "Misha and LCP on Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "dfs and similar",
+        "hashing",
+        "string suffix structures",
+        "trees"
+    ],
+    "solvedCount": 877
+}

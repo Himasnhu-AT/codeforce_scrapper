@@ -1,0 +1,38 @@
+{
+    "title": "C. Help Caretaker",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Autumn came late to the kingdom of Far Far Away. The harvest was exuberant and it is now time to get ready for the winter. As most people celebrate the Harvest festival, Simon the Caretaker tries to solve a very non-trivial task of how to find place for the agricultural equipment in the warehouse.</p><p>He's got problems with some particularly large piece of equipment, which is, of course, turboplows. The problem is that when a turboplow is stored, it takes up not some simply rectangular space. It takes up a T-shaped space like on one of the four pictures below (here character \"<span class=\"tex-font-style-tt\">#</span>\" stands for the space occupied by the turboplow and character \"<span class=\"tex-font-style-tt\">.</span>\" stands for the free space):</p><center> <span class=\"tex-font-style-tt\"> <span> <pre class=\"verbatim\">###      ..#      .#.      #..<br/>.#.      ###      .#.      ###<br/>.#.      ..#      ###      #..<br/></pre> </span> </span> </center><p>Simon faced a quite natural challenge: placing in the given <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> cells warehouse the maximum number of turboplows. As one stores the turboplows, he can rotate them in any manner (so that they take up the space like on one of the four pictures above). However, two turboplows cannot \"overlap\", that is, they cannot share the same cell in the warehouse.</p><p>Simon feels that he alone cannot find the optimal way of positioning the plugs in the warehouse that would maximize their quantity. Can you help him?</p>",
+    "inputSpecification": "<p>The only line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> \u2014 the sizes of the warehouse (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20099</span>).</p>",
+    "outputSpecification": "<p>In the first line print the maximum number of turboplows that can be positioned in the warehouse. In each of the next <span class=\"tex-span\"><i>n</i></span> lines print <span class=\"tex-span\"><i>m</i></span> characters. Use \"<span class=\"tex-font-style-tt\">.</span>\" (dot) to mark empty space and use successive capital Latin letters (\"<span class=\"tex-font-style-tt\">A</span>\" for the first turboplow, \"<span class=\"tex-font-style-tt\">B</span>\" for the second one and so on until you reach the number of turboplows in your scheme) to mark place for the corresponding turboplows considering that they are positioned in the optimal manner in the warehouse. The order in which you number places for the turboplows does not matter. If there are several optimal solutions for a warehouse of the given size, print any of them.</p>",
+    "samples": [
+        {
+            "input": "###      ..#      .#.      #..<br/>.#.      ###      .#.      ###<br/>.#.      ..#      ###      #..<br/>",
+            "output": "3 3<br/>"
+        },
+        {
+            "input": "1<br/>AAA<br/>.A.<br/>.A.<br/>",
+            "output": "5 6<br/>"
+        },
+        {
+            "input": "4<br/>A..C..<br/>AAAC..<br/>ABCCCD<br/>.B.DDD<br/>BBB..D<br/>",
+            "output": "2 2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 142,
+    "index": "C",
+    "name": "Help Caretaker",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp"
+    ],
+    "solvedCount": 903
+}

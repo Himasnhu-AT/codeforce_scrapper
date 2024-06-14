@@ -1,0 +1,22 @@
+{
+    "title": "A2. Generate superposition of zero state and a basis state",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given <span class=\"tex-span\"><i>N</i></span> qubits (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u20098</span>) in zero state <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8bb67080da7081bfb802ca6ecc5abc4f4c5ca190.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. You are also given a bitstring <span class=\"tex-span\"><i>bits</i></span> which describes a non-zero basis state on <span class=\"tex-span\"><i>N</i></span> qubits <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a2b41145e9f49aa274a587b2f9d65cc9e1009d74.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Your task is to generate a state which is an equal superposition of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8bb67080da7081bfb802ca6ecc5abc4f4c5ca190.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and the given basis state:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3c269ffe47860b0f64815b3a2967fc04eae1158d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>You have to implement an operation which takes the following inputs:</p><ul><li> an array of qubits <span class=\"tex-span\"><i>qs</i></span>,</li><li> an arrays of boolean values <span class=\"tex-span\"><i>bits</i></span> representing the basis state <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a2b41145e9f49aa274a587b2f9d65cc9e1009d74.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. This array will have the same length as the array of qubits. The first element of this array <span class=\"tex-span\"><i>bits</i>[0]</span> will be <span class=\"tex-font-style-tt\">true</span>.</li></ul><p>The operation doesn't have an output; its \"output\" is the state in which it leaves the qubits.</p><p>An array of boolean values represents a basis state as follows: the <span class=\"tex-span\"><i>i</i></span>-th element of the array is true if the <span class=\"tex-span\"><i>i</i></span>-th qubit is in state <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/08c9f8a718e14660a9d064a4b3c11e6340bef9c4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, and false if it is in state <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c1f9019c20fc8a9610d31c36ba7860cef0b7c55c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. For example, array <span class=\"tex-font-style-tt\">[true; false]</span> describes 2-qubit state <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1d2a4e8366f050f00dba1a3eb5c6098a0dfa8d6f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, and in this case the resulting state should be <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3164767c7c3d394bebf51ea277b19f40852bdb01.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Your code should have the following signature:</p><pre class=\"verbatim\">namespace Solution {<br/>    open Microsoft.Quantum.Primitive;<br/>    open Microsoft.Quantum.Canon;<br/><br/>    operation Solve (qs : Qubit[], bits : Bool[]) : ()<br/>    {<br/>        body<br/>        {<br/>            // your code here<br/>        }<br/>    }<br/>}</pre>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [],
+    "note": null,
+    "contestId": 1002,
+    "index": "A2",
+    "name": "Generate superposition of zero state and a basis state",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 553
+}

@@ -1,0 +1,30 @@
+{
+    "title": "A. The Meaningless Game",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/93160c26c92388a6ea445eed06a576e8c5c7d74b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Slastyona and her loyal dog Pushok are playing a meaningless <span class=\"tex-font-style-it\">game</span> that is indeed very interesting.</p><p>The <span class=\"tex-font-style-it\">game</span> consists of multiple <span class=\"tex-font-style-it\">rounds</span>. Its rules are very simple: in each round, a natural number <span class=\"tex-span\"><i>k</i></span> is chosen. Then, the one who says (or barks) it faster than the other wins the <span class=\"tex-font-style-it\">round</span>. After that, the winner's score is multiplied by <span class=\"tex-span\"><i>k</i><sup class=\"upper-index\">2</sup></span>, and the loser's score is multiplied by <span class=\"tex-span\"><i>k</i></span>. In the beginning of the <span class=\"tex-font-style-it\">game</span>, both Slastyona and Pushok have scores equal to one.</p><p>Unfortunately, Slastyona had lost her notepad where the history of all <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-font-style-it\">games</span> was recorded. She managed to recall the final results for each games, though, but all of her memories of them are vague. Help Slastyona verify their correctness, or, to put it another way, for each given pair of scores determine whether it was possible for a game to finish with such result or not.</p>",
+    "inputSpecification": "<p>In the first string, the number of games <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009350000)</span> is given.</p><p>Each <span class=\"tex-font-style-it\">game</span> is represented by a pair of scores <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>\u00a0\u2013 the results of Slastyona and Pushok, correspondingly.</p>",
+    "outputSpecification": "<p>For each pair of scores, answer \"<span class=\"tex-font-style-tt\">Yes</span>\" if it's possible for a game to finish with given score, and \"<span class=\"tex-font-style-tt\">No</span>\" otherwise.</p><p>You can output each letter in arbitrary case (upper or lower).</p>",
+    "samples": [
+        {
+            "input": "6<br/>2 4<br/>75 45<br/>8 8<br/>16 16<br/>247 994<br/>1000000000 1000000<br/>",
+            "output": "Yes<br/>Yes<br/>Yes<br/>No<br/>No<br/>Yes<br/>"
+        }
+    ],
+    "note": "<p>First <span class=\"tex-font-style-it\">game</span> might have been consisted of one round, in which the number <span class=\"tex-span\">2</span> would have been chosen and Pushok would have won.</p><p>The second <span class=\"tex-font-style-it\">game</span> needs exactly two rounds to finish with such result: in the first one, Slastyona would have said the number <span class=\"tex-span\">5</span>, and in the second one, Pushok would have barked the number <span class=\"tex-span\">3</span>.</p>",
+    "contestId": 833,
+    "index": "A",
+    "name": "The Meaningless Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 6041
+}

@@ -1,0 +1,46 @@
+{
+    "title": "A. Infinite Sequence",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Consider the infinite sequence of integers: <span class=\"tex-span\">1,\u20091,\u20092,\u20091,\u20092,\u20093,\u20091,\u20092,\u20093,\u20094,\u20091,\u20092,\u20093,\u20094,\u20095...</span>. The sequence is built in the following way: at first the number <span class=\"tex-span\">1</span> is written out, then the numbers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">2</span>, then the numbers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">3</span>, then the numbers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">4</span> and so on. Note that the sequence contains numbers, not digits. For example number <span class=\"tex-span\">10</span> first appears in the sequence in position <span class=\"tex-span\">55</span> (the elements are numerated from one).</p><p>Find the number on the <span class=\"tex-span\"><i>n</i></span>-th position of the sequence.</p>",
+    "inputSpecification": "<p>The only line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">14</sup></span>) \u2014 the position of the number to find.</p><p>Note that the given number is too large, so you should use <span class=\"tex-span\">64</span>-bit integer type to store it. In <span class=\"tex-font-style-tt\">C++</span> you can use the <span class=\"tex-font-style-tt\">long long</span> integer type and in <span class=\"tex-font-style-tt\">Java</span> you can use <span class=\"tex-font-style-tt\">long</span> integer type.</p>",
+    "outputSpecification": "<p>Print the element in the <span class=\"tex-span\"><i>n</i></span>-th position of the sequence (the elements are numerated from one).</p>",
+    "samples": [
+        {
+            "input": "3<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "5<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "10<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "55<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "56<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 622,
+    "index": "A",
+    "name": "Infinite Sequence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 9135
+}

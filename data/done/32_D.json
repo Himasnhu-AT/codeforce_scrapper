@@ -1,0 +1,37 @@
+{
+    "title": "D. Constellation",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A star map in Berland is a checked field <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> squares. In each square there is or there is not a star. The favourite constellation of all Berland's astronomers is the constellation of the Cross. This constellation can be formed by any 5 stars so, that for some integer <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-font-style-underline\">radius of the constellation</span>) the following is true: </p><ul> <li> the 2nd is on the same vertical line as the 1st, but <span class=\"tex-span\"><i>x</i></span> squares up </li><li> the 3rd is on the same vertical line as the 1st, but <span class=\"tex-span\"><i>x</i></span> squares down </li><li> the 4th is on the same horizontal line as the 1st, but <span class=\"tex-span\"><i>x</i></span> squares left </li><li> the 5th is on the same horizontal line as the 1st, but <span class=\"tex-span\"><i>x</i></span> squares right </li></ul><p>Such constellations can be very numerous, that's why they are numbered with integers from 1 on the following principle: when two constellations are compared, the one with a smaller radius gets a smaller index; if their radii are equal \u2014 the one, whose central star if higher than the central star of the other one; if their central stars are at the same level \u2014 the one, whose central star is to the left of the central star of the other one.</p><p>Your task is to find the constellation with index <span class=\"tex-span\"><i>k</i></span> by the given Berland's star map.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009300,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">7</sup></span>) \u2014 height and width of the map and index of the required constellation respectively. The upper-left corner has coordinates <span class=\"tex-span\">(1,\u20091)</span>, and the lower-right \u2014 <span class=\"tex-span\">(<i>n</i>,\u2009<i>m</i>)</span>. Then there follow <span class=\"tex-span\"><i>n</i></span> lines, <span class=\"tex-span\"><i>m</i></span> characters each \u2014 description of the map. <span class=\"tex-span\"><i>j</i></span>-th character in <span class=\"tex-span\"><i>i</i></span>-th line is \u00ab*\u00bb, if there is a star in the corresponding square, and \u00ab.\u00bb if this square is empty.</p>",
+    "outputSpecification": "<p>If the number of the constellations is less than <span class=\"tex-span\"><i>k</i></span>, output <span class=\"tex-font-style-tt\">-1</span>. Otherwise output 5 lines, two integers each \u2014 coordinates of the required constellation. Output the stars in the following order: central, upper, lower, left, right.</p>",
+    "samples": [
+        {
+            "input": "5 6 1<br/>....*.<br/>...***<br/>....*.<br/>..*...<br/>.***..<br/>",
+            "output": "2 5<br/>1 5<br/>3 5<br/>2 4<br/>2 6<br/>"
+        },
+        {
+            "input": "5 6 2<br/>....*.<br/>...***<br/>....*.<br/>..*...<br/>.***..<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "7 7 2<br/>...*...<br/>.......<br/>...*...<br/>*.***.*<br/>...*...<br/>.......<br/>...*...<br/>",
+            "output": "4 4<br/>1 4<br/>7 4<br/>4 1<br/>4 7<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 32,
+    "index": "D",
+    "name": "Constellation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 1246
+}

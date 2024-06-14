@@ -1,0 +1,38 @@
+{
+    "title": "A. Modular Exponentiation",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The following problem is well-known: given integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span>, calculate</p><center> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4b33ec8aef38cc6dd76b0ef06c1acd95b20a79d2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, </center><p>where <span class=\"tex-span\">2<sup class=\"upper-index\"><i>n</i></sup>\u2009=\u20092\u00b72\u00b7...\u00b72</span> (<span class=\"tex-span\"><i>n</i></span> factors), and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/cd0226f6733233da1ba1f4844ccc38fcceb2fd37.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> denotes the remainder of division of <span class=\"tex-span\"><i>x</i></span> by <span class=\"tex-span\"><i>y</i></span>.</p><p>You are asked to solve the \"reverse\" problem. Given integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span>, calculate</p><center> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4dd6929b935fdc955660564229cc15c7babc9368.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. </center>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">8</sup></span>).</p><p>The second line contains a single integer <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">8</sup></span>).</p>",
+    "outputSpecification": "<p>Output a single integer\u00a0\u2014 the value of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4dd6929b935fdc955660564229cc15c7babc9368.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "4<br/>42<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "1<br/>58<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "98765432<br/>23456789<br/>",
+            "output": "23456789<br/>"
+        }
+    ],
+    "note": "<p>In the first example, the remainder of division of 42 by <span class=\"tex-span\">2<sup class=\"upper-index\">4</sup>\u2009=\u200916</span> is equal to 10.</p><p>In the second example, 58 is divisible by <span class=\"tex-span\">2<sup class=\"upper-index\">1</sup>\u2009=\u20092</span> without remainder, and the answer is 0.</p>",
+    "contestId": 913,
+    "index": "A",
+    "name": "Modular Exponentiation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 20681
+}

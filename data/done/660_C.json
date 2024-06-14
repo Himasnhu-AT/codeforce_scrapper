@@ -1,0 +1,35 @@
+{
+    "title": "C. Hard Process",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array <span class=\"tex-span\"><i>a</i></span> with <span class=\"tex-span\"><i>n</i></span> elements. Each element of <span class=\"tex-span\"><i>a</i></span> is either <span class=\"tex-span\">0</span> or <span class=\"tex-span\">1</span>.</p><p>Let's denote the length of the longest subsegment of consecutive elements in <span class=\"tex-span\"><i>a</i></span>, consisting of only numbers one, as <span class=\"tex-span\"><i>f</i>(<i>a</i>)</span>. You can change no more than <span class=\"tex-span\"><i>k</i></span> zeroes to ones to maximize <span class=\"tex-span\"><i>f</i>(<i>a</i>)</span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup>,\u20090\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i></span>) \u2014 the number of elements in <span class=\"tex-span\"><i>a</i></span> and the parameter <span class=\"tex-span\"><i>k</i></span>.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091</span>) \u2014 the elements of <span class=\"tex-span\"><i>a</i></span>.</p>",
+    "outputSpecification": "<p>On the first line print a non-negative integer <span class=\"tex-span\"><i>z</i></span> \u2014 the maximal value of <span class=\"tex-span\"><i>f</i>(<i>a</i>)</span> after no more than <span class=\"tex-span\"><i>k</i></span> changes of zeroes to ones.</p><p>On the second line print <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>j</i></sub></span> \u2014 the elements of the array <span class=\"tex-span\"><i>a</i></span> after the changes.</p><p>If there are multiple answers, you can print any one of them.</p>",
+    "samples": [
+        {
+            "input": "7 1<br/>1 0 0 1 1 0 1<br/>",
+            "output": "4<br/>1 0 0 1 1 1 1<br/>"
+        },
+        {
+            "input": "10 2<br/>1 0 0 1 0 1 0 1 0 1<br/>",
+            "output": "5<br/>1 0 0 1 1 1 1 1 0 1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 660,
+    "index": "C",
+    "name": "Hard Process",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "dp",
+        "two pointers"
+    ],
+    "solvedCount": 9145
+}

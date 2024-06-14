@@ -1,0 +1,36 @@
+{
+    "title": "E1. Guard Duty (easy)",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The Rebel fleet is afraid that the Empire might want to strike back again. Princess Heidi needs to know if it is possible to assign <span class=\"tex-span\"><i>R</i></span> Rebel spaceships to guard <span class=\"tex-span\"><i>B</i></span> bases so that every base has exactly one guardian and each spaceship has exactly one assigned base (in other words, the assignment is a perfect matching). Since she knows how reckless her pilots are, she wants to be sure that any two (straight) paths \u2013 from a base to its assigned spaceship \u2013 do not intersect in the galaxy plane (that is, in 2D), and so there is no risk of collision.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers <span class=\"tex-span\"><i>R</i>,\u2009<i>B</i>(1\u2009\u2264\u2009<i>R</i>,\u2009<i>B</i>\u2009\u2264\u200910)</span>. For <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>R</i></span>, the <span class=\"tex-span\"><i>i</i>\u2009+\u20091</span>-th line contains two space-separated integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">|<i>x</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>y</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910000</span>) denoting the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th Rebel spaceship. The following <span class=\"tex-span\"><i>B</i></span> lines have the same format, denoting the position of bases. It is guaranteed that no two points coincide and that no three points are on the same line.</p>",
+    "outputSpecification": "<p>If it is possible to connect Rebel spaceships and bases so as satisfy the constraint, output <span class=\"tex-font-style-tt\">Yes</span>, otherwise output <span class=\"tex-font-style-tt\">No</span> (without quote).</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>0 0<br/>2 0<br/>3 1<br/>-2 1<br/>0 3<br/>2 2<br/>",
+            "output": "Yes<br/>"
+        },
+        {
+            "input": "2 1<br/>1 0<br/>2 2<br/>3 1<br/>",
+            "output": "No<br/>"
+        }
+    ],
+    "note": "<p>For the first example, one possible way is to connect the Rebels and bases in order.</p><p>For the second example, there is no perfect matching between Rebels and bases.</p>",
+    "contestId": 958,
+    "index": "E1",
+    "name": "Guard Duty (easy)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "geometry",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 1486
+}

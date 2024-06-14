@@ -1,0 +1,38 @@
+{
+    "title": "C. Bear and String Distance",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Limak is a little polar bear. He likes <span class=\"tex-font-style-bf\">nice</span> strings \u2014 strings of length <span class=\"tex-span\"><i>n</i></span>, consisting of lowercase English letters only.</p><p>The distance between two letters is defined as the difference between their positions in the alphabet. For example, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b94160a4d1c955e1b6cd4a0fe139f103c35ac73f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7a05c5ca27b2dc782643b883e8a0bae7e3298e4f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Also, the distance between two nice strings is defined as the sum of distances of corresponding letters. For example, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/77f313bb7e669a438377b73e0dcdc89dc88f4a7a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/51de79586a12d9aa6a55105517514bcd173984a8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>Limak gives you a nice string <span class=\"tex-span\"><i>s</i></span> and an integer <span class=\"tex-span\"><i>k</i></span>. He challenges you to find any nice string <span class=\"tex-span\"><i>s</i>'</span> that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/586a7bce2dc944b81b116fca51344694db717b8b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Find any <span class=\"tex-span\"><i>s</i>'</span> satisfying the given conditions, or print \"<span class=\"tex-font-style-tt\">-1</span>\" if it's impossible to do so.</p><p>As input/output can reach huge size it is recommended to use fast input/output methods: for example, prefer to use <span class=\"tex-font-style-tt\">gets/scanf/printf</span> instead of <span class=\"tex-font-style-tt\">getline/cin/cout</span> in C++, prefer to use <span class=\"tex-font-style-tt\">BufferedReader/PrintWriter</span> instead of <span class=\"tex-font-style-tt\">Scanner/System.out</span> in <span class=\"tex-font-style-tt\">Java</span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>).</p><p>The second line contains a string <span class=\"tex-span\"><i>s</i></span> of length <span class=\"tex-span\"><i>n</i></span>, consisting of lowercase English letters.</p>",
+    "outputSpecification": "<p>If there is no string satisfying the given conditions then print \"<span class=\"tex-font-style-tt\">-1</span>\" (without the quotes).</p><p>Otherwise, print any nice string <span class=\"tex-span\"><i>s</i>'</span> that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/586a7bce2dc944b81b116fca51344694db717b8b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "samples": [
+        {
+            "input": "4 26<br/>bear<br/>",
+            "output": "roar"
+        },
+        {
+            "input": "2 7<br/>af<br/>",
+            "output": "db<br/>"
+        },
+        {
+            "input": "3 1000<br/>hey<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 628,
+    "index": "C",
+    "name": "Bear and String Distance",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "strings"
+    ],
+    "solvedCount": 5715
+}

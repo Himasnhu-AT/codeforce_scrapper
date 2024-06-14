@@ -1,0 +1,34 @@
+{
+    "title": "E. Count Paths",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a tree, consisting of $$$n$$$ vertices, numbered from $$$1$$$ to $$$n$$$. Every vertex is colored in some color, denoted by an integer from $$$1$$$ to $$$n$$$.</p><p>A simple path of the tree is called <span class=\"tex-font-style-it\">beautiful</span> if: </p><ul> <li> it consists of at least $$$2$$$ vertices; </li><li> the first and the last vertices of the path have the same color; </li><li> no other vertex on the path has the same color as the first vertex. </li></ul><p>Count the number of the <span class=\"tex-font-style-it\">beautiful</span> simple paths of the tree. Note that paths are considered undirected (i. e. the path from $$$x$$$ to $$$y$$$ is the same as the path from $$$y$$$ to $$$x$$$).</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of testcases.</p><p>The first line of each testcase contains a single integer $$$n$$$ ($$$2 \\le n \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the number of vertices in the tree.</p><p>The second line contains $$$n$$$ integers $$$c_1, c_2, \\dots, c_n$$$ ($$$1 \\le c_i \\le n$$$)\u00a0\u2014 the color of each vertex.</p><p>The $$$i$$$-th of the next $$$n - 1$$$ lines contains two integers $$$v_i$$$ and $$$u_i$$$ ($$$1 \\le v_i, u_i \\le n$$$; $$$v_i \\neq u_i$$$)\u00a0\u2014 the $$$i$$$-th edge of the tree.</p><p>The given edges form a valid tree. The sum of $$$n$$$ over all testcases doesn't exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each testcase, print a single integer\u00a0\u2014 the number of the <span class=\"tex-font-style-it\">beautiful</span> simple paths of the tree.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 1 2 1 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 2 3 4 5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">4 5</div><div class=\"test-example-line test-example-line-even test-example-line-4\">4</div><div class=\"test-example-line test-example-line-even test-example-line-4\">2 2 2 2</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3 1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3 2</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3 4</div>",
+            "output": "\n1\n3\n0\n3\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1923,
+    "index": "E",
+    "name": "Count Paths",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 3318
+}

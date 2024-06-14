@@ -1,0 +1,40 @@
+{
+    "title": "D. LCC",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>An infinitely long Line Chillland Collider (LCC) was built in Chillland. There are $$$n$$$ pipes with coordinates $$$x_i$$$ that are connected to LCC. When the experiment starts at time 0, $$$i$$$-th proton flies from the $$$i$$$-th pipe with speed $$$v_i$$$. It flies to the right with probability $$$p_i$$$ and flies to the left with probability $$$(1 - p_i)$$$. The <span class=\"tex-font-style-it\">duration of the experiment</span> is determined as the time of the first collision of any two protons. In case there is no collision, the duration of the experiment is considered to be zero.</p><p>Find the expected value of the duration of the experiment.</p><center><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8f71f247f9973aa84c688f02028df0fa69838ce5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>Illustration for the first example</center>",
+    "inputSpecification": "<p>The first line of input contains one integer $$$n$$$\u00a0\u2014 the number of pipes ($$$1 \\le n \\le 10^5$$$). Each of the following $$$n$$$ lines contains three integers $$$x_i$$$, $$$v_i$$$, $$$p_i$$$\u00a0\u2014 the coordinate of the $$$i$$$-th pipe, the speed of the $$$i$$$-th proton and the probability that the $$$i$$$-th proton flies to the right in percentage points ($$$-10^9 \\le x_i \\le 10^9, 1 \\le v \\le 10^6, 0 \\le p_i \\le 100$$$). It is guaranteed that all $$$x_i$$$ are distinct and sorted in increasing order.</p>",
+    "outputSpecification": "<p>It's possible to prove that the answer can always be represented as a fraction $$$P/Q$$$, where $$$P$$$ is an integer and $$$Q$$$ is a natural number not divisible by $$$998\\,244\\,353$$$. In this case, print $$$P \\cdot Q^{-1}$$$ modulo $$$998\\,244\\,353$$$.</p>",
+    "samples": [
+        {
+            "input": "\n2\n1 1 100\n3 1 0\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n3\n7 10 0\n9 4 86\n14 5 100\n",
+            "output": "\n0\n"
+        },
+        {
+            "input": "\n4\n6 4 50\n11 25 50\n13 16 50\n15 8 50\n",
+            "output": "\n150902884\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1286,
+    "index": "D",
+    "name": "LCC",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "math",
+        "matrices",
+        "probabilities"
+    ],
+    "solvedCount": 563
+}

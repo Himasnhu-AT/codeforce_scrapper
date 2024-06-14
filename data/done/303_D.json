@@ -1,0 +1,34 @@
+{
+    "title": "D. Rotatable Number",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Bike is a smart boy who loves math very much. He invented a number called \"Rotatable Number\" inspired by <span class=\"tex-span\">142857</span>. </p><p>As you can see, <span class=\"tex-span\">142857</span> is a magic number because any of its rotatings can be got by multiplying that number by <span class=\"tex-span\">1,\u20092,\u2009...,\u20096</span> (numbers from one to number's length). Rotating a number means putting its last several digit into first. For example, by rotating number <span class=\"tex-span\">12345</span> you can obtain any numbers: <span class=\"tex-span\">12345,\u200951234,\u200945123,\u200934512,\u200923451</span>. It's worth mentioning that <span class=\"tex-font-style-bf\">leading-zeroes</span> are allowed. So both <span class=\"tex-span\">4500123</span> and <span class=\"tex-span\">0123450</span> can be obtained by rotating <span class=\"tex-span\">0012345</span>. You can see why <span class=\"tex-span\">142857</span> satisfies the condition. All of the <span class=\"tex-span\">6</span> equations are under base <span class=\"tex-span\">10</span>.</p><ul> <li> <span class=\"tex-span\">142857\u00b71\u2009=\u2009142857</span>; </li><li> <span class=\"tex-span\">142857\u00b72\u2009=\u2009285714</span>; </li><li> <span class=\"tex-span\">142857\u00b73\u2009=\u2009428571</span>; </li><li> <span class=\"tex-span\">142857\u00b74\u2009=\u2009571428</span>; </li><li> <span class=\"tex-span\">142857\u00b75\u2009=\u2009714285</span>; </li><li> <span class=\"tex-span\">142857\u00b76\u2009=\u2009857142</span>. </li></ul><p>Now, Bike has a problem. He extends \"Rotatable Number\" under any base <span class=\"tex-span\"><i>b</i></span>. As is mentioned above, <span class=\"tex-span\">142857</span> is a \"Rotatable Number\" under base <span class=\"tex-span\">10</span>. Another example is <span class=\"tex-span\">0011</span> under base 2. All of the <span class=\"tex-span\">4</span> equations are under base <span class=\"tex-span\">2</span>.</p><ul> <li> <span class=\"tex-span\">0011\u00b71\u2009=\u20090011</span>; </li><li> <span class=\"tex-span\">0011\u00b710\u2009=\u20090110</span>; </li><li> <span class=\"tex-span\">0011\u00b711\u2009=\u20091001</span>; </li><li> <span class=\"tex-span\">0011\u00b7100\u2009=\u20091100</span>. </li></ul><p>So, he wants to find the largest <span class=\"tex-span\"><i>b</i></span> <span class=\"tex-span\">(1\u2009&lt;\u2009<i>b</i>\u2009&lt;\u2009<i>x</i>)</span> so that there is a <span class=\"tex-font-style-bf\">positive</span> \"Rotatable Number\" (leading-zeroes allowed) of length <span class=\"tex-span\"><i>n</i></span> under base <span class=\"tex-span\"><i>b</i></span>.</p><p>Note that any time you multiply a rotatable number by numbers from 1 to its length you should get a rotating of that number.</p>",
+    "inputSpecification": "<p>The only line contains two space-separated integers <span class=\"tex-span\"><i>n</i>,\u2009<i>x</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20095\u00b710<sup class=\"upper-index\">6</sup>,\u20092\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>. </p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the largest <span class=\"tex-span\"><i>b</i></span> you found. If no such <span class=\"tex-span\"><i>b</i></span> exists, print <span class=\"tex-font-style-tt\">-1</span> instead. </p>",
+    "samples": [
+        {
+            "input": "6 11<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "5 8<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 303,
+    "index": "D",
+    "name": "Rotatable Number",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 291
+}

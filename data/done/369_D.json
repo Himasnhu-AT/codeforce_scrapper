@@ -1,0 +1,44 @@
+{
+    "title": "D. Valera and Fools",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One fine morning, <span class=\"tex-span\"><i>n</i></span> fools lined up in a row. After that, they numbered each other with numbers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, inclusive. Each fool got a unique number. The fools decided not to change their numbers before the end of the fun.</p><p>Every fool has exactly <span class=\"tex-span\"><i>k</i></span> bullets and a pistol. In addition, the fool number <span class=\"tex-span\"><i>i</i></span> has probability of <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> (in percent) that he kills the fool he shoots at.</p><p>The fools decided to have several rounds of the fun. Each round of the fun looks like this: each currently living fool shoots at another living fool with the smallest number (a fool is not stupid enough to shoot at himself). All shots of the round are perfomed at one time (simultaneously). If there is exactly one living fool, he does not shoot.</p><p>Let's define a <span class=\"tex-font-style-it\">situation</span> as the set of numbers of all the living fools at the some time. We say that a situation is <span class=\"tex-font-style-it\">possible</span> if for some integer number <span class=\"tex-span\"><i>j</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>k</i></span>) there is a nonzero probability that after <span class=\"tex-span\"><i>j</i></span> rounds of the fun this situation will occur.</p><p>Valera knows numbers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> and <span class=\"tex-span\"><i>k</i></span>. Help Valera determine the number of distinct <span class=\"tex-font-style-it\">possible situations</span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i>,\u2009<i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>k</i>\u2009\u2264\u20093000</span>) \u2014 the initial number of fools and the number of bullets for each fool.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>) \u2014 the given probabilities (in percent).</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>50 50 50<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "1 1<br/>100<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 1<br/>100 100<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3 3<br/>0 0 0<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, any situation is possible, except for situation <span class=\"tex-span\">{1,\u20092}</span>.</p><p>In the second sample there is exactly one fool, so he does not make shots.</p><p>In the third sample the possible situations are <span class=\"tex-span\">{1,\u20092}</span> (after zero rounds) and the \"empty\" situation <span class=\"tex-span\">{}</span> (after one round).</p><p>In the fourth sample, the only possible situation is <span class=\"tex-span\">{1,\u20092,\u20093}</span>.</p>",
+    "contestId": 369,
+    "index": "D",
+    "name": "Valera and Fools",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 1100
+}

@@ -1,0 +1,43 @@
+{
+    "title": "A. The Text Splitting",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given the string <span class=\"tex-span\"><i>s</i></span> of length <span class=\"tex-span\"><i>n</i></span> and the numbers <span class=\"tex-span\"><i>p</i>,\u2009<i>q</i></span>. Split the string <span class=\"tex-span\"><i>s</i></span> to pieces of length <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\"><i>q</i></span>.</p><p>For example, the string \"<span class=\"tex-font-style-tt\">Hello</span>\" for <span class=\"tex-span\"><i>p</i>\u2009=\u20092</span>, <span class=\"tex-span\"><i>q</i>\u2009=\u20093</span> can be split to the two strings \"<span class=\"tex-font-style-tt\">Hel</span>\" and \"<span class=\"tex-font-style-tt\">lo</span>\" or to the two strings \"<span class=\"tex-font-style-tt\">He</span>\" and \"<span class=\"tex-font-style-tt\">llo</span>\".</p><p>Note it is allowed to split the string <span class=\"tex-span\"><i>s</i></span> to the strings only of length <span class=\"tex-span\"><i>p</i></span> or to the strings only of length <span class=\"tex-span\"><i>q</i></span> (see the second sample test).</p>",
+    "inputSpecification": "<p>The first line contains three positive integers <span class=\"tex-span\"><i>n</i>,\u2009<i>p</i>,\u2009<i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i>,\u2009<i>q</i>\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>).</p><p>The second line contains the string <span class=\"tex-span\"><i>s</i></span> consists of lowercase and uppercase latin letters and digits.</p>",
+    "outputSpecification": "<p>If it's impossible to split the string <span class=\"tex-span\"><i>s</i></span> to the strings of length <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\"><i>q</i></span> print the only number \"<span class=\"tex-font-style-tt\">-1</span>\".</p><p>Otherwise in the first line print integer <span class=\"tex-span\"><i>k</i></span> \u2014 the number of strings in partition of <span class=\"tex-span\"><i>s</i></span>.</p><p>Each of the next <span class=\"tex-span\"><i>k</i></span> lines should contain the strings in partition. Each string should be of the length <span class=\"tex-span\"><i>p</i></span> or <span class=\"tex-span\"><i>q</i></span>. The string should be in order of their appearing in string <span class=\"tex-span\"><i>s</i></span> \u2014 from left to right.</p><p>If there are several solutions print any of them.</p>",
+    "samples": [
+        {
+            "input": "5 2 3<br/>Hello<br/>",
+            "output": "2<br/>He<br/>llo<br/>"
+        },
+        {
+            "input": "10 9 5<br/>Codeforces<br/>",
+            "output": "2<br/>Codef<br/>orces<br/>"
+        },
+        {
+            "input": "6 4 5<br/>Privet<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "8 1 1<br/>abacabac<br/>",
+            "output": "8<br/>a<br/>b<br/>a<br/>c<br/>a<br/>b<br/>a<br/>c<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 612,
+    "index": "A",
+    "name": "The Text Splitting",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 7070
+}

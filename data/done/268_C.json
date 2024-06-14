@@ -1,0 +1,34 @@
+{
+    "title": "C. Beautiful Sets of Points",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Manao has invented a new mathematical term \u2014 a beautiful set of points. He calls a set of points on a plane <span class=\"tex-font-style-it\">beautiful</span> if it meets the following conditions:</p><ol> <li> The coordinates of each point in the set are integers. </li><li> For any two points from the set, the distance between them is a non-integer. </li></ol><p>Consider all points <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> which satisfy the inequations: <span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>n</i></span>; <span class=\"tex-span\">0\u2009\u2264\u2009<i>y</i>\u2009\u2264\u2009<i>m</i></span>; <span class=\"tex-span\"><i>x</i>\u2009+\u2009<i>y</i>\u2009&gt;\u20090</span>. Choose their subset of maximum size such that it is also a beautiful set of points.</p>",
+    "inputSpecification": "<p>The single line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>).</p>",
+    "outputSpecification": "<p>In the first line print a single integer \u2014 the size <span class=\"tex-span\"><i>k</i></span> of the found beautiful set. In each of the next <span class=\"tex-span\"><i>k</i></span> lines print a pair of space-separated integers \u2014 the <span class=\"tex-span\"><i>x</i></span>- and <span class=\"tex-span\"><i>y</i></span>- coordinates, respectively, of a point from the set.</p><p>If there are several optimal solutions, you may print any of them.</p>",
+    "samples": [
+        {
+            "input": "2 2<br/>",
+            "output": "3<br/>0 1<br/>1 2<br/>2 0<br/>"
+        },
+        {
+            "input": "4 3<br/>",
+            "output": "4<br/>0 3<br/>2 1<br/>3 0<br/>4 2<br/>"
+        }
+    ],
+    "note": "<p>Consider the first sample. The distance between points (0, 1) and (1, 2) equals <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bfe16f27ebc966df6f10ba356a1547b6e7242dd7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, between (0, 1) and (2, 0) \u2014 <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/23d63d8a57cddda72562a512c05111054cd85870.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, between (1, 2) and (2, 0) \u2014 <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/23d63d8a57cddda72562a512c05111054cd85870.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Thus, these points form a beautiful set. You cannot form a beautiful set with more than three points out of the given points. Note that this is not the only solution.</p>",
+    "contestId": 268,
+    "index": "C",
+    "name": "Beautiful Sets of Points",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 13352
+}

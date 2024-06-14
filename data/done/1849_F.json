@@ -1,0 +1,46 @@
+{
+    "title": "F. XOR Partition",
+    "timeLimit": {
+        "value": 7.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>For a set of integers $$$S$$$, let's define its cost as the minimum value of $$$x \\oplus y$$$ among all pairs of <span class=\"tex-font-style-bf\">different</span> integers from the set (here, $$$\\oplus$$$ denotes bitwise XOR). If there are less than two elements in the set, its cost is equal to $$$2^{30}$$$.</p><p>You are given a set of integers $$$\\{a_1, a_2, \\dots, a_n\\}$$$. You have to partition it into two sets $$$S_1$$$ and $$$S_2$$$ in such a way that every element of the given set belongs to exactly one of these two sets. The value of the partition is the <span class=\"tex-font-style-bf\">minimum</span> among the costs of $$$S_1$$$ and $$$S_2$$$.</p><p>Find the partition with the <span class=\"tex-font-style-bf\">maximum</span> possible value.</p>",
+    "inputSpecification": "<p>The first line contains $$$n$$$ ($$$2 \\le n \\le 200000$$$) \u2014 the number of elements in the set.</p><p>The second line contains $$$n$$$ <span class=\"tex-font-style-bf\">distinct</span> integers $$$a_1$$$, $$$a_2$$$, ..., $$$a_n$$$ ($$$0 \\le a_i &lt; 2^{30}$$$) \u2014 the elements of the set.</p>",
+    "outputSpecification": "<p>Print a string $$$n$$$ characters <span class=\"tex-font-style-tt\">0</span> and/or <span class=\"tex-font-style-tt\">1</span> describing the partition as follows: the $$$i$$$-th character should be <span class=\"tex-font-style-tt\">0</span> if the element $$$a_i$$$ belongs to $$$S_1$$$, otherwise, that character should be <span class=\"tex-font-style-tt\">1</span>.</p><p>If there are multiple optimal answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "5<br/>42 13 1337 37 152<br/>",
+            "output": "10001<br/>"
+        },
+        {
+            "input": "4<br/>1 2 3 4<br/>",
+            "output": "1100<br/>"
+        },
+        {
+            "input": "2<br/>1 2<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "8<br/>7 6 5 4 3 2 1 0<br/>",
+            "output": "10010110<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 1849,
+    "index": "F",
+    "name": "XOR Partition",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "data structures",
+        "divide and conquer",
+        "greedy",
+        "trees"
+    ],
+    "solvedCount": 667
+}

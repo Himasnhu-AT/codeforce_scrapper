@@ -1,0 +1,34 @@
+{
+    "title": "A. Meeting of Old Friends",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Today an outstanding event is going to happen in the forest\u00a0\u2014 hedgehog Filya will come to his old fried Sonya!</p><p>Sonya is an owl and she sleeps during the day and stay awake from minute <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">1</sub></span> to minute <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1</sub></span> inclusive. Also, during the minute <span class=\"tex-span\"><i>k</i></span> she prinks and is unavailable for Filya.</p><p>Filya works a lot and he plans to visit Sonya from minute <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">2</sub></span> to minute <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">2</sub></span> inclusive.</p><p>Calculate the number of minutes they will be able to spend together.</p>",
+    "inputSpecification": "<p>The only line of the input contains integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">2</sub></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\">1</sub>,\u2009<i>r</i><sub class=\"lower-index\">1</sub>,\u2009<i>l</i><sub class=\"lower-index\">2</sub>,\u2009<i>r</i><sub class=\"lower-index\">2</sub>,\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>, <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\">2</sub></span>), providing the segments of time for Sonya and Filya and the moment of time when Sonya prinks.</p>",
+    "outputSpecification": "<p>Print one integer\u00a0\u2014 the number of minutes Sonya and Filya will be able to spend together.</p>",
+    "samples": [
+        {
+            "input": "1 10 9 20 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "1 100 50 200 75<br/>",
+            "output": "50<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, they will be together during minutes <span class=\"tex-span\">9</span> and <span class=\"tex-span\">10</span>.</p><p>In the second sample, they will be together from minute <span class=\"tex-span\">50</span> to minute <span class=\"tex-span\">74</span> and from minute <span class=\"tex-span\">76</span> to minute <span class=\"tex-span\">100</span>.</p>",
+    "contestId": 714,
+    "index": "A",
+    "name": "Meeting of Old Friends",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 10707
+}

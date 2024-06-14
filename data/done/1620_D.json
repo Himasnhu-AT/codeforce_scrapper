@@ -1,0 +1,31 @@
+{
+    "title": "D. Exact Change",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One day, early in the morning, you decided to buy yourself a bag of chips in the nearby store. The store has chips of $$$n$$$ different flavors. A bag of the $$$i$$$-th flavor costs $$$a_i$$$ burles.</p><p>The store may run out of some flavors, so you'll decide which one to buy after arriving there. But there are two major flaws in this plan: </p><ol> <li> you have only coins of $$$1$$$, $$$2$$$ and $$$3$$$ burles; </li><li> since it's morning, the store will ask you to pay in exact change, i.\u00a0e. if you choose the $$$i$$$-th flavor, you'll have to pay <span class=\"tex-font-style-it\">exactly</span> $$$a_i$$$ burles. </li></ol><p>Coins are heavy, so you'd like to take the least possible number of coins in total. That's why you are wondering: what is the minimum total number of coins you should take with you, so you can buy a bag of chips of any flavor in exact change?</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains the single integer $$$n$$$ ($$$1 \\le n \\le 100$$$)\u00a0\u2014 the number of flavors in the store.</p><p>The second line of each test case contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i \\le 10^9$$$)\u00a0\u2014 the cost of one bag of each flavor.</p>",
+    "outputSpecification": "<p>For each test case, print one integer\u00a0\u2014 the minimum number of coins you need to buy one bag of any flavor you'll choose in exact change.</p>",
+    "samples": [
+        {
+            "input": "\n4\n1\n1337\n3\n10 8 10\n5\n1 2 3 4 5\n3\n7 77 777\n",
+            "output": "\n446\n4\n3\n260\n"
+        }
+    ],
+    "note": "<p>In the first test case, you should, for example, take with you $$$445$$$ coins of value $$$3$$$ and $$$1$$$ coin of value $$$2$$$. So, $$$1337 = 445 \\cdot 3 + 1 \\cdot 2$$$.</p><p>In the second test case, you should, for example, take $$$2$$$ coins of value $$$3$$$ and $$$2$$$ coins of value $$$2$$$. So you can pay either exactly $$$8 = 2 \\cdot 3 + 1 \\cdot 2$$$ or $$$10 = 2 \\cdot 3 + 2 \\cdot 2$$$.</p><p>In the third test case, it's enough to take $$$1$$$ coin of value $$$3$$$ and $$$2$$$ coins of value $$$1$$$.</p>",
+    "contestId": 1620,
+    "index": "D",
+    "name": "Exact Change",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy"
+    ],
+    "solvedCount": 4072
+}

@@ -1,0 +1,54 @@
+{
+    "title": "C. George and Number",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>George is a cat, so he really likes to play. Most of all he likes to play with his array of positive integers <span class=\"tex-span\"><i>b</i></span>. During the game, George modifies the array by using special changes. Let's mark George's current array as <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>b</i><sub class=\"lower-index\">|<i>b</i>|</sub></span> (record <span class=\"tex-span\">|<i>b</i>|</span> denotes the current length of the array). Then one change is a sequence of actions: </p><ul> <li> Choose two distinct indexes <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>,\u2009<i>j</i>\u2009\u2264\u2009|<i>b</i>|;\u00a0<i>i</i>\u2009\u2260\u2009<i>j</i>)</span>, such that <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2265\u2009<i>b</i><sub class=\"lower-index\"><i>j</i></sub></span>. </li><li> Get number <span class=\"tex-span\"><i>v</i>\u2009=\u2009<i>concat</i>(<i>b</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>j</i></sub>)</span>, where <span class=\"tex-span\"><i>concat</i>(<i>x</i>,\u2009<i>y</i>)</span> is a number obtained by adding number <span class=\"tex-span\"><i>y</i></span> to the end of the decimal record of number <span class=\"tex-span\"><i>x</i></span>. For example, <span class=\"tex-span\"><i>concat</i>(500,\u200910)\u2009=\u200950010</span>, <span class=\"tex-span\"><i>concat</i>(2,\u20092)\u2009=\u200922</span>. </li><li> Add number <span class=\"tex-span\"><i>v</i></span> to the end of the array. The length of the array will increase by one. </li><li> Remove from the array numbers with indexes <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span>. The length of the array will decrease by two, and elements of the array will become re-numbered from <span class=\"tex-span\">1</span> to current length of the array. </li></ul><p>George played for a long time with his array <span class=\"tex-span\"><i>b</i></span> and received from array <span class=\"tex-span\"><i>b</i></span> an array consisting of exactly one number <span class=\"tex-span\"><i>p</i></span>. Now George wants to know: what is the maximum number of elements array <span class=\"tex-span\"><i>b</i></span> could contain originally? Help him find this number. Note that originally the array could contain only <span class=\"tex-font-style-bf\">positive</span> integers.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>p</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i>\u2009&lt;\u200910<sup class=\"upper-index\">100000</sup></span>). It is guaranteed that number <span class=\"tex-span\"><i>p</i></span> doesn't contain any leading zeroes.</p>",
+    "outputSpecification": "<p>Print an integer \u2014 the maximum number of elements array <span class=\"tex-span\"><i>b</i></span> could contain originally.</p>",
+    "samples": [
+        {
+            "input": "9555<br/>",
+            "output": "4"
+        },
+        {
+            "input": "10000000005<br/>",
+            "output": "2"
+        },
+        {
+            "input": "800101<br/>",
+            "output": "3"
+        },
+        {
+            "input": "45<br/>",
+            "output": "1"
+        },
+        {
+            "input": "1000000000000001223300003342220044555<br/>",
+            "output": "17"
+        },
+        {
+            "input": "19992000<br/>",
+            "output": "1"
+        },
+        {
+            "input": "310200<br/>",
+            "output": "2"
+        }
+    ],
+    "note": "<p>Let's consider the test examples: </p><ul> <li> Originally array <span class=\"tex-span\"><i>b</i></span> can be equal to <span class=\"tex-span\">{5,\u20099,\u20095,\u20095}</span>. The sequence of George's changes could have been: <span class=\"tex-span\">{5,\u20099,\u20095,\u20095}\u2009\u2192\u2009{5,\u20095,\u200995}\u2009\u2192\u2009{95,\u200955}\u2009\u2192\u2009{9555}</span>. </li><li> Originally array <span class=\"tex-span\"><i>b</i></span> could be equal to <span class=\"tex-span\">{1000000000,\u20095}</span>. Please note that the array <span class=\"tex-span\"><i>b</i></span> cannot contain zeros. </li><li> Originally array <span class=\"tex-span\"><i>b</i></span> could be equal to <span class=\"tex-span\">{800,\u200910,\u20091}</span>. </li><li> Originally array <span class=\"tex-span\"><i>b</i></span> could be equal to <span class=\"tex-span\">{45}</span>. It cannot be equal to <span class=\"tex-span\">{4,\u20095}</span>, because George can get only array <span class=\"tex-span\">{54}</span> from this array in one operation. </li></ul><p>Note that the numbers can be very large.</p>",
+    "contestId": 387,
+    "index": "C",
+    "name": "George and Number",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 2168
+}

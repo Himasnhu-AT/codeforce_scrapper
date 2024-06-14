@@ -1,0 +1,38 @@
+{
+    "title": "C. Shaass and Lights",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are <span class=\"tex-span\"><i>n</i></span> lights aligned in a row. These lights are numbered <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> from left to right. Initially some of the lights are switched on. Shaass wants to switch all the lights on. At each step he can switch a light on (this light should be switched off at that moment) if there's at least one adjacent light which is already switched on. </p><p>He knows the initial state of lights and he's wondering how many different ways there exist to switch all the lights on. Please find the required number of ways modulo <span class=\"tex-span\">1000000007\u00a0(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> where <span class=\"tex-span\"><i>n</i></span> is the number of lights in the sequence and <span class=\"tex-span\"><i>m</i></span> is the number of lights which are initially switched on, <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000,\u20091\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009<i>n</i>)</span>. The second line contains <span class=\"tex-span\"><i>m</i></span> distinct integers, each between <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> inclusive, denoting the indices of lights which are initially switched on.</p>",
+    "outputSpecification": "<p>In the only line of the output print the number of different possible ways to switch on all the lights modulo <span class=\"tex-span\">1000000007\u00a0(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "3 1<br/>1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "4 2<br/>1 4<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "11 2<br/>4 8<br/>",
+            "output": "6720<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 294,
+    "index": "C",
+    "name": "Shaass and Lights",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "number theory"
+    ],
+    "solvedCount": 3729
+}

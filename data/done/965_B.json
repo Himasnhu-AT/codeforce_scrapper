@@ -1,0 +1,37 @@
+{
+    "title": "B. Battleship",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Arkady is playing Battleship. The rules of this game aren't really important.</p><p>There is a field of $$$n \\times n$$$ cells. There should be exactly one $$$k$$$-decker on the field, i.\u00a0e. a ship that is $$$k$$$ cells long oriented either horizontally or vertically. However, Arkady doesn't know where it is located. For each cell Arkady knows if it is definitely empty or can contain a part of the ship.</p><p>Consider all possible locations of the ship. Find such a cell that belongs to the maximum possible number of different locations of the ship.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\le k \\le n \\le 100$$$)\u00a0\u2014 the size of the field and the size of the ship.</p><p>The next $$$n$$$ lines contain the field. Each line contains $$$n$$$ characters, each of which is either '<span class=\"tex-font-style-tt\">#</span>' (denotes a definitely empty cell) or '<span class=\"tex-font-style-tt\">.</span>' (denotes a cell that can belong to the ship).</p>",
+    "outputSpecification": "<p>Output two integers\u00a0\u2014 the row and the column of a cell that belongs to the maximum possible number of different locations of the ship.</p><p>If there are multiple answers, output any of them. In particular, if no ship can be placed on the field, you can output any cell.</p>",
+    "samples": [
+        {
+            "input": "4 3<br/>#..#<br/>#.#.<br/>....<br/>.###<br/>",
+            "output": "3 2<br/>"
+        },
+        {
+            "input": "10 4<br/>#....##...<br/>.#...#....<br/>..#..#..#.<br/>...#.#....<br/>.#..##.#..<br/>.....#...#<br/>...#.##...<br/>.#...#.#..<br/>.....#..#.<br/>...#.#...#<br/>",
+            "output": "6 1<br/>"
+        },
+        {
+            "input": "19 6<br/>##..............###<br/>#......#####.....##<br/>.....#########.....<br/>....###########....<br/>...#############...<br/>..###############..<br/>.#################.<br/>.#################.<br/>.#################.<br/>.#################.<br/>#####....##....####<br/>####............###<br/>####............###<br/>#####...####...####<br/>.#####..####..#####<br/>...###........###..<br/>....###########....<br/>.........##........<br/>#.................#<br/>",
+            "output": "1 8<br/>"
+        }
+    ],
+    "note": "<p>The picture below shows the three possible locations of the ship that contain the cell $$$(3, 2)$$$ in the first sample.</p><center> <img class=\"tex-graphics\" height=\"378px\" src=\"https://espresso.codeforces.com/ef25d7d148f9af05ef49051ac25b0f76a63a599a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"378px\"/> </center>",
+    "contestId": 965,
+    "index": "B",
+    "name": "Battleship",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 4490
+}

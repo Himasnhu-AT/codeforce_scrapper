@@ -1,0 +1,35 @@
+{
+    "title": "E. Close Vertices",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've got a weighted tree, consisting of <span class=\"tex-span\"><i>n</i></span> vertices. Each edge has a non-negative weight. The length of the path between any two vertices of the tree is the number of edges in the path. The weight of the path is the total weight of all edges it contains. </p><p>Two vertices are close if there exists a path of length at most <span class=\"tex-span\"><i>l</i></span> between them and a path of weight at most <span class=\"tex-span\"><i>w</i></span> between them. Count the number of pairs of vertices <span class=\"tex-span\"><i>v</i>,\u2009<i>u</i></span> <span class=\"tex-span\">(<i>v</i>\u2009&lt;\u2009<i>u</i>)</span>, such that vertices <span class=\"tex-span\"><i>v</i></span> and <span class=\"tex-span\"><i>u</i></span> are close.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>w</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20091\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>n</i>,\u20090\u2009\u2264\u2009<i>w</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>. The next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines contain the descriptions of the tree edges. The <span class=\"tex-span\"><i>i</i></span>-th line contains two integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009(<i>i</i>\u2009+\u20091),\u20090\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup>)</span>, that mean that the <span class=\"tex-span\"><i>i</i></span>-th edge connects vertex <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span> and <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> and has weight <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>Consider the tree vertices indexed from 1 to <span class=\"tex-span\"><i>n</i></span> in some way.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number of close pairs.</p><p>Please, do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "4 4 6<br/>1 3<br/>1 4<br/>1 3<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "6 2 17<br/>1 3<br/>2 5<br/>2 13<br/>1 6<br/>5 9<br/>",
+            "output": "9<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 293,
+    "index": "E",
+    "name": "Close Vertices",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "trees"
+    ],
+    "solvedCount": 1303
+}

@@ -1,0 +1,38 @@
+{
+    "title": "B. Obsessive String",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Hamed has recently found a string <span class=\"tex-span\"><i>t</i></span> and suddenly became quite fond of it. He spent several days trying to find all occurrences of <span class=\"tex-span\"><i>t</i></span> in other strings he had. Finally he became tired and started thinking about the following problem. Given a string <span class=\"tex-span\"><i>s</i></span> how many ways are there to extract <span class=\"tex-span\"><i>k</i>\u2009\u2265\u20091</span> non-overlapping substrings from it such that each of them contains string <span class=\"tex-span\"><i>t</i></span> as a substring? More formally, you need to calculate the number of ways to choose two sequences <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>k</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>b</i><sub class=\"lower-index\"><i>k</i></sub></span> satisfying the following requirements:</p><ul> <li> <span class=\"tex-span\"><i>k</i>\u2009\u2265\u20091</span> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9787d50d9b7a3b6baffe4cb496df2248b003b17a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/092ce460b67857d1ad157982f2234fb864faae89.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c25caac60742ab6bf606b781e3f62be37a796eeb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/99ce7829f1cda3a108cb995b136005e31e6f5582.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>\u00a0\u00a0<span class=\"tex-span\"><i>t</i></span> is a substring of string <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></sub><i>s</i><sub class=\"lower-index\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009+\u20091</sub>... <i>s</i><sub class=\"lower-index\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></sub></span> (string <span class=\"tex-span\"><i>s</i></span> is considered as <span class=\"tex-span\">1</span>-indexed). </li></ul><p>As the number of ways can be rather large print it modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>Input consists of two lines containing strings <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|,\u2009|<i>t</i>|\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>). Each string consists of lowercase Latin letters.</p>",
+    "outputSpecification": "<p>Print the answer in a single line.</p>",
+    "samples": [
+        {
+            "input": "ababa<br/>aba<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "welcometoroundtwohundredandeightytwo<br/>d<br/>",
+            "output": "274201<br/>"
+        },
+        {
+            "input": "ddd<br/>d<br/>",
+            "output": "12<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 494,
+    "index": "B",
+    "name": "Obsessive String",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "strings"
+    ],
+    "solvedCount": 2612
+}

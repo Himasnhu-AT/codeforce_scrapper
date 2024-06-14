@@ -1,0 +1,32 @@
+{
+    "title": "A. Two Regular Polygons",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two integers $$$n$$$ and $$$m$$$ ($$$m &lt; n$$$). Consider a <span class=\"tex-font-style-bf\">convex</span> regular polygon of $$$n$$$ vertices. Recall that a regular polygon is a polygon that is equiangular (all angles are equal in measure) and equilateral (all sides have the same length).</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/4b1833ce71bfcf123d99f1adc7364c8c4ec3b20b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> Examples of convex regular polygons </center><p>Your task is to say if it is possible to build another <span class=\"tex-font-style-bf\">convex</span> regular polygon with $$$m$$$ vertices such that its center coincides with the center of the initial polygon and each of its vertices is some vertex of the initial polygon.</p><p>You have to answer $$$t$$$ independent test cases.</p>",
+    "inputSpecification": "<p>The first line of the input contains one integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$) \u2014 the number of test cases.</p><p>The next $$$t$$$ lines describe test cases. Each test case is given as two space-separated integers $$$n$$$ and $$$m$$$ ($$$3 \\le m &lt; n \\le 100$$$) \u2014 the number of vertices in the initial polygon and the number of vertices in the polygon you want to build.</p>",
+    "outputSpecification": "<p>For each test case, print the answer \u2014 \"<span class=\"tex-font-style-tt\">YES</span>\" (without quotes), if it is possible to build another <span class=\"tex-font-style-bf\">convex</span> regular polygon with $$$m$$$ vertices such that its center coincides with the center of the initial polygon and each of its vertices is some vertex of the initial polygon and \"<span class=\"tex-font-style-tt\">NO</span>\" otherwise.</p>",
+    "samples": [
+        {
+            "input": "\n2\n6 3\n7 3\n",
+            "output": "\nYES\nNO\n"
+        }
+    ],
+    "note": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/cd75d40c2cfbfd1ea85b599fb39ffa62f469d695.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> The first test case of the example </center><p>It can be shown that the answer for the second test case of the example is \"<span class=\"tex-font-style-tt\">NO</span>\".</p>",
+    "contestId": 1312,
+    "index": "A",
+    "name": "Two Regular Polygons",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "greedy",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 25401
+}

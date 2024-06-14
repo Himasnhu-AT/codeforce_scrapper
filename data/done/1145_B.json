@@ -1,0 +1,41 @@
+{
+    "title": "B. Kanban Numbers",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"input-specification\"><div class=\"section-title\">Input</div><p>The input contains a single integer $$$a$$$ ($$$1 \\le a \\le 99$$$).</p></div><div class=\"output-specification\"><div class=\"section-title\">Output</div><p>Output \"YES\" or \"NO\".</p></div><div class=\"sample-tests\"><div class=\"section-title\">Examples</div><div class=\"sample-test\"><div class=\"input\"><div class=\"title\">Input</div><pre>\n5\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nYES\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\n13\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nNO\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\n24\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nNO\n</pre></div><div class=\"input\"><div class=\"title\">Input</div><pre>\n46\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nYES\n</pre></div></div></div>",
+    "inputSpecification": "<p>The input contains a single integer $$$a$$$ ($$$1 \\le a \\le 99$$$).</p>",
+    "outputSpecification": "<p>Output \"YES\" or \"NO\".</p>",
+    "samples": [
+        {
+            "input": "\n5\n",
+            "output": "\nYES\n"
+        },
+        {
+            "input": "\n13\n",
+            "output": "\nNO\n"
+        },
+        {
+            "input": "\n24\n",
+            "output": "\nNO\n"
+        },
+        {
+            "input": "\n46\n",
+            "output": "\nYES\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1145,
+    "index": "B",
+    "name": "Kanban Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force"
+    ],
+    "solvedCount": 1439
+}

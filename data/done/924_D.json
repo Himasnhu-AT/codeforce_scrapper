@@ -1,0 +1,31 @@
+{
+    "title": "D. Contact ATC",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Arkady the air traffic controller is now working with <span class=\"tex-span\"><i>n</i></span> planes in the air. All planes move along a straight coordinate axis with Arkady's station being at point <span class=\"tex-span\">0</span> on it. The <span class=\"tex-span\"><i>i</i></span>-th plane, small enough to be represented by a point, currently has a coordinate of <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and is moving with speed <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>. It's guaranteed that <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u00b7<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u20090</span>, i.e., all planes are moving towards the station.</p><p>Occasionally, the planes are affected by winds. With a wind of speed <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>wind</i></sub></span> (not necessarily positive or integral), the speed of the <span class=\"tex-span\"><i>i</i></span>-th plane becomes <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009+\u2009<i>v</i><sub class=\"lower-index\"><i>wind</i></sub></span>.</p><p>According to weather report, the current wind has a steady speed falling inside the range <span class=\"tex-span\">[\u2009-\u2009<i>w</i>,\u2009<i>w</i>]</span> (inclusive), but the exact value cannot be measured accurately since this value is rather small \u2014 smaller than the absolute value of speed of any plane.</p><p>Each plane should contact Arkady at the exact moment it passes above his station. And you are to help Arkady count the number of pairs of planes <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> (<span class=\"tex-span\"><i>i</i>\u2009&lt;\u2009<i>j</i></span>) there are such that there is a possible value of wind speed, under which planes <span class=\"tex-span\"><i>i</i></span> and <span class=\"tex-span\"><i>j</i></span> contact Arkady at the same moment. This value needn't be the same across different pairs.</p><p>The wind speed is the same for all planes. You may assume that the wind has a steady speed and lasts arbitrarily long.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>w</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100\u2009000</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>w</i>\u2009&lt;\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the number of planes and the maximum wind speed.</p><p>The <span class=\"tex-span\"><i>i</i></span>-th of the next <span class=\"tex-span\"><i>n</i></span> lines contains two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>x</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\"><i>w</i>\u2009+\u20091\u2009\u2264\u2009|<i>v</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u00b7<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u20090</span>)\u00a0\u2014 the initial position and speed of the <span class=\"tex-span\"><i>i</i></span>-th plane.</p><p>Planes are pairwise distinct, that is, no pair of <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> (<span class=\"tex-span\"><i>i</i>\u2009&lt;\u2009<i>j</i></span>) exists such that both <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>x</i><sub class=\"lower-index\"><i>j</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u2009<i>v</i><sub class=\"lower-index\"><i>j</i></sub></span>.</p>",
+    "outputSpecification": "<p>Output a single integer\u00a0\u2014 the number of unordered pairs of planes that can contact Arkady at the same moment.</p>",
+    "samples": [
+        {
+            "input": "5 1<br/>-3 2<br/>-3 3<br/>-1 2<br/>1 -3<br/>3 -5<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "6 1<br/>-3 2<br/>-2 2<br/>-1 2<br/>1 -2<br/>2 -2<br/>3 -2<br/>",
+            "output": "9<br/>"
+        }
+    ],
+    "note": "<p>In the first example, the following <span class=\"tex-span\">3</span> pairs of planes satisfy the requirements: </p><ul> <li> <span class=\"tex-font-style-bf\"><span class=\"tex-span\">(2,\u20095)</span></span> passes the station at time <span class=\"tex-span\">3\u2009/\u20094</span> with <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>wind</i></sub>\u2009=\u20091</span>; </li><li> <span class=\"tex-font-style-bf\"><span class=\"tex-span\">(3,\u20094)</span></span> passes the station at time <span class=\"tex-span\">2\u2009/\u20095</span> with <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>wind</i></sub>\u2009=\u20091\u2009/\u20092</span>; </li><li> <span class=\"tex-font-style-bf\"><span class=\"tex-span\">(3,\u20095)</span></span> passes the station at time <span class=\"tex-span\">4\u2009/\u20097</span> with <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>wind</i></sub>\u2009=\u2009\u2009-\u20091\u2009/\u20094</span>. </li></ul><p>In the second example, each of the <span class=\"tex-span\">3</span> planes with negative coordinates can form a valid pair with each of the other <span class=\"tex-span\">3</span>, totaling <span class=\"tex-span\">9</span> pairs.</p>",
+    "contestId": 924,
+    "index": "D",
+    "name": "Contact ATC",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 812
+}

@@ -1,0 +1,43 @@
+{
+    "title": "A. Bear and Friendship Condition",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Bear Limak examines a social network. Its main functionality is that two members can become friends (then they can talk with each other and share funny pictures).</p><p>There are <span class=\"tex-span\"><i>n</i></span> members, numbered <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>n</i></span>. <span class=\"tex-span\"><i>m</i></span> pairs of members are friends. Of course, a member can't be a friend with themselves.</p><p>Let <span class=\"tex-font-style-tt\">A-B</span> denote that members <span class=\"tex-font-style-tt\">A</span> and <span class=\"tex-font-style-tt\">B</span> are friends. Limak thinks that a network is <span class=\"tex-font-style-it\">reasonable</span> if and only if the following condition is satisfied: For every three <span class=\"tex-font-style-bf\">distinct</span> members (<span class=\"tex-font-style-tt\">X</span>, <span class=\"tex-font-style-tt\">Y</span>, <span class=\"tex-font-style-tt\">Z</span>), if <span class=\"tex-font-style-tt\">X-Y</span> and <span class=\"tex-font-style-tt\">Y-Z</span> then also <span class=\"tex-font-style-tt\">X-Z</span>.</p><p>For example: if Alan and Bob are friends, and Bob and Ciri are friends, then Alan and Ciri should be friends as well.</p><p>Can you help Limak and check if the network is reasonable? Print \"<span class=\"tex-font-style-tt\">YES</span>\" or \"<span class=\"tex-font-style-tt\">NO</span>\" accordingly, without the quotes.</p>",
+    "inputSpecification": "<p>The first line of the input contain two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009150\u2009000</span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b42f66704052fe39dd9de801c578ecf53d48d0fe.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>)\u00a0\u2014 the number of members and the number of pairs of members that are friends.</p><p>The <span class=\"tex-span\"><i>i</i></span>-th of the next <span class=\"tex-span\"><i>m</i></span> lines contains two distinct integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>,\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>). Members <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> are friends with each other. No pair of members will appear more than once in the input.</p>",
+    "outputSpecification": "<p>If the given network is reasonable, print \"<span class=\"tex-font-style-tt\">YES</span>\" in a single line (without the quotes). Otherwise, print \"<span class=\"tex-font-style-tt\">NO</span>\" in a single line (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "4 3<br/>1 3<br/>3 4<br/>1 4<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "4 4<br/>3 1<br/>2 3<br/>3 4<br/>1 2<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "10 4<br/>4 3<br/>5 10<br/>8 9<br/>1 2<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "3 2<br/>1 2<br/>2 3<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>The drawings below show the situation in the first sample (on the left) and in the second sample (on the right). Each edge represents two members that are friends. The answer is \"<span class=\"tex-font-style-tt\">NO</span>\" in the second sample because members <span class=\"tex-span\">(2,\u20093)</span> are friends and members <span class=\"tex-span\">(3,\u20094)</span> are friends, while members <span class=\"tex-span\">(2,\u20094)</span> are not.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/999abd3a2ce8ac1986b5396a1ab1d24150213635.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 771,
+    "index": "A",
+    "name": "Bear and Friendship Condition",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs"
+    ],
+    "solvedCount": 14766
+}

@@ -1,0 +1,34 @@
+{
+    "title": "A. Anastasia and pebbles",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Anastasia loves going for a walk in Central Uzhlyandian Park. But she became uninterested in simple walking, so she began to collect Uzhlyandian pebbles. At first, she decided to collect all the pebbles she could find in the park.</p><p>She has only <span class=\"tex-font-style-bf\">two pockets</span>. She can put at most <span class=\"tex-span\"><i>k</i></span> pebbles in each pocket at the same time. There are <span class=\"tex-span\"><i>n</i></span> different pebble types in the park, and there are <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> pebbles of the <span class=\"tex-span\"><i>i</i></span>-th type. Anastasia is very responsible, so she never mixes pebbles of different types in same pocket. However, she can put different kinds of pebbles in different pockets at the same time. Unfortunately, she can't spend all her time collecting pebbles, so she can collect pebbles from the park only once a day.</p><p>Help her to find the minimum number of days needed to collect all the pebbles of Uzhlyandian Central Park, taking into consideration that Anastasia can't place pebbles of different types in same pocket.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the number of different pebble types and number of pebbles Anastasia can place in one pocket.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\">1</sub>,\u2009<i>w</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>w</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>)\u00a0\u2014 number of pebbles of each type. </p>",
+    "outputSpecification": "<p>The only line of output contains one integer\u00a0\u2014 the minimum number of days Anastasia needs to collect all the pebbles.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>2 3 4<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "5 4<br/>3 1 8 9 7<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": "<p>In the first sample case, Anastasia can collect all pebbles of the first type on the first day, of second type\u00a0\u2014 on the second day, and of third type\u00a0\u2014 on the third day.</p><p>Optimal sequence of actions in the second sample case: </p><ul> <li> In the first day Anastasia collects <span class=\"tex-span\">8</span> pebbles of the third type. </li><li> In the second day she collects <span class=\"tex-span\">8</span> pebbles of the fourth type. </li><li> In the third day she collects <span class=\"tex-span\">3</span> pebbles of the first type and <span class=\"tex-span\">1</span> pebble of the fourth type. </li><li> In the fourth day she collects <span class=\"tex-span\">7</span> pebbles of the fifth type. </li><li> In the fifth day she collects <span class=\"tex-span\">1</span> pebble of the second type. </li></ul>",
+    "contestId": 789,
+    "index": "A",
+    "name": "Anastasia and pebbles",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 9236
+}

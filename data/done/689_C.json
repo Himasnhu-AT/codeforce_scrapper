@@ -1,0 +1,39 @@
+{
+    "title": "C. Mike and Chocolate Thieves",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Bad news came to Mike's village, some thieves stole a bunch of chocolates from the local factory! Horrible! </p><p>Aside from loving sweet things, thieves from this area are known to be very greedy. So after a thief takes his number of chocolates for himself, the next thief will take exactly <span class=\"tex-span\"><i>k</i></span> times more than the previous one. The value of <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\"><i>k</i>\u2009&gt;\u20091</span>) is a secret integer known only to them. It is also known that each thief's bag can carry at most <span class=\"tex-span\"><i>n</i></span> chocolates (if they intend to take more, the deal is cancelled) and that there were <span class=\"tex-font-style-bf\">exactly four</span> thieves involved. </p><p>Sadly, only the thieves know the value of <span class=\"tex-span\"><i>n</i></span>, but rumours say that the numbers of ways they could have taken the chocolates (for a fixed <span class=\"tex-span\"><i>n</i></span>, but not fixed <span class=\"tex-span\"><i>k</i></span>) is <span class=\"tex-span\"><i>m</i></span>. Two ways are considered different if one of the thieves (they should be numbered in the order they take chocolates) took different number of chocolates in them.</p><p>Mike want to track the thieves down, so he wants to know what their bags are and value of <span class=\"tex-span\"><i>n</i></span> will help him in that. Please find <span class=\"tex-font-style-bf\">the smallest possible</span> value of <span class=\"tex-span\"><i>n</i></span> or tell him that the rumors are false and there is no such <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "inputSpecification": "<p>The single line of input contains the integer <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">15</sup>)</span>\u00a0\u2014 the number of ways the thieves might steal the chocolates, as rumours say.</p>",
+    "outputSpecification": "<p>Print the only integer <span class=\"tex-span\"><i>n</i></span>\u00a0\u2014 the maximum amount of chocolates that thieves' bags can carry. If there are more than one <span class=\"tex-span\"><i>n</i></span> satisfying the rumors, <span class=\"tex-font-style-bf\">print the smallest one</span>.</p><p>If there is no such <span class=\"tex-span\"><i>n</i></span> for a false-rumoured <span class=\"tex-span\"><i>m</i></span>, print <span class=\"tex-span\">\u2009-\u20091</span>.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "8<br/>"
+        },
+        {
+            "input": "8<br/>",
+            "output": "54<br/>"
+        },
+        {
+            "input": "10<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample case the smallest <span class=\"tex-span\"><i>n</i></span> that leads to exactly one way of stealing chocolates is <span class=\"tex-span\"><i>n</i>\u2009=\u20098</span>, whereas the amounts of stealed chocolates are <span class=\"tex-span\">(1,\u20092,\u20094,\u20098)</span> (the number of chocolates stolen by each of the thieves).</p><p>In the second sample case the smallest <span class=\"tex-span\"><i>n</i></span> that leads to exactly <span class=\"tex-span\">8</span> ways is <span class=\"tex-span\"><i>n</i>\u2009=\u200954</span> with the possibilities: <span class=\"tex-span\">(1,\u20092,\u20094,\u20098),\u2009\u2002(1,\u20093,\u20099,\u200927),\u2009\u2002(2,\u20094,\u20098,\u200916),\u2009\u2002(2,\u20096,\u200918,\u200954),\u2009\u2002(3,\u20096,\u200912,\u200924),\u2009\u2002(4,\u20098,\u200916,\u200932),\u2009\u2002(5,\u200910,\u200920,\u200940),\u2009\u2002(6,\u200912,\u200924,\u200948)</span>.</p><p>There is no <span class=\"tex-span\"><i>n</i></span> leading to exactly <span class=\"tex-span\">10</span> ways of stealing chocolates in the third sample case.</p>",
+    "contestId": 689,
+    "index": "C",
+    "name": "Mike and Chocolate Thieves",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "math"
+    ],
+    "solvedCount": 4966
+}

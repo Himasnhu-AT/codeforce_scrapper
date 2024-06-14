@@ -1,0 +1,35 @@
+{
+    "title": "D. Hit Ball",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>When Valera was playing football on a stadium, it suddenly began to rain. Valera hid in the corridor under the grandstand not to get wet. However, the desire to play was so great that he decided to train his hitting the ball right in this corridor. Valera went back far enough, put the ball and hit it. The ball bounced off the walls, the ceiling and the floor corridor and finally hit the exit door. As the ball was wet, it left a spot on the door. Now Valera wants to know the coordinates for this spot.</p><p>Let's describe the event more formally. The ball will be considered a point in space. The door of the corridor will be considered a rectangle located on plane <span class=\"tex-span\"><i>xOz</i></span>, such that the lower left corner of the door is located at point <span class=\"tex-span\">(0,\u20090,\u20090)</span>, and the upper right corner is located at point <span class=\"tex-span\">(<i>a</i>,\u20090,\u2009<i>b</i>)</span> . The corridor will be considered as a rectangular parallelepiped, infinite in the direction of increasing coordinates of <span class=\"tex-span\"><i>y</i></span>. In this corridor the floor will be considered as plane <span class=\"tex-span\"><i>xOy</i></span>, and the ceiling as plane, parallel to <span class=\"tex-span\"><i>xOy</i></span> and passing through point <span class=\"tex-span\">(<i>a</i>,\u20090,\u2009<i>b</i>)</span>. We will also assume that one of the walls is plane <span class=\"tex-span\"><i>yOz</i></span>, and the other wall is plane, parallel to <span class=\"tex-span\"><i>yOz</i></span> and passing through point <span class=\"tex-span\">(<i>a</i>,\u20090,\u2009<i>b</i>)</span>.</p><p>We'll say that the ball hit the door when its coordinate <span class=\"tex-span\"><i>y</i></span> was equal to <span class=\"tex-span\">0</span>. Thus the coordinates of the spot are point <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">0</sub>,\u20090,\u2009<i>z</i><sub class=\"lower-index\">0</sub>)</span>, where <span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">0</sub>\u2009\u2264\u2009<i>a</i>,\u20090\u2009\u2264\u2009<i>z</i><sub class=\"lower-index\">0</sub>\u2009\u2264\u2009<i>b</i></span>. To hit the ball, Valera steps away from the door at distance <span class=\"tex-span\"><i>m</i></span> and puts the ball in the center of the corridor at point <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4c2f11493ea210fe11ac6861f1085dd5f9435332.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. After the hit the ball flies at speed <span class=\"tex-span\">(<i>v</i><sub class=\"lower-index\"><i>x</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>y</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>z</i></sub>)</span>. This means that if the ball has coordinates <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>,\u2009<i>z</i>)</span>, then after one second it will have coordinates <span class=\"tex-span\">(<i>x</i>\u2009+\u2009<i>v</i><sub class=\"lower-index\"><i>x</i></sub>,\u2009<i>y</i>\u2009+\u2009<i>v</i><sub class=\"lower-index\"><i>y</i></sub>,\u2009<i>z</i>\u2009+\u2009<i>v</i><sub class=\"lower-index\"><i>z</i></sub>)</span>.</p><p>See image in notes for clarification.</p><p>When the ball collides with the ceiling, the floor or a wall of the corridor, it bounces off in accordance with the laws of reflection (the angle of incidence equals the angle of reflection). In the problem we consider the ideal physical model, so we can assume that there is no air resistance, friction force, or any loss of energy.</p>",
+    "inputSpecification": "<p>The first line contains three space-separated integers <span class=\"tex-span\"><i>a</i>,\u2009<i>b</i>,\u2009<i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>,\u2009<i>m</i>\u2009\u2264\u2009100)</span>. The first two integers specify point <span class=\"tex-span\">(<i>a</i>,\u20090,\u2009<i>b</i>)</span>, through which the ceiling and one of the corridor walls pass. The third integer is the distance at which Valera went away from the door.</p><p>The second line has three space-separated integers <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>x</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>y</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>z</i></sub></span> <span class=\"tex-span\">(|<i>v</i><sub class=\"lower-index\"><i>x</i></sub>|,\u2009|<i>v</i><sub class=\"lower-index\"><i>y</i></sub>|,\u2009|<i>v</i><sub class=\"lower-index\"><i>z</i></sub>|\u2009\u2264\u2009100,\u2009<i>v</i><sub class=\"lower-index\"><i>y</i></sub>\u2009&lt;\u20090,\u2009<i>v</i><sub class=\"lower-index\"><i>z</i></sub>\u2009\u2265\u20090)</span> \u2014 the speed of the ball after the hit.</p><p>It is guaranteed that the ball hits the door.</p>",
+    "outputSpecification": "<p>Print two real numbers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">0</sub>,\u2009<i>z</i><sub class=\"lower-index\">0</sub></span> \u2014 the <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>z</i></span> coordinates of point <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">0</sub>,\u20090,\u2009<i>z</i><sub class=\"lower-index\">0</sub>)</span>, at which the ball hits the exit door. The answer will be considered correct, if its absolute or relative error does not exceed <span class=\"tex-span\">10\u2009<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "7 2 11<br/>3 -11 2<br/>",
+            "output": "6.5000000000 2.0000000000<br/>"
+        },
+        {
+            "input": "7 2 11<br/>4 -3 3<br/>",
+            "output": "4.1666666667 1.0000000000<br/>"
+        }
+    ],
+    "note": "<p><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/0b96c99a50a7ff8657d6301992a0fe440badfb7b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p>",
+    "contestId": 203,
+    "index": "D",
+    "name": "Hit Ball",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 1403
+}

@@ -1,0 +1,33 @@
+{
+    "title": "A. IQ test",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Bob is preparing to pass IQ test. The most frequent task in this test is to find out which one of the given <span class=\"tex-span\"><i>n</i></span> numbers differs from the others. Bob observed that one number usually differs from the others in evenness. Help Bob \u2014 to check his answers, he needs a program that among the given <span class=\"tex-span\"><i>n</i></span> numbers finds one that is different in evenness.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) \u2014 amount of numbers in the task. The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated natural numbers, not exceeding 100. It is guaranteed, that exactly one of these numbers differs from the others in evenness.</p>",
+    "outputSpecification": "<p>Output index of number that differs from the others in evenness. Numbers are numbered from 1 in the input order.</p>",
+    "samples": [
+        {
+            "input": "5<br/>2 4 7 8 10<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "4<br/>1 2 1 1<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 25,
+    "index": "A",
+    "name": "IQ test",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force"
+    ],
+    "solvedCount": 82253
+}

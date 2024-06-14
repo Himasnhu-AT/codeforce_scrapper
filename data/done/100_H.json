@@ -1,0 +1,31 @@
+{
+    "title": "H. Battleship",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Do you know the game Battleship? If no, look into Wikipedia article http://en.wikipedia.org/wiki/Battleship_(game). You are given the positions of ships on a <span class=\"tex-span\">10\u2009\u00d7\u200910</span> board for playing Battleship. According to the rules, the board should contain the following ships: </p><ul> <li> one of size 4 (<span class=\"tex-span\">4\u2009\u00d7\u20091</span> or <span class=\"tex-span\">1\u2009\u00d7\u20094</span> rectangle), </li><li> two of size 3 (<span class=\"tex-span\">3\u2009\u00d7\u20091</span> or <span class=\"tex-span\">1\u2009\u00d7\u20093</span> rectangles), </li><li> three of size 2 (<span class=\"tex-span\">2\u2009\u00d7\u20091</span> or <span class=\"tex-span\">1\u2009\u00d7\u20092</span> rectangles), </li><li> four of size 1 (<span class=\"tex-span\">1\u2009\u00d7\u20091</span> rectangles). </li></ul><p>The ships should not 'bend', touch each other or overlap in any way. Each ship can be oriented horizontaly or verticaly. Your task is to check whether the given set of boards meets the given conditions.</p>",
+    "inputSpecification": "<p>The first line contains number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910</span>) \u2014 the number of boards. Each board is described by 10 lines containing 10 characters each. The symbol \"0\" stands for an empty square and the symbol \"*\" stands for a square occupied by a ship. The descriptions of boards are separated with empty lines.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> lines YES or NO. Print the first word if the board meets the given conditions; otherwise print the second word.</p>",
+    "samples": [
+        {
+            "input": "2<br/>****000000<br/>0000000000<br/>***00***00<br/>0000000000<br/>00000000**<br/>000**00000<br/>00000000**<br/>000*000000<br/>00000*00*0<br/>0*00000000<br/><br/>****000000<br/>0000000000<br/>***00***00<br/>0000000000<br/>00000000**<br/>000**00000<br/>00000000**<br/>0000*00000<br/>00000*00*0<br/>0*00000000<br/>",
+            "output": "YES<br/>NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 100,
+    "index": "H",
+    "name": "Battleship",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "dfs and similar",
+        "implementation"
+    ],
+    "solvedCount": 75
+}

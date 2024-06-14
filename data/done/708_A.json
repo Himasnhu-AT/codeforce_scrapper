@@ -1,0 +1,36 @@
+{
+    "title": "A. Letters Cyclic Shift",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a non-empty string <span class=\"tex-span\"><i>s</i></span> consisting of lowercase English letters. You have to pick <span class=\"tex-font-style-bf\">exactly one non-empty substring</span> of <span class=\"tex-span\"><i>s</i></span> and shift all its letters '<span class=\"tex-font-style-tt\">z</span>' <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> '<span class=\"tex-font-style-tt\">y</span>' <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> '<span class=\"tex-font-style-tt\">x</span>' <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/005927f46ee43aed9953b17eaaafb44b804a158a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> '<span class=\"tex-font-style-tt\">b</span>' <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> '<span class=\"tex-font-style-tt\">a</span>' <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> '<span class=\"tex-font-style-tt\">z</span>'. In other words, each character is replaced with the previous character of English alphabet and '<span class=\"tex-font-style-tt\">a</span>' is replaced with '<span class=\"tex-font-style-tt\">z</span>'.</p><p>What is the lexicographically minimum string that can be obtained from <span class=\"tex-span\"><i>s</i></span> by performing this shift exactly once?</p>",
+    "inputSpecification": "<p>The only line of the input contains the string <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u2009100\u2009000</span>) consisting of lowercase English letters.</p>",
+    "outputSpecification": "<p>Print the lexicographically minimum string that can be obtained from <span class=\"tex-span\"><i>s</i></span> by shifting letters of exactly one non-empty substring.</p>",
+    "samples": [
+        {
+            "input": "codeforces<br/>",
+            "output": "bncdenqbdr<br/>"
+        },
+        {
+            "input": "abacaba<br/>",
+            "output": "aaacaba<br/>"
+        }
+    ],
+    "note": "<p>String <span class=\"tex-span\"><i>s</i></span> is lexicographically smaller than some other string <span class=\"tex-span\"><i>t</i></span> of the same length if there exists some <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009|<i>s</i>|</span>, such that <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>\u2009=\u2009<i>t</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>\u2009=\u2009<i>t</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub>\u2009=\u2009<i>t</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub></span>, and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p>",
+    "contestId": 708,
+    "index": "A",
+    "name": "Letters Cyclic Shift",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 8929
+}

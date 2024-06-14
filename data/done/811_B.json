@@ -1,0 +1,34 @@
+{
+    "title": "B. Vladik and Complicated Book",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vladik had started reading a complicated book about algorithms containing <span class=\"tex-span\"><i>n</i></span> pages. To improve understanding of what is written, his friends advised him to read pages in some order given by permutation <span class=\"tex-span\"><i>P</i>\u2009=\u2009[<i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub>]</span>, where <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> denotes the number of page that should be read <span class=\"tex-span\"><i>i</i></span>-th in turn.</p><p>Sometimes Vladik\u2019s mom sorted some subsegment of permutation <span class=\"tex-span\"><i>P</i></span> from position <span class=\"tex-span\"><i>l</i></span> to position <span class=\"tex-span\"><i>r</i></span> inclusive, because she loves the order. For every of such sorting Vladik knows number <span class=\"tex-span\"><i>x</i></span>\u00a0\u2014 what index of page in permutation he should read. He is wondered if the page, which he will read after sorting, has changed. In other words, has <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>x</i></sub></span> changed? After every sorting Vladik return permutation to initial state, so you can assume that each sorting is independent from each other.</p>",
+    "inputSpecification": "<p>First line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>)\u00a0\u2014 length of permutation and number of times Vladik's mom sorted some subsegment of the book.</p><p>Second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 permutation <span class=\"tex-span\"><i>P</i></span>. Note that elements in permutation are distinct.</p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines contains three space-separated integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 left and right borders of sorted subsegment in <span class=\"tex-span\"><i>i</i></span>-th sorting and position that is interesting to Vladik.</p>",
+    "outputSpecification": "<p>For each mom\u2019s sorting on it\u2019s own line print \"<span class=\"tex-font-style-tt\">Yes</span>\", if page which is interesting to Vladik hasn't changed, or \"<span class=\"tex-font-style-tt\">No</span>\" otherwise.</p>",
+    "samples": [
+        {
+            "input": "5 5<br/>5 4 3 2 1<br/>1 5 3<br/>1 3 1<br/>2 4 3<br/>4 4 4<br/>2 5 3<br/>",
+            "output": "Yes<br/>No<br/>Yes<br/>Yes<br/>No<br/>"
+        },
+        {
+            "input": "6 5<br/>1 4 3 2 5 6<br/>2 4 3<br/>1 6 2<br/>4 5 4<br/>1 3 3<br/>2 6 3<br/>",
+            "output": "Yes<br/>No<br/>Yes<br/>No<br/>Yes<br/>"
+        }
+    ],
+    "note": "<p>Explanation of first test case: </p><ol> <li> <span class=\"tex-span\">[1,\u20092,\u20093,\u20094,\u20095]</span>\u00a0\u2014 permutation after sorting, <span class=\"tex-span\">3</span>-rd element hasn\u2019t changed, so answer is \"<span class=\"tex-font-style-tt\">Yes</span>\". </li><li> <span class=\"tex-span\">[3,\u20094,\u20095,\u20092,\u20091]</span>\u00a0\u2014 permutation after sorting, <span class=\"tex-span\">1</span>-st element has changed, so answer is \"<span class=\"tex-font-style-tt\">No</span>\". </li><li> <span class=\"tex-span\">[5,\u20092,\u20093,\u20094,\u20091]</span>\u00a0\u2014 permutation after sorting, <span class=\"tex-span\">3</span>-rd element hasn\u2019t changed, so answer is \"<span class=\"tex-font-style-tt\">Yes</span>\". </li><li> <span class=\"tex-span\">[5,\u20094,\u20093,\u20092,\u20091]</span>\u00a0\u2014 permutation after sorting, <span class=\"tex-span\">4</span>-th element hasn\u2019t changed, so answer is \"<span class=\"tex-font-style-tt\">Yes</span>\". </li><li> <span class=\"tex-span\">[5,\u20091,\u20092,\u20093,\u20094]</span>\u00a0\u2014 permutation after sorting, <span class=\"tex-span\">3</span>-rd element has changed, so answer is \"<span class=\"tex-font-style-tt\">No</span>\". </li></ol>",
+    "contestId": 811,
+    "index": "B",
+    "name": "Vladik and Complicated Book",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 6446
+}

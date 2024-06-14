@@ -1,0 +1,42 @@
+{
+    "title": "C. Vanya and Scales",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vanya has a scales for weighing loads and weights of masses <span class=\"tex-span\"><i>w</i><sup class=\"upper-index\">0</sup>,\u2009<i>w</i><sup class=\"upper-index\">1</sup>,\u2009<i>w</i><sup class=\"upper-index\">2</sup>,\u2009...,\u2009<i>w</i><sup class=\"upper-index\">100</sup></span> grams where <span class=\"tex-span\"><i>w</i></span> is some integer not less than <span class=\"tex-span\">2</span> (exactly one weight of each nominal value). Vanya wonders whether he can weight an item with mass <span class=\"tex-span\"><i>m</i></span> using the given weights, if the weights can be put on both pans of the scales. Formally speaking, your task is to determine whether it is possible to place an item of mass <span class=\"tex-span\"><i>m</i></span> and some weights on the left pan of the scales, and some weights on the right pan of the scales so that the pans of the scales were in balance.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>w</i>,\u2009<i>m</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>w</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the number defining the masses of the weights and the mass of the item.</p>",
+    "outputSpecification": "<p>Print word '<span class=\"tex-font-style-tt\">YES</span>' if the item can be weighted and '<span class=\"tex-font-style-tt\">NO</span>' if it cannot.</p>",
+    "samples": [
+        {
+            "input": "3 7<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "100 99<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "100 50<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>Note to the first sample test. One pan can have an item of mass <span class=\"tex-span\">7</span> and a weight of mass <span class=\"tex-span\">3</span>, and the second pan can have two weights of masses <span class=\"tex-span\">9</span> and <span class=\"tex-span\">1</span>, correspondingly. Then <span class=\"tex-span\">7\u2009+\u20093\u2009=\u20099\u2009+\u20091</span>.</p><p>Note to the second sample test. One pan of the scales can have an item of mass <span class=\"tex-span\">99</span> and the weight of mass <span class=\"tex-span\">1</span>, and the second pan can have the weight of mass <span class=\"tex-span\">100</span>.</p><p>Note to the third sample test. It is impossible to measure the weight of the item in the manner described in the input. </p>",
+    "contestId": 552,
+    "index": "C",
+    "name": "Vanya and Scales",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "math",
+        "meet-in-the-middle",
+        "number theory"
+    ],
+    "solvedCount": 5418
+}

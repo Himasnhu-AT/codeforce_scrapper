@@ -1,0 +1,33 @@
+{
+    "title": "A. Indian Summer",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Indian summer is such a beautiful time of the year! A girl named Alyona is walking in the forest and picking a bouquet from fallen leaves. Alyona is very choosy \u2014 she doesn't take a leaf if it matches the color and the species of the tree of one of the leaves she already has. Find out how many leaves Alyona has picked.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) \u2014 the number of leaves Alyona has found. The next <span class=\"tex-span\"><i>n</i></span> lines contain the leaves' descriptions. Each leaf is characterized by the species of the tree it has fallen from and by the color. The species of the trees and colors are given in names, consisting of no more than <span class=\"tex-span\">10</span> lowercase Latin letters. A name can not be an empty string. The species of a tree and the color are given in each line separated by a space.</p>",
+    "outputSpecification": "<p>Output the single number \u2014 the number of Alyona's leaves.</p>",
+    "samples": [
+        {
+            "input": "5<br/>birch yellow<br/>maple red<br/>birch yellow<br/>maple yellow<br/>maple green<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "3<br/>oak yellow<br/>oak yellow<br/>oak yellow<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 44,
+    "index": "A",
+    "name": "Indian Summer",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 9693
+}

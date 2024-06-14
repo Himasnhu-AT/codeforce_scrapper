@@ -1,0 +1,42 @@
+{
+    "title": "F. Fugitive Frenzy",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 1024.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The city of F. can be represented as a tree. A famous fugitive is hiding in it, and today a faithful police officer decided to catch him at all costs. The police officer is stronger than the fugitive, but the fugitive is much faster than the former. That is why the pursuit proceeds as follows. At the moment $$$t = 0$$$ the police officer appears at the vertex with number $$$s$$$, and the fugitive spawns at any other vertex of his choice. After that, they take turns, starting with the police officer.</p><ul> <li> During the police officer's move, she selects any vertex adjacent to the one where she is currently located and moves there. The police officer spends one minute moving. Also, the police officer may decide to stand still instead, in which case she waits one minute at the vertex at which she started her move. If at the end of the turn the police officer ends up at the same vertex as the fugitive, she instantly catches him and the chase ends. </li><li> The fugitive's move is as follows. Let him be at vertex $$$b$$$, and the police officer at vertex $$$p$$$. Then the fugitive chooses any vertex $$$b' \\ne p$$$ such that the path between the vertices $$$b$$$ and $$$b'$$$ does not contain vertex $$$p$$$ and instantly moves there. In particular, he can always choose $$$b' = b$$$ to stay where he is. The fugitive's move takes no time. </li></ul><p>Note that the fugitive managed to attach a radio bug to the police officer's badge a week ago, so the fugitive knows the location of the police officer at every moment (in particular, he knows the number $$$s$$$). On the contrary, the police officer knows nothing about the fugitive's movements and will only be able to detect him at the very moment she catches him.</p><p>The police officer aims to catch the fugitive as fast as possible, and the fugitive aims to be caught as late as possible. Since the chase can be thought of as a game with incomplete information, participants can use mixed (probabilistic) strategies\u00a0\u2014 thus, the police officer acts to minimize the expected duration of the chase, and the fugitive\u00a0\u2014 to maximize it.</p><p>Find the mathematical expectation of the duration of the chase with optimal actions of the police officer and the fugitive. It can be proven that it is always finite. In particular, with optimal strategies, the probability that the chase continues indefinitely is equal to zero.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$n$$$\u00a0\u2014 the number of vertices in the tree ($$$2 \\le n \\le 100$$$). The next $$$n - 1$$$ lines describe the city of F.: each of them contains a pair of integers $$$u_i$$$, $$$v_i$$$\u00a0\u2014 the numbers of the ends of an edge ($$$1 \\le u_i, v_i \\le n$$$). These edges are guaranteed to form a tree.</p><p>The last line contains an integer $$$s$$$\u00a0\u2014 the number of the vertex where the police officer initially appears ($$$1 \\le s \\le n$$$).</p>",
+    "outputSpecification": "<p>Print one real number\u00a0\u2014 the mathematical expectation of the duration of the chase with the optimal strategies of the police officer and the fugitive. Your answer will be accepted if its absolute or relative error does not exceed $$$10^{-6}$$$; formally, if $$$p$$$ is your answer, and $$$j$$$ is the jury's answer, this should hold: $$$\\frac{|p - j|}{\\max\\{1, |j|\\}} \\le 10^{-6}$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">2</div>",
+            "output": "\n1"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1</div>",
+            "output": "\n2"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-even test-example-line-0\">4 3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">4 1</div><div class=\"test-example-line test-example-line-even test-example-line-0\">4 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">4</div>",
+            "output": "\n3.66667"
+        },
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">7</div><div class=\"test-example-line test-example-line-even test-example-line-0\">1 4</div><div class=\"test-example-line test-example-line-even test-example-line-0\">4 5</div><div class=\"test-example-line test-example-line-even test-example-line-0\">5 2</div><div class=\"test-example-line test-example-line-even test-example-line-0\">4 6</div><div class=\"test-example-line test-example-line-even test-example-line-0\">6 7</div><div class=\"test-example-line test-example-line-even test-example-line-0\">7 3</div><div class=\"test-example-line test-example-line-even test-example-line-0\">3</div>",
+            "output": "\n8.3525"
+        }
+    ],
+    "note": "<p>The trees from the examples are depicted below.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1e5c288e7a009aa4313d516d82778cc6de1ef3e2.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> <center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/763ac717e6b67d03e6cadc523f780950d82c2eea.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> <center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/593ac64f1f1bfc1732cdda8b60a95613178a3042.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> <center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/1145c88c52cd254500b61ceee11b5338416686c5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1912,
+    "index": "F",
+    "name": "Fugitive Frenzy",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "probabilities"
+    ],
+    "solvedCount": 106
+}

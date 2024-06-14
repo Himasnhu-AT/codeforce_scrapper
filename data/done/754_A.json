@@ -1,0 +1,43 @@
+{
+    "title": "A. Lesha and array splitting",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One spring day on his way to university Lesha found an array <span class=\"tex-span\"><i>A</i></span>. Lesha likes to split arrays into several parts. This time Lesha decided to split the array <span class=\"tex-span\"><i>A</i></span> into several, possibly one, new arrays so that the sum of elements in each of the new arrays is not zero. One more condition is that if we place the new arrays one after another they will form the old array <span class=\"tex-span\"><i>A</i></span>.</p><p>Lesha is tired now so he asked you to split the array. Help Lesha!</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the number of elements in the array <span class=\"tex-span\"><i>A</i></span>.</p><p>The next line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">3</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">3</sup></span>)\u00a0\u2014 the elements of the array <span class=\"tex-span\"><i>A</i></span>.</p>",
+    "outputSpecification": "<p>If it is not possible to split the array <span class=\"tex-span\"><i>A</i></span> and satisfy all the constraints, print single line containing \"<span class=\"tex-font-style-tt\">NO</span>\" (without quotes).</p><p>Otherwise in the first line print \"<span class=\"tex-font-style-tt\">YES</span>\" (without quotes). In the next line print single integer <span class=\"tex-span\"><i>k</i></span>\u00a0\u2014 the number of new arrays. In each of the next <span class=\"tex-span\"><i>k</i></span> lines print two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> which denote the subarray <span class=\"tex-span\"><i>A</i>[<i>l</i><sub class=\"lower-index\"><i>i</i></sub>... <i>r</i><sub class=\"lower-index\"><i>i</i></sub>]</span> of the initial array <span class=\"tex-span\"><i>A</i></span> being the <span class=\"tex-span\"><i>i</i></span>-th new array. Integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> should satisfy the following conditions:</p><ul> <li> <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">1</sub>\u2009=\u20091</span> </li><li> <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>k</i></sub>\u2009=\u2009<i>n</i></span> </li><li> <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009+\u20091\u2009=\u2009<i>l</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span> for each <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>k</i></span>. </li></ul><p>If there are multiple answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2 -3<br/>",
+            "output": "YES<br/>2<br/>1 2<br/>3 3<br/>"
+        },
+        {
+            "input": "8<br/>9 -12 3 4 -4 -10 7 3<br/>",
+            "output": "YES<br/>2<br/>1 2<br/>3 8<br/>"
+        },
+        {
+            "input": "1<br/>0<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "4<br/>1 2 3 -5<br/>",
+            "output": "YES<br/>4<br/>1 1<br/>2 2<br/>3 3<br/>4 4<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 754,
+    "index": "A",
+    "name": "Lesha and array splitting",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 8562
+}

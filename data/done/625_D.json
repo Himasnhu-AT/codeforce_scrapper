@@ -1,0 +1,43 @@
+{
+    "title": "D. Finals in arithmetic",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vitya is studying in the third grade. During the last math lesson all the pupils wrote on arithmetic quiz. Vitya is a clever boy, so he managed to finish all the tasks pretty fast and Oksana Fillipovna gave him a new one, that is much harder.</p><p>Let's denote a <span class=\"tex-font-style-it\">flip operation</span> of an integer as follows: number is considered in decimal notation and then reverted. If there are any leading zeroes afterwards, they are thrown away. For example, if we flip <span class=\"tex-span\">123</span> the result is the integer <span class=\"tex-span\">321</span>, but flipping <span class=\"tex-span\">130</span> we obtain <span class=\"tex-span\">31</span>, and by flipping <span class=\"tex-span\">31</span> we come to <span class=\"tex-span\">13</span>.</p><p>Oksana Fillipovna picked some number <span class=\"tex-span\"><i>a</i></span> without leading zeroes, and flipped it to get number <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>r</i></sub></span>. Then she summed <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>r</i></sub></span>, and told Vitya the resulting value <span class=\"tex-span\"><i>n</i></span>. His goal is to find any valid <span class=\"tex-span\"><i>a</i></span>.</p><p>As Oksana Fillipovna picked some small integers as <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>r</i></sub></span>, Vitya managed to find the answer pretty fast and became interested in finding some general algorithm to deal with this problem. Now, he wants you to write the program that for given <span class=\"tex-span\"><i>n</i></span> finds any <span class=\"tex-span\"><i>a</i></span> without leading zeroes, such that <span class=\"tex-span\"><i>a</i>\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>r</i></sub>\u2009=\u2009<i>n</i></span> or determine that such <span class=\"tex-span\"><i>a</i></span> doesn't exist.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">100\u2009000</sup></span>).</p>",
+    "outputSpecification": "<p>If there is no such positive integer <span class=\"tex-span\"><i>a</i></span> without leading zeroes that <span class=\"tex-span\"><i>a</i>\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>r</i></sub>\u2009=\u2009<i>n</i></span> then print <span class=\"tex-span\">0</span>. Otherwise, print any valid <span class=\"tex-span\"><i>a</i></span>. If there are many possible answers, you are allowed to pick any.</p>",
+    "samples": [
+        {
+            "input": "4<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "11<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "5<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "33<br/>",
+            "output": "21<br/>"
+        }
+    ],
+    "note": "<p>In the first sample <span class=\"tex-span\">4\u2009=\u20092\u2009+\u20092</span>, <span class=\"tex-span\"><i>a</i>\u2009=\u20092</span> is the only possibility.</p><p>In the second sample <span class=\"tex-span\">11\u2009=\u200910\u2009+\u20091</span>, <span class=\"tex-span\"><i>a</i>\u2009=\u200910</span>\u00a0\u2014 the only valid solution. Note, that <span class=\"tex-span\"><i>a</i>\u2009=\u200901</span> is incorrect, because <span class=\"tex-span\"><i>a</i></span> can't have leading zeroes.</p><p>It's easy to check that there is no suitable <span class=\"tex-span\"><i>a</i></span> in the third sample.</p><p>In the fourth sample <span class=\"tex-span\">33\u2009=\u200930\u2009+\u20093\u2009=\u200912\u2009+\u200921</span>, so there are three possibilities for <span class=\"tex-span\"><i>a</i></span>: <span class=\"tex-span\"><i>a</i>\u2009=\u200930</span>, <span class=\"tex-span\"><i>a</i>\u2009=\u200912</span>, <span class=\"tex-span\"><i>a</i>\u2009=\u200921</span>. Any of these is considered to be correct answer.</p>",
+    "contestId": 625,
+    "index": "D",
+    "name": "Finals in arithmetic",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 626
+}

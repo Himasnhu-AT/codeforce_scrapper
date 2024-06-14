@@ -1,0 +1,38 @@
+{
+    "title": "C. Barcode",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've got an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> pixel picture. Each pixel can be white or black. Your task is to change the colors of as few pixels as possible to obtain a barcode picture.</p><p>A picture is a barcode if the following conditions are fulfilled: </p><ul> <li> All pixels in each column are of the same color. </li><li> The width of each monochrome vertical line is at least <span class=\"tex-span\"><i>x</i></span> and at most <span class=\"tex-span\"><i>y</i></span> pixels. In other words, if we group all neighbouring columns of the pixels with equal color, the size of each group can not be less than <span class=\"tex-span\"><i>x</i></span> or greater than <span class=\"tex-span\"><i>y</i></span>. </li></ul>",
+    "inputSpecification": "<p>The first line contains four space-separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span>, <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>,\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u20091000;\u00a0<i>x</i>\u2009\u2264\u2009<i>y</i></span>).</p><p>Then follow <span class=\"tex-span\"><i>n</i></span> lines, describing the original image. Each of these lines contains exactly <span class=\"tex-span\"><i>m</i></span> characters. Character \"<span class=\"tex-font-style-tt\">.</span>\" represents a white pixel and \"<span class=\"tex-font-style-tt\">#</span>\" represents a black pixel. The picture description doesn't have any other characters besides \"<span class=\"tex-font-style-tt\">.</span>\" and \"<span class=\"tex-font-style-tt\">#</span>\".</p>",
+    "outputSpecification": "<p>In the first line print the minimum number of pixels to repaint. It is guaranteed that the answer exists. </p>",
+    "samples": [
+        {
+            "input": "6 5 1 2<br/>##.#.<br/>.###.<br/>###..<br/>#...#<br/>.##.#<br/>###..<br/>",
+            "output": "11<br/>"
+        },
+        {
+            "input": "2 5 1 1<br/>#####<br/>.....<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "<br/>.##..<br/>.##..<br/>.##..<br/>.##..<br/>.##..<br/>.##..<br/>",
+            "output": "<br/>.#.#.<br/>.#.#.<br/>"
+        }
+    ],
+    "note": "<p>In the first test sample the picture after changing some colors can looks as follows: </p><center> <pre class=\"verbatim\"><br/>.##..<br/>.##..<br/>.##..<br/>.##..<br/>.##..<br/>.##..<br/></pre> </center><p>In the second test sample the picture after changing some colors can looks as follows: </p><center> <pre class=\"verbatim\"><br/>.#.#.<br/>.#.#.<br/></pre> </center>",
+    "contestId": 225,
+    "index": "C",
+    "name": "Barcode",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "matrices"
+    ],
+    "solvedCount": 8824
+}

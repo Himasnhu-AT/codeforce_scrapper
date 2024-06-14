@@ -1,0 +1,34 @@
+{
+    "title": "B. Psychos in a Line",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are <span class=\"tex-span\"><i>n</i></span> psychos standing in a line. Each psycho is assigned a unique integer from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. At each step every psycho who has an id greater than the psycho to his right (if exists) kills his right neighbor in the line. Note that a psycho might kill and get killed at the same step. </p><p>You're given the initial arrangement of the psychos in the line. Calculate how many steps are needed to the moment of time such, that nobody kills his neighbor after that moment. Look notes to understand the statement more precise.</p>",
+    "inputSpecification": "<p>The first line of input contains integer <span class=\"tex-span\"><i>n</i></span> denoting the number of psychos, <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>. In the second line there will be a list of <span class=\"tex-span\"><i>n</i></span> space separated distinct integers each in range <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, inclusive \u2014 ids of the psychos in the line from left to right.</p>",
+    "outputSpecification": "<p>Print the number of steps, so that the line remains the same afterward.</p>",
+    "samples": [
+        {
+            "input": "10<br/>10 9 7 8 6 5 3 4 2 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "6<br/>1 2 3 4 5 6<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample line of the psychos transforms as follows: [10 9 7 8 6 5 3 4 2 1] <span class=\"tex-span\">\u2009\u2192\u2009</span> <span class=\"tex-font-style-bf\">[10 8 4]</span> <span class=\"tex-span\">\u2009\u2192\u2009</span> [10]. So, there are two steps.</p>",
+    "contestId": 319,
+    "index": "B",
+    "name": "Psychos in a Line",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "implementation"
+    ],
+    "solvedCount": 4045
+}

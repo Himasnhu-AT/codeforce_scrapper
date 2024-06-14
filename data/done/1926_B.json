@@ -1,0 +1,30 @@
+{
+    "title": "B. Vlad and Shapes",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vladislav has a binary square grid of $$$n \\times n$$$ cells. A triangle or a square is drawn on the grid with symbols $$$\\texttt{1}$$$. As he is too busy being cool, he asks you to tell him which shape is drawn on the grid.</p><ul><li> A <span class=\"tex-font-style-it\">triangle</span> is a shape consisting of $$$k$$$ ($$$k&gt;1$$$) consecutive rows, where the $$$i$$$-th row has $$$2 \\cdot i-1$$$ consecutive characters $$$\\texttt{1}$$$, and the central <span class=\"tex-font-style-tt\">1</span>s are located in one column. An upside down triangle is also considered a valid triangle (but not rotated by 90 degrees).</li></ul><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/db242fa9b991f493bbca9ab6358c4e076e7cbbf8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">Two left pictures contain examples of triangles: $$$k=4$$$, $$$k=3$$$. The two right pictures don't contain triangles.</span> </center><ul><li> A <span class=\"tex-font-style-it\">square</span> is a shape consisting of $$$k$$$ ($$$k&gt;1$$$) consecutive rows, where the $$$i$$$-th row has $$$k$$$ consecutive characters $$$\\texttt{1}$$$, which are positioned at an equal distance from the left edge of the grid.</li></ul><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/c91a4bbd6d4165c4b64471361fe556bda28b2d94.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">Examples of two squares: $$$k=2$$$, $$$k=4$$$.</span> </center><p>For the given grid, determine the type of shape that is drawn on it.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 100$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$2 \\leq n \\leq 10$$$)\u00a0\u2014 the size of the grid.</p><p>The next $$$n$$$ lines each contain $$$n$$$ characters $$$\\texttt{0}$$$ or $$$\\texttt{1}$$$.</p><p>The grid contains exactly one triangle or exactly one square that contains all the $$$\\texttt{1}$$$s in the grid. It is guaranteed that the size of the triangle or square is greater than $$$1$$$ (i.e., the shape cannot consist of exactly one <span class=\"tex-font-style-tt\">1</span>).</p>",
+    "outputSpecification": "<p>For each test case, output \"<span class=\"tex-font-style-tt\">SQUARE</span>\" if all the $$$\\texttt{1}$$$s in the grid form a square, and \"<span class=\"tex-font-style-tt\">TRIANGLE</span>\" otherwise (without quotes).</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">000</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">011</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">011</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">0000</div><div class=\"test-example-line test-example-line-even test-example-line-2\">0000</div><div class=\"test-example-line test-example-line-even test-example-line-2\">0100</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1110</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">11</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">11</div><div class=\"test-example-line test-example-line-even test-example-line-4\">5</div><div class=\"test-example-line test-example-line-even test-example-line-4\">00111</div><div class=\"test-example-line test-example-line-even test-example-line-4\">00010</div><div class=\"test-example-line test-example-line-even test-example-line-4\">00000</div><div class=\"test-example-line test-example-line-even test-example-line-4\">00000</div><div class=\"test-example-line test-example-line-even test-example-line-4\">00000</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0000000000</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0000000000</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0000000000</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0000000000</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0000000000</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1111111110</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0111111100</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0011111000</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0001110000</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0000100000</div><div class=\"test-example-line test-example-line-even test-example-line-6\">3</div><div class=\"test-example-line test-example-line-even test-example-line-6\">111</div><div class=\"test-example-line test-example-line-even test-example-line-6\">111</div><div class=\"test-example-line test-example-line-even test-example-line-6\">111</div>",
+            "output": "\nSQUARE\nTRIANGLE\nSQUARE\nTRIANGLE\nTRIANGLE\nSQUARE\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1926,
+    "index": "B",
+    "name": "Vlad and Shapes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "implementation"
+    ],
+    "solvedCount": 30524
+}

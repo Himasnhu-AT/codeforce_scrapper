@@ -1,0 +1,34 @@
+{
+    "title": "A. Mahmoud and Longest Uncommon Subsequence",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>While Mahmoud and Ehab were practicing for IOI, they found a problem which name was Longest common subsequence. They solved it, and then Ehab challenged Mahmoud with another problem.</p><p>Given two strings <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>, find the length of their longest uncommon subsequence, which is the longest string that is a subsequence of one of them and not a subsequence of the other.</p><p>A subsequence of some string is a sequence of characters that appears in the same order in the string, The appearances don't have to be consecutive, for example, strings \"<span class=\"tex-font-style-tt\">ac</span>\", \"<span class=\"tex-font-style-tt\">bc</span>\", \"<span class=\"tex-font-style-tt\">abc</span>\" and \"<span class=\"tex-font-style-tt\">a</span>\" are subsequences of string \"<span class=\"tex-font-style-tt\">abc</span>\" while strings \"<span class=\"tex-font-style-tt\">abbc</span>\" and \"<span class=\"tex-font-style-tt\">acb</span>\" are not. The empty string is a subsequence of any string. Any string is a subsequence of itself.</p>",
+    "inputSpecification": "<p>The first line contains string <span class=\"tex-span\"><i>a</i></span>, and the second line\u00a0\u2014 string <span class=\"tex-span\"><i>b</i></span>. Both of these strings are non-empty and consist of lowercase letters of English alphabet. The length of each string is not bigger than <span class=\"tex-span\">10<sup class=\"upper-index\">5</sup></span> characters.</p>",
+    "outputSpecification": "<p>If there's no uncommon subsequence, print \"<span class=\"tex-font-style-tt\">-1</span>\". Otherwise print the length of the longest uncommon subsequence of <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>.</p>",
+    "samples": [
+        {
+            "input": "abcd<br/>defgh<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "a<br/>a<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first example: you can choose \"<span class=\"tex-font-style-tt\">defgh</span>\" from string <span class=\"tex-span\"><i>b</i></span> as it is the longest subsequence of string <span class=\"tex-span\"><i>b</i></span> that doesn't appear as a subsequence of string <span class=\"tex-span\"><i>a</i></span>.</p>",
+    "contestId": 766,
+    "index": "A",
+    "name": "Mahmoud and Longest Uncommon Subsequence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "strings"
+    ],
+    "solvedCount": 29224
+}

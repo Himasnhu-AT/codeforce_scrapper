@@ -1,0 +1,35 @@
+{
+    "title": "B. After Training",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>After a team finished their training session on Euro football championship, Valeric was commissioned to gather the balls and sort them into baskets. Overall the stadium has <span class=\"tex-span\"><i>n</i></span> balls and <span class=\"tex-span\"><i>m</i></span> baskets. The baskets are positioned in a row from left to right and they are numbered with numbers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span>, correspondingly. The balls are numbered with numbers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>.</p><p>Valeric decided to sort the balls in the order of increasing of their numbers by the following scheme. He will put each new ball in the basket with the least number of balls. And if he's got several variants, he chooses the basket which stands closer to the middle. That means that he chooses the basket for which <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f9d0b92b5db1d7995ab93882f3948ffd8b213597.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is minimum, where <span class=\"tex-span\"><i>i</i></span> is the number of the basket. If in this case Valeric still has multiple variants, he chooses the basket with the minimum number.</p><p>For every ball print the number of the basket where it will go according to Valeric's scheme.</p><p>Note that the balls are sorted into baskets in the order of increasing numbers, that is, the first ball goes first, then goes the second ball and so on.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> \u2014 the number of balls and baskets, correspondingly.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> numbers, one per line. The <span class=\"tex-span\"><i>i</i></span>-th line must contain the number of the basket for the <span class=\"tex-span\"><i>i</i></span>-th ball.</p>",
+    "samples": [
+        {
+            "input": "4 3<br/>",
+            "output": "2<br/>1<br/>3<br/>2<br/>"
+        },
+        {
+            "input": "3 1<br/>",
+            "output": "1<br/>1<br/>1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 195,
+    "index": "B",
+    "name": "After Training",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 5134
+}

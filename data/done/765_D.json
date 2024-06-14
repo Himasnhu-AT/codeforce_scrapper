@@ -1,0 +1,39 @@
+{
+    "title": "D. Artsem and Saunders",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Artsem has a friend Saunders from University of Chicago. Saunders presented him with the following problem.</p><p>Let <span class=\"tex-span\">[<i>n</i>]</span> denote the set <span class=\"tex-span\">{1,\u2009...,\u2009<i>n</i>}</span>. We will also write <span class=\"tex-span\"><i>f</i>:\u2009[<i>x</i>]\u2009\u2192\u2009[<i>y</i>]</span> when a function <span class=\"tex-span\"><i>f</i></span> is defined in integer points <span class=\"tex-span\">1</span>, ..., <span class=\"tex-span\"><i>x</i></span>, and all its values are integers from 1 to <span class=\"tex-span\"><i>y</i></span>.</p><p>Now then, you are given a function <span class=\"tex-span\"><i>f</i>:\u2009[<i>n</i>]\u2009\u2192\u2009[<i>n</i>]</span>. Your task is to find a positive integer <span class=\"tex-span\"><i>m</i></span>, and two functions <span class=\"tex-span\"><i>g</i>:\u2009[<i>n</i>]\u2009\u2192\u2009[<i>m</i>]</span>, <span class=\"tex-span\"><i>h</i>:\u2009[<i>m</i>]\u2009\u2192\u2009[<i>n</i>]</span>, such that <span class=\"tex-span\"><i>g</i>(<i>h</i>(<i>x</i>))\u2009=\u2009<i>x</i></span> for all <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a256711cc012560db991a322ff7b75323883dd8e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, and <span class=\"tex-span\"><i>h</i>(<i>g</i>(<i>x</i>))\u2009=\u2009<i>f</i>(<i>x</i>)</span> for all <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/2ad9b8e566fe6c09697f5cee64720999d04e8a6f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, or determine that finding these is impossible.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers\u00a0\u2014 values <span class=\"tex-span\"><i>f</i>(1),\u2009...,\u2009<i>f</i>(<i>n</i>)</span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>f</i>(<i>i</i>)\u2009\u2264\u2009<i>n</i></span>).</p>",
+    "outputSpecification": "<p>If there is no answer, print one integer <span class=\"tex-font-style-tt\">-1</span>.</p><p>Otherwise, on the first line print the number <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>). On the second line print <span class=\"tex-span\"><i>n</i></span> numbers <span class=\"tex-span\"><i>g</i>(1),\u2009...,\u2009<i>g</i>(<i>n</i>)</span>. On the third line print <span class=\"tex-span\"><i>m</i></span> numbers <span class=\"tex-span\"><i>h</i>(1),\u2009...,\u2009<i>h</i>(<i>m</i>)</span>.</p><p>If there are several correct answers, you may output any of them. It is guaranteed that if a valid answer exists, then there is an answer satisfying the above restrictions.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2 3<br/>",
+            "output": "3<br/>1 2 3<br/>1 2 3<br/>"
+        },
+        {
+            "input": "3<br/>2 2 2<br/>",
+            "output": "1<br/>1 1 1<br/>2<br/>"
+        },
+        {
+            "input": "2<br/>2 1<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 765,
+    "index": "D",
+    "name": "Artsem and Saunders",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dsu",
+        "math"
+    ],
+    "solvedCount": 2447
+}

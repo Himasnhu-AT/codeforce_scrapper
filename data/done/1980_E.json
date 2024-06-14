@@ -1,0 +1,36 @@
+{
+    "title": "E. Permutation of Rows and Columns",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have been given a matrix $$$a$$$ of size $$$n$$$ by $$$m$$$, containing a permutation of integers from $$$1$$$ to $$$n \\cdot m$$$.</p><p>A permutation of $$$n$$$ integers is an array containing all numbers from $$$1$$$ to $$$n$$$ exactly once. For example, the arrays $$$[1]$$$, $$$[2, 1, 3]$$$, $$$[5, 4, 3, 2, 1]$$$ are permutations, while the arrays $$$[1, 1]$$$, $$$[100]$$$, $$$[1, 2, 4, 5]$$$ are not.</p><p>A matrix contains a permutation if, when all its elements are written out, the resulting array is a permutation. Matrices $$$[[1, 2], [3, 4]]$$$, $$$[[1]]$$$, $$$[[1, 5, 3], [2, 6, 4]]$$$ contain permutations, while matrices $$$[[2]]$$$, $$$[[1, 1], [2, 2]]$$$, $$$[[1, 2], [100, 200]]$$$ do not.</p><p>You can perform one of the following two actions in one operation:</p><ul> <li> choose columns $$$c$$$ and $$$d$$$ ($$$1 \\le c, d \\le m$$$, $$$c \\ne d$$$) and swap these columns; </li><li> choose rows $$$c$$$ and $$$d$$$ ($$$1 \\le c, d \\le n$$$, $$$c \\ne d$$$) and swap these rows. </li></ul><p>You can perform any number of operations.</p><p>You are given the original matrix $$$a$$$ and the matrix $$$b$$$. Your task is to determine whether it is possible to transform matrix $$$a$$$ into matrix $$$b$$$ using the given operations.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$) \u2014 the number of test cases. The descriptions of the test cases follow.</p><p>The first line of each test case description contains $$$2$$$ integers $$$n$$$ and $$$m$$$ ($$$1 \\le n, m \\le n \\cdot m \\le 2 \\cdot 10^5$$$) \u2014 the sizes of the matrix.</p><p>The next $$$n$$$ lines contain $$$m$$$ integers $$$a_{ij}$$$ each ($$$1 \\le a_{ij} \\le n \\cdot m$$$). It is guaranteed that matrix $$$a$$$ is a permutation.</p><p>The next $$$n$$$ lines contain $$$m$$$ integers $$$b_{ij}$$$ each ($$$1 \\le b_{ij} \\le n \\cdot m$$$). It is guaranteed that matrix $$$b$$$ is a permutation.</p><p>It is guaranteed that the sum of the values $$$n \\cdot m$$$ for all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output \"<span class=\"tex-font-style-tt\">YES</span>\" if the second matrix can be obtained from the first, and \"<span class=\"tex-font-style-tt\">NO</span>\" otherwise.</p><p>You can output each letter in any case (lowercase or uppercase). For example, the strings \"<span class=\"tex-font-style-tt\">yEs</span>\", \"<span class=\"tex-font-style-tt\">yes</span>\", \"<span class=\"tex-font-style-tt\">Yes</span>\", and \"<span class=\"tex-font-style-tt\">YES</span>\" will be accepted as a positive answer.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">7</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">4 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 2</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3 4</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 5 9 6</div><div class=\"test-example-line test-example-line-even test-example-line-4\">12 10 4 8</div><div class=\"test-example-line test-example-line-even test-example-line-4\">7 11 3 2</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 5 9 6</div><div class=\"test-example-line test-example-line-even test-example-line-4\">12 10 4 8</div><div class=\"test-example-line test-example-line-even test-example-line-4\">7 11 3 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">3 3</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1 5 9</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">6 4 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">3 8 7</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">9 5 1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">2 4 6</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">7 8 3</div><div class=\"test-example-line test-example-line-even test-example-line-6\">2 3</div><div class=\"test-example-line test-example-line-even test-example-line-6\">1 2 6</div><div class=\"test-example-line test-example-line-even test-example-line-6\">5 4 3</div><div class=\"test-example-line test-example-line-even test-example-line-6\">6 1 2</div><div class=\"test-example-line test-example-line-even test-example-line-6\">3 4 5</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">1 5</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">5 1 2 3 4</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">4 2 5 1 3</div>",
+            "output": "\nYES\nYES\nNO\nYES\nYES\nNO\nYES\n"
+        }
+    ],
+    "note": "<p>In the second example, the original matrix looks like this:</p><p>$$$ \\begin{pmatrix} 1 &amp; 2 \\\\ 3 &amp; 4 \\end{pmatrix} $$$</p><p>By swapping rows $$$1$$$ and $$$2$$$, it becomes:</p><p>$$$ \\begin{pmatrix} 3 &amp; 4 \\\\ 1 &amp; 2 \\end{pmatrix} $$$</p><p>By swapping columns $$$1$$$ and $$$2$$$, it becomes equal to matrix $$$b$$$:</p><p>$$$ \\begin{pmatrix} 4 &amp; 3 \\\\ 2 &amp; 1 \\end{pmatrix} $$$</p>",
+    "contestId": 1980,
+    "index": "E",
+    "name": "Permutation of Rows and Columns",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "hashing",
+        "implementation",
+        "math",
+        "matrices",
+        "sortings"
+    ],
+    "solvedCount": 7626
+}

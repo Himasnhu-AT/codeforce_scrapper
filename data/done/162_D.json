@@ -1,0 +1,33 @@
+{
+    "title": "D. Remove digits",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a string. Remove all digits from it. When a character is removed from a string, all characters to the right of it are shifted one position to the left.</p>",
+    "inputSpecification": "<p>The only line of input contains a string between <span class=\"tex-span\">1</span> and <span class=\"tex-span\">100</span> characters long. Each character of the string has ASCII-code between <span class=\"tex-span\">33</span> (exclamation mark) and <span class=\"tex-span\">126</span> (tilde), inclusive.</p>",
+    "outputSpecification": "<p>Output the given string with all digits removed from it. If the original string had only digits, output an empty string.</p>",
+    "samples": [
+        {
+            "input": "VK-Cup-2012!<br/>",
+            "output": "VK-Cup-!<br/>"
+        },
+        {
+            "input": "Go,Codeforces!<br/>",
+            "output": "Go,Codeforces!<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 162,
+    "index": "D",
+    "name": "Remove digits",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 226
+}

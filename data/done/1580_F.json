@@ -1,0 +1,39 @@
+{
+    "title": "F. Problems for Codeforces",
+    "timeLimit": {
+        "value": 8.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>XYMXYM and CQXYM will prepare $$$n$$$ problems for Codeforces. The difficulty of the problem $$$i$$$ will be an integer $$$a_i$$$, where $$$a_i \\geq 0$$$. The difficulty of the problems must satisfy $$$a_i+a_{i+1}&lt;m$$$ ($$$1 \\leq i &lt; n$$$), and $$$a_1+a_n&lt;m$$$, where $$$m$$$ is a fixed integer. XYMXYM wants to know how many plans of the difficulty of the problems there are modulo $$$998\\,244\\,353$$$.</p><p>Two plans of difficulty $$$a$$$ and $$$b$$$ are different only if there is an integer $$$i$$$ ($$$1 \\leq i \\leq n$$$) satisfying $$$a_i \\neq b_i$$$.</p>",
+    "inputSpecification": "<p>A single line contains two integers $$$n$$$ and $$$m$$$ ($$$2 \\leq n \\leq 50\\,000$$$, $$$1 \\leq m \\leq 10^9$$$).</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the number of different plans.</p>",
+    "samples": [
+        {
+            "input": "\n3 2\n",
+            "output": "\n4\n"
+        },
+        {
+            "input": "\n5 9\n",
+            "output": "\n8105\n"
+        },
+        {
+            "input": "\n21038 3942834\n",
+            "output": "\n338529212\n"
+        }
+    ],
+    "note": "<p>In the first test case, the valid $$$a$$$ are: $$$[0,0,0]$$$, $$$[0,0,1]$$$, $$$[0,1,0]$$$, $$$[1,0,0]$$$.</p><p>$$$[1,0,1]$$$ is invalid since $$$a_1+a_n \\geq m$$$.</p>",
+    "contestId": 1580,
+    "index": "F",
+    "name": "Problems for Codeforces",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "fft",
+        "math"
+    ],
+    "solvedCount": 131
+}

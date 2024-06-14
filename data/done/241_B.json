@@ -1,0 +1,40 @@
+{
+    "title": "B. Friends",
+    "timeLimit": {
+        "value": 6.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have <span class=\"tex-span\"><i>n</i></span> friends and you want to take <span class=\"tex-span\"><i>m</i></span> pictures of them. Exactly two of your friends should appear in each picture and no two pictures should contain the same pair of your friends. So if you have <span class=\"tex-span\"><i>n</i>\u2009=\u20093</span> friends you can take <span class=\"tex-span\">3</span> different pictures, each containing a pair of your friends.</p><p>Each of your friends has an attractiveness level which is specified by the integer number <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> for the <span class=\"tex-span\"><i>i</i></span>-th friend. You know that the attractiveness of a picture containing the <span class=\"tex-span\"><i>i</i></span>-th and the <span class=\"tex-span\"><i>j</i></span>-th friends is equal to the exclusive-or (<span class=\"tex-span\"><i>xor</i></span> operation) of integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>j</i></sub></span>.</p><p>You want to take pictures in a way that the total sum of attractiveness of your pictures is maximized. You have to calculate this value. Since the result may not fit in a 32-bit integer number, print it modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "inputSpecification": "<p>The first line of input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5ed658819150aa010aa64e83d8b715a8fd224263.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> \u2014 the number of friends and the number of pictures that you want to take. </p><p>Next line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the values of attractiveness of the friends.</p>",
+    "outputSpecification": "<p>The only line of output should contain an integer \u2014 the optimal total sum of attractiveness of your pictures.</p>",
+    "samples": [
+        {
+            "input": "3 1<br/>1 2 3<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "3 2<br/>1 2 3<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "3 3<br/>1 2 3<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 241,
+    "index": "B",
+    "name": "Friends",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "data structures",
+        "math"
+    ],
+    "solvedCount": 758
+}

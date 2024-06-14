@@ -1,0 +1,30 @@
+{
+    "title": "A. Long Comparison",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Monocarp wrote down two numbers on a whiteboard. Both numbers follow a specific format: a positive integer $$$x$$$ with $$$p$$$ zeros appended to its end.</p><p>Now Monocarp asks you to compare these two numbers. Can you help him?</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of testcases.</p><p>The first line of each testcase contains two integers $$$x_1$$$ and $$$p_1$$$ ($$$1 \\le x_1 \\le 10^6; 0 \\le p_1 \\le 10^6$$$)\u00a0\u2014 the description of the first number.</p><p>The second line of each testcase contains two integers $$$x_2$$$ and $$$p_2$$$ ($$$1 \\le x_2 \\le 10^6; 0 \\le p_2 \\le 10^6$$$)\u00a0\u2014 the description of the second number.</p>",
+    "outputSpecification": "<p>For each testcase print the result of the comparison of the given two numbers. If the first number is smaller than the second one, print '&lt;'. If the first number is greater than the second one, print '&gt;'. If they are equal, print '='.</p>",
+    "samples": [
+        {
+            "input": "\n5\n2 1\n19 0\n10 2\n100 1\n1999 0\n2 3\n1 0\n1 0\n99 0\n1 2\n",
+            "output": "\n>\n=\n<\n=\n<\n"
+        }
+    ],
+    "note": "<p>The comparisons in the example are: $$$20 &gt; 19$$$, $$$1000 = 1000$$$, $$$1999 &lt; 2000$$$, $$$1 = 1$$$, $$$99 &lt; 100$$$.</p>",
+    "contestId": 1613,
+    "index": "A",
+    "name": "Long Comparison",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 24086
+}

@@ -1,0 +1,30 @@
+{
+    "title": "D. Remove and Add",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an array $$$a_1, a_2, \\dots, a_n$$$, consisting of $$$n$$$ integers.</p><p>You goal is to make is strictly increasing. To achieve that, you perform each of the following operations exactly once: </p><ul> <li> first, remove any element; </li><li> second, select any number of elements (possibly, none or all $$$n-1$$$) and add $$$1$$$ to them. </li></ul><p>Note that you are not allowed to rearrange the elements of the array.</p><p>For the resulting array $$$a'$$$, $$$a'_1 &lt; a'_2 &lt; \\dots &lt; a'_{n-1}$$$ should hold. Determine if it's possible to achieve that.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$)\u00a0\u2014 the number of testcases.</p><p>The first line of each testcase contains a single integer $$$n$$$ ($$$2 \\le n \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the number of elements of the array.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i \\le 10^6$$$).</p><p>The sum of $$$n$$$ over all testcases doesn't exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each testcase, print <span class=\"tex-font-style-tt\">YES</span> if it's possible to remove one element and add $$$1$$$ to some elements (possibly, none or all), so that the array becomes strictly increasing. Otherwise, print <span class=\"tex-font-style-tt\">NO</span>.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">8</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4 4 1 5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 4 1 5 5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">10 5</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 2 3</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">2 1 1</div><div class=\"test-example-line test-example-line-even test-example-line-6\">4</div><div class=\"test-example-line test-example-line-even test-example-line-6\">1 1 1 1</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">1 3 1 2</div><div class=\"test-example-line test-example-line-even test-example-line-8\">5</div><div class=\"test-example-line test-example-line-even test-example-line-8\">1 1 3 3 1</div>",
+            "output": "\nYES\nNO\nYES\nYES\nYES\nNO\nYES\nYES\n"
+        }
+    ],
+    "note": "<p>In the first testcase, you can remove the third element and add $$$1$$$ to the second and the last element. $$$a'$$$ will become $$$[4, 5, 6]$$$, which is strictly increasing.</p><p>In the second testcase, there is no way to perform the operations, so that the result is strictly increasing.</p><p>In the third testcase, you can remove either of the elements.</p><p>In the fourth testcase, you are already given a strictly increasing array, but you still have to remove an element. The result $$$a'$$$ can be $$$[1, 3]$$$, for example.</p>",
+    "contestId": 1910,
+    "index": "D",
+    "name": "Remove and Add",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "greedy"
+    ],
+    "solvedCount": 325
+}

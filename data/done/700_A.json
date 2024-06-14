@@ -1,0 +1,34 @@
+{
+    "title": "A. As Fast As Possible",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>On vacations <span class=\"tex-span\"><i>n</i></span> pupils decided to go on excursion and gather all together. They need to overcome the path with the length <span class=\"tex-span\"><i>l</i></span> meters. Each of the pupils will go with the speed equal to <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">1</sub></span>. To get to the excursion quickly, it was decided to rent a bus, which has seats for <span class=\"tex-span\"><i>k</i></span> people (it means that it can't fit more than <span class=\"tex-span\"><i>k</i></span> people at the same time) and the speed equal to <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">2</sub></span>. In order to avoid seasick, each of the pupils want to get into the bus <span class=\"tex-font-style-bf\">no more than once</span>.</p><p>Determine the minimum time required for all <span class=\"tex-span\"><i>n</i></span> pupils to reach the place of excursion. Consider that the embarkation and disembarkation of passengers, as well as the reversal of the bus, take place immediately and this time can be neglected. </p>",
+    "inputSpecification": "<p>The first line of the input contains five positive integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>l</i></span>, <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\">2</sub></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910\u2009000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>v</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>v</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>n</i></span>)\u00a0\u2014 the number of pupils, the distance from meeting to the place of excursion, the speed of each pupil, the speed of bus and the number of seats in the bus. </p>",
+    "outputSpecification": "<p>Print the real number\u00a0\u2014 the minimum time in which all pupils can reach the place of excursion. Your answer will be considered correct if its absolute or relative error won't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "5 10 1 2 5<br/>",
+            "output": "5.0000000000<br/>"
+        },
+        {
+            "input": "3 6 1 2 1<br/>",
+            "output": "4.7142857143<br/>"
+        }
+    ],
+    "note": "<p>In the first sample we should immediately put all five pupils to the bus. The speed of the bus equals <span class=\"tex-span\">2</span> and the distance is equal to <span class=\"tex-span\">10</span>, so the pupils will reach the place of excursion in time <span class=\"tex-span\">10\u2009/\u20092\u2009=\u20095</span>.</p>",
+    "contestId": 700,
+    "index": "A",
+    "name": "As Fast As Possible",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "math"
+    ],
+    "solvedCount": 3149
+}

@@ -1,0 +1,38 @@
+{
+    "title": "A. Perfect Permutation",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A <span class=\"tex-font-style-it\">permutation</span> is a sequence of integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>, consisting of <span class=\"tex-span\"><i>n</i></span> distinct positive integers, each of them doesn't exceed <span class=\"tex-span\"><i>n</i></span>. Let's denote the <span class=\"tex-span\"><i>i</i></span>-th element of permutation <span class=\"tex-span\"><i>p</i></span> as <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>. We'll call number <span class=\"tex-span\"><i>n</i></span> the size of permutation <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>.</p><p>Nickolas adores permutations. He likes some permutations more than the others. He calls such permutations perfect. A <span class=\"tex-font-style-it\">perfect</span> permutation is such permutation <span class=\"tex-span\"><i>p</i></span> that for any <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i>)</span> (<span class=\"tex-span\"><i>n</i></span> is the permutation size) the following equations hold <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></sub>\u2009=\u2009<i>i</i></span> and <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>i</i></span>. Nickolas asks you to print any perfect permutation of size <span class=\"tex-span\"><i>n</i></span> for the given <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "inputSpecification": "<p>A single line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>) \u2014 the permutation size.</p>",
+    "outputSpecification": "<p>If a perfect permutation of size <span class=\"tex-span\"><i>n</i></span> doesn't exist, print a single integer -1. Otherwise print <span class=\"tex-span\"><i>n</i></span> distinct integers from 1 to <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> \u2014 permutation <span class=\"tex-span\"><i>p</i></span>, that is perfect. Separate printed numbers by whitespaces.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "2<br/>",
+            "output": "2 1 <br/>"
+        },
+        {
+            "input": "4<br/>",
+            "output": "2 1 4 3 <br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 233,
+    "index": "A",
+    "name": "Perfect Permutation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 40876
+}

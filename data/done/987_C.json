@@ -1,0 +1,39 @@
+{
+    "title": "C. Three displays",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>It is the middle of 2018 and Maria Stepanovna, who lives outside Krasnokamensk (a town in Zabaikalsky region), wants to rent three displays to highlight an important problem.</p><p>There are $$$n$$$ displays placed along a road, and the $$$i$$$-th of them can display a text with font size $$$s_i$$$ only. Maria Stepanovna wants to rent such three displays with indices $$$i &lt; j &lt; k$$$ that the font size increases if you move along the road in a particular direction. Namely, the condition $$$s_i &lt; s_j &lt; s_k$$$ should be held.</p><p>The rent cost is for the $$$i$$$-th display is $$$c_i$$$. Please determine the smallest cost Maria Stepanovna should pay.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$3 \\le n \\le 3\\,000$$$)\u00a0\u2014 the number of displays.</p><p>The second line contains $$$n$$$ integers $$$s_1, s_2, \\ldots, s_n$$$ ($$$1 \\le s_i \\le 10^9$$$)\u00a0\u2014 the font sizes on the displays in the order they stand along the road.</p><p>The third line contains $$$n$$$ integers $$$c_1, c_2, \\ldots, c_n$$$ ($$$1 \\le c_i \\le 10^8$$$)\u00a0\u2014 the rent costs for each display.</p>",
+    "outputSpecification": "<p>If there are no three displays that satisfy the criteria, print <span class=\"tex-font-style-tt\">-1</span>. Otherwise print a single integer\u00a0\u2014 the minimum total rent cost of three displays with indices $$$i &lt; j &lt; k$$$ such that $$$s_i &lt; s_j &lt; s_k$$$.</p>",
+    "samples": [
+        {
+            "input": "5<br/>2 4 5 4 10<br/>40 30 20 10 40<br/>",
+            "output": "90<br/>"
+        },
+        {
+            "input": "3<br/>100 101 100<br/>2 4 5<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "10<br/>1 2 3 4 5 6 7 8 9 10<br/>10 13 11 14 15 12 13 13 18 13<br/>",
+            "output": "33<br/>"
+        }
+    ],
+    "note": "<p>In the first example you can, for example, choose displays $$$1$$$, $$$4$$$ and $$$5$$$, because $$$s_1 &lt; s_4 &lt; s_5$$$ ($$$2 &lt; 4 &lt; 10$$$), and the rent cost is $$$40 + 10 + 40 = 90$$$.</p><p>In the second example you can't select a valid triple of indices, so the answer is <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "contestId": 987,
+    "index": "C",
+    "name": "Three displays",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "implementation"
+    ],
+    "solvedCount": 13182
+}

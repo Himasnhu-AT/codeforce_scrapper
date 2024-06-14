@@ -1,0 +1,34 @@
+{
+    "title": "A. Lexicographically Maximum Subsequence",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You've got string <span class=\"tex-span\"><i>s</i></span>, consisting of only lowercase English letters. Find its lexicographically maximum subsequence.</p><p>We'll call a non-empty string <span class=\"tex-span\"><i>s</i>[<i>p</i><sub class=\"lower-index\">1</sub><i>p</i><sub class=\"lower-index\">2</sub>... <i>p</i><sub class=\"lower-index\"><i>k</i></sub>]\u2009=\u2009<i>s</i><sub class=\"lower-index\"><i>p</i><sub class=\"lower-index\">1</sub></sub><i>s</i><sub class=\"lower-index\"><i>p</i><sub class=\"lower-index\">2</sub></sub>... <i>s</i><sub class=\"lower-index\"><i>p</i><sub class=\"lower-index\"><i>k</i></sub></sub>(1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>p</i><sub class=\"lower-index\">2</sub>\u2009&lt;\u2009...\u2009&lt;\u2009<i>p</i><sub class=\"lower-index\"><i>k</i></sub>\u2009\u2264\u2009|<i>s</i>|)</span> a <span class=\"tex-font-style-it\">subsequence</span> of string <span class=\"tex-span\"><i>s</i>\u2009=\u2009<i>s</i><sub class=\"lower-index\">1</sub><i>s</i><sub class=\"lower-index\">2</sub>... <i>s</i><sub class=\"lower-index\">|<i>s</i>|</sub></span>.</p><p>String <span class=\"tex-span\"><i>x</i>\u2009=\u2009<i>x</i><sub class=\"lower-index\">1</sub><i>x</i><sub class=\"lower-index\">2</sub>... <i>x</i><sub class=\"lower-index\">|<i>x</i>|</sub></span> is <span class=\"tex-font-style-it\">lexicographically larger</span> than string <span class=\"tex-span\"><i>y</i>\u2009=\u2009<i>y</i><sub class=\"lower-index\">1</sub><i>y</i><sub class=\"lower-index\">2</sub>... <i>y</i><sub class=\"lower-index\">|<i>y</i>|</sub></span>, if either <span class=\"tex-span\">|<i>x</i>|\u2009&gt;\u2009|<i>y</i>|</span> and <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>x</i><sub class=\"lower-index\">|<i>y</i>|</sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\">|<i>y</i>|</sub></span>, or exists such number <span class=\"tex-span\"><i>r</i></span> <span class=\"tex-span\">(<i>r</i>\u2009&lt;\u2009|<i>x</i>|,\u2009<i>r</i>\u2009&lt;\u2009|<i>y</i>|)</span>, that <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\">2</sub>,\u2009... ,\u2009<i>x</i><sub class=\"lower-index\"><i>r</i></sub>\u2009=\u2009<i>y</i><sub class=\"lower-index\"><i>r</i></sub></span> and <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>r</i>\u2009+\u20091</sub>\u2009&gt;\u2009<i>y</i><sub class=\"lower-index\"><i>r</i>\u2009+\u20091</sub></span>. Characters in lines are compared like their ASCII codes.</p>",
+    "inputSpecification": "<p>The single line contains a non-empty string <span class=\"tex-span\"><i>s</i></span>, consisting only of lowercase English letters. The string's length doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">5</sup></span>.</p>",
+    "outputSpecification": "<p>Print the lexicographically maximum subsequence of string <span class=\"tex-span\"><i>s</i></span>.</p>",
+    "samples": [
+        {
+            "input": "ababba<br/>",
+            "output": "bbba<br/>"
+        },
+        {
+            "input": "abbcbccacbbcbaaba<br/>",
+            "output": "cccccbba<br/>"
+        }
+    ],
+    "note": "<p>Let's look at samples and see what the sought subsequences look like (they are marked with uppercase bold letters).</p><p>The first sample: <span class=\"tex-font-style-tt\">a<span class=\"tex-font-style-bf\">B</span>a<span class=\"tex-font-style-bf\">BBA</span></span></p><p>The second sample: <span class=\"tex-font-style-tt\">abb<span class=\"tex-font-style-bf\">C</span>b<span class=\"tex-font-style-bf\">CC</span>a<span class=\"tex-font-style-bf\">C</span>bb<span class=\"tex-font-style-bf\">CB</span>aa<span class=\"tex-font-style-bf\">BA</span></span></p>",
+    "contestId": 196,
+    "index": "A",
+    "name": "Lexicographically Maximum Subsequence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "strings"
+    ],
+    "solvedCount": 5315
+}

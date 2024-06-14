@@ -1,0 +1,47 @@
+{
+    "title": "E. Algebra Flash",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"epigraph\"><div class=\"epigraph-text\"> <span class=\"tex-font-style-it\">Algebra Flash 2.2 has just been released!</span><p><span class=\"tex-font-style-it\">Changelog:</span></p><ul> <li> New gamemode! </li></ul><p><span class=\"tex-font-style-it\">Thank you for the continued support of the game!</span> </p></div></div><p>Huh, is that it? Slightly disappointed, you boot up the game and click on the new gamemode. It says \"<span class=\"tex-font-style-tt\">Colored platforms</span>\".</p><p>There are $$$n$$$ platforms, numbered from $$$1$$$ to $$$n$$$, placed one after another. There are $$$m$$$ colors available in the game, numbered from $$$1$$$ to $$$m$$$. The $$$i$$$-th platform is colored $$$c_i$$$.</p><p>You start on the platform $$$1$$$ and want to reach platform $$$n$$$. In one move, you can jump from some platform $$$i$$$ to platforms $$$i + 1$$$ or $$$i + 2$$$.</p><p>All platforms are initially deactivated (including platforms $$$1$$$ and $$$n$$$). For each color $$$j$$$, you can pay $$$x_j$$$ coins to activate all platforms of that color.</p><p>You want to activate some platforms so that you could start on an activated platform $$$1$$$, jump through some activated platforms and reach an activated platform $$$n$$$.</p><p>What's the smallest amount of coins you can spend to achieve that?</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$m$$$ ($$$2 \\le n \\le 3 \\cdot 10^5$$$; $$$1 \\le m \\le 40$$$)\u00a0\u2014 the number of platforms and the number of colors, respectively.</p><p>The second line contains $$$n$$$ integers $$$c_1, c_2, \\dots, c_n$$$ ($$$1 \\le c_i \\le m$$$)\u00a0\u2014 the colors of the platforms.</p><p>The third line contains $$$m$$$ integers $$$x_1, x_2, \\dots, x_m$$$ ($$$1 \\le x_i \\le 10^7$$$)\u00a0\u2014 the cost of activating all platforms of each color.</p>",
+    "outputSpecification": "<p>Print the smallest amount of coins you can spend to activate some platforms so that you could start on an activated platform $$$1$$$, jump through some activated platforms and reach an activated platform $$$n$$$.</p>",
+    "samples": [
+        {
+            "input": "\n5 3\n1 3 2 3 1\n1 10 100\n",
+            "output": "\n11\n"
+        },
+        {
+            "input": "\n5 3\n1 3 2 3 1\n1 200 20\n",
+            "output": "\n21\n"
+        },
+        {
+            "input": "\n4 2\n2 2 1 1\n5 5\n",
+            "output": "\n10\n"
+        },
+        {
+            "input": "\n10 10\n3 8 6 2 10 5 2 3 7 3\n9 7 4 2 1 8 2 6 2 2\n",
+            "output": "\n15\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1767,
+    "index": "E",
+    "name": "Algebra Flash",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "graphs",
+        "math",
+        "meet-in-the-middle",
+        "trees"
+    ],
+    "solvedCount": 851
+}

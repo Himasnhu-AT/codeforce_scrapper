@@ -1,0 +1,42 @@
+{
+    "title": "E. Max to the Right of Min",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a permutation $$$p$$$ of length $$$n$$$\u00a0\u2014 an array, consisting of integers from $$$1$$$ to $$$n$$$, all distinct.</p><p>Let $$$p_{l,r}$$$ denote a subarray\u00a0\u2014 an array formed by writing down elements from index $$$l$$$ to index $$$r$$$, inclusive.</p><p>Let $$$\\mathit{maxpos}_{l,r}$$$ denote the <span class=\"tex-font-style-bf\">index</span> of the maximum element on $$$p_{l,r}$$$. Similarly, let $$$\\mathit{minpos}_{l,r}$$$ denote the index of the minimum element on it.</p><p>Calculate the number of subarrays $$$p_{l,r}$$$ such that $$$\\mathit{maxpos}_{l,r} &gt; \\mathit{minpos}_{l,r}$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\le n \\le 10^6$$$)\u00a0\u2014 the number of elements in the permutation.</p><p>The second line contains $$$n$$$ integers $$$p_1, p_2, \\dots, p_n$$$ ($$$1 \\le p_i \\le n$$$). All $$$p_i$$$ are distinct.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the number of subarrays $$$p_{l,r}$$$ such that $$$\\mathit{maxpos}_{l,r} &gt; \\mathit{minpos}_{l,r}$$$.</p>",
+    "samples": [
+        {
+            "input": "\n3\n1 2 3\n",
+            "output": "\n3\n"
+        },
+        {
+            "input": "\n6\n5 3 6 1 4 2\n",
+            "output": "\n4\n"
+        },
+        {
+            "input": "\n10\n5 1 6 2 8 3 4 10 9 7\n",
+            "output": "\n38\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1849,
+    "index": "E",
+    "name": "Max to the Right of Min",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "dsu",
+        "two pointers"
+    ],
+    "solvedCount": 1539
+}

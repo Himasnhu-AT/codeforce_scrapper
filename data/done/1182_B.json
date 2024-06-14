@@ -1,0 +1,51 @@
+{
+    "title": "B. Plus from Picture",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have a given picture with size $$$w \\times h$$$. Determine if the given picture has a single \"<span class=\"tex-font-style-tt\">+</span>\" shape or not. A \"<span class=\"tex-font-style-tt\">+</span>\" shape is described below:</p><ul> <li> A \"<span class=\"tex-font-style-tt\">+</span>\" shape has one center nonempty cell. </li><li> There should be some (at least one) consecutive non-empty cells in each direction (left, right, up, down) from the center. In other words, there should be a ray in each direction. </li><li> All other cells are empty. </li></ul><p>Find out if the given picture has single \"<span class=\"tex-font-style-tt\">+</span>\" shape.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$h$$$ and $$$w$$$ ($$$1 \\le h$$$, $$$w \\le 500$$$)\u00a0\u2014 the height and width of the picture.</p><p>The $$$i$$$-th of the next $$$h$$$ lines contains string $$$s_{i}$$$ of length $$$w$$$ consisting \"<span class=\"tex-font-style-tt\">.</span>\" and \"<span class=\"tex-font-style-tt\">*</span>\" where \"<span class=\"tex-font-style-tt\">.</span>\" denotes the empty space and \"<span class=\"tex-font-style-tt\">*</span>\" denotes the non-empty space.</p>",
+    "outputSpecification": "<p>If the given picture satisfies all conditions, print \"<span class=\"tex-font-style-tt\">YES</span>\". Otherwise, print \"<span class=\"tex-font-style-tt\">NO</span>\".</p><p>You can output each letter in any case (upper or lower).</p>",
+    "samples": [
+        {
+            "input": "\n5 6\n......\n..*...\n.****.\n..*...\n..*...\n",
+            "output": "\nYES\n"
+        },
+        {
+            "input": "\n3 5\n..*..\n****.\n.*...\n",
+            "output": "\nNO\n"
+        },
+        {
+            "input": "\n7 7\n.......\n...*...\n..****.\n...*...\n...*...\n.......\n.*.....\n",
+            "output": "\nNO\n"
+        },
+        {
+            "input": "\n5 6\n..**..\n..**..\n******\n..**..\n..**..\n",
+            "output": "\nNO\n"
+        },
+        {
+            "input": "\n3 7\n.*...*.\n***.***\n.*...*.\n",
+            "output": "\nNO\n"
+        },
+        {
+            "input": "\n5 10\n..........\n..*.......\n.*.******.\n..*.......\n..........\n",
+            "output": "\nNO\n"
+        }
+    ],
+    "note": "<p>In the first example, the given picture contains one \"<span class=\"tex-font-style-tt\">+</span>\".</p><p>In the second example, two vertical branches are located in a different column.</p><p>In the third example, there is a dot outside of the shape.</p><p>In the fourth example, the width of the two vertical branches is $$$2$$$.</p><p>In the fifth example, there are two shapes.</p><p>In the sixth example, there is an empty space inside of the shape.</p>",
+    "contestId": 1182,
+    "index": "B",
+    "name": "Plus from Picture",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 11011
+}

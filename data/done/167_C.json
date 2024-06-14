@@ -1,0 +1,30 @@
+{
+    "title": "C. Wizards and Numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In some country live wizards. They love playing with numbers. </p><p>The blackboard has two numbers written on it \u2014 <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>. The order of the numbers is not important. Let's consider <span class=\"tex-span\"><i>a</i>\u2009\u2264\u2009<i>b</i></span> for the sake of definiteness. The players can cast one of the two spells in turns:</p><ul> <li> Replace <span class=\"tex-span\"><i>b</i></span> with <span class=\"tex-span\"><i>b</i>\u2009-\u2009<i>a</i><sup class=\"upper-index\"><i>k</i></sup></span>. Number <span class=\"tex-span\"><i>k</i></span> can be chosen by the player, considering the limitations that <span class=\"tex-span\"><i>k</i>\u2009&gt;\u20090</span> and <span class=\"tex-span\"><i>b</i>\u2009-\u2009<i>a</i><sup class=\"upper-index\"><i>k</i></sup>\u2009\u2265\u20090</span>. Number <span class=\"tex-span\"><i>k</i></span> is chosen independently each time an active player casts a spell. </li><li> Replace <span class=\"tex-span\"><i>b</i></span> with <span class=\"tex-span\"><i>b</i>\u00a0<i>mod</i>\u00a0<i>a</i></span>. </li></ul><p>If <span class=\"tex-span\"><i>a</i>\u2009&gt;\u2009<i>b</i></span>, similar moves are possible.</p><p>If at least one of the numbers equals zero, a player can't make a move, because taking a remainder modulo zero is considered somewhat uncivilized, and it is far too boring to subtract a zero. The player who cannot make a move, loses.</p><p>To perform well in the magic totalizator, you need to learn to quickly determine which player wins, if both wizards play optimally: the one that moves first or the one that moves second.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>t</i></span> \u2014 the number of input data sets (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>). Each of the next <span class=\"tex-span\"><i>t</i></span> lines contains two integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>). The numbers are separated by a space.</p><p>Please do not use the <span class=\"tex-font-style-tt\">%lld</span> specificator to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specificator.</p>",
+    "outputSpecification": "<p>For any of the <span class=\"tex-span\"><i>t</i></span> input sets print \"<span class=\"tex-font-style-tt\">First</span>\" (without the quotes) if the player who moves first wins. Print \"<span class=\"tex-font-style-tt\">Second</span>\" (without the quotes) if the player who moves second wins. Print the answers to different data sets on different lines in the order in which they are given in the input. </p>",
+    "samples": [
+        {
+            "input": "4<br/>10 21<br/>31 10<br/>0 1<br/>10 30<br/>",
+            "output": "First<br/>Second<br/>Second<br/>First<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, the first player should go to (11,10). Then, after a single move of the second player to (1,10), he will take 10 modulo 1 and win.</p><p>In the second sample the first player has two moves to (1,10) and (21,10). After both moves the second player can win.</p><p>In the third sample, the first player has no moves.</p><p>In the fourth sample, the first player wins in one move, taking 30 modulo 10.</p>",
+    "contestId": 167,
+    "index": "C",
+    "name": "Wizards and Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "games",
+        "math"
+    ],
+    "solvedCount": 658
+}

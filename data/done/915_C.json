@@ -1,0 +1,38 @@
+{
+    "title": "C. Permute Digits",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two positive integer numbers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>. Permute (change order) of the digits of <span class=\"tex-span\"><i>a</i></span> to construct maximal number not exceeding <span class=\"tex-span\"><i>b</i></span>. No number in input and/or output can start with the digit <span class=\"tex-font-style-tt\">0</span>.</p><p>It is allowed to leave <span class=\"tex-span\"><i>a</i></span> as it is.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>). The second line contains integer <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>). Numbers don't have leading zeroes. It is guaranteed that answer exists.</p>",
+    "outputSpecification": "<p>Print the maximum possible number that is a permutation of digits of <span class=\"tex-span\"><i>a</i></span> and is not greater than <span class=\"tex-span\"><i>b</i></span>. The answer can't have any leading zeroes. It is guaranteed that the answer exists.</p><p>The number in the output should have exactly the same length as number <span class=\"tex-span\"><i>a</i></span>. It should be a permutation of digits of <span class=\"tex-span\"><i>a</i></span>.</p>",
+    "samples": [
+        {
+            "input": "123<br/>222<br/>",
+            "output": "213<br/>"
+        },
+        {
+            "input": "3921<br/>10000<br/>",
+            "output": "9321<br/>"
+        },
+        {
+            "input": "4940<br/>5000<br/>",
+            "output": "4940<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 915,
+    "index": "C",
+    "name": "Permute Digits",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy"
+    ],
+    "solvedCount": 6922
+}

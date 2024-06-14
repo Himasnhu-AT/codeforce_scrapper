@@ -1,0 +1,36 @@
+{
+    "title": "B. 4-point polyline",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a rectangular grid of lattice points from <span class=\"tex-span\">(0,\u20090)</span> to <span class=\"tex-span\">(<i>n</i>,\u2009<i>m</i>)</span> inclusive. You have to choose exactly 4 different points to build a polyline possibly with self-intersections and self-touching. This polyline should be as long as possible.</p><p>A polyline defined by points <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009<i>p</i><sub class=\"lower-index\">3</sub>,\u2009<i>p</i><sub class=\"lower-index\">4</sub></span> consists of the line segments <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>\u2009<i>p</i><sub class=\"lower-index\">3</sub>,\u2009<i>p</i><sub class=\"lower-index\">3</sub>\u2009<i>p</i><sub class=\"lower-index\">4</sub></span>, and its length is the sum of the lengths of the individual line segments.</p>",
+    "inputSpecification": "<p>The only line of the input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000)</span>. It is guaranteed that grid contains at least 4 different points.</p>",
+    "outputSpecification": "<p>Print 4 lines with two integers per line separated by space \u2014 coordinates of points <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009<i>p</i><sub class=\"lower-index\">3</sub>,\u2009<i>p</i><sub class=\"lower-index\">4</sub></span> in order which represent the longest possible polyline.</p><p>Judge program compares your answer and jury's answer with <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span> precision.</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>",
+            "output": "1 1<br/>0 0<br/>1 0<br/>0 1<br/>"
+        },
+        {
+            "input": "0 10<br/>",
+            "output": "0 1<br/>0 10<br/>0 0<br/>0 9<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 452,
+    "index": "B",
+    "name": "4-point polyline",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "geometry",
+        "trees"
+    ],
+    "solvedCount": 1981
+}

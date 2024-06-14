@@ -1,0 +1,34 @@
+{
+    "title": "A. Watching a movie",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have decided to watch the best moments of some movie. There are two buttons on your player: </p><ol> <li> Watch the current minute of the movie. By pressing this button, you watch the current minute of the movie and the player automatically proceeds to the next minute of the movie. </li><li> Skip exactly <span class=\"tex-span\"><i>x</i></span> minutes of the movie (<span class=\"tex-span\"><i>x</i></span> is some fixed positive integer). If the player is now at the <span class=\"tex-span\"><i>t</i></span>-th minute of the movie, then as a result of pressing this button, it proceeds to the minute <span class=\"tex-span\">(<i>t</i>\u2009+\u2009<i>x</i>)</span>. </li></ol><p>Initially the movie is turned on in the player on the first minute, and you want to watch exactly <span class=\"tex-span\"><i>n</i></span> best moments of the movie, the <span class=\"tex-span\"><i>i</i></span>-th best moment starts at the <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span>-th minute and ends at the <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span>-th minute (more formally, the <span class=\"tex-span\"><i>i</i></span>-th best moment consists of minutes: <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009+\u20091,\u2009...,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span>). </p><p>Determine, what is the minimum number of minutes of the movie you have to watch if you want to watch all the best moments?</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of the best moments of the movie and the value of <span class=\"tex-span\"><i>x</i></span> for the second button.</p><p>The following <span class=\"tex-span\"><i>n</i></span> lines contain the descriptions of the best moments of the movie, the <span class=\"tex-span\"><i>i</i></span>-th line of the description contains two integers separated by a space <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>).</p><p>It is guaranteed that for all integers <span class=\"tex-span\"><i>i</i></span> from <span class=\"tex-span\">2</span> to <span class=\"tex-span\"><i>n</i></span> the following condition holds: <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub>\u2009&lt;\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p>",
+    "outputSpecification": "<p>Output a single number \u2014 the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "2 3<br/>5 6<br/>10 12<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "1 1<br/>1 100000<br/>",
+            "output": "100000<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, the player was initially standing on the first minute. As the minutes from the <span class=\"tex-span\">1</span>-st to the <span class=\"tex-span\">4</span>-th one don't contain interesting moments, we press the second button. Now we can not press the second button and skip <span class=\"tex-span\">3</span> more minutes, because some of them contain interesting moments. Therefore, we watch the movie from the <span class=\"tex-span\">4</span>-th to the <span class=\"tex-span\">6</span>-th minute, after that the current time is <span class=\"tex-span\">7</span>. Similarly, we again skip <span class=\"tex-span\">3</span> minutes and then watch from the <span class=\"tex-span\">10</span>-th to the <span class=\"tex-span\">12</span>-th minute of the movie. In total, we watch <span class=\"tex-span\">6</span> minutes of the movie.</p><p>In the second sample, the movie is very interesting, so you'll have to watch all <span class=\"tex-span\">100000</span> minutes of the movie.</p>",
+    "contestId": 499,
+    "index": "A",
+    "name": "Watching a movie",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 13755
+}

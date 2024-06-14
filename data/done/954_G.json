@@ -1,0 +1,40 @@
+{
+    "title": "G. Castle Defense",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Today you are going to lead a group of elven archers to defend the castle that is attacked by an army of angry orcs. Three sides of the castle are protected by impassable mountains and the remaining side is occupied by a long wall that is split into <span class=\"tex-span\"><i>n</i></span> sections. At this moment there are exactly <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> archers located at the <span class=\"tex-span\"><i>i</i></span>-th section of this wall. You know that archer who stands at section <span class=\"tex-span\"><i>i</i></span> can shoot orcs that attack section located at distance not exceeding <span class=\"tex-span\"><i>r</i></span>, that is all such sections <span class=\"tex-span\"><i>j</i></span> that <span class=\"tex-span\">|<i>i</i>\u2009-\u2009<i>j</i>|\u2009\u2264\u2009<i>r</i></span>. In particular, <span class=\"tex-span\"><i>r</i>\u2009=\u20090</span> means that archers are only capable of shooting at orcs who attack section <span class=\"tex-span\"><i>i</i></span>.</p><p>Denote as <span class=\"tex-font-style-underline\">defense level</span> of section <span class=\"tex-span\"><i>i</i></span> the total number of archers who can shoot at the orcs attacking this section. <span class=\"tex-font-style-underline\">Reliability</span> of the defense plan is the minimum value of defense level of individual wall section.</p><p>There is a little time left till the attack so you can't redistribute archers that are already located at the wall. However, there is a reserve of <span class=\"tex-span\"><i>k</i></span> archers that you can distribute among wall sections in arbitrary way. You would like to achieve maximum possible reliability of the defence plan.</p>",
+    "inputSpecification": "<p>The first line of the input contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009500\u2009000</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>r</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>)\u00a0\u2014 the number of sections of the wall, the maximum distance to other section archers can still shoot and the number of archers yet to be distributed along the wall. The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the current number of archers at each section.</p>",
+    "outputSpecification": "<p>Print one integer\u00a0\u2014 the maximum possible value of defense plan reliability, i.e. the maximum possible value of minimum defense level if we distribute <span class=\"tex-span\"><i>k</i></span> additional archers optimally.</p>",
+    "samples": [
+        {
+            "input": "5 0 6<br/>5 4 3 4 9<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "4 2 0<br/>1 2 3 4<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "5 1 1<br/>2 1 2 1 2<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 954,
+    "index": "G",
+    "name": "Castle Defense",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "two pointers"
+    ],
+    "solvedCount": 1960
+}

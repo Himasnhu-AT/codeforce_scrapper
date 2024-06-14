@@ -1,0 +1,37 @@
+{
+    "title": "A. Contest",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Misha and Vasya participated in a Codeforces contest. Unfortunately, each of them solved only one problem, though successfully submitted it at the first attempt. Misha solved the problem that costs <span class=\"tex-span\"><i>a</i></span> points and Vasya solved the problem that costs <span class=\"tex-span\"><i>b</i></span> points. Besides, Misha submitted the problem <span class=\"tex-span\"><i>c</i></span> minutes after the contest started and Vasya submitted the problem <span class=\"tex-span\"><i>d</i></span> minutes after the contest started. As you know, on Codeforces the cost of a problem reduces as a round continues. That is, if you submit a problem that costs <span class=\"tex-span\"><i>p</i></span> points <span class=\"tex-span\"><i>t</i></span> minutes after the contest started, you get <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e7bb7983e9c15baf66651c7643406c249354c8c1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> points. </p><p>Misha and Vasya are having an argument trying to find out who got more points. Help them to find out the truth.</p>",
+    "inputSpecification": "<p>The first line contains four integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span>, <span class=\"tex-span\"><i>c</i></span>, <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">250\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u20093500</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>c</i>,\u2009<i>d</i>\u2009\u2264\u2009180</span>). </p><p>It is guaranteed that numbers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> are divisible by <span class=\"tex-span\">250</span> (just like on any real Codeforces round).</p>",
+    "outputSpecification": "<p>Output on a single line: </p><p>\"<span class=\"tex-font-style-tt\">Misha</span>\" (without the quotes), if Misha got more points than Vasya.</p><p>\"<span class=\"tex-font-style-tt\">Vasya</span>\" (without the quotes), if Vasya got more points than Misha.</p><p>\"<span class=\"tex-font-style-tt\">Tie</span>\" (without the quotes), if both of them got the same number of points.</p>",
+    "samples": [
+        {
+            "input": "500 1000 20 30<br/>",
+            "output": "Vasya<br/>"
+        },
+        {
+            "input": "1000 1000 1 1<br/>",
+            "output": "Tie<br/>"
+        },
+        {
+            "input": "1500 1000 176 177<br/>",
+            "output": "Misha<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 501,
+    "index": "A",
+    "name": "Contest",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 22104
+}

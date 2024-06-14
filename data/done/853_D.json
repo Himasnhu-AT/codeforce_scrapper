@@ -1,0 +1,35 @@
+{
+    "title": "D. Michael and Charging Stations",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Michael has just bought a new electric car for moving across city. Michael does not like to overwork, so each day he drives to only one of two his jobs.</p><p>Michael's day starts from charging his electric car for getting to the work and back. He spends <span class=\"tex-span\">1000</span> burles on charge if he goes to the first job, and <span class=\"tex-span\">2000</span> burles if he goes to the second job.</p><p>On a charging station he uses there is a loyalty program that involves bonus cards. Bonus card may have some non-negative amount of bonus burles. Each time customer is going to buy something for the price of <span class=\"tex-span\"><i>x</i></span> burles, he is allowed to pay an amount of <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>y</i>\u2009\u2264\u2009<i>x</i></span>) burles that does not exceed the bonus card balance with bonus burles. In this case he pays <span class=\"tex-span\"><i>x</i>\u2009-\u2009<i>y</i></span> burles with cash, and the balance on the bonus card is decreased by <span class=\"tex-span\"><i>y</i></span> bonus burles. </p><p>If customer pays whole price with cash (i.e., <span class=\"tex-span\"><i>y</i>\u2009=\u20090</span>) then 10% of price is returned back to the bonus card. This means that bonus card balance increases by <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/eb16c378f5a5e33f1d0910e36532bb6a46bc4db8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> bonus burles. Initially the bonus card balance is equal to 0 bonus burles.</p><p>Michael has planned next <span class=\"tex-span\"><i>n</i></span> days and he knows how much does the charge cost on each of those days. Help Michael determine the minimum amount of burles in cash he has to spend with optimal use of bonus card. Assume that Michael is able to cover any part of the price with cash in any day. It is not necessary to spend all bonus burles at the end of the given period.</p>",
+    "inputSpecification": "<p>The first line of input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009300\u2009000</span>), the number of days Michael has planned.</p><p>Next line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u20091000</span> or <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u20092000</span>) with <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> denoting the charging cost at the day <span class=\"tex-span\"><i>i</i></span>.</p>",
+    "outputSpecification": "<p>Output the minimum amount of burles Michael has to spend.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1000 2000 1000<br/>",
+            "output": "3700<br/>"
+        },
+        {
+            "input": "6<br/>2000 2000 2000 2000 2000 1000<br/>",
+            "output": "10000<br/>"
+        }
+    ],
+    "note": "<p>In the first sample case the most optimal way for Michael is to pay for the first two days spending 3000 burles and get 300 bonus burles as return. After that he is able to pay only 700 burles for the third days, covering the rest of the price with bonus burles.</p><p>In the second sample case the most optimal way for Michael is to pay the whole price for the first five days, getting 1000 bonus burles as return and being able to use them on the last day without paying anything in cash.</p>",
+    "contestId": 853,
+    "index": "D",
+    "name": "Michael and Charging Stations",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "dp",
+        "greedy"
+    ],
+    "solvedCount": 655
+}

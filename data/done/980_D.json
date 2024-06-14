@@ -1,0 +1,39 @@
+{
+    "title": "D. Perfect Groups",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>SaMer has written the greatest test case of all time for one of his problems. For a given array of integers, the problem asks to find the minimum number of groups the array can be divided into, such that the product of any pair of integers in the same group is a perfect square. </p><p>Each integer must be in exactly one group. However, integers in a group do not necessarily have to be contiguous in the array.</p><p>SaMer wishes to create more cases from the test case he already has. His test case has an array $$$A$$$ of $$$n$$$ integers, and he needs to find the number of contiguous subarrays of $$$A$$$ that have an answer to the problem equal to $$$k$$$ for each integer $$$k$$$ between $$$1$$$ and $$$n$$$ (inclusive).</p>",
+    "inputSpecification": "<p>The first line of input contains a single integer $$$n$$$ ($$$1 \\leq n \\leq 5000$$$), the size of the array.</p><p>The second line contains $$$n$$$ integers $$$a_1$$$,$$$a_2$$$,$$$\\dots$$$,$$$a_n$$$ ($$$-10^8 \\leq a_i \\leq 10^8$$$), the values of the array.</p>",
+    "outputSpecification": "<p>Output $$$n$$$ space-separated integers, the $$$k$$$-th integer should be the number of contiguous subarrays of $$$A$$$ that have an answer to the problem equal to $$$k$$$.</p>",
+    "samples": [
+        {
+            "input": "2<br/>5 5<br/>",
+            "output": "3 0<br/>"
+        },
+        {
+            "input": "5<br/>5 -4 2 1 8<br/>",
+            "output": "5 5 3 2 0<br/>"
+        },
+        {
+            "input": "1<br/>0<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 980,
+    "index": "D",
+    "name": "Perfect Groups",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 2475
+}

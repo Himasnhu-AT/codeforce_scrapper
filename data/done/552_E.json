@@ -1,0 +1,42 @@
+{
+    "title": "E. Vanya and Brackets",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vanya is doing his maths homework. He has an expression of form <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/12fd75e59feeb788ff8b791f7194301b0d005ad6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span> are digits from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">9</span>, and sign <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5535bcdec4c47f48bc7dcaaf51ba2b5901a202e5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> represents either a plus '<span class=\"tex-font-style-tt\">+</span>' or the multiplication sign <span class=\"tex-font-style-tt\">'*'</span>. Vanya needs to add <span class=\"tex-font-style-bf\">one</span> pair of brackets in this expression so that to maximize the value of the resulting expression.</p>",
+    "inputSpecification": "<p>The first line contains expression <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u20095001</span>, <span class=\"tex-span\">|<i>s</i>|</span> is odd), its odd positions only contain digits from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">9</span>, and even positions only contain signs <span class=\"tex-span\">\u2009+\u2009</span> and <span class=\"tex-span\">\u2009*\u2009</span>. </p><p>The number of signs <span class=\"tex-span\">\u2009*\u2009</span> doesn't exceed 15.</p>",
+    "outputSpecification": "<p>In the first line print the maximum possible value of an expression.</p>",
+    "samples": [
+        {
+            "input": "3+5*7+8*4<br/>",
+            "output": "303<br/>"
+        },
+        {
+            "input": "2+3*5<br/>",
+            "output": "25<br/>"
+        },
+        {
+            "input": "3*4*5<br/>",
+            "output": "60<br/>"
+        }
+    ],
+    "note": "<p>Note to the first sample test. <span class=\"tex-span\">3\u2009+\u20095\u2009*\u2009(7\u2009+\u20098)\u2009*\u20094\u2009=\u2009303</span>.</p><p>Note to the second sample test. <span class=\"tex-span\">(2\u2009+\u20093)\u2009*\u20095\u2009=\u200925</span>.</p><p>Note to the third sample test. <span class=\"tex-span\">(3\u2009*\u20094)\u2009*\u20095\u2009=\u200960</span> (also many other variants are valid, for instance, <span class=\"tex-span\">(3)\u2009*\u20094\u2009*\u20095\u2009=\u200960</span>).</p>",
+    "contestId": 552,
+    "index": "E",
+    "name": "Vanya and Brackets",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dp",
+        "expression parsing",
+        "greedy",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 1458
+}

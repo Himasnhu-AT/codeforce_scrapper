@@ -1,0 +1,31 @@
+{
+    "title": "A. Is it rated - 2",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div><div class=\"section-title\">Interaction</div><p>This is an interactive problem. You need to read participants' queries from standard input and print your responses to standard output. You don't know the number of queries upfront, so you'll need to process them as you get them; you'll know you're done once you reach the end of the file.</p><p>In each query, you will be asked the question, written in one line. You have to answer it correctly, patiently and without any display of emotions. Your response is case-insensitive.</p><p>Please make sure to use the stream flushing operation after each response in order not to leave part of your output in some buffer.</p></div><div class=\"sample-tests\"><div class=\"section-title\">Example</div><div class=\"sample-test\"><div class=\"input\"><div class=\"title\">Input</div><pre>\nIs it rated?\nIs it rated?\nIs it rated?\n</pre></div><div class=\"output\"><div class=\"title\">Output</div><pre>\nNO\nNO\nNO</pre></div></div></div>",
+    "inputSpecification": null,
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\nIs it rated?\nIs it rated?\nIs it rated?\n",
+            "output": "\nNO\nNO\nNO"
+        }
+    ],
+    "note": null,
+    "contestId": 1505,
+    "index": "A",
+    "name": "Is it rated - 2",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation",
+        "interactive"
+    ],
+    "solvedCount": 14087
+}

@@ -1,0 +1,32 @@
+{
+    "title": "D. Two Centroids",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 1024.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a tree (an undirected connected acyclic graph) which initially only contains vertex $$$1$$$. There will be several queries to the given tree. In the $$$i$$$-th query, vertex $$$i + 1$$$ will appear and be connected to vertex $$$p_i$$$ ($$$1 \\le p_i \\le i$$$). </p><p>After each query, please find out the least number of operations required to make the current tree has <span class=\"tex-font-style-bf\">two</span> centroids. In one operation, you can add <span class=\"tex-font-style-bf\">one</span> vertex and <span class=\"tex-font-style-bf\">one</span> edge to the tree such that it remains a tree.</p><p>A vertex is called a centroid if its removal splits the tree into subtrees with at most $$$\\lfloor \\frac{n}{2} \\rfloor$$$ vertices each, with $$$n$$$ as the number of vertices of the tree. For example, the centroid of the following tree is $$$3$$$ because the biggest subtree after removing the centroid has $$$2$$$ vertices.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/0d7eea426d38013e1104664ae2edef05d7565a57.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the next tree, vertex $$$1$$$ and $$$2$$$ are both centroids.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/162fbbd123f0745a714d24455e2a86365065415c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \\le t \\le 10^4$$$). The description of the test cases follows.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$2 \\le n \\le 5 \\cdot 10^{5}$$$)\u00a0\u2014 the number of nodes of the final tree.</p><p>The second line of each test case contains $$$n - 1$$$ integers $$$p_1, p_2, \\ldots, p_{n - 1}$$$ ($$$1 \\le p_i \\le i$$$)\u00a0\u2014 the index of the vertex that is connected to vertex $$$i + 1$$$.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$5 \\cdot 10^{5}$$$.</p>",
+    "outputSpecification": "<p>For each test case, output $$$n - 1$$$ integers. The $$$i$$$-th integer is the answer to the $$$i$$$-th query\u00a0\u2014 the least number of operations required to make the current tree have two centroids.</p><p>We can show that an answer always exists.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 2 3</div><div class=\"test-example-line test-example-line-even test-example-line-4\">7</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 2 3 2 5 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1 2 2 4 5 5 7 8 9</div>",
+            "output": "\n0\n0 1\n0 1 0\n0 1 0 1 2 3\n0 1 2 1 0 1 0 1 2"
+        }
+    ],
+    "note": "<p>The illustrations below are of the fourth example test case.</p><p>After the third query: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/16e08b103ee6d1f8c2ff2a00a68e3fdd55639f74.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> The tree already has vertices $$$2$$$ and $$$3$$$ as centroids, so no operations are needed.<p>After the fourth query: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/657ffda8c516b53fff361d6d0e58313212ff6808.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> Adding vertex $$$x$$$ to the tree makes vertices $$$2$$$ and $$$3$$$ centroids. Only one operation is needed.<p>After the fifth query: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/fff3167e0ac6d4ad5d97785b7cf2d26ce8ea17cb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> Adding vertex $$$x$$$ and $$$y$$$ to the tree makes vertices $$$5$$$ and $$$2$$$ centroids. Two operations are needed.<p>After the sixth query: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/278141bb0f3fef2c0f2a96abf2e56b5502c059f0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> Adding vertex $$$x$$$, $$$y$$$, and $$$z$$$ to the tree makes vertices $$$5$$$ and $$$2$$$ centroids. Three operations are needed.",
+    "contestId": 1827,
+    "index": "D",
+    "name": "Two Centroids",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "greedy",
+        "trees"
+    ],
+    "solvedCount": 712
+}

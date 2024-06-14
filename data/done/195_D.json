@@ -1,0 +1,39 @@
+{
+    "title": "D. Analyzing Polyline",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>As Valeric and Valerko were watching one of the last Euro Championship games in a sports bar, they broke a mug. Of course, the guys paid for it but the barman said that he will let them watch football in his bar only if they help his son complete a programming task. The task goes like that.</p><p>Let's consider a set of functions of the following form: </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6f8951b8e4ae583d0fea0c48524efbb9c9d38134.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center> Let's define a sum of <span class=\"tex-span\"><i>n</i></span> functions <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">1</sub>(<i>x</i>),\u2009...,\u2009<i>y</i><sub class=\"lower-index\"><i>n</i></sub>(<i>x</i>)</span> of the given type as function <span class=\"tex-span\"><i>s</i>(<i>x</i>)\u2009=\u2009<i>y</i><sub class=\"lower-index\">1</sub>(<i>x</i>)\u2009+\u2009...\u2009+\u2009<i>y</i><sub class=\"lower-index\"><i>n</i></sub>(<i>x</i>)</span> for any <span class=\"tex-span\"><i>x</i></span>. It's easy to show that in this case the graph <span class=\"tex-span\"><i>s</i>(<i>x</i>)</span> is a polyline. You are given <span class=\"tex-span\"><i>n</i></span> functions of the given type, your task is to find the number of angles that do not equal 180 degrees, in the graph <span class=\"tex-span\"><i>s</i>(<i>x</i>)</span>, that is the sum of the given functions.<p>Valeric and Valerko really want to watch the next Euro Championship game, so they asked you to help them.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> \u2014 the number of functions. Each of the following <span class=\"tex-span\"><i>n</i></span> lines contains two space-separated integer numbers <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>k</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span> that determine the <span class=\"tex-span\"><i>i</i></span>-th function.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the number of angles that do not equal 180 degrees in the graph of the polyline that equals the sum of the given functions.</p>",
+    "samples": [
+        {
+            "input": "1<br/>1 0<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3<br/>1 0<br/>0 2<br/>-1 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3<br/>-2 -4<br/>1 7<br/>-5 1<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 195,
+    "index": "D",
+    "name": "Analyzing Polyline",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "math",
+        "sortings"
+    ],
+    "solvedCount": 1008
+}

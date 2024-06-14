@@ -1,0 +1,37 @@
+{
+    "title": "B. Han Solo and Lazer Gun",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are <span class=\"tex-span\"><i>n</i></span> Imperial stormtroopers on the field. The battle field is a plane with Cartesian coordinate system. Each stormtrooper is associated with his coordinates <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> on this plane. </p><p>Han Solo has the newest duplex lazer gun to fight these stormtroopers. It is situated at the point <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">0</sub>,\u2009<i>y</i><sub class=\"lower-index\">0</sub>)</span>. In one shot it can can destroy all the stormtroopers, situated on some line that crosses point <span class=\"tex-span\">(<i>x</i><sub class=\"lower-index\">0</sub>,\u2009<i>y</i><sub class=\"lower-index\">0</sub>)</span>.</p><p>Your task is to determine what minimum number of shots Han Solo needs to defeat all the stormtroopers.</p><p>The gun is the newest invention, it shoots very quickly and even after a very large number of shots the stormtroopers don't have enough time to realize what's happening and change their location. </p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">0</sub></span> \u0438 <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\">0</sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">4</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\">0</sub>,\u2009<i>y</i><sub class=\"lower-index\">0</sub>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>) \u2014 the number of stormtroopers on the battle field and the coordinates of your gun.</p><p>Next <span class=\"tex-span\"><i>n</i></span> lines contain two integers each <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">4</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>) \u2014 the coordinates of the stormtroopers on the battlefield. It is guaranteed that no stormtrooper stands at the same point with the gun. Multiple stormtroopers can stand at the same point.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the minimum number of shots Han Solo needs to destroy all the stormtroopers. </p>",
+    "samples": [
+        {
+            "input": "4 0 0<br/>1 1<br/>2 2<br/>2 0<br/>-1 -1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "2 1 2<br/>1 1<br/>1 0<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>Explanation to the first and second samples from the statement, respectively: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/4023f46389ce7910b8f307b1fe5c791b1d31f5cb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 514,
+    "index": "B",
+    "name": "Han Solo and Lazer Gun",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "data structures",
+        "geometry",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 20313
+}

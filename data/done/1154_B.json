@@ -1,0 +1,41 @@
+{
+    "title": "B. Make Them Equal",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a sequence $$$a_1, a_2, \\dots, a_n$$$ consisting of $$$n$$$ integers.</p><p>You can choose any non-negative integer $$$D$$$ (i.e. $$$D \\ge 0$$$), and for each $$$a_i$$$ you can:</p><ul> <li> add $$$D$$$ (only once), i.\u2009e. perform $$$a_i := a_i + D$$$, or </li><li> subtract $$$D$$$ (only once), i.\u2009e. perform $$$a_i := a_i - D$$$, or </li><li> leave the value of $$$a_i$$$ unchanged. </li></ul><p>It is possible that after an operation the value $$$a_i$$$ becomes negative.</p><p>Your goal is to choose such <span class=\"tex-font-style-bf\">minimum non-negative integer</span> $$$D$$$ and perform changes in such a way, that all $$$a_i$$$ are equal (i.e. $$$a_1=a_2=\\dots=a_n$$$).</p><p>Print the required $$$D$$$ or, if it is impossible to choose such value $$$D$$$, print <span class=\"tex-font-style-tt\">-1</span>.</p><p>For example, for array $$$[2, 8]$$$ the value $$$D=3$$$ is minimum possible because you can obtain the array $$$[5, 5]$$$ if you will add $$$D$$$ to $$$2$$$ and subtract $$$D$$$ from $$$8$$$. And for array $$$[1, 4, 7, 7]$$$ the value $$$D=3$$$ is also minimum possible. You can add it to $$$1$$$ and subtract it from $$$7$$$ and obtain the array $$$[4, 4, 4, 4]$$$.</p>",
+    "inputSpecification": "<p>The first line of the input contains one integer $$$n$$$ ($$$1 \\le n \\le 100$$$) \u2014 the number of elements in $$$a$$$.</p><p>The second line of the input contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i \\le 100$$$) \u2014 the sequence $$$a$$$.</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the <span class=\"tex-font-style-bf\">minimum non-negative integer</span> value $$$D$$$ such that if you add this value to some $$$a_i$$$, subtract this value from some $$$a_i$$$ and leave some $$$a_i$$$ without changes, all obtained values become equal.</p><p>If it is impossible to choose such value $$$D$$$, print <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "samples": [
+        {
+            "input": "\n6\n1 4 4 7 4 1\n",
+            "output": "\n3\n"
+        },
+        {
+            "input": "\n5\n2 2 5 2 5\n",
+            "output": "\n3\n"
+        },
+        {
+            "input": "\n4\n1 3 3 7\n",
+            "output": "\n-1\n"
+        },
+        {
+            "input": "\n2\n2 8\n",
+            "output": "\n3\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1154,
+    "index": "B",
+    "name": "Make Them Equal",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 16368
+}

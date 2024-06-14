@@ -1,0 +1,29 @@
+{
+    "title": "E. Permutation Game",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Two players are playing a game. They have a permutation of integers $$$1$$$, $$$2$$$, ..., $$$n$$$ (a permutation is an array where each element from $$$1$$$ to $$$n$$$ occurs exactly once). The permutation is not sorted in either ascending or descending order (i.\u2009e. the permutation does not have the form $$$[1, 2, \\dots, n]$$$ or $$$[n, n-1, \\dots, 1]$$$).</p><p>Initially, all elements of the permutation are colored red. The players take turns. On their turn, the player can do one of three actions:</p><ul> <li> rearrange the elements of the permutation in such a way that all <span class=\"tex-font-style-bf\">red</span> elements keep their positions (note that <span class=\"tex-font-style-bf\">blue</span> elements can be swapped with each other, but it's not obligatory); </li><li> change the color of one red element to blue; </li><li> skip the turn. </li></ul><p>The first player wins if the permutation is sorted in ascending order (i.\u2009e. it becomes $$$[1, 2, \\dots, n]$$$). The second player wins if the permutation is sorted in descending order (i.\u2009e. it becomes $$$[n, n-1, \\dots, 1]$$$). If the game lasts for $$$100^{500}$$$ turns and nobody wins, it ends in a draw.</p><p>Your task is to determine the result of the game if both players play optimally.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^5$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$3 \\le n \\le 5 \\cdot 10^5$$$)\u00a0\u2014 the size of the permutation.</p><p>The second line contains $$$n$$$ integers $$$p_1, p_2, \\dots, p_n$$$\u00a0\u2014 the permutation itself. The permutation $$$p$$$ is not sorted in either ascending or descending order.</p><p>The sum of $$$n$$$ over all test cases does not exceed $$$5 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, print <span class=\"tex-font-style-tt\">First</span> if the first player wins, <span class=\"tex-font-style-tt\">Second</span> if the second player wins, and <span class=\"tex-font-style-tt\">Tie</span> if the result is a draw.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2 4 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 3 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 4 5 2 1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">6</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 5 6 3 2 4</div>",
+            "output": "\nFirst\nTie\nSecond\nTie\n"
+        }
+    ],
+    "note": "<p>Let's show how the first player wins in the first example.</p><p>They should color the elements $$$3$$$ and $$$4$$$ blue during their first two turns, and then they can reorder the blue elements in such a way that the permutation becomes $$$[1, 2, 3, 4]$$$. The second player can neither interfere with this strategy nor win faster.</p>",
+    "contestId": 1772,
+    "index": "E",
+    "name": "Permutation Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "games"
+    ],
+    "solvedCount": 6497
+}

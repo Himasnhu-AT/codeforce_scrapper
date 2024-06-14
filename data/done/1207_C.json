@@ -1,0 +1,30 @@
+{
+    "title": "C. Gas Pipeline",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are responsible for installing a gas pipeline along a road. Let's consider the road (for simplicity) as a segment $$$[0, n]$$$ on $$$OX$$$ axis. The road can have several crossroads, but for simplicity, we'll denote each crossroad as an interval $$$(x, x + 1)$$$ with integer $$$x$$$. So we can represent the road as a binary string consisting of $$$n$$$ characters, where character <span class=\"tex-font-style-tt\">0</span> means that current interval doesn't contain a crossroad, and <span class=\"tex-font-style-tt\">1</span> means that there is a crossroad.</p><p>Usually, we can install the pipeline along the road on height of $$$1$$$ unit with supporting pillars in each integer point (so, if we are responsible for $$$[0, n]$$$ road, we must install $$$n + 1$$$ pillars). But on crossroads we should lift the pipeline up to the height $$$2$$$, so the pipeline won't obstruct the way for cars.</p><p>We can do so inserting several zig-zag-like lines. Each zig-zag can be represented as a segment $$$[x, x + 1]$$$ with integer $$$x$$$ consisting of three parts: $$$0.5$$$ units of horizontal pipe + $$$1$$$ unit of vertical pipe + $$$0.5$$$ of horizontal. Note that if pipeline is currently on height $$$2$$$, the pillars that support it should also have length equal to $$$2$$$ units.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/bc708a588ae509e2e30035cc9984dcdc444f59b5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Each unit of gas pipeline costs us $$$a$$$ bourles, and each unit of pillar \u2014 $$$b$$$ bourles. So, it's not always optimal to make the whole pipeline on the height $$$2$$$. Find the shape of the pipeline with minimum possible cost and calculate that cost.</p><p>Note that you <span class=\"tex-font-style-bf\">must</span> start and finish the pipeline on height $$$1$$$ and, also, it's guaranteed that the first and last characters of the input string are equal to <span class=\"tex-font-style-tt\">0</span>.</p>",
+    "inputSpecification": "<p>The fist line contains one integer $$$T$$$ ($$$1 \\le T \\le 100$$$) \u2014 the number of queries. Next $$$2 \\cdot T$$$ lines contain independent queries \u2014 one query per two lines.</p><p>The first line contains three integers $$$n$$$, $$$a$$$, $$$b$$$ ($$$2 \\le n \\le 2 \\cdot 10^5$$$, $$$1 \\le a \\le 10^8$$$, $$$1 \\le b \\le 10^8$$$) \u2014 the length of the road, the cost of one unit of the pipeline and the cost of one unit of the pillar, respectively.</p><p>The second line contains binary string $$$s$$$ ($$$|s| = n$$$, $$$s_i \\in \\{0, 1\\}$$$, $$$s_1 = s_n = 0$$$) \u2014 the description of the road.</p><p>It's guaranteed that the total length of all strings $$$s$$$ doesn't exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>Print $$$T$$$ integers \u2014 one per query. For each query print the minimum possible cost of the constructed pipeline.</p>",
+    "samples": [
+        {
+            "input": "\n4\n8 2 5\n00110010\n8 1 1\n00110010\n9 100000000 100000000\n010101010\n2 5 1\n00\n",
+            "output": "\n94\n25\n2900000000\n13\n"
+        }
+    ],
+    "note": "<p>The optimal pipeline for the first query is shown at the picture above.</p><p>The optimal pipeline for the second query is pictured below:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/634260f16e521498bfd8af22c5055e870cb98115.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The optimal (and the only possible) pipeline for the third query is shown below:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/04e0bf496c066193c2b240987fe9fb84abef14a5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The optimal pipeline for the fourth query is shown below:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/a4c9cc04a2819f2c05b98c49bd0f4eab76cf40da.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1207,
+    "index": "C",
+    "name": "Gas Pipeline",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy"
+    ],
+    "solvedCount": 9710
+}

@@ -1,0 +1,37 @@
+{
+    "title": "D. Black and White Tree",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The board has got a painted tree graph, consisting of <span class=\"tex-span\"><i>n</i></span> nodes. Let us remind you that a non-directed graph is called a tree if it is connected and doesn't contain any cycles.</p><p>Each node of the graph is painted black or white in such a manner that there aren't two nodes of the same color, connected by an edge. Each edge contains its value written on it as a non-negative integer.</p><p>A bad boy Vasya came up to the board and wrote number <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>v</i></sub></span> near each node <span class=\"tex-span\"><i>v</i></span> \u2014 the sum of values of all edges that are incident to this node. Then Vasya removed the edges and their values from the board.</p><p>Your task is to restore the original tree by the node colors and numbers <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>v</i></sub></span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the number of nodes in the tree. Next <span class=\"tex-span\"><i>n</i></span> lines contain pairs of space-separated integers <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), where <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> stands for the color of the <span class=\"tex-span\"><i>i</i></span>-th vertex (0 is for white, 1 is for black), and <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\"><i>i</i></sub></span> represents the sum of values of the edges that are incident to the <span class=\"tex-span\"><i>i</i></span>-th vertex of the tree that is painted on the board.</p>",
+    "outputSpecification": "<p>Print the description of <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> edges of the tree graph. Each description is a group of three integers <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), where <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> \u2014 are the numbers of the nodes that are connected by the <span class=\"tex-span\"><i>i</i></span>-th edge, and <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> is its value. Note that the following condition must fulfill <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></sub>\u2009\u2260\u2009<i>c</i><sub class=\"lower-index\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></sub></span>.</p><p>It is guaranteed that for any input data there exists at least one graph that meets these data. If there are multiple solutions, print any of them. You are allowed to print the edges in any order. As you print the numbers, separate them with spaces.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 3<br/>1 2<br/>0 5<br/>",
+            "output": "3 1 3<br/>3 2 2<br/>"
+        },
+        {
+            "input": "6<br/>1 0<br/>0 3<br/>1 8<br/>0 2<br/>0 3<br/>0 0<br/>",
+            "output": "2 3 3<br/>5 3 3<br/>4 3 2<br/>1 6 0<br/>2 1 0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 260,
+    "index": "D",
+    "name": "Black and White Tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dsu",
+        "graphs",
+        "greedy",
+        "trees"
+    ],
+    "solvedCount": 1358
+}

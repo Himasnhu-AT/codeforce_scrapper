@@ -1,0 +1,35 @@
+{
+    "title": "D. Maximum path",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a rectangular table <span class=\"tex-span\">3\u2009\u00d7\u2009<i>n</i></span>. Each cell contains an integer. You can move from one cell to another if they share a side.</p><p>Find such path from the upper left cell to the bottom right cell of the table that doesn't visit any of the cells twice, and the sum of numbers written in the cells of this path is maximum possible.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u00a0\u2014 the number of columns in the table.</p><p>Next three lines contain <span class=\"tex-span\"><i>n</i></span> integers each \u00a0\u2014 the description of the table. The <span class=\"tex-span\"><i>j</i></span>-th number in the <span class=\"tex-span\"><i>i</i></span>-th line corresponds to the cell <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>ij</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>ij</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) of the table.</p>",
+    "outputSpecification": "<p>Output the maximum sum of numbers on a path from the upper left cell to the bottom right cell of the table, that doesn't visit any of the cells twice.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 1 1<br/>1 -1 1<br/>1 1 1<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "5<br/>10 10 10 -1 -1<br/>-1 10 10 10 10<br/>-1 10 10 10 10<br/>",
+            "output": "110<br/>"
+        }
+    ],
+    "note": "<p>The path for the first example:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/0dc583ef8d03f547dc50f65f7cba9849c279bb4f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The path for the second example:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/10fad85118aec891a696db29e741cfcff07b07fe.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 762,
+    "index": "D",
+    "name": "Maximum path",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 1300
+}

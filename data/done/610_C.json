@@ -1,0 +1,29 @@
+{
+    "title": "C. Harmony Analysis",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The semester is already ending, so Danil made an effort and decided to visit a lesson on harmony analysis to know how does the professor look like, at least. Danil was very bored on this lesson until the teacher gave the group a simple task: find <span class=\"tex-span\">4</span> vectors in <span class=\"tex-span\">4</span>-dimensional space, such that every coordinate of every vector is <span class=\"tex-span\">1</span> or <span class=\"tex-span\">\u2009-\u20091</span> and any two vectors are orthogonal. Just as a reminder, two vectors in <span class=\"tex-span\"><i>n</i></span>-dimensional space are considered to be orthogonal if and only if their scalar product is equal to zero, that is: </p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9209cd1e676116390c8a0e27584fa6eda10b80e3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center>.<p>Danil quickly managed to come up with the solution for this problem and the teacher noticed that the problem can be solved in a more general case for <span class=\"tex-span\">2<sup class=\"upper-index\"><i>k</i></sup></span> vectors in <span class=\"tex-span\">2<sup class=\"upper-index\"><i>k</i></sup></span>-dimensinoal space. When Danil came home, he quickly came up with the solution for this problem. Can you cope with it?</p>",
+    "inputSpecification": "<p>The only line of the input contains a single integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20099</span>).</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\">2<sup class=\"upper-index\"><i>k</i></sup></span> lines consisting of <span class=\"tex-span\">2<sup class=\"upper-index\"><i>k</i></sup></span> characters each. The <span class=\"tex-span\"><i>j</i></span>-th character of the <span class=\"tex-span\"><i>i</i></span>-th line must be equal to '<span class=\"tex-span\">\u2009*\u2009</span>' if the <span class=\"tex-span\"><i>j</i></span>-th coordinate of the <span class=\"tex-span\"><i>i</i></span>-th vector is equal to <span class=\"tex-span\">\u2009-\u20091</span>, and must be equal to '<span class=\"tex-span\">\u2009+\u2009</span>' if it's equal to <span class=\"tex-span\">\u2009+\u20091</span>. It's guaranteed that the answer always exists.</p><p>If there are many correct answers, print any.</p>",
+    "samples": [
+        {
+            "input": "2<br/>",
+            "output": "++**<br/>+*+*<br/>++++<br/>+**+"
+        }
+    ],
+    "note": "<p>Consider all scalar products in example:</p><ul> <li> Vectors <span class=\"tex-span\">1</span> and <span class=\"tex-span\">2</span>: <span class=\"tex-span\">(\u2009+\u20091)\u00b7(\u2009+\u20091)\u2009+\u2009(\u2009+\u20091)\u00b7(\u2009-\u20091)\u2009+\u2009(\u2009-\u20091)\u00b7(\u2009+\u20091)\u2009+\u2009(\u2009-\u20091)\u00b7(\u2009-\u20091)\u2009=\u20090</span> </li><li> Vectors <span class=\"tex-span\">1</span> and <span class=\"tex-span\">3</span>: <span class=\"tex-span\">(\u2009+\u20091)\u00b7(\u2009+\u20091)\u2009+\u2009(\u2009+\u20091)\u00b7(\u2009+\u20091)\u2009+\u2009(\u2009-\u20091)\u00b7(\u2009+\u20091)\u2009+\u2009(\u2009-\u20091)\u00b7(\u2009+\u20091)\u2009=\u20090</span> </li><li> Vectors <span class=\"tex-span\">1</span> and <span class=\"tex-span\">4</span>: <span class=\"tex-span\">(\u2009+\u20091)\u00b7(\u2009+\u20091)\u2009+\u2009(\u2009+\u20091)\u00b7(\u2009-\u20091)\u2009+\u2009(\u2009-\u20091)\u00b7(\u2009-\u20091)\u2009+\u2009(\u2009-\u20091)\u00b7(\u2009+\u20091)\u2009=\u20090</span> </li><li> Vectors <span class=\"tex-span\">2</span> and <span class=\"tex-span\">3</span>: <span class=\"tex-span\">(\u2009+\u20091)\u00b7(\u2009+\u20091)\u2009+\u2009(\u2009-\u20091)\u00b7(\u2009+\u20091)\u2009+\u2009(\u2009+\u20091)\u00b7(\u2009+\u20091)\u2009+\u2009(\u2009-\u20091)\u00b7(\u2009+\u20091)\u2009=\u20090</span> </li><li> Vectors <span class=\"tex-span\">2</span> and <span class=\"tex-span\">4</span>: <span class=\"tex-span\">(\u2009+\u20091)\u00b7(\u2009+\u20091)\u2009+\u2009(\u2009-\u20091)\u00b7(\u2009-\u20091)\u2009+\u2009(\u2009+\u20091)\u00b7(\u2009-\u20091)\u2009+\u2009(\u2009-\u20091)\u00b7(\u2009+\u20091)\u2009=\u20090</span> </li><li> Vectors <span class=\"tex-span\">3</span> and <span class=\"tex-span\">4</span>: <span class=\"tex-span\">(\u2009+\u20091)\u00b7(\u2009+\u20091)\u2009+\u2009(\u2009+\u20091)\u00b7(\u2009-\u20091)\u2009+\u2009(\u2009+\u20091)\u00b7(\u2009-\u20091)\u2009+\u2009(\u2009+\u20091)\u00b7(\u2009+\u20091)\u2009=\u20090</span> </li></ul>",
+    "contestId": 610,
+    "index": "C",
+    "name": "Harmony Analysis",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms"
+    ],
+    "solvedCount": 2792
+}

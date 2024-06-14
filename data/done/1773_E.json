@@ -1,0 +1,30 @@
+{
+    "title": "E. Easy Assembly",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 1024.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Emma loves playing with blocks. She has several cubic blocks of the same size that are numbered with <span class=\"tex-font-style-bf\">distinct</span> integers written on them. She assembles towers from those blocks by stacking them vertically. </p><p>A configuration of her game is a set of towers that she has assembled from the blocks. Emma can perform two kinds of operations on a configuration of towers:</p><ul><li> <span class=\"tex-font-style-bf\">Split</span> any tower with more than one block in it by taking any number of blocks from the top of the tower and moving them to a new tower keeping their order, so that the top block of the old tower becomes the top block of the new tower. As a result of this operation, the number of towers increases by one.</li><li> <span class=\"tex-font-style-bf\">Combine</span> any two towers by moving blocks from one tower on top of the other tower in the same order. As a result of this operation, the number of towers decreases by one.</li></ul><p>Emma wants to stack all the blocks into a single tower so that all blocks come in order sorted by the numbers\u00a0\u2014 from the block with the minimal number at the top to the block with the maximal number at the bottom. Emma wants to do as little of splitting and combining operations as possible. Your task is to find the minimal number of operations she has to make and output how many splits and combines are needed. </p>",
+    "inputSpecification": "<p>The first line of the input file contains an integer $$$n$$$ ($$$1 \\le n \\le 10\\,000$$$)\u00a0\u2014 the number of towers in the initial configuration. Next $$$n$$$ lines describe towers. Each tower $$$i$$$ is described by a line that starts with the number $$$k_i$$$ ($$$k_i \\ge 1$$$; $$$\\sum_1^n{k_i} \\le 10\\,000$$$)\u00a0\u2014 the number of blocks in the tower, followed by $$$k_i$$$ numbers $$$b_{i,j}$$$ ($$$1 \\le b_{i,j} \\le 10^9$$$)\u00a0\u2014 numbers written on the blocks in the $$$i$$$-th tower, listed from top to bottom. All block numbers listed in the input are different. </p>",
+    "outputSpecification": "<p>Output a line with two integers $$$s$$$ and $$$c$$$\u00a0\u2014 the number of split and combine operations Emma should make to get a single tower with blocks sorted by their numbers, so that the total number of operations is minimized.</p>",
+    "samples": [
+        {
+            "input": "\n2\n3 3 5 8\n2 9 2\n",
+            "output": "\n1 2\n"
+        }
+    ],
+    "note": "<p>The example needs the following operations (1 split and 2 combines).</p><p><table class=\"tex-tabular\"><tbody><tr><td class=\"tex-tabular-text-align-center\"><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/77b0bd8aa98807594aa1b7d62d72c1324ad8611b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></td><td class=\"tex-tabular-text-align-center\"><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/9f47a72da65e56b885f1ab61674783873f9e461a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></td><td class=\"tex-tabular-text-align-center\"><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/4931f95ddfe4f91b0dd65a8abec2e6bf0e20a108.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></td><td class=\"tex-tabular-text-align-center\"><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/06549f809a663cbdb3f0256824792b54f3957e99.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></td></tr><tr><td class=\"tex-tabular-text-align-center\">Initial</td><td class=\"tex-tabular-text-align-center\">Split last</td><td class=\"tex-tabular-text-align-center\">Combined 2nd onto 1st</td><td class=\"tex-tabular-text-align-center\">Combined 1st onto 2nd</td></tr></tbody></table></p>",
+    "contestId": 1773,
+    "index": "E",
+    "name": "Easy Assembly",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 4714
+}

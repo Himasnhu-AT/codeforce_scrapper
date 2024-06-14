@@ -1,0 +1,35 @@
+{
+    "title": "E. Another Filling the Grid",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have $$$n \\times n$$$ square grid and an integer $$$k$$$. Put an integer in each cell while satisfying the conditions below.</p><ul> <li> All numbers in the grid should be between $$$1$$$ and $$$k$$$ inclusive. </li><li> Minimum number of the $$$i$$$-th row is $$$1$$$ ($$$1 \\le i \\le n$$$). </li><li> Minimum number of the $$$j$$$-th column is $$$1$$$ ($$$1 \\le j \\le n$$$). </li></ul><p>Find the number of ways to put integers in the grid. Since the answer can be very large, find the answer modulo $$$(10^{9} + 7)$$$.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/a19650027aa3ad9089445d4cab78c1f948f0b7fa.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> These are the examples of valid and invalid grid when $$$n=k=2$$$. </center>",
+    "inputSpecification": "<p>The only line contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\le n \\le 250$$$, $$$1 \\le k \\le 10^{9}$$$).</p>",
+    "outputSpecification": "<p>Print the answer modulo $$$(10^{9} + 7)$$$.</p>",
+    "samples": [
+        {
+            "input": "\n2 2\n",
+            "output": "\n7\n"
+        },
+        {
+            "input": "\n123 456789\n",
+            "output": "\n689974806\n"
+        }
+    ],
+    "note": "<p>In the first example, following $$$7$$$ cases are possible.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/2a7ad6f4f389b74dc1f8f6133922969e3e7137cc.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In the second example, make sure you print the answer modulo $$$(10^{9} + 7)$$$.</p>",
+    "contestId": 1228,
+    "index": "E",
+    "name": "Another Filling the Grid",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 2562
+}

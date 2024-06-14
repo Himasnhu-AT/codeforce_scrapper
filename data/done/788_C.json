@@ -1,0 +1,35 @@
+{
+    "title": "C. The Great Mixing",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Sasha and Kolya decided to get drunk with Coke, again. This time they have <span class=\"tex-span\"><i>k</i></span> types of Coke. <span class=\"tex-span\"><i>i</i></span>-th type is characterised by its carbon dioxide concentration <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7223e2da7cf0d001a3a06ab38023d8f967968d61.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Today, on the party in honour of Sergiy of Vancouver they decided to prepare a glass of Coke with carbon dioxide concentration <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3f84b61691275b2806285c0208e93684ddff5912.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. The drink should also be tasty, so the glass can contain only integer number of liters of each Coke type (some types can be not presented in the glass). Also, they want to minimize the total volume of Coke in the glass.</p><p>Carbon dioxide concentration is defined as the volume of carbone dioxide in the Coke divided by the total volume of Coke. When you mix two Cokes, the volume of carbon dioxide sums up, and the total volume of Coke sums up as well.</p><p>Help them, find the minimal natural number of liters needed to create a glass with carbon dioxide concentration <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3f84b61691275b2806285c0208e93684ddff5912.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Assume that the friends have unlimited amount of each Coke type.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>)\u00a0\u2014 carbon dioxide concentration the friends want and the number of Coke types.</p><p>The second line contains <span class=\"tex-span\"><i>k</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>k</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>)\u00a0\u2014 carbon dioxide concentration of each type of Coke. Some Coke types can have same concentration.</p>",
+    "outputSpecification": "<p>Print the minimal natural number of liter needed to prepare a glass with carbon dioxide concentration <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3f84b61691275b2806285c0208e93684ddff5912.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, or <span class=\"tex-font-style-tt\">-1</span> if it is impossible.</p>",
+    "samples": [
+        {
+            "input": "400 4<br/>100 300 450 500<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "50 2<br/>100 25<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>In the first sample case, we can achieve concentration <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bed0f5c3640139492194728ccc3ac55accf16a8e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> using one liter of Coke of types <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9b37ab6b0795f08ffcc699d9101a9efb89374478.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d82574f3d78c4bd9d8ab9bda103e05a51e1b3161.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b23f59a536403f9a2364e971aa0bfc9a3411b366.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p><p>In the second case, we can achieve concentration <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/46aa9afb7ee4d932ca2c3f0d6535a9955fc8f0a8.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> using two liters of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/69b8967d23533c2caada3910f564294509450a59.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> type and one liter of <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/abf5cbf9e8a81a0eff83ff53574dcabb097df44e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> type: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4d2331fc733efc58d37745ff9a495a116ebd7e8a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.</p>",
+    "contestId": 788,
+    "index": "C",
+    "name": "The Great Mixing",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 2018
+}

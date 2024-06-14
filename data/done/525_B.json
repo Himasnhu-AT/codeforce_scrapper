@@ -1,0 +1,40 @@
+{
+    "title": "B. Pasha and String",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Pasha got a very beautiful string <span class=\"tex-span\"><i>s</i></span> for his birthday, the string consists of lowercase Latin letters. The letters in the string are numbered from 1 to <span class=\"tex-span\">|<i>s</i>|</span> from left to right, where <span class=\"tex-span\">|<i>s</i>|</span> is the length of the given string.</p><p>Pasha didn't like his present very much so he decided to change it. After his birthday Pasha spent <span class=\"tex-span\"><i>m</i></span> days performing the following transformations on his string\u00a0\u2014\u00a0each day he chose integer <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-font-style-bf\">reversed</span> a piece of string (a segment) from position <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> to position <span class=\"tex-span\">|<i>s</i>|\u2009-\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009+\u20091</span>. It is guaranteed that <span class=\"tex-span\">2\u00b7<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009|<i>s</i>|</span>.</p><p>You face the following task: determine what Pasha's string will look like after <span class=\"tex-span\"><i>m</i></span> days.</p>",
+    "inputSpecification": "<p>The first line of the input contains Pasha's string <span class=\"tex-span\"><i>s</i></span> of length from <span class=\"tex-span\">2</span> to <span class=\"tex-span\">2\u00b710<sup class=\"upper-index\">5</sup></span> characters, consisting of lowercase Latin letters.</p><p>The second line contains a single integer <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014\u00a0 the number of days when Pasha changed his string.</p><p>The third line contains <span class=\"tex-span\"><i>m</i></span> space-separated elements <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>; <span class=\"tex-span\">2\u00b7<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009|<i>s</i>|</span>)\u00a0\u2014\u00a0the position from which Pasha started transforming the string on the <span class=\"tex-span\"><i>i</i></span>-th day.</p>",
+    "outputSpecification": "<p>In the first line of the output print what Pasha's string <span class=\"tex-span\"><i>s</i></span> will look like after <span class=\"tex-span\"><i>m</i></span> days.</p>",
+    "samples": [
+        {
+            "input": "abcdef<br/>1<br/>2<br/>",
+            "output": "aedcbf<br/>"
+        },
+        {
+            "input": "vwxyz<br/>2<br/>2 2<br/>",
+            "output": "vwxyz<br/>"
+        },
+        {
+            "input": "abcdef<br/>3<br/>1 2 3<br/>",
+            "output": "fbdcea<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 525,
+    "index": "B",
+    "name": "Pasha and String",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "strings"
+    ],
+    "solvedCount": 9224
+}

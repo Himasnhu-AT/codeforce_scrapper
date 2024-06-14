@@ -1,0 +1,31 @@
+{
+    "title": "D. Strong Vertices",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Given two arrays $$$a$$$ and $$$b$$$, both of length $$$n$$$. Elements of both arrays indexed from $$$1$$$ to $$$n$$$. You are constructing a directed graph, where edge from $$$u$$$ to $$$v$$$ ($$$u\\neq v$$$) exists if $$$a_u-a_v \\ge b_u-b_v$$$.</p><p>A vertex $$$V$$$ is called strong if there exists a path from $$$V$$$ to all other vertices.</p><p>A path in a directed graph is a chain of several vertices, connected by edges, such that moving from the vertex $$$u$$$, along the directions of the edges, the vertex $$$v$$$ can be reached.</p><p>Your task is to find all strong vertices.</p><p>For example, if $$$a=[3,1,2,4]$$$ and $$$b=[4,3,2,1]$$$, the graph will look like this: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/626d2ea4dec72c0655a110117e5c3b8f8c6484b7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">The graph has only one strong vertex with number $$$4$$$</span> </center>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1\\le t\\le 10^4$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains an integer $$$n$$$ ($$$2 \\le n \\le 2\\cdot 10^5$$$)\u00a0\u2014 the length of $$$a$$$ and $$$b$$$.</p><p>The second line of each test case contains $$$n$$$ integers $$$a_1,a_2 \\dots a_n$$$ ($$$-10^9 \\le a_i \\le 10^9$$$)\u00a0\u2014 the array $$$a$$$.</p><p>The third line of each test case contains $$$n$$$ integers $$$b_1,b_2 \\dots b_n$$$ ($$$-10^9 \\le b_i \\le 10^9$$$)\u00a0\u2014 the array $$$b$$$.</p><p>It is guaranteed that the sum of $$$n$$$ for all test cases does not exceed $$$2\\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output two lines: in the first line, output the number of strong vertices, and in the second line, output all strong vertices <span class=\"tex-font-style-bf\">in ascending order</span>.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3 1 2 4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">4 3 2 1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 2 4 1 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5 2 3 3 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3</div><div class=\"test-example-line test-example-line-even test-example-line-4\">0 2 1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 3 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">5 7 4</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">-2 -3 -6</div>",
+            "output": "\n1\n4 \n2\n3 5 \n1\n2 \n3\n1 2 3 \n2\n2 3 \n"
+        }
+    ],
+    "note": "<p>The first sample is covered in the problem statement.</p><p>For the second sample, the graph looks like this: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/a3cbb2d5f186ed76ec3b0113eec3f8c120d9b505.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">The graph has two strong vertices with numbers $$$3$$$ and $$$5$$$. Note that there is a bidirectional edge between vertices $$$3$$$ and $$$5$$$.</span> </center><p>In the third sample, the vertices are connected by a single directed edge from vertex $$$2$$$ to vertex $$$1$$$, so the only strong vertex is $$$2$$$.</p><p>In the fourth sample, all vertices are connected to each other by bidirectional edges, so there is a path from every vertex to any other vertex.</p>",
+    "contestId": 1857,
+    "index": "D",
+    "name": "Strong Vertices",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "sortings",
+        "trees"
+    ],
+    "solvedCount": 18100
+}

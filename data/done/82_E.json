@@ -1,0 +1,33 @@
+{
+    "title": "E. Corridor",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Consider a house plan. </p><p>Let the house be represented by an infinite horizontal strip defined by the inequality <span class=\"tex-span\">\u2009-\u2009<i>h</i>\u2009\u2264\u2009<i>y</i>\u2009\u2264\u2009<i>h</i></span>. Strictly outside the house there are two light sources at the points <span class=\"tex-span\">(0,\u2009<i>f</i>)</span> and <span class=\"tex-span\">(0,\u2009\u2009-\u2009<i>f</i>)</span>. Windows are located in the walls, the windows are represented by segments on the lines <span class=\"tex-span\"><i>y</i>\u2009=\u2009<i>h</i></span> and <span class=\"tex-span\"><i>y</i>\u2009=\u2009\u2009-\u2009<i>h</i></span>. Also, the windows are arranged symmetrically about the line <span class=\"tex-span\"><i>y</i>\u2009=\u20090</span>.</p><p>Your task is to find the area of the floor at the home, which will be lighted by the sources of light. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/65d3fe4a6d54c2f9dfd796ba32e5f4e23228be9d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The first line of the input file contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>h</i></span> and <span class=\"tex-span\"><i>f</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009500</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>h</i>\u2009\u2264\u200910</span>, <span class=\"tex-span\"><i>h</i>\u2009&lt;\u2009<i>f</i>\u2009\u2264\u20091000</span>). Next, <span class=\"tex-span\"><i>n</i></span> lines contain two integers each <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u20095000\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20095000</span>), each entry indicates two segments. Endpoints of the first segment are <span class=\"tex-span\">(<i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>h</i>)</span>-<span class=\"tex-span\">(<i>r</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>h</i>)</span>, and endpoints of the second segment are <span class=\"tex-span\">(<i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009\u2009-\u2009<i>h</i>)</span>-<span class=\"tex-span\">(<i>r</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009\u2009-\u2009<i>h</i>)</span>. These segments describe location of windows. Numbers in the lines are space-separated. It is guaranteed that no two distinct segments have common points. </p>",
+    "outputSpecification": "<p>Print the single real number \u2014 the area of the illuminated part of the floor with an absolute or relative error of no more than <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20094</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "1 1 2<br/>-1 1<br/>",
+            "output": "10.0000000000<br/>"
+        },
+        {
+            "input": "2 2 4<br/>-1 0<br/>1 2<br/>",
+            "output": "23.3333333333<br/>"
+        }
+    ],
+    "note": "<p>The second sample test is shown on the figure. Green area is the desired area of the illuminated part of the floor. Violet segments indicate windows.</p>",
+    "contestId": 82,
+    "index": "E",
+    "name": "Corridor",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 217
+}

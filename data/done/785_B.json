@@ -1,0 +1,34 @@
+{
+    "title": "B. Anton and Classes",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Anton likes to play chess. Also he likes to do programming. No wonder that he decided to attend chess classes and programming classes.</p><p>Anton has <span class=\"tex-span\"><i>n</i></span> variants when he will attend chess classes, <span class=\"tex-span\"><i>i</i></span>-th variant is given by a period of time <span class=\"tex-span\">(<i>l</i><sub class=\"lower-index\">1,\u2009<i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\">1,\u2009<i>i</i></sub>)</span>. Also he has <span class=\"tex-span\"><i>m</i></span> variants when he will attend programming classes, <span class=\"tex-span\"><i>i</i></span>-th variant is given by a period of time <span class=\"tex-span\">(<i>l</i><sub class=\"lower-index\">2,\u2009<i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\">2,\u2009<i>i</i></sub>)</span>.</p><p>Anton needs to choose <span class=\"tex-font-style-bf\">exactly one</span> of <span class=\"tex-span\"><i>n</i></span> possible periods of time when he will attend chess classes and <span class=\"tex-font-style-bf\">exactly one</span> of <span class=\"tex-span\"><i>m</i></span> possible periods of time when he will attend programming classes. He wants to have a rest between classes, so from all the possible pairs of the periods he wants to choose the one where the distance between the periods is maximal.</p><p>The distance between periods <span class=\"tex-span\">(<i>l</i><sub class=\"lower-index\">1</sub>,\u2009<i>r</i><sub class=\"lower-index\">1</sub>)</span> and <span class=\"tex-span\">(<i>l</i><sub class=\"lower-index\">2</sub>,\u2009<i>r</i><sub class=\"lower-index\">2</sub>)</span> is the minimal possible distance between a point in the first period and a point in the second period, that is the minimal possible <span class=\"tex-span\">|<i>i</i>\u2009-\u2009<i>j</i>|</span>, where <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">1</sub>\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\">1</sub></span> and <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">2</sub>\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\">2</sub></span>. In particular, when the periods intersect, the distance between them is <span class=\"tex-span\">0</span>.</p><p>Anton wants to know how much time his rest between the classes will last in the best case. Help Anton and find this number!</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000)</span>\u00a0\u2014 the number of time periods when Anton can attend chess classes.</p><p>Each of the following <span class=\"tex-span\"><i>n</i></span> lines of the input contains two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">1,\u2009<i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">1,\u2009<i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\">1,\u2009<i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\">1,\u2009<i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>\u00a0\u2014 the <span class=\"tex-span\"><i>i</i></span>-th variant of a period of time when Anton can attend chess classes.</p><p>The following line of the input contains a single integer <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009200\u2009000)</span>\u00a0\u2014 the number of time periods when Anton can attend programming classes.</p><p>Each of the following <span class=\"tex-span\"><i>m</i></span> lines of the input contains two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\">2,\u2009<i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\">2,\u2009<i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\">2,\u2009<i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\">2,\u2009<i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span>\u00a0\u2014 the <span class=\"tex-span\"><i>i</i></span>-th variant of a period of time when Anton can attend programming classes.</p>",
+    "outputSpecification": "<p>Output one integer\u00a0\u2014 the maximal possible distance between time periods.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 5<br/>2 6<br/>2 3<br/>2<br/>2 4<br/>6 8<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "3<br/>1 5<br/>2 6<br/>3 7<br/>2<br/>2 4<br/>1 4<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample Anton can attend chess classes in the period <span class=\"tex-span\">(2,\u20093)</span> and attend programming classes in the period <span class=\"tex-span\">(6,\u20098)</span>. It's not hard to see that in this case the distance between the periods will be equal to <span class=\"tex-span\">3</span>.</p><p>In the second sample if he chooses any pair of periods, they will intersect. So the answer is <span class=\"tex-span\">0</span>.</p>",
+    "contestId": 785,
+    "index": "B",
+    "name": "Anton and Classes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "sortings"
+    ],
+    "solvedCount": 10156
+}

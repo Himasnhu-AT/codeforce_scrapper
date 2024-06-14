@@ -1,0 +1,39 @@
+{
+    "title": "B. Maximize Sum of Digits",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Anton has the integer <span class=\"tex-span\"><i>x</i></span>. He is interested what positive integer, which doesn't exceed <span class=\"tex-span\"><i>x</i></span>, has the maximum sum of digits.</p><p>Your task is to help Anton and to find the integer that interests him. If there are several such integers, determine the biggest of them. </p>",
+    "inputSpecification": "<p>The first line contains the positive integer <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>) \u2014 the integer which Anton has. </p>",
+    "outputSpecification": "<p>Print the positive integer which doesn't exceed <span class=\"tex-span\"><i>x</i></span> and has the maximum sum of digits. If there are several such integers, print the biggest of them. Printed integer must not contain leading zeros.</p>",
+    "samples": [
+        {
+            "input": "100<br/>",
+            "output": "99<br/>"
+        },
+        {
+            "input": "48<br/>",
+            "output": "48<br/>"
+        },
+        {
+            "input": "521<br/>",
+            "output": "499<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 770,
+    "index": "B",
+    "name": "Maximize Sum of Digits",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 2751
+}

@@ -1,0 +1,30 @@
+{
+    "title": "C. Word on the Paper",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>On an $$$8 \\times 8$$$ grid of dots, a word consisting of lowercase Latin letters is written vertically in one column, from top to bottom. What is it?</p>",
+    "inputSpecification": "<p>The input consists of multiple test cases. The first line of the input contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 1000$$$)\u00a0\u2014 the number of test cases.</p><p>Each test case consists of $$$8$$$ lines, each containing $$$8$$$ characters. Each character in the grid is either $$$\\texttt{.}$$$ (representing a dot) or a lowercase Latin letter ($$$\\texttt{a}$$$\u2013$$$\\texttt{z}$$$). </p><p>The word lies entirely in a single column and is continuous from the beginning to the ending (without gaps). See the sample input for better understanding.</p>",
+    "outputSpecification": "<p>For each test case, output a single line containing the word made up of lowercase Latin letters ($$$\\texttt{a}$$$\u2013$$$\\texttt{z}$$$) that is written vertically in one column from top to bottom.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">........</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">........</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">........</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">........</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">...i....</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">........</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">........</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">........</div><div class=\"test-example-line test-example-line-even test-example-line-2\">........</div><div class=\"test-example-line test-example-line-even test-example-line-2\">.l......</div><div class=\"test-example-line test-example-line-even test-example-line-2\">.o......</div><div class=\"test-example-line test-example-line-even test-example-line-2\">.s......</div><div class=\"test-example-line test-example-line-even test-example-line-2\">.t......</div><div class=\"test-example-line test-example-line-even test-example-line-2\">........</div><div class=\"test-example-line test-example-line-even test-example-line-2\">........</div><div class=\"test-example-line test-example-line-even test-example-line-2\">........</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">........</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">........</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">........</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">........</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">......t.</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">......h.</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">......e.</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">........</div><div class=\"test-example-line test-example-line-even test-example-line-4\">........</div><div class=\"test-example-line test-example-line-even test-example-line-4\">........</div><div class=\"test-example-line test-example-line-even test-example-line-4\">........</div><div class=\"test-example-line test-example-line-even test-example-line-4\">........</div><div class=\"test-example-line test-example-line-even test-example-line-4\">.......g</div><div class=\"test-example-line test-example-line-even test-example-line-4\">.......a</div><div class=\"test-example-line test-example-line-even test-example-line-4\">.......m</div><div class=\"test-example-line test-example-line-even test-example-line-4\">.......e</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">a.......</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">a.......</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">a.......</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">a.......</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">a.......</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">a.......</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">a.......</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">a.......</div>",
+            "output": "\ni\nlost\nthe\ngame\naaaaaaaa\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1850,
+    "index": "C",
+    "name": "Word on the Paper",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 41919
+}

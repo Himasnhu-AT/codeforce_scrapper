@@ -1,0 +1,36 @@
+{
+    "title": "B. Strongly Connected City",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Imagine a city with <span class=\"tex-span\"><i>n</i></span> horizontal streets crossing <span class=\"tex-span\"><i>m</i></span> vertical streets, forming an <span class=\"tex-span\">(<i>n</i>\u2009-\u20091)\u2009\u00d7\u2009(<i>m</i>\u2009-\u20091)</span> grid. In order to increase the traffic flow, mayor of the city has decided to make each street one way. This means in each horizontal street, the traffic moves only from west to east or only from east to west. Also, traffic moves only from north to south or only from south to north in each vertical street. It is possible to enter a horizontal street from a vertical street, or vice versa, at their intersection.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8d9eab12ac55ed31138ea165068c27da020c7d16.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>The mayor has received some street direction patterns. Your task is to check whether it is possible to reach any junction from any other junction in the proposed street direction pattern.</p>",
+    "inputSpecification": "<p>The first line of input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span>, (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200920</span>), denoting the number of horizontal streets and the number of vertical streets.</p><p>The second line contains a string of length <span class=\"tex-span\"><i>n</i></span>, made of characters '<span class=\"tex-font-style-tt\">&lt;</span>' and '<span class=\"tex-font-style-tt\">&gt;</span>', denoting direction of each horizontal street. If the <span class=\"tex-span\"><i>i</i></span>-th character is equal to '<span class=\"tex-font-style-tt\">&lt;</span>', the street is directed from east to west otherwise, the street is directed from west to east. Streets are listed in order from north to south.</p><p>The third line contains a string of length <span class=\"tex-span\"><i>m</i></span>, made of characters '<span class=\"tex-font-style-tt\">^</span>' and '<span class=\"tex-font-style-tt\">v</span>', denoting direction of each vertical street. If the <span class=\"tex-span\"><i>i</i></span>-th character is equal to '<span class=\"tex-font-style-tt\">^</span>', the street is directed from south to north, otherwise the street is directed from north to south. Streets are listed in order from west to east.</p>",
+    "outputSpecification": "<p>If the given pattern meets the mayor's criteria, print a single line containing \"<span class=\"tex-font-style-tt\">YES</span>\", otherwise print a single line containing \"<span class=\"tex-font-style-tt\">NO</span>\".</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>><><br/>v^v<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "4 6<br/><><><br/>v^v^v^<br/>",
+            "output": "YES<br/>"
+        }
+    ],
+    "note": "<p>The figure above shows street directions in the second sample test case.</p>",
+    "contestId": 475,
+    "index": "B",
+    "name": "Strongly Connected City",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "graphs",
+        "implementation"
+    ],
+    "solvedCount": 8287
+}

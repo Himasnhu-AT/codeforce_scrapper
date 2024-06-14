@@ -1,0 +1,38 @@
+{
+    "title": "G. Perfectionist Arkadiy",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Arkadiy has lots square photos with size <span class=\"tex-span\"><i>a</i>\u2009\u00d7\u2009<i>a</i></span>. He wants to put some of them on a rectangular wall with size <span class=\"tex-span\"><i>h</i>\u2009\u00d7\u2009<i>w</i></span>. </p><p>The photos which Arkadiy will put on the wall must form a rectangular grid and the distances between neighboring vertically and horizontally photos and also the distances between outside rows and columns of photos to the nearest bound of the wall must be equal to <span class=\"tex-span\"><i>x</i></span>, where <span class=\"tex-span\"><i>x</i></span> is some non-negative <span class=\"tex-font-style-bf\">real</span> number. Look on the picture below for better understanding of the statement.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/5149b204a86c8ab7678df929eae844bd4d997e4a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Arkadiy haven't chosen yet how many photos he would put on the wall, however, he want to put at least one photo. Your task is to determine the <span class=\"tex-font-style-bf\">minimum</span> value of <span class=\"tex-span\"><i>x</i></span> which can be obtained after putting photos, or report that there is no way to put positive number of photos and satisfy all the constraints. Suppose that Arkadiy has enough photos to make any valid arrangement according to the constraints.</p><p>Note that Arkadiy wants to put at least one photo on the wall. The photos should not overlap, should completely lie inside the wall bounds and should have sides parallel to the wall sides.</p>",
+    "inputSpecification": "<p>The first line contains three integers <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>h</i></span> and <span class=\"tex-span\"><i>w</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>h</i>,\u2009<i>w</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 the size of photos and the height and the width of the wall.</p>",
+    "outputSpecification": "<p>Print one non-negative real number \u2014 the minimum value of <span class=\"tex-span\"><i>x</i></span> which can be obtained after putting the photos on the wall. The absolute or the relative error of the answer must not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p><p>Print <span class=\"tex-font-style-tt\">-1</span> if there is no way to put positive number of photos and satisfy the constraints.</p>",
+    "samples": [
+        {
+            "input": "2 18 13<br/>",
+            "output": "0.5<br/>"
+        },
+        {
+            "input": "4 4 4<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "3 4 3<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": "<p>In the first example Arkadiy can put <span class=\"tex-span\">7</span> rows of photos with <span class=\"tex-span\">5</span> photos in each row, so the minimum value of <span class=\"tex-span\"><i>x</i></span> equals to <span class=\"tex-span\">0.5</span>.</p><p>In the second example Arkadiy can put only <span class=\"tex-span\">1</span> photo which will take the whole wall, so the minimum value of <span class=\"tex-span\"><i>x</i></span> equals to <span class=\"tex-span\">0</span>.</p><p>In the third example there is no way to put positive number of photos and satisfy the constraints described in the statement, so the answer is <span class=\"tex-font-style-tt\">-1</span>.</p>",
+    "contestId": 774,
+    "index": "G",
+    "name": "Perfectionist Arkadiy",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "number theory"
+    ],
+    "solvedCount": 174
+}

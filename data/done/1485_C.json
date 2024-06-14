@@ -1,0 +1,32 @@
+{
+    "title": "C. Floor and Mod",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A pair of positive integers $$$(a,b)$$$ is called <span class=\"tex-font-style-bf\">special</span> if $$$\\lfloor \\frac{a}{b} \\rfloor = a \\bmod b$$$. Here, $$$\\lfloor \\frac{a}{b} \\rfloor$$$ is the result of the integer division between $$$a$$$ and $$$b$$$, while $$$a \\bmod b$$$ is its remainder.</p><p>You are given two integers $$$x$$$ and $$$y$$$. Find the number of special pairs $$$(a,b)$$$ such that $$$1\\leq a \\leq x$$$ and $$$1 \\leq b \\leq y$$$.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 100$$$) \u2014 the number of test cases.</p><p>The only line of the description of each test case contains two integers $$$x$$$, $$$y$$$ ($$$1 \\le x,y \\le 10^9$$$).</p>",
+    "outputSpecification": "<p>For each test case print the answer on a single line.</p>",
+    "samples": [
+        {
+            "input": "\n9\n3 4\n2 100\n4 3\n50 3\n12 4\n69 420\n12345 6789\n123456 789\n12345678 9\n",
+            "output": "\n1\n0\n2\n3\n5\n141\n53384\n160909\n36\n"
+        }
+    ],
+    "note": "<p>In the first test case, the only special pair is $$$(3, 2)$$$.</p><p>In the second test case, there are no special pairs.</p><p>In the third test case, there are two special pairs: $$$(3, 2)$$$ and $$$(4, 3)$$$.</p>",
+    "contestId": 1485,
+    "index": "C",
+    "name": "Floor and Mod",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 9631
+}

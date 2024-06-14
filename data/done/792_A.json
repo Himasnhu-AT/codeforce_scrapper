@@ -1,0 +1,34 @@
+{
+    "title": "A. New Bus Route",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are <span class=\"tex-span\"><i>n</i></span> cities situated along the main road of Berland. Cities are represented by their coordinates \u2014 integer numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. All coordinates are pairwise distinct.</p><p>It is possible to get from one city to another only by bus. But all buses and roads are very old, so the Minister of Transport decided to build a new bus route. The Minister doesn't want to spend large amounts of money \u2014 he wants to choose two cities in such a way that the distance between them is minimal possible. The distance between two cities is equal to the absolute value of the difference between their coordinates.</p><p>It is possible that there are multiple pairs of cities with minimal possible distance, so the Minister wants to know the quantity of such pairs. </p><p>Your task is to write a program that will calculate the minimal possible distance between two pairs of cities and the quantity of pairs which have this distance.</p>",
+    "inputSpecification": "<p>The first line contains one integer number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>).</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integer numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">9</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>). All numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> are pairwise distinct.</p>",
+    "outputSpecification": "<p>Print two integer numbers \u2014 the minimal distance and the quantity of pairs with this distance.</p>",
+    "samples": [
+        {
+            "input": "4<br/>6 -3 0 4<br/>",
+            "output": "2 1<br/>"
+        },
+        {
+            "input": "3<br/>-2 0 2<br/>",
+            "output": "2 2<br/>"
+        }
+    ],
+    "note": "<p>In the first example the distance between the first city and the fourth city is <span class=\"tex-span\">|4\u2009-\u20096|\u2009=\u20092</span>, and it is the only pair with this distance.</p>",
+    "contestId": 792,
+    "index": "A",
+    "name": "New Bus Route",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 8817
+}

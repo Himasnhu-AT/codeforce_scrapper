@@ -1,0 +1,35 @@
+{
+    "title": "D1. Magic Powder - 1",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">This problem is given in two versions that differ only by constraints. If you can solve this problem in large constraints, then you can just write a single solution to the both versions. If you find the problem too difficult in large constraints, you can write solution to the simplified version only.</span></p><p>Waking up in the morning, Apollinaria decided to bake cookies. To bake one cookie, she needs <span class=\"tex-span\"><i>n</i></span> ingredients, and for each ingredient she knows the value <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00a0\u2014 how many grams of this ingredient one needs to bake a cookie. To prepare one cookie Apollinaria needs to use all <span class=\"tex-span\"><i>n</i></span> ingredients.</p><p>Apollinaria has <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> gram of the <span class=\"tex-span\"><i>i</i></span>-th ingredient. Also she has <span class=\"tex-span\"><i>k</i></span> grams of a magic powder. Each gram of magic powder can be turned to exactly <span class=\"tex-span\">1</span> gram of any of the <span class=\"tex-span\"><i>n</i></span> ingredients and can be used for baking cookies.</p><p>Your task is to determine the maximum number of cookies, which Apollinaria is able to bake using the ingredients that she has and the magic powder.</p>",
+    "inputSpecification": "<p>The first line of the input contains two positive integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>k</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of ingredients and the number of grams of the magic powder.</p><p>The second line contains the sequence <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>), where the <span class=\"tex-span\"><i>i</i></span>-th number is equal to the number of grams of the <span class=\"tex-span\"><i>i</i></span>-th ingredient, needed to bake one cookie.</p><p>The third line contains the sequence <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>,\u2009<i>b</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>b</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>), where the <span class=\"tex-span\"><i>i</i></span>-th number is equal to the number of grams of the <span class=\"tex-span\"><i>i</i></span>-th ingredient, which Apollinaria has.</p>",
+    "outputSpecification": "<p>Print the maximum number of cookies, which Apollinaria will be able to bake using the ingredients that she has and the magic powder.</p>",
+    "samples": [
+        {
+            "input": "3 1<br/>2 1 4<br/>11 3 16<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "4 3<br/>4 3 5 6<br/>11 12 14 20<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": "<p>In the first sample it is profitably for Apollinaria to make the existing <span class=\"tex-span\">1</span> gram of her magic powder to ingredient with the index <span class=\"tex-span\">2</span>, then Apollinaria will be able to bake <span class=\"tex-span\">4</span> cookies.</p><p>In the second sample Apollinaria should turn <span class=\"tex-span\">1</span> gram of magic powder to ingredient with the index <span class=\"tex-span\">1</span> and <span class=\"tex-span\">1</span> gram of magic powder to ingredient with the index <span class=\"tex-span\">3</span>. Then Apollinaria will be able to bake <span class=\"tex-span\">3</span> cookies. The remaining <span class=\"tex-span\">1</span> gram of the magic powder can be left, because it can't be used to increase the answer.</p>",
+    "contestId": 670,
+    "index": "D1",
+    "name": "Magic Powder - 1",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 16375
+}

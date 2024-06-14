@@ -1,0 +1,30 @@
+{
+    "title": "C. Jumping on Tiles",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp was given a row of tiles. Each tile contains one lowercase letter of the Latin alphabet. The entire sequence of tiles forms the string $$$s$$$.</p><p>In other words, you are given a string $$$s$$$ consisting of lowercase Latin letters.</p><p>Initially, Polycarp is on the <span class=\"tex-font-style-bf\">first</span> tile of the row and wants to get to the <span class=\"tex-font-style-bf\">last</span> tile by jumping on the tiles. Jumping from $$$i$$$-th tile to $$$j$$$-th tile has a cost equal to $$$|index(s_i) - index(s_j)|$$$, where $$$index(c)$$$ is the index of the letter $$$c$$$ in the alphabet (for example, $$$index($$$'<span class=\"tex-font-style-tt\">a</span>'$$$)=1$$$, $$$index($$$'<span class=\"tex-font-style-tt\">b</span>'$$$)=2$$$, ..., $$$index($$$'<span class=\"tex-font-style-tt\">z</span>'$$$)=26$$$) .</p><p>Polycarp wants to get to the $$$n$$$-th tile for the minimum total cost, but at the same time make <span class=\"tex-font-style-bf\">maximum</span> number of jumps.</p><p>In other words, among all possible ways to get to the last tile for the <span class=\"tex-font-style-bf\">minimum</span> total cost, he will choose the one with the <span class=\"tex-font-style-bf\">maximum</span> number of jumps.</p><p>Polycarp can visit each tile <span class=\"tex-font-style-bf\">at most once</span>.</p><p>Polycarp asks you to help\u00a0\u2014 print the sequence of indices of string $$$s$$$ on which he should jump.</p>",
+    "inputSpecification": "<p>The first line of the input contains an integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$) \u2014 the number of test cases in the test.</p><p>Each test case is given by the string $$$s$$$ ($$$2 \\le |s| \\le 2 \\cdot 10^5$$$), where $$$|s|$$$\u00a0\u2014 is the length of string $$$s$$$. The string $$$s$$$ consists of lowercase Latin letters.</p><p>It is guaranteed that the sum of string lengths $$$s$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>The answer to each test case consists of two lines.</p><p>In the first line print two integers $$$cost$$$, $$$m$$$, where $$$cost$$$ is the minimum total cost of the path, and $$$m$$$ is the maximum number of visited tiles Polycarp can make to get to $$$n$$$-th tiles for the minimum total cost $$$cost$$$ (i.e. the number of jumps is $$$m-1$$$).</p><p>In the next line print $$$m$$$ different numbers $$$j_1, j_2, \\dots, j_m$$$ ($$$1 \\le j_i \\le |s|$$$)\u00a0\u2014 the sequence of indices of the tiles Polycarp will jump on. The first number in the sequence must be $$$1$$$ (that is, $$$j_1=1$$$) and the last number must be the value of $$$|s|$$$ (that is, $$$j_m=|s|$$$).</p><p>If there are multiple answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">logic</div><div class=\"test-example-line test-example-line-even test-example-line-2\">codeforces</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">bca</div><div class=\"test-example-line test-example-line-even test-example-line-4\">aaaaaaaaaaa</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">adbaadabad</div><div class=\"test-example-line test-example-line-even test-example-line-6\">to</div>",
+            "output": "\n9 4\n1 4 3 5\n16 10\n1 8 3 4 9 5 2 6 7 10\n1 2\n1 3\n0 11\n1 8 10 4 3 5 7 2 9 6 11\n3 10\n1 9 5 4 7 3 8 6 2 10\n5 2\n1 2\n"
+        }
+    ],
+    "note": "<p>In the first test case, the required path corresponds to the picture:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/19df7868ca9b673449e5cf9db1561b625dfe1d26.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>In this case, the minimum possible total cost of the path is achieved. Since $$$index($$$'<span class=\"tex-font-style-tt\">l</span>'$$$)=12$$$, $$$index($$$'<span class=\"tex-font-style-tt\">o</span>'$$$)=15$$$, $$$index($$$'<span class=\"tex-font-style-tt\">g</span>'$$$)=7$$$, $$$index($$$'<span class=\"tex-font-style-tt\">i</span>'$$$)=9$$$, $$$index($$$'<span class=\"tex-font-style-tt\">c</span>'$$$)=3$$$, then the total cost of the path is $$$|12-9|+|9-7|+|7-3|=3+2+4=9$$$.</p>",
+    "contestId": 1729,
+    "index": "C",
+    "name": "Jumping on Tiles",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "strings"
+    ],
+    "solvedCount": 19556
+}

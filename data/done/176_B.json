@@ -1,0 +1,37 @@
+{
+    "title": "B. Word Cut",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's consider one interesting word game. In this game you should transform one word into another through special operations. </p><p>Let's say we have word <span class=\"tex-span\"><i>w</i></span>, let's split this word into two non-empty parts <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> so, that <span class=\"tex-span\"><i>w</i>\u2009=\u2009<i>xy</i></span>. A <span class=\"tex-font-style-it\">split</span> operation is transforming word <span class=\"tex-span\"><i>w</i>\u2009=\u2009<i>xy</i></span> into word <span class=\"tex-span\"><i>u</i>\u2009=\u2009<i>yx</i></span>. For example, a <span class=\"tex-font-style-it\">split</span> operation can transform word \"<span class=\"tex-font-style-tt\">wordcut</span>\" into word \"<span class=\"tex-font-style-tt\">cutword</span>\".</p><p>You are given two words <span class=\"tex-span\"><i>start</i></span> and <span class=\"tex-span\"><i>end</i></span>. Count in how many ways we can transform word <span class=\"tex-span\"><i>start</i></span> into word <span class=\"tex-span\"><i>end</i></span>, if we apply exactly <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-font-style-it\">split</span> operations consecutively to word <span class=\"tex-span\"><i>start</i></span>. </p><p>Two ways are considered different if the sequences of applied operations differ. Two operation sequences are different if exists such number <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>k</i></span>), that in the <span class=\"tex-span\"><i>i</i></span>-th operation of the first sequence the word splits into parts <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span>, in the <span class=\"tex-span\"><i>i</i></span>-th operation of the second sequence the word splits into parts <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>, and additionally <span class=\"tex-span\"><i>x</i>\u2009\u2260\u2009<i>a</i></span> holds.</p>",
+    "inputSpecification": "<p>The first line contains a non-empty word <span class=\"tex-span\"><i>start</i></span>, the second line contains a non-empty word <span class=\"tex-span\"><i>end</i></span>. The words consist of lowercase Latin letters. The number of letters in word <span class=\"tex-span\"><i>start</i></span> equals the number of letters in word <span class=\"tex-span\"><i>end</i></span> and is at least <span class=\"tex-span\">2</span> and doesn't exceed <span class=\"tex-span\">1000</span> letters.</p><p>The third line contains integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 the required number of operations.</p>",
+    "outputSpecification": "<p>Print a single number \u2014 the answer to the problem. As this number can be rather large, print it modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "ab<br/>ab<br/>2<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "ababab<br/>ababab<br/>1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "ab<br/>ba<br/>2<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>The sought way in the first sample is:</p><p><span class=\"tex-font-style-tt\">ab</span> <span class=\"tex-span\">\u2009\u2192\u2009</span> <span class=\"tex-font-style-tt\">a|b</span> <span class=\"tex-span\">\u2009\u2192\u2009</span> <span class=\"tex-font-style-tt\">ba</span> <span class=\"tex-span\">\u2009\u2192\u2009</span> <span class=\"tex-font-style-tt\">b|a</span> <span class=\"tex-span\">\u2009\u2192\u2009</span> <span class=\"tex-font-style-tt\">ab</span></p><p>In the second sample the two sought ways are:</p><ul><li> <span class=\"tex-font-style-tt\">ababab</span> <span class=\"tex-span\">\u2009\u2192\u2009</span> <span class=\"tex-font-style-tt\">abab|ab</span> <span class=\"tex-span\">\u2009\u2192\u2009</span> <span class=\"tex-font-style-tt\">ababab</span> </li><li> <span class=\"tex-font-style-tt\">ababab</span> <span class=\"tex-span\">\u2009\u2192\u2009</span> <span class=\"tex-font-style-tt\">ab|abab</span> <span class=\"tex-span\">\u2009\u2192\u2009</span> <span class=\"tex-font-style-tt\">ababab</span></li></ul>",
+    "contestId": 176,
+    "index": "B",
+    "name": "Word Cut",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp"
+    ],
+    "solvedCount": 1726
+}

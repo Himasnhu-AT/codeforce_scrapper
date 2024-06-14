@@ -1,0 +1,31 @@
+{
+    "title": "F. Range Update Point Query",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Given an array $$$a_1, a_2, \\dots, a_n$$$, you need to handle a total of $$$q$$$ updates and queries of two types:</p><ul> <li> $$$1$$$\u00a0$$$l$$$\u00a0$$$r$$$\u00a0\u2014 for each index $$$i$$$ with $$$l \\leq i \\leq r$$$, update the value of $$$a_i$$$ to the sum of the digits of $$$a_i$$$. </li><li> $$$2$$$\u00a0$$$x$$$\u00a0\u2014 output $$$a_x$$$. </li></ul>",
+    "inputSpecification": "<p>The first line of the input contains an integer $$$t$$$ ($$$1 \\leq t \\leq 1000$$$)\u00a0\u2014 the number of testcases.</p><p>The first line of each test case contains two integers $$$n$$$ and $$$q$$$ ($$$1 \\le n, q \\le 2 \\cdot 10^5$$$)\u00a0\u2014 the size of the array and the number of queries, respectively.</p><p>The second line of each test case contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i \\le 10^9$$$).</p><p>The next $$$q$$$ lines of each test case are of two forms:</p><ul> <li> $$$1$$$\u00a0$$$l$$$\u00a0$$$r$$$ ($$$1 \\leq l \\leq r \\leq n$$$)\u00a0\u2014 it means, for each index $$$i$$$ with $$$l \\leq i \\leq r$$$, you should update the value of $$$a_i$$$ to the sum of its digits. </li><li> $$$2$$$\u00a0$$$x$$$ ($$$1 \\leq x \\leq n$$$)\u00a0\u2014 it means you should output $$$a_x$$$. </li></ul><p>There is at least one query of the second type.</p><p>The sum of $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p><p>The sum of $$$q$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output the answers of queries of the second type, in the order they are given.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">5 8</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 420 69 1434 2023</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2 3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 2</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2 5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">9999 1000</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 1 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 1</div>",
+            "output": "\n6\n15\n1434\n1\n6\n7\n36\n1\n1\n"
+        }
+    ],
+    "note": "<p>In the first test case, the following process occurs: </p><ul> <li> Initially, $$$a = [1, 420, 69, 1434, 2023]$$$. </li><li> The operation is performed for $$$l=2$$$, $$$r=3$$$, yielding $$$[1, \\color{red}{6}, \\color{red}{15}, 1434, 2023]$$$. </li><li> We are queried for $$$x=2$$$, $$$x=3$$$, and $$$x=4$$$, and output $$$6$$$, $$$15$$$, and $$$1434$$$. </li><li> The operation is performed for $$$l=2$$$, $$$r=5$$$, yielding $$$[1, \\color{red}{6}, \\color{red}{6}, \\color{red}{12}, \\color{red}{7}]$$$. </li><li> We are queried for $$$x=1$$$, $$$x=3$$$, and $$$x=5$$$, and output $$$1$$$, $$$6$$$, and $$$7$$$. </li></ul>",
+    "contestId": 1791,
+    "index": "F",
+    "name": "Range Update Point Query",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures"
+    ],
+    "solvedCount": 11716
+}

@@ -1,0 +1,38 @@
+{
+    "title": "A. Bear and Five Cards",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A little bear Limak plays a game. He has five cards. There is one number written on each card. Each number is a positive integer.</p><p>Limak can discard (throw out) some cards. His goal is to minimize the sum of numbers written on remaining (not discarded) cards.</p><p>He is allowed to <span class=\"tex-font-style-bf\">at most once</span> discard two or three cards with the same number. Of course, he won't discard cards if it's impossible to choose two or three cards with the same number.</p><p>Given five numbers written on cards, cay you find the minimum sum of numbers on remaining cards?</p>",
+    "inputSpecification": "<p>The only line of the input contains five integers <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">2</sub></span>, <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">3</sub></span>, <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">4</sub></span> and <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">5</sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009100</span>)\u00a0\u2014 numbers written on cards.</p>",
+    "outputSpecification": "<p>Print the minimum possible sum of numbers written on remaining cards.</p>",
+    "samples": [
+        {
+            "input": "7 3 7 3 20<br/>",
+            "output": "26<br/>"
+        },
+        {
+            "input": "7 9 3 1 8<br/>",
+            "output": "28<br/>"
+        },
+        {
+            "input": "10 10 10 10 10<br/>",
+            "output": "20<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, Limak has cards with numbers <span class=\"tex-span\">7</span>, <span class=\"tex-span\">3</span>, <span class=\"tex-span\">7</span>, <span class=\"tex-span\">3</span> and <span class=\"tex-span\">20</span>. Limak can do one of the following.</p><ul> <li> Do nothing and the sum would be <span class=\"tex-span\">7\u2009+\u20093\u2009+\u20097\u2009+\u20093\u2009+\u200920\u2009=\u200940</span>. </li><li> Remove two cards with a number <span class=\"tex-span\">7</span>. The remaining sum would be <span class=\"tex-span\">3\u2009+\u20093\u2009+\u200920\u2009=\u200926</span>. </li><li> Remove two cards with a number <span class=\"tex-span\">3</span>. The remaining sum would be <span class=\"tex-span\">7\u2009+\u20097\u2009+\u200920\u2009=\u200934</span>. </li></ul><p>You are asked to minimize the sum so the answer is <span class=\"tex-span\">26</span>.</p><p>In the second sample, it's impossible to find two or three cards with the same number. Hence, Limak does nothing and the sum is <span class=\"tex-span\">7\u2009+\u20099\u2009+\u20091\u2009+\u20093\u2009+\u20098\u2009=\u200928</span>.</p><p>In the third sample, all cards have the same number. It's optimal to discard any three cards. The sum of two remaining numbers is <span class=\"tex-span\">10\u2009+\u200910\u2009=\u200920</span>.</p>",
+    "contestId": 680,
+    "index": "A",
+    "name": "Bear and Five Cards",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 12230
+}

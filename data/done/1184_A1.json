@@ -1,0 +1,35 @@
+{
+    "title": "A1. Heidi Learns Hashing (Easy)",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Melody Pond was stolen from her parents as a newborn baby by Madame Kovarian, to become a weapon of the Silence in their crusade against the Doctor. Madame Kovarian changed Melody's name to River Song, giving her a new identity that allowed her to kill the Eleventh Doctor.</p><p>Heidi figured out that Madame Kovarian uses a very complicated hashing function in order to change the names of the babies she steals. In order to prevent this from happening to future Doctors, Heidi decided to prepare herself by learning some basic hashing techniques.</p><p>The first hashing function she designed is as follows.</p><p>Given two positive integers $$$(x, y)$$$ she defines $$$H(x,y):=x^2+2xy+x+1$$$.</p><p>Now, Heidi wonders if the function is reversible. That is, given a positive integer $$$r$$$, can you find a pair $$$(x, y)$$$ (of positive integers) such that $$$H(x, y) = r$$$?</p><p>If multiple such pairs exist, output the one with smallest possible $$$x$$$. If there is no such pair, output \"<span class=\"tex-font-style-tt\">NO</span>\".</p>",
+    "inputSpecification": "<p>The first and only line contains an integer $$$r$$$ ($$$1 \\le r \\le 10^{12}$$$).</p>",
+    "outputSpecification": "<p>Output integers $$$x, y$$$ such that $$$H(x,y) = r$$$ and $$$x$$$ is smallest possible, or \"<span class=\"tex-font-style-tt\">NO</span>\" if no such pair exists.</p>",
+    "samples": [
+        {
+            "input": "\n19\n",
+            "output": "\n1 8\n"
+        },
+        {
+            "input": "\n16\n",
+            "output": "\nNO\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1184,
+    "index": "A1",
+    "name": "Heidi Learns Hashing (Easy)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 5879
+}

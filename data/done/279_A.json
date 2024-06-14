@@ -1,0 +1,43 @@
+{
+    "title": "A. Point on Spiral",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Valera the horse lives on a plane. The Cartesian coordinate system is defined on this plane. Also an infinite spiral is painted on the plane. The spiral consists of segments: <span class=\"tex-font-style-bf\"><span class=\"tex-span\">[(0,\u20090),\u2009(1,\u20090)]</span>, <span class=\"tex-span\">[(1,\u20090),\u2009(1,\u20091)]</span>, <span class=\"tex-span\">[(1,\u20091),\u2009(\u2009-\u20091,\u20091)]</span>, <span class=\"tex-span\">[(\u2009-\u20091,\u20091),\u2009(\u2009-\u20091,\u2009\u2009-\u20091)]</span>, <span class=\"tex-span\">[(\u2009-\u20091,\u2009\u2009-\u20091),\u2009(2,\u2009\u2009-\u20091)]</span>, <span class=\"tex-span\">[(2,\u2009\u2009-\u20091),\u2009(2,\u20092)]</span></span> and so on. Thus, this infinite spiral passes through each integer point of the plane.</p><p>Valera the horse lives on the plane at coordinates <span class=\"tex-span\">(0,\u20090)</span>. He wants to walk along the spiral to point <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>. Valera the horse has four legs, so he finds turning very difficult. Count how many times he will have to turn if he goes along a spiral from point <span class=\"tex-span\">(0,\u20090)</span> to point <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>.</p>",
+    "inputSpecification": "<p>The first line contains two space-separated integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> <span class=\"tex-span\">(|<i>x</i>|,\u2009|<i>y</i>|\u2009\u2264\u2009100)</span>.</p>",
+    "outputSpecification": "<p>Print a single integer, showing how many times Valera has to turn.</p>",
+    "samples": [
+        {
+            "input": "0 0<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "1 0<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "0 1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "-1 -1<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 279,
+    "index": "A",
+    "name": "Point on Spiral",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "geometry",
+        "implementation"
+    ],
+    "solvedCount": 5523
+}

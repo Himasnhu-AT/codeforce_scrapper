@@ -1,0 +1,42 @@
+{
+    "title": "F. Letters Removing",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Petya has a string of length <span class=\"tex-span\"><i>n</i></span> consisting of small and large English letters and digits.</p><p>He performs <span class=\"tex-span\"><i>m</i></span> operations. Each operation is described with two integers <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span> and a character <span class=\"tex-span\"><i>c</i></span>: Petya removes from the string all characters <span class=\"tex-span\"><i>c</i></span> on positions between <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span>, inclusive. It's obvious that the length of the string remains the same or decreases after each operation.</p><p>Find how the string will look like after Petya performs all <span class=\"tex-span\"><i>m</i></span> operations.</p>",
+    "inputSpecification": "<p>The first string contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 the length of the string and the number of operations.</p><p>The second line contains the string of length <span class=\"tex-span\"><i>n</i></span>, consisting of small and large English letters and digits. Positions in the string are enumerated from <span class=\"tex-span\">1</span>.</p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines contains two integers <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i></span>), followed by a character <span class=\"tex-span\"><i>c</i></span>, which is a small or large English letter or a digit. This line describes one operation. It is guaranteed that <span class=\"tex-span\"><i>r</i></span> doesn't exceed the length of the string <span class=\"tex-span\"><i>s</i></span> before current operation.</p>",
+    "outputSpecification": "<p>Print the string Petya will obtain after performing all <span class=\"tex-span\"><i>m</i></span> operations. If the strings becomes empty after all operations, print an empty line.</p>",
+    "samples": [
+        {
+            "input": "4 2<br/>abac<br/>1 3 a<br/>2 2 c<br/>",
+            "output": "b<br/>"
+        },
+        {
+            "input": "3 2<br/>A0z<br/>1 3 0<br/>1 1 z<br/>",
+            "output": "Az<br/>"
+        },
+        {
+            "input": "10 4<br/>agtFrgF4aF<br/>2 5 g<br/>4 9 F<br/>1 5 4<br/>1 7 a<br/>",
+            "output": "tFrg4<br/>"
+        },
+        {
+            "input": "9 5<br/>aAAaBBccD<br/>1 4 a<br/>5 6 c<br/>2 3 B<br/>4 4 D<br/>2 3 A<br/>",
+            "output": "AB<br/>"
+        }
+    ],
+    "note": "<p>In the first example during the first operation both letters '<span class=\"tex-font-style-tt\">a</span>' are removed, so the string becomes \"<span class=\"tex-font-style-tt\">bc</span>\". During the second operation the letter '<span class=\"tex-font-style-tt\">c</span>' (on the second position) is removed, and the string becomes \"<span class=\"tex-font-style-tt\">b</span>\".</p><p>In the second example during the first operation Petya removes '<span class=\"tex-font-style-tt\">0</span>' from the second position. After that the string becomes \"<span class=\"tex-font-style-tt\">Az</span>\". During the second operations the string doesn't change.</p>",
+    "contestId": 899,
+    "index": "F",
+    "name": "Letters Removing",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "strings"
+    ],
+    "solvedCount": 1639
+}

@@ -1,0 +1,39 @@
+{
+    "title": "B. Array GCD",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given array <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> of length <span class=\"tex-span\"><i>n</i></span>. You may consecutively apply two operations to this array:</p><ul> <li> remove some subsegment (continuous subsequence) of length <span class=\"tex-span\"><i>m</i>\u2009&lt;\u2009<i>n</i></span> and pay for it <span class=\"tex-span\"><i>m</i>\u00b7<i>a</i></span> coins; </li><li> change some elements of the array by at most <span class=\"tex-span\">1</span>, and pay <span class=\"tex-span\"><i>b</i></span> coins for each change. </li></ul><p>Please note that each of operations may be applied at most once (and may be not applied at all) so you can remove only one segment and each number may be changed (increased or decreased) by at most <span class=\"tex-span\">1</span>. Also note, that you are not allowed to delete the whole array.</p><p>Your goal is to calculate the minimum number of coins that you need to spend in order to make the greatest common divisor of the elements of the resulting array be greater than <span class=\"tex-span\">1</span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091\u2009000\u2009000,\u20090\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the length of the array, the cost of removing a single element in the first operation and the cost of changing an element, respectively.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 elements of the array.</p>",
+    "outputSpecification": "<p>Print a single number\u00a0\u2014 the minimum cost of changes needed to obtain an array, such that the greatest common divisor of all its elements is greater than <span class=\"tex-span\">1</span>.</p>",
+    "samples": [
+        {
+            "input": "3 1 4<br/>4 2 3<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "5 3 2<br/>5 17 13 5 6<br/>",
+            "output": "8<br/>"
+        },
+        {
+            "input": "8 3 4<br/>3 7 5 4 3 12 9 4<br/>",
+            "output": "13<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the optimal way is to remove number <span class=\"tex-span\">3</span> and pay <span class=\"tex-span\">1</span> coin for it.</p><p>In the second sample you need to remove a segment <span class=\"tex-span\">[17,\u200913]</span> and then decrease number <span class=\"tex-span\">6</span>. The cost of these changes is equal to <span class=\"tex-span\">2\u00b73\u2009+\u20092\u2009=\u20098</span> coins.</p>",
+    "contestId": 623,
+    "index": "B",
+    "name": "Array GCD",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "number theory"
+    ],
+    "solvedCount": 2052
+}

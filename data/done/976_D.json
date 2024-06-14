@@ -1,0 +1,35 @@
+{
+    "title": "D. Degree Set",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a sequence of <span class=\"tex-span\"><i>n</i></span> positive integers <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\">1</sub>,\u2009<i>d</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>d</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\"><i>d</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>d</i><sub class=\"lower-index\">2</sub>\u2009&lt;\u2009...\u2009&lt;\u2009<i>d</i><sub class=\"lower-index\"><i>n</i></sub></span>). Your task is to construct an undirected graph such that:</p><ul> <li> there are exactly <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>n</i></sub>\u2009+\u20091</span> vertices; </li><li> there are no self-loops; </li><li> there are no multiple edges; </li><li> there are no more than <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span> edges; </li><li> its <span class=\"tex-font-style-it\">degree set</span> is equal to <span class=\"tex-span\"><i>d</i></span>. </li></ul><p>Vertices should be numbered <span class=\"tex-span\">1</span> through <span class=\"tex-span\">(<i>d</i><sub class=\"lower-index\"><i>n</i></sub>\u2009+\u20091)</span>.</p><p><span class=\"tex-font-style-it\">Degree sequence</span> is an array <span class=\"tex-span\"><i>a</i></span> with length equal to the number of vertices in a graph such that <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is the number of vertices adjacent to <span class=\"tex-span\"><i>i</i></span>-th vertex.</p><p><span class=\"tex-font-style-it\">Degree set</span> is a sorted in increasing order sequence of all distinct values from the <span class=\"tex-font-style-it\">degree sequence</span>.</p><p>It is guaranteed that there exists such a graph that all the conditions hold, and it contains no more than <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span> edges.</p><p>Print the resulting graph.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009300</span>) \u2014 the size of the degree set.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\">1</sub>,\u2009<i>d</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>d</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>, <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\">1</sub>\u2009&lt;\u2009<i>d</i><sub class=\"lower-index\">2</sub>\u2009&lt;\u2009...\u2009&lt;\u2009<i>d</i><sub class=\"lower-index\"><i>n</i></sub></span>) \u2014 the degree set.</p>",
+    "outputSpecification": "<p>In the first line print one integer <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 the number of edges in the resulting graph. It is guaranteed that there exists such a graph that all the conditions hold and it contains no more than <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span> edges.</p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines should contain two integers <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>d</i><sub class=\"lower-index\"><i>n</i></sub>\u2009+\u20091</span>) \u2014 the description of the <span class=\"tex-span\"><i>i</i></span>-th edge.</p>",
+    "samples": [
+        {
+            "input": "3<br/>2 3 4<br/>",
+            "output": "8<br/>3 1<br/>4 2<br/>4 5<br/>2 5<br/>5 1<br/>3 2<br/>2 1<br/>5 3<br/>"
+        },
+        {
+            "input": "3<br/>1 2 3<br/>",
+            "output": "4<br/>1 2<br/>1 3<br/>1 4<br/>2 3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 976,
+    "index": "D",
+    "name": "Degree Set",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "implementation"
+    ],
+    "solvedCount": 674
+}

@@ -1,0 +1,30 @@
+{
+    "title": "D. Orange",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8da9655a167b33eb426bf64714b13ed34df0fd39.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "inputSpecification": "<p>The first line of the input is a string (between 1 and 50 characters long, inclusive). Each character will be a letter of English alphabet, lowercase or uppercase.</p><p>The second line of the input is an integer between 0 and 26, inclusive.</p>",
+    "outputSpecification": "<p>Output the required string.</p>",
+    "samples": [
+        {
+            "input": "AprilFool<br/>14<br/>",
+            "output": "AprILFooL<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 290,
+    "index": "D",
+    "name": "Orange",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "solvedCount": 1785
+}

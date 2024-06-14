@@ -1,0 +1,34 @@
+{
+    "title": "B. Math Show",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp takes part in a math show. He is given <span class=\"tex-span\"><i>n</i></span> tasks, each consists of <span class=\"tex-span\"><i>k</i></span> subtasks, numbered <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>k</i></span>. It takes him <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>j</i></sub></span> minutes to solve the <span class=\"tex-span\"><i>j</i></span>-th subtask of any task. Thus, time required to solve a subtask depends only on its index, but not on the task itself. Polycarp can solve subtasks in any order.</p><p>By solving subtask of arbitrary problem he earns one point. Thus, the number of points for task is equal to the number of solved subtasks in it. Moreover, if Polycarp <span class=\"tex-font-style-it\">completely</span> solves the task (solves all <span class=\"tex-span\"><i>k</i></span> of its subtasks), he recieves one extra point. Thus, total number of points he recieves for the complete solution of the task is <span class=\"tex-span\"><i>k</i>\u2009+\u20091</span>.</p><p>Polycarp has <span class=\"tex-span\"><i>M</i></span> minutes of time. What is the maximum number of points he can earn?</p>",
+    "inputSpecification": "<p>The first line contains three integer numbers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>k</i></span> and <span class=\"tex-span\"><i>M</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200945</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200945</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>M</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">9</sup></span>).</p><p>The second line contains <span class=\"tex-span\"><i>k</i></span> integer numbers, values <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>j</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u20091000000</span>), where <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>j</i></sub></span> is the time in minutes required to solve <span class=\"tex-span\"><i>j</i></span>-th subtask of any task.</p>",
+    "outputSpecification": "<p>Print the maximum amount of points Polycarp can earn in <span class=\"tex-span\"><i>M</i></span> minutes.</p>",
+    "samples": [
+        {
+            "input": "3 4 11<br/>1 2 3 4<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "5 5 10<br/>1 2 4 8 16<br/>",
+            "output": "7<br/>"
+        }
+    ],
+    "note": "<p>In the first example Polycarp can complete the first task and spend <span class=\"tex-span\">1\u2009+\u20092\u2009+\u20093\u2009+\u20094\u2009=\u200910</span> minutes. He also has the time to solve one subtask of the second task in one minute.</p><p>In the second example Polycarp can solve the first subtask of all five tasks and spend <span class=\"tex-span\">5\u00b71\u2009=\u20095</span> minutes. Also he can solve the second subtasks of two tasks and spend <span class=\"tex-span\">2\u00b72\u2009=\u20094</span> minutes. Thus, he earns <span class=\"tex-span\">5\u2009+\u20092\u2009=\u20097</span> points in total.</p>",
+    "contestId": 846,
+    "index": "B",
+    "name": "Math Show",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "greedy"
+    ],
+    "solvedCount": 2472
+}

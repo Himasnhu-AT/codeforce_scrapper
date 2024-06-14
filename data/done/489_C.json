@@ -1,0 +1,35 @@
+{
+    "title": "C. Given Length and Sum of Digits...",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have a positive integer <span class=\"tex-span\"><i>m</i></span> and a non-negative integer <span class=\"tex-span\"><i>s</i></span>. Your task is to find the smallest and the largest of the numbers that have length <span class=\"tex-span\"><i>m</i></span> and sum of digits <span class=\"tex-span\"><i>s</i></span>. The required numbers should be non-negative integers written in the decimal base without leading zeroes.</p>",
+    "inputSpecification": "<p>The single line of the input contains a pair of integers <span class=\"tex-span\"><i>m</i></span>, <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009100,\u20090\u2009\u2264\u2009<i>s</i>\u2009\u2264\u2009900</span>) \u2014 the length and the sum of the digits of the required numbers.</p>",
+    "outputSpecification": "<p>In the output print the pair of the required non-negative integer numbers \u2014 first the minimum possible number, then \u2014 the maximum possible number. If no numbers satisfying conditions required exist, print the pair of numbers \"<span class=\"tex-font-style-tt\">-1 -1</span>\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "2 15<br/>",
+            "output": "69 96<br/>"
+        },
+        {
+            "input": "3 0<br/>",
+            "output": "-1 -1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 489,
+    "index": "C",
+    "name": "Given Length and Sum of Digits...",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 44896
+}

@@ -1,0 +1,42 @@
+{
+    "title": "F. Coprime Permutation",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Two positive integers are coprime if and only if they don't have a common divisor greater than <span class=\"tex-span\">1</span>.</p><p>Some bear doesn't want to tell Radewoosh how to solve some algorithmic problem. So, Radewoosh is going to break into that bear's safe with solutions. To pass through the door, he must enter a permutation of numbers <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>n</i></span>. The door opens if and only if an entered permutation <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> satisfies:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/505621a51adbe8a1153e3e3a5d6cc29aeaf30ae0.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>In other words, two different elements are coprime if and only if their indices are coprime. </p><p>Some elements of a permutation may be already fixed. In how many ways can Radewoosh fill the remaining gaps so that the door will open? Print the answer modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091\u2009000\u2009000</span>).</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>) where <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u20090</span> means a gap to fill, and <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2265\u20091</span> means a fixed number.</p><p>It's guaranteed that if <span class=\"tex-span\"><i>i</i>\u2009\u2260\u2009<i>j</i></span> and <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>p</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2265\u20091</span> then <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>p</i><sub class=\"lower-index\"><i>j</i></sub></span>.</p>",
+    "outputSpecification": "<p>Print the number of ways to fill the gaps modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span> (i.e. modulo <span class=\"tex-span\">1000000007</span>).</p>",
+    "samples": [
+        {
+            "input": "4<br/>0 0 0 0<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "5<br/>0 0 1 2 0<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "6<br/>0 0 1 2 0 0<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "5<br/>5 3 4 2 1<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample test, none of four element is fixed. There are four permutations satisfying the given conditions: (1,2,3,4), (1,4,3,2), (3,2,1,4), (3,4,1,2).</p><p>In the second sample test, there must be <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">3</sub>\u2009=\u20091</span> and <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">4</sub>\u2009=\u20092</span>. The two permutations satisfying the conditions are: (3,4,1,2,5), (5,4,1,2,3).</p>",
+    "contestId": 698,
+    "index": "F",
+    "name": "Coprime Permutation",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "number theory"
+    ],
+    "solvedCount": 432
+}

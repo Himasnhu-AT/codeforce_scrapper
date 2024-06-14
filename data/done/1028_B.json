@@ -1,0 +1,34 @@
+{
+    "title": "B. Unnatural Conditions",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let $$$s(x)$$$ be sum of digits in decimal representation of positive integer $$$x$$$. Given two integers $$$n$$$ and $$$m$$$, find some positive integers $$$a$$$ and $$$b$$$ such that </p><ul> <li> $$$s(a) \\ge n$$$, </li><li> $$$s(b) \\ge n$$$, </li><li> $$$s(a + b) \\le m$$$. </li></ul>",
+    "inputSpecification": "<p>The only line of input contain two integers $$$n$$$ and $$$m$$$ ($$$1 \\le n, m \\le 1129$$$).</p>",
+    "outputSpecification": "<p>Print two lines, one for decimal representation of $$$a$$$ and one for decimal representation of $$$b$$$. Both numbers must not contain leading zeros and must have length no more than $$$2230$$$.</p>",
+    "samples": [
+        {
+            "input": "6 5<br/>",
+            "output": "6 <br/>7<br/>"
+        },
+        {
+            "input": "8 16<br/>",
+            "output": "35 <br/>53<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, we have $$$n = 6$$$ and $$$m = 5$$$. One valid solution is $$$a = 6$$$, $$$b = 7$$$. Indeed, we have $$$s(a) = 6 \\ge n$$$ and $$$s(b) = 7 \\ge n$$$, and also $$$s(a + b) = s(13) = 4 \\le m$$$.</p>",
+    "contestId": 1028,
+    "index": "B",
+    "name": "Unnatural Conditions",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 8842
+}

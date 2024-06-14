@@ -1,0 +1,42 @@
+{
+    "title": "D. Balanced Ternary String",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a string $$$s$$$ consisting of exactly $$$n$$$ characters, and each character is either '<span class=\"tex-font-style-tt\">0</span>', '<span class=\"tex-font-style-tt\">1</span>' or '<span class=\"tex-font-style-tt\">2</span>'. Such strings are called <span class=\"tex-font-style-bf\">ternary strings</span>.</p><p>Your task is to <span class=\"tex-font-style-bf\">replace minimum number of characters</span> in this string with other characters to obtain a <span class=\"tex-font-style-it\">balanced</span> ternary string (<span class=\"tex-font-style-it\">balanced</span> ternary string is a ternary string such that the number of characters '<span class=\"tex-font-style-tt\">0</span>' in this string is equal to the number of characters '<span class=\"tex-font-style-tt\">1</span>', and the number of characters '<span class=\"tex-font-style-tt\">1</span>' (and '<span class=\"tex-font-style-tt\">0</span>' obviously) is equal to the number of characters '<span class=\"tex-font-style-tt\">2</span>').</p><p>Among all possible <span class=\"tex-font-style-it\">balanced</span> ternary strings you have to obtain the lexicographically (alphabetically) smallest.</p><p>Note that you can neither remove characters from the string nor add characters to the string. Also note that you can replace the given characters only with characters '<span class=\"tex-font-style-tt\">0</span>', '<span class=\"tex-font-style-tt\">1</span>' and '<span class=\"tex-font-style-tt\">2</span>'.</p><p>It is <span class=\"tex-font-style-bf\">guaranteed</span> that the answer exists.</p>",
+    "inputSpecification": "<p>The first line of the input contains one integer $$$n$$$ ($$$3 \\le n \\le 3 \\cdot 10^5$$$, $$$n$$$ is <span class=\"tex-font-style-bf\">divisible by $$$3$$$</span>) \u2014 the number of characters in $$$s$$$.</p><p>The second line contains the string $$$s$$$ consisting of exactly $$$n$$$ characters '<span class=\"tex-font-style-tt\">0</span>', '<span class=\"tex-font-style-tt\">1</span>' and '<span class=\"tex-font-style-tt\">2</span>'.</p>",
+    "outputSpecification": "<p>Print one string \u2014 the lexicographically (alphabetically) smallest <span class=\"tex-font-style-it\">balanced</span> ternary string which can be obtained from the given one with <span class=\"tex-font-style-bf\">minimum</span> number of replacements.</p><p>Because $$$n$$$ is <span class=\"tex-font-style-bf\">divisible by $$$3$$$</span> it is obvious that the answer exists. And it is obvious that there is only one possible answer.</p>",
+    "samples": [
+        {
+            "input": "\n3\n121\n",
+            "output": "\n021\n"
+        },
+        {
+            "input": "\n6\n000000\n",
+            "output": "\n001122\n"
+        },
+        {
+            "input": "\n6\n211200\n",
+            "output": "\n211200\n"
+        },
+        {
+            "input": "\n6\n120110\n",
+            "output": "\n120120\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1102,
+    "index": "D",
+    "name": "Balanced Ternary String",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "strings"
+    ],
+    "solvedCount": 7856
+}

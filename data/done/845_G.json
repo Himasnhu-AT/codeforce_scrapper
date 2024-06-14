@@ -1,0 +1,35 @@
+{
+    "title": "G. Shortest Path Problem?",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an undirected graph with weighted edges. The length of some path between two vertices is the bitwise xor of weights of all edges belonging to this path (if some edge is traversed more than once, then it is included in bitwise xor the same number of times). You have to find the minimum length of path between vertex <span class=\"tex-span\">1</span> and vertex <span class=\"tex-span\"><i>n</i></span>.</p><p><span class=\"tex-font-style-bf\">Note that graph can contain multiple edges and loops. It is guaranteed that the graph is connected.</span></p>",
+    "inputSpecification": "<p>The first line contains two numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100000</span>, <span class=\"tex-span\"><i>n</i>\u2009-\u20091\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009100000</span>) \u2014 the number of vertices and the number of edges, respectively.</p><p>Then <span class=\"tex-span\"><i>m</i></span> lines follow, each line containing three integer numbers <span class=\"tex-span\"><i>x</i></span>, <span class=\"tex-span\"><i>y</i></span> and <span class=\"tex-span\"><i>w</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>w</i>\u2009\u2264\u200910<sup class=\"upper-index\">8</sup></span>). These numbers denote an edge that connects vertices <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> and has weight <span class=\"tex-span\"><i>w</i></span>.</p>",
+    "outputSpecification": "<p>Print one number \u2014 the minimum length of path between vertices <span class=\"tex-span\">1</span> and <span class=\"tex-span\"><i>n</i></span>.</p>",
+    "samples": [
+        {
+            "input": "3 3<br/>1 2 3<br/>1 3 2<br/>3 2 0<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "2 2<br/>1 1 3<br/>1 2 3<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 845,
+    "index": "G",
+    "name": "Shortest Path Problem?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "math"
+    ],
+    "solvedCount": 1511
+}

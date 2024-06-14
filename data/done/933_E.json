@@ -1,0 +1,34 @@
+{
+    "title": "E. A Preponderant Reunion",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">East or west, home is best. That's why family reunion, the indispensable necessity of Lunar New Year celebration, is put in such a position.</span></p><p>After the reunion dinner, Little Tommy plays a game with the family. Here is a concise introduction to this game: </p><ol> <li> There is a sequence of <span class=\"tex-span\"><i>n</i></span> non-negative integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> in the beginning. It is ruled that each integer in this sequence should be non-negative <span class=\"tex-font-style-bf\">at any time</span>. </li><li> You can select two <span class=\"tex-font-style-bf\">consecutive positive</span> integers in this sequence, <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>n</i>)</span>, and then decrease them by their minimum (i.\u00a0e. <span class=\"tex-span\"><i>min</i>(<i>p</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>p</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub>)</span>), the cost of this operation is equal to <span class=\"tex-span\"><i>min</i>(<i>p</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>p</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub>)</span>. We call such operation as a <span class=\"tex-font-style-it\">descension</span>. </li><li> The game immediately ends when there are no two consecutive positive integers. Your task is to end the game so that the total cost of your operations is as small as possible. </li></ol><p>Obviously, every game ends after at most <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> descensions. Please share your solution of this game with the lowest cost.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093\u00b710<sup class=\"upper-index\">5</sup>)</span>.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>,\u2009<i>i</i>\u2009=\u20091,\u20092,\u2009...,\u2009<i>n</i>)</span>.</p>",
+    "outputSpecification": "<p>In the first line print one integer as the number of descensions <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(0\u2009\u2264\u2009<i>m</i>\u2009\u2264\u2009<i>n</i>\u2009-\u20091)</span>.</p><p>In the next <span class=\"tex-span\"><i>m</i></span> lines print the descensions chronologically. More precisely, in each line of the next <span class=\"tex-span\"><i>m</i></span> lines print one integer <span class=\"tex-span\"><i>i</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>n</i>)</span> representing a descension would operate on <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span> such that all the descensions could be utilized from top to bottom.</p><p>If there are many possible solutions to reach the minimal cost, print any of them.</p>",
+    "samples": [
+        {
+            "input": "4<br/>2 1 3 1<br/>",
+            "output": "2<br/>1<br/>3<br/>"
+        },
+        {
+            "input": "5<br/>2 2 1 3 1<br/>",
+            "output": "3<br/>2<br/>1<br/>4<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, one possible best solution is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9248227dd2a5fa16d275273b9219a6e5a3560846.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, of which the cost is <span class=\"tex-span\">1\u2009+\u20091\u2009=\u20092</span>.</p><p>In the second sample, one possible best solution is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8f91058897d4137e5df572ebfbf65e2a7d88692a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, of which the cost is <span class=\"tex-span\">1\u2009+\u20091\u2009+\u20091\u2009=\u20093</span>.</p>",
+    "contestId": 933,
+    "index": "E",
+    "name": "A Preponderant Reunion",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "dp"
+    ],
+    "solvedCount": 186
+}

@@ -1,0 +1,33 @@
+{
+    "title": "G. The Fraction",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Periodic decimal fraction is usually written as: <span class=\"tex-font-style-tt\">[entire_part.non-periodic_part (period)]</span>. Any simple fraction can be represented as a periodic decimal fraction and vice versa. For example, the decimal fraction <span class=\"tex-span\">0.2(45)</span> corresponds to a fraction <span class=\"tex-span\">27\u2009/\u2009110</span>. Your task is to convert the periodic fraction to a simple periodic fraction.</p>",
+    "inputSpecification": "<p>The first line contains the periodic decimal fraction <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">0\u2009&lt;\u2009<i>x</i>\u2009&lt;\u20091</span>) in the format described in the statement. The total number of digits in the period and non-periodic part of the fraction does not exceed 8. Non-periodic part may be absent, the periodic part can't be absent (but it can be equal to any non-negative number).</p>",
+    "outputSpecification": "<p>Print the representation of the fraction <span class=\"tex-span\"><i>x</i></span> as a simple fraction <span class=\"tex-span\"><i>p</i>\u2009/\u2009<i>q</i></span>, where <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\"><i>q</i></span> are mutually prime integers.</p>",
+    "samples": [
+        {
+            "input": "0.2(45)<br/>",
+            "output": "27/110<br/>"
+        },
+        {
+            "input": "0.75(0)<br/>",
+            "output": "3/4<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 683,
+    "index": "G",
+    "name": "The Fraction",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 130
+}

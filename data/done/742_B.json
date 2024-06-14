@@ -1,0 +1,35 @@
+{
+    "title": "B. Arpa\u2019s obvious problem and Mehrdad\u2019s terrible solution",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">There are some beautiful girls in Arpa\u2019s land as mentioned before.</span></p><p>Once Arpa came up with an obvious problem:</p><p>Given an array and a number <span class=\"tex-span\"><i>x</i></span>, count the number of pairs of indices <span class=\"tex-span\"><i>i</i>,\u2009<i>j</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>j</i>\u2009\u2264\u2009<i>n</i></span>) such that <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e662849e402231f44df5caaa0b73782e1f4023d9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/736746f0b23eaf899b476d924bdc54d2d1b0f6cd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is bitwise <span class=\"tex-font-style-tt\">xor</span> operation (see notes for explanation).</p><center> <img class=\"tex-graphics\" height=\"222px\" src=\"https://espresso.codeforces.com/44b8fbc058d94c0842a1d749f30b935e983e648b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"210px\"/> </center><p>Immediately, Mehrdad discovered a terrible solution that nobody trusted. Now Arpa needs your help to implement the solution to that problem.</p>",
+    "inputSpecification": "<p>First line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20090\u2009\u2264\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the number of elements in the array and the integer <span class=\"tex-span\"><i>x</i></span>.</p><p>Second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>)\u00a0\u2014 the elements of the array.</p>",
+    "outputSpecification": "<p>Print a single integer: the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "2 3<br/>1 2<br/>",
+            "output": "1"
+        },
+        {
+            "input": "6 1<br/>5 1 2 3 4 1<br/>",
+            "output": "2"
+        }
+    ],
+    "note": "<p>In the first sample there is only one pair of <span class=\"tex-span\"><i>i</i>\u2009=\u20091</span> and <span class=\"tex-span\"><i>j</i>\u2009=\u20092</span>. <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bec9071ce5b1039982fe0ae476cd31528ddfa2f3.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> so the answer is <span class=\"tex-span\">1</span>.</p><p>In the second sample the only two pairs are <span class=\"tex-span\"><i>i</i>\u2009=\u20093</span>, <span class=\"tex-span\"><i>j</i>\u2009=\u20094</span> (since <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3701990d023d19c5da0b315b5057d572ec11e4fd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>) and <span class=\"tex-span\"><i>i</i>\u2009=\u20091</span>, <span class=\"tex-span\"><i>j</i>\u2009=\u20095</span> (since <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8c96223ca88621240a5ee6e1498acb7e4ce0eb44.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>).</p><p>A bitwise <span class=\"tex-font-style-tt\">xor</span> takes two bit integers of equal length and performs the logical <span class=\"tex-font-style-tt\">xor</span> operation on each pair of corresponding bits. The result in each position is <span class=\"tex-span\">1</span> if only the first bit is <span class=\"tex-span\">1</span> or only the second bit is <span class=\"tex-span\">1</span>, but will be <span class=\"tex-span\">0</span> if both are <span class=\"tex-span\">0</span> or both are <span class=\"tex-span\">1</span>. You can read more about bitwise <span class=\"tex-font-style-tt\">xor</span> operation here: <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#XOR\">https://en.wikipedia.org/wiki/Bitwise_operation#XOR</a>.</p>",
+    "contestId": 742,
+    "index": "B",
+    "name": "Arpa\u2019s obvious problem and Mehrdad\u2019s terrible solution",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 9105
+}

@@ -1,0 +1,37 @@
+{
+    "title": "E. Summer Earnings",
+    "timeLimit": {
+        "value": 9.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Many schoolchildren look for a job for the summer, and one day, when Gerald was still a schoolboy, he also decided to work in the summer. But as Gerald was quite an unusual schoolboy, he found quite unusual work. A certain Company agreed to pay him a certain sum of money if he draws them three identical circles on a plane. The circles must not interfere with each other (but they may touch each other). He can choose the centers of the circles only from the <span class=\"tex-span\"><i>n</i></span> options granted by the Company. He is free to choose the radius of the circles himself (all three radiuses must be equal), but please note that the larger the radius is, the more he gets paid. </p><p>Help Gerald earn as much as possible.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> \u2014 the number of centers (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20093000</span>). The following <span class=\"tex-span\"><i>n</i></span> lines each contain two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">4</sup>\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>) \u2014 the coordinates of potential circle centers, provided by the Company.</p><p>All given points are distinct.</p>",
+    "outputSpecification": "<p>Print a single real number \u2014 maximum possible radius of circles. The answer will be accepted if its relative or absolute error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>0 1<br/>1 0<br/>1 1<br/>",
+            "output": "0.50000000000000000000<br/>"
+        },
+        {
+            "input": "7<br/>2 -3<br/>-2 -3<br/>3 0<br/>-3 -1<br/>1 -2<br/>2 -2<br/>-1 0<br/>",
+            "output": "1.58113883008418980000<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 333,
+    "index": "E",
+    "name": "Summer Earnings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "geometry",
+        "sortings"
+    ],
+    "solvedCount": 1076
+}

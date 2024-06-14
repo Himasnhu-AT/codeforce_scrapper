@@ -1,0 +1,36 @@
+{
+    "title": "C. Board Game",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Polycarp and Vasiliy love simple logical games. Today they play a game with infinite chessboard and one pawn for each player. Polycarp and Vasiliy move in turns, Polycarp starts. In each turn Polycarp can move his pawn from cell <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> to <span class=\"tex-span\">(<i>x</i>\u2009-\u20091,\u2009<i>y</i>)</span> or <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009-\u20091)</span>. Vasiliy can move his pawn from <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> to one of cells: <span class=\"tex-span\">(<i>x</i>\u2009-\u20091,\u2009<i>y</i>),\u2009(<i>x</i>\u2009-\u20091,\u2009<i>y</i>\u2009-\u20091)</span> and <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>\u2009-\u20091)</span>. <span class=\"tex-font-style-bf\">Both players</span> are also allowed to skip move. </p><p>There are some additional restrictions \u2014 a player is forbidden to move his pawn to a cell with negative <span class=\"tex-span\"><i>x</i></span>-coordinate or <span class=\"tex-span\"><i>y</i></span>-coordinate or to the cell containing opponent's pawn The winner is the first person to reach cell <span class=\"tex-span\">(0,\u20090)</span>. </p><p>You are given the starting coordinates of both pawns. Determine who will win if both of them play optimally well.</p>",
+    "inputSpecification": "<p>The first line contains four integers: <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>p</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>p</i></sub>,\u2009<i>x</i><sub class=\"lower-index\"><i>v</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>v</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>p</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>p</i></sub>,\u2009<i>x</i><sub class=\"lower-index\"><i>v</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>v</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span> \u2014 Polycarp's and Vasiliy's starting coordinates.</p><p>It is guaranteed that in the beginning the pawns are in different cells and none of them is in the cell <span class=\"tex-span\">(0,\u20090)</span>.</p>",
+    "outputSpecification": "<p>Output the name of the winner: \"<span class=\"tex-font-style-tt\">Polycarp</span>\" or \"<span class=\"tex-font-style-tt\">Vasiliy</span>\".</p>",
+    "samples": [
+        {
+            "input": "2 1 2 2<br/>",
+            "output": "Polycarp<br/>"
+        },
+        {
+            "input": "4 7 7 4<br/>",
+            "output": "Vasiliy<br/>"
+        }
+    ],
+    "note": "<p>In the first sample test Polycarp starts in <span class=\"tex-span\">(2,\u20091)</span> and will move to <span class=\"tex-span\">(1,\u20091)</span> in the first turn. No matter what his opponent is doing, in the second turn Polycarp can move to <span class=\"tex-span\">(1,\u20090)</span> and finally to <span class=\"tex-span\">(0,\u20090)</span> in the third turn.</p>",
+    "contestId": 533,
+    "index": "C",
+    "name": "Board Game",
+    "type": "PROGRAMMING",
+    "tags": [
+        "games",
+        "greedy",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 2164
+}

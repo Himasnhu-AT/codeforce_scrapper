@@ -1,0 +1,47 @@
+{
+    "title": "E. Sandy and Nuts",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\">Rooted tree</span> is a connected graph without any simple cycles with one vertex selected as a root. In this problem the vertex number <span class=\"tex-span\">1</span> will always serve as a root.</p><p><span class=\"tex-font-style-it\">Lowest common ancestor</span> of two vertices <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> is the farthest from the root vertex that lies on both the path from <span class=\"tex-span\"><i>u</i></span> to the root and on path from <span class=\"tex-span\"><i>v</i></span> to the root. We will denote it as <span class=\"tex-span\"><i>LCA</i>(<i>u</i>,\u2009<i>v</i>)</span>.</p><p>Sandy had a rooted tree consisting of <span class=\"tex-span\"><i>n</i></span> vertices that she used to store her nuts. Unfortunately, the underwater storm broke her tree and she doesn't remember all it's edges. She only managed to restore <span class=\"tex-span\"><i>m</i></span> edges of the initial tree and <span class=\"tex-span\"><i>q</i></span> triples <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span>, for which she supposes <span class=\"tex-span\"><i>LCA</i>(<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>)\u2009=\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub></span>.</p><p>Help Sandy count the number of trees of size <span class=\"tex-span\"><i>n</i></span> with vertex <span class=\"tex-span\">1</span> as a root, that match all the information she remembered. If she made a mess and there are no such trees then print <span class=\"tex-span\">0</span>. Two rooted trees are considered to be distinct if there exists an edge that occur in one of them and doesn't occur in the other one.</p>",
+    "inputSpecification": "<p>The first line of the input contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200913,\u20090\u2009\u2264\u2009<i>m</i>\u2009&lt;\u2009<i>n</i>,\u20090\u2009\u2264\u2009<i>q</i>\u2009\u2264\u2009100</span>)\u00a0\u2014 the number of vertices, the number of edges and <span class=\"tex-span\"><i>LCA</i></span> triples remembered by Sandy respectively.</p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines contains two integers <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>,\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2260\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub></span>)\u00a0\u2014 the numbers of vertices connected by the <span class=\"tex-span\"><i>i</i></span>-th edge. It's guaranteed that this set of edges is a subset of edges of some tree.</p><p>The last <span class=\"tex-span\"><i>q</i></span> lines contain the triplets of numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>)</span>. Each of these triples define <span class=\"tex-span\"><i>LCA</i>(<i>a</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>)\u2009=\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub></span>. It's <span class=\"tex-font-style-bf\">not guaranteed</span> that there exists a tree that satisfy all the given <span class=\"tex-span\"><i>LCA</i></span> conditions.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the number of trees of size <span class=\"tex-span\"><i>n</i></span> that satisfy all the conditions.</p>",
+    "samples": [
+        {
+            "input": "4 0 0<br/>",
+            "output": "16<br/>"
+        },
+        {
+            "input": "4 0 1<br/>3 4 2<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "3 1 0<br/>1 2<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "3 0 2<br/>2 3 2<br/>2 3 1<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "4 1 2<br/>1 2<br/>2 2 2<br/>3 4 2<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the second sample correct answer looks like this:</p><center> <img class=\"tex-graphics\" height=\"265px\" src=\"https://espresso.codeforces.com/aa27cdb15a4657d090da994b9418aca1e2156ef1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"227px\"/> </center><p>In the third sample there are two possible trees:</p><center> <img class=\"tex-graphics\" height=\"340px\" src=\"https://espresso.codeforces.com/4feac40931f142969f45a39e13e29207e279cc49.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"113px\"/> </center><center> <img class=\"tex-graphics\" height=\"265px\" src=\"https://espresso.codeforces.com/1a6f9e9bce13822fcab643e1bc7b2b5cd857481a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\" width=\"227px\"/> </center><p>In the fourth sample the answer is <span class=\"tex-span\">0</span> because the information about <span class=\"tex-span\"><i>LCA</i></span> is inconsistent.</p>",
+    "contestId": 599,
+    "index": "E",
+    "name": "Sandy and Nuts",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "trees"
+    ],
+    "solvedCount": 626
+}

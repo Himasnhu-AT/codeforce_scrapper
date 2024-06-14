@@ -1,0 +1,34 @@
+{
+    "title": "D. Taxes",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mr. Funt now lives in a country with a very specific tax laws. The total income of mr. Funt during this year is equal to <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\"><i>n</i>\u2009\u2265\u20092</span>) burles and the amount of tax he has to pay is calculated as the maximum divisor of <span class=\"tex-span\"><i>n</i></span> (not equal to <span class=\"tex-span\"><i>n</i></span>, of course). For example, if <span class=\"tex-span\"><i>n</i>\u2009=\u20096</span> then Funt has to pay <span class=\"tex-span\">3</span> burles, while for <span class=\"tex-span\"><i>n</i>\u2009=\u200925</span> he needs to pay <span class=\"tex-span\">5</span> and if <span class=\"tex-span\"><i>n</i>\u2009=\u20092</span> he pays only <span class=\"tex-span\">1</span> burle.</p><p>As mr. Funt is a very opportunistic person he wants to cheat a bit. In particular, he wants to split the initial <span class=\"tex-span\"><i>n</i></span> in several parts <span class=\"tex-span\"><i>n</i><sub class=\"lower-index\">1</sub>\u2009+\u2009<i>n</i><sub class=\"lower-index\">2</sub>\u2009+\u2009...\u2009+\u2009<i>n</i><sub class=\"lower-index\"><i>k</i></sub>\u2009=\u2009<i>n</i></span> (here <span class=\"tex-span\"><i>k</i></span> is arbitrary, even <span class=\"tex-span\"><i>k</i>\u2009=\u20091</span> is allowed) and pay the taxes for each part separately. He can't make some part equal to <span class=\"tex-span\">1</span> because it will reveal him. So, the condition <span class=\"tex-span\"><i>n</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2265\u20092</span> should hold for all <span class=\"tex-span\"><i>i</i></span> from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>k</i></span>.</p><p>Ostap Bender wonders, how many money Funt has to pay (i.e. minimal) if he chooses and optimal way to split <span class=\"tex-span\"><i>n</i></span> in parts.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the total year income of mr. Funt.</p>",
+    "outputSpecification": "<p>Print one integer\u00a0\u2014 minimum possible number of burles that mr. Funt has to pay as a tax.</p>",
+    "samples": [
+        {
+            "input": "4<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "27<br/>",
+            "output": "3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 735,
+    "index": "D",
+    "name": "Taxes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 12904
+}

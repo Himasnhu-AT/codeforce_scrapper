@@ -1,0 +1,33 @@
+{
+    "title": "D. Dividing Kingdom II",
+    "timeLimit": {
+        "value": 6.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Long time ago, there was a great kingdom and it was being ruled by The Great Arya and Pari The Great. These two had some problems about the numbers they like, so they decided to divide the great kingdom between themselves.</p><p>The great kingdom consisted of <span class=\"tex-span\"><i>n</i></span> cities numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> bidirectional roads between these cities, numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span>. The <span class=\"tex-span\"><i>i</i></span>-th road had length equal to <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span>. The Great Arya and Pari The Great were discussing about destructing some prefix (all road with numbers less than some <span class=\"tex-span\"><i>x</i></span>) and suffix (all roads with numbers greater than some <span class=\"tex-span\"><i>x</i></span>) of the roads so there will remain only the roads with numbers <span class=\"tex-span\"><i>l</i>,\u2009<i>l</i>\u2009+\u20091,\u2009...,\u2009<i>r</i>\u2009-\u20091</span> and <span class=\"tex-span\"><i>r</i></span>.</p><p>After that they will divide the great kingdom into two pieces (with each city belonging to exactly one piece) such that the <span class=\"tex-font-style-it\">hardness</span> of the division is <span class=\"tex-font-style-bf\">minimized</span>. The hardness of a division is the <span class=\"tex-font-style-bf\">maximum length</span> of a road such that its both endpoints are in the same piece of the kingdom. In case there is no such road, the hardness of the division is considered to be equal to <span class=\"tex-span\">\u2009-\u20091</span>.</p><p>Historians found the map of the great kingdom, and they have <span class=\"tex-span\"><i>q</i></span> guesses about the <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span> chosen by those great rulers. Given these data, for each guess <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> print the minimum possible hardness of the division of the kingdom.</p>",
+    "inputSpecification": "<p>The first line of the input contains three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>q</i>\u2009\u2264\u20091000</span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/35f3aad2494424c9e12bd0da665aab328b1f30a9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>)\u00a0\u2014 the number of cities and roads in the great kingdom, and the number of guesses, respectively.</p><p>The <span class=\"tex-span\"><i>i</i></span>-th line of the following <span class=\"tex-span\"><i>m</i></span> lines contains three integers <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span>,\u2009<span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2009\u2264\u2009\u2009<i>u</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009\u2009<i>v</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2009\u2264\u2009\u2009<i>n</i>,\u20090\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>), denoting the road number <span class=\"tex-span\"><i>i</i></span> connects cities <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i></sub></span> and its length is equal <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span>. It's guaranteed that no road connects the city to itself and no pair of cities is connected by more than one road.</p><p>Each of the next <span class=\"tex-span\"><i>q</i></span> lines contains a pair of integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span> and\u2009<span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>m</i></span>)\u00a0\u2014 a guess from the historians about the remaining roads in the kingdom.</p>",
+    "outputSpecification": "<p>For each guess print the minimum possible hardness of the division in described scenario.</p>",
+    "samples": [
+        {
+            "input": "5 6 5<br/>5 4 86<br/>5 1 0<br/>1 3 38<br/>2 1 33<br/>2 4 28<br/>2 3 40<br/>3 5<br/>2 6<br/>1 3<br/>2 3<br/>1 6<br/>",
+            "output": "-1<br/>33<br/>-1<br/>-1<br/>33<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 687,
+    "index": "D",
+    "name": "Dividing Kingdom II",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dsu",
+        "graphs",
+        "sortings"
+    ],
+    "solvedCount": 856
+}

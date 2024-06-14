@@ -1,0 +1,38 @@
+{
+    "title": "A. Slightly Decreasing Permutations",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-it\"><span class=\"tex-font-style-bf\">Permutation</span> <span class=\"tex-span\"><i>p</i></span> is an ordered set of integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009\u2009...,\u2009\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>, consisting of <span class=\"tex-span\"><i>n</i></span> distinct positive integers, each of them doesn't exceed <span class=\"tex-span\"><i>n</i></span>. We'll denote the <span class=\"tex-span\"><i>i</i></span>-th element of permutation <span class=\"tex-span\"><i>p</i></span> as <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>. We'll call number <span class=\"tex-span\"><i>n</i></span> the size or the length of permutation <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009\u2009...,\u2009\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span>.</span></p><p>The decreasing coefficient of permutation <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> is the number of such <span class=\"tex-span\"><i>i</i> (1\u2009\u2264\u2009<i>i</i>\u2009&lt;\u2009<i>n</i>)</span>, that <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&gt;\u2009<i>p</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span>.</p><p>You have numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span>. Your task is to print the permutation of length <span class=\"tex-span\"><i>n</i></span> with decreasing coefficient <span class=\"tex-span\"><i>k</i></span>.</p>",
+    "inputSpecification": "<p>The single line contains two space-separated integers: <span class=\"tex-span\"><i>n</i>,\u2009<i>k</i> (1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>,\u20090\u2009\u2264\u2009<i>k</i>\u2009&lt;\u2009<i>n</i>)</span> \u2014 the permutation length and the decreasing coefficient.</p>",
+    "outputSpecification": "<p>In a single line print <span class=\"tex-span\"><i>n</i></span> space-separated integers: <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> \u2014 the permutation of length <span class=\"tex-span\"><i>n</i></span> with decreasing coefficient <span class=\"tex-span\"><i>k</i></span>. </p><p>If there are several permutations that meet this condition, print any of them. It is guaranteed that the permutation with the sought parameters exists.</p>",
+    "samples": [
+        {
+            "input": "5 2<br/>",
+            "output": "1 5 2 4 3<br/>"
+        },
+        {
+            "input": "3 0<br/>",
+            "output": "1 2 3<br/>"
+        },
+        {
+            "input": "3 2<br/>",
+            "output": "3 2 1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 285,
+    "index": "A",
+    "name": "Slightly Decreasing Permutations",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 13150
+}

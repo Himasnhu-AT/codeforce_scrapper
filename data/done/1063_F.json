@@ -1,0 +1,35 @@
+{
+    "title": "F. String Journey",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>We call a sequence of strings <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>k</i></sub></span> a <span class=\"tex-font-style-it\">journey</span> of length <span class=\"tex-span\"><i>k</i></span>, if for each <span class=\"tex-span\"><i>i</i>\u2009&gt;\u20091</span> <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> is a substring of <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub></span> and length of <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> is strictly less than length of <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub></span>. For example, <span class=\"tex-span\">{<i>ab</i>,\u2009<i>b</i>}</span> is a journey, but <span class=\"tex-span\">{<i>ab</i>,\u2009<i>c</i>}</span> and <span class=\"tex-span\">{<i>a</i>,\u2009<i>a</i>}</span> are not.</p><p>Define a <span class=\"tex-font-style-it\">journey on string</span> <span class=\"tex-span\"><i>s</i></span> as journey <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>k</i></sub></span>, such that all its parts can be nested inside <span class=\"tex-span\"><i>s</i></span> in such a way that there exists a sequence of strings <span class=\"tex-span\"><i>u</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>u</i><sub class=\"lower-index\"><i>k</i>\u2009+\u20091</sub></span> (each of these strings can be empty) and <span class=\"tex-span\"><i>s</i>\u2009=\u2009<i>u</i><sub class=\"lower-index\">1</sub>\u2009<i>t</i><sub class=\"lower-index\">1</sub>\u2009<i>u</i><sub class=\"lower-index\">2</sub>\u2009<i>t</i><sub class=\"lower-index\">2</sub>... <i>u</i><sub class=\"lower-index\"><i>k</i></sub>\u2009<i>t</i><sub class=\"lower-index\"><i>k</i></sub>\u2009<i>u</i><sub class=\"lower-index\"><i>k</i>\u2009+\u20091</sub></span>. As an example, <span class=\"tex-span\">{<i>ab</i>,\u2009<i>b</i>}</span> is a journey on string <span class=\"tex-span\"><i>abb</i></span>, but not on <span class=\"tex-span\"><i>bab</i></span> because the journey strings <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> should appear from the left to the right.</p><p>The <span class=\"tex-font-style-it\">length</span> of a journey on a string is the number of strings in it. Determine the maximum possible length of a journey on the given string <span class=\"tex-span\"><i>s</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009500\u2009000</span>)\u00a0\u2014 the length of string <span class=\"tex-span\"><i>s</i></span>.</p><p>The second line contains the string <span class=\"tex-span\"><i>s</i></span> itself, consisting of <span class=\"tex-span\"><i>n</i></span> lowercase Latin letters.</p>",
+    "outputSpecification": "<p>Print one number\u00a0\u2014 the maximum possible length of string journey on <span class=\"tex-span\"><i>s</i></span>.</p>",
+    "samples": [
+        {
+            "input": "7<br/>abcdbcc<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "4<br/>bbcb<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, the string journey of maximum length is <span class=\"tex-span\">{<i>abcd</i>,\u2009<i>bc</i>,\u2009<i>c</i>}</span>.</p><p>In the second sample, one of the suitable journeys is <span class=\"tex-span\">{<i>bb</i>,\u2009<i>b</i>}</span>.</p>",
+    "contestId": 1063,
+    "index": "F",
+    "name": "String Journey",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dp",
+        "string suffix structures"
+    ],
+    "solvedCount": 805
+}

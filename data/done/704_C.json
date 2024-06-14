@@ -1,0 +1,40 @@
+{
+    "title": "C. Black Widow",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Natalia Romanova is trying to test something on the new gun S.H.I.E.L.D gave her. In order to determine the result of the test, she needs to find the number of answers to a certain equation. The equation is of form:</p><p><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a67291804bcb142d1b1db4b8216291ef927e26bf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>Where <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5e8ef042050cb082b91c8fb3ee50d2c87b494854.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> represents logical OR and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c4b7092c0f7ce6535f2574569c98f7b3c2fe2c5f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> represents logical exclusive OR (XOR), and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span> are some boolean variables or their negations. Natalia calls the left side of the equation a XNF formula. Each statement in brackets is called a clause, and <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span> are called literals.</p><p>In the equation Natalia has, the left side is actually a 2-XNF-2 containing variables <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>m</i></sub></span> and their negations. An XNF formula is 2-XNF-2 if:</p><ol> <li> For each <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20092</span>, i.e. the size of each clause doesn't exceed two. </li><li> Each variable occurs <span class=\"tex-font-style-bf\">in the formula at most two times</span> (with negation and without negation in total). Please note that it's possible that a variable occurs twice but its negation doesn't occur in any clause (or vice versa). </li></ol><p>Natalia is given a formula of <span class=\"tex-span\"><i>m</i></span> variables, consisting of <span class=\"tex-span\"><i>n</i></span> clauses. Please, make sure to check the samples in order to properly understand how the formula looks like.</p><p>Natalia is more into fight than theory, so she asked you to tell her the number of answers to this equation. More precisely, you need to find the number of ways to set <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>m</i></sub></span> with <span class=\"tex-span\"><i>true</i></span> and <span class=\"tex-span\"><i>false</i></span> (out of total of <span class=\"tex-span\">2<sup class=\"upper-index\"><i>m</i></sup></span> ways) so that the equation is satisfied. Since this number can be extremely large, you need to print the answer modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p><p>Please, note that some variable may appear twice in one clause, or not appear in the equation at all (but still, setting it to <span class=\"tex-span\"><i>false</i></span> or <span class=\"tex-span\"><i>true</i></span> gives different ways to set variables).</p>",
+    "inputSpecification": "<p>The first line of input contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100\u2009000</span>)\u00a0\u2014 the number of clauses and the number of variables respectively.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain the formula. The <span class=\"tex-span\"><i>i</i></span>-th of them starts with an integer <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00a0\u2014 the number of literals in the <span class=\"tex-span\"><i>i</i></span>-th clause. It is followed by <span class=\"tex-span\"><i>k</i><sub class=\"lower-index\"><i>i</i></sub></span> non-zero integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>,\u20091</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>k</i><sub class=\"lower-index\"><i>i</i></sub></sub></span>. If <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub>\u2009&gt;\u20090</span> then <span class=\"tex-span\"><i>v</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span> is <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></sub></span> otherwise it's negation of <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">\u2009-\u2009<i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20092</span>, <span class=\"tex-span\">\u2009-\u2009<i>m</i>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub>\u2009\u2264\u2009<i>m</i></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub>\u2009\u2260\u20090</span>).</p>",
+    "outputSpecification": "<p>Print the answer modulo <span class=\"tex-span\">1\u2009000\u2009000\u2009007</span> (<span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>) in one line.</p>",
+    "samples": [
+        {
+            "input": "6 7<br/>2 4 -2<br/>2 6 3<br/>2 -7 1<br/>2 -5 1<br/>2 3 6<br/>2 -2 -5<br/>",
+            "output": "48<br/>"
+        },
+        {
+            "input": "8 10<br/>1 -5<br/>2 4 -6<br/>2 -2 -6<br/>2 -7 9<br/>2 10 -1<br/>2 3 -1<br/>2 -8 9<br/>2 5 8<br/>",
+            "output": "544<br/>"
+        },
+        {
+            "input": "2 3<br/>2 1 1<br/>2 -3 3<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>The equation in the first sample is:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/79796a51feb310dbecd7a236356d0599a2874c1d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>The equation in the second sample is:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0bf5953fc0531771e961b12ae10ef2007a539f38.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>The equation in the third sample is:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b655529d1d18181e0e752f7c15a00d9a82ad2d53.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center>",
+    "contestId": 704,
+    "index": "C",
+    "name": "Black Widow",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "graphs",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 458
+}

@@ -1,0 +1,37 @@
+{
+    "title": "C. Wonderful Randomized Sum",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Learn, learn and learn again \u2014 Valera has to do this every day. He is studying at mathematical school, where math is the main discipline. The mathematics teacher loves her discipline very much and tries to cultivate this love in children. That's why she always gives her students large and difficult homework. Despite that Valera is one of the best students, he failed to manage with the new homework. That's why he asks for your help. He has the following task. A sequence of <span class=\"tex-span\"><i>n</i></span> numbers is given. A prefix of a sequence is the part of the sequence (possibly empty), taken from the start of the sequence. A suffix of a sequence is the part of the sequence (possibly empty), taken from the end of the sequence. It is allowed to sequentially make two operations with the sequence. The first operation is to take some prefix of the sequence and multiply all numbers in this prefix by <span class=\"tex-span\">\u2009-\u20091</span>. The second operation is to take some suffix and multiply all numbers in it by <span class=\"tex-span\">\u2009-\u20091</span>. The chosen prefix and suffix may intersect. What is the maximum total sum of the sequence that can be obtained by applying the described operations?</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>) \u2014 amount of elements in the sequence. The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">\u2009-\u200910<sup class=\"upper-index\">4</sup>\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>) \u2014 the sequence itself.</p>",
+    "outputSpecification": "<p>The first and the only line of the output should contain the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "3<br/>-1 -2 -3<br/>",
+            "output": "6<br/>"
+        },
+        {
+            "input": "5<br/>-4 2 0 5 0<br/>",
+            "output": "11<br/>"
+        },
+        {
+            "input": "5<br/>-1 10 -5 10 -2<br/>",
+            "output": "18<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 33,
+    "index": "C",
+    "name": "Wonderful Randomized Sum",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy"
+    ],
+    "solvedCount": 2891
+}

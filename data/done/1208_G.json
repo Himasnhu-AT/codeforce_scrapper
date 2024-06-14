@@ -1,0 +1,35 @@
+{
+    "title": "G. Polygons",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given two integers $$$n$$$ and $$$k$$$.</p><p>You need to construct $$$k$$$ regular polygons having same <a href=\"https://en.wikipedia.org/wiki/Circumscribed_circle\">circumcircle</a>, with <span class=\"tex-font-style-bf\">distinct</span> number of sides $$$l$$$ between $$$3$$$ and $$$n$$$. </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/8ca6695475048e813597541ede18588574e39aef.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">Illustration for the first example.</span> </center><p>You can rotate them to minimize the total number of distinct points on the circle. Find the minimum number of such points.</p>",
+    "inputSpecification": "<p>The only line of input contains two integers $$$n$$$ and $$$k$$$ ($$$3 \\le n \\le 10^{6}$$$, $$$1 \\le k \\le n-2$$$), the maximum number of sides of a polygon and the number of polygons to construct, respectively.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the minimum number of points required for $$$k$$$ polygons.</p>",
+    "samples": [
+        {
+            "input": "\n6 2\n",
+            "output": "\n6\n"
+        },
+        {
+            "input": "\n200 50\n",
+            "output": "\n708\n"
+        }
+    ],
+    "note": "<p>In the first example, we have $$$n = 6$$$ and $$$k = 2$$$. So, we have $$$4$$$ polygons with number of sides $$$3$$$, $$$4$$$, $$$5$$$ and $$$6$$$ to choose from and if we choose the triangle and the hexagon, then we can arrange them as shown in the picture in the statement.</p><p>Hence, the minimum number of points required on the circle is $$$6$$$, which is also the minimum overall possible sets.</p>",
+    "contestId": 1208,
+    "index": "G",
+    "name": "Polygons",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 731
+}

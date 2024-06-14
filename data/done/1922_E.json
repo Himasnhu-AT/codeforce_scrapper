@@ -1,0 +1,33 @@
+{
+    "title": "E. Increasing Subsequences",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's recall that an increasing subsequence of the array $$$a$$$ is a sequence that can be obtained from it by removing some elements without changing the order of the remaining elements, and the remaining elements are strictly increasing (i.\u2009e $$$a_{b_1} &lt; a_{b_2} &lt; \\dots &lt; a_{b_k}$$$ and $$$b_1 &lt; b_2 &lt; \\dots &lt; b_k$$$). Note that an empty subsequence is also increasing.</p><p>You are given a positive integer $$$X$$$. Your task is to find an array of integers of length <span class=\"tex-font-style-bf\">at most $$$200$$$</span>, such that it has exactly $$$X$$$ increasing subsequences, or report that there is no such array. If there are several answers, you can print any of them.</p><p>If two subsequences consist of the same elements, but correspond to different positions in the array, they are considered different (for example, the array $$$[2, 2]$$$ has two different subsequences equal to $$$[2]$$$).</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains a single integer $$$X$$$ ($$$2 \\le X \\le 10^{18}$$$).</p>",
+    "outputSpecification": "<p>For each query, print the answer to it. If it is impossible to find the required array, print <span class=\"tex-font-style-tt\">-1</span> on the first line. Otherwise, print a positive integer $$$n$$$ on the first line\u00a0\u2014 the length of the array. On the second line, print $$$n$$$ integers\u00a0\u2014 the required array itself. If there are several answers, you can print any of them. All elements of the array should be in the range $$$[-10^9; 10^9]$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">13</div><div class=\"test-example-line test-example-line-even test-example-line-4\">37</div>",
+            "output": "\n1\n0\n3\n0 1 0\n5\n2 2 3 4 2\n7\n-1 -1 0 0 2 3 -1"
+        }
+    ],
+    "note": null,
+    "contestId": 1922,
+    "index": "E",
+    "name": "Increasing Subsequences",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "divide and conquer",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 7210
+}

@@ -1,0 +1,37 @@
+{
+    "title": "A. Game Outcome",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Sherlock Holmes and Dr. Watson played some game on a checkered board <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>n</i></span> in size. During the game they put numbers on the board's squares by some tricky rules we don't know. However, the game is now over and each square of the board contains exactly one number. To understand who has won, they need to count the number of <span class=\"tex-font-style-underline\">winning</span> squares. To determine if the particular square is winning you should do the following. Calculate the sum of all numbers on the squares that share this column (including the given square) and separately calculate the sum of all numbers on the squares that share this row (including the given square). A square is considered <span class=\"tex-font-style-underline\">winning</span> if the sum of the column numbers is <span class=\"tex-font-style-bf\">strictly</span> greater than the sum of the row numbers.</p><center><img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/5f4f91a40be4f875bdd75333c3e82c331f09d293.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>For instance, lets game was ended like is shown in the picture. Then the purple cell is winning, because the sum of its column numbers equals <span class=\"tex-span\">8\u2009+\u20093\u2009+\u20096\u2009+\u20097\u2009=\u200924</span>, sum of its row numbers equals <span class=\"tex-span\">9\u2009+\u20095\u2009+\u20093\u2009+\u20092\u2009=\u200919</span>, and <span class=\"tex-span\">24\u2009&gt;\u200919</span>.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200930</span>). Each of the following <span class=\"tex-span\"><i>n</i></span> lines contain <span class=\"tex-span\"><i>n</i></span> space-separated integers. The <span class=\"tex-span\"><i>j</i></span>-th number on the <span class=\"tex-span\"><i>i</i></span>-th line represents the number on the square that belongs to the <span class=\"tex-span\"><i>j</i></span>-th column and the <span class=\"tex-span\"><i>i</i></span>-th row on the board. All number on the board are integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\">100</span>.</p>",
+    "outputSpecification": "<p>Print the single number \u2014 the number of the winning squares.</p>",
+    "samples": [
+        {
+            "input": "1<br/>1<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "2<br/>1 2<br/>3 4<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "4<br/>5 7 8 4<br/>9 5 3 2<br/>1 6 6 4<br/>9 5 7 3<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": "<p>In the first example two upper squares are winning.</p><p>In the third example three left squares in the both middle rows are winning:</p><pre class=\"verbatim\">5 7 8 4<br/><span class=\"tex-font-style-bf\"><span class=\"tex-font-style-underline\"><span class=\"tex-span\">9</span> <span class=\"tex-span\">5</span> <span class=\"tex-span\">3</span></span></span> 2<br/><span class=\"tex-font-style-bf\"><span class=\"tex-font-style-underline\"><span class=\"tex-span\">1</span> <span class=\"tex-span\">6</span> <span class=\"tex-span\">6</span></span></span> 4<br/>9 5 7 3<br/></pre>",
+    "contestId": 157,
+    "index": "A",
+    "name": "Game Outcome",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force"
+    ],
+    "solvedCount": 7443
+}

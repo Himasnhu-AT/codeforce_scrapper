@@ -1,0 +1,40 @@
+{
+    "title": "B. Shortest Cycle",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given $$$n$$$ integer numbers $$$a_1, a_2, \\dots, a_n$$$. Consider graph on $$$n$$$ nodes, in which nodes $$$i$$$, $$$j$$$ ($$$i\\neq j$$$) are connected if and only if, $$$a_i$$$ AND $$$a_j\\neq 0$$$, where AND denotes the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#AND\">bitwise AND operation</a>.</p><p>Find the length of the shortest cycle in this graph or determine that it doesn't have cycles at all.</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$n$$$ $$$(1 \\le n \\le 10^5)$$$\u00a0\u2014 number of numbers.</p><p>The second line contains $$$n$$$ integer numbers $$$a_1, a_2, \\dots, a_n$$$ ($$$0 \\le a_i \\le 10^{18}$$$).</p>",
+    "outputSpecification": "<p>If the graph doesn't have any cycles, output $$$-1$$$. Else output the length of the shortest cycle.</p>",
+    "samples": [
+        {
+            "input": "\n4\n3 6 28 9\n",
+            "output": "\n4"
+        },
+        {
+            "input": "\n5\n5 12 9 16 48\n",
+            "output": "\n3"
+        },
+        {
+            "input": "\n4\n1 2 4 8\n",
+            "output": "\n-1"
+        }
+    ],
+    "note": "<p>In the first example, the shortest cycle is $$$(9, 3, 6, 28)$$$.</p><p>In the second example, the shortest cycle is $$$(5, 12, 9)$$$.</p><p>The graph has no cycles in the third example.</p>",
+    "contestId": 1205,
+    "index": "B",
+    "name": "Shortest Cycle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 6477
+}

@@ -1,0 +1,31 @@
+{
+    "title": "D. Split Plus K",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<div class=\"epigraph\"><div class=\"epigraph-text\"><span class=\"tex-font-style-it\"><a href=\"https://soundcloud.com/lux-gg-198448038/desert-ruins\">eliteLAQ - Desert Ruins</a></span></div><div class=\"epigraph-source\">\u2800</div></div><p>There are $$$n$$$ positive integers $$$a_1, a_2, \\dots, a_n$$$ on a blackboard. You are also given a positive integer $$$k$$$. You can perform the following operation some (possibly $$$0$$$) times:</p><ul> <li> choose a number $$$x$$$ on the blackboard; </li><li> erase one occurrence of $$$x$$$; </li><li> write two <span class=\"tex-font-style-bf\">positive</span> integers $$$y$$$, $$$z$$$ such that $$$y+z = x+k$$$ on the blackboard. </li></ul><p>Is it possible to make all the numbers on the blackboard equal? If yes, what is the minimum number of operations you need?</p>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \\le t \\le 10^4$$$). The description of the test cases follows.</p><p>The first line of each test case contains two integers $$$n$$$, $$$k$$$ ($$$1 \\le n \\le 2 \\cdot 10^5$$$, $$$1 \\leq k \\leq 10^{12}$$$)\u00a0\u2014 the number of integers initially on the blackboard and the constant $$$k$$$.</p><p>The second line of each test case contains $$$n$$$ integers $$$a_1, a_2, \\ldots, a_n$$$ ($$$1 \\le a_i \\le 10^{12}$$$)\u00a0\u2014 the initial state of the blackboard.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output a single line containing an integer: the minimum number of operations you need to make all the numbers on the blackboard equal, or $$$-1$$$ if it is impossible.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">9</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">7 11</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 10</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">100 40 100</div><div class=\"test-example-line test-example-line-even test-example-line-4\">2 1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">2 2</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1 2</div><div class=\"test-example-line test-example-line-even test-example-line-6\">1 327869541</div><div class=\"test-example-line test-example-line-even test-example-line-6\">327869541</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">5 26250314066</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">439986238782 581370817372 409476934981 287439719777 737637983182</div><div class=\"test-example-line test-example-line-even test-example-line-8\">5 616753575719</div><div class=\"test-example-line test-example-line-even test-example-line-8\">321037808624 222034505841 214063039282 441536506916 464097941819</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">5 431813672576</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">393004301966 405902283416 900951084746 672201172466 518769038906</div>",
+            "output": "\n3\n1\n4\n-1\n-1\n0\n3119\n28999960732\n-1\n"
+        }
+    ],
+    "note": "<p>In the first test case, $$$k = 1$$$. You can make all the numbers on the blackboard equal to $$$2$$$ with the following operations: </p><ul> <li> Erase $$$x = 4$$$ and write $$$(y, z) = (2, 3)$$$. Note that $$$y+z=x+k$$$. The blackboard now contains the multiset $$$\\{3, 2, 3\\}$$$. </li><li> Erase $$$x = 3$$$ and write $$$(y, z) = (2, 2)$$$. Note that $$$y+z=x+k$$$. The blackboard now contains $$$\\{2, 2, 2, 3\\}$$$. </li><li> Erase $$$x = 3$$$ and write $$$(y, z) = (2, 2)$$$. Note that $$$y+z=x+k$$$. The blackboard now contains $$$\\{2, 2, 2, 2, 2\\}$$$. </li></ul><p>This makes all the numbers equal in $$$3$$$ operations. It can be shown that you cannot make all the numbers equal in less than $$$3$$$ operations.</p><p>In the second test case, $$$k = 3$$$. You can make all the numbers on the blackboard equal to $$$7$$$ with the following operation: </p><ul> <li> Erase $$$x = 11$$$ and write $$$(y, z) = (7, 7)$$$. Note that $$$y+z=x+k$$$. The blackboard now contains $$$\\{7, 7, 7\\}$$$. </li></ul><p>In the third test case, $$$k = 10$$$. You can make all the numbers on the blackboard equal to $$$40$$$ with the following operations: </p><ul> <li> Erase $$$x = 100$$$ and write $$$(y, z) = (70, 40)$$$. Note that $$$y+z=x+k$$$. The blackboard now contains $$$\\{70, 40, 40, 100\\}$$$. </li><li> Erase $$$x = 70$$$ and write $$$(y, z) = (40, 40)$$$. Note that $$$y+z=x+k$$$. The blackboard now contains $$$\\{40, 40, 40, 40, 100\\}$$$. </li><li> Erase $$$x = 100$$$ and write $$$(y, z) = (40, 70)$$$. Note that $$$y+z=x+k$$$. The blackboard now contains $$$\\{40, 40, 40, 40, 40, 70\\}$$$. </li><li> Erase $$$x = 70$$$ and write $$$(y, z) = (40, 40)$$$. Note that $$$y+z=x+k$$$. The blackboard now contains $$$\\{40, 40, 40, 40, 40, 40, 40\\}$$$. </li></ul><p>In the fourth and in the fifth test case, you can show that it is impossible to make all the numbers on the blackboard equal.</p>",
+    "contestId": 1909,
+    "index": "D",
+    "name": "Split Plus K",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 4073
+}

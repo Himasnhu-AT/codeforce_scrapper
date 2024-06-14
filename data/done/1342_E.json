@@ -1,0 +1,43 @@
+{
+    "title": "E. Placing Rooks",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Calculate the number of ways to place $$$n$$$ rooks on $$$n \\times n$$$ chessboard so that both following conditions are met:</p><ul> <li> each empty cell is under attack; </li><li> exactly $$$k$$$ pairs of rooks attack each other. </li></ul><p>An empty cell is under attack if there is at least one rook in the same row or at least one rook in the same column. Two rooks attack each other if they share the same row or column, <span class=\"tex-font-style-it\">and there are no other rooks between them</span>. For example, there are only two pairs of rooks that attack each other in the following picture:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/39e963e792c25d833bed0b97bbe92cc970fe9f67.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">One of the ways to place the rooks for $$$n = 3$$$ and $$$k = 2$$$</span> </center><p>Two ways to place the rooks are considered different if there exists at least one cell which is empty in one of the ways but contains a rook in another way.</p><p>The answer might be large, so print it modulo $$$998244353$$$.</p>",
+    "inputSpecification": "<p>The only line of the input contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\le n \\le 200000$$$; $$$0 \\le k \\le \\frac{n(n - 1)}{2}$$$).</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the number of ways to place the rooks, taken modulo $$$998244353$$$.</p>",
+    "samples": [
+        {
+            "input": "\n3 2\n",
+            "output": "\n6\n"
+        },
+        {
+            "input": "\n3 3\n",
+            "output": "\n0\n"
+        },
+        {
+            "input": "\n4 0\n",
+            "output": "\n24\n"
+        },
+        {
+            "input": "\n1337 42\n",
+            "output": "\n807905441\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1342,
+    "index": "E",
+    "name": "Placing Rooks",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "fft",
+        "math"
+    ],
+    "solvedCount": 2875
+}

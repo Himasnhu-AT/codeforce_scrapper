@@ -1,0 +1,30 @@
+{
+    "title": "A. Number Replacement",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>An integer array $$$a_1, a_2, \\ldots, a_n$$$ is being transformed into an array of lowercase English letters using the following prodecure:</p><p>While there is at least one number in the array: </p><ul> <li> Choose any number $$$x$$$ from the array $$$a$$$, and any letter of the English alphabet $$$y$$$. </li><li> Replace all occurrences of number $$$x$$$ with the letter $$$y$$$. </li></ul><p>For example, if we initially had an array $$$a = [2, 3, 2, 4, 1]$$$, then we could transform it the following way:</p><ul> <li> Choose the number $$$2$$$ and the letter <span class=\"tex-font-style-tt\">c</span>. After that $$$a = [c, 3, c, 4, 1]$$$. </li><li> Choose the number $$$3$$$ and the letter <span class=\"tex-font-style-tt\">a</span>. After that $$$a = [c, a, c, 4, 1]$$$. </li><li> Choose the number $$$4$$$ and the letter <span class=\"tex-font-style-tt\">t</span>. After that $$$a = [c, a, c, t, 1]$$$. </li><li> Choose the number $$$1$$$ and the letter <span class=\"tex-font-style-tt\">a</span>. After that $$$a = [c, a, c, t, a]$$$. </li></ul><p>After the transformation all letters are united into a string, in our example we get the string \"<span class=\"tex-font-style-tt\">cacta</span>\".</p><p>Having the array $$$a$$$ and the string $$$s$$$ determine if the string $$$s$$$ could be got from the array $$$a$$$ after the described transformation?</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ $$$(1 \\leq t \\leq 10^3$$$) \u2014 the number of test cases.</p><p>Then the description of the test cases follows.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$1 \\leq n \\leq 50$$$) \u2014 the length of the array $$$a$$$ and the string $$$s$$$.</p><p>The second line of each test case contains exactly $$$n$$$ integers: $$$a_1, a_2, \\ldots, a_n$$$ ($$$1 \\leq a_i \\leq 50$$$) \u2014 the elements of the array $$$a$$$.</p><p>The third line of each test case contains a string $$$s$$$ of length $$$n$$$, consisting of lowercase English letters. </p>",
+    "outputSpecification": "<p>For each test case, output \"<span class=\"tex-font-style-tt\">YES</span>\", if we can get the string $$$s$$$ from the array $$$a$$$, and \"<span class=\"tex-font-style-tt\">NO</span>\" otherwise. You can output each letter in any case.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">7</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 3 2 4 1</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">cacta</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1</div><div class=\"test-example-line test-example-line-even test-example-line-2\">50</div><div class=\"test-example-line test-example-line-even test-example-line-2\">a</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">11 22</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">ab</div><div class=\"test-example-line test-example-line-even test-example-line-4\">4</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 2 2 1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">aaab</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">1 2 3 2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">aaaaa</div><div class=\"test-example-line test-example-line-even test-example-line-6\">6</div><div class=\"test-example-line test-example-line-even test-example-line-6\">1 10 2 9 3 8</div><div class=\"test-example-line test-example-line-even test-example-line-6\">azzfdb</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">7</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">1 2 3 4 1 1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">abababb</div>",
+            "output": "\nYES\nYES\nYES\nNO\nYES\nYES\nNO\n"
+        }
+    ],
+    "note": "<p>The first test case corresponds to the sample described in the statement.</p><p>In the second test case we can choose the number $$$50$$$ and the letter <span class=\"tex-font-style-tt\">a</span>.</p><p>In the third test case we can choose the number $$$11$$$ and the letter <span class=\"tex-font-style-tt\">a</span>, after that $$$a = [a, 22]$$$. Then we choose the number $$$22$$$ and the letter <span class=\"tex-font-style-tt\">b</span> and get $$$a = [a, b]$$$.</p><p>In the fifth test case we can change all numbers one by one to the letter <span class=\"tex-font-style-tt\">a</span>.</p>",
+    "contestId": 1744,
+    "index": "A",
+    "name": "Number Replacement",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 26563
+}

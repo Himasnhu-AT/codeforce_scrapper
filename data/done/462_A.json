@@ -1,0 +1,34 @@
+{
+    "title": "A. Appleman and Easy Task",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Toastman came up with a very easy task. He gives it to Appleman, but Appleman doesn't know how to solve it. Can you help him?</p><p>Given a <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>n</i></span> checkerboard. Each cell of the board has either character '<span class=\"tex-font-style-tt\">x</span>', or character '<span class=\"tex-font-style-tt\">o</span>'. Is it true that each cell of the board has even number of adjacent cells with '<span class=\"tex-font-style-tt\">o</span>'? Two cells of the board are adjacent if they share a side.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>). Then <span class=\"tex-span\"><i>n</i></span> lines follow containing the description of the checkerboard. Each of them contains <span class=\"tex-span\"><i>n</i></span> characters (either '<span class=\"tex-font-style-tt\">x</span>' or '<span class=\"tex-font-style-tt\">o</span>') without spaces.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" or \"<span class=\"tex-font-style-tt\">NO</span>\" (without the quotes) depending on the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "3<br/>xxo<br/>xox<br/>oxx<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "4<br/>xxxo<br/>xoxo<br/>oxox<br/>xxxx<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 462,
+    "index": "A",
+    "name": "Appleman and Easy Task",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 16607
+}

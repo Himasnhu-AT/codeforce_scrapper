@@ -1,0 +1,33 @@
+{
+    "title": "D. Yaroslav and Divisors",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Yaroslav has an array <span class=\"tex-span\"><i>p</i>\u2009=\u2009<i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>)</span>, consisting of <span class=\"tex-span\"><i>n</i></span> distinct integers. Also, he has <span class=\"tex-span\"><i>m</i></span> queries:</p><ul> <li> Query number <span class=\"tex-span\"><i>i</i></span> is represented as a pair of integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub></span>, <span class=\"tex-span\"><i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>)</span>. </li><li> The answer to the query <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> is the number of pairs of integers <span class=\"tex-span\"><i>q</i></span>, <span class=\"tex-span\"><i>w</i></span> <span class=\"tex-span\">(<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>q</i>,\u2009<i>w</i>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>)</span> such that <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>q</i></sub></span> is the divisor of <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>w</i></sub></span>. </li></ul><p>Help Yaroslav, answer all his queries.</p>",
+    "inputSpecification": "<p>The first line contains the integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup>)</span>. The second line contains <span class=\"tex-span\"><i>n</i></span> distinct integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009<i>p</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>)</span>. The following <span class=\"tex-span\"><i>m</i></span> lines contain Yaroslav's queries. The <span class=\"tex-span\"><i>i</i></span>-th line contains integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i>)</span>.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>m</i></span> integers \u2014 the answers to Yaroslav's queries in the order they appear in the input.</p><p>Please, do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in <span class=\"tex-font-style-it\">C++</span>. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>1<br/>1 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "10 9<br/>1 2 3 4 5 6 7 8 9 10<br/>1 10<br/>2 9<br/>3 8<br/>4 7<br/>5 6<br/>2 2<br/>9 10<br/>5 10<br/>4 10<br/>",
+            "output": "27<br/>14<br/>8<br/>4<br/>2<br/>1<br/>2<br/>7<br/>9<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 301,
+    "index": "D",
+    "name": "Yaroslav and Divisors",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures"
+    ],
+    "solvedCount": 2230
+}

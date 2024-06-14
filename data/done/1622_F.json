@@ -1,0 +1,44 @@
+{
+    "title": "F. Quadratic Set",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's call a set of positive integers $$$a_1, a_2, \\dots, a_k$$$ <span class=\"tex-font-style-it\">quadratic</span> if the product of the factorials of its elements is a square of an integer, i.\u2009e. $$$\\prod\\limits_{i=1}^{k} a_i! = m^2$$$, for some integer $$$m$$$.</p><p>You are given a positive integer $$$n$$$.</p><p>Your task is to find a <span class=\"tex-font-style-it\">quadratic</span> subset of a set $$$1, 2, \\dots, n$$$ of maximum size. If there are multiple answers, print any of them.</p>",
+    "inputSpecification": "<p>A single line contains a single integer $$$n$$$ ($$$1 \\le n \\le 10^6$$$).</p>",
+    "outputSpecification": "<p>In the first line, print a single integer\u00a0\u2014 the size of the maximum subset. In the second line, print the subset itself in an arbitrary order.</p>",
+    "samples": [
+        {
+            "input": "\n1\n",
+            "output": "\n1\n1 \n"
+        },
+        {
+            "input": "\n4\n",
+            "output": "\n3\n1 3 4 \n"
+        },
+        {
+            "input": "\n7\n",
+            "output": "\n4\n1 4 5 6 \n"
+        },
+        {
+            "input": "\n9\n",
+            "output": "\n7\n1 2 4 5 6 7 9 \n"
+        }
+    ],
+    "note": null,
+    "contestId": 1622,
+    "index": "F",
+    "name": "Quadratic Set",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "hashing",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 600
+}

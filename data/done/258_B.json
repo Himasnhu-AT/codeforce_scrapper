@@ -1,0 +1,35 @@
+{
+    "title": "B. Little Elephant and Elections",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There have recently been elections in the zoo. Overall there were <span class=\"tex-span\">7</span> main political parties: one of them is the Little Elephant Political Party, <span class=\"tex-span\">6</span> other parties have less catchy names.</p><p>Political parties find their number in the ballot highly important. Overall there are <span class=\"tex-span\"><i>m</i></span> possible numbers: <span class=\"tex-span\">1,\u20092,\u2009...,\u2009<i>m</i></span>. Each of these <span class=\"tex-span\">7</span> parties is going to be assigned in some way to exactly one number, at that, two distinct parties cannot receive the same number.</p><p>The Little Elephant Political Party members believe in the lucky digits <span class=\"tex-span\">4</span> and <span class=\"tex-span\">7</span>. They want to evaluate their chances in the elections. For that, they need to find out, how many correct assignments are there, such that the number of lucky digits in the Little Elephant Political Party ballot number is strictly larger than the total number of lucky digits in the ballot numbers of 6 other parties. </p><p>Help the Little Elephant Political Party, calculate this number. As the answer can be rather large, print the remainder from dividing it by <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "inputSpecification": "<p>A single line contains a single positive integer <span class=\"tex-span\"><i>m</i></span> <span class=\"tex-span\">(7\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span> \u2014 the number of possible numbers in the ballot.</p>",
+    "outputSpecification": "<p>In a single line print a single integer \u2014 the answer to the problem modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "7<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "8<br/>",
+            "output": "1440<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 258,
+    "index": "B",
+    "name": "Little Elephant and Elections",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp"
+    ],
+    "solvedCount": 1423
+}

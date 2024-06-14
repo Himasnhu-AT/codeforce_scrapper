@@ -1,0 +1,38 @@
+{
+    "title": "D. Iterated Linear Function",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Consider a linear function <span class=\"tex-span\"><i>f</i>(<i>x</i>)\u2009=\u2009<i>Ax</i>\u2009+\u2009<i>B</i></span>. Let's define <span class=\"tex-span\"><i>g</i><sup class=\"upper-index\">(0)</sup>(<i>x</i>)\u2009=\u2009<i>x</i></span> and <span class=\"tex-span\"><i>g</i><sup class=\"upper-index\">(<i>n</i>)</sup>(<i>x</i>)\u2009=\u2009<i>f</i>(<i>g</i><sup class=\"upper-index\">(<i>n</i>\u2009-\u20091)</sup>(<i>x</i>))</span> for <span class=\"tex-span\"><i>n</i>\u2009&gt;\u20090</span>. For the given integer values <span class=\"tex-span\"><i>A</i></span>, <span class=\"tex-span\"><i>B</i></span>, <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>x</i></span> find the value of <span class=\"tex-span\"><i>g</i><sup class=\"upper-index\">(<i>n</i>)</sup>(<i>x</i>)</span> modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The only line contains four integers <span class=\"tex-span\"><i>A</i></span>, <span class=\"tex-span\"><i>B</i></span>, <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>x</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>A</i>,\u2009<i>B</i>,\u2009<i>x</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>,\u20091\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>) \u2014 the parameters from the problem statement.</p><p>Note that the given value <span class=\"tex-span\"><i>n</i></span> can be too large, so you should use <span class=\"tex-span\">64</span>-bit integer type to store it. In <span class=\"tex-font-style-tt\">C++</span> you can use the <span class=\"tex-font-style-tt\">long long</span> integer type and in <span class=\"tex-font-style-tt\">Java</span> you can use <span class=\"tex-font-style-tt\">long</span> integer type.</p>",
+    "outputSpecification": "<p>Print the only integer <span class=\"tex-span\"><i>s</i></span> \u2014 the value <span class=\"tex-span\"><i>g</i><sup class=\"upper-index\">(<i>n</i>)</sup>(<i>x</i>)</span> modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "3 4 1 1<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "3 4 2 1<br/>",
+            "output": "25<br/>"
+        },
+        {
+            "input": "3 4 3 1<br/>",
+            "output": "79<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 678,
+    "index": "D",
+    "name": "Iterated Linear Function",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 4314
+}

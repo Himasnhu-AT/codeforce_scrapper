@@ -1,0 +1,30 @@
+{
+    "title": "D. Ball",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-span\"><i>N</i></span> ladies attend the ball in the King's palace. Every lady can be described with three values: beauty, intellect and richness. King's Master of Ceremonies knows that ladies are very special creatures. If some lady understands that there is other lady at the ball which is more beautiful, smarter and more rich, she can jump out of the window. He knows values of all ladies and wants to find out how many probable self-murderers will be on the ball. Lets denote beauty of the <span class=\"tex-span\"><i>i</i></span>-th lady by <span class=\"tex-span\"><i>B</i><sub class=\"lower-index\"><i>i</i></sub></span>, her intellect by <span class=\"tex-span\"><i>I</i><sub class=\"lower-index\"><i>i</i></sub></span> and her richness by <span class=\"tex-span\"><i>R</i><sub class=\"lower-index\"><i>i</i></sub></span>. Then <span class=\"tex-span\"><i>i</i></span>-th lady is a probable self-murderer if there is some <span class=\"tex-span\"><i>j</i></span>-th lady that <span class=\"tex-span\"><i>B</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>B</i><sub class=\"lower-index\"><i>j</i></sub>,\u2009<i>I</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>I</i><sub class=\"lower-index\"><i>j</i></sub>,\u2009<i>R</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>R</i><sub class=\"lower-index\"><i>j</i></sub></span>. Find the number of probable self-murderers.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>N</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u2009500000</span>). The second line contains <span class=\"tex-span\"><i>N</i></span> integer numbers <span class=\"tex-span\"><i>B</i><sub class=\"lower-index\"><i>i</i></sub></span>, separated by single spaces. The third and the fourth lines contain sequences <span class=\"tex-span\"><i>I</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>R</i><sub class=\"lower-index\"><i>i</i></sub></span> in the same format. It is guaranteed that <span class=\"tex-span\">0\u2009\u2264\u2009<i>B</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>I</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>R</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>.</p>",
+    "outputSpecification": "<p>Output the answer to the problem.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 4 2<br/>4 3 2<br/>2 5 3<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 12,
+    "index": "D",
+    "name": "Ball",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "sortings"
+    ],
+    "solvedCount": 2026
+}

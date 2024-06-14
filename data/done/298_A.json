@@ -1,0 +1,34 @@
+{
+    "title": "A. Snow Footprints",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There is a straight snowy road, divided into <span class=\"tex-span\"><i>n</i></span> blocks. The blocks are numbered from 1 to <span class=\"tex-span\"><i>n</i></span> from left to right. If one moves from the <span class=\"tex-span\"><i>i</i></span>-th block to the <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span>-th block, he will leave a right footprint on the <span class=\"tex-span\"><i>i</i></span>-th block. Similarly, if one moves from the <span class=\"tex-span\"><i>i</i></span>-th block to the <span class=\"tex-span\">(<i>i</i>\u2009-\u20091)</span>-th block, he will leave a left footprint on the <span class=\"tex-span\"><i>i</i></span>-th block. If there already is a footprint on the <span class=\"tex-span\"><i>i</i></span>-th block, the new footprint will cover the old one.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/fb3b092e49bed5450612e7a095172bbbdd06d46e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>At the beginning, there were no footprints. Then polar bear Alice starts from the <span class=\"tex-span\"><i>s</i></span>-th block, makes a sequence of moves and ends in the <span class=\"tex-span\"><i>t</i></span>-th block. It is known that Alice never moves outside of the road. </p><p>You are given the description of Alice's footprints. Your task is to find a pair of possible values of <span class=\"tex-span\"><i>s</i>,\u2009<i>t</i></span> by looking at the footprints.</p>",
+    "inputSpecification": "<p>The first line of the input contains integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000)</span>.</p><p>The second line contains the description of the road \u2014 the string that consists of <span class=\"tex-span\"><i>n</i></span> characters. Each character will be either \"<span class=\"tex-font-style-tt\">.</span>\" (a block without footprint), or \"<span class=\"tex-font-style-tt\">L</span>\" (a block with a left footprint), \"<span class=\"tex-font-style-tt\">R</span>\" (a block with a right footprint).</p><p>It's guaranteed that the given string contains at least one character not equal to \"<span class=\"tex-font-style-tt\">.</span>\". Also, the first and the last character will always be \"<span class=\"tex-font-style-tt\">.</span>\". It's guaranteed that a solution exists.</p>",
+    "outputSpecification": "<p>Print two space-separated integers \u2014 the values of <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span>. If there are several possible solutions you can print any of them.</p>",
+    "samples": [
+        {
+            "input": "9<br/>..RRLL...<br/>",
+            "output": "3 4<br/>"
+        },
+        {
+            "input": "11<br/>.RRRLLLLL..<br/>",
+            "output": "7 5<br/>"
+        }
+    ],
+    "note": "<p>The first test sample is the one in the picture.</p>",
+    "contestId": 298,
+    "index": "A",
+    "name": "Snow Footprints",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation"
+    ],
+    "solvedCount": 10558
+}

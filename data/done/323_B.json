@@ -1,0 +1,34 @@
+{
+    "title": "B. Tournament-graph",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In this problem you have to build tournament graph, consisting of <span class=\"tex-span\"><i>n</i></span> vertices, such, that for any oriented pair of vertices <span class=\"tex-span\">(<i>v</i>,\u2009<i>u</i>)</span> <span class=\"tex-span\">(<i>v</i>\u2009\u2260\u2009<i>u</i>)</span> there exists a path from vertex <span class=\"tex-span\"><i>v</i></span> to vertex <span class=\"tex-span\"><i>u</i></span> consisting of no more then two edges.</p><p>A directed graph without self-loops is a <span class=\"tex-font-style-it\">tournament</span>, if there is exactly one edge between any two distinct vertices (in one out of two possible directions).</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000)</span>, the number of the graph's vertices.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-font-style-tt\">-1</span> if there is no graph, satisfying the described conditions.</p><p>Otherwise, print <span class=\"tex-span\"><i>n</i></span> lines with <span class=\"tex-span\"><i>n</i></span> integers in each. The numbers should be separated with spaces. That is adjacency matrix <span class=\"tex-span\"><i>a</i></span> of the found tournament. Consider the graph vertices to be numbered with integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. Then <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>v</i>,\u2009<i>u</i></sub>\u2009=\u20090</span>, if there is no edge from <span class=\"tex-span\"><i>v</i></span> to <span class=\"tex-span\"><i>u</i></span>, and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>v</i>,\u2009<i>u</i></sub>\u2009=\u20091</span> if there is one. </p><p>As the output graph has to be a tournament, following equalities must be satisfied: </p><ul> <li> <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>v</i>,\u2009<i>u</i></sub>\u2009+\u2009<i>a</i><sub class=\"lower-index\"><i>u</i>,\u2009<i>v</i></sub>\u2009=\u20091</span> for each <span class=\"tex-span\"><i>v</i>,\u2009<i>u</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>v</i>,\u2009<i>u</i>\u2009\u2264\u2009<i>n</i>;\u00a0<i>v</i>\u2009\u2260\u2009<i>u</i>)</span>; </li><li> <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>v</i>,\u2009<i>v</i></sub>\u2009=\u20090</span> for each <span class=\"tex-span\"><i>v</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>v</i>\u2009\u2264\u2009<i>n</i>)</span>. </li></ul>",
+    "samples": [
+        {
+            "input": "3<br/>",
+            "output": "0 1 0<br/>0 0 1<br/>1 0 0<br/>"
+        },
+        {
+            "input": "4<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 323,
+    "index": "B",
+    "name": "Tournament-graph",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "graphs"
+    ],
+    "solvedCount": 383
+}

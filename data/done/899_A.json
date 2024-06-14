@@ -1,0 +1,43 @@
+{
+    "title": "A. Splitting in Teams",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There were <span class=\"tex-span\"><i>n</i></span> groups of students which came to write a training contest. A group is either one person who can write the contest with anyone else, or two people who want to write the contest in the same team.</p><p>The coach decided to form teams of exactly three people for this training. Determine the maximum number of teams of three people he can form. It is possible that he can't use all groups to form teams. For groups of two, either both students should write the contest, or both should not. If two students from a group of two will write the contest, they should be in the same team.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 the number of groups.</p><p>The second line contains a sequence of integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20092</span>), where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is the number of people in group <span class=\"tex-span\"><i>i</i></span>.</p>",
+    "outputSpecification": "<p>Print the maximum number of teams of three people the coach can form.</p>",
+    "samples": [
+        {
+            "input": "4<br/>1 1 2 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2<br/>2 2<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "7<br/>2 2 2 1 1 1 1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "3<br/>1 1 1<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the first example the coach can form one team. For example, he can take students from the first, second and fourth groups.</p><p>In the second example he can't make a single team.</p><p>In the third example the coach can form three teams. For example, he can do this in the following way:</p><ul> <li> The first group (of two people) and the seventh group (of one person), </li><li> The second group (of two people) and the sixth group (of one person), </li><li> The third group (of two people) and the fourth group (of one person). </li></ul>",
+    "contestId": 899,
+    "index": "A",
+    "name": "Splitting in Teams",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math"
+    ],
+    "solvedCount": 10106
+}

@@ -1,0 +1,32 @@
+{
+    "title": "E. Bash Plays with Functions",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Bash got tired on his journey to become the greatest Pokemon master. So he decides to take a break and play with functions.</p><p>Bash defines a function <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">0</sub>(<i>n</i>)</span>, which denotes the number of ways of factoring <span class=\"tex-span\"><i>n</i></span> into two factors <span class=\"tex-span\"><i>p</i></span> and <span class=\"tex-span\"><i>q</i></span> such that <span class=\"tex-span\"><i>gcd</i>(<i>p</i>,\u2009<i>q</i>)\u2009=\u20091</span>. In other words, <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\">0</sub>(<i>n</i>)</span> is the number of ordered pairs of positive integers <span class=\"tex-span\">(<i>p</i>,\u2009<i>q</i>)</span> such that <span class=\"tex-span\"><i>p</i>\u00b7<i>q</i>\u2009=\u2009<i>n</i></span> and <span class=\"tex-span\"><i>gcd</i>(<i>p</i>,\u2009<i>q</i>)\u2009=\u20091</span>.</p><p>But Bash felt that it was too easy to calculate this function. So he defined a series of functions, where <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>r</i>\u2009+\u20091</sub></span> is defined as:</p><center class=\"tex-equation\"><img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/b101481fcdac88d9015ae47191122daa3d5b0f7a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></center><p>Where <span class=\"tex-span\">(<i>u</i>,\u2009<i>v</i>)</span> is any ordered pair of positive integers, they need not to be co-prime.</p><p>Now Bash wants to know the value of <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>r</i></sub>(<i>n</i>)</span> for different <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>n</i></span>. Since the value could be huge, he would like to know the value modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>. Help him!</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>q</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>)\u00a0\u2014 the number of values Bash wants to know.</p><p>Each of the next <span class=\"tex-span\"><i>q</i></span> lines contain two integers <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>r</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>), which denote Bash wants to know the value <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>r</i></sub>(<i>n</i>)</span>.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>q</i></span> integers. For each pair of <span class=\"tex-span\"><i>r</i></span> and <span class=\"tex-span\"><i>n</i></span> given, print <span class=\"tex-span\"><i>f</i><sub class=\"lower-index\"><i>r</i></sub>(<i>n</i>)</span> modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span> on a separate line.</p>",
+    "samples": [
+        {
+            "input": "5<br/>0 30<br/>1 25<br/>3 65<br/>2 5<br/>4 48<br/>",
+            "output": "8<br/>5<br/>25<br/>4<br/>630<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 757,
+    "index": "E",
+    "name": "Bash Plays with Functions",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "number theory"
+    ],
+    "solvedCount": 1271
+}

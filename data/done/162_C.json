@@ -1,0 +1,33 @@
+{
+    "title": "C. Prime factorization",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a positive integer <span class=\"tex-span\"><i>n</i></span>. Output its prime factorization.</p><p>If <span class=\"tex-span\"><i>n</i></span> = <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub><sup class=\"upper-index\"><i>b</i><sub class=\"lower-index\">1</sub></sup></span> <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub><sup class=\"upper-index\"><i>b</i><sub class=\"lower-index\">2</sub></sup></span> <span class=\"tex-span\">...</span> <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>k</i></sub><sup class=\"upper-index\"><i>b</i><sub class=\"lower-index\"><i>k</i></sub></sup></span> (<span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&gt;\u20090</span>), where <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>k</i></sub></span> are prime numbers, the output of your program should look as follows: <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>*...*<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>*<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>*...*<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>*...*<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>k</i></sub></span>*...*<span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>k</i></sub></span>, where the factors are ordered in non-decreasing order, and each factor <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> is printed <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> times.</p>",
+    "inputSpecification": "<p>The only line of input contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910000</span>).</p>",
+    "outputSpecification": "<p>Output the prime factorization of <span class=\"tex-span\"><i>n</i></span>, as described above.</p>",
+    "samples": [
+        {
+            "input": "245<br/>",
+            "output": "5*7*7<br/>"
+        },
+        {
+            "input": "19<br/>",
+            "output": "19<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 162,
+    "index": "C",
+    "name": "Prime factorization",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 774
+}

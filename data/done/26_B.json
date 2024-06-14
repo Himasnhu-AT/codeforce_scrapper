@@ -1,0 +1,33 @@
+{
+    "title": "B. Regular Bracket Sequence",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A bracket sequence is called regular if it is possible to obtain correct arithmetic expression by inserting characters \u00ab<span class=\"tex-font-style-tt\">+</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">1</span>\u00bb into this sequence. For example, sequences \u00ab<span class=\"tex-font-style-tt\">(())()</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">()</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">(()(()))</span>\u00bb are regular, while \u00ab<span class=\"tex-font-style-tt\">)(</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">(()</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">(()))(</span>\u00bb are not.</p><p>One day Johnny got bracket sequence. He decided to remove some of the brackets from it in order to obtain a regular bracket sequence. What is the maximum length of a regular bracket sequence which can be obtained?</p>",
+    "inputSpecification": "<p>Input consists of a single line with non-empty string of \u00ab<span class=\"tex-font-style-tt\">(</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">)</span>\u00bb characters. Its length does not exceed <span class=\"tex-span\">10<sup class=\"upper-index\">6</sup></span>.</p>",
+    "outputSpecification": "<p>Output the maximum possible length of a regular bracket sequence.</p>",
+    "samples": [
+        {
+            "input": "(()))(<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "((()())<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 26,
+    "index": "B",
+    "name": "Regular Bracket Sequence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy"
+    ],
+    "solvedCount": 17794
+}

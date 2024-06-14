@@ -1,0 +1,37 @@
+{
+    "title": "E. Tufurama",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One day Polycarp decided to rewatch his absolute favourite episode of well-known TV series \"Tufurama\". He was pretty surprised when he got results only for season 7 episode 3 with his search query of \"Watch Tufurama season 3 episode 7 online full hd free\". This got Polycarp confused \u2014 what if he decides to rewatch the entire series someday and won't be able to find the right episodes to watch? Polycarp now wants to count the number of times he will be forced to search for an episode using some different method.</p><p>TV series have <span class=\"tex-span\"><i>n</i></span> seasons (numbered <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>n</i></span>), the <span class=\"tex-span\"><i>i</i></span>-th season has <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> episodes (numbered <span class=\"tex-span\">1</span> through <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>). Polycarp thinks that if for some pair of integers <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\"><i>x</i>\u2009&lt;\u2009<i>y</i></span>) exist both season <span class=\"tex-span\"><i>x</i></span> episode <span class=\"tex-span\"><i>y</i></span> and season <span class=\"tex-span\"><i>y</i></span> episode <span class=\"tex-span\"><i>x</i></span> then one of these search queries will include the wrong results. Help Polycarp to calculate the number of such pairs!</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2009\u2264\u2009<i>n</i>\u2009\u2009\u2264\u2009\u20092\u00b710<sup class=\"upper-index\">5</sup>)</span> \u2014 the number of seasons.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers separated by space <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>)</span> \u2014 number of episodes in each season.</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the number of pairs <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\"><i>x</i>\u2009&lt;\u2009<i>y</i></span>) such that there exist both season <span class=\"tex-span\"><i>x</i></span> episode <span class=\"tex-span\"><i>y</i></span> and season <span class=\"tex-span\"><i>y</i></span> episode <span class=\"tex-span\"><i>x</i></span>.</p>",
+    "samples": [
+        {
+            "input": "5<br/>1 2 3 4 5<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "3<br/>8 12 7<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "3<br/>3 2 1<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>Possible pairs in the second example:</p><ol> <li> <span class=\"tex-span\"><i>x</i>\u2009=\u20091</span>, <span class=\"tex-span\"><i>y</i>\u2009=\u20092</span> (season 1 episode 2 <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8774ca35b6e628888a4670e4539d47857e5e5841.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> season 2 episode 1); </li><li> <span class=\"tex-span\"><i>x</i>\u2009=\u20092</span>, <span class=\"tex-span\"><i>y</i>\u2009=\u20093</span> (season 2 episode 3 <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8774ca35b6e628888a4670e4539d47857e5e5841.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> season 3 episode 2); </li><li> <span class=\"tex-span\"><i>x</i>\u2009=\u20091</span>, <span class=\"tex-span\"><i>y</i>\u2009=\u20093</span> (season 1 episode 3 <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8774ca35b6e628888a4670e4539d47857e5e5841.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> season 3 episode 1). </li></ol><p>In the third example:</p><ol> <li> <span class=\"tex-span\"><i>x</i>\u2009=\u20091</span>, <span class=\"tex-span\"><i>y</i>\u2009=\u20092</span> (season 1 episode 2 <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8774ca35b6e628888a4670e4539d47857e5e5841.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> season 2 episode 1); </li><li> <span class=\"tex-span\"><i>x</i>\u2009=\u20091</span>, <span class=\"tex-span\"><i>y</i>\u2009=\u20093</span> (season 1 episode 3 <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/8774ca35b6e628888a4670e4539d47857e5e5841.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> season 3 episode 1). </li></ol>",
+    "contestId": 961,
+    "index": "E",
+    "name": "Tufurama",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures"
+    ],
+    "solvedCount": 3469
+}

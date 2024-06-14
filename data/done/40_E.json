@@ -1,0 +1,33 @@
+{
+    "title": "E. Number Table",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 216.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>As it has been found out recently, all the Berland's current economical state can be described using a simple table <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> in size. <span class=\"tex-span\"><i>n</i></span> \u2014 the number of days in each Berland month, <span class=\"tex-span\"><i>m</i></span> \u2014 the number of months. Thus, a table cell corresponds to a day and a month of the Berland's year. Each cell will contain either <span class=\"tex-font-style-tt\">1</span>, or <span class=\"tex-font-style-tt\">-1</span>, which means the state's gains in a particular month, on a particular day. <span class=\"tex-font-style-tt\">1</span> corresponds to profits, <span class=\"tex-font-style-tt\">-1</span> corresponds to losses. It turned out important for successful development to analyze the data on the state of the economy of the previous year, however when the treasurers referred to the archives to retrieve the data, it turned out that the table had been substantially damaged. In some table cells the number values had faded and were impossible to be deciphered. It is known that the number of cells in which the data had been preserved is strictly less than <span class=\"tex-span\"><i>max</i>(<i>n</i>,\u2009<i>m</i>)</span>. However, there is additional information \u2014 the product of the numbers in each line and column equaled <span class=\"tex-font-style-tt\">-1</span>. Your task is to find out how many different tables may conform to the preserved data. As the answer to the task can be quite large, you have to find it modulo <span class=\"tex-span\"><i>p</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000</span>). The second line contains the integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009&lt;\u2009<i>max</i>(<i>n</i>,\u2009<i>m</i>)</span>) \u2014 the number of cells in which the data had been preserved. The next <span class=\"tex-span\"><i>k</i></span> lines contain the data on the state of the table in the preserved cells. Each line is of the form \"<span class=\"tex-span\"><i>a</i></span> <span class=\"tex-span\"><i>b</i></span> <span class=\"tex-span\"><i>c</i></span>\", where <span class=\"tex-span\"><i>a</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u2009<i>n</i></span>) \u2014 the number of the table row, <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i>\u2009\u2264\u2009<i>m</i></span>) \u2014 the number of the column, <span class=\"tex-span\"><i>c</i></span> \u2014 the value containing in the cell (<span class=\"tex-font-style-tt\">1</span> or <span class=\"tex-font-style-tt\">-1</span>). They are numbered starting from <span class=\"tex-span\">1</span>. It is guaranteed that no two lines with same <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> values exist. The last line contains an integer <span class=\"tex-span\"><i>p</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>p</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>).</p>",
+    "outputSpecification": "<p>Print the number of different tables that could conform to the preserved data modulo <span class=\"tex-span\"><i>p</i></span>.</p>",
+    "samples": [
+        {
+            "input": "2 2<br/>0<br/>100<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "2 2<br/>1<br/>1 1 -1<br/>100<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 40,
+    "index": "E",
+    "name": "Number Table",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics"
+    ],
+    "solvedCount": 658
+}

@@ -1,0 +1,37 @@
+{
+    "title": "B. One Bomb",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a description of a depot. It is a rectangular checkered field of <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> size. Each cell in a field can be empty (\"<span class=\"tex-font-style-tt\">.</span>\") or it can be occupied by a wall (\"<span class=\"tex-font-style-tt\">*</span>\"). </p><p>You have one bomb. If you lay the bomb at the cell <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>, then after triggering it will wipe out all walls in the row <span class=\"tex-span\"><i>x</i></span> and all walls in the column <span class=\"tex-span\"><i>y</i></span>.</p><p>You are to determine if it is possible to wipe out all walls in the depot by placing and triggering <span class=\"tex-font-style-bf\">exactly one bomb</span>. The bomb can be laid both in an empty cell or in a cell occupied by a wall.</p>",
+    "inputSpecification": "<p>The first line contains two positive integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000</span>)\u00a0\u2014 the number of rows and columns in the depot field. </p><p>The next <span class=\"tex-span\"><i>n</i></span> lines contain <span class=\"tex-span\"><i>m</i></span> symbols \"<span class=\"tex-font-style-tt\">.</span>\" and \"<span class=\"tex-font-style-tt\">*</span>\" each\u00a0\u2014 the description of the field. <span class=\"tex-span\"><i>j</i></span>-th symbol in <span class=\"tex-span\"><i>i</i></span>-th of them stands for cell <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span>. If the symbol is equal to \"<span class=\"tex-font-style-tt\">.</span>\", then the corresponding cell is empty, otherwise it equals \"<span class=\"tex-font-style-tt\">*</span>\" and the corresponding cell is occupied by a wall.</p>",
+    "outputSpecification": "<p>If it is impossible to wipe out all walls by placing and triggering exactly one bomb, then print \"<span class=\"tex-font-style-tt\">NO</span>\" in the first line (without quotes).</p><p>Otherwise print \"<span class=\"tex-font-style-tt\">YES</span>\" (without quotes) in the first line and two integers in the second line\u00a0\u2014 the coordinates of the cell at which the bomb should be laid. If there are multiple answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "3 4<br/>.*..<br/>....<br/>.*..<br/>",
+            "output": "YES<br/>1 2<br/>"
+        },
+        {
+            "input": "3 3<br/>..*<br/>.*.<br/>*..<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "6 5<br/>..*..<br/>..*..<br/>*****<br/>..*..<br/>..*..<br/>..*..<br/>",
+            "output": "YES<br/>3 3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 699,
+    "index": "B",
+    "name": "One Bomb",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 7527
+}

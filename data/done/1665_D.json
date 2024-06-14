@@ -1,0 +1,35 @@
+{
+    "title": "D. GCD Guess",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">This is an interactive problem.</span></p><p>There is a positive integer $$$1 \\le x \\le 10^9$$$ that you have to guess.</p><p>In one query you can choose two positive integers $$$a \\neq b$$$. As an answer to this query you will get $$$\\gcd(x + a, x + b)$$$, where $$$\\gcd(n, m)$$$ is the <a href=\"https://en.wikipedia.org/wiki/Greatest common divisor\">greatest common divisor</a> of the numbers $$$n$$$ and $$$m$$$.</p><p>To guess one hidden number $$$x$$$ you are allowed to make no more than $$$30$$$ queries.</p>",
+    "inputSpecification": "<p>The first line of input contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$) denoting the number of test cases.</p><p>The integer $$$x$$$ that you have to guess satisfies the constraints: ($$$1 \\le x \\le 10^9$$$).</p>",
+    "outputSpecification": null,
+    "samples": [
+        {
+            "input": "\n2\n\n1\n\n8\n\n\n1\n",
+            "output": "\n\n? 1 2\n\n? 12 4\n\n! 4\n? 2000000000 1999999999\n\n! 1000000000\n"
+        }
+    ],
+    "note": "<p>The first hidden number is $$$4$$$, that's why the answers for the queries are:</p><p>\"<span class=\"tex-font-style-tt\">? 1 2</span>\"\u00a0\u2014 $$$\\gcd(4 + 1, 4 + 2) = \\gcd(5, 6) = 1$$$.</p><p>\"<span class=\"tex-font-style-tt\">? 12 4</span>\"\u00a0\u2014 $$$\\gcd(4 + 12, 4 + 4) = \\gcd(16, 8) = 8$$$.</p><p>The second hidden number is $$$10^9$$$, that's why the answer for the query is:</p><p>\"<span class=\"tex-font-style-tt\">? 2000000000 1999999999</span>\"\u00a0\u2014 $$$\\gcd(3 \\cdot 10^9, 3 \\cdot 10^9 - 1) = 1$$$.</p><p><span class=\"tex-font-style-it\">These queries are made only for understanding the interaction and are not enough for finding the true $$$x$$$.</span></p>",
+    "contestId": 1665,
+    "index": "D",
+    "name": "GCD Guess",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "chinese remainder theorem",
+        "constructive algorithms",
+        "games",
+        "interactive",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 3739
+}

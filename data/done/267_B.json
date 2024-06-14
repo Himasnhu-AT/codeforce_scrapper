@@ -1,0 +1,30 @@
+{
+    "title": "B. Dominoes",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have a set of dominoes. Each domino is a rectangular tile with a line dividing its face into two square ends. Can you put all dominoes in a line one by one from left to right so that any two dominoes touched with the sides that had the same number of points? You can rotate the dominoes, changing the left and the right side (domino \"1-4\" turns into \"4-1\").</p>",
+    "inputSpecification": "<p>The first line contains number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2009\u2264\u2009\u2009<i>n</i>\u2009\u2009\u2264\u2009\u2009100</span>). Next <span class=\"tex-span\"><i>n</i></span> lines contains the dominoes. Each of these lines contains two numbers \u2014 the number of points (spots) on the left and the right half, correspondingly. The numbers of points (spots) are non-negative integers from 0 to 6.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">No solution</span>\", if it is impossible to arrange the dominoes in the required manner. If the solution exists, then describe any way to arrange the dominoes. You put the dominoes from left to right. In each of <span class=\"tex-span\"><i>n</i></span> lines print the index of the domino to put in the corresponding position and then, after a space, character \"<span class=\"tex-font-style-tt\">+</span>\" (if you don't need to turn the domino) or \"<span class=\"tex-font-style-tt\">\u2013</span>\" (if you need to turn it).</p>",
+    "samples": [
+        {
+            "input": "5<br/>1 2<br/>2 4<br/>2 4<br/>6 4<br/>2 1<br/>",
+            "output": "2 -<br/>1 -<br/>5 -<br/>3 +<br/>4 -<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 267,
+    "index": "B",
+    "name": "Dominoes",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs"
+    ],
+    "solvedCount": 616
+}

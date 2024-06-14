@@ -1,0 +1,32 @@
+{
+    "title": "C. Recover an RBS",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A bracket sequence is a string containing only characters \"<span class=\"tex-font-style-tt\">(</span>\" and \"<span class=\"tex-font-style-tt\">)</span>\". A regular bracket sequence (or, shortly, an RBS) is a bracket sequence that can be transformed into a correct arithmetic expression by inserting characters \"<span class=\"tex-font-style-tt\">1</span>\" and \"<span class=\"tex-font-style-tt\">+</span>\" between the original characters of the sequence. For example:</p><ul> <li> bracket sequences \"<span class=\"tex-font-style-tt\">()()</span>\" and \"<span class=\"tex-font-style-tt\">(())</span>\" are regular (the resulting expressions are: \"<span class=\"tex-font-style-tt\">(1)+(1)</span>\" and \"<span class=\"tex-font-style-tt\">((1+1)+1)</span>\"); </li><li> bracket sequences \"<span class=\"tex-font-style-tt\">)(</span>\", \"<span class=\"tex-font-style-tt\">(</span>\" and \"<span class=\"tex-font-style-tt\">)</span>\" are not. </li></ul><p>There was an RBS. Some brackets have been replaced with question marks. Is it true that there is a <span class=\"tex-font-style-bf\">unique</span> way to replace question marks with brackets, so that the resulting sequence is an RBS?</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 5 \\cdot 10^4$$$)\u00a0\u2014 the number of testcases.</p><p>The only line of each testcase contains an RBS with some brackets replaced with question marks. Each character is either '<span class=\"tex-font-style-tt\">(</span>', '<span class=\"tex-font-style-tt\">)</span>' or '<span class=\"tex-font-style-tt\">?</span>'. At least one RBS can be recovered from the given sequence.</p><p>The total length of the sequences over all testcases doesn't exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each testcase, print \"<span class=\"tex-font-style-tt\">YES</span>\" if the way to replace question marks with brackets, so that the resulting sequence is an RBS, is <span class=\"tex-font-style-bf\">unique</span>. If there is more than one way, then print \"<span class=\"tex-font-style-tt\">NO</span>\".</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">(?))</div><div class=\"test-example-line test-example-line-even test-example-line-2\">??????</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">()</div><div class=\"test-example-line test-example-line-even test-example-line-4\">??</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">?(?)()?)</div>",
+            "output": "\nYES\nNO\nYES\nYES\nNO\n"
+        }
+    ],
+    "note": "<p>In the first testcase, the only possible original RBS is \"<span class=\"tex-font-style-tt\">(())</span>\".</p><p>In the second testcase, there are multiple ways to recover an RBS.</p><p>In the third and the fourth testcases, the only possible original RBS is \"<span class=\"tex-font-style-tt\">()</span>\".</p><p>In the fifth testcase, the original RBS can be either \"<span class=\"tex-font-style-tt\">((()()))</span>\" or \"<span class=\"tex-font-style-tt\">(())()()</span>\".</p>",
+    "contestId": 1709,
+    "index": "C",
+    "name": "Recover an RBS",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "strings"
+    ],
+    "solvedCount": 8597
+}

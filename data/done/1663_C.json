@@ -1,0 +1,26 @@
+{
+    "title": "C. P\u014dja Verdon",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Aenar has an array $$$a$$$ consisting of $$$n$$$ integers.</p>",
+    "inputSpecification": "<p>The first line is the integer $$$n$$$ ($$$1 \\le n \\le 100$$$).</p><p>The second line contains $$$n$$$ integers $$$a_i$$$ ($$$0 \\le a_i \\le 3979$$$)\u00a0\u2014 the contents of the array.</p>",
+    "outputSpecification": "<p>Output a single number.</p>",
+    "samples": [],
+    "note": null,
+    "contestId": 1663,
+    "index": "C",
+    "name": "P\u014dja Verdon",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 5629
+}

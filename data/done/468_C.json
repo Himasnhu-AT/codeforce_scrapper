@@ -1,0 +1,35 @@
+{
+    "title": "C. Hack it!",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little X has met the following problem recently. </p><p>Let's define <span class=\"tex-span\"><i>f</i>(<i>x</i>)</span> as the sum of digits in decimal representation of number <span class=\"tex-span\"><i>x</i></span> (for example, <span class=\"tex-span\"><i>f</i>(1234)\u2009=\u20091\u2009+\u20092\u2009+\u20093\u2009+\u20094</span>). You are to calculate <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3544ececd2159fbc9d8edc9ba99dbbfa79739157.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></p><p>Of course Little X has solved this problem quickly, has locked it, and then has tried to hack others. He has seen the following C++ code: </p><pre class=\"verbatim\"><br/>    ans = solve(l, r) % a;<br/>    if (ans &lt;= 0)<br/>      ans += a;<br/><br/></pre> This code will fail only on the test with <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4b3d0d465d72291386b3afa4fd8af81c1a6a1a6e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. You are given number <span class=\"tex-span\"><i>a</i></span>, help Little X to find a proper test for hack.",
+    "inputSpecification": "<p>The first line contains a single integer <span class=\"tex-span\"><i>a</i>\u00a0(1\u2009\u2264\u2009<i>a</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup>)</span>.</p>",
+    "outputSpecification": "<p>Print two integers: <span class=\"tex-span\"><i>l</i>,\u2009<i>r</i>\u00a0(1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>r</i>\u2009&lt;\u200910<sup class=\"upper-index\">200</sup>)</span> \u2014 the required test data. Leading zeros aren't allowed. It's guaranteed that the solution exists.</p>",
+    "samples": [
+        {
+            "input": "<br/>    ans = solve(l, r) % a;<br/>    if (ans <= 0)<br/>      ans += a;<br/><br/>",
+            "output": "46<br/>"
+        },
+        {
+            "input": "1 10<br/>",
+            "output": "126444381000032<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 468,
+    "index": "C",
+    "name": "Hack it!",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 2268
+}

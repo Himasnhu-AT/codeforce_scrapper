@@ -1,0 +1,38 @@
+{
+    "title": "A. Cottage Village",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A new cottage village called \u00abFlatville\u00bb is being built in Flatland. By now they have already built in \u00abFlatville\u00bb <span class=\"tex-span\"><i>n</i></span> square houses with the centres on the <span class=\"tex-span\"><i>\u041ex</i></span>-axis. The houses' sides are parallel to the coordinate axes. It's known that no two houses overlap, but they can touch each other.</p><p>The architect bureau, where Peter works, was commissioned to build a new house in \u00abFlatville\u00bb. The customer wants his future house to be on the <span class=\"tex-span\"><i>\u041ex</i></span>-axis, to be square in shape, have a side <span class=\"tex-span\"><i>t</i></span>, and touch at least one of the already built houses. For sure, its sides should be parallel to the coordinate axes, its centre should be on the <span class=\"tex-span\"><i>Ox</i></span>-axis and it shouldn't overlap any of the houses in the village.</p><p>Peter was given a list of all the houses in \u00abFlatville\u00bb. Would you help him find the amount of possible positions of the new house?</p>",
+    "inputSpecification": "<p>The first line of the input data contains numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>t</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>t</i>\u2009\u2264\u20091000</span>). Then there follow <span class=\"tex-span\"><i>n</i></span> lines, each of them contains two space-separated integer numbers: <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>, where <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> \u2014 <span class=\"tex-span\"><i>x</i></span>-coordinate of the centre of the <span class=\"tex-span\"><i>i</i></span>-th house, and <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> \u2014 length of its side (<span class=\"tex-span\">\u2009-\u20091000\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>).</p>",
+    "outputSpecification": "<p>Output the amount of possible positions of the new house.</p>",
+    "samples": [
+        {
+            "input": "2 2<br/>0 4<br/>6 2<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "2 2<br/>0 4<br/>5 2<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "2 3<br/>0 4<br/>5 2<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>It is possible for the <span class=\"tex-span\"><i>x</i></span>-coordinate of the new house to have non-integer value.</p>",
+    "contestId": 15,
+    "index": "A",
+    "name": "Cottage Village",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 3634
+}

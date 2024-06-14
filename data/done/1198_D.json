@@ -1,0 +1,41 @@
+{
+    "title": "D. Rectangle Painting 1",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There is a square grid of size $$$n \\times n$$$. Some cells are colored in black, all others are colored in white. In one operation you can select some rectangle and color all its cells in white. It costs $$$\\max(h, w)$$$ to color a rectangle of size $$$h \\times w$$$. You are to make all cells white for minimum total cost.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$n$$$ ($$$1 \\leq n \\leq 50$$$)\u00a0\u2014 the size of the square grid.</p><p>Each of the next $$$n$$$ lines contains a string of length $$$n$$$, consisting of characters '<span class=\"tex-font-style-tt\">.</span>' and '<span class=\"tex-font-style-tt\">#</span>'. The $$$j$$$-th character of the $$$i$$$-th line is '<span class=\"tex-font-style-tt\">#</span>' if the cell with coordinates $$$(i, j)$$$ is black, otherwise it is white.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the minimum total cost to paint all cells in white.</p>",
+    "samples": [
+        {
+            "input": "\n3\n###\n#.#\n###\n",
+            "output": "\n3\n"
+        },
+        {
+            "input": "\n3\n...\n...\n...\n",
+            "output": "\n0\n"
+        },
+        {
+            "input": "\n4\n#...\n....\n....\n#...\n",
+            "output": "\n2\n"
+        },
+        {
+            "input": "\n5\n#...#\n.#.#.\n.....\n.#...\n#....\n",
+            "output": "\n5\n"
+        }
+    ],
+    "note": "<p>The examples and some of optimal solutions are shown on the pictures below.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/3e301c8f13644d71a51706c0e91e8d944a1d4358.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1198,
+    "index": "D",
+    "name": "Rectangle Painting 1",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp"
+    ],
+    "solvedCount": 3119
+}

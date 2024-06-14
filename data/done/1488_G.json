@@ -1,0 +1,40 @@
+{
+    "title": "G. Painting Numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given $$$n$$$ integers, each integer is from $$$1$$$ to $$$n$$$, all of them are pairwise distinct. You have to paint them red and blue (each integer should have exactly one color).</p><p>The cost of painting is the number of pairs $$$(x, y)$$$ such that $$$y \\bmod x = 0$$$, $$$y$$$ is red and $$$x$$$ is blue.</p><p>For each $$$k \\in [1, n]$$$, calculate the maximum cost of painting if exactly $$$k$$$ integers should have a red color.</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$n$$$ ($$$2 \\le n \\le 10^5$$$).</p>",
+    "outputSpecification": "<p>For each $$$k \\in [1,n]$$$ print one integer \u2014 the maximum cost of painting, if exactly $$$k$$$ integers should be red.</p>",
+    "samples": [
+        {
+            "input": "\n6\n",
+            "output": "\n3 5 6 6 5 0\n"
+        },
+        {
+            "input": "\n2\n",
+            "output": "\n1 0\n"
+        },
+        {
+            "input": "\n11\n",
+            "output": "\n3 6 9 11 12 13 14 14 13 10 0\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1488,
+    "index": "G",
+    "name": "Painting Numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "data structures",
+        "greedy",
+        "number theory"
+    ],
+    "solvedCount": 120
+}

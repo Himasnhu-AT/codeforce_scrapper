@@ -1,0 +1,30 @@
+{
+    "title": "A. Bits",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's denote as <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6500127ba81ee2a9ffdacf23b301df518aa9cd65.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> the number of bits set ('1' bits) in the binary representation of the non-negative integer <span class=\"tex-span\"><i>x</i></span>.</p><p>You are given multiple queries consisting of pairs of integers <span class=\"tex-span\"><i>l</i></span> and <span class=\"tex-span\"><i>r</i></span>. For each query, find the <span class=\"tex-span\"><i>x</i></span>, such that <span class=\"tex-span\"><i>l</i>\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>r</i></span>, and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6500127ba81ee2a9ffdacf23b301df518aa9cd65.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is maximum possible. If there are multiple such numbers find the smallest of them.</p>",
+    "inputSpecification": "<p>The first line contains integer <span class=\"tex-span\"><i>n</i></span>\u00a0\u2014 the number of queries (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910000</span>).</p><p>Each of the following <span class=\"tex-span\"><i>n</i></span> lines contain two integers <span class=\"tex-span\"><i>l</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub></span>\u00a0\u2014 the arguments for the corresponding query (<span class=\"tex-span\">0\u2009\u2264\u2009<i>l</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>r</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>).</p>",
+    "outputSpecification": "<p>For each query print the answer in a separate line.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2<br/>2 4<br/>1 10<br/>",
+            "output": "1<br/>3<br/>7<br/>"
+        }
+    ],
+    "note": "<p>The binary representations of numbers from 1 to 10 are listed below:</p><p><span class=\"tex-span\">1<sub class=\"lower-index\">10</sub>\u2009=\u20091<sub class=\"lower-index\">2</sub></span></p><p><span class=\"tex-span\">2<sub class=\"lower-index\">10</sub>\u2009=\u200910<sub class=\"lower-index\">2</sub></span></p><p><span class=\"tex-span\">3<sub class=\"lower-index\">10</sub>\u2009=\u200911<sub class=\"lower-index\">2</sub></span></p><p><span class=\"tex-span\">4<sub class=\"lower-index\">10</sub>\u2009=\u2009100<sub class=\"lower-index\">2</sub></span></p><p><span class=\"tex-span\">5<sub class=\"lower-index\">10</sub>\u2009=\u2009101<sub class=\"lower-index\">2</sub></span></p><p><span class=\"tex-span\">6<sub class=\"lower-index\">10</sub>\u2009=\u2009110<sub class=\"lower-index\">2</sub></span></p><p><span class=\"tex-span\">7<sub class=\"lower-index\">10</sub>\u2009=\u2009111<sub class=\"lower-index\">2</sub></span></p><p><span class=\"tex-span\">8<sub class=\"lower-index\">10</sub>\u2009=\u20091000<sub class=\"lower-index\">2</sub></span></p><p><span class=\"tex-span\">9<sub class=\"lower-index\">10</sub>\u2009=\u20091001<sub class=\"lower-index\">2</sub></span></p><p><span class=\"tex-span\">10<sub class=\"lower-index\">10</sub>\u2009=\u20091010<sub class=\"lower-index\">2</sub></span></p>",
+    "contestId": 484,
+    "index": "A",
+    "name": "Bits",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms"
+    ],
+    "solvedCount": 10822
+}

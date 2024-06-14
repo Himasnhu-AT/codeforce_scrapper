@@ -1,0 +1,42 @@
+{
+    "title": "E. Stairs and Lines",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a figure on a grid representing stairs consisting of 7 steps. The width of the stair on height <span class=\"tex-span\"><i>i</i></span> is <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> squares. Formally, the figure is created by consecutively joining rectangles of size <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u00d7\u2009<i>i</i></span> so that the <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> sides lie on one straight line. Thus, for example, if all <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009=\u20091</span>, the figure will look like that (different colors represent different rectangles):</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/ef5a2ec4e0d2cd5ed62080dfbbed2ecaef23d74e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>And if <span class=\"tex-span\"><i>w</i>\u2009=\u2009{5,\u20091,\u20090,\u20093,\u20090,\u20090,\u20091}</span>, then it looks like that:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/0e50e7b25f4dd40b8277d09d5fa8856fb4e1c551.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Find the number of ways to color some borders of the figure's inner squares so that no square had all four borders colored. The borders of the squares lying on the border of the figure should be considered painted. The ways that differ with the figure's rotation should be considered distinct. </p>",
+    "inputSpecification": "<p>The single line of the input contains 7 numbers <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\">1</sub>,\u2009<i>w</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>w</i><sub class=\"lower-index\">7</sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup></span>). It is guaranteed that at least one of the <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span>'s isn't equal to zero.</p>",
+    "outputSpecification": "<p>In the single line of the output display a single number \u2014 the answer to the problem modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "samples": [
+        {
+            "input": "0 1 0 0 0 0 0<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "0 2 0 0 0 0 0<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "1 1 1 0 0 0 0<br/>",
+            "output": "9<br/>"
+        },
+        {
+            "input": "5 1 0 3 0 0 1<br/>",
+            "output": "411199181<br/>"
+        }
+    ],
+    "note": "<p>All the possible ways of painting the third sample are given below:</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/6a59c271529ffcfebd32f9b79a31c2c97d50a5e9.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 498,
+    "index": "E",
+    "name": "Stairs and Lines",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "matrices"
+    ],
+    "solvedCount": 451
+}

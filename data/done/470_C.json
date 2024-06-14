@@ -1,0 +1,37 @@
+{
+    "title": "C. Eval",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a simple arithmetic expression of the form <span class=\"tex-span\"><i>a</i>?<i>b</i></span>, where <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> are integer constants, and <span class=\"tex-span\">?</span> can be one of the following operations: '<span class=\"tex-font-style-tt\">+</span>' (addition), '<span class=\"tex-font-style-tt\">-</span>' (subtraction), '<span class=\"tex-font-style-tt\">*</span>' (multiplication), '<span class=\"tex-font-style-tt\">/</span>' (integer division) or '<span class=\"tex-font-style-tt\">%</span>' (modulo operation).</p><p>Output the result of evaluation of this expression.</p>",
+    "inputSpecification": "<p>The input is a single line containing an expression <span class=\"tex-span\"><i>a</i>?<i>b</i></span>. Here <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> are integers between 1 and 999, inclusive; <span class=\"tex-span\">?</span> is an operation character: '<span class=\"tex-font-style-tt\">+</span>', '<span class=\"tex-font-style-tt\">-</span>' (ASCII code 45), '<span class=\"tex-font-style-tt\">*</span>', '<span class=\"tex-font-style-tt\">/</span>' or '<span class=\"tex-font-style-tt\">%</span>'.</p>",
+    "outputSpecification": "<p>Output a single integer \u2014 the result of evaluation of this expression.</p>",
+    "samples": [
+        {
+            "input": "123+456<br/>",
+            "output": "579<br/>"
+        },
+        {
+            "input": "192/5<br/>",
+            "output": "38<br/>"
+        },
+        {
+            "input": "945%19<br/>",
+            "output": "14<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 470,
+    "index": "C",
+    "name": "Eval",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special"
+    ],
+    "solvedCount": 234
+}

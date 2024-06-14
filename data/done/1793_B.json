@@ -1,0 +1,30 @@
+{
+    "title": "B. Fedya and Array",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>For his birthday recently Fedya was given an array $$$a$$$ of $$$n$$$ integers arranged in a circle, For each pair of neighboring numbers ($$$a_1$$$ and $$$a_2$$$, $$$a_2$$$ and $$$a_3$$$, $$$\\ldots$$$, $$$a_{n - 1}$$$ and $$$a_n$$$, $$$a_n$$$ and $$$a_1$$$) the absolute difference between them is equal to $$$1$$$.</p><p>Let's call a <span class=\"tex-font-style-it\">local maximum</span> an element, which is greater than both of its neighboring elements. Also call a <span class=\"tex-font-style-it\">local minimum</span> an element, which is less than both of its neighboring elements. Note, that elements $$$a_1$$$ and $$$a_n$$$ are neighboring elements.</p><p>Unfortunately, Fedya lost an array, but he remembered in it the sum of local maximums $$$x$$$ and the sum of local minimums $$$y$$$.</p><p>Given $$$x$$$ and $$$y$$$, help Fedya find any matching array of <span class=\"tex-font-style-bf\">minimum</span> length.</p>",
+    "inputSpecification": "<p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \\le t \\le 1000$$$). Description of the test cases follows.</p><p>Each line of each test case contain two integers $$$x$$$ and $$$y$$$ ($$$-10^{9} \\le y &lt; x \\le 10^{9}$$$) \u2014 the sum of local maximums and the sum of local minimums, respectively.</p>",
+    "outputSpecification": "<p>For each test case, in the first line print one integer $$$n$$$ \u2014 the minimum length of matching arrays.</p><p>In the second line print $$$n$$$ integers $$$a_1, a_2, \\ldots, a_n$$$ ($$$-10^{9} \\leqslant a_i \\leqslant 10^{9}$$$) \u2014 the array elements such that the the absolute difference between each pair of neighboring is equal to $$$1$$$.</p><p>If there are multiple solutions, print any of them.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^{5}$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3 -2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 -4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 -1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">5 -3</div>",
+            "output": "\n10\n0 1 2 1 0 -1 0 -1 0 1\n16\n-2 -1 -2 -1 0 1 2 3 4 5 4 3 2 1 0 -1 \n6\n1 0 -1 0 1 0\n16\n2 3 2 1 0 -1 0 -1 0 -1 0 1 2 1 0 1"
+        }
+    ],
+    "note": "<p>In the first test case, the local maximums are the numbers at $$$3, 7$$$ and $$$10$$$ positions, and the local minimums are the numbers at $$$1, 6$$$ and $$$8$$$ positions. $$$x = a_3 + a_7 + a_{10} = 2 + 0 + 1 = 3$$$, $$$y = a_1 + a_6 + a_8 = 0 + (-1) + (-1) = -2$$$.</p><p>In the second test case, the local maximums are the numbers at $$$2$$$ and $$$10$$$ positions, and the local minimums are the numbers at $$$1$$$ and $$$3$$$ positions. $$$x = a_2 + a_{10} = -1 + 5 = 4$$$, $$$y = a_1 + a_3 = -2 + (-2) = -4$$$.</p><p>In the third test case, the local maximums are the numbers at $$$1$$$ and $$$5$$$ positions, and the local minimums are the numbers at $$$3$$$ and $$$6$$$ positions.</p>",
+    "contestId": 1793,
+    "index": "B",
+    "name": "Fedya and Array",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 15359
+}

@@ -1,0 +1,34 @@
+{
+    "title": "A. Up the hill",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Hiking club \"Up the hill\" just returned from a walk. Now they are trying to remember which hills they've just walked through.</p><p>It is known that there were <span class=\"tex-span\"><i>N</i></span> stops, all on different integer heights between <span class=\"tex-span\">1</span> and <span class=\"tex-span\"><i>N</i></span> kilometers (inclusive) above the sea level. On the first day they've traveled from the first stop to the second stop, on the second day they've traveled from the second to the third and so on, and on the last day they've traveled from the stop <span class=\"tex-span\"><i>N</i>\u2009-\u20091</span> to the stop <span class=\"tex-span\"><i>N</i></span> and successfully finished their expedition.</p><p>They are trying to find out which heights were their stops located at. They have an entry in a travel journal specifying how many days did they travel up the hill, and how many days did they walk down the hill.</p><p>Help them by suggesting some possible stop heights satisfying numbers from the travel journal.</p>",
+    "inputSpecification": "<p>In the first line there is an integer non-negative number <span class=\"tex-span\"><i>A</i></span> denoting the number of days of climbing up the hill. Second line contains an integer non-negative number <span class=\"tex-span\"><i>B</i></span>\u00a0\u2014 the number of days of walking down the hill (<span class=\"tex-span\"><i>A</i>\u2009+\u2009<i>B</i>\u2009+\u20091\u2009=\u2009<i>N</i></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>N</i>\u2009\u2264\u2009100\u2009000</span>).</p>",
+    "outputSpecification": "<p>Output <span class=\"tex-span\"><i>N</i></span> space-separated distinct integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>N</i></span> inclusive, denoting possible heights of the stops in order of visiting.</p>",
+    "samples": [
+        {
+            "input": "0<br/>1<br/>",
+            "output": "2 1 <br/>"
+        },
+        {
+            "input": "2<br/>1",
+            "output": "1 3 4 2"
+        }
+    ],
+    "note": null,
+    "contestId": 491,
+    "index": "A",
+    "name": "Up the hill",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 2831
+}

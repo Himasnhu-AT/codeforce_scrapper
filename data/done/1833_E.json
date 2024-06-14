@@ -1,0 +1,32 @@
+{
+    "title": "E. Round Dance",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>$$$n$$$ people came to the festival and decided to dance a few round dances. There are at least $$$2$$$ people in the round dance and each person has exactly two neighbors. If there are $$$2$$$ people in the round dance then they have the same neighbor on each side.</p><p>You decided to find out exactly how many dances there were. But each participant of the holiday remembered exactly <span class=\"tex-font-style-bf\">one</span> neighbor. Your task is to determine what the minimum and maximum number of round dances could be.</p><p>For example, if there were $$$6$$$ people at the holiday, and the numbers of the neighbors they remembered are equal $$$[2, 1, 4, 3, 6, 5]$$$, then the <span class=\"tex-font-style-bf\">minimum</span> number of round dances is$$$1$$$: </p><ul> <li>$$$1 - 2 - 3 - 4 - 5 - 6 - 1$$$ </li></ul> and the <span class=\"tex-font-style-bf\">maximum</span> is $$$3$$$: <ul> <li> $$$1 - 2 - 1$$$ </li><li> $$$3 - 4 - 3$$$ </li><li> $$$5 - 6 - 5$$$ </li></ul>",
+    "inputSpecification": "<p>The first line contains a positive number $$$t$$$ ($$$1 \\le t \\le 10^4$$$) \u2014 the number of test cases. The following is a description of the test cases.</p><p>The first line of the description of each test case contains a positive number $$$n$$$ ($$$2 \\le n \\le 2 \\cdot 10^5$$$) \u2014 the number of people at the holiday.</p><p>The second line of the description of each test case contains $$$n$$$ integers $$$a_i$$$ ($$$1 \\le a_i \\le n, a_i \\neq i$$$) \u2014 the number of the neighbor that the $$$i$$$th person remembered.</p><p>It is guaranteed that the test cases are correct and corresponds to at least one division of people into round dances.</p><p>It is guaranteed that the sum of $$$n$$$ for all test cases does not exceed $$$2 \\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test case, output two integers \u2014 the minimum and maximum number of round dances that could be.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">10</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 1 4 3 6 5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">6</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 3 1 5 6 4</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">9</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">2 3 2 5 6 5 8 9 8</div><div class=\"test-example-line test-example-line-even test-example-line-4\">2</div><div class=\"test-example-line test-example-line-even test-example-line-4\">2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">4 3 2 1</div><div class=\"test-example-line test-example-line-even test-example-line-6\">5</div><div class=\"test-example-line test-example-line-even test-example-line-6\">2 3 4 5 1</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">5 3 4 1 1 2</div><div class=\"test-example-line test-example-line-even test-example-line-8\">5</div><div class=\"test-example-line test-example-line-even test-example-line-8\">3 5 4 1 2</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-9\">6 3 2 5 4 3</div><div class=\"test-example-line test-example-line-even test-example-line-10\">6</div><div class=\"test-example-line test-example-line-even test-example-line-10\">5 1 4 3 4 2</div>",
+            "output": "\n1 3\n2 2\n1 3\n1 1\n1 2\n1 1\n1 1\n2 2\n1 2\n1 1\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1833,
+    "index": "E",
+    "name": "Round Dance",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "shortest paths"
+    ],
+    "solvedCount": 10752
+}

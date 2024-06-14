@@ -1,0 +1,37 @@
+{
+    "title": "C. Weakness and Poorness",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given a sequence of n integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span>. </p><p>Determine a real number <span class=\"tex-span\"><i>x</i></span> such that the <span class=\"tex-font-style-it\">weakness</span> of the sequence <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>\u2009-\u2009<i>x</i>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>\u2009-\u2009<i>x</i>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub>\u2009-\u2009<i>x</i></span> is as small as possible.</p><p>The <span class=\"tex-font-style-it\">weakness</span> of a sequence is defined as the maximum value of the <span class=\"tex-font-style-it\">poorness</span> over all segments (contiguous subsequences) of a sequence.</p><p>The <span class=\"tex-font-style-it\">poorness</span> of a segment is defined as the absolute value of sum of the elements of segment.</p>",
+    "inputSpecification": "<p>The first line contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>), the length of a sequence.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">|<i>a</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910\u2009000</span>).</p>",
+    "outputSpecification": "<p>Output a real number denoting the minimum possible <span class=\"tex-font-style-it\">weakness</span> of <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>\u2009-\u2009<i>x</i>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>\u2009-\u2009<i>x</i>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub>\u2009-\u2009<i>x</i></span>. Your answer will be considered correct if its relative or absolute error doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">\u2009-\u20096</sup></span>.</p>",
+    "samples": [
+        {
+            "input": "3<br/>1 2 3<br/>",
+            "output": "1.000000000000000<br/>"
+        },
+        {
+            "input": "4<br/>1 2 3 4<br/>",
+            "output": "2.000000000000000<br/>"
+        },
+        {
+            "input": "10<br/>1 10 2 9 3 8 4 7 5 6<br/>",
+            "output": "4.500000000000000<br/>"
+        }
+    ],
+    "note": "<p>For the first case, the optimal value of <span class=\"tex-span\"><i>x</i></span> is <span class=\"tex-span\">2</span> so the sequence becomes <span class=\"tex-span\">\u2009-\u20091</span>, <span class=\"tex-span\">0</span>, <span class=\"tex-span\">1</span> and the max poorness occurs at the segment \"-1\" or segment \"1\". The poorness value (answer) equals to <span class=\"tex-span\">1</span> in this case. </p><p>For the second sample the optimal value of <span class=\"tex-span\"><i>x</i></span> is <span class=\"tex-span\">2.5</span> so the sequence becomes <span class=\"tex-span\">\u2009-\u20091.5,\u2009\u2009-\u20090.5,\u20090.5,\u20091.5</span> and the max poorness occurs on segment \"-1.5 -0.5\" or \"0.5 1.5\". The poorness value (answer) equals to <span class=\"tex-span\">2</span> in this case.</p>",
+    "contestId": 578,
+    "index": "C",
+    "name": "Weakness and Poorness",
+    "type": "PROGRAMMING",
+    "tags": [
+        "ternary search"
+    ],
+    "solvedCount": 4311
+}

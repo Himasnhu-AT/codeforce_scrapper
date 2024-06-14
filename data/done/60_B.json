@@ -1,0 +1,46 @@
+{
+    "title": "B. Serial Time!",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The Cereal Guy's friend Serial Guy likes to watch soap operas. An episode is about to start, and he hasn't washed his plate yet. But he decided to at least put in under the tap to be filled with water. The plate can be represented by a parallelepiped <span class=\"tex-span\"><i>k</i>\u2009\u00d7\u2009<i>n</i>\u2009\u00d7\u2009<i>m</i></span>, that is, it has <span class=\"tex-span\"><i>k</i></span> layers (the first layer is the upper one), each of which is a rectangle <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> with empty squares ('.') and obstacles ('#'). The water can only be present in the empty squares. The tap is positioned above the square <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span> of the first layer, it is guaranteed that this square is empty. Every minute a cubical unit of water falls into the plate. Find out in how many minutes the Serial Guy should unglue himself from the soap opera and turn the water off for it not to overfill the plate. That is, you should find the moment of time when the plate is absolutely full and is going to be overfilled in the next moment.</p><p>Note: the water fills all the area within reach (see sample 4). Water flows in <span class=\"tex-font-style-bf\">each</span> of the 6 directions, through faces of <span class=\"tex-span\">1\u2009\u00d7\u20091\u2009\u00d7\u20091</span> cubes.</p>",
+    "inputSpecification": "<p>The first line contains three numbers <span class=\"tex-span\"><i>k</i></span>, <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>,\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200910</span>) which are the sizes of the plate. Then follow <span class=\"tex-span\"><i>k</i></span> rectangles consisting of <span class=\"tex-span\"><i>n</i></span> lines each containing <span class=\"tex-span\"><i>m</i></span> characters '.' or '#', which represents the \"layers\" of the plate in the order from the top to the bottom. The rectangles are separated by empty lines (see the samples). The last line contains <span class=\"tex-span\"><i>x</i></span> and <span class=\"tex-span\"><i>y</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>n</i>,\u20091\u2009\u2264\u2009<i>y</i>\u2009\u2264\u2009<i>m</i></span>) which are the tap's coordinates. <span class=\"tex-span\"><i>x</i></span> is the number of the line and <span class=\"tex-span\"><i>y</i></span> is the number of the column. Lines of each layer are numbered from left to right by the integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>, columns of each layer are numbered from top to bottom by the integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span>.</p>",
+    "outputSpecification": "<p>The answer should contain a single number, showing in how many minutes the plate will be filled.</p>",
+    "samples": [
+        {
+            "input": "1 1 1<br/><br/>.<br/><br/>1 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 1 1<br/><br/>.<br/><br/>#<br/><br/>1 1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 2 2<br/><br/>.#<br/>##<br/><br/>..<br/>..<br/><br/>1 1<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "3 2 2<br/><br/>#.<br/>##<br/><br/>#.<br/>.#<br/><br/>..<br/>..<br/><br/>1 2<br/>",
+            "output": "7<br/>"
+        },
+        {
+            "input": "3 3 3<br/><br/>.#.<br/>###<br/>##.<br/><br/>.##<br/>###<br/>##.<br/><br/>...<br/>...<br/>...<br/><br/>1 1<br/>",
+            "output": "13<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 60,
+    "index": "B",
+    "name": "Serial Time!",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "dsu"
+    ],
+    "solvedCount": 4468
+}

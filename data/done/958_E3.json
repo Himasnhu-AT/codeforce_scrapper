@@ -1,0 +1,29 @@
+{
+    "title": "E3. Guard Duty (hard)",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Now that Heidi knows that she can assign Rebel spaceships to bases (recall the easy subtask), she is asking you: how <span class=\"tex-font-style-it\">exactly</span> to do this? Now, given positions of <span class=\"tex-span\"><i>N</i></span> spaceships and <span class=\"tex-span\"><i>N</i></span> bases on a plane, your task is to connect spaceships and bases with line segments so that: </p><ul> <li> The segments do not intersect. </li><li> Such a connection forms a perfect matching. </li></ul>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>N</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910000</span>). For <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>N</i></span>, the <span class=\"tex-span\"><i>i</i>\u2009+\u20091</span>-th line contains two integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">|<i>x</i><sub class=\"lower-index\"><i>i</i></sub>|,\u2009|<i>y</i><sub class=\"lower-index\"><i>i</i></sub>|\u2009\u2264\u200910000</span>) denoting the coordinates of the <span class=\"tex-span\"><i>i</i></span>-th spaceship. The following <span class=\"tex-span\"><i>N</i></span> lines have the same format, denoting the position of bases. It is guaranteed that no two points coincide and no three points are on the same line.</p>",
+    "outputSpecification": "<p>The output should have <span class=\"tex-span\"><i>N</i></span> lines. The <span class=\"tex-span\"><i>i</i></span>-th line should contain an integer <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>, the index of the base to which the <span class=\"tex-span\"><i>i</i></span>-th spaceship is connected. The sequence <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\">1</sub>,\u2009...,\u2009<i>p</i><sub class=\"lower-index\"><i>N</i></sub></span> should form a permutation of <span class=\"tex-span\">1,\u2009...,\u2009<i>N</i></span>.</p><p>It is guaranteed that a solution exists. If there are multiple solutions, you can output any one of them.</p>",
+    "samples": [
+        {
+            "input": "4<br/>6 6<br/>5 1<br/>2 4<br/>4 0<br/>5 4<br/>1 2<br/>2 1<br/>3 5<br/>",
+            "output": "4<br/>1<br/>2<br/>3<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 958,
+    "index": "E3",
+    "name": "Guard Duty (hard)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry"
+    ],
+    "solvedCount": 179
+}

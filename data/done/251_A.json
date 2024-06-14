@@ -1,0 +1,39 @@
+{
+    "title": "A. Points on Line",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Petya likes points a lot. Recently his mom has presented him <span class=\"tex-span\"><i>n</i></span> points lying on the line <span class=\"tex-span\"><i>OX</i></span>. Now Petya is wondering in how many ways he can choose three distinct points so that the distance between the two farthest of them doesn't exceed <span class=\"tex-span\"><i>d</i></span>.</p><p>Note that the order of the points inside the group of three chosen points doesn't matter.</p>",
+    "inputSpecification": "<p>The first line contains two integers: <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>;\u00a01\u2009\u2264\u2009<i>d</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>). The next line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>n</i></sub></span>, their absolute value doesn't exceed <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup></span> \u2014 the <span class=\"tex-span\"><i>x</i></span>-coordinates of the points that Petya has got.</p><p>It is guaranteed that the coordinates of the points in the input <span class=\"tex-font-style-bf\">strictly increase</span>.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number of groups of three points, where the distance between two farthest points doesn't exceed <span class=\"tex-span\"><i>d</i></span>.</p><p>Please do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "4 3<br/>1 2 3 4<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "4 2<br/>-3 -2 -1 0<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "5 19<br/>1 10 20 30 50<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": "<p>In the first sample any group of three points meets our conditions.</p><p>In the seconds sample only 2 groups of three points meet our conditions: <span class=\"tex-font-style-tt\">{-3, -2, -1}</span> and <span class=\"tex-font-style-tt\">{-2, -1, 0}</span>.</p><p>In the third sample only one group does: <span class=\"tex-font-style-tt\">{1, 10, 20}</span>.</p>",
+    "contestId": 251,
+    "index": "A",
+    "name": "Points on Line",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "two pointers"
+    ],
+    "solvedCount": 16887
+}

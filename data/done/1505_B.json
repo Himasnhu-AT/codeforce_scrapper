@@ -1,0 +1,35 @@
+{
+    "title": "B. DMCA",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Many people are aware of DMCA \u2013 Digital Millennium Copyright Act. But another recently proposed DMCA \u2013 Digital Millennium Calculation Act \u2013 is much less known.</p><p>In this problem you need to find a root of a number according to this new DMCA law.</p>",
+    "inputSpecification": "<p>The input contains a single integer $$$a$$$ ($$$1 \\le a \\le 1000000$$$).</p>",
+    "outputSpecification": "<p>Output the result \u2013 an integer number.</p>",
+    "samples": [
+        {
+            "input": "\n1\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n81\n",
+            "output": "\n9\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1505,
+    "index": "B",
+    "name": "DMCA",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "implementation",
+        "number theory"
+    ],
+    "solvedCount": 6028
+}

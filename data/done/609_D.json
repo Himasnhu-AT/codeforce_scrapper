@@ -1,0 +1,39 @@
+{
+    "title": "D. Gadgets for dollars and pounds",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Nura wants to buy <span class=\"tex-span\"><i>k</i></span> gadgets. She has only <span class=\"tex-span\"><i>s</i></span> burles for that. She can buy each gadget for dollars or for pounds. So each gadget is selling only for some type of currency. The type of currency and the cost in that currency are not changing.</p><p>Nura can buy gadgets for <span class=\"tex-span\"><i>n</i></span> days. For each day you know the exchange rates of dollar and pound, so you know the cost of conversion burles to dollars or to pounds.</p><p>Each day (from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>) Nura can buy some gadgets by current exchange rate. Each day she can buy any gadgets she wants, but each gadget can be bought no more than once during <span class=\"tex-span\"><i>n</i></span> days.</p><p>Help Nura to find the minimum day index when she will have <span class=\"tex-span\"><i>k</i></span> gadgets. Nura always pays with burles, which are converted according to the exchange rate of the purchase day. Nura can't buy dollars or pounds, she always stores only burles. Gadgets are numbered with integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>m</i></span> in order of their appearing in input.</p>",
+    "inputSpecification": "<p>First line contains four integers <span class=\"tex-span\"><i>n</i>,\u2009<i>m</i>,\u2009<i>k</i>,\u2009<i>s</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup>,\u20091\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009<i>m</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup>,\u20091\u2009\u2264\u2009<i>s</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>) \u2014 number of days, total number and required number of gadgets, number of burles Nura has.</p><p>Second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 the cost of one dollar in burles on <span class=\"tex-span\"><i>i</i></span>-th day.</p><p>Third line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 the cost of one pound in burles on <span class=\"tex-span\"><i>i</i></span>-th day.</p><p>Each of the next <span class=\"tex-span\"><i>m</i></span> lines contains two integers <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20092,\u20091\u2009\u2264\u2009<i>c</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) \u2014 type of the gadget and it's cost. For the gadgets of the first type cost is specified in dollars. For the gadgets of the second type cost is specified in pounds.</p>",
+    "outputSpecification": "<p>If Nura can't buy <span class=\"tex-span\"><i>k</i></span> gadgets print the only line with the number <span class=\"tex-font-style-tt\">-1</span>.</p><p>Otherwise the first line should contain integer <span class=\"tex-span\"><i>d</i></span> \u2014 the minimum day index, when Nura will have <span class=\"tex-span\"><i>k</i></span> gadgets. On each of the next <span class=\"tex-span\"><i>k</i></span> lines print two integers <span class=\"tex-span\"><i>q</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> \u2014 the number of gadget and the day gadget should be bought. All values <span class=\"tex-span\"><i>q</i><sub class=\"lower-index\"><i>i</i></sub></span> should be different, but the values <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> can coincide (so Nura can buy several gadgets at one day). The days are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>.</p><p>In case there are multiple possible solutions, print any of them.</p>",
+    "samples": [
+        {
+            "input": "5 4 2 2<br/>1 2 3 2 1<br/>3 2 1 2 3<br/>1 1<br/>2 1<br/>1 2<br/>2 2<br/>",
+            "output": "3<br/>1 1<br/>2 3<br/>"
+        },
+        {
+            "input": "4 3 2 200<br/>69 70 71 72<br/>104 105 106 107<br/>1 1<br/>2 2<br/>1 2<br/>",
+            "output": "-1<br/>"
+        },
+        {
+            "input": "4 3 1 1000000000<br/>900000 910000 940000 990000<br/>990000 999000 999900 999990<br/>1 87654<br/>2 76543<br/>1 65432<br/>",
+            "output": "-1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 609,
+    "index": "D",
+    "name": "Gadgets for dollars and pounds",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "greedy",
+        "two pointers"
+    ],
+    "solvedCount": 2625
+}

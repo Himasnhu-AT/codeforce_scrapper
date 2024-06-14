@@ -1,0 +1,39 @@
+{
+    "title": "J. Send the Fool Further! (easy)",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Heidi's friend Jenny is asking Heidi to deliver an important letter to one of their common friends. Since Jenny is Irish, Heidi thinks that this might be a prank. More precisely, she suspects that the message she is asked to deliver states: \"Send the fool further!\", and upon reading it the recipient will ask Heidi to deliver the same message to yet another friend (that the recipient has in common with Heidi), and so on.</p><p>Heidi believes that her friends want to avoid awkward situations, so she will not be made to visit the same person (including Jenny) twice. She also knows how much it costs to travel between any two of her friends who know each other. She wants to know: what is the maximal amount of money she will waste on travel if it really is a prank?</p><p>Heidi's <span class=\"tex-span\"><i>n</i></span> friends are labeled <span class=\"tex-span\">0</span> through <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span>, and their network of connections forms a tree. In other words, every two of her friends <span class=\"tex-span\"><i>a</i></span>, <span class=\"tex-span\"><i>b</i></span> know each other, possibly indirectly (there is a sequence of friends starting from <span class=\"tex-span\"><i>a</i></span> and ending on <span class=\"tex-span\"><i>b</i></span> and such that each two consecutive friends in the sequence know each other directly), and there are exactly <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> pairs of friends who know each other directly.</p><p>Jenny is given the number <span class=\"tex-span\">0</span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains the number of friends <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>). The next <span class=\"tex-span\"><i>n</i>\u2009-\u20091</span> lines each contain three space-separated integers <span class=\"tex-span\"><i>u</i></span>, <span class=\"tex-span\"><i>v</i></span> and <span class=\"tex-span\"><i>c</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>u</i>,\u2009<i>v</i>\u2009\u2264\u2009<i>n</i>\u2009-\u20091</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>c</i>\u2009\u2264\u200910<sup class=\"upper-index\">4</sup></span>), meaning that <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> are friends (know each other directly) and the cost for travelling between <span class=\"tex-span\"><i>u</i></span> and <span class=\"tex-span\"><i>v</i></span> is <span class=\"tex-span\"><i>c</i></span>.</p><p>It is guaranteed that the social network of the input forms a tree.</p>",
+    "outputSpecification": "<p>Output a single integer \u2013 the maximum sum of costs.</p>",
+    "samples": [
+        {
+            "input": "4<br/>0 1 4<br/>0 2 2<br/>2 3 3<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "6<br/>1 2 3<br/>0 2 100<br/>1 4 2<br/>0 3 7<br/>3 5 10<br/>",
+            "output": "105<br/>"
+        },
+        {
+            "input": "11<br/>1 0 1664<br/>2 0 881<br/>3 2 4670<br/>4 2 1555<br/>5 1 1870<br/>6 2 1265<br/>7 2 288<br/>8 7 2266<br/>9 2 1536<br/>10 6 3378<br/>",
+            "output": "5551<br/>"
+        }
+    ],
+    "note": "<p>In the second example, the worst-case scenario goes like this: Jenny sends Heidi to the friend labeled by number <span class=\"tex-span\">2</span> (incurring a cost of <span class=\"tex-span\">100</span>), then friend <span class=\"tex-span\">2</span> sends her to friend <span class=\"tex-span\">1</span> (costing Heidi <span class=\"tex-span\">3</span>), and finally friend <span class=\"tex-span\">1</span> relays her to friend <span class=\"tex-span\">4</span> (incurring an additional cost of <span class=\"tex-span\">2</span>).</p>",
+    "contestId": 802,
+    "index": "J",
+    "name": "Send the Fool Further! (easy)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 4342
+}

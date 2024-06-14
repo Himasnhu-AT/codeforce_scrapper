@@ -1,0 +1,29 @@
+{
+    "title": "A. King Moves",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The only king stands on the standard chess board. You are given his position in format \"<span class=\"tex-font-style-tt\">cd</span>\", where <span class=\"tex-span\"><i>c</i></span> is the column from 'a' to 'h' and <span class=\"tex-span\"><i>d</i></span> is the row from '1' to '8'. Find the number of moves permitted for the king.</p><p>Check the king's moves here <a href=\"https://en.wikipedia.org/wiki/King_(chess)\">https://en.wikipedia.org/wiki/King_(chess)</a>.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/96da823b1b13b6cb4a868e77d380e136b9b34eb5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-small\">King moves from the position e4</span> </center>",
+    "inputSpecification": "<p>The only line contains the king's position in the format \"<span class=\"tex-font-style-tt\">cd</span>\", where 'c' is the column from 'a' to 'h' and 'd' is the row from '1' to '8'.</p>",
+    "outputSpecification": "<p>Print the only integer <span class=\"tex-span\"><i>x</i></span> \u2014 the number of moves permitted for the king.</p>",
+    "samples": [
+        {
+            "input": "e4<br/>",
+            "output": "8<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 710,
+    "index": "A",
+    "name": "King Moves",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 13595
+}

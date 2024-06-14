@@ -1,0 +1,39 @@
+{
+    "title": "C. Brackets",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A two dimensional array is called a <span class=\"tex-font-style-underline\">bracket</span> array if each grid contains one of the two possible brackets \u2014 \"(\" or \")\". A path through the two dimensional array cells is called <span class=\"tex-font-style-underline\">monotonous</span> if any two consecutive cells in the path are side-adjacent and each cell of the path is located below or to the right from the previous one. </p><p>A two dimensional array whose size equals <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> is called a <span class=\"tex-font-style-underline\">correct bracket</span> array, if any string formed by writing out the brackets on some monotonous way from cell <span class=\"tex-span\">(1,\u20091)</span> to cell <span class=\"tex-span\">(<i>n</i>,\u2009<i>m</i>)</span> forms a correct bracket sequence. </p><p>Let's define the operation of comparing two correct bracket arrays of equal size (<span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>) like that. Let's consider a given two dimensional array of priorities (<span class=\"tex-span\"><i>c</i></span>) \u2014 a two dimensional array of same size, containing different integers from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>nm</i></span>. Let's find such position <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> in the two dimensional array, that <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub>\u2009\u2260\u2009<i>b</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span>. If there are several such positions, let's choose the one where number <span class=\"tex-span\"><i>c</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span> is minimum. If <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub>\u2009=\u2009</span>\"(\", then <span class=\"tex-span\"><i>a</i>\u2009&lt;\u2009<i>b</i></span>, otherwise <span class=\"tex-span\"><i>a</i>\u2009&gt;\u2009<i>b</i></span>. If the position <span class=\"tex-span\">(<i>i</i>,\u2009<i>j</i>)</span> is not found, then the arrays are considered equal.</p><p>Your task is to find a <span class=\"tex-span\"><i>k</i></span>-th two dimensional correct bracket array. It is guaranteed that for the given sizes of <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> there will be no less than <span class=\"tex-span\"><i>k</i></span> two dimensional correct bracket arrays.</p>",
+    "inputSpecification": "<p>The first line contains integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> \u2014 the sizes of the array and the number of the sought correct bracket array (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009100</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>). Then an array of priorities is given, <span class=\"tex-span\"><i>n</i></span> lines each containing <span class=\"tex-span\"><i>m</i></span> numbers, number <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span> shows the priority of character <span class=\"tex-span\"><i>j</i></span> in line <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub>\u2009\u2264\u2009<i>nm</i></span>, all <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i>,\u2009<i>j</i></sub></span> are different).</p><p>Please do not use the %lld specificator to read or write 64-bit integers in \u0421++. It is preferred to use the cin, cout streams or the %I64d specificator.</p>",
+    "outputSpecification": "<p>Print the <span class=\"tex-span\"><i>k</i></span>-th two dimensional correct bracket array.</p>",
+    "samples": [
+        {
+            "input": "1 2 1<br/>1 2<br/>",
+            "output": "()<br/>"
+        },
+        {
+            "input": "2 3 1<br/>1 2 3<br/>4 5 6<br/>",
+            "output": "(()<br/>())<br/>"
+        },
+        {
+            "input": "3 2 2<br/>3 6<br/>1 4<br/>2 5<br/>",
+            "output": "()<br/>)(<br/>()<br/>"
+        }
+    ],
+    "note": "<p>In the first sample exists only one correct two-dimensional bracket array.</p><p>In the second and in the third samples two arrays exist.</p><p>A bracket sequence is called regular if it is possible to obtain correct arithmetic expression by inserting characters \u00ab<span class=\"tex-font-style-tt\">+</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">1</span>\u00bb into this sequence. For example, sequences \u00ab<span class=\"tex-font-style-tt\">(())()</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">()</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">(()(()))</span>\u00bb are regular, while \u00ab<span class=\"tex-font-style-tt\">)(</span>\u00bb, \u00ab<span class=\"tex-font-style-tt\">(()</span>\u00bb and \u00ab<span class=\"tex-font-style-tt\">(()))(</span>\u00bb are not.</p>",
+    "contestId": 123,
+    "index": "C",
+    "name": "Brackets",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "greedy"
+    ],
+    "solvedCount": 590
+}

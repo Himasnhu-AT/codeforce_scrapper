@@ -1,0 +1,38 @@
+{
+    "title": "D1. Equalizing by Division (easy version)",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-bf\">The only difference between easy and hard versions is the number of elements in the array</span>.</p><p>You are given an array $$$a$$$ consisting of $$$n$$$ integers. In one move you can choose any $$$a_i$$$ and divide it by $$$2$$$ rounding down (in other words, in one move you can set $$$a_i := \\lfloor\\frac{a_i}{2}\\rfloor$$$).</p><p>You can perform such an operation <span class=\"tex-font-style-bf\">any</span> (possibly, zero) number of times with <span class=\"tex-font-style-bf\">any</span> $$$a_i$$$.</p><p>Your task is to calculate the minimum possible number of operations required to obtain at least $$$k$$$ equal numbers in the array.</p><p><span class=\"tex-font-style-bf\">Don't forget that it is possible to have $$$a_i = 0$$$ after some operations, thus the answer always exists</span>.</p>",
+    "inputSpecification": "<p>The first line of the input contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\le k \\le n \\le 50$$$) \u2014 the number of elements in the array and the number of equal numbers required.</p><p>The second line of the input contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i \\le 2 \\cdot 10^5$$$), where $$$a_i$$$ is the $$$i$$$-th element of $$$a$$$.</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the minimum possible number of operations required to obtain at least $$$k$$$ equal numbers in the array.</p>",
+    "samples": [
+        {
+            "input": "\n5 3\n1 2 2 4 5\n",
+            "output": "\n1\n"
+        },
+        {
+            "input": "\n5 3\n1 2 3 4 5\n",
+            "output": "\n2\n"
+        },
+        {
+            "input": "\n5 3\n1 2 3 3 3\n",
+            "output": "\n0\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1213,
+    "index": "D1",
+    "name": "Equalizing by Division (easy version)",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 11231
+}

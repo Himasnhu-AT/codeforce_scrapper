@@ -1,0 +1,31 @@
+{
+    "title": "B. GCD Length",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given three integers $$$a$$$, $$$b$$$ and $$$c$$$.</p><p>Find two positive integers $$$x$$$ and $$$y$$$ ($$$x &gt; 0$$$, $$$y &gt; 0$$$) such that: </p><ul> <li> the decimal representation of $$$x$$$ without leading zeroes consists of $$$a$$$ digits; </li><li> the decimal representation of $$$y$$$ without leading zeroes consists of $$$b$$$ digits; </li><li> the decimal representation of $$$gcd(x, y)$$$ without leading zeroes consists of $$$c$$$ digits. </li></ul><p>$$$gcd(x, y)$$$ denotes the <a href=\"https://en.wikipedia.org/wiki/Greatest_common_divisor\">greatest common divisor (GCD)</a> of integers $$$x$$$ and $$$y$$$.</p><p>Output $$$x$$$ and $$$y$$$. If there are multiple answers, output any of them.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 285$$$)\u00a0\u2014 the number of testcases.</p><p>Each of the next $$$t$$$ lines contains three integers $$$a$$$, $$$b$$$ and $$$c$$$ ($$$1 \\le a, b \\le 9$$$, $$$1 \\le c \\le min(a, b)$$$)\u00a0\u2014 the required lengths of the numbers.</p><p>It can be shown that the answer exists for all testcases under the given constraints.</p><p>Additional constraint on the input: all testcases are different.</p>",
+    "outputSpecification": "<p>For each testcase print two positive integers\u00a0\u2014 $$$x$$$ and $$$y$$$ ($$$x &gt; 0$$$, $$$y &gt; 0$$$) such that </p><ul> <li> the decimal representation of $$$x$$$ without leading zeroes consists of $$$a$$$ digits; </li><li> the decimal representation of $$$y$$$ without leading zeroes consists of $$$b$$$ digits; </li><li> the decimal representation of $$$gcd(x, y)$$$ without leading zeroes consists of $$$c$$$ digits. </li></ul>",
+    "samples": [
+        {
+            "input": "\n4\n2 3 1\n2 2 2\n6 6 2\n1 1 1\n",
+            "output": "\n11 492\n13 26\n140133 160776\n1 1\n"
+        }
+    ],
+    "note": "<p>In the example: </p><ol> <li> $$$gcd(11, 492) = 1$$$ </li><li> $$$gcd(13, 26) = 13$$$ </li><li> $$$gcd(140133, 160776) = 21$$$ </li><li> $$$gcd(1, 1) = 1$$$ </li></ol>",
+    "contestId": 1511,
+    "index": "B",
+    "name": "GCD Length",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 22115
+}

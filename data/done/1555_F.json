@@ -1,0 +1,32 @@
+{
+    "title": "F. Good Graph",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You have an undirected graph consisting of $$$n$$$ vertices with weighted edges.</p><p>A simple cycle is a cycle of the graph without repeated vertices. Let the <span class=\"tex-font-style-it\">weight</span> of the cycle be the <a href=\"https://en.wikipedia.org/wiki/Bitwise_operation#XOR\">XOR</a> of weights of edges it consists of.</p><p>Let's say the graph is <span class=\"tex-font-style-it\">good</span> if all its <span class=\"tex-font-style-it\">simple</span> cycles have weight $$$1$$$. A graph is bad if it's not good.</p><p>Initially, the graph is empty. Then $$$q$$$ queries follow. Each query has the next type: </p><ul> <li> $$$u$$$ $$$v$$$ $$$x$$$\u00a0\u2014 add edge between vertices $$$u$$$ and $$$v$$$ of weight $$$x$$$ if it doesn't make the graph bad. </li></ul><p>For each query print, was the edge added or not.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$q$$$ ($$$3 \\le n \\le 3 \\cdot 10^5$$$; $$$1 \\le q \\le 5 \\cdot 10^5$$$)\u00a0\u2014 the number of vertices and queries.</p><p>Next $$$q$$$ lines contain queries\u00a0\u2014 one per line. Each query contains three integers $$$u$$$, $$$v$$$ and $$$x$$$ ($$$1 \\le u, v \\le n$$$; $$$u \\neq v$$$; $$$0 \\le x \\le 1$$$)\u00a0\u2014 the vertices of the edge and its weight.</p><p><span class=\"tex-font-style-bf\">It's guaranteed that there are no multiple edges in the input.</span></p>",
+    "outputSpecification": "<p>For each query, print <span class=\"tex-font-style-tt\">YES</span> if the edge was added to the graph, or <span class=\"tex-font-style-tt\">NO</span> otherwise (both case-insensitive).</p>",
+    "samples": [
+        {
+            "input": "\n9 12\n6 1 0\n1 3 1\n3 6 0\n6 2 0\n6 4 1\n3 4 1\n2 4 0\n2 5 0\n4 5 0\n7 8 1\n8 9 1\n9 7 0\n",
+            "output": "\nYES\nYES\nYES\nYES\nYES\nNO\nYES\nYES\nNO\nYES\nYES\nNO\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1555,
+    "index": "F",
+    "name": "Good Graph",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "dsu",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 833
+}

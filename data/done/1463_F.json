@@ -1,0 +1,43 @@
+{
+    "title": "F. Max Correct Set",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's call the set of positive integers $$$S$$$ <span class=\"tex-font-style-bf\">correct</span> if the following two conditions are met: </p><ul> <li> $$$S \\subseteq \\{1, 2, \\dots, n\\}$$$; </li><li> if $$$a \\in S$$$ and $$$b \\in S$$$, then $$$|a-b| \\neq x$$$ and $$$|a-b| \\neq y$$$. </li></ul><p>For the given values $$$n$$$, $$$x$$$, and $$$y$$$, you have to find the maximum size of the <span class=\"tex-font-style-bf\">correct</span> set.</p>",
+    "inputSpecification": "<p>A single line contains three integers $$$n$$$, $$$x$$$ and $$$y$$$ ($$$1 \\le n \\le 10^9$$$; $$$1 \\le x, y \\le 22$$$). </p>",
+    "outputSpecification": "<p>Print one integer \u2014 the maximum size of the <span class=\"tex-font-style-bf\">correct</span> set.</p>",
+    "samples": [
+        {
+            "input": "\n10 2 5\n",
+            "output": "\n5\n"
+        },
+        {
+            "input": "\n21 4 6\n",
+            "output": "\n9\n"
+        },
+        {
+            "input": "\n1337 7 7\n",
+            "output": "\n672\n"
+        },
+        {
+            "input": "\n455678451 22 17\n",
+            "output": "\n221997195\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1463,
+    "index": "F",
+    "name": "Max Correct Set",
+    "type": "PROGRAMMING",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "math"
+    ],
+    "solvedCount": 557
+}

@@ -1,0 +1,38 @@
+{
+    "title": "A. Robot Sequence",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Calvin the robot lies in an infinite rectangular grid. Calvin's source code contains a list of <span class=\"tex-span\"><i>n</i></span> commands, each either '<span class=\"tex-font-style-tt\">U</span>', '<span class=\"tex-font-style-tt\">R</span>', '<span class=\"tex-font-style-tt\">D</span>', or '<span class=\"tex-font-style-tt\">L</span>'\u00a0\u2014 instructions to move a single square up, right, down, or left, respectively. How many ways can Calvin execute a non-empty contiguous substrings of commands and return to the same square he starts in? Two substrings are considered different if they have different starting or ending indices.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single positive integer, <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200</span>)\u00a0\u2014 the number of commands.</p><p>The next line contains <span class=\"tex-span\"><i>n</i></span> characters, each either '<span class=\"tex-font-style-tt\">U</span>', '<span class=\"tex-font-style-tt\">R</span>', '<span class=\"tex-font-style-tt\">D</span>', or '<span class=\"tex-font-style-tt\">L</span>'\u00a0\u2014 Calvin's source code.</p>",
+    "outputSpecification": "<p>Print a single integer\u00a0\u2014 the number of contiguous substrings that Calvin can execute and return to his starting square.</p>",
+    "samples": [
+        {
+            "input": "6<br/>URLLDR<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "4<br/>DLUU<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "7<br/>RLRLRLR<br/>",
+            "output": "12<br/>"
+        }
+    ],
+    "note": "<p>In the first case, the entire source code works, as well as the \"<span class=\"tex-font-style-tt\">RL</span>\" substring in the second and third characters.</p><p>Note that, in the third case, the substring \"<span class=\"tex-font-style-tt\">LR</span>\" appears three times, and is therefore counted three times to the total result.</p>",
+    "contestId": 626,
+    "index": "A",
+    "name": "Robot Sequence",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 6158
+}

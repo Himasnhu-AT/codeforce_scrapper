@@ -1,0 +1,36 @@
+{
+    "title": "B. Chloe and the sequence ",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Chloe, the same as Vladik, is a competitive programmer. She didn't have any problems to get to the olympiad like Vladik, but she was confused by the task proposed on the olympiad.</p><p>Let's consider the following algorithm of generating a sequence of integers. Initially we have a sequence consisting of a single element equal to <span class=\"tex-span\">1</span>. Then we perform <span class=\"tex-span\">(<i>n</i>\u2009-\u20091)</span> steps. On each step we take the sequence we've got on the previous step, append it to the end of itself and insert in the middle the minimum positive integer we haven't used before. For example, we get the sequence <span class=\"tex-span\">[1,\u20092,\u20091]</span> after the first step, the sequence <span class=\"tex-span\">[1,\u20092,\u20091,\u20093,\u20091,\u20092,\u20091]</span> after the second step.</p><p>The task is to find the value of the element with index <span class=\"tex-span\"><i>k</i></span> (the elements are numbered from <span class=\"tex-span\">1</span>) in the obtained sequence, i.\u00a0e. after <span class=\"tex-span\">(<i>n</i>\u2009-\u20091)</span> steps.</p><p>Please help Chloe to solve the problem!</p>",
+    "inputSpecification": "<p>The only line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20092<sup class=\"upper-index\"><i>n</i></sup>\u2009-\u20091</span>).</p>",
+    "outputSpecification": "<p>Print single integer\u00a0\u2014 the integer at the <span class=\"tex-span\"><i>k</i></span>-th position in the obtained sequence.</p>",
+    "samples": [
+        {
+            "input": "3 2<br/>",
+            "output": "2"
+        },
+        {
+            "input": "4 8<br/>",
+            "output": "4"
+        }
+    ],
+    "note": "<p>In the first sample the obtained sequence is <span class=\"tex-span\">[1,\u20092,\u20091,\u20093,\u20091,\u20092,\u20091]</span>. The number on the second position is <span class=\"tex-span\">2</span>.</p><p>In the second sample the obtained sequence is <span class=\"tex-span\">[1,\u20092,\u20091,\u20093,\u20091,\u20092,\u20091,\u20094,\u20091,\u20092,\u20091,\u20093,\u20091,\u20092,\u20091]</span>. The number on the eighth position is <span class=\"tex-span\">4</span>.</p>",
+    "contestId": 743,
+    "index": "B",
+    "name": "Chloe and the sequence ",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 14336
+}

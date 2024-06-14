@@ -1,0 +1,37 @@
+{
+    "title": "B. Alyona and a tree",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Alyona has a tree with <span class=\"tex-span\"><i>n</i></span> vertices. The root of the tree is the vertex <span class=\"tex-span\">1</span>. In each vertex Alyona wrote an positive integer, in the vertex <span class=\"tex-span\"><i>i</i></span> she wrote <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>. Moreover, the girl wrote a positive integer to every edge of the tree (possibly, different integers on different edges).</p><p>Let's define <span class=\"tex-span\"><i>dist</i>(<i>v</i>,\u2009<i>u</i>)</span> as the sum of the integers written on the edges of the simple path from <span class=\"tex-span\"><i>v</i></span> to <span class=\"tex-span\"><i>u</i></span>.</p><p>The vertex <span class=\"tex-span\"><i>v</i></span> controls the vertex <span class=\"tex-span\"><i>u</i></span> (<span class=\"tex-span\"><i>v</i>\u2009\u2260\u2009<i>u</i></span>) if and only if <span class=\"tex-span\"><i>u</i></span> is in the subtree of <span class=\"tex-span\"><i>v</i></span> and <span class=\"tex-span\"><i>dist</i>(<i>v</i>,\u2009<i>u</i>)\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>u</i></sub></span>.</p><p>Alyona wants to settle in some vertex. In order to do this, she wants to know for each vertex <span class=\"tex-span\"><i>v</i></span> what is the number of vertices <span class=\"tex-span\"><i>u</i></span> such that <span class=\"tex-span\"><i>v</i></span> controls <span class=\"tex-span\"><i>u</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>).</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the integers written in the vertices.</p><p>The next <span class=\"tex-span\">(<i>n</i>\u2009-\u20091)</span> lines contain two integers each. The <span class=\"tex-span\"><i>i</i></span>-th of these lines contains integers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>w</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009<i>n</i></span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>w</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the parent of the <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span>-th vertex in the tree and the number written on the edge between <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\">(<i>i</i>\u2009+\u20091)</span>.</p><p>It is guaranteed that the given graph is a tree.</p>",
+    "outputSpecification": "<p>Print <span class=\"tex-span\"><i>n</i></span> integers\u00a0\u2014 the <span class=\"tex-span\"><i>i</i></span>-th of these numbers should be equal to the number of vertices that the <span class=\"tex-span\"><i>i</i></span>-th vertex controls.</p>",
+    "samples": [
+        {
+            "input": "5<br/>2 5 1 4 6<br/>1 7<br/>1 1<br/>3 5<br/>3 6<br/>",
+            "output": "1 0 1 0 0<br/>"
+        },
+        {
+            "input": "5<br/>9 7 8 6 5<br/>1 1<br/>2 1<br/>3 1<br/>4 1<br/>",
+            "output": "4 3 2 1 0<br/>"
+        }
+    ],
+    "note": "<p>In the example test case the vertex <span class=\"tex-span\">1</span> controls the vertex <span class=\"tex-span\">3</span>, the vertex <span class=\"tex-span\">3</span> controls the vertex <span class=\"tex-span\">5</span> (note that is doesn't mean the vertex <span class=\"tex-span\">1</span> controls the vertex <span class=\"tex-span\">5</span>).</p>",
+    "contestId": 739,
+    "index": "B",
+    "name": "Alyona and a tree",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "trees"
+    ],
+    "solvedCount": 4456
+}

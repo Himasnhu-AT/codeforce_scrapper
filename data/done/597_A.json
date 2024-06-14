@@ -1,0 +1,33 @@
+{
+    "title": "A. Divisibility",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Find the number of <span class=\"tex-span\"><i>k</i></span>-divisible numbers on the segment <span class=\"tex-span\">[<i>a</i>,\u2009<i>b</i>]</span>. In other words you need to find the number of such integer values <span class=\"tex-span\"><i>x</i></span> that <span class=\"tex-span\"><i>a</i>\u2009\u2264\u2009<i>x</i>\u2009\u2264\u2009<i>b</i></span> and <span class=\"tex-span\"><i>x</i></span> is divisible by <span class=\"tex-span\"><i>k</i></span>.</p>",
+    "inputSpecification": "<p>The only line contains three space-separated integers <span class=\"tex-span\"><i>k</i></span>, <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup>;\u2009-\u200910<sup class=\"upper-index\">18</sup>\u2009\u2264\u2009<i>a</i>\u2009\u2264\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">18</sup></span>).</p>",
+    "outputSpecification": "<p>Print the required number.</p>",
+    "samples": [
+        {
+            "input": "1 1 10<br/>",
+            "output": "10<br/>"
+        },
+        {
+            "input": "2 -4 4<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 597,
+    "index": "A",
+    "name": "Divisibility",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 4422
+}

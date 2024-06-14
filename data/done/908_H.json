@@ -1,0 +1,31 @@
+{
+    "title": "H. New Year and Boolean Bridges",
+    "timeLimit": {
+        "value": 5.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Your friend has a hidden directed graph with <span class=\"tex-span\"><i>n</i></span> nodes.</p><p>Let <span class=\"tex-span\"><i>f</i>(<i>u</i>,\u2009<i>v</i>)</span> be true if there is a directed path from node <span class=\"tex-span\"><i>u</i></span> to node <span class=\"tex-span\"><i>v</i></span>, and false otherwise. For each pair of distinct nodes, <span class=\"tex-span\"><i>u</i>,\u2009<i>v</i></span>, you know at least one of the three statements is true: </p><ol> <li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9fe8759561c045dc561f286455d12612b62841f7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/f5aaeadd815f78122da4b35d57ad4bc180ea057b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3fa325ea1ac7aae942ed36212f969fd4cfc4ebfa.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </li></ol><p>Here AND, OR and XOR mean AND, OR and exclusive OR operations, respectively.</p><p>You are given an <span class=\"tex-span\"><i>n</i></span> by <span class=\"tex-span\"><i>n</i></span> matrix saying which one of the three statements holds for each pair of vertices. The entry in the <span class=\"tex-span\"><i>u</i></span>-th row and <span class=\"tex-span\"><i>v</i></span>-th column has a single character. </p><ol> <li> If the first statement holds, this is represented by the character '<span class=\"tex-font-style-tt\">A</span>'. </li><li> If the second holds, this is represented by the character '<span class=\"tex-font-style-tt\">O</span>'. </li><li> If the third holds, this is represented by the character '<span class=\"tex-font-style-tt\">X</span>'. </li><li> The diagonal of this matrix will only contain the character '<span class=\"tex-font-style-tt\">-</span>'. </li></ol><p>Note that it is possible that a pair of nodes may satisfy multiple statements, in which case, the character given will represent one of the true statements for that pair. This matrix is also guaranteed to be symmetric.</p><p>You would like to know if there is a directed graph that is consistent with this matrix. If it is impossible, print the integer <span class=\"tex-font-style-tt\">-1</span>. Otherwise, print the minimum number of edges that could be consistent with this information.</p>",
+    "inputSpecification": "<p>The first line will contain an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200947</span>), the number of nodes.</p><p>The next <span class=\"tex-span\"><i>n</i></span> lines will contain <span class=\"tex-span\"><i>n</i></span> characters each: the matrix of what you know about the graph connectivity in the format described in the statement.</p>",
+    "outputSpecification": "<p>Print the minimum number of edges that is consistent with the given information, or <span class=\"tex-font-style-tt\">-1</span> if it is impossible.</p>",
+    "samples": [
+        {
+            "input": "4<br/>-AAA<br/>A-AA<br/>AA-A<br/>AAA-<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "3<br/>-XX<br/>X-X<br/>XX-<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>Sample 1: The hidden graph is a strongly connected graph. We can put all four nodes in a cycle.</p><p>Sample 2: One valid graph is <span class=\"tex-span\">3\u2009\u2192\u20091\u2009\u2192\u20092</span>. For each distinct pair, exactly one of <span class=\"tex-span\"><i>f</i>(<i>u</i>,\u2009<i>v</i>),\u2009<i>f</i>(<i>v</i>,\u2009<i>u</i>)</span> holds.</p>",
+    "contestId": 908,
+    "index": "H",
+    "name": "New Year and Boolean Bridges",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 375
+}

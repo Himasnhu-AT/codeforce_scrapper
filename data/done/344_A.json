@@ -1,0 +1,33 @@
+{
+    "title": "A. Magnets",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Mad scientist Mike entertains himself by arranging rows of dominoes. He doesn't need dominoes, though: he uses rectangular magnets instead. Each magnet has two poles, positive (a \"plus\") and negative (a \"minus\"). If two magnets are put together at a close distance, then the like poles will repel each other and the opposite poles will attract each other.</p><p>Mike starts by laying one magnet horizontally on the table. During each following step Mike adds one more magnet horizontally to the right end of the row. Depending on how Mike puts the magnet on the table, it is either attracted to the previous one (forming a group of multiple magnets linked together) or repelled by it (then Mike lays this magnet at some distance to the right from the previous one). We assume that a sole magnet not linked to others forms a group of its own.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/a2cfc00fa5ba91709a0c55ed4bb5e70f976b5f20.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center><p>Mike arranged multiple magnets in a row. Determine the number of groups that the magnets formed.</p>",
+    "inputSpecification": "<p>The first line of the input contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100000</span>) \u2014 the number of magnets. Then <span class=\"tex-span\"><i>n</i></span> lines follow. The <span class=\"tex-span\"><i>i</i></span>-th line (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span>) contains either characters \"<span class=\"tex-font-style-tt\">01</span>\", if Mike put the <span class=\"tex-span\"><i>i</i></span>-th magnet in the \"plus-minus\" position, or characters \"<span class=\"tex-font-style-tt\">10</span>\", if Mike put the magnet in the \"minus-plus\" position.</p>",
+    "outputSpecification": "<p>On the single line of the output print the number of groups of magnets.</p>",
+    "samples": [
+        {
+            "input": "6<br/>10<br/>10<br/>10<br/>01<br/>10<br/>10<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "4<br/>01<br/>01<br/>10<br/>10<br/>",
+            "output": "2<br/>"
+        }
+    ],
+    "note": "<p>The first testcase corresponds to the figure. The testcase has three groups consisting of three, one and two magnets.</p><p>The second testcase has two groups, each consisting of two magnets.</p>",
+    "contestId": 344,
+    "index": "A",
+    "name": "Magnets",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 113455
+}

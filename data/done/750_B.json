@@ -1,0 +1,50 @@
+{
+    "title": "B. New Year and North Pole",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In this problem we assume the Earth to be a completely round ball and its surface a perfect sphere. The length of the equator and any meridian is considered to be exactly <span class=\"tex-span\">40\u2009000</span> kilometers. Thus, travelling from North Pole to South Pole or vice versa takes exactly <span class=\"tex-span\">20\u2009000</span> kilometers.</p><p>Limak, a polar bear, lives on the North Pole. Close to the New Year, he helps somebody with delivering packages all around the world. Instead of coordinates of places to visit, Limak got a description how he should move, assuming that he starts from the North Pole. The description consists of <span class=\"tex-span\"><i>n</i></span> parts. In the <span class=\"tex-span\"><i>i</i></span>-th part of his journey, Limak should move <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> kilometers in the direction represented by a string <span class=\"tex-span\"><i>dir</i><sub class=\"lower-index\"><i>i</i></sub></span> that is one of: \"<span class=\"tex-font-style-tt\">North</span>\", \"<span class=\"tex-font-style-tt\">South</span>\", \"<span class=\"tex-font-style-tt\">West</span>\", \"<span class=\"tex-font-style-tt\">East</span>\".</p><p>Limak isn\u2019t sure whether the description is valid. You must help him to check the following conditions:</p><ul> <li> If at any moment of time (before any of the instructions or while performing one of them) Limak is on the North Pole, he can move only to the South. </li><li> If at any moment of time (before any of the instructions or while performing one of them) Limak is on the South Pole, he can move only to the North. </li><li> The journey must end on the North Pole. </li></ul><p>Check if the above conditions are satisfied and print \"<span class=\"tex-font-style-tt\">YES</span>\" or \"<span class=\"tex-font-style-tt\">NO</span>\" on a single line.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200950</span>).</p><p>The <span class=\"tex-span\"><i>i</i></span>-th of next <span class=\"tex-span\"><i>n</i></span> lines contains an integer <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> and a string <span class=\"tex-span\"><i>dir</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/cf8071d3b962bd7ac7bb77393d8cb0cc045dddb1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>)\u00a0\u2014 the length and the direction of the <span class=\"tex-span\"><i>i</i></span>-th part of the journey, according to the description Limak got.</p>",
+    "outputSpecification": "<p>Print \"<span class=\"tex-font-style-tt\">YES</span>\" if the description satisfies the three conditions, otherwise print \"<span class=\"tex-font-style-tt\">NO</span>\", both without the quotes.</p>",
+    "samples": [
+        {
+            "input": "5<br/>7500 South<br/>10000 East<br/>3500 North<br/>4444 West<br/>4000 North<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "2<br/>15000 South<br/>4000 East<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "5<br/>20000 South<br/>1000 North<br/>1000000 West<br/>9000 North<br/>10000 North<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "3<br/>20000 South<br/>10 East<br/>20000 North<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "2<br/>1000 North<br/>1000 South<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "4<br/>50 South<br/>50 North<br/>15000 South<br/>15000 North<br/>",
+            "output": "YES<br/>"
+        }
+    ],
+    "note": "<p>Drawings below show how Limak's journey would look like in first two samples. In the second sample the answer is \"<span class=\"tex-font-style-tt\">NO</span>\" because he doesn't end on the North Pole.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/4111b0289682e9ffd50e39250e7a61bc1c9dcde4.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 750,
+    "index": "B",
+    "name": "New Year and North Pole",
+    "type": "PROGRAMMING",
+    "tags": [
+        "geometry",
+        "implementation"
+    ],
+    "solvedCount": 9434
+}

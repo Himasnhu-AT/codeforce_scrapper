@@ -1,0 +1,32 @@
+{
+    "title": "D. Sum",
+    "timeLimit": {
+        "value": 1.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given $$$n$$$ <span class=\"tex-font-style-bf\">non-decreasing</span> arrays of non-negative numbers. </p><p>Vasya repeats the following operation $$$k$$$ times: </p><ul> <li> Selects a non-empty array. </li><li> Puts the first element of the selected array in his pocket. </li><li> Removes the first element from the selected array. </li></ul><p>Vasya wants to maximize the sum of the elements in his pocket.</p>",
+    "inputSpecification": "<p>The first line contains two integers $$$n$$$ and $$$k$$$ ($$$1 \\le n, k \\le 3\\,000$$$): the number of arrays and operations.</p><p>Each of the next $$$n$$$ lines contain an array. The first integer in each line is $$$t_i$$$ ($$$1 \\le t_i \\le 10^6$$$): the size of the $$$i$$$-th array. The following $$$t_i$$$ integers $$$a_{i, j}$$$ ($$$0 \\le a_{i, 1} \\le \\ldots \\le a_{i, t_i} \\le 10^8$$$) are the elements of the $$$i$$$-th array.</p><p>It is guaranteed that $$$k \\le \\sum\\limits_{i=1}^n t_i \\le 10^6$$$.</p>",
+    "outputSpecification": "<p>Print one integer: the maximum possible sum of all elements in Vasya's pocket after $$$k$$$ operations.</p>",
+    "samples": [
+        {
+            "input": "\n3 3\n2 5 10\n3 1 2 3\n2 1 20\n",
+            "output": "\n26\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1442,
+    "index": "D",
+    "name": "Sum",
+    "type": "PROGRAMMING",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "greedy"
+    ],
+    "solvedCount": 1942
+}

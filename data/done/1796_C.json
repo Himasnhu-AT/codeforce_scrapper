@@ -1,0 +1,30 @@
+{
+    "title": "C. Maximum Set",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A set of positive integers $$$S$$$ is called beautiful if, for every two integers $$$x$$$ and $$$y$$$ from this set, either $$$x$$$ divides $$$y$$$ or $$$y$$$ divides $$$x$$$ (or both).</p><p>You are given two integers $$$l$$$ and $$$r$$$. Consider all beautiful sets consisting of integers not less than $$$l$$$ and not greater than $$$r$$$. You have to print two numbers:</p><ul> <li> the maximum possible size of a beautiful set where all elements are from $$$l$$$ to $$$r$$$; </li><li> the number of beautiful sets consisting of integers from $$$l$$$ to $$$r$$$ with the maximum possible size. </li></ul><p>Since the second number can be very large, print it modulo $$$998244353$$$.</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$t$$$ ($$$1 \\le t \\le 2 \\cdot 10^4$$$) \u2014 the number of test cases.</p><p>Each test case consists of one line containing two integers $$$l$$$ and $$$r$$$ ($$$1 \\le l \\le r \\le 10^6$$$).</p>",
+    "outputSpecification": "<p>For each test case, print two integers \u2014 the maximum possible size of a beautiful set consisting of integers from $$$l$$$ to $$$r$$$, and the number of such sets with maximum possible size. Since the second number can be very large, print it modulo $$$998244353$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">3 11</div><div class=\"test-example-line test-example-line-even test-example-line-2\">13 37</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 22</div><div class=\"test-example-line test-example-line-even test-example-line-4\">4 100</div>",
+            "output": "\n2 4\n2 6\n5 1\n5 7\n"
+        }
+    ],
+    "note": "<p>In the first test case, the maximum possible size of a beautiful set with integers from $$$3$$$ to $$$11$$$ is $$$2$$$. There are $$$4$$$ such sets which have the maximum possible size:</p><ul> <li> $$$\\{ 3, 6 \\}$$$; </li><li> $$$\\{ 3, 9 \\}$$$; </li><li> $$$\\{ 4, 8 \\}$$$; </li><li> $$$\\{ 5, 10 \\}$$$. </li></ul>",
+    "contestId": 1796,
+    "index": "C",
+    "name": "Maximum Set",
+    "type": "PROGRAMMING",
+    "tags": [
+        "binary search",
+        "math"
+    ],
+    "solvedCount": 9938
+}

@@ -1,0 +1,39 @@
+{
+    "title": "C. Simple Strings",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p><span class=\"tex-font-style-tt\">zscoder</span> loves simple strings! A string <span class=\"tex-span\"><i>t</i></span> is called simple if every pair of adjacent characters are distinct. For example <span class=\"tex-font-style-tt\">ab</span>, <span class=\"tex-font-style-tt\">aba</span>, <span class=\"tex-font-style-tt\">zscoder</span> are simple whereas <span class=\"tex-font-style-tt\">aa</span>, <span class=\"tex-font-style-tt\">add</span> are not simple.</p><p><span class=\"tex-font-style-tt\">zscoder</span> is given a string <span class=\"tex-span\"><i>s</i></span>. He wants to change a minimum number of characters so that the string <span class=\"tex-span\"><i>s</i></span> becomes simple. Help him with this task!</p>",
+    "inputSpecification": "<p>The only line contains the string <span class=\"tex-span\"><i>s</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009|<i>s</i>|\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">5</sup></span>) \u2014 the string given to <span class=\"tex-font-style-tt\">zscoder</span>. The string <span class=\"tex-span\"><i>s</i></span> consists of only lowercase English letters.</p>",
+    "outputSpecification": "<p>Print the simple string <span class=\"tex-span\"><i>s</i>'</span> \u2014 the string <span class=\"tex-span\"><i>s</i></span> after the minimal number of changes. If there are multiple solutions, you may output any of them.</p><p>Note that the string <span class=\"tex-span\"><i>s</i>'</span> should also consist of only lowercase English letters.</p>",
+    "samples": [
+        {
+            "input": "aab<br/>",
+            "output": "bab<br/>"
+        },
+        {
+            "input": "caaab<br/>",
+            "output": "cabab<br/>"
+        },
+        {
+            "input": "zscoder<br/>",
+            "output": "zscoder<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 665,
+    "index": "C",
+    "name": "Simple Strings",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "greedy",
+        "strings"
+    ],
+    "solvedCount": 9430
+}

@@ -1,0 +1,31 @@
+{
+    "title": "D. Dima and Lisa",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Dima loves representing an odd number as the sum of multiple primes, and Lisa loves it when there are at most three primes. Help them to represent the given number as the sum of at most than three primes.</p><p>More formally, you are given an <span class=\"tex-font-style-bf\">odd</span> numer <span class=\"tex-span\"><i>n</i></span>. Find a set of numbers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>k</i></span>), such that</p><ol><li> <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20093</span></li><li> <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> is a prime</li><li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1e83aef23423bb7914377eba80196ccb244e1b29.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/></li></ol><p>The numbers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> do not necessarily have to be distinct. It is guaranteed that at least one possible solution exists.</p>",
+    "inputSpecification": "<p>The single line contains an odd number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">3\u2009\u2264\u2009<i>n</i>\u2009&lt;\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>In the first line print <span class=\"tex-span\"><i>k</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u20093)</span>, showing how many numbers are in the representation you found.</p><p>In the second line print numbers <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> in any order. If there are multiple possible solutions, you can print any of them.</p>",
+    "samples": [
+        {
+            "input": "27<br/>",
+            "output": "3<br/>5 11 11<br/>"
+        }
+    ],
+    "note": "<p>A prime is an integer strictly larger than one that is divisible only by one and by itself.</p>",
+    "contestId": 584,
+    "index": "D",
+    "name": "Dima and Lisa",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 8917
+}

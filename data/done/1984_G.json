@@ -1,0 +1,31 @@
+{
+    "title": "G. Magic Trick II",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The secret behind Oscar's first magic trick has been revealed! Because he still wants to impress Lura, he comes up with a new idea: he still wants to sort a permutation $$$p_1, p_2, \\ldots, p_n$$$ of $$$[1, 2, \\ldots, n]$$$.</p><p>This time, he chooses an integer $$$k$$$. He wants to sort the permutation in non-decreasing order using the following operation several times: </p><ol> <li> Pick a continuous subarray of length $$$k$$$ and remove it from $$$p$$$. </li><li> Insert the continuous subarray back into $$$p$$$ at any position (perhaps, in the very front or the very back). </li></ol><p>To be as impressive as possible, Oscar would like to choose the maximal value of $$$k$$$ such that he can sort his permutation. Please help him find the maximal $$$k$$$ as well as a sequence of operations that will sort the permutation. You don't need to minimize the number of operations, but you are allowed to use at most $$$5n^2$$$ operations.</p><p>We have a proof that, for the maximal $$$k$$$ such that you can sort the permutation in any number of operations, you can also sort it in at most $$$5n^2$$$ operations.</p>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 10^3$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$5 \\leq n \\leq 10^3$$$)\u00a0\u2014 the length of the permutation.</p><p>The second line of each test case contains a permutation $$$p_1, p_2, \\ldots, p_n$$$ of $$$[1, 2, \\ldots, n]$$$.</p><p>The sum of $$$n$$$ over all test cases does not exceed $$$2 \\cdot 10^3$$$.</p>",
+    "outputSpecification": "<p>For each test case, first output the chosen value of $$$k$$$ on a new line ($$$1 \\leq k \\leq n$$$).</p><p>Then, output a single integer $$$m$$$\u00a0\u2014 the number of operations used ($$$0 \\leq m \\leq 5n^2$$$).</p><p>Then, on each of the next $$$m$$$ lines, output the operations denoted by two integers $$$i$$$ and $$$j$$$ ($$$1 \\leq i, j \\leq n - k + 1$$$), representing an operation where you remove the subarray starting from index $$$i$$$ and replace it back into $$$p$$$ at index $$$j$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">3</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">5 1 2 3 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 3 5 4 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">6</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 2 3 4 5 6</div>",
+            "output": "\n4\n1\n2 1\n3\n2\n1 3\n2 1\n6\n0\n"
+        }
+    ],
+    "note": "<p>In the first test case, it is enough to move the last four numbers to the front.</p><p>In the second test case, it can be shown that we cannot have $$$k = 4$$$ or $$$k = 5$$$. With $$$k = 3$$$, we can move the first three numbers to the end, and then the middle three to the front to sort the permutation.</p><p>In the third test case, the permutation is already sorted. We can have $$$k = 6$$$ and use no operations.</p>",
+    "contestId": 1984,
+    "index": "G",
+    "name": "Magic Trick II",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 100
+}

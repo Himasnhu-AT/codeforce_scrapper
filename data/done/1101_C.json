@@ -1,0 +1,29 @@
+{
+    "title": "C. Division and Union",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>There are $$$n$$$ segments $$$[l_i, r_i]$$$ for $$$1 \\le i \\le n$$$. You should divide all segments into two <span class=\"tex-font-style-it\">non-empty</span> groups in such way that there is no pair of segments from different groups which have at least one common point, or say that it's impossible to do it. Each segment should belong to exactly one group.</p><p>To optimize testing process you will be given multitest.</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$T$$$ ($$$1 \\le T \\le 50000$$$) \u2014 the number of queries. Each query contains description of the set of segments. Queries are independent.</p><p>First line of each query contains single integer $$$n$$$ ($$$2 \\le n \\le 10^5$$$) \u2014 number of segments. It is guaranteed that $$$\\sum{n}$$$ over all queries does not exceed $$$10^5$$$.</p><p>The next $$$n$$$ lines contains two integers $$$l_i$$$, $$$r_i$$$ per line ($$$1 \\le l_i \\le r_i \\le 2 \\cdot 10^5$$$) \u2014 the $$$i$$$-th segment.</p>",
+    "outputSpecification": "<p>For each query print $$$n$$$ integers $$$t_1, t_2, \\dots, t_n$$$ ($$$t_i \\in \\{1, 2\\}$$$) \u2014 for each segment (in the same order as in the input) $$$t_i$$$ equals $$$1$$$ if the $$$i$$$-th segment will belongs to the first group and $$$2$$$ otherwise.</p><p>If there are multiple answers, you can print any of them. If there is no answer, print $$$-1$$$.</p>",
+    "samples": [
+        {
+            "input": "\n3\n2\n5 5\n2 3\n3\n3 5\n2 3\n2 3\n3\n3 3\n4 4\n5 5\n",
+            "output": "\n2 1 \n-1\n1 1 2 \n"
+        }
+    ],
+    "note": "<p>In the first query the first and the second segments should be in different groups, but exact numbers don't matter.</p><p>In the second query the third segment intersects with the first and the second segments, so they should be in the same group, but then the other group becomes empty, so answer is $$$-1$$$.</p><p>In the third query we can distribute segments in any way that makes groups non-empty, so any answer of $$$6$$$ possible is correct.</p>",
+    "contestId": 1101,
+    "index": "C",
+    "name": "Division and Union",
+    "type": "PROGRAMMING",
+    "tags": [
+        "sortings"
+    ],
+    "solvedCount": 7670
+}

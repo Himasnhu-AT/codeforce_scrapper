@@ -1,0 +1,38 @@
+{
+    "title": "D. The Maths Lecture",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Amr doesn't like Maths as he finds it really boring, so he usually sleeps in Maths lectures. But one day the teacher suspected that Amr is sleeping and asked him a question to make sure he wasn't.</p><p>First he gave Amr two positive integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span>. Then he asked Amr, how many integer numbers <span class=\"tex-span\"><i>x</i>\u2009&gt;\u20090</span> exist such that:</p><ul> <li> Decimal representation of <span class=\"tex-span\"><i>x</i></span> (without leading zeroes) consists of exactly <span class=\"tex-span\"><i>n</i></span> digits; </li><li> There exists some integer <span class=\"tex-span\"><i>y</i>\u2009&gt;\u20090</span> such that: <ul> <li> <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bcce8060204b41c4f215c64b747275267d0ab873.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>; </li><li> decimal representation of <span class=\"tex-span\"><i>y</i></span> is a <span class=\"tex-font-style-it\">suffix</span> of decimal representation of <span class=\"tex-span\"><i>x</i></span>. </li></ul> </li></ul><p>As the answer to this question may be pretty huge the teacher asked Amr to output only its remainder modulo a number <span class=\"tex-span\"><i>m</i></span>.</p><p>Can you help Amr escape this embarrassing situation?</p>",
+    "inputSpecification": "<p>Input consists of three integers <span class=\"tex-span\"><i>n</i>,\u2009<i>k</i>,\u2009<i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009100</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print the required number modulo <span class=\"tex-span\"><i>m</i></span>.</p>",
+    "samples": [
+        {
+            "input": "1 2 1000<br/>",
+            "output": "4"
+        },
+        {
+            "input": "2 2 1000<br/>",
+            "output": "45"
+        },
+        {
+            "input": "5 3 1103<br/>",
+            "output": "590"
+        }
+    ],
+    "note": "<p>A suffix of a string <span class=\"tex-span\"><i>S</i></span> is a non-empty string that can be obtained by removing some number (possibly, zero) of first characters from <span class=\"tex-span\"><i>S</i></span>.</p>",
+    "contestId": 507,
+    "index": "D",
+    "name": "The Maths Lecture",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "implementation"
+    ],
+    "solvedCount": 1703
+}

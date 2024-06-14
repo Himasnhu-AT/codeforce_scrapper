@@ -1,0 +1,38 @@
+{
+    "title": "A. Triangular numbers",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A triangular number is the number of dots in an equilateral triangle uniformly filled with dots. For example, three dots can be arranged in a triangle; thus three is a triangular number. The <span class=\"tex-span\"><i>n</i></span>-th triangular number is the number of dots in a triangle with <span class=\"tex-span\"><i>n</i></span> dots on a side. <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/d3b79c3a1beb823c96a128431cc056ce870b2780.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. You can learn more about these numbers from Wikipedia (http://en.wikipedia.org/wiki/Triangular_number).</p><p>Your task is to find out if a given integer is a triangular number.</p>",
+    "inputSpecification": "<p>The first line contains the single number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009500</span>) \u2014 the given integer.</p>",
+    "outputSpecification": "<p>If the given integer is a triangular number output <span class=\"tex-font-style-tt\">YES</span>, otherwise output <span class=\"tex-font-style-tt\">NO</span>.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "2<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "3<br/>",
+            "output": "YES<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 47,
+    "index": "A",
+    "name": "Triangular numbers",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "math"
+    ],
+    "solvedCount": 14428
+}

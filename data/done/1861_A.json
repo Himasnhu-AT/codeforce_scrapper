@@ -1,0 +1,30 @@
+{
+    "title": "A. Prime Deletion",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 512.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>A <span class=\"tex-font-style-it\">prime</span> number is a positive integer that has exactly two different positive divisors: $$$1$$$ and the integer itself. For example, $$$2$$$, $$$3$$$, $$$13$$$ and $$$101$$$ are prime numbers; $$$1$$$, $$$4$$$, $$$6$$$ and $$$42$$$ are not.</p><p>You are given a sequence of digits from $$$1$$$ to $$$9$$$, in which <span class=\"tex-font-style-bf\">every digit from $$$1$$$ to $$$9$$$ appears exactly once</span>.</p><p>You are allowed to do the following operation <span class=\"tex-font-style-bf\">several (maybe zero) times</span>: choose any digit from the sequence and delete it. <span class=\"tex-font-style-bf\">However, you cannot perform this operation if the sequence consists of only two digits.</span></p><p>Your goal is to obtain a sequence which represents a prime number. Note that you cannot reorder the digits in the sequence.</p><p>Print the resulting sequence, or report that it is impossible to perform the operations so that the resulting sequence is a prime number.</p>",
+    "inputSpecification": "<p>The first line contains one integer $$$t$$$ ($$$1 \\le t \\le 5000$$$) \u2014 the number of test cases.</p><p>Each test case consists of one line containing a string of $$$9$$$ digits (without any characters between them). Each digit from $$$1$$$ to $$$9$$$ appears in this string exactly once.</p>",
+    "outputSpecification": "<p>For each test case, print the answer on a separate line as follows:</p><ul> <li> if it is impossible to perform the described operations, print $$$-1$$$; </li><li> otherwise, print any sequence that represents a prime number, which can be obtained from the given string performing several (maybe zero) operations described in the statement. If there are multiple such sequences, you can print any one of them. </li></ul>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">123456789</div><div class=\"test-example-line test-example-line-even test-example-line-2\">987654321</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">243567918</div><div class=\"test-example-line test-example-line-even test-example-line-4\">576318429</div>",
+            "output": "\n167\n53\n3571\n57638429"
+        }
+    ],
+    "note": null,
+    "contestId": 1861,
+    "index": "A",
+    "name": "Prime Deletion",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "math"
+    ],
+    "solvedCount": 23343
+}

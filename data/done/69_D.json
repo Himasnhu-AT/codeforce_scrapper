@@ -1,0 +1,34 @@
+{
+    "title": "D. Dot",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Anton and Dasha like to play different games during breaks on checkered paper. By the 11th grade they managed to play all the games of this type and asked Vova the programmer to come up with a new game. Vova suggested to them to play a game under the code name \"dot\" with the following rules: </p><ul><li> On the checkered paper a coordinate system is drawn. A dot is initially put in the position <span class=\"tex-span\">(<i>x</i>,\u2009<i>y</i>)</span>. </li><li> A move is shifting a dot to one of the pre-selected vectors. Also each player can once per game symmetrically reflect a dot relatively to the line <span class=\"tex-span\"><i>y</i>\u2009=\u2009<i>x</i></span>. </li><li> Anton and Dasha take turns. Anton goes first. </li><li> The player after whose move the distance from the dot to the coordinates' origin exceeds <span class=\"tex-span\"><i>d</i></span>, loses. </li></ul><p>Help them to determine the winner.</p>",
+    "inputSpecification": "<p>The first line of the input file contains 4 integers <span class=\"tex-span\"><i>x</i></span>, <span class=\"tex-span\"><i>y</i></span>, <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>d</i></span> (<span class=\"tex-span\">\u2009-\u2009200\u2009\u2264\u2009<i>x</i>,\u2009<i>y</i>\u2009\u2264\u2009200,\u20091\u2009\u2264\u2009<i>d</i>\u2009\u2264\u2009200,\u20091\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200920</span>) \u2014 the initial coordinates of the dot, the distance <span class=\"tex-span\"><i>d</i></span> and the number of vectors. It is guaranteed that the initial dot is at the distance less than <span class=\"tex-span\"><i>d</i></span> from the origin of the coordinates. The following <span class=\"tex-span\"><i>n</i></span> lines each contain two non-negative numbers <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>y</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>,\u2009<i>y</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009200</span>) \u2014 the coordinates of the i-th vector. It is guaranteed that all the vectors are nonzero and different.</p>",
+    "outputSpecification": "<p>You should print \"<span class=\"tex-font-style-tt\">Anton</span>\", if the winner is Anton in case of both players play the game optimally, and \"<span class=\"tex-font-style-tt\">Dasha</span>\" otherwise.</p>",
+    "samples": [
+        {
+            "input": "0 0 2 3<br/>1 1<br/>1 2<br/>",
+            "output": "Anton"
+        },
+        {
+            "input": "0 0 2 4<br/>1 1<br/>1 2<br/>",
+            "output": "Dasha"
+        }
+    ],
+    "note": "<p>In the first test, Anton goes to the vector (1;2), and Dasha loses. In the second test Dasha with her first move shifts the dot so that its coordinates are (2;3), and Anton loses, as he has the only possible move \u2014 to reflect relatively to the line <span class=\"tex-span\"><i>y</i>\u2009=\u2009<i>x</i></span>. Dasha will respond to it with the same move and return the dot in position (2;3).</p>",
+    "contestId": 69,
+    "index": "D",
+    "name": "Dot",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "games"
+    ],
+    "solvedCount": 942
+}

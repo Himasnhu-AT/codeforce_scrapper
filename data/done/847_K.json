@@ -1,0 +1,35 @@
+{
+    "title": "K. Travel Cards",
+    "timeLimit": {
+        "value": 4.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>In the evening Polycarp decided to analyze his today's travel expenses on public transport.</p><p>The bus system in the capital of Berland is arranged in such a way that each bus runs along the route between two stops. Each bus has no intermediate stops. So each of the buses continuously runs along the route from one stop to the other and back. There is at most one bus running between a pair of stops.</p><p>Polycarp made <span class=\"tex-span\"><i>n</i></span> trips on buses. About each trip the stop where he started the trip and the the stop where he finished are known. The trips follow in the chronological order in Polycarp's notes.</p><p>It is known that one trip on any bus costs <span class=\"tex-span\"><i>a</i></span> burles. In case when passenger makes a transshipment the cost of trip decreases to <span class=\"tex-span\"><i>b</i></span> burles (<span class=\"tex-span\"><i>b</i>\u2009&lt;\u2009<i>a</i></span>). A passenger makes a transshipment if the stop on which he boards the bus coincides with the stop where he left the previous bus. Obviously, the first trip can not be made with transshipment.</p><p>For example, if Polycarp made three consecutive trips: \"BerBank\" <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> \"University\", \"University\" <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> \"BerMall\", \"University\" <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> \"BerBank\", then he payed <span class=\"tex-span\"><i>a</i>\u2009+\u2009<i>b</i>\u2009+\u2009<i>a</i>\u2009=\u20092<i>a</i>\u2009+\u2009<i>b</i></span> burles. From the BerBank he arrived to the University, where he made transshipment to the other bus and departed to the BerMall. Then he walked to the University and returned to the BerBank by bus.</p><p>Also Polycarp can buy no more than <span class=\"tex-span\"><i>k</i></span> travel cards. Each travel card costs <span class=\"tex-span\"><i>f</i></span> burles. The travel card for a single bus route makes free of charge any trip by this route (in both directions). Once purchased, a travel card can be used any number of times in any direction.</p><p>What is the smallest amount of money Polycarp could have spent today if he can buy no more than <span class=\"tex-span\"><i>k</i></span> travel cards?</p>",
+    "inputSpecification": "<p>The first line contains five integers <span class=\"tex-span\"><i>n</i>,\u2009<i>a</i>,\u2009<i>b</i>,\u2009<i>k</i>,\u2009<i>f</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009300</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>b</i>\u2009&lt;\u2009<i>a</i>\u2009\u2264\u2009100</span>, <span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u2009300</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>f</i>\u2009\u2264\u20091000</span>) where:</p><ul> <li> <span class=\"tex-span\"><i>n</i></span> \u2014 the number of Polycarp trips, </li><li> <span class=\"tex-span\"><i>a</i></span> \u2014 the cost of a regualar single trip, </li><li> <span class=\"tex-span\"><i>b</i></span> \u2014 the cost of a trip after a transshipment, </li><li> <span class=\"tex-span\"><i>k</i></span> \u2014 the maximum number of travel cards Polycarp can buy, </li><li> <span class=\"tex-span\"><i>f</i></span> \u2014 the cost of a single travel card. </li></ul><p>The following <span class=\"tex-span\"><i>n</i></span> lines describe the trips in the chronological order. Each line contains exactly two different words separated by a single space \u2014 the name of the start stop and the name of the finish stop of the trip. All names consist of uppercase and lowercase English letters and have lengths between <span class=\"tex-span\">1</span> to <span class=\"tex-span\">20</span> letters inclusive. Uppercase and lowercase letters should be considered different.</p>",
+    "outputSpecification": "<p>Print the smallest amount of money Polycarp could have spent today, if he can purchase no more than <span class=\"tex-span\"><i>k</i></span> travel cards.</p>",
+    "samples": [
+        {
+            "input": "3 5 3 1 8<br/>BerBank University<br/>University BerMall<br/>University BerBank<br/>",
+            "output": "11<br/>"
+        },
+        {
+            "input": "4 2 1 300 1000<br/>a A<br/>A aa<br/>aa AA<br/>AA a<br/>",
+            "output": "5<br/>"
+        }
+    ],
+    "note": "<p>In the first example Polycarp can buy travel card for the route \"BerBank <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/ecc94b07e73defe233bfe831f3977337706a2d27.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> University\" and spend <span class=\"tex-span\">8</span> burles. Note that his second trip \"University\" <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/70a0795f45d32287dba0eb83fc4a3f470c6e5537.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> \"BerMall\" was made after transshipment, so for this trip Polycarp payed <span class=\"tex-span\">3</span> burles. So the minimum total sum equals to <span class=\"tex-span\">8\u2009+\u20093\u2009=\u200911</span> burles.</p><p>In the second example it doesn't make sense to buy travel cards. Note that each of Polycarp trip (except the first) was made with transshipment. So the minimum total sum equals to <span class=\"tex-span\">2\u2009+\u20091\u2009+\u20091\u2009+\u20091\u2009=\u20095</span> burles.</p>",
+    "contestId": 847,
+    "index": "K",
+    "name": "Travel Cards",
+    "type": "PROGRAMMING",
+    "tags": [
+        "greedy",
+        "implementation",
+        "sortings"
+    ],
+    "solvedCount": 1527
+}

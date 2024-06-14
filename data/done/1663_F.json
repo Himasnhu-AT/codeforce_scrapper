@@ -1,0 +1,30 @@
+{
+    "title": "F. In Every Generation...",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<center> <span class=\"tex-font-style-it\">In every generation there is a Chosen One. She alone will stand against the vampires, the demons, and the forces of darkness. She is the Slayer.</span> \u2014 Joss Whedon </center>",
+    "inputSpecification": "<p>A string $$$s$$$ ($$$3 \\le |s| \\le 7$$$) consisting of lowercase English letters.</p>",
+    "outputSpecification": "<p>A single string. If there is no answer, print \"<span class=\"tex-font-style-tt\">none</span>\" (without the quotes).</p>",
+    "samples": [
+        {
+            "input": "\ntourist\n",
+            "output": "\nooggqjx"
+        }
+    ],
+    "note": null,
+    "contestId": 1663,
+    "index": "F",
+    "name": "In Every Generation...",
+    "type": "PROGRAMMING",
+    "tags": [
+        "*special",
+        "strings"
+    ],
+    "solvedCount": 331
+}

@@ -1,0 +1,29 @@
+{
+    "title": "A. Stair, Peak, or Neither?",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given three digits $$$a$$$, $$$b$$$, and $$$c$$$. Determine whether they form a stair, a peak, or neither. </p><ul> <li> A <span class=\"tex-font-style-it\">stair</span> satisfies the condition $$$a&lt;b&lt;c$$$. </li><li> A <span class=\"tex-font-style-it\">peak</span> satisfies the condition $$$a&lt;b&gt;c$$$. </li></ul>",
+    "inputSpecification": "<p>The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 1000$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains three digits $$$a$$$, $$$b$$$, $$$c$$$ ($$$0 \\leq a$$$, $$$b$$$, $$$c \\leq 9$$$).</p>",
+    "outputSpecification": "<p>For each test case, output \"<span class=\"tex-font-style-tt\">STAIR</span>\" if the digits form a stair, \"<span class=\"tex-font-style-tt\">PEAK</span>\" if the digits form a peak, and \"<span class=\"tex-font-style-tt\">NONE</span>\" otherwise (output the strings without quotes).</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">7</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2 3</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 2 1</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 5 3</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3 4 1</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">0 0 0</div><div class=\"test-example-line test-example-line-even test-example-line-6\">4 1 7</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">4 5 7</div>",
+            "output": "\nSTAIR\nNONE\nPEAK\nPEAK\nNONE\nNONE\nSTAIR\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1950,
+    "index": "A",
+    "name": "Stair, Peak, or Neither?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 46100
+}

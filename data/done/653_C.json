@@ -1,0 +1,42 @@
+{
+    "title": "C. Bear and Up-Down",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>The life goes up and down, just like nice sequences. Sequence <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>,\u2009<i>t</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>n</i></sub></span> is called <span class=\"tex-font-style-it\">nice</span> if the following two conditions are satisfied: </p><ul> <li> <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&lt;\u2009<i>t</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span> for each odd <span class=\"tex-span\"><i>i</i>\u2009&lt;\u2009<i>n</i></span>; </li><li> <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009&gt;\u2009<i>t</i><sub class=\"lower-index\"><i>i</i>\u2009+\u20091</sub></span> for each even <span class=\"tex-span\"><i>i</i>\u2009&lt;\u2009<i>n</i></span>. </li></ul><p>For example, sequences <span class=\"tex-span\">(2,\u20098)</span>, <span class=\"tex-span\">(1,\u20095,\u20091)</span> and <span class=\"tex-span\">(2,\u20095,\u20091,\u2009100,\u200999,\u2009120)</span> are nice, while <span class=\"tex-span\">(1,\u20091)</span>, <span class=\"tex-span\">(1,\u20092,\u20093)</span> and <span class=\"tex-span\">(2,\u20095,\u20093,\u20092)</span> are not.</p><p>Bear Limak has a sequence of positive integers <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>,\u2009<i>t</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>n</i></sub></span>. This sequence <span class=\"tex-font-style-bf\">is not nice</span> now and Limak wants to fix it by a single swap. He is going to choose two indices <span class=\"tex-span\"><i>i</i>\u2009&lt;\u2009<i>j</i></span> and swap elements <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>i</i></sub></span> and <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\"><i>j</i></sub></span> in order to get a nice sequence. Count the number of ways to do so. Two ways are considered different if indices of elements chosen for a swap are different.</p>",
+    "inputSpecification": "<p>The first line of the input contains one integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">2\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009150\u2009000</span>)\u00a0\u2014 the length of the sequence.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>,\u2009<i>t</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>t</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>t</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009150\u2009000</span>) \u2014 the initial sequence. It's guaranteed that the given sequence is not nice.</p>",
+    "outputSpecification": "<p>Print the number of ways to swap two elements exactly once in order to get a nice sequence.</p>",
+    "samples": [
+        {
+            "input": "5<br/>2 8 4 7 7<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "4<br/>200 150 100 50<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "10<br/>3 2 1 4 1 4 1 4 1 4<br/>",
+            "output": "8<br/>"
+        },
+        {
+            "input": "9<br/>1 2 3 4 5 6 7 8 9<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, there are two ways to get a nice sequence with one swap: </p><ol> <li> Swap <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">2</sub>\u2009=\u20098</span> with <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">4</sub>\u2009=\u20097</span>. </li><li> Swap <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>\u2009=\u20092</span> with <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">5</sub>\u2009=\u20097</span>. </li></ol><p>In the second sample, there is only one way\u00a0\u2014 Limak should swap <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">1</sub>\u2009=\u2009200</span> with <span class=\"tex-span\"><i>t</i><sub class=\"lower-index\">4</sub>\u2009=\u200950</span>.</p>",
+    "contestId": 653,
+    "index": "C",
+    "name": "Bear and Up-Down",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 1629
+}

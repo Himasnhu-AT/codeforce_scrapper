@@ -1,0 +1,34 @@
+{
+    "title": "C. Colorado Potato Beetle",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Old MacDonald has a farm and a large potato field, <span class=\"tex-span\">(10<sup class=\"upper-index\">10</sup>\u2009+\u20091)\u2009\u00d7\u2009(10<sup class=\"upper-index\">10</sup>\u2009+\u20091)</span> square meters in size. The field is divided into square garden beds, each bed takes up one square meter.</p><p>Old McDonald knows that the Colorado potato beetle is about to invade his farm and can destroy the entire harvest. To fight the insects, Old McDonald wants to spray some beds with insecticides.</p><p>So Old McDonald went to the field, stood at the center of the central field bed and sprayed this bed with insecticides. Now he's going to make a series of movements and spray a few more beds. During each movement Old McDonald moves left, right, up or down the field some integer number of meters. As Old McDonald moves, he sprays all the beds he steps on. In other words, the beds that have any intersection at all with Old McDonald's trajectory, are sprayed with insecticides.</p><p>When Old McDonald finished spraying, he wrote out all his movements on a piece of paper. Now he wants to know how many beds won't be infected after the invasion of the Colorado beetles.</p><p>It is known that the invasion of the Colorado beetles goes as follows. First some bed on the field border gets infected. Than any bed that hasn't been infected, hasn't been sprayed with insecticides and has a common side with an infected bed, gets infected as well. Help Old McDonald and determine the number of beds that won't be infected by the Colorado potato beetle.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u20091000</span>) \u2014 the number of Old McDonald's movements.</p><p>Next <span class=\"tex-span\"><i>n</i></span> lines contain the description of Old McDonald's movements. The <span class=\"tex-span\"><i>i</i></span>-th of these lines describes the <span class=\"tex-span\"><i>i</i></span>-th movement. Each movement is given in the format \"<span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span>\", where <span class=\"tex-span\"><i>d</i><sub class=\"lower-index\"><i>i</i></sub></span> is the character that determines the direction of the movement (\"<span class=\"tex-font-style-tt\">L</span>\", \"<span class=\"tex-font-style-tt\">R</span>\", \"<span class=\"tex-font-style-tt\">U</span>\" or \"<span class=\"tex-font-style-tt\">D</span>\" for directions \"left\", \"right\", \"up\" and \"down\", correspondingly), and <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>x</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">6</sup></span>) is an integer that determines the number of meters in the movement.</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number of beds that won't be infected by the Colorado potato beetle.</p><p>Please do not use the <span class=\"tex-font-style-tt\">%lld</span> specifier to read or write 64-bit integers in \u0421++. It is preferred to use the <span class=\"tex-font-style-tt\">cin</span>, <span class=\"tex-font-style-tt\">cout</span> streams or the <span class=\"tex-font-style-tt\">%I64d</span> specifier.</p>",
+    "samples": [
+        {
+            "input": "5<br/>R 8<br/>U 9<br/>L 9<br/>D 8<br/>L 2<br/>",
+            "output": "101"
+        },
+        {
+            "input": "7<br/>R 10<br/>D 2<br/>L 7<br/>U 9<br/>D 2<br/>R 3<br/>D 10<br/>",
+            "output": "52"
+        }
+    ],
+    "note": null,
+    "contestId": 243,
+    "index": "C",
+    "name": "Colorado Potato Beetle",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "implementation"
+    ],
+    "solvedCount": 522
+}

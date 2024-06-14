@@ -1,0 +1,39 @@
+{
+    "title": "A. Transformation: from A to B",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vasily has a number <span class=\"tex-span\"><i>a</i></span>, which he wants to turn into a number <span class=\"tex-span\"><i>b</i></span>. For this purpose, he can do two types of operations:</p><ul> <li> multiply the current number by <span class=\"tex-span\">2</span> (that is, replace the number <span class=\"tex-span\"><i>x</i></span> by <span class=\"tex-span\">2\u00b7<i>x</i></span>); </li><li> append the digit <span class=\"tex-span\">1</span> to the right of current number (that is, replace the number <span class=\"tex-span\"><i>x</i></span> by <span class=\"tex-span\">10\u00b7<i>x</i>\u2009+\u20091</span>). </li></ul><p>You need to help Vasily to transform the number <span class=\"tex-span\"><i>a</i></span> into the number <span class=\"tex-span\"><i>b</i></span> using only the operations described above, or find that it is impossible.</p><p>Note that in this task you are not required to minimize the number of operations. It suffices to find any way to transform <span class=\"tex-span\"><i>a</i></span> into <span class=\"tex-span\"><i>b</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains two positive integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>\u2009&lt;\u2009<i>b</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>)\u00a0\u2014 the number which Vasily has and the number he wants to have.</p>",
+    "outputSpecification": "<p>If there is no way to get <span class=\"tex-span\"><i>b</i></span> from <span class=\"tex-span\"><i>a</i></span>, print \"<span class=\"tex-font-style-tt\">NO</span>\" (without quotes).</p><p>Otherwise print three lines. On the first line print \"<span class=\"tex-font-style-tt\">YES</span>\" (without quotes). The second line should contain single integer <span class=\"tex-span\"><i>k</i></span>\u00a0\u2014 the length of the transformation sequence. On the third line print the sequence of transformations <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub>,\u2009<i>x</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>x</i><sub class=\"lower-index\"><i>k</i></sub></span>, where:</p><ul> <li> <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\">1</sub></span> should be equal to <span class=\"tex-span\"><i>a</i></span>, </li><li> <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>k</i></sub></span> should be equal to <span class=\"tex-span\"><i>b</i></span>, </li><li> <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i></sub></span> should be obtained from <span class=\"tex-span\"><i>x</i><sub class=\"lower-index\"><i>i</i>\u2009-\u20091</sub></span> using any of two described operations (<span class=\"tex-span\">1\u2009&lt;\u2009<i>i</i>\u2009\u2264\u2009<i>k</i></span>). </li></ul><p>If there are multiple answers, print any of them.</p>",
+    "samples": [
+        {
+            "input": "2 162<br/>",
+            "output": "YES<br/>5<br/>2 4 8 81 162 <br/>"
+        },
+        {
+            "input": "4 42<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "100 40021<br/>",
+            "output": "YES<br/>5<br/>100 200 2001 4002 40021 <br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 727,
+    "index": "A",
+    "name": "Transformation: from A to B",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "math"
+    ],
+    "solvedCount": 13369
+}

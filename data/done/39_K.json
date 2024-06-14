@@ -1,0 +1,35 @@
+{
+    "title": "K. Testing",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 64.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You take part in the testing of new weapon. For the testing a polygon was created. The polygon is a rectangular field <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> in size, divided into unit squares <span class=\"tex-span\">1\u2009\u00d7\u20091</span> in size. The polygon contains <span class=\"tex-span\"><i>k</i></span> objects, each of which is a rectangle with sides, parallel to the polygon sides and entirely occupying several unit squares. The objects don't intersect and don't touch each other.</p><p>The principle according to which the weapon works is highly secret. You only know that one can use it to strike any rectangular area whose area is not equal to zero with sides, parallel to the sides of the polygon. The area must completely cover some of the unit squares into which the polygon is divided and it must not touch the other squares. Of course the area mustn't cross the polygon border. Your task is as follows: you should hit no less than one and no more than three rectangular objects. Each object must either lay completely inside the area (in that case it is considered to be hit), or lay completely outside the area.</p><p>Find the number of ways of hitting.</p>",
+    "inputSpecification": "<p>The first line has three integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> \u0438 <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u20091000</span>, <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200990</span>) \u2014 the sizes of the polygon and the number of objects on it respectively. Next <span class=\"tex-span\"><i>n</i></span> lines contain <span class=\"tex-span\"><i>m</i></span> symbols each and describe the polygon. The symbol \"<span class=\"tex-font-style-tt\">*</span>\" stands for a square occupied an object, whereas the symbol \"<span class=\"tex-font-style-tt\">.</span>\" stands for an empty space. The symbols \"<span class=\"tex-font-style-tt\">*</span>\" form exactly <span class=\"tex-span\"><i>k</i></span> rectangular connected areas that meet the requirements of the task.</p>",
+    "outputSpecification": "<p>Output a single number \u2014 the number of different ways to hit a target.</p>",
+    "samples": [
+        {
+            "input": "3 3 3<br/>*.*<br/>...<br/>*..<br/>",
+            "output": "21<br/>"
+        },
+        {
+            "input": "4 5 4<br/>.*.**<br/>...**<br/>**...<br/>...**<br/>",
+            "output": "38<br/>"
+        },
+        {
+            "input": "2 2 1<br/>.*<br/>..<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 39,
+    "index": "K",
+    "name": "Testing",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 84
+}

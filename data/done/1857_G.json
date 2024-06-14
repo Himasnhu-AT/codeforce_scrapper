@@ -1,0 +1,35 @@
+{
+    "title": "G. Counting Graphs",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Given a tree consisting of $$$n$$$ vertices. A tree is a connected undirected graph without cycles. Each edge of the tree has its weight, $$$w_i$$$.</p><p>Your task is to count the number of different graphs that satisfy all four conditions:</p><ol> <li> The graph does not have self-loops and multiple edges. </li><li> The weights on the edges of the graph are integers and do not exceed $$$S$$$. </li><li> The graph has <span class=\"tex-font-style-bf\">exactly one</span> <a href=\"http://tiny.cc/30g9vz\">minimum spanning tree</a>. </li><li> The minimum spanning tree of the graph is the given tree. </li></ol><p>Two graphs are considered different if their sets of edges are different, taking into account the weights of the edges.</p><p>The answer can be large, output it modulo $$$998244353$$$.</p>",
+    "inputSpecification": "<p>The first line contains an integer $$$t$$$ ($$$1\\le t\\le 10^4$$$)\u00a0\u2014 the number of test cases.</p><p>The first line of each test case contains two integers $$$n$$$ and $$$S$$$ ($$$2 \\le n \\le 2 \\cdot 10^5, 1\\le S\\le 10^9$$$)\u00a0\u2014 the number of vertices and the upper bound of the weights.</p><p>Then follow $$$n-1$$$ lines describing the tree, the $$$i$$$-th line contains three integers $$$u_i$$$, $$$v_i$$$, and $$$w_i$$$ ($$$1\\le u_i,v_i\\le n, u_i \\ne v_i, 1\\le w_i\\le S$$$)\u00a0\u2014 an edge in the tree with weight $$$w_i$$$.</p><p>It is guaranteed that the sum of $$$n$$$ for all tests does not exceed $$$2\\cdot 10^5$$$.</p>",
+    "outputSpecification": "<p>For each test, output the number of different graphs that satisfy the conditions, modulo $$$998244353$$$.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">4</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">2 5</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">1 2 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">4 5</div><div class=\"test-example-line test-example-line-even test-example-line-2\">1 2 2</div><div class=\"test-example-line test-example-line-even test-example-line-2\">2 3 4</div><div class=\"test-example-line test-example-line-even test-example-line-2\">3 4 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">5 6</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 2 3</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">1 3 2</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 4 6</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">3 5 1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">10 200</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 2 3</div><div class=\"test-example-line test-example-line-even test-example-line-4\">2 3 33</div><div class=\"test-example-line test-example-line-even test-example-line-4\">3 4 200</div><div class=\"test-example-line test-example-line-even test-example-line-4\">1 5 132</div><div class=\"test-example-line test-example-line-even test-example-line-4\">5 6 1</div><div class=\"test-example-line test-example-line-even test-example-line-4\">5 7 29</div><div class=\"test-example-line test-example-line-even test-example-line-4\">7 8 187</div><div class=\"test-example-line test-example-line-even test-example-line-4\">7 9 20</div><div class=\"test-example-line test-example-line-even test-example-line-4\">7 10 4</div>",
+            "output": "\n1\n8\n80\n650867886\n"
+        }
+    ],
+    "note": "<p>In the first sample, there is only one graph, which is the given tree.</p><p>In the second samle, the given tree looks like this: </p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/84e7a4ea9f4875de86161a6b6650f4d64da4c7ab.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center> All possible graphs for the second sample are shown below, the minimum spanning tree is highlighted in red:<center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/e1d2931a83f935d11dcb694610ad60a701b535b6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> </center>",
+    "contestId": 1857,
+    "index": "G",
+    "name": "Counting Graphs",
+    "type": "PROGRAMMING",
+    "tags": [
+        "combinatorics",
+        "divide and conquer",
+        "dsu",
+        "graphs",
+        "greedy",
+        "sortings",
+        "trees"
+    ],
+    "solvedCount": 4168
+}

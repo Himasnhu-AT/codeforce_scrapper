@@ -1,0 +1,39 @@
+{
+    "title": "B. Permutations",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\"><i>k</i></span>-digit integers. You have to rearrange the digits in the integers so that the difference between the largest and the smallest number was minimum. Digits should be rearranged by the same rule in all integers.</p>",
+    "inputSpecification": "<p>The first line contains integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> \u2014 the number and digit capacity of numbers correspondingly (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>k</i>\u2009\u2264\u20098</span>). Next <span class=\"tex-span\"><i>n</i></span> lines contain <span class=\"tex-span\"><i>k</i></span>-digit positive integers. Leading zeroes are allowed both in the initial integers and the integers resulting from the rearranging of digits.</p>",
+    "outputSpecification": "<p>Print a single number: the minimally possible difference between the largest and the smallest number after the digits are rearranged in all integers by the same rule.</p>",
+    "samples": [
+        {
+            "input": "6 4<br/>5237<br/>2753<br/>7523<br/>5723<br/>5327<br/>2537<br/>",
+            "output": "2700<br/>"
+        },
+        {
+            "input": "3 3<br/>010<br/>909<br/>012<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "7 5<br/>50808<br/>36603<br/>37198<br/>44911<br/>29994<br/>42543<br/>50156<br/>",
+            "output": "20522<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, if we rearrange the digits in numbers as (3,1,4,2), then the 2-nd and the 4-th numbers will equal 5237 and 2537 correspondingly (they will be maximum and minimum for such order of digits).</p><p>In the second sample, if we swap the second digits and the first ones, we get integers 100, 99 and 102.</p>",
+    "contestId": 124,
+    "index": "B",
+    "name": "Permutations",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "implementation"
+    ],
+    "solvedCount": 3793
+}

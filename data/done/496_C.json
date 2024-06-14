@@ -1,0 +1,43 @@
+{
+    "title": "C. Removing Columns",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>You are given an <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> rectangular table consisting of lower case English letters. In one operation you can completely remove one column from the table. The remaining parts are combined forming a new table. For example, after removing the second column from the table</p><pre class=\"verbatim\"><br/>abcd<br/>edfg<br/>hijk<br/></pre><p>\u00a0</p><p>we obtain the table:</p><pre class=\"verbatim\"><br/>acd<br/>efg<br/>hjk<br/></pre><p>\u00a0</p><p>A table is called <span class=\"tex-font-style-underline\">good</span> if its rows are ordered from top to bottom lexicographically, i.e. each row is lexicographically no larger than the following one. Determine the minimum number of operations of removing a column needed to make a given table good.</p>",
+    "inputSpecification": "<p>The first line contains two integers \u00a0\u2014 <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>m</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u2009</span><span class=\"tex-font-style-bf\">100</span>).</p><p>Next <span class=\"tex-span\"><i>n</i></span> lines contain <span class=\"tex-span\"><i>m</i></span> small English letters each\u00a0\u2014 the characters of the table.</p>",
+    "outputSpecification": "<p>Print a single number\u00a0\u2014 the minimum number of columns that you need to remove in order to make the table good.</p>",
+    "samples": [
+        {
+            "input": "<br/>abcd<br/>edfg<br/>hijk<br/>",
+            "output": "<br/>acd<br/>efg<br/>hjk<br/>"
+        },
+        {
+            "input": "1 10<br/>codeforces<br/>",
+            "output": "0<br/>"
+        },
+        {
+            "input": "4 4<br/>case<br/>care<br/>test<br/>code<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "5 4<br/>code<br/>forc<br/>esco<br/>defo<br/>rces<br/>",
+            "output": "4<br/>"
+        }
+    ],
+    "note": "<p>In the first sample the table is already good.</p><p>In the second sample you may remove the first and third column.</p><p>In the third sample you have to remove all the columns (note that the table where all rows are empty is considered good by definition).</p><p>Let strings <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> have equal length. Then, <span class=\"tex-span\"><i>s</i></span> is <span class=\"tex-font-style-underline\">lexicographically larger</span> than <span class=\"tex-span\"><i>t</i></span> if they are not equal and the character following the largest common prefix of <span class=\"tex-span\"><i>s</i></span> and <span class=\"tex-span\"><i>t</i></span> (the prefix may be empty) in <span class=\"tex-span\"><i>s</i></span> is alphabetically larger than the corresponding character of <span class=\"tex-span\"><i>t</i></span>.</p>",
+    "contestId": 496,
+    "index": "C",
+    "name": "Removing Columns",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "implementation"
+    ],
+    "solvedCount": 7623
+}

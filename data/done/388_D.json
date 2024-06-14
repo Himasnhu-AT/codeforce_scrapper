@@ -1,0 +1,41 @@
+{
+    "title": "D. Fox and Perfect Sets",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Fox Ciel studies number theory.</p><p>She thinks a non-empty set <span class=\"tex-span\"><i>S</i></span> contains non-negative integers is <span class=\"tex-font-style-it\">perfect</span> if and only if for any <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9ef9929d40fa162bdd76a55da469dde6fc13a5f5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> (<span class=\"tex-span\"><i>a</i></span> can be equal to <span class=\"tex-span\"><i>b</i></span>), <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bba2b10c821617f53f33d4f198ad3dfee0eb6ecd.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. Where operation <span class=\"tex-span\"><i>xor</i></span> means exclusive or operation (<span class=\"tex-font-style-it\">http://en.wikipedia.org/wiki/Exclusive_or</span>).</p><p>Please calculate the number of perfect sets consisting of integers not greater than <span class=\"tex-span\"><i>k</i></span>. The answer can be very large, so print it modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "inputSpecification": "<p>The first line contains an integer <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910<sup class=\"upper-index\">9</sup></span>).</p>",
+    "outputSpecification": "<p>Print a single integer \u2014 the number of required sets modulo <span class=\"tex-span\">1000000007</span> <span class=\"tex-span\">(10<sup class=\"upper-index\">9</sup>\u2009+\u20097)</span>.</p>",
+    "samples": [
+        {
+            "input": "1<br/>",
+            "output": "2<br/>"
+        },
+        {
+            "input": "2<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "3<br/>",
+            "output": "5<br/>"
+        },
+        {
+            "input": "4<br/>",
+            "output": "6<br/>"
+        }
+    ],
+    "note": "<p>In example 1, there are 2 such sets: {0} and {0, 1}. Note that {1} is not a perfect set since 1 xor 1 = 0 and {1} doesn't contain zero.</p><p>In example 4, there are 6 such sets: {0}, {0, 1}, {0, 2}, {0, 3}, {0, 4} and {0, 1, 2, 3}.</p>",
+    "contestId": 388,
+    "index": "D",
+    "name": "Fox and Perfect Sets",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math"
+    ],
+    "solvedCount": 438
+}

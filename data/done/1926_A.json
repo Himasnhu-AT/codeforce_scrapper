@@ -1,0 +1,29 @@
+{
+    "title": "A. Vlad and the Best of Five",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Vladislav has a string of length $$$5$$$, whose characters are each either $$$\\texttt{A}$$$ or $$$\\texttt{B}$$$.</p><p>Which letter appears most frequently: $$$\\texttt{A}$$$ or $$$\\texttt{B}$$$?</p>",
+    "inputSpecification": "<p>The first line of the input contains an integer $$$t$$$ ($$$1 \\leq t \\leq 32$$$)\u00a0\u2014 the number of test cases.</p><p>The only line of each test case contains a string of length $$$5$$$ consisting of letters $$$\\texttt{A}$$$ and $$$\\texttt{B}$$$.</p><p>All $$$t$$$ strings in a test are different (distinct).</p>",
+    "outputSpecification": "<p>For each test case, output one letter ($$$\\texttt{A}$$$ or $$$\\texttt{B}$$$) denoting the character that appears most frequently in the string.</p>",
+    "samples": [
+        {
+            "input": "\n<div class=\"test-example-line test-example-line-even test-example-line-0\">8</div><div class=\"test-example-line test-example-line-odd test-example-line-1\">ABABB</div><div class=\"test-example-line test-example-line-even test-example-line-2\">ABABA</div><div class=\"test-example-line test-example-line-odd test-example-line-3\">BBBAB</div><div class=\"test-example-line test-example-line-even test-example-line-4\">AAAAA</div><div class=\"test-example-line test-example-line-odd test-example-line-5\">BBBBB</div><div class=\"test-example-line test-example-line-even test-example-line-6\">BABAA</div><div class=\"test-example-line test-example-line-odd test-example-line-7\">AAAAB</div><div class=\"test-example-line test-example-line-even test-example-line-8\">BAAAA</div>",
+            "output": "\nB\nA\nB\nA\nB\nA\nA\nA\n"
+        }
+    ],
+    "note": null,
+    "contestId": 1926,
+    "index": "A",
+    "name": "Vlad and the Best of Five",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 43616
+}

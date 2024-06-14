@@ -1,0 +1,35 @@
+{
+    "title": "D. Jon and Orbs",
+    "timeLimit": {
+        "value": 2.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Jon Snow is on the lookout for some orbs required to defeat the white walkers. There are <span class=\"tex-span\"><i>k</i></span> different types of orbs and he needs at least one of each. One orb spawns daily at the base of a Weirwood tree north of the wall. The probability of this orb being of any kind is equal. As the north of wall is full of dangers, he wants to know the minimum number of days he should wait before sending a ranger to collect the orbs such that the probability of him getting at least one of each kind of orb is at least <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/eba7f9528c88a90f3ec0c0b5c7b7b6b6b1b68891.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, where <span class=\"tex-span\">\u03b5\u2009&lt;\u200910<sup class=\"upper-index\">\u2009-\u20097</sup></span>.</p><p>To better prepare himself, he wants to know the answer for <span class=\"tex-span\"><i>q</i></span> different values of <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span>. Since he is busy designing the battle strategy with Sam, he asks you for your help.</p>",
+    "inputSpecification": "<p>First line consists of two space separated integers <span class=\"tex-span\"><i>k</i></span>, <span class=\"tex-span\"><i>q</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>,\u2009<i>q</i>\u2009\u2264\u20091000</span>) \u2014 number of different kinds of orbs and number of queries respectively.</p><p>Each of the next <span class=\"tex-span\"><i>q</i></span> lines contain a single integer <span class=\"tex-span\"><i>p</i><sub class=\"lower-index\"><i>i</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>p</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091000</span>) \u2014 <span class=\"tex-span\"><i>i</i></span>-th query.</p>",
+    "outputSpecification": "<p>Output <span class=\"tex-span\"><i>q</i></span> lines. On <span class=\"tex-span\"><i>i</i></span>-th of them output single integer \u2014 answer for <span class=\"tex-span\"><i>i</i></span>-th query.</p>",
+    "samples": [
+        {
+            "input": "1 1<br/>1<br/>",
+            "output": "1<br/>"
+        },
+        {
+            "input": "2 2<br/>1<br/>2<br/>",
+            "output": "2<br/>2<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 768,
+    "index": "D",
+    "name": "Jon and Orbs",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dp",
+        "math",
+        "probabilities"
+    ],
+    "solvedCount": 2792
+}

@@ -1,0 +1,35 @@
+{
+    "title": "F. 2 + 2 != 4",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One very experienced problem writer decided to prepare a problem for April Fools Day contest. The task was very simple - given an arithmetic expression, return the result of evaluating this expression. However, looks like there is a bug in the reference solution...</p>",
+    "inputSpecification": "<p>The only line of input data contains the arithmetic expression. The expression will contain between 2 and 10 operands, separated with arithmetic signs plus and/or minus. Each operand will be an integer between 0 and 255, inclusive.</p>",
+    "outputSpecification": "<p>Reproduce the output of the reference solution, including the bug.</p>",
+    "samples": [
+        {
+            "input": "8-7+6-5+4-3+2-1-0<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "2+2<br/>",
+            "output": "-46<br/>"
+        },
+        {
+            "input": "112-37<br/>",
+            "output": "375<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 952,
+    "index": "F",
+    "name": "2 + 2 != 4",
+    "type": "PROGRAMMING",
+    "tags": [],
+    "solvedCount": 371
+}

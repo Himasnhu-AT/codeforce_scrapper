@@ -1,0 +1,37 @@
+{
+    "title": "F. Video Cards",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Little Vlad is fond of popular computer game Bota-2. Recently, the developers announced the new add-on named Bota-3. Of course, Vlad immediately bought only to find out his computer is too old for the new game and needs to be updated.</p><p>There are <span class=\"tex-span\"><i>n</i></span> video cards in the shop, the power of the <span class=\"tex-span\"><i>i</i></span>-th video card is equal to integer value <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>i</i></sub></span>. As Vlad wants to be sure the new game will work he wants to buy not one, but several video cards and unite their powers using the cutting-edge technology. To use this technology one of the cards is chosen as the leading one and other video cards are attached to it as secondary. For this new technology to work it's required that the power of each of the secondary video cards is divisible by the power of the leading video card. In order to achieve that the power of any secondary video card can be reduced to any integer value less or equal than the current power. However, the power of the leading video card should remain unchanged, i.e. it <span class=\"tex-font-style-bf\">can't</span> be reduced.</p><p>Vlad has an infinite amount of money so he can buy any set of video cards. Help him determine which video cards he should buy such that after picking the leading video card and may be reducing some powers of others to make them work together he will get the maximum total value of video power.</p>",
+    "inputSpecification": "<p>The first line of the input contains a single integer <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009200\u2009000</span>)\u00a0\u2014 the number of video cards in the shop.</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub></span>, <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">2</sub></span>, ..., <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u2009200\u2009000</span>)\u00a0\u2014 powers of video cards.</p>",
+    "outputSpecification": "<p>The only line of the output should contain one integer value\u00a0\u2014 the maximum possible total power of video cards working together.</p>",
+    "samples": [
+        {
+            "input": "4<br/>3 2 15 9<br/>",
+            "output": "27<br/>"
+        },
+        {
+            "input": "4<br/>8 2 2 7<br/>",
+            "output": "18<br/>"
+        }
+    ],
+    "note": "<p>In the first sample, it would be optimal to buy video cards with powers <span class=\"tex-span\">3</span>, <span class=\"tex-span\">15</span> and <span class=\"tex-span\">9</span>. The video card with power <span class=\"tex-span\">3</span> should be chosen as the leading one and all other video cards will be compatible with it. Thus, the total power would be <span class=\"tex-span\">3\u2009+\u200915\u2009+\u20099\u2009=\u200927</span>. If he buys all the video cards and pick the one with the power <span class=\"tex-span\">2</span> as the leading, the powers of all other video cards should be reduced by <span class=\"tex-span\">1</span>, thus the total power would be <span class=\"tex-span\">2\u2009+\u20092\u2009+\u200914\u2009+\u20098\u2009=\u200926</span>, that is less than <span class=\"tex-span\">27</span>. Please note, that it's not allowed to reduce the power of the leading video card, i.e. one can't get the total power <span class=\"tex-span\">3\u2009+\u20091\u2009+\u200915\u2009+\u20099\u2009=\u200928</span>.</p><p>In the second sample, the optimal answer is to buy all video cards and pick the one with the power <span class=\"tex-span\">2</span> as the leading. The video card with the power <span class=\"tex-span\">7</span> needs it power to be reduced down to <span class=\"tex-span\">6</span>. The total power would be <span class=\"tex-span\">8\u2009+\u20092\u2009+\u20092\u2009+\u20096\u2009=\u200918</span>.</p>",
+    "contestId": 731,
+    "index": "F",
+    "name": "Video Cards",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 2767
+}

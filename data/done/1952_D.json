@@ -1,0 +1,29 @@
+{
+    "title": "D. Are You a Procrastinator?",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>!</p>",
+    "inputSpecification": "<p>!</p>",
+    "outputSpecification": "<p>!</p>",
+    "samples": [
+        {
+            "input": "\n?\n",
+            "output": "\n?"
+        }
+    ],
+    "note": "<p>!</p>",
+    "contestId": 1952,
+    "index": "D",
+    "name": "Are You a Procrastinator?",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation"
+    ],
+    "solvedCount": 4277
+}

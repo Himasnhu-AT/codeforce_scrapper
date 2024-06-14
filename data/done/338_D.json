@@ -1,0 +1,39 @@
+{
+    "title": "D. GCD Table",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Consider a table <span class=\"tex-span\"><i>G</i></span> of size <span class=\"tex-span\"><i>n</i>\u2009\u00d7\u2009<i>m</i></span> such that <span class=\"tex-span\"><i>G</i>(<i>i</i>,\u2009<i>j</i>)\u2009=\u2009<i>GCD</i>(<i>i</i>,\u2009<i>j</i>)</span> for all <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i>,\u20091\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>m</i></span>. <span class=\"tex-span\"><i>GCD</i>(<i>a</i>,\u2009<i>b</i>)</span> is the greatest common divisor of numbers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span>.</p><p>You have a sequence of positive integer numbers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>k</i></sub></span>. We say that this sequence occurs in table <span class=\"tex-span\"><i>G</i></span> if it coincides with consecutive elements in some row, starting from some position. More formally, such numbers <span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>n</i></span> and <span class=\"tex-span\">1\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>m</i>\u2009-\u2009<i>k</i>\u2009+\u20091</span> should exist that <span class=\"tex-span\"><i>G</i>(<i>i</i>,\u2009<i>j</i>\u2009+\u2009<i>l</i>\u2009-\u20091)\u2009=\u2009<i>a</i><sub class=\"lower-index\"><i>l</i></sub></span> for all <span class=\"tex-span\">1\u2009\u2264\u2009<i>l</i>\u2009\u2264\u2009<i>k</i></span>.</p><p>Determine if the sequence <span class=\"tex-span\"><i>a</i></span> occurs in table <span class=\"tex-span\"><i>G</i></span>.</p>",
+    "inputSpecification": "<p>The first line contains three space-separated integers <span class=\"tex-span\"><i>n</i></span>, <span class=\"tex-span\"><i>m</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>m</i>\u2009\u2264\u200910<sup class=\"upper-index\">12</sup></span>; <span class=\"tex-span\">1\u2009\u2264\u2009<i>k</i>\u2009\u2264\u200910000</span>). The second line contains <span class=\"tex-span\"><i>k</i></span> space-separated integers <span class=\"tex-span\"><i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>k</i></sub></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u200910<sup class=\"upper-index\">12</sup></span>).</p>",
+    "outputSpecification": "<p>Print a single word \"<span class=\"tex-font-style-tt\">YES</span>\", if the given sequence occurs in table <span class=\"tex-span\"><i>G</i></span>, otherwise print \"<span class=\"tex-font-style-tt\">NO</span>\".</p>",
+    "samples": [
+        {
+            "input": "100 100 5<br/>5 2 1 2 1<br/>",
+            "output": "YES<br/>"
+        },
+        {
+            "input": "100 8 5<br/>5 2 1 2 1<br/>",
+            "output": "NO<br/>"
+        },
+        {
+            "input": "100 100 7<br/>1 2 3 4 5 6 7<br/>",
+            "output": "NO<br/>"
+        }
+    ],
+    "note": "<p>Sample 1. The tenth row of table <span class=\"tex-span\"><i>G</i></span> starts from sequence {1, 2, 1, 2, 5, 2, 1, 2, 1, 10}. As you can see, elements from fifth to ninth coincide with sequence <span class=\"tex-span\"><i>a</i></span>.</p><p>Sample 2. This time the width of table <span class=\"tex-span\"><i>G</i></span> equals 8. Sequence <span class=\"tex-span\"><i>a</i></span> doesn't occur there.</p>",
+    "contestId": 338,
+    "index": "D",
+    "name": "GCD Table",
+    "type": "PROGRAMMING",
+    "tags": [
+        "chinese remainder theorem",
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 1098
+}

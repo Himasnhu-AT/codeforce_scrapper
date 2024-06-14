@@ -1,0 +1,25 @@
+{
+    "title": "F1. Suns and Rays",
+    "timeLimit": {
+        "value": 3.0,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Smart Beaver became interested in drawing. He draws suns. However, at some point, Smart Beaver realized that simply drawing suns is boring. So he decided to design a program that will process his drawings. You are given a picture drawn by the beaver. It will have two colors: one for the background and one for the suns in the image. Your task will be to count the number of suns in the image and for each of them to count the number of rays.</p><p>Sun is arbitrarily rotated ellipse with rays. Ray is a segment which connects point on boundary of the ellipse with some point outside ellipse.</p><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/906bc06215d45e2b6c229a39ed4d143d6d5c9520.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-script\"> An image where all suns are circles. </span> </center><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/0dd4965d8834a183f6a805a50d27654e3b94ff31.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-script\"> An image where all suns are ellipses, their axes are parallel to the coordinate axes. </span> </center><center> <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/0f3ef2ec4441181f3fe4a9d6b826620ec7205e8c.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> <span class=\"tex-font-size-script\"> An image where all suns are rotated ellipses. </span> </center><p>It is guaranteed that: </p><ul> <li> No two suns have common points. </li><li> The rays\u2019 width is <span class=\"tex-span\">3</span> pixels. </li><li> The lengths of the ellipsis suns\u2019 axes will lie between <span class=\"tex-span\">40</span> and <span class=\"tex-span\">200</span> pixels. </li><li> No two rays intersect. </li><li> The lengths of all rays will lie between <span class=\"tex-span\">10</span> and <span class=\"tex-span\">30</span> pixels. </li></ul>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>h</i></span> and <span class=\"tex-span\"><i>w</i></span> \u2014 the height and width of the image (<span class=\"tex-span\">1\u2009\u2264\u2009<i>h</i>,\u2009<i>w</i>\u2009\u2264\u20091600</span>). Next <span class=\"tex-span\"><i>h</i></span> lines will contain <span class=\"tex-span\"><i>w</i></span> space-separated integers each. They describe Smart Beaver\u2019s picture. Each number equals either a <span class=\"tex-span\">0</span> (the image background), or a <span class=\"tex-span\">1</span> (the sun color).</p><p>The input limits for scoring 30 points are (subproblem F1): </p><ul> <li> All suns on the image are circles. </li></ul><p>The input limits for scoring 70 points are (subproblems F1+F2): </p><ul> <li> All suns on the image are ellipses with axes parallel to the coordinate axes. </li></ul><p>The input limits for scoring 100 points are (subproblems F1+F2+F3):</p><ul> <li> All suns on the image are ellipses, they can be arbitrarily rotated. </li></ul>",
+    "outputSpecification": "<p>The first line must contain a single number <span class=\"tex-span\"><i>k</i></span> \u2014 the number of suns on the beaver\u2019s image. The second line must contain exactly <span class=\"tex-span\"><i>k</i></span> space-separated integers, corresponding to the number of rays on each sun. The numbers of the second line must be <span class=\"tex-font-style-bf\">sorted</span> in the increasing order.</p>",
+    "samples": [],
+    "note": "<p>For each complexity level you are suggested a sample in the initial data. You can download the samples at <span class=\"tex-font-style-tt\">http://www.abbyy.ru/sun.zip</span>.</p>",
+    "contestId": 316,
+    "index": "F1",
+    "name": "Suns and Rays",
+    "type": "PROGRAMMING",
+    "tags": [
+        "dfs and similar",
+        "implementation"
+    ],
+    "solvedCount": 165
+}

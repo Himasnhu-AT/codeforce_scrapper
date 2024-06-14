@@ -1,0 +1,38 @@
+{
+    "title": "A. Vasya the Hipster",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>One day Vasya the Hipster decided to count how many socks he had. It turned out that he had <span class=\"tex-span\"><i>a</i></span> red socks and <span class=\"tex-span\"><i>b</i></span> blue socks.</p><p>According to the latest fashion, hipsters should wear the socks of different colors: a red one on the left foot, a blue one on the right foot.</p><p>Every day Vasya puts on new socks in the morning and throws them away before going to bed as he doesn't want to wash them.</p><p>Vasya wonders, what is the maximum number of days when he can dress fashionable and wear different socks, and after that, for how many days he can then wear the same socks until he either runs out of socks or cannot make a single pair from the socks he's got.</p><p>Can you help him?</p>",
+    "inputSpecification": "<p>The single line of the input contains two positive integers <span class=\"tex-span\"><i>a</i></span> and <span class=\"tex-span\"><i>b</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i>,\u2009<i>b</i>\u2009\u2264\u2009100</span>) \u2014 the number of red and blue socks that Vasya's got.</p>",
+    "outputSpecification": "<p>Print two space-separated integers \u2014 the maximum number of days when Vasya can wear different socks and the number of days when he can wear the same socks until he either runs out of socks or cannot make a single pair from the socks he's got.</p><p>Keep in mind that at the end of the day Vasya throws away the socks that he's been wearing on that day.</p>",
+    "samples": [
+        {
+            "input": "3 1<br/>",
+            "output": "1 1<br/>"
+        },
+        {
+            "input": "2 3<br/>",
+            "output": "2 0<br/>"
+        },
+        {
+            "input": "7 3<br/>",
+            "output": "3 2<br/>"
+        }
+    ],
+    "note": "<p>In the first sample Vasya can first put on one pair of different socks, after that he has two red socks left to wear on the second day.</p>",
+    "contestId": 581,
+    "index": "A",
+    "name": "Vasya the Hipster",
+    "type": "PROGRAMMING",
+    "tags": [
+        "implementation",
+        "math"
+    ],
+    "solvedCount": 67992
+}

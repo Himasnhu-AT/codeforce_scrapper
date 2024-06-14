@@ -1,0 +1,38 @@
+{
+    "title": "C. Jzzhu and Apples",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Jzzhu has picked <span class=\"tex-span\"><i>n</i></span> apples from his big apple tree. All the apples are numbered from <span class=\"tex-span\">1</span> to <span class=\"tex-span\"><i>n</i></span>. Now he wants to sell them to an apple store. </p><p>Jzzhu will pack his apples into groups and then sell them. Each group must contain two apples, and the greatest common divisor of numbers of the apples in each group must be greater than 1. Of course, each apple can be part of at most one group.</p><p>Jzzhu wonders how to get the maximum possible number of groups. Can you help him?</p>",
+    "inputSpecification": "<p>A single integer <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-span\">(1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u200910<sup class=\"upper-index\">5</sup>)</span>, the number of the apples.</p>",
+    "outputSpecification": "<p>The first line must contain a single integer <span class=\"tex-span\"><i>m</i></span>, representing the maximum number of groups he can get. Each of the next <span class=\"tex-span\"><i>m</i></span> lines must contain two integers \u2014 the numbers of apples in the current group.</p><p>If there are several optimal answers you can print any of them.</p>",
+    "samples": [
+        {
+            "input": "6<br/>",
+            "output": "2<br/>6 3<br/>2 4<br/>"
+        },
+        {
+            "input": "9<br/>",
+            "output": "3<br/>9 3<br/>2 4<br/>6 8<br/>"
+        },
+        {
+            "input": "2<br/>",
+            "output": "0<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 449,
+    "index": "C",
+    "name": "Jzzhu and Apples",
+    "type": "PROGRAMMING",
+    "tags": [
+        "constructive algorithms",
+        "number theory"
+    ],
+    "solvedCount": 2206
+}

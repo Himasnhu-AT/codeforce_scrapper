@@ -1,0 +1,34 @@
+{
+    "title": "G. Coprime Arrays",
+    "timeLimit": {
+        "value": 3.5,
+        "unit": "seconds"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Let's call an array <span class=\"tex-span\"><i>a</i></span> of size <span class=\"tex-span\"><i>n</i></span> <span class=\"tex-font-style-it\">coprime</span> iff <span class=\"tex-span\"><i>gcd</i>(<i>a</i><sub class=\"lower-index\">1</sub>,\u2009<i>a</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>a</i><sub class=\"lower-index\"><i>n</i></sub>)\u2009=\u20091</span>, where <span class=\"tex-span\"><i>gcd</i></span> is the greatest common divisor of the arguments.</p><p>You are given two numbers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span>. For each <span class=\"tex-span\"><i>i</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>i</i>\u2009\u2264\u2009<i>k</i></span>) you have to determine the number of <span class=\"tex-font-style-it\">coprime</span> arrays <span class=\"tex-span\"><i>a</i></span> of size <span class=\"tex-span\"><i>n</i></span> such that for every <span class=\"tex-span\"><i>j</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>j</i>\u2009\u2264\u2009<i>n</i></span>) <span class=\"tex-span\">1\u2009\u2264\u2009<i>a</i><sub class=\"lower-index\"><i>j</i></sub>\u2009\u2264\u2009<i>i</i></span>. Since the answers can be very large, you have to calculate them modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>.</p>",
+    "inputSpecification": "<p>The first line contains two integers <span class=\"tex-span\"><i>n</i></span> and <span class=\"tex-span\"><i>k</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>,\u2009<i>k</i>\u2009\u2264\u20092\u00b710<sup class=\"upper-index\">6</sup></span>) \u2014 the size of the desired arrays and the maximum upper bound on elements, respectively.</p>",
+    "outputSpecification": "<p>Since printing <span class=\"tex-span\">2\u00b710<sup class=\"upper-index\">6</sup></span> numbers may take a lot of time, you have to output the answer in such a way:</p><p>Let <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\"><i>i</i></sub></span> be the number of <span class=\"tex-font-style-it\">coprime</span> arrays with elements in range <span class=\"tex-span\">[1,\u2009<i>i</i>]</span>, taken modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>. You have to print <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3e887a99f7b0f325f81554eb1527835390defeef.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, taken modulo <span class=\"tex-span\">10<sup class=\"upper-index\">9</sup>\u2009+\u20097</span>. Here <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c4b7092c0f7ce6535f2574569c98f7b3c2fe2c5f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> denotes bitwise xor operation (<span class=\"tex-font-style-tt\">^</span> in C++ or Java, <span class=\"tex-font-style-tt\">xor</span> in Pascal).</p>",
+    "samples": [
+        {
+            "input": "3 4<br/>",
+            "output": "82<br/>"
+        },
+        {
+            "input": "2000000 8<br/>",
+            "output": "339310063<br/>"
+        }
+    ],
+    "note": "<p>Explanation of the example:</p><p>Since the number of <span class=\"tex-font-style-it\">coprime</span> arrays is large, we will list the arrays that are non-coprime, but contain only elements in range <span class=\"tex-span\">[1,\u2009<i>i</i>]</span>:</p><p>For <span class=\"tex-span\"><i>i</i>\u2009=\u20091</span>, the only array is coprime. <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">1</sub>\u2009=\u20091</span>.</p><p>For <span class=\"tex-span\"><i>i</i>\u2009=\u20092</span>, array <span class=\"tex-span\">[2,\u20092,\u20092]</span> is not coprime. <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">2</sub>\u2009=\u20097</span>.</p><p>For <span class=\"tex-span\"><i>i</i>\u2009=\u20093</span>, arrays <span class=\"tex-span\">[2,\u20092,\u20092]</span> and <span class=\"tex-span\">[3,\u20093,\u20093]</span> are not coprime. <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">3</sub>\u2009=\u200925</span>.</p><p>For <span class=\"tex-span\"><i>i</i>\u2009=\u20094</span>, arrays <span class=\"tex-span\">[2,\u20092,\u20092]</span>, <span class=\"tex-span\">[3,\u20093,\u20093]</span>, <span class=\"tex-span\">[2,\u20092,\u20094]</span>, <span class=\"tex-span\">[2,\u20094,\u20092]</span>, <span class=\"tex-span\">[2,\u20094,\u20094]</span>, <span class=\"tex-span\">[4,\u20092,\u20092]</span>, <span class=\"tex-span\">[4,\u20092,\u20094]</span>, <span class=\"tex-span\">[4,\u20094,\u20092]</span> and <span class=\"tex-span\">[4,\u20094,\u20094]</span> are not coprime. <span class=\"tex-span\"><i>b</i><sub class=\"lower-index\">4</sub>\u2009=\u200955</span>.</p>",
+    "contestId": 915,
+    "index": "G",
+    "name": "Coprime Arrays",
+    "type": "PROGRAMMING",
+    "tags": [
+        "math",
+        "number theory"
+    ],
+    "solvedCount": 1150
+}

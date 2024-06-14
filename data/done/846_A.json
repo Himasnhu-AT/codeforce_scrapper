@@ -1,0 +1,38 @@
+{
+    "title": "A. Curriculum Vitae",
+    "timeLimit": {
+        "value": 1.0,
+        "unit": "second"
+    },
+    "memoryLimit": {
+        "value": 256.0,
+        "unit": "megabytes"
+    },
+    "statement": "<p>Hideo Kojima has just quit his job at Konami. Now he is going to find a new place to work. Despite being such a well-known person, he still needs a CV to apply for a job.</p><p>During all his career Hideo has produced <span class=\"tex-span\"><i>n</i></span> games. Some of them were successful, some were not. Hideo wants to remove several of them (possibly zero) from his CV to make a better impression on employers. As a result there should be no unsuccessful game which comes right after successful one in his CV.</p><p>More formally, you are given an array <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>n</i></sub></span> of zeros and ones. Zero corresponds to an unsuccessful game, one \u2014 to a successful one. Games are given in order they were produced, and Hideo can't swap these values. He should remove some elements from this array in such a way that no zero comes right after one.</p><p>Besides that, Hideo still wants to mention as much games in his CV as possible. Help this genius of a man determine the maximum number of games he can leave in his CV.</p>",
+    "inputSpecification": "<p>The first line contains one integer number <span class=\"tex-span\"><i>n</i></span> (<span class=\"tex-span\">1\u2009\u2264\u2009<i>n</i>\u2009\u2264\u2009100</span>).</p><p>The second line contains <span class=\"tex-span\"><i>n</i></span> space-separated integer numbers <span class=\"tex-span\"><i>s</i><sub class=\"lower-index\">1</sub>,\u2009<i>s</i><sub class=\"lower-index\">2</sub>,\u2009...,\u2009<i>s</i><sub class=\"lower-index\"><i>n</i></sub></span> (<span class=\"tex-span\">0\u2009\u2264\u2009<i>s</i><sub class=\"lower-index\"><i>i</i></sub>\u2009\u2264\u20091</span>). <span class=\"tex-span\">0</span> corresponds to an unsuccessful game, <span class=\"tex-span\">1</span> \u2014 to a successful one.</p>",
+    "outputSpecification": "<p>Print one integer \u2014 the maximum number of games Hideo can leave in his CV so that no unsuccessful game comes after a successful one.</p>",
+    "samples": [
+        {
+            "input": "4<br/>1 1 0 1<br/>",
+            "output": "3<br/>"
+        },
+        {
+            "input": "6<br/>0 1 0 0 1 0<br/>",
+            "output": "4<br/>"
+        },
+        {
+            "input": "1<br/>0<br/>",
+            "output": "1<br/>"
+        }
+    ],
+    "note": null,
+    "contestId": 846,
+    "index": "A",
+    "name": "Curriculum Vitae",
+    "type": "PROGRAMMING",
+    "tags": [
+        "brute force",
+        "implementation"
+    ],
+    "solvedCount": 4173
+}
